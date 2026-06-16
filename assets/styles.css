@@ -1,0 +1,666 @@
+:root {
+  color-scheme: light;
+  --page: #fff9f1;
+  --page-soft: #f4fbfb;
+  --surface: #ffffff;
+  --ink: #273239;
+  --muted: #647276;
+  --line: #eadfce;
+  --coral: #e96f55;
+  --coral-strong: #c84d36;
+  --teal: #188c8c;
+  --teal-soft: #dff3f1;
+  --sky: #dceeff;
+  --leaf: #6c9b5e;
+  --shadow: 0 14px 34px rgba(71, 49, 27, 0.1);
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans SC", system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 249, 241, 0.96), rgba(244, 251, 251, 0.92)),
+    var(--page);
+  color: var(--ink);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+a.action-button,
+a.ghost-button {
+  min-height: 44px;
+  border: 0;
+  border-radius: 8px;
+  font: inherit;
+  font-size: 0.98rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:focus-visible,
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid rgba(24, 140, 140, 0.35);
+  outline-offset: 3px;
+}
+
+.app-shell {
+  min-height: 100vh;
+}
+
+.site-header {
+  padding: 28px min(6vw, 56px) 18px;
+}
+
+.header-inner {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 8px;
+  background: var(--teal);
+  color: #ffffff;
+  font-size: 1.45rem;
+  font-weight: 800;
+}
+
+.brand-text {
+  display: grid;
+  gap: 4px;
+}
+
+.brand-title {
+  font-size: clamp(1.24rem, 1.9vw, 1.62rem);
+  font-weight: 800;
+  letter-spacing: 0;
+}
+
+.brand-subtitle {
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.home-hero {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px min(6vw, 56px) 18px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(260px, 0.55fr);
+  gap: 24px;
+  align-items: stretch;
+}
+
+.intro-panel,
+.family-note,
+.book-card,
+.content-section,
+.audio-panel,
+.loading-card,
+.error-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: var(--shadow);
+}
+
+.intro-panel {
+  padding: clamp(20px, 3vw, 30px);
+}
+
+.intro-panel h1 {
+  margin: 0 0 12px;
+  max-width: 820px;
+  font-size: clamp(1.82rem, 3.6vw, 3.2rem);
+  line-height: 1.12;
+  letter-spacing: 0;
+}
+
+.intro-panel p {
+  margin: 0;
+  max-width: 720px;
+  color: var(--muted);
+  font-size: clamp(1rem, 1.5vw, 1.16rem);
+  line-height: 1.8;
+}
+
+.family-note {
+  padding: 22px;
+  background: linear-gradient(180deg, #ffffff, var(--sky));
+  display: grid;
+  align-content: center;
+  gap: 16px;
+}
+
+.family-note h2 {
+  margin: 0;
+  color: var(--teal);
+  font-size: 1.35rem;
+}
+
+.family-note p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.season-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 4px min(6vw, 56px) 50px;
+}
+
+.section-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 18px;
+  margin: 0 0 18px;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-size: clamp(1.55rem, 2.3vw, 2.05rem);
+  letter-spacing: 0;
+}
+
+.section-heading p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.book-card {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  overflow: hidden;
+}
+
+.cover-frame {
+  position: relative;
+  min-height: 230px;
+  background: linear-gradient(135deg, var(--teal-soft), #fff1d6);
+  display: grid;
+  place-items: center;
+  padding: 16px;
+}
+
+.cover-frame img {
+  width: min(100%, 205px);
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 12px 26px rgba(38, 46, 50, 0.22);
+  background: #ffffff;
+}
+
+.cover-fallback {
+  display: none;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.cover-frame.cover-missing .cover-fallback {
+  display: block;
+}
+
+.card-body {
+  padding: 18px;
+  display: grid;
+  gap: 14px;
+}
+
+.card-body h3 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.meta-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.meta-list li,
+.small-tag {
+  border-radius: 8px;
+  background: var(--teal-soft);
+  color: #176f70;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.card-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+@media (min-width: 921px) {
+  .season-section .book-card {
+    grid-template-columns: minmax(120px, 40%) minmax(0, 1fr);
+    grid-template-rows: auto;
+  }
+
+  .season-section .cover-frame {
+    min-height: 230px;
+    padding: 10px;
+  }
+
+  .season-section .cover-frame img {
+    width: min(100%, 145px);
+    max-height: 195px;
+  }
+
+  .season-section .card-body {
+    align-content: center;
+    gap: 10px;
+    padding: 14px;
+  }
+
+  .season-section .card-body h3 {
+    font-size: 1.12rem;
+  }
+
+  .season-section .meta-list li {
+    font-size: 0.8rem;
+    padding: 5px 8px;
+  }
+
+  .season-section .card-actions {
+    gap: 8px;
+  }
+
+  .season-section .action-button,
+  .season-section .ghost-button {
+    padding: 8px 5px;
+    font-size: 0.82rem;
+    white-space: nowrap;
+  }
+}
+
+.action-button,
+.ghost-button,
+.answer-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 11px 14px;
+  text-align: center;
+}
+
+.action-button {
+  background: var(--coral);
+  color: #ffffff;
+}
+
+.action-button:hover {
+  background: var(--coral-strong);
+}
+
+.ghost-button,
+.answer-button {
+  background: #f8efe2;
+  color: #74472e;
+}
+
+.ghost-button:hover,
+.answer-button:hover {
+  background: #f3e1cc;
+}
+
+.book-layout {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 8px min(6vw, 56px) 56px;
+  display: grid;
+  grid-template-columns: minmax(240px, 310px) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.book-side {
+  position: sticky;
+  top: 16px;
+  display: grid;
+  gap: 14px;
+}
+
+.book-side .book-card {
+  box-shadow: var(--shadow);
+}
+
+.quick-nav {
+  display: grid;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.quick-nav a {
+  padding: 10px 12px;
+  border-radius: 8px;
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.quick-nav a:hover {
+  background: var(--teal-soft);
+}
+
+.book-main {
+  display: grid;
+  gap: 18px;
+}
+
+.book-title-block {
+  padding: 26px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #ffffff, #fff0e7 52%, #e8f6f4);
+  border: 1px solid var(--line);
+}
+
+.back-link {
+  display: inline-flex;
+  margin-bottom: 16px;
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.book-title-block h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1.1;
+  letter-spacing: 0;
+}
+
+.book-title-block p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.content-section {
+  padding: clamp(18px, 3vw, 28px);
+}
+
+.content-section h2 {
+  margin: 0 0 14px;
+  font-size: clamp(1.32rem, 2vw, 1.7rem);
+}
+
+.content-section h3 {
+  margin: 0 0 8px;
+  font-size: 1.08rem;
+}
+
+.content-section p,
+.content-section li {
+  line-height: 1.75;
+}
+
+.content-section p {
+  margin: 0 0 12px;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.plain-list {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.scene-list,
+.qa-grid,
+.note-grid,
+.encyclopedia-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.scene-card,
+.qa-card,
+.note-card,
+.mini-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf8;
+  padding: 16px;
+}
+
+.scene-card header,
+.note-card header,
+.mini-card header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.page-range {
+  color: var(--leaf);
+  font-size: 0.92rem;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.focus-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.focus-tags span {
+  border: 1px solid rgba(108, 155, 94, 0.28);
+  border-radius: 8px;
+  padding: 5px 8px;
+  color: #587c4e;
+  background: #f4faef;
+  font-size: 0.86rem;
+  font-weight: 700;
+}
+
+.qa-type {
+  margin-top: 20px;
+}
+
+.qa-type:first-child {
+  margin-top: 0;
+}
+
+.qa-type h3 {
+  color: var(--teal);
+}
+
+.answer {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #eef8f7;
+  color: #315659;
+}
+
+.open-note {
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.audio-panel {
+  display: grid;
+  gap: 14px;
+  padding: 18px;
+  background: linear-gradient(135deg, #ffffff, #eff9f8);
+}
+
+.audio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+}
+
+.audio-actions button {
+  background: var(--teal);
+  color: #ffffff;
+  padding: 12px 18px;
+}
+
+.audio-actions button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
+audio {
+  width: 100%;
+}
+
+.audio-note {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.94rem;
+}
+
+.page-check summary {
+  cursor: pointer;
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.thumb-row {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 14px;
+}
+
+.thumb-row img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid var(--line);
+  background: #ffffff;
+}
+
+.loading-card,
+.error-card {
+  max-width: 680px;
+  margin: 12vh auto;
+  padding: 28px;
+  text-align: center;
+}
+
+.error-card h1 {
+  margin: 0 0 12px;
+}
+
+@media (max-width: 920px) {
+  .home-hero,
+  .book-layout,
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .book-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .book-side {
+    position: static;
+  }
+
+  .section-heading {
+    align-items: start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 560px) {
+  .site-header {
+    padding: 18px 18px 8px;
+  }
+
+  .header-inner {
+    align-items: start;
+  }
+
+  .brand-link {
+    align-items: start;
+  }
+
+  .brand-mark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .home-hero,
+  .season-section,
+  .book-layout {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .intro-panel,
+  .family-note,
+  .content-section,
+  .book-title-block {
+    padding: 18px;
+  }
+
+  .card-actions,
+  .thumb-row {
+    grid-template-columns: 1fr;
+  }
+
+  .scene-card header,
+  .note-card header,
+  .mini-card header {
+    align-items: start;
+    flex-direction: column;
+  }
+}

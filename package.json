@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "node --test tests/mvp.test.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}

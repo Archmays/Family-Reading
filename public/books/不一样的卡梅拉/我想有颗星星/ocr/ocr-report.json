@@ -1,0 +1,287 @@
+{
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 2,
+  "title": "我想有颗星星",
+  "slug": "carmela-s1-02",
+  "ocrEngine": "rapidocr_onnxruntime",
+  "generatedAt": "2026-06-16",
+  "sourcePageFolder": "D:/ChatGPT-Codex-Projects/Family-Reading-Codex/public/books/不一样的卡梅拉/我想有颗星星/pages",
+  "pageCountExpected": 27,
+  "pageCountProcessed": 27,
+  "status": "success",
+  "qualityNotes": [
+    "OCR recognizes the main Chinese story text on sampled pages.",
+    "Page numbers, website watermarks, cover metadata, and a few misrecognized characters may be present.",
+    "Use OCR as processing evidence only; do not expose full OCR text as the child-facing reading body."
+  ],
+  "pages": [
+    {
+      "page": "001",
+      "image": "pages/001.png",
+      "lineCount": 8,
+      "averageConfidence": 0.8255,
+      "lowConfidenceLineCount": 2,
+      "lowConfidenceSamples": [
+        "郑地腾",
+        "消然/译"
+      ],
+      "elapsedSeconds": 5.123
+    },
+    {
+      "page": "002",
+      "image": "pages/002.png",
+      "lineCount": 6,
+      "averageConfidence": 0.9486,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 6.153
+    },
+    {
+      "page": "003",
+      "image": "pages/003.png",
+      "lineCount": 56,
+      "averageConfidence": 0.9696,
+      "lowConfidenceLineCount": 1,
+      "lowConfidenceSamples": [
+        "copyrigh2002.byEditinsPockesedparmentdUniverPochParisFrce"
+      ],
+      "elapsedSeconds": 18.522
+    },
+    {
+      "page": "004",
+      "image": "pages/004.png",
+      "lineCount": 7,
+      "averageConfidence": 0.9662,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 4.286
+    },
+    {
+      "page": "005",
+      "image": "pages/005.png",
+      "lineCount": 8,
+      "averageConfidence": 0.9248,
+      "lowConfidenceLineCount": 1,
+      "lowConfidenceSamples": [
+        "E"
+      ],
+      "elapsedSeconds": 4.976
+    },
+    {
+      "page": "006",
+      "image": "pages/006.png",
+      "lineCount": 5,
+      "averageConfidence": 0.9816,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 4.514
+    },
+    {
+      "page": "007",
+      "image": "pages/007.png",
+      "lineCount": 6,
+      "averageConfidence": 0.9604,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 3.949
+    },
+    {
+      "page": "008",
+      "image": "pages/008.png",
+      "lineCount": 9,
+      "averageConfidence": 0.9607,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 4.011
+    },
+    {
+      "page": "009",
+      "image": "pages/009.png",
+      "lineCount": 7,
+      "averageConfidence": 0.9575,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 4.203
+    },
+    {
+      "page": "010",
+      "image": "pages/010.png",
+      "lineCount": 11,
+      "averageConfidence": 0.9885,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 3.52
+    },
+    {
+      "page": "011",
+      "image": "pages/011.png",
+      "lineCount": 13,
+      "averageConfidence": 0.9547,
+      "lowConfidenceLineCount": 1,
+      "lowConfidenceSamples": [
+        "够得到…是吧？先生，什·时候我能…·能亲手··"
+      ],
+      "elapsedSeconds": 3.496
+    },
+    {
+      "page": "012",
+      "image": "pages/012.png",
+      "lineCount": 7,
+      "averageConfidence": 0.9625,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 2.517
+    },
+    {
+      "page": "013",
+      "image": "pages/013.png",
+      "lineCount": 8,
+      "averageConfidence": 0.9637,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 2.85
+    },
+    {
+      "page": "014",
+      "image": "pages/014.png",
+      "lineCount": 7,
+      "averageConfidence": 0.9917,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 3.115
+    },
+    {
+      "page": "015",
+      "image": "pages/015.png",
+      "lineCount": 4,
+      "averageConfidence": 0.8986,
+      "lowConfidenceLineCount": 1,
+      "lowConfidenceSamples": [
+        "幢老房子..…."
+      ],
+      "elapsedSeconds": 2.746
+    },
+    {
+      "page": "016",
+      "image": "pages/016.png",
+      "lineCount": 6,
+      "averageConfidence": 0.9775,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 1.693
+    },
+    {
+      "page": "017",
+      "image": "pages/017.png",
+      "lineCount": 8,
+      "averageConfidence": 0.942,
+      "lowConfidenceLineCount": 1,
+      "lowConfidenceSamples": [
+        "“鸣……鸣……·"
+      ],
+      "elapsedSeconds": 5.032
+    },
+    {
+      "page": "018",
+      "image": "pages/018.png",
+      "lineCount": 15,
+      "averageConfidence": 0.9468,
+      "lowConfidenceLineCount": 1,
+      "lowConfidenceSamples": [
+        "把我留在这里，好害怕呀··…鸣鸣···"
+      ],
+      "elapsedSeconds": 6.072
+    },
+    {
+      "page": "019",
+      "image": "pages/019.png",
+      "lineCount": 11,
+      "averageConfidence": 0.9332,
+      "lowConfidenceLineCount": 1,
+      "lowConfidenceSamples": [
+        "起....”"
+      ],
+      "elapsedSeconds": 5.11
+    },
+    {
+      "page": "020",
+      "image": "pages/020.png",
+      "lineCount": 14,
+      "averageConfidence": 0.9209,
+      "lowConfidenceLineCount": 2,
+      "lowConfidenceSamples": [
+        "有十亿颗星星…..",
+        "运大"
+      ],
+      "elapsedSeconds": 5.732
+    },
+    {
+      "page": "021",
+      "image": "pages/021.png",
+      "lineCount": 13,
+      "averageConfidence": 0.9717,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 4.736
+    },
+    {
+      "page": "022",
+      "image": "pages/022.png",
+      "lineCount": 13,
+      "averageConfidence": 0.9685,
+      "lowConfidenceLineCount": 1,
+      "lowConfidenceSamples": [
+        "地紧紧拥抱.."
+      ],
+      "elapsedSeconds": 6.976
+    },
+    {
+      "page": "023",
+      "image": "pages/023.png",
+      "lineCount": 8,
+      "averageConfidence": 0.9222,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 5.174
+    },
+    {
+      "page": "024",
+      "image": "pages/024.png",
+      "lineCount": 9,
+      "averageConfidence": 0.9739,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 6.0
+    },
+    {
+      "page": "025",
+      "image": "pages/025.png",
+      "lineCount": 11,
+      "averageConfidence": 0.9692,
+      "lowConfidenceLineCount": 1,
+      "lowConfidenceSamples": [
+        "山就得睡觉…··"
+      ],
+      "elapsedSeconds": 6.839
+    },
+    {
+      "page": "026",
+      "image": "pages/026.png",
+      "lineCount": 3,
+      "averageConfidence": 0.9347,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 4.631
+    },
+    {
+      "page": "027",
+      "image": "pages/027.png",
+      "lineCount": 14,
+      "averageConfidence": 0.9639,
+      "lowConfidenceLineCount": 0,
+      "lowConfidenceSamples": [],
+      "elapsedSeconds": 8.387
+    }
+  ],
+  "totalElapsedSeconds": 140.511
+}
