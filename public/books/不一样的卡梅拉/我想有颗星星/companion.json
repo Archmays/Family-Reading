@@ -14,8 +14,23 @@
   },
   "overview": {
     "oneLine": "卡梅利多想摸到真正的星星，从误认海星到遇见来自星球的小绿鸡，他把好奇心变成了一次秘密奇遇。",
-    "mainCharacters": ["卡梅利多", "卡梅拉", "佩罗", "贝里奥", "伽利略", "塞勒斯特", "卡萨夫人", "萨蒂尼"],
-    "importantPlaces": ["鸡舍", "灌木丛和沙滩", "天文学家的花园和房子", "飞船", "地球附近的天空"],
+    "mainCharacters": [
+      "卡梅利多",
+      "卡梅拉",
+      "佩罗",
+      "贝里奥",
+      "伽利略",
+      "塞勒斯特",
+      "卡萨夫人",
+      "萨蒂尼"
+    ],
+    "importantPlaces": [
+      "鸡舍",
+      "灌木丛和沙滩",
+      "天文学家的花园和房子",
+      "飞船",
+      "地球附近的天空"
+    ],
     "characterRelationships": [
       "卡梅拉是卡梅利多的妈妈，催小鸡们回去睡觉。",
       "佩罗用玩笑解释星星，让卡梅利多更难过。",
@@ -24,7 +39,16 @@
       "塞勒斯特是来自飞船的小绿鸡，和卡梅利多交换了“星星”礼物。"
     ],
     "keyConflict": "卡梅利多想拥有或触摸星星，但身边的大人给他的解释并不能满足他；真正的答案来自一次意外相遇。",
-    "emotionalArc": ["兴奋", "误会", "失望", "好奇", "害怕", "惊奇", "不舍", "满足"]
+    "emotionalArc": [
+      "兴奋",
+      "误会",
+      "失望",
+      "好奇",
+      "害怕",
+      "惊奇",
+      "不舍",
+      "满足"
+    ]
   },
   "storyReview": {
     "shortReview": "夜晚，卡梅利多看见一颗“星星”掉下来，结果那只是一颗海星。佩罗的解释让他很伤心，贝里奥带他去找伽利略。就在他们睡着时，一艘飞船落到附近，小绿鸡塞勒斯特出现了。卡梅利多参观飞船，听她讲星星，还把海星送给她，换来一块故事幻想中的金星碎片。最后两个朋友把奇遇当作秘密带回鸡舍。",
@@ -42,94 +66,298 @@
       "title": "睡前少了一只小鸡",
       "pageRange": "004-006",
       "summary": "太阳下山后，小鸡们要回去睡觉，卡梅拉发现卡梅利多不见了。卡梅利多正看星空，还以为一颗星星落到了灌木丛里。",
-      "discussionFocus": ["睡前规则", "好奇心", "流星"]
+      "discussionFocus": [
+        "睡前规则",
+        "好奇心",
+        "流星"
+      ],
+      "pageRefs": [
+        "004",
+        "005",
+        "006"
+      ],
+      "imageRefs": [
+        "pages/004.png",
+        "pages/005.png",
+        "pages/006.png"
+      ]
     },
     {
       "id": "star-02",
       "title": "原来是海星",
       "pageRange": "007-009",
       "summary": "卡梅利多抱着“星星”去找佩罗，佩罗告诉他那其实是海星，还说星星并不存在。卡梅利多很伤心。",
-      "discussionFocus": ["误会", "被笑话的感受", "海星和星星"]
+      "discussionFocus": [
+        "误会",
+        "被笑话的感受",
+        "海星和星星"
+      ],
+      "pageRefs": [
+        "007",
+        "008",
+        "009"
+      ],
+      "imageRefs": [
+        "pages/007.png",
+        "pages/008.png",
+        "pages/009.png"
+      ]
     },
     {
       "id": "star-03",
       "title": "望远镜里的星空",
       "pageRange": "010-011",
       "summary": "贝里奥安慰卡梅利多，带他去找伽利略。卡梅利多通过望远镜看星星，想知道什么时候能亲手摸到星星。",
-      "discussionFocus": ["朋友安慰", "观察工具", "想摸星星"]
+      "discussionFocus": [
+        "朋友安慰",
+        "观察工具",
+        "想摸星星"
+      ],
+      "pageRefs": [
+        "010",
+        "011"
+      ],
+      "imageRefs": [
+        "pages/010.png",
+        "pages/011.png"
+      ]
     },
     {
       "id": "star-04",
       "title": "飞船降落",
       "pageRange": "012-018",
       "summary": "太空里的班级来到地球，飞船发出巨响落下。卡梅利多和贝里奥鼓起勇气进去，遇见小绿鸡塞勒斯特。",
-      "discussionFocus": ["害怕之后的探索", "飞船", "新朋友"]
+      "discussionFocus": [
+        "害怕之后的探索",
+        "飞船",
+        "新朋友"
+      ],
+      "pageRefs": [
+        "012",
+        "013",
+        "014",
+        "015",
+        "016",
+        "017",
+        "018"
+      ],
+      "imageRefs": [
+        "pages/012.png",
+        "pages/013.png",
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png",
+        "pages/017.png",
+        "pages/018.png"
+      ]
     },
     {
       "id": "star-05",
       "title": "银河和礼物",
       "pageRange": "019-022",
       "summary": "塞勒斯特介绍星星、银河和她的星球。卡梅利多把海星送给她，她送给卡梅利多一块故事幻想中的金星碎片，并画出像狐狸的星座。",
-      "discussionFocus": ["交换礼物", "星星知识", "不舍告别"]
+      "discussionFocus": [
+        "交换礼物",
+        "星星知识",
+        "不舍告别"
+      ],
+      "pageRefs": [
+        "019",
+        "020",
+        "021",
+        "022"
+      ],
+      "imageRefs": [
+        "pages/019.png",
+        "pages/020.png",
+        "pages/021.png",
+        "pages/022.png"
+      ]
     },
     {
       "id": "star-06",
       "title": "保守秘密",
       "pageRange": "023-026",
       "summary": "塞勒斯特回到飞船，卡梅利多和贝里奥也回鸡舍。他们决定不把奇遇告诉别人，伽利略仍在思考另一个星球上是否有生命。",
-      "discussionFocus": ["秘密", "愿望实现", "科学猜想"]
+      "discussionFocus": [
+        "秘密",
+        "愿望实现",
+        "科学猜想"
+      ],
+      "pageRefs": [
+        "023",
+        "024",
+        "025",
+        "026"
+      ],
+      "imageRefs": [
+        "pages/023.png",
+        "pages/024.png",
+        "pages/025.png",
+        "pages/026.png"
+      ]
     }
   ],
   "questionCards": {
     "factualRecall": [
       {
         "prompt": "卡梅利多一开始把什么东西当成了星星？",
-        "talkingPoints": ["他把一颗海星当成从天上掉下来的星星。"],
-        "pageRange": "006-008"
+        "talkingPoints": [
+          "他把一颗海星当成从天上掉下来的星星。"
+        ],
+        "pageRange": "006-008",
+        "evidencePageRefs": [
+          "006",
+          "007",
+          "008"
+        ],
+        "evidenceImageRefs": [
+          "pages/006.png",
+          "pages/007.png",
+          "pages/008.png"
+        ]
       },
       {
         "prompt": "贝里奥带卡梅利多去找谁？",
-        "talkingPoints": ["他带卡梅利多去找伽利略先生，看望远镜里的星星。"],
-        "pageRange": "010-011"
+        "talkingPoints": [
+          "他带卡梅利多去找伽利略先生，看望远镜里的星星。"
+        ],
+        "pageRange": "010-011",
+        "evidencePageRefs": [
+          "010",
+          "011"
+        ],
+        "evidenceImageRefs": [
+          "pages/010.png",
+          "pages/011.png"
+        ]
       },
       {
         "prompt": "塞勒斯特送给卡梅利多什么礼物？",
-        "talkingPoints": ["她送了一块故事幻想中的金星碎片。"],
-        "pageRange": "021-022"
+        "talkingPoints": [
+          "她送了一块故事幻想中的金星碎片。"
+        ],
+        "pageRange": "021-022",
+        "evidencePageRefs": [
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/021.png",
+          "pages/022.png"
+        ]
       }
     ],
     "comprehension": [
       {
         "prompt": "为什么卡梅利多发现海星后会先那么高兴，后来又难过？",
-        "talkingPoints": ["他以为愿望实现了；被佩罗说不是星星后，感觉希望落空了。"],
-        "pageRange": "006-009"
+        "talkingPoints": [
+          "他以为愿望实现了；被佩罗说不是星星后，感觉希望落空了。"
+        ],
+        "pageRange": "006-009",
+        "evidencePageRefs": [
+          "006",
+          "007",
+          "008",
+          "009"
+        ],
+        "evidenceImageRefs": [
+          "pages/006.png",
+          "pages/007.png",
+          "pages/008.png",
+          "pages/009.png"
+        ]
       },
       {
         "prompt": "贝里奥在这个故事里帮了卡梅利多什么？",
-        "talkingPoints": ["他安慰朋友，提供线索，陪他去找答案，也一起面对飞船。"],
-        "pageRange": "010-018"
+        "talkingPoints": [
+          "他安慰朋友，提供线索，陪他去找答案，也一起面对飞船。"
+        ],
+        "pageRange": "010-018",
+        "evidencePageRefs": [
+          "010",
+          "011",
+          "012",
+          "013",
+          "014",
+          "015",
+          "016",
+          "017",
+          "018"
+        ],
+        "evidenceImageRefs": [
+          "pages/010.png",
+          "pages/011.png",
+          "pages/012.png",
+          "pages/013.png",
+          "pages/014.png",
+          "pages/015.png",
+          "pages/016.png",
+          "pages/017.png",
+          "pages/018.png"
+        ]
       },
       {
         "prompt": "为什么卡梅利多最后觉得自己真的摸到了星星？",
-        "talkingPoints": ["虽然不是摘下天上的星星，但他摸到了故事幻想中的金星碎片，还认识了来自星球的新朋友。"],
-        "pageRange": "021-022"
+        "talkingPoints": [
+          "虽然不是摘下天上的星星，但他摸到了故事幻想中的金星碎片，还认识了来自星球的新朋友。"
+        ],
+        "pageRange": "021-022",
+        "evidencePageRefs": [
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/021.png",
+          "pages/022.png"
+        ]
       }
     ],
     "openExpression": [
       {
         "prompt": "如果你能问伽利略一个关于星星的问题，你想问什么？",
-        "talkingPoints": ["鼓励孩子提出真实好奇，不急着给标准答案。"],
-        "pageRange": "010-011"
+        "talkingPoints": [
+          "鼓励孩子提出真实好奇，不急着给标准答案。"
+        ],
+        "pageRange": "010-011",
+        "evidencePageRefs": [
+          "010",
+          "011"
+        ],
+        "evidenceImageRefs": [
+          "pages/010.png",
+          "pages/011.png"
+        ]
       },
       {
         "prompt": "你会把地球上的什么小东西送给塞勒斯特做纪念？",
-        "talkingPoints": ["可以说贝壳、叶子、石头，也可以说明为什么。"],
-        "pageRange": "021-022"
+        "talkingPoints": [
+          "可以说贝壳、叶子、石头，也可以说明为什么。"
+        ],
+        "pageRange": "021-022",
+        "evidencePageRefs": [
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/021.png",
+          "pages/022.png"
+        ]
       },
       {
         "prompt": "卡梅利多和贝里奥决定保守秘密。你觉得这个秘密适合告诉谁吗？",
-        "talkingPoints": ["可以聊聊秘密、惊喜和需要告诉大人的事情有什么不同。"],
-        "pageRange": "024-025"
+        "talkingPoints": [
+          "可以聊聊秘密、惊喜和需要告诉大人的事情有什么不同。"
+        ],
+        "pageRange": "024-025",
+        "evidencePageRefs": [
+          "024",
+          "025"
+        ],
+        "evidenceImageRefs": [
+          "pages/024.png",
+          "pages/025.png"
+        ]
       }
     ]
   },
@@ -137,60 +365,186 @@
     {
       "title": "海星不是天上的星星",
       "pageRange": "006-008",
-      "note": "海星生活在海里，名字里有“星”是因为外形像星星。这个误会适合引导孩子发现：名字相似，不代表东西一样。"
+      "note": "海星生活在海里，名字里有“星”，是因为外形像星星。名字相似，不代表东西一样；海星不是挂在天空里的星星。",
+      "pageRefs": [
+        "006",
+        "007",
+        "008"
+      ],
+      "imageRefs": [
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png"
+      ],
+      "generatedImageRefs": [
+        "generated/starfish-vs-star.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-starfish-vs-star"
     },
     {
       "title": "望远镜能把远处看清楚",
       "pageRange": "010-011",
-      "note": "伽利略用望远镜看星空。可以告诉孩子：望远镜不会把星星拉近到手边，但能让我们看清更远、更暗的东西。"
+      "note": "伽利略用望远镜看星空。望远镜不会把星星拉到手边，但能让远处、更暗的东西看得清楚一些。",
+      "pageRefs": [
+        "010",
+        "011"
+      ],
+      "imageRefs": [
+        "pages/010.png",
+        "pages/011.png"
+      ],
+      "generatedImageRefs": [
+        "generated/telescope-night-sky.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-telescope-night-sky"
     },
     {
       "title": "星座像天空里的连线游戏",
       "pageRange": "022",
-      "note": "塞勒斯特说夜空里有像狐狸的图案。可以让孩子用点和线画一个自己的星座图案，再给它取名字。"
+      "note": "塞勒斯特说夜空里有像狐狸的图案。星座就像把天空里的亮点连起来，想象成一个图案，再给它取名字。",
+      "pageRefs": [
+        "022"
+      ],
+      "imageRefs": [
+        "pages/022.png"
+      ],
+      "generatedImageRefs": [
+        "generated/constellation-fox.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-constellation-fox"
     }
   ],
   "encyclopediaEntries": [
     {
-      "title": "海星",
+      "title": "海星是什么",
       "anchor": "卡梅利多捡到的“星星”",
       "pageRange": "006-008",
-      "summary": "海星是海洋动物，常见外形有五条腕，看起来像星形。故事里它让卡梅利多第一次把“名字”和“真实的星星”区分开。"
+      "summary": "海星是海洋动物，常见外形有五条腕，看起来像星形。故事里它让卡梅利多第一次把“名字”和“真实的星星”区分开。",
+      "pageRefs": [
+        "006",
+        "007",
+        "008"
+      ],
+      "imageRefs": [
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png"
+      ],
+      "generatedImageRefs": [
+        "generated/starfish-vs-star.png"
+      ],
+      "storyAppearance": "卡梅利多捡到一个像星星的东西，以为它是天上掉下来的星星。",
+      "whatItIs": "海星是生活在海里的动物，身体常常像五角星一样伸出几条腕。",
+      "whyItMatters": "它让卡梅利多发现：名字里有“星”，不一定就是天上的星星。",
+      "discussionQuestion": "海星和天上的星星，一个在哪里？另一个在哪里？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-starfish-vs-star"
     },
     {
-      "title": "望远镜",
+      "title": "望远镜看远方",
       "anchor": "伽利略看星星的管子机器",
       "pageRange": "010-011",
-      "summary": "望远镜用镜片收集光，让远处的物体看起来更清楚。它帮助人们观察月亮、星星和行星。"
+      "summary": "望远镜用镜片收集光，让远处的物体看起来更清楚。它帮助人们观察月亮、星星和行星。",
+      "pageRefs": [
+        "010",
+        "011"
+      ],
+      "imageRefs": [
+        "pages/010.png",
+        "pages/011.png"
+      ],
+      "generatedImageRefs": [
+        "generated/telescope-night-sky.png"
+      ],
+      "storyAppearance": "伽利略让卡梅利多通过望远镜看星空。",
+      "whatItIs": "望远镜用镜片收集光，让很远的东西看起来更清楚。",
+      "whyItMatters": "卡梅利多想摸到星星，望远镜让他先学会“看见远处”。",
+      "discussionQuestion": "望远镜能把星星拿到手里吗？它真正帮我们做了什么？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-telescope-night-sky"
     },
     {
-      "title": "金星",
+      "title": "金星是很远的行星",
       "anchor": "塞勒斯特送出的星星碎片",
       "pageRange": "021-022",
-      "summary": "金星是太阳系中的一颗行星，常在清晨或傍晚特别明亮。故事里的“金星碎片”是幻想礼物，不代表真实生活中可以从金星取得碎片。"
+      "summary": "金星是太阳系中的一颗行星，常在清晨或傍晚特别明亮。故事里的“金星碎片”是幻想礼物，不代表真实生活中可以从金星取得碎片。",
+      "pageRefs": [
+        "021",
+        "022"
+      ],
+      "imageRefs": [
+        "pages/021.png",
+        "pages/022.png"
+      ],
+      "generatedImageRefs": [
+        "generated/venus-fantasy-gift.png"
+      ],
+      "storyAppearance": "塞勒斯特送给卡梅利多一块故事幻想里的金星碎片。",
+      "whatItIs": "金星是围着太阳运行的行星，离我们非常远，常在清晨或傍晚显得很亮。",
+      "whyItMatters": "故事把真实的金星和幻想礼物放在一起，让星空奇遇更有童话感。",
+      "discussionQuestion": "真实的金星很远，为什么故事里还可以出现“金星碎片”这样的礼物？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-venus-fantasy-gift"
     },
     {
-      "title": "银河系",
+      "title": "银河系是星星家园",
       "anchor": "塞勒斯特解释很多很多星星",
       "pageRange": "019-020",
-      "summary": "银河系里有非常多的恒星。对孩子可以先理解成：太阳和我们夜里看到的许多星星，都住在一个很大的星星家园里。"
+      "summary": "银河系里有非常多的恒星。太阳和我们夜里看到的许多星星，都住在这个很大的星星家园里。",
+      "pageRefs": [
+        "019",
+        "020"
+      ],
+      "imageRefs": [
+        "pages/019.png",
+        "pages/020.png"
+      ],
+      "generatedImageRefs": [
+        "generated/milky-way-home.png"
+      ],
+      "storyAppearance": "塞勒斯特向卡梅利多说起很多很多星星。",
+      "whatItIs": "银河系里有非常多的恒星，太阳也是其中的一员。",
+      "whyItMatters": "卡梅利多的愿望从“一颗星星”变成看见更大的星星家园。",
+      "discussionQuestion": "夜空里只看到几颗亮星时，你能想象还有很多更远的星星吗？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-milky-way-home"
     }
   ],
   "parentGuide": {
     "readingUse": "这本适合边看画面边聊“误会”和“求证”。先让孩子说卡梅利多为什么相信那是星星，再补充海星、望远镜和行星知识。",
-    "suggestedFlow": ["找出卡梅利多看到星星的页面", "比较海星和星星", "用问题卡聊贝里奥怎样陪伴朋友", "选一个百科条目做睡前延伸"],
-    "sensitivePoints": ["故事里的太空小鸡和金星碎片是幻想设定，家长可明确区分“故事想象”和“真实科学观察”。", "第 20 页小绿鸡长牙和农场主的笑话可弱化为：这是外星小鸡的荒诞玩笑，因为农场主喂了不合适的食物，小绿鸡长出了牙。"]
+    "suggestedFlow": [
+      "找出卡梅利多看到星星的页面",
+      "比较海星和星星",
+      "用问题卡聊贝里奥怎样陪伴朋友",
+      "选一个百科条目做睡前延伸"
+    ],
+    "sensitivePoints": [
+      "故事里的太空小鸡和金星碎片是幻想设定，家长可明确区分“故事想象”和“真实科学观察”。",
+      "第 20 页小绿鸡长牙和农场主的笑话可弱化为：这是外星小鸡的荒诞玩笑，因为农场主喂了不合适的食物，小绿鸡长出了牙。"
+    ]
   },
   "audio": {
     "title": "我想有颗星星",
     "bookSlug": "carmela-s1-02",
-    "path": "source/不一样的卡梅拉/02-我想有颗星星.mp3",
+    "path": "public/audio/carmela-s1/carmela-s1-02.mp3",
+    "sourcePath": "source/不一样的卡梅拉/02-我想有颗星星.mp3",
     "markers": [],
     "markerNote": "当前只接入整本音频；没有可靠的场景时间点证据，因此不添加 markers。"
   },
   "manualReview": {
-    "roleNames": ["塞勒斯特、卡萨夫人、萨蒂尼按复核结论保留。", "贝里奥和伽利略的情节对应正确；精确页码仍以 PDF 页面为准。"],
-    "plotPoints": ["第 20 页小绿鸡长牙和农场主的玩笑保留为荒诞设定，低龄讲述时不展开“吃掉/对付农场主”的细节。", "第 27 页为推广/导读文字，不作为故事场景。"],
-    "backgroundEntries": ["金星条目必须区分故事里的幻想礼物和真实天文学知识。"]
+    "roleNames": [
+      "塞勒斯特、卡萨夫人、萨蒂尼按复核结论保留。",
+      "贝里奥和伽利略的情节对应正确；精确页码仍以 PDF 页面为准。"
+    ],
+    "plotPoints": [
+      "第 20 页小绿鸡长牙和农场主的玩笑保留为荒诞设定，低龄讲述时不展开“吃掉/对付农场主”的细节。",
+      "第 27 页为推广/导读文字，不作为故事场景。"
+    ],
+    "backgroundEntries": [
+      "金星条目必须区分故事里的幻想礼物和真实天文学知识。"
+    ]
   }
 }

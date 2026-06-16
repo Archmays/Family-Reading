@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 4,
+  "title": "我去找回太阳",
+  "slug": "carmela-s1-04",
+  "contentType": "picture-book-companion",
+  "sourceEvidence": {
+    "pageImages": "pages/",
+    "ocrPages": "ocr/pages/",
+    "ocrFullText": "ocr/full-text.txt",
+    "ocrReport": "ocr/ocr-report.json",
+    "ocrUse": "processing evidence only, not a child-facing reading body"
+  },
+  "overview": {
+    "oneLine": "<用一句话概括本书剧情和情绪变化>",
+    "mainCharacters": [
+      "<角色 1>",
+      "<角色 2>"
+    ],
+    "importantPlaces": [
+      "<地点 1>",
+      "<地点 2>"
+    ],
+    "characterRelationships": [
+      "<角色关系 1>",
+      "<角色关系 2>"
+    ],
+    "keyConflict": "<本书核心冲突>",
+    "emotionalArc": [
+      "<情绪 1>",
+      "<情绪 2>",
+      "<情绪 3>"
+    ]
+  },
+  "storyReview": {
+    "shortReview": "<直接面向家庭共读的短剧情回顾，不复制 OCR 全文>",
+    "mainPlot": [
+      "<关键剧情 1>",
+      "<关键剧情 2>",
+      "<关键剧情 3>",
+      "<关键剧情 4>"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "carmela-s1-04-scene-01",
+      "title": "<scene 标题>",
+      "pageRange": "004-007",
+      "summary": "<这一段剧情发生了什么>",
+      "discussionFocus": [
+        "<讨论点 1>",
+        "<讨论点 2>"
+      ],
+      "pageRefs": [
+        "004",
+        "005",
+        "006",
+        "007"
+      ],
+      "imageRefs": [
+        "pages/004.png",
+        "pages/005.png",
+        "pages/006.png",
+        "pages/007.png"
+      ]
+    }
+  ],
+  "questionCards": {
+    "factualRecall": [
+      {
+        "prompt": "<能在页面上找到答案的事实问题>",
+        "talkingPoints": [
+          "<参考答案要点 1>",
+          "<参考答案要点 2>"
+        ],
+        "pageRange": "004-005",
+        "evidencePageRefs": [
+          "004",
+          "005"
+        ],
+        "evidenceImageRefs": [
+          "pages/004.png",
+          "pages/005.png"
+        ]
+      }
+    ],
+    "comprehension": [
+      {
+        "prompt": "<关于因果、情绪或选择的理解问题>",
+        "talkingPoints": [
+          "<参考答案要点 1>",
+          "<参考答案要点 2>"
+        ],
+        "pageRange": "010-013",
+        "evidencePageRefs": [
+          "010",
+          "011",
+          "012",
+          "013"
+        ],
+        "evidenceImageRefs": [
+          "pages/010.png",
+          "pages/011.png",
+          "pages/012.png",
+          "pages/013.png"
+        ]
+      }
+    ],
+    "openExpression": [
+      {
+        "prompt": "<开放表达问题，但仍与剧情页面相关>",
+        "talkingPoints": [
+          "<表达方向 1>",
+          "<表达方向 2>"
+        ],
+        "pageRange": "018-020",
+        "evidencePageRefs": [
+          "018",
+          "019",
+          "020"
+        ],
+        "evidenceImageRefs": [
+          "pages/018.png",
+          "pages/019.png",
+          "pages/020.png"
+        ]
+      }
+    ]
+  },
+  "backgroundNotes": [
+    {
+      "title": "<背景补充标题>",
+      "pageRange": "004-006",
+      "note": "<适合孩子直接阅读的背景解释>",
+      "pageRefs": [
+        "004",
+        "005",
+        "006"
+      ],
+      "imageRefs": [
+        "pages/004.png",
+        "pages/005.png",
+        "pages/006.png"
+      ],
+      "generatedImageRefs": [],
+      "needsGeneratedImage": true,
+      "generatedImagePromptId": "carmela-s1-04-<prompt-id>"
+    }
+  ],
+  "encyclopediaEntries": [
+    {
+      "title": "<剧情百科标题>",
+      "anchor": "<故事中的具体锚点>",
+      "pageRange": "008-011",
+      "summary": "<百科条目的剧情相关概括>",
+      "pageRefs": [
+        "008",
+        "009",
+        "010",
+        "011"
+      ],
+      "imageRefs": [
+        "pages/008.png",
+        "pages/009.png",
+        "pages/010.png",
+        "pages/011.png"
+      ],
+      "generatedImageRefs": [],
+      "storyAppearance": "<它在故事中出现在哪里>",
+      "whatItIs": "<它是什么>",
+      "whyItMatters": "<它为什么和本书剧情有关>",
+      "discussionQuestion": "<可一起讨论的问题>",
+      "needsGeneratedImage": true,
+      "generatedImagePromptId": "carmela-s1-04-<prompt-id>"
+    }
+  ],
+  "parentGuide": {
+    "suggestedFlow": [
+      "<先看书籍总览>",
+      "<再看内容回顾和 scene>",
+      "<最后按需要使用问答、背景补充、百科和音频>"
+    ],
+    "reviewWarnings": [
+      "复核 PDF 分书边界、OCR 错字、角色名和关键剧情。",
+      "复核 scene/pageRange、页面缩略图、答案证据页和音频对应关系。",
+      "复核背景补充是否适合孩子直接阅读，百科是否剧情相关。"
+    ]
+  },
+  "audio": {
+    "title": "我去找回太阳",
+    "bookSlug": "carmela-s1-04",
+    "path": "public/audio/carmela-s1/carmela-s1-04.mp3",
+    "sourcePath": "source/不一样的卡梅拉/04-我去找回太阳.mp3",
+    "markers": [],
+    "markerNote": "没有可靠场景时间点证据时不填写 marker。"
+  },
+  "manualReview": {
+    "pdfBoundary": "<通过/待确认>",
+    "ocrTypos": "<通过/待确认>",
+    "characterNames": "<通过/待确认>",
+    "keyPlot": "<通过/待确认>",
+    "scenePageRanges": "<通过/待确认>",
+    "pageThumbnails": "<通过/待确认>",
+    "questionEvidencePages": "<通过/待确认>",
+    "audioMatch": "<通过/待确认>",
+    "backgroundChildReadable": "<通过/待确认>",
+    "encyclopediaStoryRelated": "<通过/待确认>",
+    "imagePromptNeeded": "<通过/待确认>",
+    "book5Title": "我爱小黑猫",
+    "book12Title": "我爱平底锅"
+  }
+}
