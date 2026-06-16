@@ -37,7 +37,6 @@ const expectedAudio = new Map([
 ]);
 const requiredUiText = [
   'Book Companion / 家庭阅读助手',
-  '纸质书阅读时使用的内容回顾、问答、百科和音频入口',
   '不一样的卡梅拉',
   '类型：绘本',
   '进入辅助页',

@@ -68,7 +68,6 @@ function header() {
           <span class="brand-mark">书</span>
           <span class="brand-text">
             <span class="brand-title">Book Companion / 家庭阅读助手</span>
-            <span class="brand-subtitle">纸质书阅读时使用的内容回顾、问答、百科和音频入口</span>
           </span>
         </a>
       </div>
