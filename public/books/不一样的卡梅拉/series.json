@@ -65,21 +65,42 @@
       "title": "我爱小黑猫",
       "slug": "carmela-s1-05",
       "folder": "public/books/不一样的卡梅拉/我爱小黑猫",
-      "assetFile": "book-assets.json"
+      "assetFile": "book-assets.json",
+      "companionFile": "companion.json",
+      "ocrReport": "ocr/ocr-report.json",
+      "audio": {
+        "title": "我爱小黑猫",
+        "path": "public/audio/carmela-s1/carmela-s1-05.mp3",
+        "sourcePath": "source/不一样的卡梅拉/05-我爱小黑猫.mp3"
+      }
     },
     {
       "order": 6,
       "title": "我能打败怪兽",
       "slug": "carmela-s1-06",
       "folder": "public/books/不一样的卡梅拉/我能打败怪兽",
-      "assetFile": "book-assets.json"
+      "assetFile": "book-assets.json",
+      "companionFile": "companion.json",
+      "ocrReport": "ocr/ocr-report.json",
+      "audio": {
+        "title": "我能打败怪兽",
+        "path": "public/audio/carmela-s1/carmela-s1-06.mp3",
+        "sourcePath": "source/不一样的卡梅拉/06-我能打败怪兽.mp3"
+      }
     },
     {
       "order": 7,
       "title": "我要找到朗朗",
       "slug": "carmela-s1-07",
       "folder": "public/books/不一样的卡梅拉/我要找到朗朗",
-      "assetFile": "book-assets.json"
+      "assetFile": "book-assets.json",
+      "companionFile": "companion.json",
+      "ocrReport": "ocr/ocr-report.json",
+      "audio": {
+        "title": "我要找到朗朗",
+        "path": "public/audio/carmela-s1/carmela-s1-07.mp3",
+        "sourcePath": "source/不一样的卡梅拉/07-我要找到朗朗.mp3"
+      }
     },
     {
       "order": 8,

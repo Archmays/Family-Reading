@@ -1,0 +1,184 @@
+{
+    "schemaVersion":  1,
+    "bookOrder":  6,
+    "title":  "我能打败怪兽",
+    "engine":  "Windows.Media.Ocr.OcrEngine",
+    "language":  "zh-Hans-CN",
+    "generatedAt":  "2026-06-17T10:23:50+08:00",
+    "pageImageDirectory":  "pages/",
+    "pageCount":  24,
+    "pages":  [
+                  {
+                      "page":  "001",
+                      "image":  "pages/001.png",
+                      "textFile":  "ocr/pages/001.txt",
+                      "characterCount":  49,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "002",
+                      "image":  "pages/002.png",
+                      "textFile":  "ocr/pages/002.txt",
+                      "characterCount":  82,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "003",
+                      "image":  "pages/003.png",
+                      "textFile":  "ocr/pages/003.txt",
+                      "characterCount":  109,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "004",
+                      "image":  "pages/004.png",
+                      "textFile":  "ocr/pages/004.txt",
+                      "characterCount":  189,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "005",
+                      "image":  "pages/005.png",
+                      "textFile":  "ocr/pages/005.txt",
+                      "characterCount":  241,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "006",
+                      "image":  "pages/006.png",
+                      "textFile":  "ocr/pages/006.txt",
+                      "characterCount":  234,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "007",
+                      "image":  "pages/007.png",
+                      "textFile":  "ocr/pages/007.txt",
+                      "characterCount":  248,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "008",
+                      "image":  "pages/008.png",
+                      "textFile":  "ocr/pages/008.txt",
+                      "characterCount":  242,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "009",
+                      "image":  "pages/009.png",
+                      "textFile":  "ocr/pages/009.txt",
+                      "characterCount":  118,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "010",
+                      "image":  "pages/010.png",
+                      "textFile":  "ocr/pages/010.txt",
+                      "characterCount":  225,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "011",
+                      "image":  "pages/011.png",
+                      "textFile":  "ocr/pages/011.txt",
+                      "characterCount":  132,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "012",
+                      "image":  "pages/012.png",
+                      "textFile":  "ocr/pages/012.txt",
+                      "characterCount":  177,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "013",
+                      "image":  "pages/013.png",
+                      "textFile":  "ocr/pages/013.txt",
+                      "characterCount":  145,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "014",
+                      "image":  "pages/014.png",
+                      "textFile":  "ocr/pages/014.txt",
+                      "characterCount":  74,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "015",
+                      "image":  "pages/015.png",
+                      "textFile":  "ocr/pages/015.txt",
+                      "characterCount":  41,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "016",
+                      "image":  "pages/016.png",
+                      "textFile":  "ocr/pages/016.txt",
+                      "characterCount":  161,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "017",
+                      "image":  "pages/017.png",
+                      "textFile":  "ocr/pages/017.txt",
+                      "characterCount":  0,
+                      "hasText":  false
+                  },
+                  {
+                      "page":  "018",
+                      "image":  "pages/018.png",
+                      "textFile":  "ocr/pages/018.txt",
+                      "characterCount":  123,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "019",
+                      "image":  "pages/019.png",
+                      "textFile":  "ocr/pages/019.txt",
+                      "characterCount":  140,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "020",
+                      "image":  "pages/020.png",
+                      "textFile":  "ocr/pages/020.txt",
+                      "characterCount":  0,
+                      "hasText":  false
+                  },
+                  {
+                      "page":  "021",
+                      "image":  "pages/021.png",
+                      "textFile":  "ocr/pages/021.txt",
+                      "characterCount":  139,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "022",
+                      "image":  "pages/022.png",
+                      "textFile":  "ocr/pages/022.txt",
+                      "characterCount":  142,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "023",
+                      "image":  "pages/023.png",
+                      "textFile":  "ocr/pages/023.txt",
+                      "characterCount":  115,
+                      "hasText":  true
+                  },
+                  {
+                      "page":  "024",
+                      "image":  "pages/024.png",
+                      "textFile":  "ocr/pages/024.txt",
+                      "characterCount":  8,
+                      "hasText":  true
+                  }
+              ],
+    "notes":  [
+                  "OCR is processing evidence only and is not used as a child-facing reading body.",
+                  "Windows OCR output was used as a base; companion content still requires human review for names and plot details."
+              ]
+}

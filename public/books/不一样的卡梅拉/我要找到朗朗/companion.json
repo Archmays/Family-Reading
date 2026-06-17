@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 7,
+  "title": "我要找到朗朗",
+  "slug": "carmela-s1-07",
+  "contentType": "picture-book-companion",
+  "sourceEvidence": {
+    "pageImages": "pages/",
+    "ocrPages": "ocr/pages/",
+    "ocrFullText": "ocr/full-text.txt",
+    "ocrReport": "ocr/ocr-report.json",
+    "ocrUse": "processing evidence only, not a child-facing reading body"
+  },
+  "overview": {
+    "oneLine": "故事爷爷担心自己老了以后没人继续讲故事，卡门、卡梅利多和贝里奥陪他寻找预言里的朗朗，最后发现真正的继承者是睡在纸页上的小男孩。",
+    "mainCharacters": [
+      "卡门",
+      "卡梅利多",
+      "贝里奥",
+      "故事爷爷",
+      "伊索叔叔",
+      "野兔朗朗",
+      "狗熊朗朗",
+      "白鼬朗朗",
+      "猫头鹰朗朗",
+      "小男孩朗朗"
+    ],
+    "importantPlaces": [
+      "鸡舍",
+      "故事爷爷离开的路上",
+      "井边",
+      "树林和山谷",
+      "狗熊朗朗的洞口",
+      "桦树林",
+      "市政府钟楼",
+      "小男孩的房间"
+    ],
+    "characterRelationships": [
+      "故事爷爷每周一来给小鸡们讲故事，大家都喜欢他。",
+      "卡门、卡梅利多和贝里奥发现故事爷爷难过后，主动陪他寻找继承者。",
+      "伊索叔叔像故事家族的祖先一样提醒预言。",
+      "多个叫朗朗的动物都不是合适的继承者。",
+      "小男孩朗朗喜欢动物故事，愿意记下故事，成为新的传承者。"
+    ],
+    "keyConflict": "故事爷爷必须在三天内找到名叫朗朗的继承者，否则故事家族的故事可能被遗忘；可是他们一路遇到许多朗朗，都不是预言中的那一位。",
+    "emotionalArc": [
+      "期待",
+      "入迷",
+      "失落",
+      "担心",
+      "急切",
+      "好笑",
+      "疲惫",
+      "沮丧",
+      "发现",
+      "安心"
+    ]
+  },
+  "storyReview": {
+    "shortReview": "星期一晚上，小鸡们最期待故事爷爷来讲故事。他讲完列那狐、尤利西斯、金鸡蛋等故事后匆匆离开，却忘了奶酪口袋。卡门、卡梅利多和贝里奥追出去，发现故事爷爷在哭：他老了，还没有找到继承者。伊索叔叔的鬼魂从井边出现，提醒预言说继承者叫朗朗，睡在叶子上，要跟着箭头去找。三个小伙伴陪故事爷爷出发，先后找了野兔朗朗、狗熊朗朗、白鼬朗朗、猫头鹰朗朗等，却都不合适。最后一支箭指向一个小男孩的房间，他正睡在纸页上，名字也叫朗朗。小男孩喜欢动物故事，愿意把故事记下来。一个月后，新的朗朗来到鸡舍，给大家讲起乌鸦与狐狸的故事。",
+    "mainPlot": [
+      "星期一是鸡舍的讲故事时间，故事爷爷让大家听得入迷。",
+      "故事爷爷忘了奶酪口袋，孩子们追出去后发现他因为继承者问题哭泣。",
+      "伊索叔叔提醒预言：继承者叫朗朗，睡在叶子上，要跟着箭头找。",
+      "大家一路寻找许多叫朗朗的动物，但都不适合接班讲故事。",
+      "卡门不断想办法让年老的故事爷爷更省力地赶路。",
+      "最后他们发现睡在纸页上的小男孩朗朗，他喜欢故事并愿意记录。",
+      "小男孩朗朗成为新的讲故事人，把乌鸦与狐狸讲给鸡舍听。"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "story-01",
+      "title": "星期一的故事时间",
+      "pageRange": "002-005",
+      "summary": "小鸡们等着故事爷爷来到鸡舍。他用魔法咒语打开神奇口袋，讲列那狐、尤利西斯、金鸡蛋等故事。时间过得很快，大家都舍不得故事结束。",
+      "discussionFocus": [
+        "期待故事",
+        "安静倾听",
+        "舍不得结束"
+      ],
+      "pageRefs": [
+        "002",
+        "003",
+        "004",
+        "005"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png",
+        "pages/004.png",
+        "pages/005.png"
+      ]
+    },
+    {
+      "id": "story-02",
+      "title": "继承者的预言",
+      "pageRange": "006-009",
+      "summary": "故事爷爷忘了奶酪口袋，卡门、卡梅利多和贝里奥追出去，发现他因为自己老了、还没找到接班人而哭。伊索叔叔从井边出现，提醒他要在三天内找到叫朗朗的继承者。",
+      "discussionFocus": [
+        "忘记口袋",
+        "年老和担心",
+        "三天预言"
+      ],
+      "pageRefs": [
+        "006",
+        "007",
+        "008",
+        "009"
+      ],
+      "imageRefs": [
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png",
+        "pages/009.png"
+      ]
+    },
+    {
+      "id": "story-03",
+      "title": "第一个朗朗不合适",
+      "pageRange": "010-012",
+      "summary": "天一亮，伙伴们跟着箭头出发，贝里奥背着走不动的故事爷爷。他们找到野兔朗朗，可野兔记不住故事。接着又找了几个朗朗，都不是预言里那位。卡门想出抬椅子的办法，让大家继续赶路。",
+      "discussionFocus": [
+        "跟着箭头",
+        "记不住故事",
+        "卡门想办法"
+      ],
+      "pageRefs": [
+        "010",
+        "011",
+        "012"
+      ],
+      "imageRefs": [
+        "pages/010.png",
+        "pages/011.png",
+        "pages/012.png"
+      ]
+    },
+    {
+      "id": "story-04",
+      "title": "狗熊和白鼬朗朗",
+      "pageRange": "013-017",
+      "summary": "大家来到狗熊朗朗那里，发现箭头其实是小男孩射来的。狗熊愿意帮忙却要冬眠，不适合当故事继承者。卡门又想出用辘轳推行的办法，最后他们找到白鼬朗朗，可他的气味让故事爷爷晕倒。",
+      "discussionFocus": [
+        "狗熊洞口",
+        "箭头线索",
+        "继续排除"
+      ],
+      "pageRefs": [
+        "013",
+        "014",
+        "015",
+        "016",
+        "017"
+      ],
+      "imageRefs": [
+        "pages/013.png",
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png",
+        "pages/017.png"
+      ]
+    },
+    {
+      "id": "story-05",
+      "title": "纸页上的线索",
+      "pageRange": "018-020",
+      "summary": "第三天晚上，大家已经问过很多叫朗朗的动物，最后来到猫头鹰朗朗住的钟楼。猫头鹰也不是答案。卡梅利多发现窗上的箭，卡门认出那和狗熊身上的箭一样，线索指向一个睡在纸页上的小男孩。",
+      "discussionFocus": [
+        "最后一天",
+        "钟楼",
+        "纸也是叶子"
+      ],
+      "pageRefs": [
+        "018",
+        "019",
+        "020"
+      ],
+      "imageRefs": [
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png"
+      ]
+    },
+    {
+      "id": "story-06",
+      "title": "新的讲故事人",
+      "pageRange": "021-024",
+      "summary": "小男孩醒来，说自己叫朗朗，也很喜欢动物故事。故事爷爷把寓言、童话、神话和传奇讲给他听，小朗朗认真写下来。一个月后，新的朗朗来到鸡舍，开始讲乌鸦与狐狸的故事。",
+      "discussionFocus": [
+        "喜欢故事",
+        "写下来",
+        "传承开始"
+      ],
+      "pageRefs": [
+        "021",
+        "022",
+        "023",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/021.png",
+        "pages/022.png",
+        "pages/023.png",
+        "pages/024.png"
+      ]
+    }
+  ],
+  "questionCards": {
+    "factualRecall": [
+      {
+        "prompt": "故事爷爷每周什么时候来鸡舍讲故事？",
+        "talkingPoints": [
+          "他在星期一晚上来，星期一是小鸡们期待的讲故事时间。"
+        ],
+        "pageRange": "002-003",
+        "evidencePageRefs": [
+          "002",
+          "003"
+        ],
+        "evidenceImageRefs": [
+          "pages/002.png",
+          "pages/003.png"
+        ]
+      },
+      {
+        "prompt": "预言里要找的人叫什么名字？",
+        "talkingPoints": [
+          "预言说继承者叫朗朗，还说他睡在叶子上，要跟着箭头去找。"
+        ],
+        "pageRange": "008-009",
+        "evidencePageRefs": [
+          "008",
+          "009"
+        ],
+        "evidenceImageRefs": [
+          "pages/008.png",
+          "pages/009.png"
+        ]
+      },
+      {
+        "prompt": "最后找到的朗朗在哪里睡着了？",
+        "talkingPoints": [
+          "他睡在纸页上，卡门想到纸也可以被称作叶子。"
+        ],
+        "pageRange": "020-021",
+        "evidencePageRefs": [
+          "020",
+          "021"
+        ],
+        "evidenceImageRefs": [
+          "pages/020.png",
+          "pages/021.png"
+        ]
+      }
+    ],
+    "comprehension": [
+      {
+        "prompt": "为什么故事爷爷那么着急找到继承者？",
+        "talkingPoints": [
+          "他已经老了，走很多鸡舍讲故事让他很疲惫。",
+          "他担心如果没有继承者，故事家族的故事会被遗忘。",
+          "伊索叔叔还提醒他只剩三天时间。"
+        ],
+        "pageRange": "006-009",
+        "evidencePageRefs": [
+          "006",
+          "007",
+          "008",
+          "009"
+        ],
+        "evidenceImageRefs": [
+          "pages/006.png",
+          "pages/007.png",
+          "pages/008.png",
+          "pages/009.png"
+        ]
+      },
+      {
+        "prompt": "为什么前面那些朗朗都不是合适的继承者？",
+        "talkingPoints": [
+          "野兔朗朗记不住故事。",
+          "狗熊朗朗每年要冬眠很久，没法一直讲故事。",
+          "白鼬朗朗的气味让故事爷爷受不了，其他朗朗也各有不合适的地方。"
+        ],
+        "pageRange": "011-018",
+        "evidencePageRefs": [
+          "011",
+          "015",
+          "017",
+          "018"
+        ],
+        "evidenceImageRefs": [
+          "pages/011.png",
+          "pages/015.png",
+          "pages/017.png",
+          "pages/018.png"
+        ]
+      },
+      {
+        "prompt": "小男孩朗朗为什么适合成为新的讲故事人？",
+        "talkingPoints": [
+          "他也叫朗朗，符合预言。",
+          "他喜欢关于小动物的故事。",
+          "他愿意认真记住并写下故事，让故事可以继续流传。"
+        ],
+        "pageRange": "020-024",
+        "evidencePageRefs": [
+          "020",
+          "021",
+          "022",
+          "024"
+        ],
+        "evidenceImageRefs": [
+          "pages/020.png",
+          "pages/021.png",
+          "pages/022.png",
+          "pages/024.png"
+        ]
+      }
+    ],
+    "openExpression": [
+      {
+        "prompt": "如果你也坐在鸡舍里听故事，你最想听哪一种故事？",
+        "talkingPoints": [
+          "可以从动物故事、冒险故事、神话、童话里选，也可以说自己想讲的新故事。"
+        ],
+        "pageRange": "002-005",
+        "evidencePageRefs": [
+          "002",
+          "003",
+          "004",
+          "005"
+        ],
+        "evidenceImageRefs": [
+          "pages/002.png",
+          "pages/003.png",
+          "pages/004.png",
+          "pages/005.png"
+        ]
+      },
+      {
+        "prompt": "卡门一路想办法帮助故事爷爷赶路。你会设计什么工具帮他省力？",
+        "talkingPoints": [
+          "可以画一个安全的小车、滑轮椅、背包或休息站。",
+          "也可以说说这个工具怎么保护故事爷爷。"
+        ],
+        "pageRange": "010-017",
+        "evidencePageRefs": [
+          "010",
+          "012",
+          "016",
+          "017"
+        ],
+        "evidenceImageRefs": [
+          "pages/010.png",
+          "pages/012.png",
+          "pages/016.png",
+          "pages/017.png"
+        ]
+      },
+      {
+        "prompt": "如果你是新的朗朗，第一次给大家讲故事前会怎么开场？",
+        "talkingPoints": [
+          "可以学故事爷爷的咒语，也可以自己设计一句开场白。",
+          "可以想想怎样让听故事的人安静下来、竖起耳朵。"
+        ],
+        "pageRange": "021-024",
+        "evidencePageRefs": [
+          "021",
+          "022",
+          "023",
+          "024"
+        ],
+        "evidenceImageRefs": [
+          "pages/021.png",
+          "pages/022.png",
+          "pages/023.png",
+          "pages/024.png"
+        ]
+      }
+    ]
+  },
+  "backgroundNotes": [
+    {
+      "title": "故事可以一代代传下去",
+      "pageRange": "006-010",
+      "note": "有些故事不是一个人讲完就消失了。一个人记住它、讲给别人听，别人再继续讲，故事就像接力一样传下去。故事爷爷寻找继承者，就是想让这些故事继续被听见。",
+      "pageRefs": [
+        "006",
+        "007",
+        "008",
+        "009",
+        "010"
+      ],
+      "imageRefs": [
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png",
+        "pages/009.png",
+        "pages/010.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-langlang-story-tradition",
+      "generatedImageRefs": [
+        "generated/story-tradition.png"
+      ]
+    },
+    {
+      "title": "寓言常用动物讲道理",
+      "pageRange": "004-024",
+      "note": "寓言是一种短故事，常常让动物像人一样说话、想办法。故事听起来有趣，里面也藏着一个小道理。乌鸦与狐狸就是很有名的寓言。",
+      "pageRefs": [
+        "004",
+        "022",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/004.png",
+        "pages/022.png",
+        "pages/024.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-langlang-fable-animals",
+      "generatedImageRefs": [
+        "generated/fable-animals.png"
+      ]
+    },
+    {
+      "title": "纸页为什么也像叶子",
+      "pageRange": "019-022",
+      "note": "有些语言里，书的一页也可以说成一片叶子。预言说朗朗睡在叶子上，大家一开始只想到树叶，最后才发现纸页也是线索。",
+      "pageRefs": [
+        "019",
+        "020",
+        "021",
+        "022"
+      ],
+      "imageRefs": [
+        "pages/019.png",
+        "pages/020.png",
+        "pages/021.png",
+        "pages/022.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-langlang-paper-leaf",
+      "generatedImageRefs": [
+        "generated/paper-leaf-clue.png"
+      ]
+    }
+  ],
+  "encyclopediaEntries": [
+    {
+      "title": "伊索是谁",
+      "anchor": "伊索叔叔从井边出现，提醒故事爷爷预言",
+      "pageRange": "008-009",
+      "summary": "伊索常被认为是古希腊寓言故事的代表人物。许多短小的动物寓言都和他的名字联系在一起，比如狐狸、乌鸦、龟兔等故事。",
+      "pageRefs": [
+        "008",
+        "009"
+      ],
+      "imageRefs": [
+        "pages/008.png",
+        "pages/009.png"
+      ],
+      "storyAppearance": "伊索叔叔像故事家族的祖先一样出现，提醒故事爷爷必须找到继承者。",
+      "whatItIs": "伊索是和寓言传统联系很深的名字，代表了很多流传很久的短故事。",
+      "whyItMatters": "他的出现说明这些故事不是刚刚才有，而是从很久以前传到现在。",
+      "discussionQuestion": "伊索叔叔出现时，页面的颜色和气氛让你觉得他像普通来客吗？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-langlang-aesop",
+      "generatedImageRefs": [
+        "generated/aesop-fables.png"
+      ]
+    },
+    {
+      "title": "乌鸦与狐狸",
+      "anchor": "新朗朗回到鸡舍讲的第一个故事",
+      "pageRange": "024",
+      "summary": "乌鸦与狐狸是经典寓言。狐狸用好听的话哄乌鸦，乌鸦一开口，嘴里的食物就掉下来。这个故事提醒人不要因为被夸奖就忘了判断。",
+      "pageRefs": [
+        "024"
+      ],
+      "imageRefs": [
+        "pages/024.png"
+      ],
+      "storyAppearance": "小男孩朗朗成为新的讲故事人后，给鸡舍讲起乌鸦与狐狸。",
+      "whatItIs": "这是一个短小的动物寓言，角色通常是一只乌鸦和一只狐狸。",
+      "whyItMatters": "它说明小男孩朗朗真的开始接过故事爷爷的工作，把故事继续讲下去。",
+      "discussionQuestion": "如果你听到狐狸夸乌鸦唱歌好听，你觉得乌鸦应该马上张嘴吗？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-langlang-crow-fox",
+      "generatedImageRefs": [
+        "generated/crow-and-fox-fable.png"
+      ]
+    },
+    {
+      "title": "羽毛笔和写故事",
+      "anchor": "小男孩朗朗认真记录故事爷爷讲的故事",
+      "pageRange": "021-022",
+      "summary": "很久以前，人们会用羽毛笔蘸墨水写字。故事里，小朗朗把听来的故事写下来，让故事不只留在耳朵里，也留在纸上。",
+      "pageRefs": [
+        "021",
+        "022"
+      ],
+      "imageRefs": [
+        "pages/021.png",
+        "pages/022.png"
+      ],
+      "storyAppearance": "故事爷爷讲到天亮，小朗朗认真地把故事写下来。",
+      "whatItIs": "羽毛笔是一种旧式书写工具，用处理过的羽毛蘸墨水来写字。",
+      "whyItMatters": "写下来让故事更容易保存，也让新的讲故事人不会忘记。",
+      "discussionQuestion": "你更喜欢听故事、讲故事，还是把故事写下来？为什么？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-langlang-quill-writing",
+      "generatedImageRefs": [
+        "generated/quill-writing-stories.png"
+      ]
+    }
+  ],
+  "parentGuide": {
+    "readingUse": "这本适合围绕“故事传承、听与讲、线索推理”来共读。可以把预言里的“朗朗”“叶子”“箭头”当成线索游戏，让孩子边看页面边猜真正答案。",
+    "suggestedFlow": [
+      "先看鸡舍讲故事的热闹场面，确认故事爷爷为什么受欢迎",
+      "再看伊索叔叔和预言，记住三个关键词：朗朗、叶子、箭头",
+      "按不同朗朗逐一排除，观察为什么不合适",
+      "最后对照纸页上的小男孩，聊故事怎样从口头走到纸上"
+    ],
+    "sensitivePoints": [
+      "故事爷爷谈到老去和天堂时，可以淡化为“他年纪大了，需要接班人”。",
+      "鬼魂和夜晚画面保持童话气氛，不扩展成恐怖讨论。",
+      "多个动物朗朗的缺点用轻松方式处理，避免变成嘲笑。"
+    ]
+  },
+  "audio": {
+    "title": "我要找到朗朗",
+    "bookSlug": "carmela-s1-07",
+    "path": "public/audio/carmela-s1/carmela-s1-07.mp3",
+    "sourcePath": "source/不一样的卡梅拉/07-我要找到朗朗.mp3",
+    "markers": [],
+    "markerNote": "当前只接入整本音频；没有可靠的场景时间点证据，因此不添加 markers。"
+  },
+  "manualReview": {
+    "roleNames": [
+      "故事爷爷、伊索叔叔、野兔朗朗、狗熊朗朗、白鼬朗朗、猫头鹰朗朗和小男孩朗朗按 OCR 与画面整理，建议人工复核全部朗朗名单。",
+      "第 018 页还有多个被询问的朗朗角色，当前只作为寻找过程处理，没有展开为主要角色。"
+    ],
+    "plotPoints": [
+      "第 008-009 页的预言关键词为朗朗、叶子、箭头和三天。",
+      "第 020-022 页按“纸页也是叶子”和小男孩记录故事处理。",
+      "第 024 页按乌鸦与狐狸寓言开场处理。"
+    ],
+    "backgroundEntries": [
+      "故事传承、寓言、纸页线索、伊索、乌鸦与狐狸和羽毛笔均与本书剧情直接相关。"
+    ]
+  }
+}

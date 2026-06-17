@@ -1,0 +1,570 @@
+{
+  "schemaVersion": 1,
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 6,
+  "title": "我能打败怪兽",
+  "slug": "carmela-s1-06",
+  "contentType": "picture-book-companion",
+  "sourceEvidence": {
+    "pageImages": "pages/",
+    "ocrPages": "ocr/pages/",
+    "ocrFullText": "ocr/full-text.txt",
+    "ocrReport": "ocr/ocr-report.json",
+    "ocrUse": "processing evidence only, not a child-facing reading body"
+  },
+  "overview": {
+    "oneLine": "鸡舍闹饥荒，卡门、卡梅利多和贝里奥追着父母来到怪兽城堡；面对会把人变成石头的鸡头蛇怪，卡梅利多用一面能反光的镜子救回大家，也找到了过冬的粮食。",
+    "mainCharacters": [
+      "卡门",
+      "卡梅利多",
+      "贝里奥",
+      "皮迪克",
+      "卡梅拉",
+      "小胖墩",
+      "老公鸡卡罗",
+      "大胆先生",
+      "兰斯洛特骑士",
+      "鸡头蛇怪"
+    ],
+    "importantPlaces": [
+      "闹饥荒的鸡舍",
+      "被抢空的农场",
+      "雄鸡贼大胆旅馆",
+      "山下的城堡",
+      "吊桥",
+      "怪兽大厅",
+      "城堡粮仓"
+    ],
+    "characterRelationships": [
+      "皮迪克、卡梅拉和其他大人外出寻找食物，孩子们留在鸡舍等待。",
+      "卡门和卡梅利多发现父母有危险后，带着贝里奥去寻找他们。",
+      "老公鸡卡罗和大胆先生都提醒孩子们城堡附近有怪物。",
+      "兰斯洛特骑士自称了解鸡头蛇怪，带孩子们进入城堡。",
+      "卡门看到家人被变成石头后非常愤怒。",
+      "卡梅利多想到用镜子反光，让怪兽被自己的力量打败。"
+    ],
+    "keyConflict": "鸡舍缺少食物，父母们进入危险城堡后失踪；孩子们必须面对会石化别人的鸡头蛇怪，救出家人并找到粮食。",
+    "emotionalArc": [
+      "饥饿",
+      "担心",
+      "寻找",
+      "害怕",
+      "震惊",
+      "冲动",
+      "机智",
+      "紧张",
+      "胜利",
+      "放松"
+    ]
+  },
+  "storyReview": {
+    "shortReview": "鸡舍正在闹饥荒，爸爸妈妈们出去寻找食物，孩子们只剩下一点发霉的燕麦种子，还被小老鼠抢走。卡门、卡梅利多和贝里奥听说附近农场也被抢空，便去追赶大人。他们在路上遇见老公鸡卡罗，又在雄鸡贼大胆旅馆听说城堡里有一个可怕的鸡头蛇怪，谁看见它的眼睛就会变成石头。孩子们到城堡外发现小胖墩和伙伴们已经像水晶一样动不了。兰斯洛特骑士带他们进入城堡，卡门看到父母变成石头后冲向怪兽，骑士和卡门也都被石化。卡梅利多带着镜子赶回来，站在怪兽面前让它的毒光反射回去，怪兽膨胀爆开，所有人恢复原样。城堡里有足够的粮食，鸡舍终于能吃上一顿热腾腾的大餐。",
+    "mainPlot": [
+      "鸡舍闹饥荒，最后一点燕麦也被小老鼠抢走。",
+      "卡门、卡梅利多和贝里奥去寻找外出觅食的父母。",
+      "他们听说城堡里有能把人变成石头的鸡头蛇怪。",
+      "孩子们发现小胖墩、小六子和小刺头像冰雕一样站着不动。",
+      "兰斯洛特骑士带大家进入城堡，卡门和骑士也被怪兽石化。",
+      "卡梅利多用镜子反射怪兽的目光，打败鸡头蛇怪。",
+      "大家恢复原样，城堡粮食帮助鸡舍度过饥荒。"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "monster-01",
+      "title": "鸡舍闹饥荒",
+      "pageRange": "002-004",
+      "summary": "鸡舍里没有食物，大人们外出寻找粮食，孩子们忍着饥饿分最后一点燕麦。小老鼠突然抢走种子，卡门和卡梅利多决定去找粮食和父母。",
+      "discussionFocus": [
+        "饥荒",
+        "最后的燕麦",
+        "出发寻找"
+      ],
+      "pageRefs": [
+        "002",
+        "003",
+        "004"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png",
+        "pages/004.png"
+      ]
+    },
+    {
+      "id": "monster-02",
+      "title": "听见怪兽的传闻",
+      "pageRange": "005-008",
+      "summary": "孩子们遇见躲起来的老公鸡卡罗，又来到雄鸡贼大胆旅馆。大家说城堡附近有怪物，会袭击鸡舍和粮仓，父母们也朝城堡方向去了。",
+      "discussionFocus": [
+        "坏消息",
+        "怪兽传闻",
+        "父母的方向"
+      ],
+      "pageRefs": [
+        "005",
+        "006",
+        "007",
+        "008"
+      ],
+      "imageRefs": [
+        "pages/005.png",
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png"
+      ]
+    },
+    {
+      "id": "monster-03",
+      "title": "朋友变成水晶",
+      "pageRange": "009-012",
+      "summary": "卡门、卡梅利多和贝里奥来到城堡下，发现小胖墩、小六子和小刺头像水晶一样动不了。兰斯洛特骑士解释，鸡头蛇怪的眼睛会让人变成石头，而公鸡啼鸣也许能打败它。",
+      "discussionFocus": [
+        "城堡",
+        "石化朋友",
+        "怪兽弱点"
+      ],
+      "pageRefs": [
+        "009",
+        "010",
+        "011",
+        "012"
+      ],
+      "imageRefs": [
+        "pages/009.png",
+        "pages/010.png",
+        "pages/011.png",
+        "pages/012.png"
+      ]
+    },
+    {
+      "id": "monster-04",
+      "title": "进入怪兽城堡",
+      "pageRange": "013-016",
+      "summary": "卡梅利多想起可以拿一样东西帮忙，先跑回去。卡门跟着骑士进入城堡，看见姨妈、爸爸妈妈都被变成石头，她又伤心又愤怒。",
+      "discussionFocus": [
+        "吊桥",
+        "分头行动",
+        "家人遇险"
+      ],
+      "pageRefs": [
+        "013",
+        "014",
+        "015",
+        "016"
+      ],
+      "imageRefs": [
+        "pages/013.png",
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png"
+      ]
+    },
+    {
+      "id": "monster-05",
+      "title": "镜子挡住毒光",
+      "pageRange": "017-021",
+      "summary": "鸡头蛇怪现身，骑士和卡门都被它的目光变成石头。贝里奥碰到赶回来的卡梅利多，卡梅利多带着镜子面对怪兽。怪兽一次次喷出光线，却被反射回去，最后在卡梅利多的啼鸣中胀大爆开。",
+      "discussionFocus": [
+        "鸡头蛇怪",
+        "镜子反光",
+        "机智胜过蛮力"
+      ],
+      "pageRefs": [
+        "017",
+        "018",
+        "019",
+        "020",
+        "021"
+      ],
+      "imageRefs": [
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png",
+        "pages/021.png"
+      ]
+    },
+    {
+      "id": "monster-06",
+      "title": "粮食和大餐",
+      "pageRange": "022-024",
+      "summary": "随着巨响，冰雕一样的伙伴们恢复原样。大家在城堡里找到足够的粮食，鸡舍里又有了欢声笑语。佩罗做出一锅热腾腾的大餐，最后的菜名还和怪兽开了个玩笑。",
+      "discussionFocus": [
+        "恢复原样",
+        "找到粮食",
+        "轻松结尾"
+      ],
+      "pageRefs": [
+        "022",
+        "023",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/022.png",
+        "pages/023.png",
+        "pages/024.png"
+      ]
+    }
+  ],
+  "questionCards": {
+    "factualRecall": [
+      {
+        "prompt": "鸡舍一开始遇到了什么困难？",
+        "talkingPoints": [
+          "鸡舍闹饥荒，大人们出去寻找食物，孩子们只剩下一点燕麦种子。"
+        ],
+        "pageRange": "002-003",
+        "evidencePageRefs": [
+          "002",
+          "003"
+        ],
+        "evidenceImageRefs": [
+          "pages/002.png",
+          "pages/003.png"
+        ]
+      },
+      {
+        "prompt": "小胖墩和伙伴们在城堡下变成了什么样？",
+        "talkingPoints": [
+          "他们站在那里一动不动，像冰雕或水晶一样，身体变得很冷很硬。"
+        ],
+        "pageRange": "010",
+        "evidencePageRefs": [
+          "010"
+        ],
+        "evidenceImageRefs": [
+          "pages/010.png"
+        ]
+      },
+      {
+        "prompt": "卡梅利多最后拿了什么来对付怪兽？",
+        "talkingPoints": [
+          "他拿来一面镜子，用镜子的反光挡住并反射怪兽的目光。"
+        ],
+        "pageRange": "019-021",
+        "evidencePageRefs": [
+          "019",
+          "020",
+          "021"
+        ],
+        "evidenceImageRefs": [
+          "pages/019.png",
+          "pages/020.png",
+          "pages/021.png"
+        ]
+      }
+    ],
+    "comprehension": [
+      {
+        "prompt": "为什么卡门和卡梅利多一定要去城堡方向？",
+        "talkingPoints": [
+          "他们担心外出找食物的爸爸妈妈去了城堡附近。",
+          "沿路听到的消息都指向怪兽和城堡，所以他们想弄清楚发生了什么。"
+        ],
+        "pageRange": "004-008",
+        "evidencePageRefs": [
+          "004",
+          "005",
+          "006",
+          "007",
+          "008"
+        ],
+        "evidenceImageRefs": [
+          "pages/004.png",
+          "pages/005.png",
+          "pages/006.png",
+          "pages/007.png",
+          "pages/008.png"
+        ]
+      },
+      {
+        "prompt": "卡门看到家人变成石头后，为什么不能只靠冲上去解决问题？",
+        "talkingPoints": [
+          "她很爱家人，所以一下子又伤心又愤怒。",
+          "可是鸡头蛇怪的目光很危险，直接冲上去会被变成石头。",
+          "卡梅利多带镜子回来，说明面对危险也需要想办法。"
+        ],
+        "pageRange": "016-021",
+        "evidencePageRefs": [
+          "016",
+          "017",
+          "018",
+          "019",
+          "020",
+          "021"
+        ],
+        "evidenceImageRefs": [
+          "pages/016.png",
+          "pages/017.png",
+          "pages/018.png",
+          "pages/019.png",
+          "pages/020.png",
+          "pages/021.png"
+        ]
+      },
+      {
+        "prompt": "这个故事里，勇敢和聪明分别表现在哪里？",
+        "talkingPoints": [
+          "勇敢表现在孩子们愿意去找父母、进入城堡、面对怪兽。",
+          "聪明表现在卡梅利多想到镜子可以反射怪兽的目光。",
+          "最后救大家的不是比怪兽更凶，而是找到它的弱点。"
+        ],
+        "pageRange": "009-022",
+        "evidencePageRefs": [
+          "009",
+          "013",
+          "016",
+          "019",
+          "020",
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/009.png",
+          "pages/013.png",
+          "pages/016.png",
+          "pages/019.png",
+          "pages/020.png",
+          "pages/021.png",
+          "pages/022.png"
+        ]
+      }
+    ],
+    "openExpression": [
+      {
+        "prompt": "如果你听见一个很可怕的传闻，你会怎么确认它是不是真的？",
+        "talkingPoints": [
+          "可以先问清楚是谁看见的、在哪里发生的，也可以请大人一起判断。",
+          "害怕的时候不要一个人冒险。"
+        ],
+        "pageRange": "005-008",
+        "evidencePageRefs": [
+          "005",
+          "006",
+          "007",
+          "008"
+        ],
+        "evidenceImageRefs": [
+          "pages/005.png",
+          "pages/006.png",
+          "pages/007.png",
+          "pages/008.png"
+        ]
+      },
+      {
+        "prompt": "卡梅利多用镜子打败怪兽。你还能想到哪些“用脑子”的办法？",
+        "talkingPoints": [
+          "可以说借工具、找弱点、绕开危险、请伙伴帮忙等办法。",
+          "重点是先观察，再行动。"
+        ],
+        "pageRange": "019-021",
+        "evidencePageRefs": [
+          "019",
+          "020",
+          "021"
+        ],
+        "evidenceImageRefs": [
+          "pages/019.png",
+          "pages/020.png",
+          "pages/021.png"
+        ]
+      },
+      {
+        "prompt": "如果你是被救回来的小胖墩，会对卡梅利多说什么？",
+        "talkingPoints": [
+          "可以表达感谢，也可以说说刚才最害怕的时刻。",
+          "还可以给这次冒险起一个名字。"
+        ],
+        "pageRange": "010-023",
+        "evidencePageRefs": [
+          "010",
+          "022",
+          "023"
+        ],
+        "evidenceImageRefs": [
+          "pages/010.png",
+          "pages/022.png",
+          "pages/023.png"
+        ]
+      }
+    ]
+  },
+  "backgroundNotes": [
+    {
+      "title": "饥荒就是食物不够了",
+      "pageRange": "002-004",
+      "note": "饥荒是很长一段时间食物不够，大家都吃不饱。故事开头的鸡舍就是这样，所以大人们出去找粮食，孩子们也会因为一点燕麦被抢走而着急。",
+      "pageRefs": [
+        "002",
+        "003",
+        "004"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png",
+        "pages/004.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-monster-famine-food",
+      "generatedImageRefs": [
+        "generated/famine-food-shortage.png"
+      ]
+    },
+    {
+      "title": "吊桥能保护城堡入口",
+      "pageRange": "013-014",
+      "note": "吊桥是一种可以升起、放下的桥。桥放下来时，人可以通过；桥吊起来时，入口就更难靠近。故事里的城堡有吊桥，让冒险更像古老骑士故事。",
+      "pageRefs": [
+        "013",
+        "014"
+      ],
+      "imageRefs": [
+        "pages/013.png",
+        "pages/014.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-monster-drawbridge",
+      "generatedImageRefs": [
+        "generated/castle-drawbridge.png"
+      ]
+    },
+    {
+      "title": "镜子为什么能反光",
+      "pageRange": "019-021",
+      "note": "镜子表面很光滑，光照到上面会反射回来。卡梅利多用镜子面对鸡头蛇怪，就是让怪兽发出的危险光线回到它自己那里。",
+      "pageRefs": [
+        "019",
+        "020",
+        "021"
+      ],
+      "imageRefs": [
+        "pages/019.png",
+        "pages/020.png",
+        "pages/021.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-monster-mirror-reflection",
+      "generatedImageRefs": [
+        "generated/mirror-reflection.png"
+      ]
+    }
+  ],
+  "encyclopediaEntries": [
+    {
+      "title": "鸡头蛇怪是什么",
+      "anchor": "城堡里的怪兽会把角色变成石头",
+      "pageRange": "011-021",
+      "summary": "鸡头蛇怪是古老传说里的怪物，常被想象成有公鸡、蛇和龙的特点。故事把它画成很夸张的大怪兽，让孩子们用勇气和聪明来对付它。",
+      "pageRefs": [
+        "011",
+        "017",
+        "018",
+        "020",
+        "021"
+      ],
+      "imageRefs": [
+        "pages/011.png",
+        "pages/017.png",
+        "pages/018.png",
+        "pages/020.png",
+        "pages/021.png"
+      ],
+      "storyAppearance": "兰斯洛特骑士介绍它，后来它在城堡大厅里出现，并把多个角色变成石头。",
+      "whatItIs": "鸡头蛇怪是传说中的想象怪物，不是真实动物。",
+      "whyItMatters": "它制造了故事里最大的危险，也让镜子反光这个办法变得关键。",
+      "discussionQuestion": "页面里的鸡头蛇怪有哪些像公鸡、蛇或龙的地方？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-monster-cockatrice",
+      "generatedImageRefs": [
+        "generated/cockatrice-legend.png"
+      ]
+    },
+    {
+      "title": "骑士故事里的盔甲和剑",
+      "anchor": "兰斯洛特骑士带孩子们进入城堡",
+      "pageRange": "011-018",
+      "summary": "古老骑士故事里，骑士常穿盔甲、骑马、拿剑，去完成危险任务。这里的骑士很有戏剧感，但他也会害怕和失败，真正的办法来自卡梅利多。",
+      "pageRefs": [
+        "011",
+        "012",
+        "013",
+        "018"
+      ],
+      "imageRefs": [
+        "pages/011.png",
+        "pages/012.png",
+        "pages/013.png",
+        "pages/018.png"
+      ],
+      "storyAppearance": "兰斯洛特骑士出现后，解释怪兽并带着孩子们靠近城堡。",
+      "whatItIs": "骑士是中世纪故事中常见的人物形象，盔甲用来保护身体，剑是故事里的战斗道具。",
+      "whyItMatters": "骑士让城堡冒险变得像传说，但故事最后说明勇气也需要聪明办法。",
+      "discussionQuestion": "骑士的盔甲、马和剑在页面里分别在哪里？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-monster-knight-armor",
+      "generatedImageRefs": [
+        "generated/knight-armor-story.png"
+      ]
+    },
+    {
+      "title": "粮仓为什么重要",
+      "anchor": "城堡里的粮食帮助鸡舍度过饥荒",
+      "pageRange": "023-024",
+      "summary": "粮仓是储存谷物和食物的地方。故事开头大家没有东西吃，结尾城堡里的粮食让鸡舍重新热闹起来，前后正好连在一起。",
+      "pageRefs": [
+        "023",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/023.png",
+        "pages/024.png"
+      ],
+      "storyAppearance": "怪兽被打败后，城堡里找到的粮食足够大家度过饥荒。",
+      "whatItIs": "粮仓用来保存燕麦、小麦、玉米等食物，帮助大家在食物少的时候有储备。",
+      "whyItMatters": "找到粮食解决了故事最开始的困难，也让大家能一起吃上大餐。",
+      "discussionQuestion": "你能从开头和结尾找出“没有食物”和“有大餐”的变化吗？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-monster-grain-storage",
+      "generatedImageRefs": [
+        "generated/grain-storage.png"
+      ]
+    }
+  ],
+  "parentGuide": {
+    "readingUse": "这本适合围绕“面对害怕、寻找弱点、用聪明办法解决问题”来共读。可以先看饥荒和寻找父母，再看鸡头蛇怪的危险，最后重点聊镜子为什么能成为转机。",
+    "suggestedFlow": [
+      "先用开头几页确认鸡舍为什么着急",
+      "按路线上旅馆、城堡、吊桥、怪兽大厅复述冒险",
+      "在镜子页面停下来，让孩子猜卡梅利多想到了什么",
+      "结尾回到粮食和大餐，连接故事开头的饥荒"
+    ],
+    "sensitivePoints": [
+      "怪兽和石化画面可能让低龄孩子紧张，可强调这是童话冒险里的夸张设定。",
+      "骑士和武器只作为故事元素，不鼓励现实模仿打斗。",
+      "饥荒话题保持低龄解释，不扩展成沉重灾难讨论。"
+    ]
+  },
+  "audio": {
+    "title": "我能打败怪兽",
+    "bookSlug": "carmela-s1-06",
+    "path": "public/audio/carmela-s1/carmela-s1-06.mp3",
+    "sourcePath": "source/不一样的卡梅拉/06-我能打败怪兽.mp3",
+    "markers": [],
+    "markerNote": "当前只接入整本音频；没有可靠的场景时间点证据，因此不添加 markers。"
+  },
+  "manualReview": {
+    "roleNames": [
+      "兰斯洛特骑士、雄鸡贼大胆旅馆、老公鸡卡罗和鸡头蛇怪名称按 OCR 与画面综合整理，建议人工复核原书译名。",
+      "小六子、小刺头、小胖墩按前几本角色名延续，建议人工确认第 010 页群像名单。"
+    ],
+    "plotPoints": [
+      "第 011-012 页按鸡头蛇怪传说说明处理，避免把传说写成真实动物。",
+      "第 019-021 页按镜子反光打败怪兽处理，这是问答和背景补充的核心证据。",
+      "第 023-024 页按粮食解决饥荒和蛇怪面条笑点处理。"
+    ],
+    "backgroundEntries": [
+      "饥荒、吊桥、镜子反光、鸡头蛇怪、骑士和粮仓均与本书剧情直接相关。"
+    ]
+  }
+}

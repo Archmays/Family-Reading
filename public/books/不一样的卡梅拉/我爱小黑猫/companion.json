@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 1,
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 5,
+  "title": "我爱小黑猫",
+  "slug": "carmela-s1-05",
+  "contentType": "picture-book-companion",
+  "sourceEvidence": {
+    "pageImages": "pages/",
+    "ocrPages": "ocr/pages/",
+    "ocrFullText": "ocr/full-text.txt",
+    "ocrReport": "ocr/ocr-report.json",
+    "ocrUse": "processing evidence only, not a child-facing reading body"
+  },
+  "overview": {
+    "oneLine": "卡门和卡梅利多救起一只被扔进河里的小黑猫，鸡舍因为迷信一次次责怪他；后来小黑猫勇敢赶走强盗田鼠，证明真正带来不幸的不是黑色皮毛，而是偏见和不公平。",
+    "mainCharacters": [
+      "卡门",
+      "卡梅利多",
+      "落汤鸡",
+      "卡梅拉",
+      "皮迪克",
+      "贝里奥",
+      "佩罗",
+      "小胖墩",
+      "田鼠强盗"
+    ],
+    "importantPlaces": [
+      "小河边",
+      "鸡舍",
+      "四季风磨坊",
+      "秋天的果园和院子",
+      "结冰的小河",
+      "雪地和森林边",
+      "马车旁"
+    ],
+    "characterRelationships": [
+      "卡门第一个亲近小黑猫，给他温暖和名字。",
+      "卡梅利多一开始听信黑猫会带来坏运气的说法，后来和卡门一起保护落汤鸡。",
+      "卡梅拉和皮迪克同情小猫的不幸，愿意先收留他。",
+      "鸡舍里的许多角色把丢蛋、落叶、结冰都怪到小黑猫身上。",
+      "落汤鸡努力练习抓老鼠，离开鸡舍后又回来救大家。",
+      "小胖墩曾经嘲笑落汤鸡，被救后向他道歉，并改叫他穿靴子的猫。"
+    ],
+    "keyConflict": "小黑猫被救后没有被公平对待，鸡舍把各种自然变化和麻烦都归咎于他；真正的危险来临时，大家才看见他的勇敢和价值。",
+    "emotionalArc": [
+      "好奇",
+      "同情",
+      "害怕",
+      "委屈",
+      "不公平",
+      "离别",
+      "紧张",
+      "勇敢",
+      "和解",
+      "惊喜"
+    ]
+  },
+  "storyReview": {
+    "shortReview": "小鸡们在河边钓鱼时，小胖墩钓上来的不是鱼，而是一只装在麻袋里的小黑猫。卡门和卡梅利多把他救出来，听他说自己因为黑色皮毛被主人抛弃，便把他带回鸡舍，叫他落汤鸡。可是鸡舍里许多人迷信黑猫会带来倒霉，丢蛋、秋天落叶、冬天结冰都怪在他身上。卡门和卡梅利多一次次维护朋友，落汤鸡也努力学习捉老鼠。后来他不想连累大家，独自离开。真正的强盗田鼠闯进鸡舍时，落汤鸡突然回来，赶走强盗，还救出小胖墩。大家终于明白自己误会了他。夏天到来时，穿靴子的猫坐着马车回来，给朋友们带来新的惊喜。",
+    "mainPlot": [
+      "小鸡们钓鱼时救起被装在麻袋里的小黑猫。",
+      "小黑猫讲述自己因为黑色皮毛被主人嫌弃并丢进河里。",
+      "卡梅拉和皮迪克收留他，但鸡舍里很多人把他当成倒霉的象征。",
+      "丢蛋、落叶、冰雪等事情都被误怪到落汤鸡身上。",
+      "卡门和卡梅利多保护朋友，落汤鸡也练习抓老鼠。",
+      "落汤鸡离开后又在强盗田鼠袭击时回来救大家。",
+      "小胖墩向落汤鸡道歉，后来他以穿靴子的猫身份带着马车回到鸡舍。"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "cat-01",
+      "title": "钓到一只小黑猫",
+      "pageRange": "002-004",
+      "summary": "小鸡们在河边热热闹闹地钓鱼，小胖墩喊着钓到了大东西。大家围上来一看，麻袋里不是鱼，而是一只湿透的小黑猫。卡门心疼地抱起他，卡梅利多却担心黑猫会带来坏运气。",
+      "discussionFocus": [
+        "河边钓鱼",
+        "救助小猫",
+        "第一次听见迷信"
+      ],
+      "pageRefs": [
+        "002",
+        "003",
+        "004"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png",
+        "pages/004.png"
+      ]
+    },
+    {
+      "id": "cat-02",
+      "title": "被收留的落汤鸡",
+      "pageRange": "005-008",
+      "summary": "小黑猫说自己来自四季风磨坊，因为黑色皮毛被主人装进麻袋扔进河里。卡梅拉和皮迪克决定收留他，可第二天鸡蛋丢了，许多人立刻把小偷和坏运气都怪到他身上。",
+      "discussionFocus": [
+        "被抛弃",
+        "同情和收留",
+        "被误会"
+      ],
+      "pageRefs": [
+        "005",
+        "006",
+        "007",
+        "008"
+      ],
+      "imageRefs": [
+        "pages/005.png",
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png"
+      ]
+    },
+    {
+      "id": "cat-03",
+      "title": "什么都怪到黑猫身上",
+      "pageRange": "009-013",
+      "summary": "秋天树叶落了，冬天河水结冰了，小鸡们从没见过这些变化，便害怕地说是黑猫惹的祸。佩罗试着解释自然现象，却又讲起黑猫和巫婆的传说。卡门和卡梅利多继续保护落汤鸡，还陪他练习抓老鼠。",
+      "discussionFocus": [
+        "秋天落叶",
+        "冬天结冰",
+        "偏见越来越重"
+      ],
+      "pageRefs": [
+        "009",
+        "010",
+        "011",
+        "012",
+        "013"
+      ],
+      "imageRefs": [
+        "pages/009.png",
+        "pages/010.png",
+        "pages/011.png",
+        "pages/012.png",
+        "pages/013.png"
+      ]
+    },
+    {
+      "id": "cat-04",
+      "title": "朋友离开鸡舍",
+      "pageRange": "014-015",
+      "summary": "落汤鸡不想继续让朋友为难，决定离开鸡舍去旅行。卡门、卡梅利多、贝里奥和家人都很舍不得，小胖墩一伙却幸灾乐祸。",
+      "discussionFocus": [
+        "告别",
+        "难过",
+        "不公平的欢呼"
+      ],
+      "pageRefs": [
+        "014",
+        "015"
+      ],
+      "imageRefs": [
+        "pages/014.png",
+        "pages/015.png"
+      ]
+    },
+    {
+      "id": "cat-05",
+      "title": "真正的坏家伙来了",
+      "pageRange": "016-020",
+      "summary": "三个田鼠强盗趁大家睡觉闯进鸡舍，威胁皮迪克和小鸡们。落汤鸡突然撞开门回来，用对付耗子的本领打退强盗。大家刚欢呼，又发现小胖墩被细尾巴抓走了。",
+      "discussionFocus": [
+        "田鼠强盗",
+        "突然归来",
+        "真正的勇敢"
+      ],
+      "pageRefs": [
+        "016",
+        "017",
+        "018",
+        "019",
+        "020"
+      ],
+      "imageRefs": [
+        "pages/016.png",
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png"
+      ]
+    },
+    {
+      "id": "cat-06",
+      "title": "穿靴子的猫回来啦",
+      "pageRange": "021-024",
+      "summary": "卡门、卡梅利多和贝里奥沿着雪地脚印追去，小胖墩逃回来，说落汤鸡救了自己。小胖墩向他道歉，并改叫他穿靴子的猫。夏天，穿靴子的猫坐着马车回来，给朋友们带来热闹的惊喜。",
+      "discussionFocus": [
+        "雪地脚印",
+        "道歉",
+        "惊喜重逢"
+      ],
+      "pageRefs": [
+        "021",
+        "022",
+        "023",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/021.png",
+        "pages/022.png",
+        "pages/023.png",
+        "pages/024.png"
+      ]
+    }
+  ],
+  "questionCards": {
+    "factualRecall": [
+      {
+        "prompt": "小胖墩钓上来的东西到底是什么？",
+        "talkingPoints": [
+          "他钓上来的是一个麻袋，里面有一只湿透的小黑猫，不是鱼。"
+        ],
+        "pageRange": "003-004",
+        "evidencePageRefs": [
+          "003",
+          "004"
+        ],
+        "evidenceImageRefs": [
+          "pages/003.png",
+          "pages/004.png"
+        ]
+      },
+      {
+        "prompt": "小黑猫为什么被扔进河里？",
+        "talkingPoints": [
+          "他讲到自己因为黑色皮毛被主人嫌弃，主人把他装进麻袋扔进河里。"
+        ],
+        "pageRange": "005",
+        "evidencePageRefs": [
+          "005"
+        ],
+        "evidenceImageRefs": [
+          "pages/005.png"
+        ]
+      },
+      {
+        "prompt": "后来是谁救了被抓走的小胖墩？",
+        "talkingPoints": [
+          "落汤鸡救了小胖墩，小胖墩后来承认自己误会了他。"
+        ],
+        "pageRange": "021-022",
+        "evidencePageRefs": [
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/021.png",
+          "pages/022.png"
+        ]
+      }
+    ],
+    "comprehension": [
+      {
+        "prompt": "为什么鸡舍里很多人一有麻烦就责怪落汤鸡？",
+        "talkingPoints": [
+          "他们听信黑猫会带来坏运气的说法，没有先找证据。",
+          "他们不熟悉秋天落叶、冬天结冰等变化，害怕时就把原因推给小黑猫。"
+        ],
+        "pageRange": "006-013",
+        "evidencePageRefs": [
+          "006",
+          "008",
+          "009",
+          "010",
+          "012",
+          "013"
+        ],
+        "evidenceImageRefs": [
+          "pages/006.png",
+          "pages/008.png",
+          "pages/009.png",
+          "pages/010.png",
+          "pages/012.png",
+          "pages/013.png"
+        ]
+      },
+      {
+        "prompt": "卡门和卡梅利多怎样表现出他们把落汤鸡当朋友？",
+        "talkingPoints": [
+          "他们把小猫从麻袋里救出来，给他温暖。",
+          "别人责怪小黑猫时，他们站出来保护他。",
+          "他们陪他练习抓老鼠，也在他离开时难过。"
+        ],
+        "pageRange": "004-014",
+        "evidencePageRefs": [
+          "004",
+          "009",
+          "011",
+          "013",
+          "014"
+        ],
+        "evidenceImageRefs": [
+          "pages/004.png",
+          "pages/009.png",
+          "pages/011.png",
+          "pages/013.png",
+          "pages/014.png"
+        ]
+      },
+      {
+        "prompt": "落汤鸡回来救大家后，鸡舍里的看法为什么会改变？",
+        "talkingPoints": [
+          "真正伤害大家的是田鼠强盗，不是小黑猫。",
+          "落汤鸡用行动救了皮迪克、小鸡们和小胖墩，大家看见了他的勇敢。"
+        ],
+        "pageRange": "016-022",
+        "evidencePageRefs": [
+          "016",
+          "018",
+          "019",
+          "020",
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/016.png",
+          "pages/018.png",
+          "pages/019.png",
+          "pages/020.png",
+          "pages/021.png",
+          "pages/022.png"
+        ]
+      }
+    ],
+    "openExpression": [
+      {
+        "prompt": "如果你看到一个新朋友被大家误会，你会先做什么？",
+        "talkingPoints": [
+          "可以先听听新朋友怎么说，再问清楚发生了什么。",
+          "也可以请大人一起帮忙，不跟着别人喊难听的话。"
+        ],
+        "pageRange": "004-009",
+        "evidencePageRefs": [
+          "004",
+          "006",
+          "008",
+          "009"
+        ],
+        "evidenceImageRefs": [
+          "pages/004.png",
+          "pages/006.png",
+          "pages/008.png",
+          "pages/009.png"
+        ]
+      },
+      {
+        "prompt": "落汤鸡离开时，卡门他们为什么会难过？你有没有舍不得朋友的时候？",
+        "talkingPoints": [
+          "可以说说朋友离开时的心情，也可以想想怎样表达想念和祝福。"
+        ],
+        "pageRange": "014-015",
+        "evidencePageRefs": [
+          "014",
+          "015"
+        ],
+        "evidenceImageRefs": [
+          "pages/014.png",
+          "pages/015.png"
+        ]
+      },
+      {
+        "prompt": "如果你给落汤鸡写一张欢迎回来的卡片，你会写哪一句话？",
+        "talkingPoints": [
+          "可以感谢他的勇敢，也可以为之前的误会道歉。",
+          "还可以给他画一双靴子或一辆马车。"
+        ],
+        "pageRange": "021-024",
+        "evidencePageRefs": [
+          "021",
+          "022",
+          "023",
+          "024"
+        ],
+        "evidenceImageRefs": [
+          "pages/021.png",
+          "pages/022.png",
+          "pages/023.png",
+          "pages/024.png"
+        ]
+      }
+    ]
+  },
+  "backgroundNotes": [
+    {
+      "title": "黑猫不会带来坏运气",
+      "pageRange": "004-010",
+      "note": "黑猫只是毛色是黑色的猫。故事里，大家把坏事怪到小黑猫身上，是因为他们先相信了传言，没有认真找原因。判断一件事，要看证据，不要只看外表。",
+      "pageRefs": [
+        "004",
+        "006",
+        "008",
+        "010"
+      ],
+      "imageRefs": [
+        "pages/004.png",
+        "pages/006.png",
+        "pages/008.png",
+        "pages/010.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-cat-black-cat-kindness",
+      "generatedImageRefs": [
+        "generated/black-cat-kindness.png"
+      ]
+    },
+    {
+      "title": "落叶和结冰是季节变化",
+      "pageRange": "009-013",
+      "note": "秋天到来时，树叶会变黄、变红，然后落下来。冬天气温很低时，水会结成冰。鸡舍里的小鸡第一次看见这些变化，所以吓了一跳，但这不是小黑猫造成的。",
+      "pageRefs": [
+        "009",
+        "010",
+        "012",
+        "013"
+      ],
+      "imageRefs": [
+        "pages/009.png",
+        "pages/010.png",
+        "pages/012.png",
+        "pages/013.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-cat-seasons-change",
+      "generatedImageRefs": [
+        "generated/seasons-change.png"
+      ]
+    },
+    {
+      "title": "先找证据，再下结论",
+      "pageRange": "016-022",
+      "note": "故事里真正闯进鸡舍的是田鼠强盗。落汤鸡救了大家以后，大家才明白之前太快责怪他了。遇到问题时，先观察、先询问，才能更接近真相。",
+      "pageRefs": [
+        "016",
+        "018",
+        "019",
+        "021",
+        "022"
+      ],
+      "imageRefs": [
+        "pages/016.png",
+        "pages/018.png",
+        "pages/019.png",
+        "pages/021.png",
+        "pages/022.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-cat-evidence-before-blame",
+      "generatedImageRefs": [
+        "generated/evidence-before-blame.png"
+      ]
+    }
+  ],
+  "encyclopediaEntries": [
+    {
+      "title": "猫为什么会捉老鼠",
+      "anchor": "落汤鸡练习抓老鼠并赶走田鼠强盗",
+      "pageRange": "011-019",
+      "summary": "猫天生动作灵活，听觉、嗅觉和夜间观察能力都很强，所以常被人们认为会捉老鼠。故事把这种本领变成落汤鸡保护朋友的关键能力。",
+      "pageRefs": [
+        "011",
+        "018",
+        "019"
+      ],
+      "imageRefs": [
+        "pages/011.png",
+        "pages/018.png",
+        "pages/019.png"
+      ],
+      "storyAppearance": "卡门和卡梅利多陪落汤鸡练习技巧，后来他用这些本领对付田鼠强盗。",
+      "whatItIs": "猫是动作敏捷的小型动物，爪子、胡须、耳朵和眼睛都能帮助它观察周围。",
+      "whyItMatters": "大家原本害怕小黑猫，真正危险来临时却是他的本领保护了鸡舍。",
+      "discussionQuestion": "你能在页面图里找出落汤鸡移动很快、很灵活的动作吗？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-cat-mouse-catching",
+      "generatedImageRefs": [
+        "generated/mouse-catching-cat.png"
+      ]
+    },
+    {
+      "title": "穿靴子的猫",
+      "anchor": "小胖墩把落汤鸡叫作穿靴子的猫",
+      "pageRange": "022-024",
+      "summary": "穿靴子的猫是欧洲童话里有名的机灵猫形象。这个故事让落汤鸡穿上靴子、坐马车回来，像是在和经典童话开一个快乐的小玩笑。",
+      "pageRefs": [
+        "022",
+        "023",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/022.png",
+        "pages/023.png",
+        "pages/024.png"
+      ],
+      "storyAppearance": "落汤鸡救了小胖墩后，小胖墩改口叫他穿靴子的猫；夏天他坐着马车回来。",
+      "whatItIs": "穿靴子的猫是一个童话角色，常被画成戴帽子、穿靴子、很会想办法的猫。",
+      "whyItMatters": "这个名字让落汤鸡从被嫌弃的流浪猫，变成让大家欢迎的勇敢朋友。",
+      "discussionQuestion": "页面里的靴子、帽子和马车让你想到怎样的童话英雄？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-cat-puss-in-boots",
+      "generatedImageRefs": [
+        "generated/puss-in-boots-reference.png"
+      ]
+    },
+    {
+      "title": "田鼠和老鼠有什么像",
+      "anchor": "田鼠强盗闯进鸡舍",
+      "pageRange": "016-021",
+      "summary": "田鼠和老鼠都是小型啮齿动物，门牙会不断生长，常啃咬植物、种子和谷物。故事里的田鼠被夸张成强盗，让危险变得像冒险戏。",
+      "pageRefs": [
+        "016",
+        "017",
+        "019",
+        "021"
+      ],
+      "imageRefs": [
+        "pages/016.png",
+        "pages/017.png",
+        "pages/019.png",
+        "pages/021.png"
+      ],
+      "storyAppearance": "三个田鼠强盗偷偷靠近鸡舍，抢食物，还抓走小胖墩。",
+      "whatItIs": "田鼠是生活在田野、草地或洞穴附近的小动物，外形和老鼠相似。",
+      "whyItMatters": "田鼠强盗才是真正的危险，也让落汤鸡有机会证明自己。",
+      "discussionQuestion": "田鼠强盗出现时，页面里的动作和表情为什么让人紧张？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-cat-field-mice",
+      "generatedImageRefs": [
+        "generated/field-mice-observation.png"
+      ]
+    }
+  ],
+  "parentGuide": {
+    "readingUse": "这本适合围绕“不要凭外表判断朋友、迷信和证据、被误会后的勇敢”来共读。重点放在卡门怎样保护小黑猫，以及小黑猫怎样用行动改变大家的看法。",
+    "suggestedFlow": [
+      "先看河边救小猫的页面，确认小黑猫遇到了什么危险",
+      "再看鸡舍如何一次次把坏事怪到他身上",
+      "用秋天落叶和冬天结冰页面区分自然变化和迷信",
+      "最后看田鼠强盗和穿靴子的猫回归，聊道歉和重新接纳"
+    ],
+    "sensitivePoints": [
+      "小黑猫被装进麻袋扔河里的情节可以轻描淡写处理，重点放在救助和保护。",
+      "黑猫迷信不需要强化为吓人传说，直接说黑猫只是普通猫。",
+      "田鼠强盗段落保持故事冒险语气，不扩展成真实暴力。"
+    ]
+  },
+  "audio": {
+    "title": "我爱小黑猫",
+    "bookSlug": "carmela-s1-05",
+    "path": "public/audio/carmela-s1/carmela-s1-05.mp3",
+    "sourcePath": "source/不一样的卡梅拉/05-我爱小黑猫.mp3",
+    "markers": [],
+    "markerNote": "当前只接入整本音频；没有可靠的场景时间点证据，因此不添加 markers。"
+  },
+  "manualReview": {
+    "roleNames": [
+      "小黑猫名字按页面语境整理为落汤鸡，OCR 中有落汤鸣等误识，建议人工复核。",
+      "田鼠强盗、细尾巴和穿靴子的猫相关称呼按 OCR 与画面综合整理，建议后续对照实体书确认。"
+    ],
+    "plotPoints": [
+      "第 009-013 页按季节变化被误怪到黑猫身上处理。",
+      "第 016-022 页按田鼠强盗袭击和落汤鸡救援处理。",
+      "第 023-024 页按穿靴子的猫回访和童话呼应处理。"
+    ],
+    "backgroundEntries": [
+      "黑猫迷信、季节变化、证据判断、猫捉老鼠、穿靴子的猫和田鼠均与本书剧情直接相关。"
+    ]
+  }
+}
