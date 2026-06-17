@@ -20,7 +20,7 @@ const requiredTitles = [
   '我不是胆小鬼',
   '我爱平底锅',
 ];
-const publishedTitles = requiredTitles.slice(0, 10);
+const publishedTitles = requiredTitles.slice(0, 12);
 const expectedAudio = new Map([
   ['我想去看海', {
     source: 'source/不一样的卡梅拉/01-我想去看海.mp3',
@@ -61,6 +61,14 @@ const expectedAudio = new Map([
   ['我要救出贝里奥', {
     source: 'source/不一样的卡梅拉/10-我要救出贝里奥.mp3',
     publicPath: 'public/audio/carmela-s1/carmela-s1-10.mp3',
+  }],
+  ['我不是胆小鬼', {
+    source: 'source/不一样的卡梅拉/11-我不是胆小鬼.mp3',
+    publicPath: 'public/audio/carmela-s1/carmela-s1-11.mp3',
+  }],
+  ['我爱平底锅', {
+    source: 'source/不一样的卡梅拉/12-我爱平底锅.mp3',
+    publicPath: 'public/audio/carmela-s1/carmela-s1-12.mp3',
   }],
 ]);
 const requiredUiText = [
@@ -261,7 +269,7 @@ test('published books publish audio through ASCII GitHub Pages paths', () => {
     assert.equal(statSync(publicPath).size > 0, true, `${title} public audio copy should not be empty`);
   }
 
-  assert.equal(series.books.slice(0, 10).every((book) => book.audio?.path?.startsWith('public/audio/')), true);
+  assert.equal(series.books.slice(0, 12).every((book) => book.audio?.path?.startsWith('public/audio/')), true);
 });
 
 test('Carmela audio onboarding doc exists and documents future books', () => {
@@ -354,7 +362,7 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
   assert.match(buildScript, /\bassets\b/, 'build script should publish app assets');
   assert.match(buildScript, /\bocr\b/, 'build script should explicitly exclude OCR intermediate files');
   assert.match(buildScript, /\bsource\b/, 'build script should explicitly keep source material out of dist');
-  assert.match(buildScript, /publishedBookCount\s*=\s*10/, 'build script should publish only the current first ten books');
+  assert.match(buildScript, /publishedBookCount\s*=\s*12/, 'build script should publish the current twelve books');
   assert.match(buildScript, /series\.books\.slice\(0,\s*publishedBookCount\)/, 'build script should avoid publishing unused book folders');
 
   assert.equal(existsSync(workflowPath), true, 'GitHub Pages workflow should exist');

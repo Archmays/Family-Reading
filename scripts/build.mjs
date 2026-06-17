@@ -7,7 +7,7 @@ import path from 'node:path';
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outputDir = path.join(rootDir, 'dist');
 const outputDirName = 'dist';
-const publishedBookCount = 10;
+const publishedBookCount = 12;
 const excludedDirectoryNames = new Set(['ocr', 'source']);
 const excludedExtensions = new Set(['.pdf']);
 const seriesIndexPath = path.join(rootDir, 'public', 'books', '不一样的卡梅拉', 'series.json');

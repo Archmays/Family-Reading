@@ -149,14 +149,28 @@
       "title": "我不是胆小鬼",
       "slug": "carmela-s1-11",
       "folder": "public/books/不一样的卡梅拉/我不是胆小鬼",
-      "assetFile": "book-assets.json"
+      "assetFile": "book-assets.json",
+      "companionFile": "companion.json",
+      "ocrReport": "ocr/ocr-report.json",
+      "audio": {
+        "title": "我不是胆小鬼",
+        "path": "public/audio/carmela-s1/carmela-s1-11.mp3",
+        "sourcePath": "source/不一样的卡梅拉/11-我不是胆小鬼.mp3"
+      }
     },
     {
       "order": 12,
       "title": "我爱平底锅",
       "slug": "carmela-s1-12",
       "folder": "public/books/不一样的卡梅拉/我爱平底锅",
-      "assetFile": "book-assets.json"
+      "assetFile": "book-assets.json",
+      "companionFile": "companion.json",
+      "ocrReport": "ocr/ocr-report.json",
+      "audio": {
+        "title": "我爱平底锅",
+        "path": "public/audio/carmela-s1/carmela-s1-12.mp3",
+        "sourcePath": "source/不一样的卡梅拉/12-我爱平底锅.mp3"
+      }
     }
   ],
   "titleCorrections": [

@@ -1,0 +1,555 @@
+{
+  "schemaVersion": 1,
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 12,
+  "title": "我爱平底锅",
+  "slug": "carmela-s1-12",
+  "contentType": "picture-book-companion",
+  "sourceEvidence": {
+    "pageImages": "pages/",
+    "ocrPages": "ocr/pages/",
+    "ocrFullText": "ocr/full-text.txt",
+    "ocrReport": "ocr/ocr-report.json",
+    "ocrUse": "processing evidence only, not a child-facing reading body"
+  },
+  "overview": {
+    "oneLine": "冬至庆典前夜，小鸡们把“平底锅星座”的预言听成灾难，还偷偷把锅扔到磨坊；后来骆驼商人巴格迪带来糖和蛋糕办法，卡门、卡梅利多和贝里奥又把平底锅找回来，办成了一场甜蜜节日。",
+    "mainCharacters": [
+      "卡门",
+      "卡梅利多",
+      "贝里奥",
+      "皮迪克",
+      "佩罗",
+      "卡梅拉",
+      "小胖墩",
+      "小刺头",
+      "大嗓门",
+      "巴格迪",
+      "看门狗",
+      "卡罗索舅舅"
+    ],
+    "importantPlaces": [
+      "鸡舍",
+      "星空下的院子",
+      "农场主厨房",
+      "森林",
+      "磨坊",
+      "冰面和雪地",
+      "节日庆典的鸡舍"
+    ],
+    "characterRelationships": [
+      "皮迪克给小鸡们讲星座和冬至庆典。",
+      "佩罗的末日玩笑吓坏了小胖墩、小刺头和大嗓门。",
+      "卡门、卡梅利多和贝里奥为了节日大餐去找回被藏走的平底锅。",
+      "巴格迪被小鸡们救下后，用糖教大家做阿拉伯蛋糕。",
+      "看门狗原本很吓人，后来被卡门用糖安抚，还拉着平底锅把孩子们送回鸡舍。"
+    ],
+    "keyConflict": "小鸡们误把平底锅星座当成危险预言，偷走了庆典需要的平底锅；当节日大餐需要它时，卡门、卡梅利多和贝里奥必须在雪夜里把锅找回来。",
+    "emotionalArc": [
+      "兴奋",
+      "害怕",
+      "偷偷行动",
+      "担心",
+      "好奇",
+      "惊喜",
+      "紧张",
+      "合作",
+      "甜蜜",
+      "满足"
+    ]
+  },
+  "storyReview": {
+    "shortReview": "夜晚，皮迪克给小鸡们讲星座。他说平底锅星座出现，预示冬天来临，也表示冬至庆典到了。佩罗却开玩笑说平底锅会带来灾难，吓得小胖墩、小刺头和大嗓门偷偷溜进农场主厨房，把平底锅偷走并扔到磨坊。第二天，小鸡们去森林采集节日食材，收获很少，却遇见被绑在树上的骆驼商人巴格迪。巴格迪从头巾里拿出糖，让大家第一次尝到甜味，还答应用糖和食材做阿拉伯蛋糕。可做蛋糕需要平底锅，大家才发现锅被藏走了。卡门、卡梅利多和贝里奥去磨坊找锅，卡门用糖安抚凶恶的看门狗，三人坐进平底锅，被大狗拉着穿过雪地和冰面回到鸡舍。巴格迪用糖做出各种甜点，冬至庆典热闹开始。最后巴格迪牙痛，提醒大家糖不能吃太多，小鸡们却笑着说自己没有牙。",
+    "mainPlot": [
+      "皮迪克讲星座，平底锅星座预示冬至庆典。",
+      "佩罗的末日玩笑吓坏几个小公鸡，他们偷走平底锅并扔到磨坊。",
+      "小鸡们去森林采集食物，收获很少，却救下骆驼商人巴格迪。",
+      "巴格迪拿出糖，答应用糖和食材做阿拉伯蛋糕。",
+      "大家发现平底锅不见了，卡门、卡梅利多和贝里奥去磨坊找锅。",
+      "卡门用糖安抚看门狗，三人坐平底锅飞快回到鸡舍。",
+      "甜点庆典成功举行，结尾提醒糖好吃也不能吃太多。"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "pan-01",
+      "title": "星座和冬至庆典",
+      "pageRange": "002-004",
+      "summary": "皮迪克给小鸡们讲夜空里的星座。平底锅星座出现，原本表示冬天到来和节日庆典开始，佩罗却把它说成可怕预言，吓坏了小鸡们。",
+      "discussionFocus": [
+        "星座想象",
+        "冬至庆典",
+        "玩笑吓人"
+      ],
+      "pageRefs": [
+        "002",
+        "003",
+        "004"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png",
+        "pages/004.png"
+      ]
+    },
+    {
+      "id": "pan-02",
+      "title": "偷走平底锅",
+      "pageRange": "005-007",
+      "summary": "小胖墩、小刺头和大嗓门害怕自己死在平底锅里，偷偷潜入农场主厨房，把平底锅带到磨坊屋顶，再把它丢给看门狗那边。",
+      "discussionFocus": [
+        "害怕预言",
+        "偷锅计划",
+        "磨坊看门狗"
+      ],
+      "pageRefs": [
+        "005",
+        "006",
+        "007"
+      ],
+      "imageRefs": [
+        "pages/005.png",
+        "pages/006.png",
+        "pages/007.png"
+      ]
+    },
+    {
+      "id": "pan-03",
+      "title": "森林采集和巴格迪",
+      "pageRange": "008-012",
+      "summary": "第二天清早，小鸡们去森林里采集节日食材，但野猪已经把许多食物扫荡过。贝里奥发现红浆果时，大家又遇见被绑在树上的骆驼商人巴格迪。",
+      "discussionFocus": [
+        "采集食材",
+        "收获很少",
+        "救下陌生人"
+      ],
+      "pageRefs": [
+        "008",
+        "009",
+        "010",
+        "011",
+        "012"
+      ],
+      "imageRefs": [
+        "pages/008.png",
+        "pages/009.png",
+        "pages/010.png",
+        "pages/011.png",
+        "pages/012.png"
+      ]
+    },
+    {
+      "id": "pan-04",
+      "title": "糖和蛋糕办法",
+      "pageRange": "013-016",
+      "summary": "巴格迪拿出白色糖粒，小鸡们第一次尝到甜味。为了感谢大家，巴格迪说可以教他们做阿拉伯蛋糕，可做蛋糕需要一口平底锅，大家这才发现锅已经被藏走。",
+      "discussionFocus": [
+        "第一次尝糖",
+        "阿拉伯蛋糕",
+        "平底锅不见了"
+      ],
+      "pageRefs": [
+        "013",
+        "014",
+        "015",
+        "016"
+      ],
+      "imageRefs": [
+        "pages/013.png",
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png"
+      ]
+    },
+    {
+      "id": "pan-05",
+      "title": "寻找平底锅行动",
+      "pageRange": "017-020",
+      "summary": "卡门、卡梅利多和贝里奥来到磨坊，看到平底锅和凶恶的看门狗。卡门用糖让看门狗安静下来，三人坐进平底锅，让大狗拉着他们穿过雪地和冰面。",
+      "discussionFocus": [
+        "磨坊",
+        "糖块安抚",
+        "平底锅雪橇"
+      ],
+      "pageRefs": [
+        "017",
+        "018",
+        "019",
+        "020"
+      ],
+      "imageRefs": [
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png"
+      ]
+    },
+    {
+      "id": "pan-06",
+      "title": "甜蜜庆典",
+      "pageRange": "021-024",
+      "summary": "巴格迪搅拌糖汁，小鸡们分工准备果仁、水果和麦粒。夜晚客人到来，大家吃到各种甜点。结尾巴格迪牙痛，提醒糖不能吃太多。",
+      "discussionFocus": [
+        "分工烹饪",
+        "冬至客人",
+        "糖不能多吃"
+      ],
+      "pageRefs": [
+        "021",
+        "022",
+        "023",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/021.png",
+        "pages/022.png",
+        "pages/023.png",
+        "pages/024.png"
+      ]
+    }
+  ],
+  "questionCards": {
+    "factualRecall": [
+      {
+        "prompt": "平底锅星座出现，皮迪克说它预示什么？",
+        "talkingPoints": [
+          "它预示冬天即将来临，也表示小鸡们要举办冬至日节日庆典。"
+        ],
+        "pageRange": "003",
+        "evidencePageRefs": [
+          "003"
+        ],
+        "evidenceImageRefs": [
+          "pages/003.png"
+        ]
+      },
+      {
+        "prompt": "小胖墩、小刺头和大嗓门把平底锅藏到了哪里？",
+        "talkingPoints": [
+          "他们把平底锅带到河对岸的磨坊，扔到看门狗那边。"
+        ],
+        "pageRange": "005-007",
+        "evidencePageRefs": [
+          "005",
+          "007"
+        ],
+        "evidenceImageRefs": [
+          "pages/005.png",
+          "pages/007.png"
+        ]
+      },
+      {
+        "prompt": "巴格迪用什么让大家做出甜点？",
+        "talkingPoints": [
+          "他拿出糖，并教大家用糖、果仁、水果、麦粒等食材做甜点和蛋糕。"
+        ],
+        "pageRange": "013-021",
+        "evidencePageRefs": [
+          "013",
+          "014",
+          "015",
+          "021"
+        ],
+        "evidenceImageRefs": [
+          "pages/013.png",
+          "pages/014.png",
+          "pages/015.png",
+          "pages/021.png"
+        ]
+      }
+    ],
+    "comprehension": [
+      {
+        "prompt": "为什么佩罗的玩笑会让小鸡们做出偷锅这件事？",
+        "talkingPoints": [
+          "小鸡们把玩笑当成真的灾难预言，害怕自己被平底锅煮掉。",
+          "害怕让他们没有先问清楚，就急着把锅藏起来。"
+        ],
+        "pageRange": "004-006",
+        "evidencePageRefs": [
+          "004",
+          "005",
+          "006"
+        ],
+        "evidenceImageRefs": [
+          "pages/004.png",
+          "pages/005.png",
+          "pages/006.png"
+        ]
+      },
+      {
+        "prompt": "巴格迪为什么能把很少的食材变成热闹的庆典？",
+        "talkingPoints": [
+          "他带来了大家没见过的糖，也知道怎么烹饪甜点。",
+          "小鸡们一起分工处理果仁、水果和麦粒，才把食材变成很多作品。"
+        ],
+        "pageRange": "012-022",
+        "evidencePageRefs": [
+          "012",
+          "013",
+          "014",
+          "015",
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/012.png",
+          "pages/013.png",
+          "pages/014.png",
+          "pages/015.png",
+          "pages/021.png",
+          "pages/022.png"
+        ]
+      },
+      {
+        "prompt": "卡门用糖对付看门狗，和卡梅利多准备决斗相比，哪个办法更适合当时的情况？",
+        "talkingPoints": [
+          "用糖更适合，因为它让看门狗安静下来，还把危险变成了帮忙。",
+          "直接决斗可能让大家受伤，也会耽误找回平底锅。"
+        ],
+        "pageRange": "017-019",
+        "evidencePageRefs": [
+          "017",
+          "018",
+          "019"
+        ],
+        "evidenceImageRefs": [
+          "pages/017.png",
+          "pages/018.png",
+          "pages/019.png"
+        ]
+      }
+    ],
+    "openExpression": [
+      {
+        "prompt": "如果你听到一个可怕预言，你会怎么判断它是不是玩笑？",
+        "talkingPoints": [
+          "可以问清楚是谁说的、有没有证据，也可以找可信的大人一起判断。",
+          "害怕时先停一下，比马上偷偷行动更稳妥。"
+        ],
+        "pageRange": "003-005",
+        "evidencePageRefs": [
+          "003",
+          "004",
+          "005"
+        ],
+        "evidenceImageRefs": [
+          "pages/003.png",
+          "pages/004.png",
+          "pages/005.png"
+        ]
+      },
+      {
+        "prompt": "巴格迪让小鸡们第一次认识糖。你第一次尝到新食物时会怎么描述它？",
+        "talkingPoints": [
+          "可以从颜色、气味、口感、喜欢或不喜欢的原因来描述。",
+          "也可以说尝新食物前要先确认安全。"
+        ],
+        "pageRange": "013-014",
+        "evidencePageRefs": [
+          "013",
+          "014"
+        ],
+        "evidenceImageRefs": [
+          "pages/013.png",
+          "pages/014.png"
+        ]
+      },
+      {
+        "prompt": "如果你要办一个冬天小庆典，会请大家分工做什么？",
+        "talkingPoints": [
+          "可以安排采集、清洗、搅拌、摆盘、邀请客人、收拾桌子等分工。",
+          "故事里的庆典成功，是因为很多小鸡一起忙。"
+        ],
+        "pageRange": "021-022",
+        "evidencePageRefs": [
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/021.png",
+          "pages/022.png"
+        ]
+      }
+    ]
+  },
+  "backgroundNotes": [
+    {
+      "title": "星座是把星星想成图案",
+      "pageRange": "002-003",
+      "note": "夜空里有很多星星。人们会把一些星星连在心里，想象成公鸡、锅、勺子或别的图案。星座不是天空真的挂着一口锅，而是人们看星星时讲出的图案故事。",
+      "pageRefs": [
+        "002",
+        "003"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-pan-constellation",
+      "generatedImageRefs": [
+        "generated/pan-constellation.png"
+      ]
+    },
+    {
+      "title": "糖遇热会变成焦糖",
+      "pageRange": "013-021",
+      "note": "糖是甜甜的小颗粒。把糖慢慢加热，它会融化，颜色从透明变成金黄、琥珀色，还会有焦糖香味。故事里的甜点能成功，平底锅和搅拌都很重要。",
+      "pageRefs": [
+        "013",
+        "014",
+        "015",
+        "021"
+      ],
+      "imageRefs": [
+        "pages/013.png",
+        "pages/014.png",
+        "pages/015.png",
+        "pages/021.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-pan-caramel",
+      "generatedImageRefs": [
+        "generated/sugar-caramel-pan.png"
+      ]
+    },
+    {
+      "title": "糖好吃也不能吃太多",
+      "pageRange": "023-024",
+      "note": "糖会让食物变甜，但吃太多甜食又不刷牙，牙齿可能会痛，也容易长蛀牙。巴格迪牙痛的结尾很滑稽，也是在提醒大家：甜点可以分享，牙齿也要照顾。",
+      "pageRefs": [
+        "023",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/023.png",
+        "pages/024.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-pan-sugar-teeth",
+      "generatedImageRefs": [
+        "generated/sugar-teeth-care.png"
+      ]
+    }
+  ],
+  "encyclopediaEntries": [
+    {
+      "title": "冬至是什么",
+      "anchor": "皮迪克说冬至日就在明天，亲戚们会来庆祝",
+      "pageRange": "003-008",
+      "summary": "冬至是一年里很重要的冬天日子。故事把它写成鸡舍里的节日，大家会早起采集食物、邀请亲戚、准备一顿热闹的大餐。",
+      "pageRefs": [
+        "003",
+        "008"
+      ],
+      "imageRefs": [
+        "pages/003.png",
+        "pages/008.png"
+      ],
+      "storyAppearance": "皮迪克说平底锅星座出现时，冬至庆典也要开始了。",
+      "whatItIs": "冬至和太阳在天空中的变化有关，很多地方会把它当作冬天的重要节点。",
+      "whyItMatters": "它解释了为什么小鸡们要去森林采集食物，也解释了为什么晚上的客人和甜点那么重要。",
+      "discussionQuestion": "故事里哪些画面让你感觉冬天已经来了？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-pan-winter-solstice",
+      "generatedImageRefs": [
+        "generated/winter-solstice-gathering.png"
+      ]
+    },
+    {
+      "title": "平底锅能做什么",
+      "anchor": "巴格迪做蛋糕需要一口平底锅",
+      "pageRange": "015-021",
+      "summary": "平底锅底部比较平，适合加热、煎、烤、搅拌一些食物。故事里的平底锅先被误会成危险东西，后来变成做甜点的关键工具。",
+      "pageRefs": [
+        "015",
+        "016",
+        "019",
+        "021"
+      ],
+      "imageRefs": [
+        "pages/015.png",
+        "pages/016.png",
+        "pages/019.png",
+        "pages/021.png"
+      ],
+      "storyAppearance": "小鸡们偷走平底锅，后来又坐着它赶回鸡舍，最后巴格迪用它做甜点。",
+      "whatItIs": "平底锅是一种厨房工具，通常用来加热食物。使用热锅需要大人操作。",
+      "whyItMatters": "没有平底锅，巴格迪就很难做出庆典甜点，所以找锅成了故事后半段的任务。",
+      "discussionQuestion": "同一口平底锅在故事里当过哪些东西？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-pan-cooking-pan",
+      "generatedImageRefs": [
+        "generated/cooking-pan-tool.png"
+      ]
+    },
+    {
+      "title": "骆驼和远方商人",
+      "anchor": "巴格迪从中东来，带着糖和货物旅行",
+      "pageRange": "010-015",
+      "summary": "骆驼适合在干燥、遥远的路上行走，所以故事把巴格迪写成来自远方的商人。他带来的糖，让鸡舍第一次尝到新的味道。",
+      "pageRefs": [
+        "010",
+        "011",
+        "013",
+        "014",
+        "015"
+      ],
+      "imageRefs": [
+        "pages/010.png",
+        "pages/011.png",
+        "pages/013.png",
+        "pages/014.png",
+        "pages/015.png"
+      ],
+      "storyAppearance": "小鸡们在森林里救下巴格迪，他自称从很远的地方来，还保留了一点珍贵的糖。",
+      "whatItIs": "商人会把一个地方的东西带到另一个地方交换或出售。骆驼常出现在远途旅行故事里。",
+      "whyItMatters": "巴格迪带来的糖和烹饪方法，改变了鸡舍庆典的结果。",
+      "discussionQuestion": "如果没有巴格迪，小鸡们的庆典可能会少了什么？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-pan-camel-merchant",
+      "generatedImageRefs": [
+        "generated/camel-merchant-sugar.png"
+      ]
+    }
+  ],
+  "parentGuide": {
+    "readingUse": "这本适合围绕“误解和害怕、认识新食物、合作准备节日”来共读。重点不是把星座讲成复杂天文课，而是看小鸡们怎样从被玩笑吓到，转向合作找锅和准备庆典。",
+    "suggestedFlow": [
+      "先看平底锅星座和佩罗玩笑造成的误会",
+      "再复述小鸡们为什么把锅藏走、后来为什么必须找回来",
+      "在巴格迪拿出糖的页面停一下，聊第一次尝新食物的感受",
+      "最后用糖和牙痛结尾讨论甜点、分享和适量"
+    ],
+    "sensitivePoints": [
+      "偷锅情节按误会和害怕处理，不鼓励现实中拿走厨房用品。",
+      "看门狗段落按童话冒险处理，现实中不要靠近陌生狗。",
+      "糖和甜点保持轻松提醒，不把食物讨论变成责备。"
+    ]
+  },
+  "audio": {
+    "title": "我爱平底锅",
+    "bookSlug": "carmela-s1-12",
+    "path": "public/audio/carmela-s1/carmela-s1-12.mp3",
+    "sourcePath": "source/不一样的卡梅拉/12-我爱平底锅.mp3",
+    "markers": [],
+    "markerNote": "当前只接入整本音频；没有可靠的场景时间点证据，因此不添加 markers。"
+  },
+  "manualReview": {
+    "roleNames": [
+      "巴格迪、卡罗索舅舅、佩罗、小胖墩、小刺头、大嗓门等名称按 OCR 与系列角色名整理，建议人工复核原书译名。",
+      "第 012-015 页关于“阿拉伯蛋糕”和糖的 OCR 有少量错字，已按上下文整理为低龄解释。"
+    ],
+    "plotPoints": [
+      "第 003-005 页按平底锅星座被误解为灾难预言处理，正式书名保持“我爱平底锅”。",
+      "第 013-016 页按糖和蛋糕需要平底锅处理，是后半段找锅行动的原因。",
+      "第 017-020 页按卡门用糖安抚看门狗、平底锅变成雪橇处理。",
+      "第 023-024 页按糖好吃但不能多吃的幽默提醒处理。"
+    ],
+    "backgroundEntries": [
+      "星座、焦糖、牙齿、冬至、平底锅和骆驼商人均与本书剧情直接相关。",
+      "背景和百科均绑定页面图；额外解释图仅写入 prompt 文档，未生成图片。"
+    ]
+  }
+}

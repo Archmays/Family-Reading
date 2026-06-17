@@ -1,0 +1,653 @@
+{
+  "schemaVersion": 1,
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 11,
+  "title": "我不是胆小鬼",
+  "slug": "carmela-s1-11",
+  "contentType": "picture-book-companion",
+  "sourceEvidence": {
+    "pageImages": "pages/",
+    "ocrPages": "ocr/pages/",
+    "ocrFullText": "ocr/full-text.txt",
+    "ocrReport": "ocr/ocr-report.json",
+    "ocrUse": "processing evidence only, not a child-facing reading body"
+  },
+  "overview": {
+    "oneLine": "黄鼠狼强盗趁小公鸡们离开时进攻鸡舍，卡门、卡梅拉和母鸡们用机智守住家园；卡梅利多又选择救起落入流沙的敌人，最后祖龙贝塔也帮大家赶走危险。",
+    "mainCharacters": [
+      "卡门",
+      "卡梅利多",
+      "贝里奥",
+      "卡梅拉",
+      "皮迪克",
+      "佩罗",
+      "卡丽姨妈",
+      "小胖墩",
+      "大嗓门",
+      "鼻涕虫",
+      "小刺头",
+      "小六子",
+      "刺猬兄弟",
+      "强盗巴巴",
+      "祖龙贝塔"
+    ],
+    "importantPlaces": [
+      "鸡舍",
+      "鸡舍围墙",
+      "森林边",
+      "水塘",
+      "流沙地",
+      "鸡舍地下洞穴"
+    ],
+    "characterRelationships": [
+      "卡梅利多带着小公鸡们追赶黄鼠狼，想证明自己勇敢。",
+      "卡门、卡梅拉和母鸡们留在鸡舍，面对强盗巴巴和四十大盗的进攻。",
+      "刺猬兄弟原本躲在篮子底下，后来被卡门当成带刺的“炮弹”赶走敌人。",
+      "卡梅利多不愿见死不救，把落入流沙的黄鼠狼救上来，换来暂时停战。",
+      "祖龙贝塔住在鸡舍地下，因为被吵醒而出现，最后帮大家解决了水上的危机。"
+    ],
+    "keyConflict": "强盗巴巴想趁鸡舍防守空虚抢鸡蛋、伤害小鸡；小鸡们必须在害怕中守住家园，并弄明白真正的勇敢不是乱冲，而是在危险时想办法、救伙伴、也不见死不救。",
+    "emotionalArc": [
+      "警觉",
+      "逞强",
+      "担心",
+      "害怕",
+      "机智",
+      "混乱",
+      "同情",
+      "惊讶",
+      "放松",
+      "骄傲"
+    ]
+  },
+  "storyReview": {
+    "shortReview": "鸡舍响起警报，一只黄鼠狼在森林边打鸡蛋的主意。卡梅利多和小公鸡们被激怒，追着黄鼠狼跑远了，却不知道这是强盗巴巴的计策：他带着四十大盗趁机攻进鸡舍。卡梅拉和卡门先试着讲道理，敌人不听，小鸡们就用刺猬兄弟当“带刺炮弹”，又用风箱把鸡屎打出去，暂时击退黄鼠狼。另一边，卡梅利多发现被追赶的黄鼠狼掉进流沙，还是把他救了上来。鸡舍后来被地下震动弄到水塘里，强盗巴巴又划桶来进攻。就在大家紧张时，住在地下的祖龙贝塔被吵醒，掀翻黄鼠狼的“舰队”，并把鸡舍送回原处。贝塔夸母鸡和小鸡们没有一个胆小鬼，大家也答应保守她住在地下的秘密。",
+    "mainPlot": [
+      "黄鼠狼在鸡舍外出现，小公鸡们被激怒后追了出去。",
+      "强盗巴巴带着四十大盗趁鸡舍空虚发动进攻。",
+      "卡梅拉和卡门先谈判，随后用刺猬兄弟和风箱鸡屎炮守住鸡舍。",
+      "鸡舍被地下震动推到水塘里，强盗巴巴又用木桶划过来。",
+      "卡梅利多救起落入流沙的黄鼠狼，表现出真正的勇敢。",
+      "祖龙贝塔从水下出现，赶走强盗并把鸡舍归回原位。",
+      "小公鸡们凯旋，大家知道勇敢也包括守护、机智和守信。"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "coward-01",
+      "title": "警报和追击",
+      "pageRange": "005-009",
+      "summary": "鸡舍发现黄鼠狼，佩罗发出警报。卡梅利多和小公鸡们被激怒，冲出鸡舍追赶黄鼠狼，却没有发现自己正在离开真正需要保护的地方。",
+      "discussionFocus": [
+        "黄鼠狼盯上鸡舍",
+        "冲动追击",
+        "鸡舍变空"
+      ],
+      "pageRefs": [
+        "005",
+        "006",
+        "007",
+        "008",
+        "009"
+      ],
+      "imageRefs": [
+        "pages/005.png",
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png",
+        "pages/009.png"
+      ]
+    },
+    {
+      "id": "coward-02",
+      "title": "强盗巴巴冲进鸡舍",
+      "pageRange": "010-016",
+      "summary": "强盗巴巴带着四十大盗冲向鸡舍。卡梅拉和卡门试着谈判，告诉黄鼠狼不要吞鸡蛋，还可以去森林找别的食物，但强盗们只想进攻。",
+      "discussionFocus": [
+        "趁虚而入",
+        "谈判失败",
+        "母鸡防御"
+      ],
+      "pageRefs": [
+        "010",
+        "011",
+        "012",
+        "013",
+        "014",
+        "015",
+        "016"
+      ],
+      "imageRefs": [
+        "pages/010.png",
+        "pages/011.png",
+        "pages/012.png",
+        "pages/013.png",
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png"
+      ]
+    },
+    {
+      "id": "coward-03",
+      "title": "带刺炮弹首战告捷",
+      "pageRange": "017-021",
+      "summary": "小公鸡们还在森林里追逐，鸡舍里的卡门发现刺猬兄弟躲在篮子底下。她把刺猬兄弟当成“带刺炮弹”发射出去，击中强盗巴巴，鸡舍保卫战先赢一回合。",
+      "discussionFocus": [
+        "刺猬兄弟",
+        "临场想办法",
+        "第一次击退"
+      ],
+      "pageRefs": [
+        "017",
+        "018",
+        "019",
+        "020",
+        "021"
+      ],
+      "imageRefs": [
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png",
+        "pages/021.png"
+      ]
+    },
+    {
+      "id": "coward-04",
+      "title": "风箱大炮和水上鸡舍",
+      "pageRange": "022-030",
+      "summary": "强盗们拿梯子再次进攻，卡门用风箱当大炮，把鸡屎打向敌人。就在黄鼠狼节节败退时，鸡舍被地下传来的力量震得翻进水塘，变成了水上的鸡舍。",
+      "discussionFocus": [
+        "第二次进攻",
+        "风箱大炮",
+        "鸡舍落水"
+      ],
+      "pageRefs": [
+        "022",
+        "023",
+        "024",
+        "025",
+        "026",
+        "027",
+        "028",
+        "029",
+        "030"
+      ],
+      "imageRefs": [
+        "pages/022.png",
+        "pages/023.png",
+        "pages/024.png",
+        "pages/025.png",
+        "pages/026.png",
+        "pages/027.png",
+        "pages/028.png",
+        "pages/029.png",
+        "pages/030.png"
+      ]
+    },
+    {
+      "id": "coward-05",
+      "title": "卡梅利多救起敌人",
+      "pageRange": "031-033",
+      "summary": "小公鸡们追到流沙地，看见黄鼠狼陷进去。大家有人嘲笑，也有人觉得他是敌人不该救；卡梅利多却说不能见死不救，把黄鼠狼救了上来。",
+      "discussionFocus": [
+        "流沙危险",
+        "见死不救",
+        "真正的勇敢"
+      ],
+      "pageRefs": [
+        "031",
+        "032",
+        "033"
+      ],
+      "imageRefs": [
+        "pages/031.png",
+        "pages/032.png",
+        "pages/033.png"
+      ]
+    },
+    {
+      "id": "coward-06",
+      "title": "祖龙贝塔被吵醒",
+      "pageRange": "034-043",
+      "summary": "强盗巴巴偷来木桶划向水上鸡舍。大家正担心时，祖龙贝塔从水里出现，她原来住在鸡舍地下。贝塔掀翻强盗、解释地震原因，又夸大家没有一个胆小鬼。",
+      "discussionFocus": [
+        "木桶舰队",
+        "地下邻居",
+        "祖龙贝塔"
+      ],
+      "pageRefs": [
+        "034",
+        "035",
+        "036",
+        "037",
+        "038",
+        "039",
+        "040",
+        "041",
+        "042",
+        "043"
+      ],
+      "imageRefs": [
+        "pages/034.png",
+        "pages/035.png",
+        "pages/036.png",
+        "pages/037.png",
+        "pages/038.png",
+        "pages/039.png",
+        "pages/040.png",
+        "pages/041.png",
+        "pages/042.png",
+        "pages/043.png"
+      ]
+    },
+    {
+      "id": "coward-07",
+      "title": "凯旋和秘密",
+      "pageRange": "044-047",
+      "summary": "小公鸡们回到鸡舍，大家重新团聚并庆祝胜利。最后，孩子们又玩起球来，但他们知道地下还有一位需要安静睡觉的秘密邻居。",
+      "discussionFocus": [
+        "团聚",
+        "庆祝胜利",
+        "保守秘密"
+      ],
+      "pageRefs": [
+        "044",
+        "045",
+        "046",
+        "047"
+      ],
+      "imageRefs": [
+        "pages/044.png",
+        "pages/045.png",
+        "pages/046.png",
+        "pages/047.png"
+      ]
+    }
+  ],
+  "questionCards": {
+    "factualRecall": [
+      {
+        "prompt": "强盗巴巴为什么选择在小公鸡们跑远后进攻鸡舍？",
+        "talkingPoints": [
+          "因为鸡舍里少了许多防守的小公鸡，只剩母鸡和孩子们，更容易被强盗们趁虚而入。"
+        ],
+        "pageRange": "008-013",
+        "evidencePageRefs": [
+          "008",
+          "009",
+          "012",
+          "013"
+        ],
+        "evidenceImageRefs": [
+          "pages/008.png",
+          "pages/009.png",
+          "pages/012.png",
+          "pages/013.png"
+        ]
+      },
+      {
+        "prompt": "卡门第一次用什么办法击退强盗巴巴？",
+        "talkingPoints": [
+          "她让刺猬兄弟躲在篮子里，把他们当成带刺的炮弹发射出去，击中了强盗巴巴。"
+        ],
+        "pageRange": "019-021",
+        "evidencePageRefs": [
+          "019",
+          "020",
+          "021"
+        ],
+        "evidenceImageRefs": [
+          "pages/019.png",
+          "pages/020.png",
+          "pages/021.png"
+        ]
+      },
+      {
+        "prompt": "祖龙贝塔为什么会从地下出来？",
+        "talkingPoints": [
+          "外面太吵，吵醒了住在鸡舍地下洞穴里的贝塔。她敲了敲“天花板”，结果把鸡舍震动了。"
+        ],
+        "pageRange": "036-041",
+        "evidencePageRefs": [
+          "036",
+          "040",
+          "041"
+        ],
+        "evidenceImageRefs": [
+          "pages/036.png",
+          "pages/040.png",
+          "pages/041.png"
+        ]
+      }
+    ],
+    "comprehension": [
+      {
+        "prompt": "为什么卡梅利多救起流沙里的黄鼠狼，比继续嘲笑他更勇敢？",
+        "talkingPoints": [
+          "因为救一个危险中的敌人需要克制怒气，也需要承担风险。",
+          "他记得以前玩打仗游戏时从不见死不救，所以勇敢不只是打赢，还包括守住自己的原则。"
+        ],
+        "pageRange": "031-033",
+        "evidencePageRefs": [
+          "031",
+          "032",
+          "033"
+        ],
+        "evidenceImageRefs": [
+          "pages/031.png",
+          "pages/032.png",
+          "pages/033.png"
+        ]
+      },
+      {
+        "prompt": "卡门和卡梅拉先谈判再防御，说明她们怎样面对危险？",
+        "talkingPoints": [
+          "她们没有只靠蛮力，而是先试着讲道理。",
+          "当黄鼠狼不听时，她们又迅速组织防御，用身边能用的东西保护鸡舍。"
+        ],
+        "pageRange": "014-021",
+        "evidencePageRefs": [
+          "014",
+          "015",
+          "016",
+          "019",
+          "020",
+          "021"
+        ],
+        "evidenceImageRefs": [
+          "pages/014.png",
+          "pages/015.png",
+          "pages/016.png",
+          "pages/019.png",
+          "pages/020.png",
+          "pages/021.png"
+        ]
+      },
+      {
+        "prompt": "为什么祖龙贝塔说鸡舍里没有一个胆小鬼？",
+        "talkingPoints": [
+          "母鸡、小鸡和小公鸡们都在害怕时做了该做的事。",
+          "有人守家，有人想办法，有人救敌人，有人答应保守秘密，这些都是勇敢的表现。"
+        ],
+        "pageRange": "023-043",
+        "evidencePageRefs": [
+          "023",
+          "031",
+          "032",
+          "033",
+          "042",
+          "043"
+        ],
+        "evidenceImageRefs": [
+          "pages/023.png",
+          "pages/031.png",
+          "pages/032.png",
+          "pages/033.png",
+          "pages/042.png",
+          "pages/043.png"
+        ]
+      }
+    ],
+    "openExpression": [
+      {
+        "prompt": "如果你是鸡舍里的小鸡，敌人冲过来时你会先做什么？",
+        "talkingPoints": [
+          "可以说先躲到安全处、提醒同伴、听大人安排，或帮忙找能保护大家的工具。"
+        ],
+        "pageRange": "010-016",
+        "evidencePageRefs": [
+          "010",
+          "011",
+          "012",
+          "016"
+        ],
+        "evidenceImageRefs": [
+          "pages/010.png",
+          "pages/011.png",
+          "pages/012.png",
+          "pages/016.png"
+        ]
+      },
+      {
+        "prompt": "卡门把普通东西变成了防守工具。你还能从鸡舍里想到什么安全的保护办法？",
+        "talkingPoints": [
+          "可以从挡住门、发出警报、找同伴合作、把危险隔开这些方向想。",
+          "重点是保护自己和同伴，不是冲出去逞强。"
+        ],
+        "pageRange": "019-027",
+        "evidencePageRefs": [
+          "019",
+          "020",
+          "021",
+          "023",
+          "024",
+          "027"
+        ],
+        "evidenceImageRefs": [
+          "pages/019.png",
+          "pages/020.png",
+          "pages/021.png",
+          "pages/023.png",
+          "pages/024.png",
+          "pages/027.png"
+        ]
+      },
+      {
+        "prompt": "你觉得“不是胆小鬼”一定是不害怕吗？为什么？",
+        "talkingPoints": [
+          "可以说害怕也没关系，重要的是害怕时还能想办法、保护别人、做正确的事。",
+          "故事里的角色都怕过，但他们没有一直躲着不管。"
+        ],
+        "pageRange": "031-043",
+        "evidencePageRefs": [
+          "031",
+          "032",
+          "033",
+          "041",
+          "042",
+          "043"
+        ],
+        "evidenceImageRefs": [
+          "pages/031.png",
+          "pages/032.png",
+          "pages/033.png",
+          "pages/041.png",
+          "pages/042.png",
+          "pages/043.png"
+        ]
+      }
+    ]
+  },
+  "backgroundNotes": [
+    {
+      "title": "黄鼠狼为什么盯着鸡舍",
+      "pageRange": "005-008",
+      "note": "黄鼠狼是会捕食小动物、也会偷蛋的动物。故事里的黄鼠狼很饿，所以把鸡舍当成目标。鸡舍报警不是为了吓唬自己，而是提醒大家有危险，要赶快躲好、守好门。",
+      "pageRefs": [
+        "005",
+        "006",
+        "007",
+        "008"
+      ],
+      "imageRefs": [
+        "pages/005.png",
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-coward-weasel-threat",
+      "generatedImageRefs": [
+        "generated/weasel-threat-coop.png"
+      ]
+    },
+    {
+      "title": "谈判和防御都需要冷静",
+      "pageRange": "014-021",
+      "note": "遇到危险时，先讲道理有时能避免冲突；如果对方不听，就要保护自己。卡梅拉和卡门先说话，再组织防御，说明冷静不是软弱，而是把事情看清楚。",
+      "pageRefs": [
+        "014",
+        "015",
+        "016",
+        "019",
+        "020",
+        "021"
+      ],
+      "imageRefs": [
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png",
+        "pages/019.png",
+        "pages/020.png",
+        "pages/021.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-coward-calm-defense",
+      "generatedImageRefs": [
+        "generated/calm-defense-plan.png"
+      ]
+    },
+    {
+      "title": "不见死不救也是勇敢",
+      "pageRange": "031-033",
+      "note": "流沙里的黄鼠狼刚才还是敌人，但他已经遇到生命危险。卡梅利多没有跟着嘲笑，而是选择救他。真正的勇敢有时候不是打败谁，而是不让自己变成冷漠的人。",
+      "pageRefs": [
+        "031",
+        "032",
+        "033"
+      ],
+      "imageRefs": [
+        "pages/031.png",
+        "pages/032.png",
+        "pages/033.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-coward-rescue-enemy",
+      "generatedImageRefs": [
+        "generated/rescue-enemy-safely.png"
+      ]
+    }
+  ],
+  "encyclopediaEntries": [
+    {
+      "title": "强盗巴巴和四十大盗",
+      "anchor": "强盗巴巴带着四十大盗冲进鸡舍",
+      "pageRange": "012-013",
+      "summary": "强盗巴巴的名字让人想到古老故事里的强盗头领。绘本把这个名字用在黄鼠狼身上，让进攻鸡舍的场面夸张又好笑。",
+      "pageRefs": [
+        "012",
+        "013"
+      ],
+      "imageRefs": [
+        "pages/012.png",
+        "pages/013.png"
+      ],
+      "storyAppearance": "强盗巴巴指挥一群黄鼠狼越过围墙，准备抢走鸡蛋。",
+      "whatItIs": "这里是故事里的幽默借用，不是在讲真实强盗历史。",
+      "whyItMatters": "这个名字让敌人显得气势很大，也让鸡舍保卫战像一场夸张冒险。",
+      "discussionQuestion": "强盗巴巴看起来厉害，后来为什么一次次被小鸡们想办法挡住？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-coward-bandit-baba",
+      "generatedImageRefs": [
+        "generated/bandit-baba-story.png"
+      ]
+    },
+    {
+      "title": "流沙为什么危险",
+      "anchor": "被追赶的黄鼠狼陷进流沙",
+      "pageRange": "031-033",
+      "summary": "流沙是松散沙土和水混在一起形成的软地面，踩进去会很难出来。故事用流沙让卡梅利多做出一个重要选择：要不要救敌人。",
+      "pageRefs": [
+        "031",
+        "032",
+        "033"
+      ],
+      "imageRefs": [
+        "pages/031.png",
+        "pages/032.png",
+        "pages/033.png"
+      ],
+      "storyAppearance": "小公鸡们追到流沙边，看到黄鼠狼陷了进去。",
+      "whatItIs": "流沙不是会主动吃人的怪物，而是一种让脚陷住、很难用力的危险地面。",
+      "whyItMatters": "它让小公鸡们从追打敌人，转到思考要不要救一个遇险的对手。",
+      "discussionQuestion": "如果看到别人陷进危险里，先笑话他会带来什么问题？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-coward-quicksand",
+      "generatedImageRefs": [
+        "generated/quicksand-safe-rescue.png"
+      ]
+    },
+    {
+      "title": "祖龙贝塔",
+      "anchor": "住在鸡舍地下的祖龙贝塔被吵醒",
+      "pageRange": "036-043",
+      "summary": "祖龙贝塔是故事里的幻想角色，她住在鸡舍地下，年纪很大，力量也很大。她不是普通敌人，而是被吵醒的地下邻居。",
+      "pageRefs": [
+        "036",
+        "038",
+        "039",
+        "040",
+        "041",
+        "042",
+        "043"
+      ],
+      "imageRefs": [
+        "pages/036.png",
+        "pages/038.png",
+        "pages/039.png",
+        "pages/040.png",
+        "pages/041.png",
+        "pages/042.png",
+        "pages/043.png"
+      ],
+      "storyAppearance": "鸡舍落到水塘里后，贝塔从水中出现，掀翻黄鼠狼并解释自己住在地下。",
+      "whatItIs": "祖龙是绘本里的幻想设定，可以理解成很古老、很有力量的龙。",
+      "whyItMatters": "她带来最后的转机，也点出书名：鸡舍里的大家都不是胆小鬼。",
+      "discussionQuestion": "贝塔看起来很厉害，但她为什么也需要大家保守秘密？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-coward-dragon-beta",
+      "generatedImageRefs": [
+        "generated/dragon-beta-underground.png"
+      ]
+    }
+  ],
+  "parentGuide": {
+    "readingUse": "这本适合围绕“害怕和勇敢、冲动和机智、救敌人和守原则”来共读。可以先看小公鸡们为什么追出去，再看鸡舍里怎么防守，最后讨论卡梅利多救黄鼠狼和贝塔夸大家的意义。",
+    "suggestedFlow": [
+      "先确认黄鼠狼怎样把小公鸡们引走",
+      "按刺猬炮弹、风箱大炮、水上鸡舍复述防守过程",
+      "在流沙段落停下来，讨论卡梅利多为什么要救敌人",
+      "最后回到书名，聊害怕时还能做什么"
+    ],
+    "sensitivePoints": [
+      "黄鼠狼进攻和鸡舍保卫战是夸张童话冒险，不延伸成现实打斗模仿。",
+      "鸡屎大炮属于绘本幽默，可轻轻带过，不鼓励现实恶作剧。",
+      "救敌人的段落重点放在生命危险和原则，不要求孩子在现实中独自处理危险。"
+    ]
+  },
+  "audio": {
+    "title": "我不是胆小鬼",
+    "bookSlug": "carmela-s1-11",
+    "path": "public/audio/carmela-s1/carmela-s1-11.mp3",
+    "sourcePath": "source/不一样的卡梅拉/11-我不是胆小鬼.mp3",
+    "markers": [],
+    "markerNote": "当前只接入整本音频；没有可靠的场景时间点证据，因此不添加 markers。"
+  },
+  "manualReview": {
+    "roleNames": [
+      "OCR 对佩罗、卡丽姨妈、强盗巴巴、祖龙贝塔、小六子等名称有误识，companion 已按剧情和系列角色名整理，建议人工复核原书译名。",
+      "第 045-047 页 OCR 将大嗓门、小六子等个别名字识别不稳，已按前文统一处理。"
+    ],
+    "plotPoints": [
+      "第 005-009 页按黄鼠狼诱敌、小公鸡冲动追击处理。",
+      "第 019-027 页按刺猬炮弹和风箱鸡屎炮两轮防守处理。",
+      "第 031-033 页是本书理解重点：卡梅利多救起陷入流沙的黄鼠狼。",
+      "第 036-043 页祖龙贝塔作为幻想转机和书名呼应处理。"
+    ],
+    "backgroundEntries": [
+      "黄鼠狼、冷静防御、见死不救、强盗巴巴、流沙、祖龙贝塔均与本书剧情直接相关。",
+      "背景和百科均绑定页面图；额外解释图仅写入 prompt 文档，未生成图片。"
+    ]
+  }
+}

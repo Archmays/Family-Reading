@@ -1,0 +1,585 @@
+{
+  "schemaVersion": 1,
+  "bookOrder": 11,
+  "title": "我不是胆小鬼",
+  "ocrEngine": "rapidocr_onnxruntime",
+  "generatedAt": "2026-06-17T14:39:21+08:00",
+  "pageImageDirectory": "pages/",
+  "textDir": "ocr/pages/",
+  "fullText": "ocr/full-text.txt",
+  "pageCount": 48,
+  "pages": [
+    {
+      "page": "001",
+      "image": "pages/001.png",
+      "textFile": "ocr/pages/001.txt",
+      "characterCount": 83,
+      "hasText": true,
+      "ocrElapsed": [
+        1.6655417000001762,
+        0.05227971076965332,
+        2.3182108402252197
+      ]
+    },
+    {
+      "page": "002",
+      "image": "pages/002.png",
+      "textFile": "ocr/pages/002.txt",
+      "characterCount": 36,
+      "hasText": true,
+      "ocrElapsed": [
+        0.8401134999985516,
+        0.05657768249511719,
+        1.6175196170806885
+      ]
+    },
+    {
+      "page": "003",
+      "image": "pages/003.png",
+      "textFile": "ocr/pages/003.txt",
+      "characterCount": 695,
+      "hasText": true,
+      "ocrElapsed": [
+        0.8651293000002624,
+        0.20300793647766113,
+        10.402159690856934
+      ]
+    },
+    {
+      "page": "004",
+      "image": "pages/004.png",
+      "textFile": "ocr/pages/004.txt",
+      "characterCount": 0,
+      "hasText": false,
+      "ocrElapsed": null
+    },
+    {
+      "page": "005",
+      "image": "pages/005.png",
+      "textFile": "ocr/pages/005.txt",
+      "characterCount": 172,
+      "hasText": true,
+      "ocrElapsed": [
+        0.8924115000008896,
+        0.14032506942749023,
+        4.121243000030518
+      ]
+    },
+    {
+      "page": "006",
+      "image": "pages/006.png",
+      "textFile": "ocr/pages/006.txt",
+      "characterCount": 78,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0767859000006865,
+        0.12555742263793945,
+        3.0063107013702393
+      ]
+    },
+    {
+      "page": "007",
+      "image": "pages/007.png",
+      "textFile": "ocr/pages/007.txt",
+      "characterCount": 132,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0349328000011155,
+        0.039021968841552734,
+        4.073544502258301
+      ]
+    },
+    {
+      "page": "008",
+      "image": "pages/008.png",
+      "textFile": "ocr/pages/008.txt",
+      "characterCount": 167,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1005246999993687,
+        0.25473833084106445,
+        4.08472752571106
+      ]
+    },
+    {
+      "page": "009",
+      "image": "pages/009.png",
+      "textFile": "ocr/pages/009.txt",
+      "characterCount": 103,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1283105000002251,
+        0.10414314270019531,
+        3.9794082641601562
+      ]
+    },
+    {
+      "page": "010",
+      "image": "pages/010.png",
+      "textFile": "ocr/pages/010.txt",
+      "characterCount": 87,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1763066999992589,
+        0.1667318344116211,
+        3.939687490463257
+      ]
+    },
+    {
+      "page": "011",
+      "image": "pages/011.png",
+      "textFile": "ocr/pages/011.txt",
+      "characterCount": 89,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1598769999982323,
+        0.031000137329101562,
+        3.868363380432129
+      ]
+    },
+    {
+      "page": "012",
+      "image": "pages/012.png",
+      "textFile": "ocr/pages/012.txt",
+      "characterCount": 43,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1480520000004617,
+        0.02499675750732422,
+        2.177471399307251
+      ]
+    },
+    {
+      "page": "013",
+      "image": "pages/013.png",
+      "textFile": "ocr/pages/013.txt",
+      "characterCount": 124,
+      "hasText": true,
+      "ocrElapsed": [
+        1.133839899997838,
+        0.07101583480834961,
+        5.119701147079468
+      ]
+    },
+    {
+      "page": "014",
+      "image": "pages/014.png",
+      "textFile": "ocr/pages/014.txt",
+      "characterCount": 104,
+      "hasText": true,
+      "ocrElapsed": [
+        1.2459414000004472,
+        0.14391016960144043,
+        4.536290407180786
+      ]
+    },
+    {
+      "page": "015",
+      "image": "pages/015.png",
+      "textFile": "ocr/pages/015.txt",
+      "characterCount": 118,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0588118999985454,
+        0.06600546836853027,
+        4.698183059692383
+      ]
+    },
+    {
+      "page": "016",
+      "image": "pages/016.png",
+      "textFile": "ocr/pages/016.txt",
+      "characterCount": 69,
+      "hasText": true,
+      "ocrElapsed": [
+        1.3419256000015594,
+        0.20010066032409668,
+        3.487739086151123
+      ]
+    },
+    {
+      "page": "017",
+      "image": "pages/017.png",
+      "textFile": "ocr/pages/017.txt",
+      "characterCount": 115,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0655508999989252,
+        0.03699994087219238,
+        3.494246006011963
+      ]
+    },
+    {
+      "page": "018",
+      "image": "pages/018.png",
+      "textFile": "ocr/pages/018.txt",
+      "characterCount": 116,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0274380000009842,
+        0.029526233673095703,
+        4.11451268196106
+      ]
+    },
+    {
+      "page": "019",
+      "image": "pages/019.png",
+      "textFile": "ocr/pages/019.txt",
+      "characterCount": 135,
+      "hasText": true,
+      "ocrElapsed": [
+        0.967082200000732,
+        0.04497861862182617,
+        4.213281154632568
+      ]
+    },
+    {
+      "page": "020",
+      "image": "pages/020.png",
+      "textFile": "ocr/pages/020.txt",
+      "characterCount": 84,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0213941000001796,
+        0.05699896812438965,
+        3.6649413108825684
+      ]
+    },
+    {
+      "page": "021",
+      "image": "pages/021.png",
+      "textFile": "ocr/pages/021.txt",
+      "characterCount": 98,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0185557000004337,
+        0.042996883392333984,
+        4.019207239151001
+      ]
+    },
+    {
+      "page": "022",
+      "image": "pages/022.png",
+      "textFile": "ocr/pages/022.txt",
+      "characterCount": 53,
+      "hasText": true,
+      "ocrElapsed": [
+        0.9803369000001112,
+        0.020998477935791016,
+        2.748023748397827
+      ]
+    },
+    {
+      "page": "023",
+      "image": "pages/023.png",
+      "textFile": "ocr/pages/023.txt",
+      "characterCount": 129,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0119958000032057,
+        0.11954283714294434,
+        3.877776622772217
+      ]
+    },
+    {
+      "page": "024",
+      "image": "pages/024.png",
+      "textFile": "ocr/pages/024.txt",
+      "characterCount": 40,
+      "hasText": true,
+      "ocrElapsed": [
+        0.9576589999996941,
+        0.08962368965148926,
+        1.3712241649627686
+      ]
+    },
+    {
+      "page": "025",
+      "image": "pages/025.png",
+      "textFile": "ocr/pages/025.txt",
+      "characterCount": 98,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0299809999996796,
+        0.05827498435974121,
+        2.184040069580078
+      ]
+    },
+    {
+      "page": "026",
+      "image": "pages/026.png",
+      "textFile": "ocr/pages/026.txt",
+      "characterCount": 60,
+      "hasText": true,
+      "ocrElapsed": [
+        0.838158000002295,
+        0.0535280704498291,
+        2.3006160259246826
+      ]
+    },
+    {
+      "page": "027",
+      "image": "pages/027.png",
+      "textFile": "ocr/pages/027.txt",
+      "characterCount": 83,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1545318999997107,
+        0.06981444358825684,
+        3.3422303199768066
+      ]
+    },
+    {
+      "page": "028",
+      "image": "pages/028.png",
+      "textFile": "ocr/pages/028.txt",
+      "characterCount": 75,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0428554999998596,
+        0.03453636169433594,
+        2.4364728927612305
+      ]
+    },
+    {
+      "page": "029",
+      "image": "pages/029.png",
+      "textFile": "ocr/pages/029.txt",
+      "characterCount": 90,
+      "hasText": true,
+      "ocrElapsed": [
+        0.919393799998943,
+        0.043004512786865234,
+        3.0264296531677246
+      ]
+    },
+    {
+      "page": "030",
+      "image": "pages/030.png",
+      "textFile": "ocr/pages/030.txt",
+      "characterCount": 146,
+      "hasText": true,
+      "ocrElapsed": [
+        0.9171464999999444,
+        0.04553508758544922,
+        3.538818359375
+      ]
+    },
+    {
+      "page": "031",
+      "image": "pages/031.png",
+      "textFile": "ocr/pages/031.txt",
+      "characterCount": 143,
+      "hasText": true,
+      "ocrElapsed": [
+        1.10023960000035,
+        0.08853530883789062,
+        3.729887008666992
+      ]
+    },
+    {
+      "page": "032",
+      "image": "pages/032.png",
+      "textFile": "ocr/pages/032.txt",
+      "characterCount": 105,
+      "hasText": true,
+      "ocrElapsed": [
+        0.9380471000004036,
+        0.10553336143493652,
+        3.3107218742370605
+      ]
+    },
+    {
+      "page": "033",
+      "image": "pages/033.png",
+      "textFile": "ocr/pages/033.txt",
+      "characterCount": 203,
+      "hasText": true,
+      "ocrElapsed": [
+        1.158984200003033,
+        0.18511652946472168,
+        5.413515090942383
+      ]
+    },
+    {
+      "page": "034",
+      "image": "pages/034.png",
+      "textFile": "ocr/pages/034.txt",
+      "characterCount": 83,
+      "hasText": true,
+      "ocrElapsed": [
+        1.153371700002026,
+        0.06152009963989258,
+        2.394688606262207
+      ]
+    },
+    {
+      "page": "035",
+      "image": "pages/035.png",
+      "textFile": "ocr/pages/035.txt",
+      "characterCount": 141,
+      "hasText": true,
+      "ocrElapsed": [
+        1.067404000001261,
+        0.05500507354736328,
+        4.8505494594573975
+      ]
+    },
+    {
+      "page": "036",
+      "image": "pages/036.png",
+      "textFile": "ocr/pages/036.txt",
+      "characterCount": 135,
+      "hasText": true,
+      "ocrElapsed": [
+        1.099330999997619,
+        0.0330047607421875,
+        4.001191139221191
+      ]
+    },
+    {
+      "page": "037",
+      "image": "pages/037.png",
+      "textFile": "ocr/pages/037.txt",
+      "characterCount": 81,
+      "hasText": true,
+      "ocrElapsed": [
+        0.8647364000025846,
+        0.01499795913696289,
+        3.11079740524292
+      ]
+    },
+    {
+      "page": "038",
+      "image": "pages/038.png",
+      "textFile": "ocr/pages/038.txt",
+      "characterCount": 92,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0289252000002307,
+        0.06299829483032227,
+        3.0404560565948486
+      ]
+    },
+    {
+      "page": "039",
+      "image": "pages/039.png",
+      "textFile": "ocr/pages/039.txt",
+      "characterCount": 119,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1956489000003785,
+        0.05701255798339844,
+        3.9494471549987793
+      ]
+    },
+    {
+      "page": "040",
+      "image": "pages/040.png",
+      "textFile": "ocr/pages/040.txt",
+      "characterCount": 112,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0730061000031128,
+        0.14209508895874023,
+        4.1397786140441895
+      ]
+    },
+    {
+      "page": "041",
+      "image": "pages/041.png",
+      "textFile": "ocr/pages/041.txt",
+      "characterCount": 124,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0444425999994564,
+        0.03655529022216797,
+        4.142105579376221
+      ]
+    },
+    {
+      "page": "042",
+      "image": "pages/042.png",
+      "textFile": "ocr/pages/042.txt",
+      "characterCount": 100,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1032962999997835,
+        0.09299373626708984,
+        2.8464343547821045
+      ]
+    },
+    {
+      "page": "043",
+      "image": "pages/043.png",
+      "textFile": "ocr/pages/043.txt",
+      "characterCount": 130,
+      "hasText": true,
+      "ocrElapsed": [
+        1.023170200001914,
+        0.1325523853302002,
+        3.5290119647979736
+      ]
+    },
+    {
+      "page": "044",
+      "image": "pages/044.png",
+      "textFile": "ocr/pages/044.txt",
+      "characterCount": 63,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1350769999990007,
+        0.020999431610107422,
+        2.441066026687622
+      ]
+    },
+    {
+      "page": "045",
+      "image": "pages/045.png",
+      "textFile": "ocr/pages/045.txt",
+      "characterCount": 62,
+      "hasText": true,
+      "ocrElapsed": [
+        1.0099293000021135,
+        0.05800509452819824,
+        1.9300963878631592
+      ]
+    },
+    {
+      "page": "046",
+      "image": "pages/046.png",
+      "textFile": "ocr/pages/046.txt",
+      "characterCount": 54,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1095468000021356,
+        0.024539470672607422,
+        2.533710241317749
+      ]
+    },
+    {
+      "page": "047",
+      "image": "pages/047.png",
+      "textFile": "ocr/pages/047.txt",
+      "characterCount": 69,
+      "hasText": true,
+      "ocrElapsed": [
+        1.1087172999978065,
+        0.029998302459716797,
+        2.5896642208099365
+      ]
+    },
+    {
+      "page": "048",
+      "image": "pages/048.png",
+      "textFile": "ocr/pages/048.txt",
+      "characterCount": 0,
+      "hasText": false,
+      "ocrElapsed": null
+    }
+  ],
+  "notes": [
+    "OCR is processing evidence only and is not used as a child-facing reading body.",
+    "RapidOCR output was used as a base; companion content still requires human review for names and plot details."
+  ]
+}
