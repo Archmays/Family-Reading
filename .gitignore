@@ -1,2 +1,7 @@
 dist/
 source/
+source-private/
+private/
+data-private/
+local-epubs/
+*.epub

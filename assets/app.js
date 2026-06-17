@@ -1,4 +1,6 @@
-const SERIES_INDEX = 'public/books/不一样的卡梅拉/series.json';
+const BOOK_INDEX = 'public/books/index.json';
+const CARMELA_SERIES_SLUG = 'carmela-season-1';
+const WORK_CELLS_SERIES_SLUG = 'work-cells';
 const FIRST_BATCH = 12;
 const app = document.querySelector('#app');
 let model = null;
@@ -38,7 +40,10 @@ async function fetchJson(resourcePath) {
 }
 
 async function loadModel() {
-  const series = await fetchJson(SERIES_INDEX);
+  const index = await fetchJson(BOOK_INDEX);
+  const carmelaEntry = index.series.find((item) => item.seriesSlug === CARMELA_SERIES_SLUG);
+  const workCellsEntry = index.series.find((item) => item.seriesSlug === WORK_CELLS_SERIES_SLUG);
+  const series = await fetchJson(carmelaEntry.manifestPath);
   const books = await Promise.all(
     series.books.slice(0, FIRST_BATCH).map(async (book) => {
       const [assets, companion] = await Promise.all([
@@ -57,7 +62,46 @@ async function loadModel() {
     }),
   );
 
-  model = { series, books };
+  let scienceSeries = null;
+  if (workCellsEntry) {
+    const manifest = await fetchJson(workCellsEntry.manifestPath);
+    const pageMap = manifest.pageMapPath ? await fetchJson(manifest.pageMapPath) : null;
+    scienceSeries = {
+      ...workCellsEntry,
+      manifest: mergeScienceManifest(manifest, pageMap),
+    };
+  }
+
+  model = { series, books, scienceSeries };
+}
+
+function mediaStatusFor(topic) {
+  return Array.isArray(topic?.pageImagePaths) && topic.pageImagePaths.length > 0 && topic.thumbnailPath
+    ? 'available'
+    : 'missing';
+}
+
+function mergeScienceManifest(manifest, pageMap) {
+  const pageMapByOrder = new Map((pageMap?.topics ?? []).map((topic) => [topic.order, topic]));
+  return {
+    ...manifest,
+    topics: manifest.topics.map((topic) => {
+      const pageMapTopic = pageMapByOrder.get(topic.order);
+      const pageImagePaths = topic.pageImagePaths ?? pageMapTopic?.pageImagePaths ?? [];
+      const thumbnailPath = topic.thumbnailPath ?? pageMapTopic?.thumbnailPath ?? null;
+      return {
+        ...topic,
+        displayTitle: topic.title,
+        source: {
+          ...topic.source,
+          sourceLabel: pageMapTopic?.sourceLabel ?? topic.source?.sourceLabel,
+        },
+        pageImagePaths,
+        thumbnailPath,
+        mediaStatus: topic.mediaStatus ?? mediaStatusFor({ pageImagePaths, thumbnailPath }),
+      };
+    }),
+  };
 }
 
 function header() {
@@ -119,12 +163,52 @@ function homePage() {
           ${model.books.map((book) => bookCard(book)).join('')}
         </div>
       </section>
+      ${scienceSeriesSection(model.scienceSeries)}
     </main>
   `;
 }
 
+function scienceSeriesSection(scienceSeries) {
+  if (!scienceSeries?.manifest?.topics?.length) return '';
+  return `
+    <section class="season-section" aria-labelledby="science-title">
+      <div class="section-heading">
+        <div>
+          <h2 id="science-title">${html(scienceSeries.manifest.seriesTitle)}</h2>
+        </div>
+      </div>
+      <div class="book-grid">
+        ${scienceSeries.manifest.topics.map((topic) => scienceTopicCard(scienceSeries, topic)).join('')}
+      </div>
+    </section>
+  `;
+}
+
+function scienceTopicCard(scienceSeries, topic) {
+  const sourceLabel = topic.source?.sourceLabel ?? '来源待核对';
+  const thumbnail = topic.thumbnailPath;
+  return `
+    <article class="book-card">
+      <div class="cover-frame">
+        ${thumbnail ? `<img src="${sitePath(thumbnail)}" alt="${html(topic.displayTitle)}页面缩略图">` : ''}
+        <span class="cover-fallback">页面图片暂时无法显示</span>
+      </div>
+      <div class="card-body">
+        <h3>${html(topic.displayTitle)}</h3>
+        <ul class="meta-list" aria-label="主题资料">
+          <li>类型：科学漫画伴读</li>
+          <li>来源：${html(sourceLabel)}</li>
+        </ul>
+        <div class="card-actions">
+          <a class="action-button" href="#/science/${scienceSeries.seriesSlug}/${topic.slug}">进入主题页</a>
+        </div>
+      </div>
+    </article>
+  `;
+}
+
 function pageLabel(imageRef, prefix = '页面') {
-  const pageNumber = String(imageRef).match(/(\d{3})\.png$/)?.[1]?.replace(/^0+/, '') || '';
+  const pageNumber = String(imageRef).match(/(?:page-)?(\d{3})\.(?:png|webp)$/)?.[1]?.replace(/^0+/, '') || '';
   return pageNumber ? `${prefix} ${pageNumber}` : prefix;
 }
 
@@ -192,6 +276,36 @@ function ImageLightbox() {
         <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="下一张">下一张</button>
         <p class="lightbox-caption" data-lightbox-caption></p>
       </div>
+    </div>
+  `;
+}
+
+function SciencePageThumbnail(topic, imagePath, index = 0) {
+  const label = pageLabel(imagePath, '漫画页');
+  const src = sitePath(imagePath);
+  return `
+    <button
+      class="page-thumbnail"
+      type="button"
+      data-lightbox-src="${src}"
+      data-lightbox-alt="${html(`${topic.displayTitle} ${label}`)}"
+      aria-label="放大查看${html(label)}"
+    >
+      <img src="${src}" alt="${html(topic.displayTitle)}${html(label)}" loading="lazy">
+      <span>${html(label)}</span>
+    </button>
+  `;
+}
+
+function SciencePageThumbnails(topic) {
+  const imagePaths = topic.pageImagePaths ?? [];
+  if (topic.mediaStatus !== 'available' || imagePaths.length === 0) {
+    return '<p class="thumbnail-empty">暂无对应页面图</p>';
+  }
+
+  return `
+    <div class="page-thumbnail-list">
+      ${imagePaths.map((imagePath, index) => SciencePageThumbnail(topic, imagePath, index)).join('')}
     </div>
   `;
 }
@@ -511,6 +625,37 @@ function bookPage(book) {
   `;
 }
 
+function scienceTopicPage(scienceSeries, topic) {
+  return `
+    ${header()}
+    <main class="book-layout">
+      <aside class="book-side">
+        ${scienceTopicCard(scienceSeries, topic)}
+        <nav class="quick-nav" aria-label="主题模块">
+          <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/pages">漫画页图片</a>
+          <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/source">来源备注</a>
+        </nav>
+      </aside>
+      <div class="book-main">
+        <section class="book-title-block">
+          <a class="back-link" href="#/">返回首页</a>
+          <h1>${html(topic.displayTitle)}</h1>
+          <p>${html(topic.category)}</p>
+        </section>
+        <section id="source" class="content-section" aria-labelledby="source-title">
+          <h2 id="source-title">来源备注</h2>
+          <p>来源：${html(topic.source?.sourceLabel ?? '来源待核对')}</p>
+        </section>
+        <section id="pages" class="content-section" aria-labelledby="pages-title">
+          <h2 id="pages-title">漫画页图片</h2>
+          ${SciencePageThumbnails(topic)}
+        </section>
+      </div>
+    </main>
+    ${ImageLightbox()}
+  `;
+}
+
 function errorPage(message) {
   return `
     ${header()}
@@ -526,6 +671,9 @@ function currentRoute() {
   const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
   if (parts[0] === 'book') {
     return { view: 'book', slug: parts[1], target: parts[2] };
+  }
+  if (parts[0] === 'science') {
+    return { view: 'science', seriesSlug: parts[1], slug: parts[2], target: parts[3] };
   }
   return { view: 'home' };
 }
@@ -718,13 +866,25 @@ function render() {
   }
 
   const book = model.books.find((item) => item.slug === route.slug);
-  if (!book) {
-    app.innerHTML = errorPage('没有找到这本书的 companion 页面。');
+  if (book) {
+    app.innerHTML = bookPage(book);
+    afterRender(route);
     return;
   }
 
-  app.innerHTML = bookPage(book);
-  afterRender(route);
+  if (route.view === 'science') {
+    const scienceSeries = model.scienceSeries;
+    const topic = scienceSeries?.seriesSlug === route.seriesSlug
+      ? scienceSeries.manifest.topics.find((item) => item.slug === route.slug)
+      : null;
+    if (topic) {
+      app.innerHTML = scienceTopicPage(scienceSeries, topic);
+      afterRender(route);
+      return;
+    }
+  }
+
+  app.innerHTML = errorPage('没有找到这本书的 companion 页面。');
 }
 
 async function start() {

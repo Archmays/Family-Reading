@@ -1,0 +1,577 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-17T08:33:45.098Z",
+  "inputDirectory": "source/工作细胞",
+  "publicImageBaseDirectory": "public/books/工作细胞/",
+  "titleReviews": [
+    {
+      "fileName": "工作細胞 - 1卷-清水茜.epub",
+      "relativePath": "source/工作细胞/工作細胞 - 1卷-清水茜.epub",
+      "volume": 1,
+      "status": "needs_manual_review",
+      "reason": "epub_title_differs_from_draft_manifest",
+      "epubTitle": "工作細胞 - Vol.01 - 清水茜",
+      "referenceSeriesTitle": "工作细胞"
+    },
+    {
+      "fileName": "工作細胞 - 2卷-清水茜.epub",
+      "relativePath": "source/工作细胞/工作細胞 - 2卷-清水茜.epub",
+      "volume": 2,
+      "status": "needs_manual_review",
+      "reason": "epub_title_differs_from_draft_manifest",
+      "epubTitle": "工作細胞 - Vol.02 - 清水茜",
+      "referenceSeriesTitle": "工作细胞"
+    },
+    {
+      "fileName": "工作細胞 - 3卷-清水茜.epub",
+      "relativePath": "source/工作细胞/工作細胞 - 3卷-清水茜.epub",
+      "volume": 3,
+      "status": "needs_manual_review",
+      "reason": "epub_title_differs_from_draft_manifest",
+      "epubTitle": "工作細胞 - Vol.03 - 清水茜",
+      "referenceSeriesTitle": "工作细胞"
+    },
+    {
+      "fileName": "工作細胞 - 4卷-清水茜.epub",
+      "relativePath": "source/工作细胞/工作細胞 - 4卷-清水茜.epub",
+      "volume": 4,
+      "status": "needs_manual_review",
+      "reason": "epub_title_differs_from_draft_manifest",
+      "epubTitle": "工作細胞 - Vol.04 - 清水茜",
+      "referenceSeriesTitle": "工作细胞"
+    },
+    {
+      "fileName": "工作細胞 - 5卷-清水茜.epub",
+      "relativePath": "source/工作细胞/工作細胞 - 5卷-清水茜.epub",
+      "volume": 5,
+      "status": "needs_manual_review",
+      "reason": "epub_title_differs_from_draft_manifest",
+      "epubTitle": "工作細胞 - Vol.05 - 清水茜",
+      "referenceSeriesTitle": "工作细胞"
+    },
+    {
+      "fileName": "工作細胞 - 6卷 [完]-清水茜.epub",
+      "relativePath": "source/工作细胞/工作細胞 - 6卷 [完]-清水茜.epub",
+      "volume": 6,
+      "status": "needs_manual_review",
+      "reason": "epub_title_differs_from_draft_manifest",
+      "epubTitle": "工作細胞 - 6卷",
+      "referenceSeriesTitle": "工作细胞"
+    }
+  ],
+  "topics": [
+    {
+      "topicId": "streptococcus-pneumoniae",
+      "title": "肺炎链球菌",
+      "sourceLabel": "第1卷 第1话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v01-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 1,
+          "label": "第1卷 第1话",
+          "sourceBook": "source/工作细胞/工作細胞 - 1卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "cedar-pollen-allergy",
+      "title": "杉花粉过敏",
+      "sourceLabel": "第1卷 第2话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v01-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 1,
+          "label": "第1卷 第2话",
+          "sourceBook": "source/工作细胞/工作細胞 - 1卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "influenza",
+      "title": "流感",
+      "sourceLabel": "第1卷 第3话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v01-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 1,
+          "label": "第1卷 第3话",
+          "sourceBook": "source/工作细胞/工作細胞 - 1卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "abrasion",
+      "title": "擦伤",
+      "sourceLabel": "第1卷 第4话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v01-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 1,
+          "label": "第1卷 第4话",
+          "sourceBook": "source/工作细胞/工作細胞 - 1卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "food-poisoning",
+      "title": "食物中毒",
+      "sourceLabel": "第2卷 第5话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v02-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 2,
+          "label": "第2卷 第5话",
+          "sourceBook": "source/工作细胞/工作細胞 - 2卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "heatstroke",
+      "title": "中暑",
+      "sourceLabel": "第2卷 第6话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v02-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 2,
+          "label": "第2卷 第6话",
+          "sourceBook": "source/工作细胞/工作細胞 - 2卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "erythroblast-and-myelocyte",
+      "title": "红细胞母细胞与骨髓球",
+      "sourceLabel": "第2卷 第7话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v02-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 2,
+          "label": "第2卷 第7话",
+          "sourceBook": "source/工作细胞/工作細胞 - 2卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "cancer-cell",
+      "title": "癌细胞",
+      "sourceLabel": "第2卷 第8-9话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v02-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 2,
+          "label": "第2卷 第8-9话",
+          "sourceBook": "source/工作细胞/工作細胞 - 2卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "blood-circulation",
+      "title": "血液循环",
+      "sourceLabel": "第3卷 第10话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v03-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 3,
+          "label": "第3卷 第10话",
+          "sourceBook": "source/工作细胞/工作細胞 - 3卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "common-cold-syndrome",
+      "title": "感冒综合征",
+      "sourceLabel": "第3卷 第11话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v03-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 3,
+          "label": "第3卷 第11话",
+          "sourceBook": "source/工作细胞/工作細胞 - 3卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "thymocyte",
+      "title": "胸腺细胞",
+      "sourceLabel": "第3卷 第12话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v03-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 3,
+          "label": "第3卷 第12话",
+          "sourceBook": "source/工作细胞/工作細胞 - 3卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "adaptive-immunity",
+      "title": "获得性免疫",
+      "sourceLabel": "第3卷 第13话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v03-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 3,
+          "label": "第3卷 第13话",
+          "sourceBook": "source/工作细胞/工作細胞 - 3卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "acne",
+      "title": "痤疮",
+      "sourceLabel": "第3卷 第14话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v03-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 3,
+          "label": "第3卷 第14话",
+          "sourceBook": "source/工作细胞/工作細胞 - 3卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "staphylococcus-aureus",
+      "title": "金黄色葡萄球菌",
+      "sourceLabel": "第4卷 第15话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v04-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 4,
+          "label": "第4卷 第15话",
+          "sourceBook": "source/工作细胞/工作細胞 - 4卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "dengue-fever",
+      "title": "登革热",
+      "sourceLabel": "第4卷 第16话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v04-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 4,
+          "label": "第4卷 第16话",
+          "sourceBook": "source/工作细胞/工作細胞 - 4卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "hemorrhagic-shock",
+      "title": "出血性休克",
+      "sourceLabel": "第4卷 第17-18话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v04-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 4,
+          "label": "第4卷 第17-18话",
+          "sourceBook": "source/工作细胞/工作細胞 - 4卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "peyers-patches",
+      "title": "派尔斑",
+      "sourceLabel": "第4卷 第19话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v04-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 4,
+          "label": "第4卷 第19话",
+          "sourceBook": "source/工作细胞/工作細胞 - 4卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "helicobacter-pylori",
+      "title": "幽门螺杆菌",
+      "sourceLabel": "第5卷 第20话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v05-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 5,
+          "label": "第5卷 第20话",
+          "sourceBook": "source/工作细胞/工作細胞 - 5卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "antigenic-variation",
+      "title": "抗原变异",
+      "sourceLabel": "第5卷 第21话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v05-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 5,
+          "label": "第5卷 第21话",
+          "sourceBook": "source/工作细胞/工作細胞 - 5卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "cytokines",
+      "title": "细胞因子",
+      "sourceLabel": "第5卷 第22话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v05-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 5,
+          "label": "第5卷 第22话",
+          "sourceBook": "source/工作细胞/工作細胞 - 5卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "gut-microbiota",
+      "title": "肠道菌群",
+      "sourceLabel": "第5卷 第23话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v05-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 5,
+          "label": "第5卷 第23话",
+          "sourceBook": "source/工作细胞/工作細胞 - 5卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "cancer-cell-ii",
+      "title": "癌细胞Ⅱ",
+      "sourceLabel": "第5卷 第24-25话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v05-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 5,
+          "label": "第5卷 第24-25话",
+          "sourceBook": "source/工作细胞/工作細胞 - 5卷-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "bump-on-head",
+      "title": "撞出肿包",
+      "sourceLabel": "第6卷 第26话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v06-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 6,
+          "label": "第6卷 第26话",
+          "sourceBook": "source/工作细胞/工作細胞 - 6卷 [完]-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "left-shift-of-white-blood-cells",
+      "title": "白细胞左移",
+      "sourceLabel": "第6卷 第27话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v06-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 6,
+          "label": "第6卷 第27话",
+          "sourceBook": "source/工作细胞/工作細胞 - 6卷 [完]-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "induced-pluripotent-stem-cells",
+      "title": "诱导多能干细胞",
+      "sourceLabel": "第6卷 第28话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v06-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 6,
+          "label": "第6卷 第28话",
+          "sourceBook": "source/工作细胞/工作細胞 - 6卷 [完]-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "psoriasis",
+      "title": "银屑病",
+      "sourceLabel": "第6卷 特别篇",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v06-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 6,
+          "label": "第6卷 特别篇",
+          "sourceBook": "source/工作细胞/工作細胞 - 6卷 [完]-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    },
+    {
+      "topicId": "novel-coronavirus",
+      "title": "新型冠状病毒",
+      "sourceLabel": "第6卷 第29-30话",
+      "status": "needs_manual_review",
+      "sourceParts": [
+        {
+          "sourcePartId": "v06-pending",
+          "status": "needs_manual_review",
+          "reason": "page_range_or_image_resources_not_mapped",
+          "volume": 6,
+          "label": "第6卷 第29-30话",
+          "sourceBook": "source/工作细胞/工作細胞 - 6卷 [完]-清水茜.epub",
+          "imageCount": 0,
+          "imageResourcePaths": [],
+          "extractedPublicPaths": []
+        }
+      ]
+    }
+  ]
+}

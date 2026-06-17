@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Book Companion / 家庭阅读助手公开内容索引",
+  "series": [
+    {
+      "seriesTitle": "不一样的卡梅拉",
+      "seriesSlug": "carmela-season-1",
+      "type": "picture-book-companion",
+      "navigationMode": "book",
+      "manifestPath": "public/books/不一样的卡梅拉/series.json",
+      "hasAudio": true
+    },
+    {
+      "seriesTitle": "工作细胞",
+      "seriesSlug": "work-cells",
+      "type": "science-manga-companion",
+      "navigationMode": "science-topic",
+      "manifestPath": "public/books/工作细胞/draft-manifest.json",
+      "hasAudio": false,
+      "manifestStatus": "draft",
+      "verificationStatus": "from_user_reference_only",
+      "copyrightMode": "licensed-media-except-full-epub",
+      "licenseBasis": "user_confirmed_authorization"
+    }
+  ]
+}

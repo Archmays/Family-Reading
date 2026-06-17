@@ -3,9 +3,16 @@ import { existsSync, readFileSync, statSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import test from 'node:test';
+import './work-cells-epub-import.test.mjs';
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const seriesPath = path.join(rootDir, 'public', 'books', '不一样的卡梅拉', 'series.json');
+const bookIndexPath = path.join(rootDir, 'public', 'books', 'index.json');
+const contentTypesPath = path.join(rootDir, 'public', 'books', 'content-types.json');
+const workCellsDraftPath = path.join(rootDir, 'public', 'books', '工作细胞', 'draft-manifest.json');
+const workCellsPageMapPath = path.join(rootDir, 'data', 'cells-at-work', 'page-map.json');
+const workCellsTerminologyPath = path.join(rootDir, 'docs', 'work-cells-terminology-review.md');
+const workCellsImportReportPath = path.join(rootDir, 'docs', 'work-cells-import-report.md');
 const requiredTitles = [
   '我想去看海',
   '我想有颗星星',
@@ -135,6 +142,35 @@ const childAddressBlockedPhrases = [
   'tell your child',
   'explain to the child',
 ];
+const requiredWorkCellsTopics = [
+  ['肺炎链球菌', '第1卷 第1话'],
+  ['杉花粉过敏', '第1卷 第2话'],
+  ['流感', '第1卷 第3话'],
+  ['擦伤', '第1卷 第4话'],
+  ['食物中毒', '第2卷 第5话'],
+  ['中暑', '第2卷 第6话'],
+  ['红细胞母细胞与骨髓球', '第2卷 第7话'],
+  ['癌细胞', '第2卷 第8-9话'],
+  ['血液循环', '第3卷 第10话'],
+  ['感冒综合征', '第3卷 第11话'],
+  ['胸腺细胞', '第3卷 第12话'],
+  ['获得性免疫', '第3卷 第13话'],
+  ['痤疮', '第3卷 第14话'],
+  ['金黄色葡萄球菌', '第4卷 第15话'],
+  ['登革热', '第4卷 第16话'],
+  ['出血性休克', '第4卷 第17-18话'],
+  ['派尔斑', '第4卷 第19话'],
+  ['幽门螺杆菌', '第5卷 第20话'],
+  ['抗原变异', '第5卷 第21话'],
+  ['细胞因子', '第5卷 第22话'],
+  ['肠道菌群', '第5卷 第23话'],
+  ['癌细胞Ⅱ', '第5卷 第24-25话'],
+  ['撞出肿包', '第6卷 第26话'],
+  ['白细胞左移', '第6卷 第27话'],
+  ['诱导多能干细胞', '第6卷 第28话'],
+  ['银屑病', '第6卷 特别篇'],
+  ['新型冠状病毒', '第6卷 第29话'],
+];
 
 function readJson(filePath) {
   return JSON.parse(readFileSync(filePath, 'utf8'));
@@ -213,6 +249,131 @@ test('global series index uses the final 12 book titles', () => {
     series.books.map((book) => book.title),
     requiredTitles,
   );
+});
+
+test('content index supports picture books and science manga companions', () => {
+  const contentTypes = readJson(contentTypesPath);
+  const typeNames = contentTypes.types.map((item) => item.type);
+  assert.ok(typeNames.includes('picture-book-companion'), 'picture-book-companion should remain supported');
+  assert.ok(typeNames.includes('science-manga-companion'), 'science-manga-companion should be supported');
+
+  const scienceType = contentTypes.types.find((item) => item.type === 'science-manga-companion');
+  assert.equal(scienceType.navigationMode, 'science-topic');
+  assert.equal(scienceType.defaultHasAudio, false);
+  assert.equal(scienceType.copyrightMode, 'licensed-media-except-full-epub');
+  assert.equal(scienceType.licenseBasis, 'user_confirmed_authorization');
+  assert.equal(scienceType.fullEpubPublicRelease, 'forbidden');
+  assert.ok(scienceType.allowedPublicAssetTypes.includes('converted manga page images'));
+  assert.ok(scienceType.allowedPublicAssetTypes.includes('thumbnails'));
+  assert.ok(scienceType.allowedPublicAssetTypes.includes('cropped images'));
+
+  const bookIndex = readJson(bookIndexPath);
+  const carmela = bookIndex.series.find((item) => item.seriesTitle === '不一样的卡梅拉');
+  const workCells = bookIndex.series.find((item) => item.seriesTitle === '工作细胞');
+  assert.equal(carmela.type, 'picture-book-companion');
+  assert.equal(carmela.navigationMode, 'book');
+  assert.equal(workCells.type, 'science-manga-companion');
+  assert.equal(workCells.navigationMode, 'science-topic');
+  assert.equal(workCells.hasAudio, false);
+  assert.equal(workCells.verificationStatus, 'from_user_reference_only');
+});
+
+test('Work Cells draft manifest is topic-based and source-only verified', () => {
+  const manifest = readJson(workCellsDraftPath);
+  assert.equal(manifest.type, 'science-manga-companion');
+  assert.equal(manifest.contentType, 'science-manga-companion');
+  assert.equal(manifest.displayMode, 'science-topic');
+  assert.equal(manifest.navigationMode, 'science-topic');
+  assert.equal(manifest.verificationStatus, 'from_user_reference_only');
+  assert.equal(manifest.hasAudio, false);
+  assert.equal(manifest.audioPolicy.displayAudioModule, false);
+  assert.equal(manifest.copyrightMode, 'licensed-media-except-full-epub');
+  assert.equal(manifest.licenseBasis, 'user_confirmed_authorization');
+  assert.equal(Object.hasOwn(manifest, 'volumes'), false, 'Work Cells should not use volume-based navigation');
+
+  assert.equal(manifest.topics.length, requiredWorkCellsTopics.length);
+  assert.deepEqual(
+    manifest.topics.map((topic) => [topic.title, topic.source.sourceLabel]),
+    requiredWorkCellsTopics,
+  );
+
+  for (const topic of manifest.topics) {
+    assert.equal(topic.verificationStatus, 'from_user_reference_only', `${topic.title} should be source-only verified`);
+    assert.equal(topic.hasAudio, false, `${topic.title} should not have audio`);
+    assert.deepEqual(topic.publicAssets.crops, [], `${topic.title} should not include crop paths yet`);
+  }
+});
+
+test('Work Cells draft manifest reads the page map for topic media', () => {
+  const manifest = readJson(workCellsDraftPath);
+  const pageMap = readJson(workCellsPageMapPath);
+
+  assert.equal(pageMap.sourceOfTruth, 'manual-topic-ranges');
+  assert.equal(pageMap.validation.mergeRuleCheck.ok, true);
+  assert.equal(manifest.pageMapPath, 'data/cells-at-work/page-map.json');
+  assert.equal(pageMap.topics.length, manifest.topics.length);
+
+  for (const [index, topic] of manifest.topics.entries()) {
+    const pageMapTopic = pageMap.topics[index];
+    assert.equal(topic.order, pageMapTopic.order, `${topic.title} should keep page-map order`);
+    assert.equal(topic.displayTitle, topic.title, `${topic.title} should use the confirmed topic title as displayTitle`);
+    assert.equal(topic.source.sourceLabel, pageMapTopic.sourceLabel, `${topic.title} should use page-map source note`);
+    assert.equal(topic.mediaStatus, 'available', `${topic.title} should mark page media available`);
+    assert.equal(topic.thumbnailPath, pageMapTopic.thumbnailPath, `${topic.title} should use page-map thumbnail`);
+    assert.deepEqual(topic.pageImagePaths, pageMapTopic.pageImagePaths, `${topic.title} should use page-map images`);
+    assert.equal(topic.publicAssets.status, 'available', `${topic.title} should expose mapped media status`);
+    assert.deepEqual(topic.publicAssets.pageImages, pageMapTopic.pageImagePaths, `${topic.title} should expose page images`);
+    assert.deepEqual(topic.publicAssets.thumbnails, [pageMapTopic.thumbnailPath], `${topic.title} should expose thumbnail`);
+    assert.deepEqual(topic.publicAssets.crops, [], `${topic.title} should not invent crops`);
+    assert.equal(existsSync(path.join(rootDir, ...topic.thumbnailPath.split('/'))), true, `${topic.title} thumbnail should exist`);
+
+    for (const imagePath of topic.pageImagePaths) {
+      assert.equal(existsSync(path.join(rootDir, ...imagePath.split('/'))), true, `${topic.title} image should exist: ${imagePath}`);
+    }
+  }
+});
+
+test('Work Cells merged topics keep confirmed boundaries', () => {
+  const manifest = readJson(workCellsDraftPath);
+  const byTitle = new Map(manifest.topics.map((topic) => [topic.title, topic]));
+
+  assert.equal(byTitle.get('癌细胞').source.sourceLabel, '第2卷 第8-9话');
+  assert.equal(byTitle.get('出血性休克').source.sourceLabel, '第4卷 第17-18话');
+  assert.equal(byTitle.get('癌细胞Ⅱ').source.sourceLabel, '第5卷 第24-25话');
+  assert.equal(byTitle.get('新型冠状病毒').source.sourceLabel, '第6卷 第29话');
+  assert.equal(byTitle.get('新型冠状病毒').mergeGroup, null);
+  assert.notEqual(byTitle.get('癌细胞').slug, byTitle.get('癌细胞Ⅱ').slug, '癌细胞 and 癌细胞Ⅱ should remain separate topics');
+  assert.deepEqual(byTitle.get('癌细胞').mustNotMergeWith, ['癌细胞Ⅱ']);
+  assert.deepEqual(byTitle.get('癌细胞Ⅱ').mustNotMergeWith, ['癌细胞']);
+
+  const mergeRules = new Map(manifest.topicMergeRules.map((rule) => [rule.topicTitle, rule.sourceLabel]));
+  assert.deepEqual([...mergeRules.keys()], ['癌细胞', '出血性休克', '癌细胞Ⅱ']);
+  assert.equal(mergeRules.get('癌细胞'), '第2卷 第8-9话');
+  assert.equal(mergeRules.get('出血性休克'), '第4卷 第17-18话');
+  assert.equal(mergeRules.get('癌细胞Ⅱ'), '第5卷 第24-25话');
+});
+
+test('Work Cells terminology and import report document manual review boundaries', () => {
+  const terminology = readFileSync(workCellsTerminologyPath, 'utf8');
+  const importReport = readFileSync(workCellsImportReportPath, 'utf8');
+
+  for (const [title, sourceLabel] of requiredWorkCellsTopics) {
+    assert.match(terminology, new RegExp(title.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `terminology should include ${title}`);
+    assert.match(terminology, new RegExp(sourceLabel.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `terminology should include ${sourceLabel}`);
+  }
+
+  for (const phrase of [
+    '不允许机械繁简转换',
+    '生命科学、医学、健康教育术语必须核对大陆常用表达',
+    '未解析 EPUB',
+    '完整 EPUB 原文件禁止进入',
+    'from_user_reference_only',
+    '漫画页图片',
+    '缩略图',
+    '裁切图',
+  ]) {
+    assert.match(`${terminology}\n${importReport}`, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `docs should include ${phrase}`);
+  }
 });
 
 test('static app files and required visible labels exist', () => {
@@ -364,6 +525,7 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
   assert.match(buildScript, /\bsource\b/, 'build script should explicitly keep source material out of dist');
   assert.match(buildScript, /publishedBookCount\s*=\s*12/, 'build script should publish the current twelve books');
   assert.match(buildScript, /series\.books\.slice\(0,\s*publishedBookCount\)/, 'build script should avoid publishing unused book folders');
+  assert.match(buildScript, /data[\s\S]*cells-at-work[\s\S]*page-map\.json/, 'build script should publish the Work Cells page map');
 
   assert.equal(existsSync(workflowPath), true, 'GitHub Pages workflow should exist');
   const workflow = readFileSync(workflowPath, 'utf8');

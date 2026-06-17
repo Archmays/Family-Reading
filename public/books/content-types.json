@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "types": [
+    {
+      "type": "picture-book-companion",
+      "status": "existing",
+      "navigationMode": "book",
+      "description": "纸质绘本伴读资料，按书籍进入 companion 页面。",
+      "usedBy": [
+        "不一样的卡梅拉"
+      ]
+    },
+    {
+      "type": "science-manga-companion",
+      "status": "draft-supported",
+      "navigationMode": "science-topic",
+      "description": "科学漫画伴读资料，按科学内容主题展示，卷和话只作为来源备注。",
+      "usedBy": [
+        "工作细胞"
+      ],
+      "defaultHasAudio": false,
+      "copyrightMode": "licensed-media-except-full-epub",
+      "licenseBasis": "user_confirmed_authorization",
+      "fullEpubPublicRelease": "forbidden",
+      "allowedPublicAssetTypes": [
+        "authorized original manga page images",
+        "converted manga page images",
+        "thumbnails",
+        "cropped images",
+        "companion materials"
+      ]
+    }
+  ]
+}

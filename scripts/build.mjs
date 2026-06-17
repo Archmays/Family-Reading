@@ -1,5 +1,5 @@
 import { spawnSync } from 'node:child_process';
-import { mkdir, readdir, rm, copyFile, readFile, writeFile } from 'node:fs/promises';
+import { access, mkdir, readdir, rm, copyFile, readFile, writeFile } from 'node:fs/promises';
 import { constants } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
@@ -9,8 +9,12 @@ const outputDir = path.join(rootDir, 'dist');
 const outputDirName = 'dist';
 const publishedBookCount = 12;
 const excludedDirectoryNames = new Set(['ocr', 'source']);
-const excludedExtensions = new Set(['.pdf']);
+const excludedExtensions = new Set(['.pdf', '.epub']);
 const seriesIndexPath = path.join(rootDir, 'public', 'books', '不一样的卡梅拉', 'series.json');
+const publicBooksIndexPath = path.join(rootDir, 'public', 'books', 'index.json');
+const contentTypesPath = path.join(rootDir, 'public', 'books', 'content-types.json');
+const workCellsDraftDir = path.join(rootDir, 'public', 'books', '工作细胞');
+const workCellsPageMapPath = path.join(rootDir, 'data', 'cells-at-work', 'page-map.json');
 
 function assertInsideRoot(targetPath) {
   const relative = path.relative(rootDir, targetPath);
@@ -23,6 +27,18 @@ function assertSafeOutputDirectory() {
   assertInsideRoot(outputDir);
   if (path.basename(outputDir) !== outputDirName) {
     throw new Error(`Unexpected output directory: ${outputDir}`);
+  }
+}
+
+async function pathExists(targetPath) {
+  try {
+    await access(targetPath, constants.F_OK);
+    return true;
+  } catch (error) {
+    if (error.code === 'ENOENT') {
+      return false;
+    }
+    throw error;
   }
 }
 
@@ -56,6 +72,13 @@ async function copyTree(sourceDir, targetDir) {
 
 async function copyPublishablePublic() {
   await copyTree(path.join(rootDir, 'public', 'audio'), path.join(outputDir, 'public', 'audio'));
+  const publicAssetsDir = path.join(rootDir, 'public', 'assets');
+  if (await pathExists(publicAssetsDir)) {
+    await copyTree(publicAssetsDir, path.join(outputDir, 'public', 'assets'));
+  }
+  await mkdir(path.join(outputDir, 'public', 'books'), { recursive: true });
+  await copyFile(publicBooksIndexPath, path.join(outputDir, 'public', 'books', 'index.json'));
+  await copyFile(contentTypesPath, path.join(outputDir, 'public', 'books', 'content-types.json'));
   await mkdir(path.join(outputDir, 'public', 'books', '不一样的卡梅拉'), { recursive: true });
   await copyFile(
     seriesIndexPath,
@@ -69,6 +92,14 @@ async function copyPublishablePublic() {
       path.join(outputDir, ...book.folder.split('/')),
     );
   }
+
+  await copyTree(workCellsDraftDir, path.join(outputDir, 'public', 'books', '工作细胞'));
+}
+
+async function copyPublishableData() {
+  const targetPath = path.join(outputDir, 'data', 'cells-at-work', 'page-map.json');
+  await mkdir(path.dirname(targetPath), { recursive: true });
+  await copyFile(workCellsPageMapPath, targetPath);
 }
 
 function runTests() {
@@ -92,6 +123,7 @@ await mkdir(outputDir, { recursive: true });
 await copyFile(path.join(rootDir, 'index.html'), path.join(outputDir, 'index.html'));
 await copyTree(path.join(rootDir, 'assets'), path.join(outputDir, 'assets'));
 await copyPublishablePublic();
+await copyPublishableData();
 await writeFile(path.join(outputDir, '.nojekyll'), '', 'utf8');
 
 console.log('Static GitHub Pages build written to dist.');
