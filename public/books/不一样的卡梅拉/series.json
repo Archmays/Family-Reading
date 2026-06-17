@@ -51,7 +51,14 @@
       "title": "我去找回太阳",
       "slug": "carmela-s1-04",
       "folder": "public/books/不一样的卡梅拉/我去找回太阳",
-      "assetFile": "book-assets.json"
+      "assetFile": "book-assets.json",
+      "companionFile": "companion.json",
+      "ocrReport": "ocr/ocr-report.json",
+      "audio": {
+        "title": "我去找回太阳",
+        "path": "public/audio/carmela-s1/carmela-s1-04.mp3",
+        "sourcePath": "source/不一样的卡梅拉/04-我去找回太阳.mp3"
+      }
     },
     {
       "order": 5,

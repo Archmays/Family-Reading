@@ -36,19 +36,19 @@
 
 ## 不发布的内容
 
-`scripts/build.mjs` 只复制 `index.html`、`assets/` 和筛选后的 `public/`。当前发布面只包含前三本书，因为首页和书籍页只开放前三本：
+`scripts/build.mjs` 只复制 `index.html`、`assets/` 和筛选后的 `public/`。当前发布面只包含前四本书，因为首页和书籍页只开放前四本：
 
 - 不复制 `source/`
 - 不复制 PDF
 - 不复制 `ocr/` OCR 中间文件夹
-- 不复制未上线 9 本书的页面图片
+- 不复制未上线 8 本书的页面图片
 - 不复制不必要的大型中间文件
 
 `source/` 需要保留在仓库中作为原始素材来源，但不建议进入 GitHub Pages 发布目录。若仓库体积后续继续增大，建议把原始 PDF 和全量音频迁移到 Git LFS 或私有备份位置，仓库只保留生成后的轻量发布资源和来源说明；不要在未确认前删除、压缩或移动 `source/` 文件。
 
 ## 音频策略
 
-当前前三本音频位于 `public/audio/carmela-s1/`，页面使用 `preload="metadata"`，不会在首页一次性加载整段音频。后续音频建议按已上线书籍分批发布，并保留 `sourcePath` 用于追溯原始文件。
+当前前四本音频位于 `public/audio/carmela-s1/`，页面使用 `preload="metadata"`，不会在首页一次性加载整段音频。后续音频建议按已上线书籍分批发布，并保留 `sourcePath` 用于追溯原始文件。
 
 如果音频路径不可访问，页面会显示友好提示，其他伴读内容仍可使用。
 
@@ -69,9 +69,9 @@ npm run build
 
 本轮实际检查结果：
 
-- `dist`：109 个文件，186.83 MiB。
+- `dist`：136 个文件，230.26 MiB。
 - `dist` 中未发现 `source/`、PDF 或 `ocr/` OCR 中间文件。
-- `dist/public/audio`：3 个 MP3，15.57 MiB，分别对应前三本书。
+- `dist/public/audio`：4 个 MP3，20.28 MiB，分别对应前四本书。
 - `source/`：13 个原始素材，155.24 MiB，其中原始 PDF 为 73.66 MiB；这些文件保留在仓库素材区，但不会发布到 Pages。
 - 当前较大的发布图片约 2.3-2.9 MiB/张，最大检查值为 2.88 MiB。
 

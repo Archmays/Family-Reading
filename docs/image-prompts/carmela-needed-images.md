@@ -241,3 +241,83 @@ Create a child-friendly educational illustration for ages 5-8 explaining how sma
 【ChatGPT image】
 Create a child-friendly emotional understanding illustration for ages 5-8 about a child welcoming a new younger sibling as a companion. Use a horizontal 4:3 composition in a warm picture-book support style, without copying any existing characters. Show two young children or small animal-like storybook children sitting side by side on a cozy rug, sharing a simple toy and looking at each other with curiosity and a small smile. One child can look slightly surprised but kind; the younger sibling can offer help or hand over a toy, showing early trust and companionship. Use soft home colors, rounded safe shapes, and gentle facial expressions. Do not include Chinese or English text, labels, numbers, watermark, logo, QR code, brand marks, modern classroom items, frightening content, violence, or political symbols. The picture should help a child understand that a new sibling may be different from what was expected but can become a close partner.
 ```
+
+## 我去找回太阳
+
+### 公鸡打鸣和太阳升起
+
+- 对应书名：我去找回太阳
+- 对应条目名称：公鸡打鸣和太阳升起
+- 用途说明：用于解释故事里“公鸡叫醒太阳”和真实清晨作息之间的区别。
+- 建议保存文件名：`rooster-dawn.png`
+- prompt-id: carmela-sun-rooster-dawn
+
+```md
+【ChatGPT image】
+为 5-8 岁儿童制作一张解释“公鸡清晨打鸣，太阳每天升起”的温和观察图，横向 4:3 比例。画面中是一只普通公鸡站在安全的农场栅栏或草垛上，清晨的天空从深蓝慢慢变成金色，远处太阳刚露出地平线。画面要让孩子看懂：公鸡会在天快亮时打鸣，太阳升起是每天都会发生的自然现象。不要画成公鸡真的控制太阳，也不要模仿任何现有绘本角色。不要出现文字、数字、箭头、水印、logo、品牌标识或说明标签。整体明亮、温暖、适合亲子共读时指着观察。
+```
+
+### 太阳被云和雨挡住
+
+- 对应书名：我去找回太阳
+- 对应条目名称：太阳没有丢，只是被云挡住了
+- 用途说明：用于解释阴雨天看不见太阳，不代表太阳真的消失。
+- 建议保存文件名：`clouds-rain-sun.png`
+- prompt-id: carmela-sun-clouds-rain
+
+```md
+【ChatGPT image】
+为 5-8 岁儿童制作一张解释“阴雨天太阳被云挡住”的清晰科普插图，横向 4:3 比例，温和绘本观察风格，不模仿任何现有绘本角色。画面上方有厚厚的灰白云层，云层后面透出柔和的太阳光，下面是下雨的草地和小水洼。构图要让孩子明白太阳还在天空中，只是被云层遮住，雨从云里落下来。不要使用文字、数字、箭头、标签、水印、logo 或品牌标识。画面不能阴森，要像雨天亲子共读时可以安心观察的自然图。
+```
+
+### 向日葵和阳光
+
+- 对应书名：我去找回太阳
+- 对应条目名称：向日葵为什么像在找太阳
+- 用途说明：用于解释向日葵喜欢阳光、花盘会跟随光线的故事线索。
+- 建议保存文件名：`sunflower-light.png`
+- prompt-id: carmela-sun-sunflower-light
+
+```md
+【ChatGPT image】
+为 5-8 岁儿童制作一张解释“向日葵喜欢阳光”的温柔观察图，横向 4:3 比例。画面是一片小小的向日葵田，几株年轻向日葵的花盘朝向清晨阳光，花茎和叶子清楚可见，地面有湿润泥土和几滴雨后的水珠。画面要表达向日葵会朝向光线、把故事里的“找太阳线索”变得好理解。不要出现文字、数字、箭头、水印、logo、品牌标识或说明标签。不要拟人化成现有绘本角色，保持自然、明亮、适合孩子观察。
+```
+
+### 热气球怎样飞起来
+
+- 对应书名：我去找回太阳
+- 对应条目名称：热气球怎样飞起来
+- 用途说明：用于解释热气球靠热空气升空。
+- 建议保存文件名：`hot-air-balloon.png`
+- prompt-id: carmela-sun-hot-air-balloon
+
+```md
+【ChatGPT image】
+Create a child-friendly educational illustration for ages 5-8 explaining how a hot-air balloon rises. Use a horizontal 4:3 composition in a gentle picture-book science style without copying any existing characters. Show a colorful but simple hot-air balloon with a large round envelope, a small safe basket, and a warm glow of heated air inside the opening. The balloon should be lifting gently above a grassy field, with calm clouds and soft morning light. Make the envelope, basket, ropes, and rising motion easy to observe from the picture alone, but do not use arrows, labels, numbers, text, diagrams, classroom boards, watermark, logo, QR code, brand marks, frightening height, fire danger, weapons, or political symbols. Keep the scene clear, safe, and useful for family reading support.
+```
+
+### 蒙特哥菲尔兄弟和动物气球飞行
+
+- 对应书名：我去找回太阳
+- 对应条目名称：蒙特哥菲尔兄弟和第一次动物气球飞行
+- 用途说明：用于低龄解释早期热气球实验和动物飞行测试，不替代故事页面。
+- 建议保存文件名：`montgolfier-animals.png`
+- prompt-id: carmela-sun-montgolfier-animals
+
+```md
+【ChatGPT image】
+为 5-8 岁儿童制作一张温和的历史观察插图，主题是“早期热气球实验和动物飞行测试”，横向 4:3 比例，不模仿任何现有绘本角色。画面中有一个早期热气球停在草地上，旁边有两位普通发明者正在检查绳索和气囊，远处有几只安全、平静的小动物，如绵羊、鸭子和公鸡，旁边有人照看。画面要表达这是一次小心准备的早期飞行实验，而不是危险冒险或英雄庆典。不要出现任何文字、真实人物肖像、日期、数字、箭头、水印、logo、品牌标识、国旗、武器、爆炸或吓人的火焰。整体色彩温和、清楚，适合亲子共读时解释故事背景。
+```
+
+### 云的形状
+
+- 对应书名：我去找回太阳
+- 对应条目名称：白云不是天上的羊
+- 用途说明：用于解释白云的形状会让人联想到动物。
+- 建议保存文件名：`cloud-shapes.png`
+- prompt-id: carmela-sun-cloud-shapes
+
+```md
+【ChatGPT image】
+为 5-8 岁儿童制作一张解释“云会让人联想到不同形状”的天空观察图，横向 4:3 比例，明亮温柔的绘本风格。画面是蓝天和几朵白云，其中一朵自然地像小绵羊，另一朵像棉花团或小船，但不要画成真正的动物。前景可以有草地和一个孩子仰头观察天空的背影。画面要帮助孩子理解云是云，只是形状会让人产生想象。不要出现文字、数字、箭头、标签、水印、logo、品牌标识或说明牌。保持轻松、清楚、适合亲子共读。
+```

@@ -4,13 +4,14 @@
 
 ## Current Mapping
 
-前三本已经建立从原始音频到 GitHub Pages 发布路径的映射：
+前四本已经建立从原始音频到 GitHub Pages 发布路径的映射：
 
 | Book | Source file | Public file |
 | --- | --- | --- |
 | 01 我想去看海 | `source/不一样的卡梅拉/01-我想去看海.mp3` | `public/audio/carmela-s1/carmela-s1-01.mp3` |
 | 02 我想有颗星星 | `source/不一样的卡梅拉/02-我想有颗星星.mp3` | `public/audio/carmela-s1/carmela-s1-02.mp3` |
 | 03 我想有个弟弟 | `source/不一样的卡梅拉/03-我想有个弟弟.mp3` | `public/audio/carmela-s1/carmela-s1-03.mp3` |
+| 04 我去找回太阳 | `source/不一样的卡梅拉/04-我去找回太阳.mp3` | `public/audio/carmela-s1/carmela-s1-04.mp3` |
 
 `source/不一样的卡梅拉` 下的 MP3 是原始素材，不要修改、重命名、压缩或覆盖。网页只引用 `public/audio/carmela-s1` 下的发布副本。
 
@@ -31,11 +32,11 @@
 }
 ```
 
-`series.json` 中前三本的 `audio.path` 和 `audio.sourcePath` 应保持同样映射，方便首页和书籍页使用同一套路径。
+`series.json` 中前四本的 `audio.path` 和 `audio.sourcePath` 应保持同样映射，方便首页和书籍页使用同一套路径。
 
-## 第 4-12 本
+## 第 5-12 本
 
-后续接入第 4-12 本时，按以下步骤处理：
+后续接入第 5-12 本时，按以下步骤处理：
 
 1. 确认原始 MP3 已存在于 `source/不一样的卡梅拉`，不要改动原文件名。
 2. 复制一份到 `public/audio/carmela-s1/`。

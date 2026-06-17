@@ -10,7 +10,7 @@
 npm run build
 ```
 
-构建输出目录是 `dist`。构建会复制 `index.html`、`assets/`、前三本当前页面需要的书籍素材和已接入音频，并排除 `source/`、PDF、未上线书籍图片和 `ocr/` OCR 中间文件。
+构建输出目录是 `dist`。构建会复制 `index.html`、`assets/`、前四本当前页面需要的书籍素材和已接入音频，并排除 `source/`、PDF、未上线书籍图片和 `ocr/` OCR 中间文件。
 
 ## GitHub Pages 部署
 
@@ -26,6 +26,6 @@ npm run build
 
 `source/` 下保留原始 PDF 和 MP3 素材，用作可追溯来源。它们不进入 `dist`，也不会被 GitHub Pages 工作流发布。
 
-前三本音频已有 `public/audio/carmela-s1/` 发布副本，页面使用 `preload="metadata"`，只在用户打开或播放时加载音频。后续音频建议按册复制到 `public/audio/`，不要一次性发布不需要的原始素材。
+前四本音频已有 `public/audio/carmela-s1/` 发布副本，页面使用 `preload="metadata"`，只在用户打开或播放时加载音频。后续音频建议按册复制到 `public/audio/`，不要一次性发布不需要的原始素材。
 
 更完整的部署检查和体积说明见 `docs/github-pages-deployment.md`。

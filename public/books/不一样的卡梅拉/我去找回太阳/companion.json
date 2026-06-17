@@ -1,0 +1,566 @@
+{
+  "schemaVersion": 1,
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 4,
+  "title": "我去找回太阳",
+  "slug": "carmela-s1-04",
+  "contentType": "picture-book-companion",
+  "sourceEvidence": {
+    "pageImages": "pages/",
+    "ocrPages": "ocr/pages/",
+    "ocrFullText": "ocr/full-text.txt",
+    "ocrReport": "ocr/ocr-report.json",
+    "ocrUse": "processing evidence only, not a child-facing reading body"
+  },
+  "overview": {
+    "oneLine": "连续大雨让鸡舍以为太阳不见了，卡门、卡梅利多和贝里奥一路去找太阳，误把热气球当成被困住的太阳，最后带着勇气和惊喜回到阳光里。",
+    "mainCharacters": [
+      "卡门",
+      "卡梅利多",
+      "贝里奥",
+      "卡梅拉",
+      "皮迪克",
+      "佩罗",
+      "小胖墩",
+      "柯尔贝",
+      "蒙特哥菲尔兄弟"
+    ],
+    "importantPlaces": [
+      "鸡舍",
+      "草垛",
+      "雨中的田野和树林",
+      "向日葵指向的路",
+      "柯尔贝大磨坊",
+      "蒙特哥菲尔兄弟生产纸张的厂房和工作室",
+      "热气球上空"
+    ],
+    "characterRelationships": [
+      "卡门和卡梅利多是卡梅拉、皮迪克的孩子，卡门非常崇拜会打鸣的爸爸。",
+      "皮迪克每天打鸣叫醒大家，连续阴雨让他失去信心。",
+      "小胖墩嘲笑皮迪克，也嘲笑卡门想指挥太阳。",
+      "卡梅利多维护爸爸，卡门用自己的办法阻止冲突。",
+      "贝里奥陪卡门和卡梅利多一起寻找太阳。",
+      "柯尔贝是一只喜欢雨天的鸭子，把三个小伙伴带到蒙特哥菲尔兄弟生产纸张的厂房楼上。",
+      "蒙特哥菲尔兄弟正在准备热气球，孩子们误以为气球就是被困住的太阳。"
+    ],
+    "keyConflict": "连续一个月的阴雨让鸡舍不见太阳，皮迪克也被质疑；卡门想帮爸爸找回太阳，却在寻找过程中把热气球误认成太阳。",
+    "emotionalArc": [
+      "温暖",
+      "崇拜",
+      "担心",
+      "委屈",
+      "愤怒",
+      "坚定",
+      "好奇",
+      "惊喜",
+      "安心"
+    ]
+  },
+  "storyReview": {
+    "shortReview": "清晨，小鸡们钻进爸爸妈妈的被窝撒娇，皮迪克像往常一样打鸣，太阳也升起来了，卡门觉得爸爸非常了不起。可是接下来连续阴雨，皮迪克怎么叫都叫不醒太阳，小胖墩还嘲笑他和卡门。卡门、卡梅利多和贝里奥决定按照向日葵指的方向去找太阳。他们在雨中找过田野、草地、树林和山洞，又遇见喜欢雨天的鸭子柯尔贝。柯尔贝把他们带到蒙特哥菲尔兄弟生产纸张的厂房和工作室，三个小伙伴把热气球当成被困住的太阳，帮它飞上天空。回到鸡舍时，皮迪克做最后一次打鸣，真正的太阳也升起来了，大家重新找回阳光和快乐。",
+    "mainPlot": [
+      "皮迪克每天打鸣，卡门相信太阳是爸爸叫醒的。",
+      "连续阴雨让太阳不见了，皮迪克的信心受到打击。",
+      "小胖墩嘲笑皮迪克和卡门，卡梅利多为爸爸打抱不平。",
+      "卡门、卡梅利多和贝里奥跟着向日葵指的方向寻找太阳。",
+      "他们遇见鸭子柯尔贝，被带到蒙特哥菲尔兄弟生产纸张的厂房和工作室。",
+      "三个小伙伴误把热气球当成太阳，帮助它飞上天空。",
+      "皮迪克最后一次打鸣时，真正的太阳升起，鸡舍恢复快乐。"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "sun-01",
+      "title": "爸爸叫醒太阳",
+      "pageRange": "002-005",
+      "summary": "清晨，小鸡们挤进爸爸妈妈的被窝撒娇。皮迪克站上草垛打鸣，太阳升起来了，卡门崇拜地觉得太阳是爸爸叫醒的。",
+      "discussionFocus": [
+        "清晨",
+        "亲密撒娇",
+        "崇拜爸爸"
+      ],
+      "pageRefs": [
+        "002",
+        "003",
+        "004",
+        "005"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png",
+        "pages/004.png",
+        "pages/005.png"
+      ]
+    },
+    {
+      "id": "sun-02",
+      "title": "太阳不见了",
+      "pageRange": "006-009",
+      "summary": "卡门说长大后也要指挥太阳。可天空布满乌云，连续两个星期都不见太阳，大家越来越担心，佩罗也说出了让孩子们半信半疑的解释。",
+      "discussionFocus": [
+        "连续阴雨",
+        "被嘲笑",
+        "寻找解释"
+      ],
+      "pageRefs": [
+        "006",
+        "007",
+        "008",
+        "009"
+      ],
+      "imageRefs": [
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png",
+        "pages/009.png"
+      ]
+    },
+    {
+      "id": "sun-03",
+      "title": "为了爸爸出发",
+      "pageRange": "010-013",
+      "summary": "鸡舍里有人想让皮迪克让位，小胖墩还嘲笑他老了。卡梅利多很生气，卡门制止争斗后带上贝里奥，跟着向日葵指的方向去找太阳。",
+      "discussionFocus": [
+        "维护家人",
+        "停止争斗",
+        "向日葵线索"
+      ],
+      "pageRefs": [
+        "010",
+        "011",
+        "012",
+        "013"
+      ],
+      "imageRefs": [
+        "pages/010.png",
+        "pages/011.png",
+        "pages/012.png",
+        "pages/013.png"
+      ]
+    },
+    {
+      "id": "sun-04",
+      "title": "雨里的磨坊",
+      "pageRange": "014-016",
+      "summary": "三个小伙伴来到柯尔贝大磨坊。鸭子柯尔贝很享受雨天，还说太阳就在楼上，于是带他们穿过蒙特哥菲尔兄弟生产纸张的厂房和房间，寻找通往工作室的入口。",
+      "discussionFocus": [
+        "不同感受",
+        "雨天也有快乐",
+        "磨坊里的线索"
+      ],
+      "pageRefs": [
+        "014",
+        "015",
+        "016"
+      ],
+      "imageRefs": [
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png"
+      ]
+    },
+    {
+      "id": "sun-05",
+      "title": "热气球飞起来",
+      "pageRange": "017-020",
+      "summary": "孩子们把工作室里的热气球当成受困的太阳，努力帮它出去。气球慢慢膨胀并升上天空，卡门、卡梅利多、贝里奥和柯尔贝也跟着来到空中，看见云和自己的家。",
+      "discussionFocus": [
+        "误会",
+        "热气球",
+        "从空中看家"
+      ],
+      "pageRefs": [
+        "017",
+        "018",
+        "019",
+        "020"
+      ],
+      "imageRefs": [
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png"
+      ]
+    },
+    {
+      "id": "sun-06",
+      "title": "真正的太阳回来了",
+      "pageRange": "021-024",
+      "summary": "皮迪克在大家面前做最后一次尝试，真正的太阳正好升起来。鸡舍重新变得明亮，卡门还发明了找太阳游戏，蒙特哥菲尔兄弟仍在争论那天看见了什么。",
+      "discussionFocus": [
+        "最后一次尝试",
+        "信心回来",
+        "阳光和游戏"
+      ],
+      "pageRefs": [
+        "021",
+        "022",
+        "023",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/021.png",
+        "pages/022.png",
+        "pages/023.png",
+        "pages/024.png"
+      ]
+    }
+  ],
+  "questionCards": {
+    "factualRecall": [
+      {
+        "prompt": "卡门一开始为什么觉得爸爸很伟大？",
+        "talkingPoints": [
+          "因为皮迪克打鸣后太阳升起来了，卡门觉得太阳是爸爸叫醒的。"
+        ],
+        "pageRange": "004-005",
+        "evidencePageRefs": [
+          "004",
+          "005"
+        ],
+        "evidenceImageRefs": [
+          "pages/004.png",
+          "pages/005.png"
+        ]
+      },
+      {
+        "prompt": "卡门、卡梅利多和贝里奥靠什么线索去找太阳？",
+        "talkingPoints": [
+          "他们跟着向日葵指的方向去找太阳，因为卡门说向日葵总是朝着太阳。"
+        ],
+        "pageRange": "012-013",
+        "evidencePageRefs": [
+          "012",
+          "013"
+        ],
+        "evidenceImageRefs": [
+          "pages/012.png",
+          "pages/013.png"
+        ]
+      },
+      {
+        "prompt": "柯尔贝把三个小伙伴带到了哪里？",
+        "talkingPoints": [
+          "柯尔贝把他们带到生产纸张的厂房楼上，来到蒙特哥菲尔兄弟的房间和工作室附近。"
+        ],
+        "pageRange": "014-016",
+        "evidencePageRefs": [
+          "014",
+          "015",
+          "016"
+        ],
+        "evidenceImageRefs": [
+          "pages/014.png",
+          "pages/015.png",
+          "pages/016.png"
+        ]
+      }
+    ],
+    "comprehension": [
+      {
+        "prompt": "为什么连续阴雨会让皮迪克这么难过？",
+        "talkingPoints": [
+          "大家以为太阳要靠皮迪克叫醒，可他打鸣很多次都没有太阳出现。",
+          "小胖墩还嘲笑他老了，让皮迪克更没有信心。"
+        ],
+        "pageRange": "006-011",
+        "evidencePageRefs": [
+          "006",
+          "007",
+          "008",
+          "010",
+          "011"
+        ],
+        "evidenceImageRefs": [
+          "pages/006.png",
+          "pages/007.png",
+          "pages/008.png",
+          "pages/010.png",
+          "pages/011.png"
+        ]
+      },
+      {
+        "prompt": "卡门在这次冒险里做了哪些聪明又勇敢的事？",
+        "talkingPoints": [
+          "她阻止卡梅利多和小胖墩继续打架。",
+          "她想到用向日葵找方向，还带着伙伴一路寻找太阳。",
+          "她敢钻进生产纸张的厂房和工作室，努力把她以为的太阳救出去。"
+        ],
+        "pageRange": "011-017",
+        "evidencePageRefs": [
+          "011",
+          "012",
+          "013",
+          "014",
+          "015",
+          "016",
+          "017"
+        ],
+        "evidenceImageRefs": [
+          "pages/011.png",
+          "pages/012.png",
+          "pages/013.png",
+          "pages/014.png",
+          "pages/015.png",
+          "pages/016.png",
+          "pages/017.png"
+        ]
+      },
+      {
+        "prompt": "孩子们为什么会把热气球当成太阳？",
+        "talkingPoints": [
+          "他们正在寻找太阳，柯尔贝又说太阳在楼上。",
+          "热气球又大又圆，还会升上天空，看起来很像他们想象中被困住的太阳。"
+        ],
+        "pageRange": "015-020",
+        "evidencePageRefs": [
+          "015",
+          "016",
+          "017",
+          "018",
+          "019",
+          "020"
+        ],
+        "evidenceImageRefs": [
+          "pages/015.png",
+          "pages/016.png",
+          "pages/017.png",
+          "pages/018.png",
+          "pages/019.png",
+          "pages/020.png"
+        ]
+      }
+    ],
+    "openExpression": [
+      {
+        "prompt": "如果你是卡门，被别人说“你做不到”，你会想怎么回应？",
+        "talkingPoints": [
+          "可以说出自己的感受，也可以说说会用什么行动证明自己。",
+          "可以讨论什么时候要坚持，什么时候要请大人一起帮忙。"
+        ],
+        "pageRange": "006-012",
+        "evidencePageRefs": [
+          "006",
+          "011",
+          "012"
+        ],
+        "evidenceImageRefs": [
+          "pages/006.png",
+          "pages/011.png",
+          "pages/012.png"
+        ]
+      },
+      {
+        "prompt": "你有没有见过很久下雨或很久不见太阳的日子？那时你最想做什么？",
+        "talkingPoints": [
+          "可以说心情、想玩的游戏，也可以说怎么让雨天变得舒服一点。"
+        ],
+        "pageRange": "006-014",
+        "evidencePageRefs": [
+          "006",
+          "008",
+          "013",
+          "014"
+        ],
+        "evidenceImageRefs": [
+          "pages/006.png",
+          "pages/008.png",
+          "pages/013.png",
+          "pages/014.png"
+        ]
+      },
+      {
+        "prompt": "如果你坐在热气球上往下看，最想先找哪一个地方？",
+        "talkingPoints": [
+          "可以说家、学校、公园、河流，或者画出从空中看见的路线。"
+        ],
+        "pageRange": "019-020",
+        "evidencePageRefs": [
+          "019",
+          "020"
+        ],
+        "evidenceImageRefs": [
+          "pages/019.png",
+          "pages/020.png"
+        ]
+      }
+    ]
+  },
+  "backgroundNotes": [
+    {
+      "title": "公鸡打鸣和太阳升起",
+      "pageRange": "004-006",
+      "note": "故事里，皮迪克一打鸣，太阳就升起来了。真实生活中，太阳每天升起是因为地球在转动；公鸡常在清晨打鸣，是它们身体里的作息节奏在提醒它们天快亮了。",
+      "pageRefs": [
+        "004",
+        "005",
+        "006"
+      ],
+      "imageRefs": [
+        "pages/004.png",
+        "pages/005.png",
+        "pages/006.png"
+      ],
+      "generatedImageRefs": [
+        "generated/rooster-dawn.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-sun-rooster-dawn"
+    },
+    {
+      "title": "太阳没有丢，只是被云挡住了",
+      "pageRange": "006-008",
+      "note": "下雨天看不见太阳，不代表太阳真的不见了。厚厚的云像一层灰白色的大毯子，把阳光挡住了一部分，所以地面会变暗、变冷，雨也会一直落下来。",
+      "pageRefs": [
+        "006",
+        "007",
+        "008"
+      ],
+      "imageRefs": [
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png"
+      ],
+      "generatedImageRefs": [
+        "generated/clouds-rain-sun.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-sun-clouds-rain"
+    },
+    {
+      "title": "向日葵为什么像在找太阳",
+      "pageRange": "012-013",
+      "note": "卡门想到跟着向日葵寻找太阳。向日葵喜欢阳光，年轻的向日葵花盘会随着光线慢慢转动。故事把这个特点变成了寻找太阳的线索。",
+      "pageRefs": [
+        "012",
+        "013"
+      ],
+      "imageRefs": [
+        "pages/012.png",
+        "pages/013.png"
+      ],
+      "generatedImageRefs": [
+        "generated/sunflower-light.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-sun-sunflower-light"
+    }
+  ],
+  "encyclopediaEntries": [
+    {
+      "title": "热气球怎样飞起来",
+      "anchor": "孩子们把工作室里的热气球当成太阳",
+      "pageRange": "017-020",
+      "summary": "热气球里装着被加热的空气。热空气比周围冷空气轻一些，气球就能慢慢升起来。",
+      "pageRefs": [
+        "017",
+        "018",
+        "019",
+        "020"
+      ],
+      "imageRefs": [
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png"
+      ],
+      "generatedImageRefs": [
+        "generated/hot-air-balloon.png"
+      ],
+      "storyAppearance": "卡门、卡梅利多和贝里奥在蒙特哥菲尔兄弟生产纸张的厂房工作室里看见一个又大又圆、会升空的气球。",
+      "whatItIs": "热气球是一个大气囊，里面的空气被加热后，气囊会带着下面的篮子或载物部分升起来。",
+      "whyItMatters": "孩子们正在寻找太阳，热气球又圆又会升上天空，所以他们误以为自己救出了太阳。",
+      "discussionQuestion": "你能在页面图里找到气球、篮子和正在升高的方向吗？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-sun-hot-air-balloon"
+    },
+    {
+      "title": "蒙特哥菲尔兄弟和第一次动物气球飞行",
+      "anchor": "蒙特哥菲尔兄弟生产纸张的厂房工作室和升空的气球",
+      "pageRange": "015-020",
+      "summary": "蒙特哥菲尔兄弟是很早尝试热气球飞行的人。故事把真实历史里的动物气球飞行变成了小鸡、小鸭和小绵羊的童话冒险。",
+      "pageRefs": [
+        "015",
+        "016",
+        "017",
+        "018",
+        "019",
+        "020"
+      ],
+      "imageRefs": [
+        "pages/015.png",
+        "pages/016.png",
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png"
+      ],
+      "generatedImageRefs": [
+        "generated/montgolfier-animals.png"
+      ],
+      "storyAppearance": "孩子们闯进蒙特哥菲尔兄弟生产纸张的厂房工作室，热气球带着动物离开地面。",
+      "whatItIs": "蒙特哥菲尔兄弟是法国发明家，他们做过早期热气球实验。真实历史里，也曾有动物被送上热气球测试飞行。",
+      "whyItMatters": "这一段让找太阳的故事突然变成空中冒险，也让孩子们从高处看见云和家。",
+      "discussionQuestion": "故事里的热气球飞起来时，谁也跟着离开了地面？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-sun-montgolfier-animals"
+    },
+    {
+      "title": "白云不是天上的羊",
+      "anchor": "贝里奥在热气球上看见云",
+      "pageRange": "020",
+      "summary": "云是空气里的小水滴或小冰晶聚在一起形成的。白云从远处看软软的，像羊、棉花或大团泡泡，所以故事里贝里奥会把云看成天上的羊。",
+      "pageRefs": [
+        "020"
+      ],
+      "imageRefs": [
+        "pages/020.png"
+      ],
+      "generatedImageRefs": [
+        "generated/cloud-shapes.png"
+      ],
+      "storyAppearance": "热气球升起来后，贝里奥好奇地问那些羊怎么会在天上。",
+      "whatItIs": "白云不是动物，而是很多很小的水滴或冰晶聚在天空里。",
+      "whyItMatters": "这一句让空中旅行变得有趣，也提醒我们从不同高度看世界，东西会变得不一样。",
+      "discussionQuestion": "你看过像动物的云吗？那朵云像什么？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-sun-cloud-shapes"
+    }
+  ],
+  "parentGuide": {
+    "readingUse": "这本适合围绕“误会、勇气和帮助家人”来共读。先看卡门为什么相信爸爸，再看她怎样面对嘲笑、寻找线索，最后区分故事里的热气球和真正的太阳。",
+    "suggestedFlow": [
+      "先看清晨被窝和皮迪克打鸣的页面",
+      "按找太阳路线复述田野、磨坊、生产纸张的厂房工作室和天空",
+      "挑问题卡聊卡门怎样面对嘲笑和担心",
+      "用背景补充解释云雨、向日葵和热气球"
+    ],
+    "sensitivePoints": [
+      "卡门被说“小女生做不到”的情节适合低龄讨论性别刻板印象，但不用展开成沉重议题。",
+      "孩子们钻进陌生工作室、坐上热气球是童话冒险；现实中进入陌生地方或接近飞行设备都要和大人在一起。",
+      "蒙特哥菲尔兄弟相关内容保持低龄、事实化说明，不把页面扩展成成人历史课。"
+    ]
+  },
+  "audio": {
+    "title": "我去找回太阳",
+    "bookSlug": "carmela-s1-04",
+    "path": "public/audio/carmela-s1/carmela-s1-04.mp3",
+    "sourcePath": "source/不一样的卡梅拉/04-我去找回太阳.mp3",
+    "markers": [],
+    "markerNote": "当前只接入整本音频；没有可靠的场景时间点证据，因此不添加 markers。"
+  },
+  "manualReview": {
+    "roleNames": [
+      "卡门、卡梅利多、贝里奥、皮迪克、佩罗、柯尔贝、蒙特哥菲尔兄弟按 OCR 与画面语境整理，仍建议人工复核译名。",
+      "小六子、小胖墩、鼻涕虫、小刺头、娇气包为开头群像角色，没有展开为主要人物。"
+    ],
+    "plotPoints": [
+      "第 017-020 页按热气球误会处理，不把热气球写成真正的太阳。",
+      "第 020 页“人类历史上第一次气球载动物飞行”按低龄背景处理，避免过度扩展历史细节。",
+      "第 022 页为真正太阳升起和皮迪克误以为自己成功的交叠笑点。"
+    ],
+    "backgroundEntries": [
+      "云雨、向日葵、公鸡打鸣、热气球、蒙特哥菲尔兄弟和云的形状均与本书剧情直接相关。"
+    ]
+  }
+}

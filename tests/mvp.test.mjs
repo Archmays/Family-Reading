@@ -20,7 +20,7 @@ const requiredTitles = [
   '我不是胆小鬼',
   '我爱平底锅',
 ];
-const firstThreeTitles = requiredTitles.slice(0, 3);
+const firstFourTitles = requiredTitles.slice(0, 4);
 const expectedAudio = new Map([
   ['我想去看海', {
     source: 'source/不一样的卡梅拉/01-我想去看海.mp3',
@@ -33,6 +33,10 @@ const expectedAudio = new Map([
   ['我想有个弟弟', {
     source: 'source/不一样的卡梅拉/03-我想有个弟弟.mp3',
     publicPath: 'public/audio/carmela-s1/carmela-s1-03.mp3',
+  }],
+  ['我去找回太阳', {
+    source: 'source/不一样的卡梅拉/04-我去找回太阳.mp3',
+    publicPath: 'public/audio/carmela-s1/carmela-s1-04.mp3',
   }],
 ]);
 const requiredUiText = [
@@ -110,9 +114,9 @@ function appText() {
     .join('\n');
 }
 
-function firstThreeBookRecords() {
+function firstFourBookRecords() {
   const series = readJson(seriesPath);
-  return firstThreeTitles.map((title) => {
+  return firstFourTitles.map((title) => {
     const book = series.books.find((item) => item.title === title);
     assert.ok(book, `${title} should be listed`);
     const folder = path.join(rootDir, ...book.folder.split('/'));
@@ -194,8 +198,8 @@ test('static app files and required visible labels exist', () => {
   }
 });
 
-test('first three books have companion data and usable media paths', () => {
-  for (const { title, folder, assets, companion } of firstThreeBookRecords()) {
+test('first four books have companion data and usable media paths', () => {
+  for (const { title, folder, assets, companion } of firstFourBookRecords()) {
     const coverPath = path.join(folder, assets.pageImages[0]);
     const audioPath = path.join(rootDir, ...companion.audio.path.split('/'));
 
@@ -214,10 +218,10 @@ test('first three books have companion data and usable media paths', () => {
   }
 });
 
-test('first three books publish audio through ASCII GitHub Pages paths', () => {
+test('first four books publish audio through ASCII GitHub Pages paths', () => {
   const series = readJson(seriesPath);
 
-  for (const { book, title, companion } of firstThreeBookRecords()) {
+  for (const { book, title, companion } of firstFourBookRecords()) {
     const audio = expectedAudio.get(title);
     assert.ok(audio, `${title} should have expected audio mapping`);
 
@@ -234,7 +238,7 @@ test('first three books publish audio through ASCII GitHub Pages paths', () => {
     assert.equal(statSync(publicPath).size, statSync(sourcePath).size, `${title} public audio copy should match source size`);
   }
 
-  assert.equal(series.books.slice(0, 3).every((book) => book.audio?.path?.startsWith('public/audio/')), true);
+  assert.equal(series.books.slice(0, 4).every((book) => book.audio?.path?.startsWith('public/audio/')), true);
 });
 
 test('Carmela audio onboarding doc exists and documents future books', () => {
@@ -243,7 +247,7 @@ test('Carmela audio onboarding doc exists and documents future books', () => {
   const doc = readFileSync(docPath, 'utf8');
 
   for (const phrase of [
-    '第 4-12 本',
+    '第 5-12 本',
     'source/不一样的卡梅拉',
     'public/audio/carmela-s1',
     'ASCII',
@@ -256,7 +260,7 @@ test('Carmela audio onboarding doc exists and documents future books', () => {
 });
 
 test('scene and question cards include existing page image references', () => {
-  for (const { title, folder, companion } of firstThreeBookRecords()) {
+  for (const { title, folder, companion } of firstFourBookRecords()) {
     for (const scene of companion.scenes) {
       assert.ok(Array.isArray(scene.pageRefs), `${title} ${scene.id} should have page refs`);
       assertImageRefsExist(folder, scene.imageRefs, `${title} ${scene.id}`);
@@ -276,7 +280,7 @@ test('background and encyclopedia copy is child-facing and prompt requests are d
   assert.equal(existsSync(promptPath), true, 'missing image prompt document should exist');
   const promptDoc = readFileSync(promptPath, 'utf8');
 
-  for (const { title, companion } of firstThreeBookRecords()) {
+  for (const { title, companion } of firstFourBookRecords()) {
     for (const item of [...companion.backgroundNotes, ...companion.encyclopediaEntries]) {
       const text = `${item.note ?? ''} ${item.summary ?? ''}`;
       for (const phrase of childAddressBlockedPhrases) {
@@ -292,7 +296,7 @@ test('background and encyclopedia copy is child-facing and prompt requests are d
 test('background and encyclopedia entries have page evidence, explanation art, or prompt workflow', () => {
   const promptDoc = readFileSync(path.join(rootDir, 'docs', 'image-prompts', 'carmela-needed-images.md'), 'utf8');
 
-  for (const { title, folder, companion } of firstThreeBookRecords()) {
+  for (const { title, folder, companion } of firstFourBookRecords()) {
     for (const item of companion.backgroundNotes) {
       assertVisualWorkflow(folder, item, promptDoc, `${title} background ${item.title}`);
     }
@@ -327,7 +331,7 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
   assert.match(buildScript, /\bassets\b/, 'build script should publish app assets');
   assert.match(buildScript, /\bocr\b/, 'build script should explicitly exclude OCR intermediate files');
   assert.match(buildScript, /\bsource\b/, 'build script should explicitly keep source material out of dist');
-  assert.match(buildScript, /publishedBookCount\s*=\s*3/, 'build script should publish only the current first three books');
+  assert.match(buildScript, /publishedBookCount\s*=\s*4/, 'build script should publish only the current first four books');
   assert.match(buildScript, /series\.books\.slice\(0,\s*publishedBookCount\)/, 'build script should avoid publishing unused book folders');
 
   assert.equal(existsSync(workflowPath), true, 'GitHub Pages workflow should exist');

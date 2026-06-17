@@ -1,5 +1,5 @@
 const SERIES_INDEX = 'public/books/不一样的卡梅拉/series.json';
-const FIRST_BATCH = 3;
+const FIRST_BATCH = 4;
 const app = document.querySelector('#app');
 let model = null;
 let lightboxItems = [];
