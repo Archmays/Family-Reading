@@ -1,0 +1,537 @@
+{
+  "schemaVersion": 1,
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 8,
+  "title": "我不要被吃掉",
+  "slug": "carmela-s1-08",
+  "contentType": "picture-book-companion",
+  "sourceEvidence": {
+    "pageImages": "pages/",
+    "ocrPages": "ocr/pages/",
+    "ocrFullText": "ocr/full-text.txt",
+    "ocrReport": "ocr/ocr-report.json",
+    "ocrUse": "processing evidence only, not a child-facing reading body"
+  },
+  "overview": {
+    "oneLine": "卡梅利多和男孩们因为打架被小狐狸抓进狐狸洞，卡门带着伙伴去营救，最后用勇气、合作和一点想象力救出大家，也和小狐狸佐拉成了朋友。",
+    "mainCharacters": [
+      "卡门",
+      "卡梅利多",
+      "贝里奥",
+      "佐拉",
+      "卡罗",
+      "小胖墩",
+      "邦哥",
+      "小赖皮",
+      "鼻涕虫",
+      "辣手老狐狸",
+      "怪兽科尼"
+    ],
+    "importantPlaces": [
+      "鸡舍附近的游乐地",
+      "树林边",
+      "狐狸洞",
+      "狐狸洞里的迷宫",
+      "斗兽场",
+      "迷宫出口",
+      "农场草堆"
+    ],
+    "characterRelationships": [
+      "卡门和卡梅利多是兄妹，卡门发现哥哥遇险后带伙伴去找他。",
+      "贝里奥虽然害怕，仍然跟着朋友走进狐狸洞。",
+      "佐拉一开始想抓公鸡送给爸爸，后来被卡门救下，开始重新看待这些小鸡。",
+      "小胖墩、邦哥和小赖皮打架后被抓，危险让他们明白不能被别人逼着互相伤害。",
+      "辣手老狐狸喜欢看斗鸡，孩子们必须想办法阻止他的安排。"
+    ],
+    "keyConflict": "卡梅利多和伙伴们被狐狸家族抓住，可能被当成生日礼物或被逼着打斗；卡门一边害怕一边进入狐狸洞救人，还要在迷宫里保护朋友。",
+    "emotionalArc": [
+      "热闹",
+      "争吵",
+      "惊慌",
+      "害怕",
+      "机智",
+      "同情",
+      "勇敢",
+      "团结",
+      "庆幸",
+      "不舍"
+    ]
+  },
+  "storyReview": {
+    "shortReview": "暴风雨前，小鸡们玩起“牧羊人数绵羊”的游戏，男孩们却因为抢躲藏点打了起来。大家没有发现有伙伴被小狐狸抓走，卡梅利多和几个小公鸡被带到狐狸洞里。卡门说服贝里奥和伙伴们去找哥哥，在树林边遇到想抓公鸡送给爸爸的小狐狸佐拉。卡门让佐拉以为她们是公鸡，借机跟进狐狸洞。狐狸洞像迷宫一样黑，佐拉掉进深洞后，卡门和伙伴们救了她。佐拉开始动摇，不想再把她们送给爸爸。狐狸爸爸却逼小公鸡互相打斗，还威胁要把失败者扔进怪兽科尼的洞里。卡门想出用一大堆蔬菜假扮怪兽的办法，吓跑狐狸们。最后，大家跟着贝里奥掉落的羊毛线走出狐狸洞，卡门把新的木马卡罗送给佐拉，曾经的敌人成了朋友。",
+    "mainPlot": [
+      "小鸡们玩游戏时，男孩们因为抢躲藏点打起来。",
+      "小狐狸们趁乱抓走卡梅利多和伙伴们，把他们当成送给狐狸爸爸的礼物。",
+      "卡门带着贝里奥和小母鸡们出发寻找哥哥，遇到想抓公鸡的佐拉。",
+      "卡门故意让佐拉把她们带进狐狸洞，狐狸洞却像迷宫一样危险。",
+      "佐拉掉进深洞后，卡门和伙伴们救了她，佐拉不再愿意伤害她们。",
+      "辣手老狐狸逼小公鸡互相打斗，卡门用蔬菜堆和怪兽传说吓跑狐狸。",
+      "贝里奥掉落的羊毛成了出洞线索，大家安全回到农场。"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "zola-01",
+      "title": "游戏变成混乱",
+      "pageRange": "002-005",
+      "summary": "暴风雨快来了，小鸡们玩捉迷藏式的游戏。男孩们为了躲藏点吵架、打架，大家没有注意到有伙伴已经被狐狸抓走。",
+      "discussionFocus": [
+        "游戏规则",
+        "争吵升级",
+        "危险靠近"
+      ],
+      "pageRefs": [
+        "002",
+        "003",
+        "004",
+        "005"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png",
+        "pages/004.png",
+        "pages/005.png"
+      ]
+    },
+    {
+      "id": "zola-02",
+      "title": "狐狸洞里的俘虏",
+      "pageRange": "006-007",
+      "summary": "小狐狸们第一次远征就抓到许多小公鸡，狐狸妈妈把俘虏扔进储藏洞。卡梅利多和伙伴们又害怕又互相责怪。",
+      "discussionFocus": [
+        "被抓走",
+        "害怕",
+        "互相责怪"
+      ],
+      "pageRefs": [
+        "006",
+        "007"
+      ],
+      "imageRefs": [
+        "pages/006.png",
+        "pages/007.png"
+      ]
+    },
+    {
+      "id": "zola-03",
+      "title": "卡门跟着佐拉进洞",
+      "pageRange": "008-010",
+      "summary": "卡门说服朋友一起找哥哥，遇到骑着木马卡罗的小狐狸佐拉。卡门听出哥哥们可能在狐狸洞里，决定让佐拉以为她们是公鸡，把她们带去狐狸家。",
+      "discussionFocus": [
+        "寻找哥哥",
+        "小狐狸佐拉",
+        "将计就计"
+      ],
+      "pageRefs": [
+        "008",
+        "009",
+        "010"
+      ],
+      "imageRefs": [
+        "pages/008.png",
+        "pages/009.png",
+        "pages/010.png"
+      ]
+    },
+    {
+      "id": "zola-04",
+      "title": "迷宫和深洞",
+      "pageRange": "011-016",
+      "summary": "狐狸洞又黑又绕，像迷宫一样。小公鸡们听见可怕声音，佐拉也迷路并掉进深洞。卡门和小母鸡们救起佐拉，佐拉发现这些“俘虏”其实救了她。",
+      "discussionFocus": [
+        "迷宫",
+        "怪兽声音",
+        "救下对手"
+      ],
+      "pageRefs": [
+        "011",
+        "012",
+        "013",
+        "014",
+        "015",
+        "016"
+      ],
+      "imageRefs": [
+        "pages/011.png",
+        "pages/012.png",
+        "pages/013.png",
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png"
+      ]
+    },
+    {
+      "id": "zola-05",
+      "title": "蔬菜怪兽吓跑狐狸",
+      "pageRange": "017-020",
+      "summary": "辣手老狐狸逼小公鸡互相打斗，还提到怪兽科尼。卡门想出收集蔬菜的办法，制造出吓人的巨大影子，让狐狸们以为怪兽出现了，纷纷逃跑。",
+      "discussionFocus": [
+        "拒绝被逼打斗",
+        "蔬菜计划",
+        "想象力"
+      ],
+      "pageRefs": [
+        "017",
+        "018",
+        "019",
+        "020"
+      ],
+      "imageRefs": [
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png"
+      ]
+    },
+    {
+      "id": "zola-06",
+      "title": "羊毛线带大家回家",
+      "pageRange": "021-024",
+      "summary": "小鸡们和佐拉告别前，卡门送给她一个新的木马卡罗。贝里奥进洞时挂掉的羊毛成了回家的线索，大家顺利走出迷宫。最后，迷宫深处的怪兽也收到了一份温柔的礼物。",
+      "discussionFocus": [
+        "新的友谊",
+        "羊毛线索",
+        "安全离开"
+      ],
+      "pageRefs": [
+        "021",
+        "022",
+        "023",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/021.png",
+        "pages/022.png",
+        "pages/023.png",
+        "pages/024.png"
+      ]
+    }
+  ],
+  "questionCards": {
+    "factualRecall": [
+      {
+        "prompt": "小狐狸们把卡梅利多和伙伴们带到了哪里？",
+        "talkingPoints": [
+          "他们被带到狐狸洞里，还被扔进储藏洞。"
+        ],
+        "pageRange": "006-007",
+        "evidencePageRefs": [
+          "006",
+          "007"
+        ],
+        "evidenceImageRefs": [
+          "pages/006.png",
+          "pages/007.png"
+        ]
+      },
+      {
+        "prompt": "卡门为什么要让佐拉以为她们是公鸡？",
+        "talkingPoints": [
+          "卡门想让佐拉带路，把她们带到狐狸洞，这样才能找到卡梅利多和伙伴们。"
+        ],
+        "pageRange": "009-010",
+        "evidencePageRefs": [
+          "009",
+          "010"
+        ],
+        "evidenceImageRefs": [
+          "pages/009.png",
+          "pages/010.png"
+        ]
+      },
+      {
+        "prompt": "大家最后靠什么线索走出了狐狸洞？",
+        "talkingPoints": [
+          "贝里奥进洞时羊毛挂在荆棘上，掉下来的羊毛像线一样帮大家找到出口。"
+        ],
+        "pageRange": "022",
+        "evidencePageRefs": [
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/022.png"
+        ]
+      }
+    ],
+    "comprehension": [
+      {
+        "prompt": "为什么男孩们一开始会更容易遇到危险？",
+        "talkingPoints": [
+          "他们把游戏中的争执变成打架，注意力都放在互相生气上，没有发现真正的危险靠近。"
+        ],
+        "pageRange": "003-005",
+        "evidencePageRefs": [
+          "003",
+          "004",
+          "005"
+        ],
+        "evidenceImageRefs": [
+          "pages/003.png",
+          "pages/004.png",
+          "pages/005.png"
+        ]
+      },
+      {
+        "prompt": "卡门救下佐拉后，佐拉为什么开始改变主意？",
+        "talkingPoints": [
+          "佐拉原本把小鸡当俘虏，可是卡门和伙伴们在她掉进深洞时救了她。她发现这些小鸡不是敌人。"
+        ],
+        "pageRange": "015-016",
+        "evidencePageRefs": [
+          "015",
+          "016"
+        ],
+        "evidenceImageRefs": [
+          "pages/015.png",
+          "pages/016.png"
+        ]
+      },
+      {
+        "prompt": "小公鸡们为什么拒绝在斗兽场里互相打斗？",
+        "talkingPoints": [
+          "他们平时会打闹，但不愿意因为狐狸的要求而真正伤害朋友。"
+        ],
+        "pageRange": "018",
+        "evidencePageRefs": [
+          "018"
+        ],
+        "evidenceImageRefs": [
+          "pages/018.png"
+        ]
+      }
+    ],
+    "openExpression": [
+      {
+        "prompt": "如果你在游戏里和朋友抢到同一个躲藏点，你会怎么解决？",
+        "talkingPoints": [
+          "可以轮流、重新找一个位置，或者一起商量一个新规则。"
+        ],
+        "pageRange": "003-004",
+        "evidencePageRefs": [
+          "003",
+          "004"
+        ],
+        "evidenceImageRefs": [
+          "pages/003.png",
+          "pages/004.png"
+        ]
+      },
+      {
+        "prompt": "佐拉曾经抓小鸡，后来又和卡门告别。你觉得朋友之间什么时候可以重新开始？",
+        "talkingPoints": [
+          "可以聊道歉、帮助、守信用和不再伤害别人。"
+        ],
+        "pageRange": "016-023",
+        "evidencePageRefs": [
+          "016",
+          "021",
+          "023"
+        ],
+        "evidenceImageRefs": [
+          "pages/016.png",
+          "pages/021.png",
+          "pages/023.png"
+        ]
+      },
+      {
+        "prompt": "如果让你用蔬菜设计一个吓跑坏蛋的假怪兽，你会选哪些蔬菜？",
+        "talkingPoints": [
+          "可以根据形状来想：南瓜像头，胡萝卜像角，叶子像头发，也可以画出来。"
+        ],
+        "pageRange": "017-020",
+        "evidencePageRefs": [
+          "017",
+          "018",
+          "019",
+          "020"
+        ],
+        "evidenceImageRefs": [
+          "pages/017.png",
+          "pages/018.png",
+          "pages/019.png",
+          "pages/020.png"
+        ]
+      }
+    ]
+  },
+  "backgroundNotes": [
+    {
+      "title": "吵架会让人看不见真正的危险",
+      "pageRange": "003-005",
+      "note": "生气时，眼睛和耳朵常常只盯着对方的错。故事里的男孩们越吵越厉害，就没有发现伙伴被狐狸抓走。先停下来、离远一点、说清楚规则，危险就不容易趁乱靠近。",
+      "pageRefs": [
+        "003",
+        "004",
+        "005"
+      ],
+      "imageRefs": [
+        "pages/003.png",
+        "pages/004.png",
+        "pages/005.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-zola-no-forced-fighting",
+      "generatedImageRefs": [
+        "generated/no-forced-fighting.png"
+      ]
+    },
+    {
+      "title": "迷宫里为什么容易迷路",
+      "pageRange": "014-016",
+      "note": "迷宫有很多弯路、岔路和看起来差不多的通道。走在里面时，如果没有记号，很容易分不清来路和去路。贝里奥掉下的羊毛就像一条线，后来帮大家找到出口。",
+      "pageRefs": [
+        "014",
+        "015",
+        "016",
+        "022"
+      ],
+      "imageRefs": [
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png",
+        "pages/022.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-zola-fox-den-maze",
+      "generatedImageRefs": [
+        "generated/fox-den-maze.png"
+      ]
+    },
+    {
+      "title": "救了对手，也可能打开新的友谊",
+      "pageRange": "015-023",
+      "note": "佐拉一开始想抓小鸡，可她掉进深洞时，卡门没有让她掉下去。被救以后，佐拉发现卡门并不是只会逃跑的俘虏，而是会帮助别人的朋友。友谊有时从一次勇敢的善意开始。",
+      "pageRefs": [
+        "015",
+        "016",
+        "021",
+        "023"
+      ],
+      "imageRefs": [
+        "pages/015.png",
+        "pages/016.png",
+        "pages/021.png",
+        "pages/023.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-zola-friendship-gift",
+      "generatedImageRefs": [
+        "generated/friendship-gift-wooden-horse.png"
+      ]
+    }
+  ],
+  "encyclopediaEntries": [
+    {
+      "title": "狐狸洞像迷宫",
+      "anchor": "佐拉带着卡门走进又黑又绕的狐狸洞",
+      "pageRange": "014-016",
+      "summary": "故事里的狐狸洞有很多通道，像迷宫一样让人分不清方向。迷宫故事常常用来制造紧张感，也让线索变得很重要。",
+      "pageRefs": [
+        "014",
+        "015",
+        "016"
+      ],
+      "imageRefs": [
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png"
+      ],
+      "storyAppearance": "卡门和伙伴们跟着佐拉进入狐狸洞，发现里面黑暗、弯绕，还会听见可怕声音。",
+      "whatItIs": "迷宫是一种路很多、岔口很多的地方，走进去以后需要靠记号或线索找出口。",
+      "whyItMatters": "贝里奥的羊毛线让大家从迷宫里出来，说明小小的线索也能救大忙。",
+      "discussionQuestion": "如果你在图里找出口，会先注意哪一条线索？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-zola-fox-den-maze",
+      "generatedImageRefs": [
+        "generated/fox-den-maze.png"
+      ]
+    },
+    {
+      "title": "怪兽科尼",
+      "anchor": "狐狸爸爸威胁把小公鸡扔进怪兽科尼的洞里",
+      "pageRange": "015-020",
+      "summary": "怪兽科尼让卡门想到迷宫里的怪兽故事。故事里真正吓跑狐狸的，是卡门用蔬菜和想象力做出的巨大影子。",
+      "pageRefs": [
+        "015",
+        "017",
+        "018",
+        "019",
+        "020"
+      ],
+      "imageRefs": [
+        "pages/015.png",
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png"
+      ],
+      "storyAppearance": "狐狸们提到怪兽科尼，小鸡们后来用蔬菜制造出吓人的效果。",
+      "whatItIs": "怪兽科尼是故事里的想象怪兽，和迷宫、黑暗洞穴的紧张气氛联系在一起。它不是真实动物，而是故事里的冒险元素。",
+      "whyItMatters": "卡门利用狐狸害怕怪兽科尼的心理，保护了伙伴们，没有真的和狐狸硬拼。",
+      "discussionQuestion": "卡门的办法厉害在哪里：蔬菜本身厉害，还是她知道狐狸害怕怪兽科尼？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-zola-minotaur-story",
+      "generatedImageRefs": [
+        "generated/minotaur-story-vegetable-shadow.png"
+      ]
+    },
+    {
+      "title": "不要被别人逼着伤害朋友",
+      "anchor": "小公鸡们拒绝在斗兽场里互相打斗",
+      "pageRange": "018",
+      "summary": "有时别人会用起哄、命令或奖励让人做不想做的事。小公鸡们虽然平时会打闹，但他们明白不能为了狐狸的游戏伤害朋友。",
+      "pageRefs": [
+        "018"
+      ],
+      "imageRefs": [
+        "pages/018.png"
+      ],
+      "storyAppearance": "辣手老狐狸想看小公鸡互相打斗，小公鸡们一起拒绝。",
+      "whatItIs": "拒绝伤害朋友，就是在压力面前说“不”。这需要勇气，也需要大家站在一起。",
+      "whyItMatters": "小公鸡们的拒绝让故事从互相打架变成一起脱险。",
+      "discussionQuestion": "如果有人起哄让你和朋友打起来，你可以怎么说不？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-zola-no-forced-fighting",
+      "generatedImageRefs": [
+        "generated/no-forced-fighting.png"
+      ]
+    }
+  ],
+  "parentGuide": {
+    "readingUse": "这本适合围绕“争吵升级、害怕时仍然行动、救助对手、拒绝被迫伤害朋友”来共读。重点看卡门如何把害怕变成办法，也看佐拉怎样从抓捕者变成朋友。",
+    "suggestedFlow": [
+      "先看游戏场面，找出争吵是怎样一步步升级的",
+      "再跟着卡门进入狐狸洞，观察迷宫、深洞和羊毛线索",
+      "读问题卡时重点讨论卡门救佐拉和小公鸡拒绝打斗",
+      "最后用背景补充聊迷宫、怪兽故事和重新成为朋友"
+    ],
+    "sensitivePoints": [
+      "狐狸抓小鸡和“被吃掉”的紧张情节可以停留在故事冒险层面，不扩展成恐吓。",
+      "斗兽场和互相伤害的段落适合强调“被要求伤害朋友时可以拒绝”。",
+      "佐拉被哥哥嘲笑女孩不会捕猎的桥段，可以引导到每个人都能学习和改变。"
+    ]
+  },
+  "audio": {
+    "title": "我不要被吃掉",
+    "bookSlug": "carmela-s1-08",
+    "path": "public/audio/carmela-s1/carmela-s1-08.mp3",
+    "sourcePath": "source/不一样的卡梅拉/08-我不要被吃掉.mp3",
+    "markers": [],
+    "markerNote": "当前只接入整本音频；没有可靠的场景时间点证据，因此不添加 markers。"
+  },
+  "manualReview": {
+    "roleNames": [
+      "佐拉、卡罗、辣手老狐狸、怪兽科尼、鼻涕虫、小赖皮、小胖墩和邦哥等译名已按人工复核确认。",
+      "第 017-020 页相关称呼已按人工复核统一为“怪兽科尼”。"
+    ],
+    "plotPoints": [
+      "第 003-005 页从游戏争执过渡到被狐狸抓走，已按人工复核确认。",
+      "第 015-016 页佐拉被救是角色关系转变的关键，已按人工复核确认。",
+      "第 022 页贝里奥羊毛线索用于离开迷宫，已按人工复核确认。"
+    ],
+    "backgroundEntries": [
+      "迷宫、怪兽科尼、拒绝被迫打斗和重新成为朋友都与本书剧情直接相关。",
+      "背景和百科解释图已按现有 generated 图片接入。"
+    ]
+  }
+}

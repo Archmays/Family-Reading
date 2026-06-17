@@ -107,21 +107,42 @@
       "title": "我不要被吃掉",
       "slug": "carmela-s1-08",
       "folder": "public/books/不一样的卡梅拉/我不要被吃掉",
-      "assetFile": "book-assets.json"
+      "assetFile": "book-assets.json",
+      "companionFile": "companion.json",
+      "ocrReport": "ocr/ocr-report.json",
+      "audio": {
+        "title": "我不要被吃掉",
+        "path": "public/audio/carmela-s1/carmela-s1-08.mp3",
+        "sourcePath": "source/不一样的卡梅拉/08-我不要被吃掉.mp3"
+      }
     },
     {
       "order": 9,
       "title": "我好喜欢她",
       "slug": "carmela-s1-09",
       "folder": "public/books/不一样的卡梅拉/我好喜欢她",
-      "assetFile": "book-assets.json"
+      "assetFile": "book-assets.json",
+      "companionFile": "companion.json",
+      "ocrReport": "ocr/ocr-report.json",
+      "audio": {
+        "title": "我好喜欢她",
+        "path": "public/audio/carmela-s1/carmela-s1-09.mp3",
+        "sourcePath": "source/不一样的卡梅拉/09-我好喜欢她.mp3"
+      }
     },
     {
       "order": 10,
       "title": "我要救出贝里奥",
       "slug": "carmela-s1-10",
       "folder": "public/books/不一样的卡梅拉/我要救出贝里奥",
-      "assetFile": "book-assets.json"
+      "assetFile": "book-assets.json",
+      "companionFile": "companion.json",
+      "ocrReport": "ocr/ocr-report.json",
+      "audio": {
+        "title": "我要救出贝里奥",
+        "path": "public/audio/carmela-s1/carmela-s1-10.mp3",
+        "sourcePath": "source/不一样的卡梅拉/10-我要救出贝里奥.mp3"
+      }
     },
     {
       "order": 11,

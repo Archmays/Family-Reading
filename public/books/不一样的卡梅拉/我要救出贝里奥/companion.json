@@ -1,0 +1,571 @@
+{
+  "schemaVersion": 1,
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 10,
+  "title": "我要救出贝里奥",
+  "slug": "carmela-s1-10",
+  "contentType": "picture-book-companion",
+  "sourceEvidence": {
+    "pageImages": "pages/",
+    "ocrPages": "ocr/pages/",
+    "ocrFullText": "ocr/full-text.txt",
+    "ocrReport": "ocr/ocr-report.json",
+    "ocrUse": "processing evidence only, not a child-facing reading body"
+  },
+  "overview": {
+    "oneLine": "贝里奥害怕被剪羊毛，卡门和卡梅利多帮他躲到巨石林，却意外遇到寻找金羊毛的树人；伙伴们团结起来，用柠檬假扮金蛋救回贝里奥。",
+    "mainCharacters": [
+      "贝里奥",
+      "卡门",
+      "卡梅利多",
+      "佩罗",
+      "小胖墩",
+      "小刺头",
+      "鼻涕虫",
+      "小赖皮",
+      "皮克",
+      "尼克",
+      "国王的羊倌",
+      "两个树人",
+      "法国国王路易十四"
+    ],
+    "importantPlaces": [
+      "农场剪羊毛处",
+      "巨石林",
+      "石桌",
+      "回鸡舍的路上",
+      "鸡舍会议",
+      "凡尔赛宫皇家花园",
+      "茂密树林",
+      "凡尔赛宫"
+    ],
+    "characterRelationships": [
+      "贝里奥是卡门和卡梅利多最好的朋友，害怕自己的羊毛被剪掉。",
+      "卡门和卡梅利多为了保护贝里奥，带他离开农场躲起来。",
+      "皮克和尼克偷吃奶酪，被奇怪月光照成金色，也看见贝里奥被树人抓走。",
+      "佩罗提醒大家树人喜欢金子、害怕太阳，帮卡门找到营救思路。",
+      "小鸡们原本常吵闹，但为了救贝里奥一起行动。"
+    ],
+    "keyConflict": "贝里奥为了躲开剪羊毛离开农场，却因为金色羊毛被树人抓走；卡门必须在树人伤害贝里奥之前，用有限的线索和伙伴合作把他救出来。",
+    "emotionalArc": [
+      "害怕",
+      "保护",
+      "安心",
+      "诱惑",
+      "失踪",
+      "惊慌",
+      "难过",
+      "重拾信心",
+      "紧张",
+      "获救",
+      "团圆"
+    ]
+  },
+  "storyReview": {
+    "shortReview": "农场到了剪羊毛的时候，贝里奥非常害怕自己被剪得光秃秃。卡门和卡梅利多不愿意丢下朋友，带他逃到神秘的巨石林躲藏。夜里，卡门把气味很重的皇家奶酪放到石桌上，皮克和尼克想偷吃，却被千年一次的奇怪月光照成金色。贝里奥半夜闻到奶酪香味，也走向石桌，结果全身羊毛变成金色，被寻找金羊毛的两个树人抓走。第二天，卡门和卡梅利多发现贝里奥失踪，从皮克和尼克那里得知真相，伤心地回鸡舍求助。佩罗提醒大家：树人贪爱金子，也害怕太阳。卡门想到去凡尔赛宫皇家花园摘柠檬，把它们说成金鸡蛋，引树人追出树林。阳光照到树人，他们变成石头，卡梅利多救出贝里奥。最后，贝里奥发现剪掉金羊毛反而是一种解脱，金羊毛还被送到凡尔赛宫，成了国王舒服的礼物。",
+    "mainPlot": [
+      "贝里奥害怕剪羊毛，卡门和卡梅利多帮他逃离农场。",
+      "三个朋友在巨石林过夜，把皇家奶酪放在石桌上。",
+      "皮克、尼克和贝里奥被奇怪月光照到，身上变成金色。",
+      "两个寻找金羊毛的树人抓走贝里奥，准备把他当成美味。",
+      "卡门和卡梅利多回鸡舍求助，佩罗指出树人喜欢金子、害怕太阳。",
+      "卡门用柠檬假扮金蛋，引树人冲出树林暴露在阳光下。",
+      "贝里奥获救后回去剪羊毛，大家重新团聚。"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "berrio-01",
+      "title": "贝里奥害怕剪羊毛",
+      "pageRange": "004-006",
+      "summary": "农场到了剪羊毛时间，小鸡们看热闹，贝里奥却害怕被剪光。卡门和卡梅利多决定帮助他躲开羊倌。",
+      "discussionFocus": [
+        "害怕被嘲笑",
+        "保护朋友",
+        "逃离农场"
+      ],
+      "pageRefs": [
+        "004",
+        "005",
+        "006"
+      ],
+      "imageRefs": [
+        "pages/004.png",
+        "pages/005.png",
+        "pages/006.png"
+      ]
+    },
+    {
+      "id": "berrio-02",
+      "title": "巨石林过夜",
+      "pageRange": "007-011",
+      "summary": "三个朋友来到神秘的巨石林，准备过夜。卡门把气味很重的皇家奶酪放到石桌上，皮克和尼克想偷吃，却被月光照成金色。贝里奥也被奶酪香味吸引。",
+      "discussionFocus": [
+        "躲藏地",
+        "皇家奶酪",
+        "奇怪月光"
+      ],
+      "pageRefs": [
+        "007",
+        "008",
+        "009",
+        "010",
+        "011"
+      ],
+      "imageRefs": [
+        "pages/007.png",
+        "pages/008.png",
+        "pages/009.png",
+        "pages/010.png",
+        "pages/011.png"
+      ]
+    },
+    {
+      "id": "berrio-03",
+      "title": "贝里奥被树人抓走",
+      "pageRange": "012-014",
+      "summary": "第二天，卡门和卡梅利多发现贝里奥不见了。皮克和尼克说，贝里奥也被月光照成金毛，随后被两个寻找金羊毛的树人装进口袋带走。",
+      "discussionFocus": [
+        "失踪",
+        "金羊毛",
+        "紧急求助"
+      ],
+      "pageRefs": [
+        "012",
+        "013",
+        "014"
+      ],
+      "imageRefs": [
+        "pages/012.png",
+        "pages/013.png",
+        "pages/014.png"
+      ]
+    },
+    {
+      "id": "berrio-04",
+      "title": "鸡舍里的营救计划",
+      "pageRange": "015-017",
+      "summary": "小鸡们很难过，但小胖墩提醒贝里奥可能还活着。佩罗说明树人爱金子、怕太阳，卡门想到用许多金色东西转移他们的注意力。",
+      "discussionFocus": [
+        "不要放弃",
+        "树人的弱点",
+        "分头行动"
+      ],
+      "pageRefs": [
+        "015",
+        "016",
+        "017"
+      ],
+      "imageRefs": [
+        "pages/015.png",
+        "pages/016.png",
+        "pages/017.png"
+      ]
+    },
+    {
+      "id": "berrio-05",
+      "title": "柠檬变成金鸡蛋",
+      "pageRange": "018-022",
+      "summary": "卡梅利多带队找到树人的足迹，卡门带队到凡尔赛宫摘柠檬。她把柠檬说成金鸡蛋，引树人追出树林。阳光照到树人，他们立刻失去威胁。",
+      "discussionFocus": [
+        "合作分工",
+        "柠檬计划",
+        "阳光"
+      ],
+      "pageRefs": [
+        "018",
+        "019",
+        "020",
+        "021",
+        "022"
+      ],
+      "imageRefs": [
+        "pages/018.png",
+        "pages/019.png",
+        "pages/020.png",
+        "pages/021.png",
+        "pages/022.png"
+      ]
+    },
+    {
+      "id": "berrio-06",
+      "title": "救出贝里奥",
+      "pageRange": "023-027",
+      "summary": "卡梅利多解开口袋，贝里奥终于获救。大家拥抱庆祝，贝里奥也愿意回去剪掉金羊毛。最后金羊毛被送到凡尔赛宫，变成国王舒服的礼物。",
+      "discussionFocus": [
+        "重逢",
+        "剪掉金羊毛",
+        "太阳王"
+      ],
+      "pageRefs": [
+        "023",
+        "024",
+        "025",
+        "026",
+        "027"
+      ],
+      "imageRefs": [
+        "pages/023.png",
+        "pages/024.png",
+        "pages/025.png",
+        "pages/026.png",
+        "pages/027.png"
+      ]
+    }
+  ],
+  "questionCards": {
+    "factualRecall": [
+      {
+        "prompt": "贝里奥一开始为什么逃跑？",
+        "talkingPoints": [
+          "他害怕被剪羊毛，觉得光着屁股很难看。"
+        ],
+        "pageRange": "004-006",
+        "evidencePageRefs": [
+          "004",
+          "005",
+          "006"
+        ],
+        "evidenceImageRefs": [
+          "pages/004.png",
+          "pages/005.png",
+          "pages/006.png"
+        ]
+      },
+      {
+        "prompt": "贝里奥为什么变成了一身金毛？",
+        "talkingPoints": [
+          "他碰到了千年一次的奇怪月光，羊毛被照成金色。"
+        ],
+        "pageRange": "010-013",
+        "evidencePageRefs": [
+          "010",
+          "011",
+          "012",
+          "013"
+        ],
+        "evidenceImageRefs": [
+          "pages/010.png",
+          "pages/011.png",
+          "pages/012.png",
+          "pages/013.png"
+        ]
+      },
+      {
+        "prompt": "卡门用什么假装成金鸡蛋引开树人？",
+        "talkingPoints": [
+          "她用凡尔赛宫皇家花园里的柠檬，装在篮子里假装成金鸡蛋。"
+        ],
+        "pageRange": "018-021",
+        "evidencePageRefs": [
+          "018",
+          "021"
+        ],
+        "evidenceImageRefs": [
+          "pages/018.png",
+          "pages/021.png"
+        ]
+      }
+    ],
+    "comprehension": [
+      {
+        "prompt": "为什么卡门和卡梅利多要先带贝里奥离开农场？",
+        "talkingPoints": [
+          "贝里奥非常害怕剪羊毛，也害怕被大家嘲笑。卡门和卡梅利多把朋友的害怕当回事，想先保护他。"
+        ],
+        "pageRange": "004-007",
+        "evidencePageRefs": [
+          "004",
+          "005",
+          "006",
+          "007"
+        ],
+        "evidenceImageRefs": [
+          "pages/004.png",
+          "pages/005.png",
+          "pages/006.png",
+          "pages/007.png"
+        ]
+      },
+      {
+        "prompt": "佩罗提供的两个线索怎样帮助了营救？",
+        "talkingPoints": [
+          "树人喜欢金子，所以柠檬可以吸引他们。树人害怕太阳，所以卡门要把他们引出树林。"
+        ],
+        "pageRange": "015-022",
+        "evidencePageRefs": [
+          "015",
+          "016",
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/015.png",
+          "pages/016.png",
+          "pages/021.png",
+          "pages/022.png"
+        ]
+      },
+      {
+        "prompt": "为什么这次鸡舍里的小伙伴们没有继续吵闹，而是一起行动？",
+        "talkingPoints": [
+          "贝里奥遇到真正危险，大家都在乎他。共同的目标让他们暂时放下争吵，分工合作。"
+        ],
+        "pageRange": "014-018",
+        "evidencePageRefs": [
+          "014",
+          "015",
+          "016",
+          "017",
+          "018"
+        ],
+        "evidenceImageRefs": [
+          "pages/014.png",
+          "pages/015.png",
+          "pages/016.png",
+          "pages/017.png",
+          "pages/018.png"
+        ]
+      }
+    ],
+    "openExpression": [
+      {
+        "prompt": "如果朋友害怕一件大家都觉得普通的事，你会怎么帮助他？",
+        "talkingPoints": [
+          "可以先听他说害怕什么，再一起想安全办法，而不是马上嘲笑。"
+        ],
+        "pageRange": "004-006",
+        "evidencePageRefs": [
+          "004",
+          "005",
+          "006"
+        ],
+        "evidenceImageRefs": [
+          "pages/004.png",
+          "pages/005.png",
+          "pages/006.png"
+        ]
+      },
+      {
+        "prompt": "卡门用柠檬假装金蛋。你还能想到什么金色东西可以用来吸引爱金子的树人？",
+        "talkingPoints": [
+          "可以从颜色、形状和安全性来想，比如黄色叶子、金色纸片或画出来的假宝物。"
+        ],
+        "pageRange": "017-022",
+        "evidencePageRefs": [
+          "017",
+          "018",
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/017.png",
+          "pages/018.png",
+          "pages/021.png",
+          "pages/022.png"
+        ]
+      },
+      {
+        "prompt": "贝里奥最后愿意剪掉金羊毛。你觉得他的想法为什么改变了？",
+        "talkingPoints": [
+          "可以聊危险过去后，他发现保住朋友和安全更重要；金羊毛反而带来了麻烦。"
+        ],
+        "pageRange": "023-026",
+        "evidencePageRefs": [
+          "023",
+          "024",
+          "025",
+          "026"
+        ],
+        "evidenceImageRefs": [
+          "pages/023.png",
+          "pages/024.png",
+          "pages/025.png",
+          "pages/026.png"
+        ]
+      }
+    ]
+  },
+  "backgroundNotes": [
+    {
+      "title": "剪羊毛是什么",
+      "pageRange": "004-006",
+      "note": "羊毛会长在羊身上，天气热了或羊毛太厚时，人们会把羊毛剪下来。剪羊毛像理发，不是为了伤害羊。贝里奥害怕的是被大家笑话，也害怕自己变得不一样。",
+      "pageRefs": [
+        "004",
+        "005",
+        "006"
+      ],
+      "imageRefs": [
+        "pages/004.png",
+        "pages/005.png",
+        "pages/006.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-berrio-shearing-wool",
+      "generatedImageRefs": [
+        "generated/shearing-wool-care.png"
+      ]
+    },
+    {
+      "title": "团队合作可以把害怕拆小",
+      "pageRange": "015-022",
+      "note": "一个人面对树人会很害怕，大家分工后，事情就变小了：有人找足迹，有人摘柠檬，有人引开树人，有人救贝里奥。合作不是每个人都做同一件事，而是一起完成同一个目标。",
+      "pageRefs": [
+        "015",
+        "016",
+        "017",
+        "018",
+        "021",
+        "022"
+      ],
+      "imageRefs": [
+        "pages/015.png",
+        "pages/016.png",
+        "pages/017.png",
+        "pages/018.png",
+        "pages/021.png",
+        "pages/022.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-berrio-team-rescue",
+      "generatedImageRefs": [
+        "generated/team-rescue-plan.png"
+      ]
+    },
+    {
+      "title": "柠檬为什么像金鸡蛋",
+      "pageRange": "018-021",
+      "note": "柠檬又黄又圆，远远看像金色的小蛋。卡门知道树人贪爱金子，就把柠檬说成金鸡蛋。这不是让柠檬真的变成金子，而是利用颜色和形状想办法。",
+      "pageRefs": [
+        "018",
+        "021"
+      ],
+      "imageRefs": [
+        "pages/018.png",
+        "pages/021.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-berrio-lemon-golden-eggs",
+      "generatedImageRefs": [
+        "generated/lemon-golden-egg.png"
+      ]
+    }
+  ],
+  "encyclopediaEntries": [
+    {
+      "title": "巨石林",
+      "anchor": "卡门、卡梅利多和贝里奥躲到神秘的巨石林",
+      "pageRange": "007-010",
+      "summary": "巨石林是一片有许多巨大石头的地方。故事把它写得神秘又有点可怕，让夜晚的冒险更紧张。",
+      "pageRefs": [
+        "007",
+        "008",
+        "009",
+        "010"
+      ],
+      "imageRefs": [
+        "pages/007.png",
+        "pages/008.png",
+        "pages/009.png",
+        "pages/010.png"
+      ],
+      "storyAppearance": "三个朋友在巨石林里过夜，石桌、月光和传说都在那里出现。",
+      "whatItIs": "巨石林可以理解为很多大石头聚在一起的地方，故事里还带有古老传说的气氛。",
+      "whyItMatters": "贝里奥变成金毛、皮克尼克变成金色和树人出现，都和这个地点有关。",
+      "discussionQuestion": "巨石林的画面让你觉得安全、神秘，还是有点紧张？为什么？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-berrio-standing-stones",
+      "generatedImageRefs": [
+        "generated/standing-stones-night.png"
+      ]
+    },
+    {
+      "title": "金羊毛",
+      "anchor": "树人寻找传说中的金羊毛",
+      "pageRange": "009-013",
+      "summary": "金羊毛在故事里是非常珍贵、会让贪心者追逐的东西。贝里奥的羊毛被月光照成金色，才引来了树人的危险。",
+      "pageRefs": [
+        "009",
+        "010",
+        "011",
+        "012",
+        "013"
+      ],
+      "imageRefs": [
+        "pages/009.png",
+        "pages/010.png",
+        "pages/011.png",
+        "pages/012.png",
+        "pages/013.png"
+      ],
+      "storyAppearance": "树人半夜来到巨石林寻找金羊毛，后来把金色的贝里奥抓走。",
+      "whatItIs": "金羊毛是古老冒险故事里常出现的珍贵宝物。在这本书里，它变成了贝里奥身上的金色羊毛。",
+      "whyItMatters": "它让贝里奥从躲剪羊毛的小麻烦，卷进被绑架的大危险。",
+      "discussionQuestion": "如果一样东西看起来很珍贵，却会带来危险，它还值得一直留着吗？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-berrio-golden-fleece",
+      "generatedImageRefs": [
+        "generated/golden-fleece-story.png"
+      ]
+    },
+    {
+      "title": "路易十四和太阳王",
+      "anchor": "金羊毛最后被送到凡尔赛宫，让国王觉得很舒服",
+      "pageRange": "026",
+      "summary": "路易十四是法国历史上的国王，也常被叫作太阳王。故事用好笑的方式，把贝里奥的金羊毛和“太阳王”这个称号联系起来。",
+      "pageRefs": [
+        "026"
+      ],
+      "imageRefs": [
+        "pages/026.png"
+      ],
+      "storyAppearance": "故事结尾说国王用了金羊毛后觉得很舒服，并宣布自己的新名号是太阳王。",
+      "whatItIs": "太阳王是法国国王路易十四的称号。这里不是严肃历史课，而是绘本把历史名字变成一个幽默结尾。",
+      "whyItMatters": "它解释了金羊毛最后去了哪里，也给贝里奥的冒险收了一个轻松的尾巴。",
+      "discussionQuestion": "这个结尾为什么让人觉得好笑？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-berrio-sun-king",
+      "generatedImageRefs": [
+        "generated/sun-king-gentle-history.png"
+      ]
+    }
+  ],
+  "parentGuide": {
+    "readingUse": "这本适合围绕“害怕被改变、朋友营救、分工合作、线索和弱点”来共读。可以把贝里奥从害怕剪羊毛到愿意剪掉金羊毛的变化作为情绪主线。",
+    "suggestedFlow": [
+      "先看贝里奥为什么害怕剪羊毛，确认他的担心不是笑话",
+      "再按巨石林、月光、金羊毛、树人抓走的顺序复述危机",
+      "用问题卡梳理佩罗给出的两个关键信息：爱金子、怕太阳",
+      "最后讨论小鸡们怎样分工合作救出贝里奥"
+    ],
+    "sensitivePoints": [
+      "剪羊毛情节可解释为理发式护理，避免让孩子误以为剪羊毛一定会伤害羊。",
+      "树人威胁吃掉贝里奥的段落保持冒险故事尺度，不扩展成惊吓。",
+      "路易十四和太阳王只作轻量背景，不需要展开复杂历史。"
+    ]
+  },
+  "audio": {
+    "title": "我要救出贝里奥",
+    "bookSlug": "carmela-s1-10",
+    "path": "public/audio/carmela-s1/carmela-s1-10.mp3",
+    "sourcePath": "source/不一样的卡梅拉/10-我要救出贝里奥.mp3",
+    "markers": [],
+    "markerNote": "当前只接入整本音频；没有可靠的场景时间点证据，因此不添加 markers。"
+  },
+  "manualReview": {
+    "roleNames": [
+      "树人、国王的羊倌、皮克、尼克、路易十四、太阳王等译名已按人工复核确认。",
+      "OCR 把封面标题多次识别为“我要教出贝里奥”，正式标题已按人工复核确认为“我要救出贝里奥”。"
+    ],
+    "plotPoints": [
+      "第 009 页树人寻找金羊毛的文字 OCR 有明显误识；剧情已按第 013 页和第 027 页封底说明交叉确认。",
+      "第 018-022 页按卡门用柠檬假扮金鸡蛋、引树人进入阳光处理，已按人工复核确认。",
+      "第 026 页路易十四/太阳王作为绘本幽默结尾处理，已按人工复核确认。"
+    ],
+    "backgroundEntries": [
+      "剪羊毛、合作营救、柠檬假金蛋、巨石林、金羊毛和太阳王均与本书剧情直接相关。",
+      "背景和百科解释图已按现有 generated 图片接入。"
+    ]
+  }
+}

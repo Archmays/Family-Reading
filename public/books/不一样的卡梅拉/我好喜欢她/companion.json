@@ -1,0 +1,557 @@
+{
+  "schemaVersion": 1,
+  "seriesTitle": "不一样的卡梅拉",
+  "order": 9,
+  "title": "我好喜欢她",
+  "slug": "carmela-s1-09",
+  "contentType": "picture-book-companion",
+  "sourceEvidence": {
+    "pageImages": "pages/",
+    "ocrPages": "ocr/pages/",
+    "ocrFullText": "ocr/full-text.txt",
+    "ocrReport": "ocr/ocr-report.json",
+    "ocrUse": "processing evidence only, not a child-facing reading body"
+  },
+  "overview": {
+    "oneLine": "剧团来到鸡舍演出，卡梅利多喜欢上演员罗西娜；他经历害羞、误会和冒险，终于把找回的羽毛帽和珍贵玫瑰送到她面前。",
+    "mainCharacters": [
+      "卡梅利多",
+      "卡门",
+      "罗西娜",
+      "葛兰先生",
+      "贝里奥",
+      "佩罗",
+      "小胖墩",
+      "邦哥",
+      "鼻涕虫",
+      "小偷豪猪",
+      "独角兽",
+      "百花王国夫人"
+    ],
+    "importantPlaces": [
+      "鸡舍露天舞台",
+      "冰场",
+      "佩罗身边",
+      "无畏峰",
+      "小偷豪猪的窝",
+      "雪地",
+      "百花王国",
+      "剧团出发前的鸡舍"
+    ],
+    "characterRelationships": [
+      "罗西娜是葛兰先生剧团里的演员，也是葛兰先生的女儿。",
+      "卡梅利多喜欢罗西娜，却一开始不敢说出口。",
+      "卡门看出哥哥的心意，帮他写信、送信，也鼓励他说出喜欢。",
+      "小胖墩想用神奇药水让罗西娜喜欢自己，却把事情弄得更乱。",
+      "贝里奥陪卡梅利多去雪山找玫瑰，虽然怕冷仍然没有离开朋友。"
+    ],
+    "keyConflict": "卡梅利多喜欢罗西娜，却害羞得不敢表达；罗西娜很快就要跟剧团离开，信被抢走，玫瑰又在冬天难以找到，他必须在错过之前鼓起勇气。",
+    "emotionalArc": [
+      "惊喜",
+      "着迷",
+      "害羞",
+      "被嘲笑",
+      "烦恼",
+      "鼓励",
+      "执着",
+      "疲惫",
+      "希望",
+      "甜蜜"
+    ]
+  },
+  "storyReview": {
+    "shortReview": "著名演员葛兰先生和剧团来到鸡舍搭起露天舞台，小鸡们第一次看话剧，看得入迷。卡梅利多被演员罗西娜吸引，紧张得说不清话，还被小胖墩他们嘲笑。演出后，罗西娜去冰场玩，卡梅利多想表达心意却不敢开口。罗西娜的粉色羽毛帽丢了，她请卡梅利多帮忙寻找。卡门建议哥哥写一封信，卡梅利多又觉得要送一朵玫瑰才够好，于是和贝里奥到冬天的无畏峰寻找。另一边，小胖墩一伙儿想按佩罗提到的“特里斯坦之水”配方做神奇药水，却被小偷豪猪喝光。卡梅利多在雪地里遇到独角兽和百花王国夫人，得到一朵玫瑰。最后他找回罗西娜的帽子，把玫瑰插在帽子上，两人虽然害羞得说不出话，却一起滑冰，迎来只属于他们的快乐时刻。",
+    "mainPlot": [
+      "剧团来到鸡舍演话剧，小鸡们第一次感受到舞台表演的魅力。",
+      "卡梅利多喜欢上罗西娜，却因为害羞和紧张说不出口。",
+      "罗西娜丢了粉色羽毛帽，请卡梅利多帮忙找回。",
+      "卡门帮哥哥写信，小胖墩一伙儿抢信并想制造神奇药水。",
+      "卡梅利多和贝里奥到冬天的无畏峰寻找玫瑰，发现小偷豪猪收藏了罗西娜的帽子。",
+      "卡梅利多在雪地里遇到独角兽和百花王国夫人，得到一朵珍贵玫瑰。",
+      "卡梅利多把帽子和玫瑰送给罗西娜，两人一起滑冰。"
+    ]
+  },
+  "scenes": [
+    {
+      "id": "rosina-01",
+      "title": "鸡舍里的话剧",
+      "pageRange": "002-004",
+      "summary": "葛兰先生的剧团来到鸡舍演出，小鸡们被舞台吸引。贝里奥分不清演戏和真实，卡门解释这是假的。卡梅利多第一次注意到美丽的罗西娜。",
+      "discussionFocus": [
+        "看表演",
+        "演戏不是真的",
+        "第一次心动"
+      ],
+      "pageRefs": [
+        "002",
+        "003",
+        "004"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png",
+        "pages/004.png"
+      ]
+    },
+    {
+      "id": "rosina-02",
+      "title": "冰场上的害羞",
+      "pageRange": "005-008",
+      "summary": "罗西娜演出结束后去滑冰，卡梅利多紧张得手足无措。小胖墩一伙儿粗暴打断，罗西娜关心卡梅利多有没有受伤，随后请他帮忙找丢失的粉色羽毛帽。",
+      "discussionFocus": [
+        "紧张",
+        "关心",
+        "寻找帽子"
+      ],
+      "pageRefs": [
+        "005",
+        "006",
+        "007",
+        "008"
+      ],
+      "imageRefs": [
+        "pages/005.png",
+        "pages/006.png",
+        "pages/007.png",
+        "pages/008.png"
+      ]
+    },
+    {
+      "id": "rosina-03",
+      "title": "信和药水",
+      "pageRange": "009-013",
+      "summary": "佩罗提醒喜欢别人需要耐心，也提到鲜花和传说中的特里斯坦之水。卡门让哥哥写信表达心意，小胖墩一伙儿却抢走了信，还忙着收集奇怪材料制造神奇药水。",
+      "discussionFocus": [
+        "表达心意",
+        "抢走信",
+        "神奇药水"
+      ],
+      "pageRefs": [
+        "009",
+        "010",
+        "011",
+        "012",
+        "013"
+      ],
+      "imageRefs": [
+        "pages/009.png",
+        "pages/010.png",
+        "pages/011.png",
+        "pages/012.png",
+        "pages/013.png"
+      ]
+    },
+    {
+      "id": "rosina-04",
+      "title": "冬天寻找玫瑰",
+      "pageRange": "014-016",
+      "summary": "卡梅利多和贝里奥到寒冷的无畏峰寻找玫瑰。他们遇到小偷豪猪，在他的窝里发现许多赃物，也找到了罗西娜的帽子。卡梅利多仍然继续去找玫瑰。",
+      "discussionFocus": [
+        "执着",
+        "小偷豪猪",
+        "失物找回"
+      ],
+      "pageRefs": [
+        "014",
+        "015",
+        "016"
+      ],
+      "imageRefs": [
+        "pages/014.png",
+        "pages/015.png",
+        "pages/016.png"
+      ]
+    },
+    {
+      "id": "rosina-05",
+      "title": "百花王国的礼物",
+      "pageRange": "017-019",
+      "summary": "卡梅利多在雪地里筋疲力尽，遇到独角兽，被带到百花王国。夫人赞赏他的勇气和执着，把一朵花送给他，让他带回去送给喜欢的人。",
+      "discussionFocus": [
+        "独角兽",
+        "百花王国",
+        "珍贵礼物"
+      ],
+      "pageRefs": [
+        "017",
+        "018",
+        "019"
+      ],
+      "imageRefs": [
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png"
+      ]
+    },
+    {
+      "id": "rosina-06",
+      "title": "帽子上的玫瑰",
+      "pageRange": "020-024",
+      "summary": "小胖墩的药水被小偷豪猪喝光，卡梅利多重新燃起希望。他把找回的帽子和玫瑰送给罗西娜，两人都害羞得说不出话，最后一起滑冰，分享甜蜜时刻。",
+      "discussionFocus": [
+        "勇气",
+        "互相喜欢",
+        "一起滑冰"
+      ],
+      "pageRefs": [
+        "020",
+        "021",
+        "022",
+        "023",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/020.png",
+        "pages/021.png",
+        "pages/022.png",
+        "pages/023.png",
+        "pages/024.png"
+      ]
+    }
+  ],
+  "questionCards": {
+    "factualRecall": [
+      {
+        "prompt": "来到鸡舍演出的人是谁？",
+        "talkingPoints": [
+          "从巴黎来的葛兰先生和他的剧团来到鸡舍搭舞台演出。"
+        ],
+        "pageRange": "002-003",
+        "evidencePageRefs": [
+          "002",
+          "003"
+        ],
+        "evidenceImageRefs": [
+          "pages/002.png",
+          "pages/003.png"
+        ]
+      },
+      {
+        "prompt": "罗西娜请卡梅利多帮她找什么？",
+        "talkingPoints": [
+          "她请卡梅利多帮忙找回丢失的粉色羽毛帽。"
+        ],
+        "pageRange": "008",
+        "evidencePageRefs": [
+          "008"
+        ],
+        "evidenceImageRefs": [
+          "pages/008.png"
+        ]
+      },
+      {
+        "prompt": "卡梅利多最后把玫瑰放在了哪里？",
+        "talkingPoints": [
+          "他把玫瑰插在罗西娜的帽子上。"
+        ],
+        "pageRange": "021-022",
+        "evidencePageRefs": [
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/021.png",
+          "pages/022.png"
+        ]
+      }
+    ],
+    "comprehension": [
+      {
+        "prompt": "为什么卡梅利多看起来像生病了一样？",
+        "talkingPoints": [
+          "他不是普通生病，而是喜欢上罗西娜后又紧张又害羞，身体和心情都乱成一团。"
+        ],
+        "pageRange": "005-010",
+        "evidencePageRefs": [
+          "005",
+          "007",
+          "010"
+        ],
+        "evidenceImageRefs": [
+          "pages/005.png",
+          "pages/007.png",
+          "pages/010.png"
+        ]
+      },
+      {
+        "prompt": "卡门为什么建议哥哥写信？",
+        "talkingPoints": [
+          "卡梅利多不敢当面说喜欢，写信可以先把心意表达出来，也能让罗西娜知道他的感受。"
+        ],
+        "pageRange": "010-012",
+        "evidencePageRefs": [
+          "010",
+          "011",
+          "012"
+        ],
+        "evidenceImageRefs": [
+          "pages/010.png",
+          "pages/011.png",
+          "pages/012.png"
+        ]
+      },
+      {
+        "prompt": "小胖墩的神奇药水为什么不是好办法？",
+        "talkingPoints": [
+          "喜欢不能靠别人偷偷调一瓶药水强迫出来。小胖墩的办法既不尊重罗西娜，也把事情弄得更混乱。"
+        ],
+        "pageRange": "009-020",
+        "evidencePageRefs": [
+          "009",
+          "012",
+          "019",
+          "020"
+        ],
+        "evidenceImageRefs": [
+          "pages/009.png",
+          "pages/012.png",
+          "pages/019.png",
+          "pages/020.png"
+        ]
+      }
+    ],
+    "openExpression": [
+      {
+        "prompt": "如果你想感谢一个人或表达喜欢，除了玫瑰和信，还可以用什么方式？",
+        "talkingPoints": [
+          "可以画画、做小卡片、帮忙找回东西，也可以直接说一句真诚的话。"
+        ],
+        "pageRange": "011-022",
+        "evidencePageRefs": [
+          "011",
+          "021",
+          "022"
+        ],
+        "evidenceImageRefs": [
+          "pages/011.png",
+          "pages/021.png",
+          "pages/022.png"
+        ]
+      },
+      {
+        "prompt": "贝里奥陪卡梅利多去很冷的地方找玫瑰。你觉得朋友陪伴最重要的地方是什么？",
+        "talkingPoints": [
+          "可以聊不嘲笑、不丢下、提醒安全、在困难时一起想办法。"
+        ],
+        "pageRange": "014-017",
+        "evidencePageRefs": [
+          "014",
+          "015",
+          "016",
+          "017"
+        ],
+        "evidenceImageRefs": [
+          "pages/014.png",
+          "pages/015.png",
+          "pages/016.png",
+          "pages/017.png"
+        ]
+      },
+      {
+        "prompt": "罗西娜和卡梅利多都害羞得说不出话。你遇到不好意思开口的时刻，会怎么让自己放松？",
+        "talkingPoints": [
+          "可以先深呼吸、写下来、请朋友陪一陪，或者慢慢说一小句。"
+        ],
+        "pageRange": "021-023",
+        "evidencePageRefs": [
+          "021",
+          "022",
+          "023"
+        ],
+        "evidenceImageRefs": [
+          "pages/021.png",
+          "pages/022.png",
+          "pages/023.png"
+        ]
+      }
+    ]
+  },
+  "backgroundNotes": [
+    {
+      "title": "话剧里的事情不一定是真的",
+      "pageRange": "002-004",
+      "note": "演员在舞台上会假装成故事里的人，说故事里的话，做故事里的动作。台上看起来很激动，台下却知道这是表演。贝里奥一开始分不清，卡门提醒他：这是演戏。",
+      "pageRefs": [
+        "002",
+        "003",
+        "004"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png",
+        "pages/004.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-rosina-theater-stage",
+      "generatedImageRefs": [
+        "generated/theater-stage-troupe.png"
+      ]
+    },
+    {
+      "title": "喜欢一个人时，身体也会紧张",
+      "pageRange": "005-011",
+      "note": "卡梅利多一会儿发抖，一会儿发热，心跳很快，还不知道该说什么。喜欢、害羞和紧张常常会一起出现。这样的感觉不是坏事，只是需要慢慢整理出来。",
+      "pageRefs": [
+        "005",
+        "007",
+        "010",
+        "011"
+      ],
+      "imageRefs": [
+        "pages/005.png",
+        "pages/007.png",
+        "pages/010.png",
+        "pages/011.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-rosina-kind-feelings",
+      "generatedImageRefs": [
+        "generated/kind-feelings-shy-heart.png"
+      ]
+    },
+    {
+      "title": "冬天为什么难找玫瑰",
+      "pageRange": "011-019",
+      "note": "玫瑰通常喜欢比较温暖、阳光充足的季节。冬天很冷，很多植物不开花，所以卡梅利多想在雪地里找玫瑰，会变成一次很难的冒险。",
+      "pageRefs": [
+        "011",
+        "014",
+        "017",
+        "018",
+        "019"
+      ],
+      "imageRefs": [
+        "pages/011.png",
+        "pages/014.png",
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png"
+      ],
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-rosina-rose-symbol",
+      "generatedImageRefs": [
+        "generated/winter-rose-garden.png"
+      ]
+    }
+  ],
+  "encyclopediaEntries": [
+    {
+      "title": "巡回剧团",
+      "anchor": "葛兰先生和剧团途经鸡舍做短暂停留",
+      "pageRange": "002-005",
+      "summary": "巡回剧团会把舞台、服装和演员带到不同地方演出。故事里的鸡舍因此第一次变成了热闹的露天剧场。",
+      "pageRefs": [
+        "002",
+        "003",
+        "004",
+        "005"
+      ],
+      "imageRefs": [
+        "pages/002.png",
+        "pages/003.png",
+        "pages/004.png",
+        "pages/005.png"
+      ],
+      "storyAppearance": "葛兰先生的剧团在鸡舍搭起舞台，演完后还要继续出发。",
+      "whatItIs": "巡回剧团是一群到不同地方表演的人，常带着道具、服装和舞台布景。",
+      "whyItMatters": "正是这次演出，让卡梅利多遇见了罗西娜，也让故事开始了。",
+      "discussionQuestion": "如果鸡舍变成剧场，你最想坐在哪里看表演？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-rosina-theater-stage",
+      "generatedImageRefs": [
+        "generated/theater-stage-troupe.png"
+      ]
+    },
+    {
+      "title": "特里斯坦之水",
+      "anchor": "小胖墩一伙儿想调出让人喜欢自己的神奇饮料",
+      "pageRange": "009-020",
+      "summary": "特里斯坦之水在故事里像一种会让人喜欢上别人的魔法药水。它很滑稽，也提醒我们：真正的喜欢不能靠偷偷的药水来决定。",
+      "pageRefs": [
+        "009",
+        "012",
+        "019",
+        "020",
+        "024"
+      ],
+      "imageRefs": [
+        "pages/009.png",
+        "pages/012.png",
+        "pages/019.png",
+        "pages/020.png",
+        "pages/024.png"
+      ],
+      "storyAppearance": "小胖墩、邦哥和鼻涕虫按奇怪配方收集材料，想让罗西娜喜欢小胖墩。",
+      "whatItIs": "这是故事里的魔法饮料设定，配方夸张又好笑，不是真实可用的东西。",
+      "whyItMatters": "它和卡梅利多真诚找帽子、送玫瑰形成对比：一个想控制别人，一个是在表达自己的心意。",
+      "discussionQuestion": "为什么偷偷让别人喝药水，不如直接真诚地说话？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-rosina-love-potion-story",
+      "generatedImageRefs": [
+        "generated/love-potion-story-choice.png"
+      ]
+    },
+    {
+      "title": "独角兽和百花王国",
+      "anchor": "卡梅利多在雪地里遇到独角兽和百花王国夫人",
+      "pageRange": "017-019",
+      "summary": "独角兽是很多童话和传说里的神奇动物。故事让它带卡梅利多到百花王国，给这次冬天找玫瑰的冒险加上了童话色彩。",
+      "pageRefs": [
+        "017",
+        "018",
+        "019"
+      ],
+      "imageRefs": [
+        "pages/017.png",
+        "pages/018.png",
+        "pages/019.png"
+      ],
+      "storyAppearance": "卡梅利多快要撑不住时，独角兽出现，带他见到百花王国夫人。",
+      "whatItIs": "独角兽是想象中的动物，通常像马，额头上有一只角，常出现在童话和传说里。",
+      "whyItMatters": "它让卡梅利多得到冬天里难得的玫瑰，也让他的执着得到回应。",
+      "discussionQuestion": "你觉得百花王国夫人为什么愿意把花送给卡梅利多？",
+      "needsGeneratedImage": false,
+      "generatedImagePromptId": "carmela-rosina-unicorn-flower-kingdom",
+      "generatedImageRefs": [
+        "generated/unicorn-flower-kingdom.png"
+      ]
+    }
+  ],
+  "parentGuide": {
+    "readingUse": "这本适合围绕“第一次喜欢、害羞表达、尊重别人的心意、舞台表演和童话想象”来共读。可以把卡梅利多、卡门和小胖墩的做法放在一起比较。",
+    "suggestedFlow": [
+      "先看剧团演出，确认台上表演和真实生活的区别",
+      "再看卡梅利多的身体反应，聊害羞和紧张",
+      "按帽子、信、玫瑰、药水四条线索复述故事",
+      "最后讨论为什么真诚表达比神奇药水更重要"
+    ],
+    "sensitivePoints": [
+      "涉及喜欢、亲吻和害羞时保持轻松，不要求孩子给出成人化解释。",
+      "小胖墩想用药水的情节应强调尊重别人，不能强迫别人喜欢自己。",
+      "雪地冒险可以提醒现实中遇到寒冷和迷路要找大人帮忙。"
+    ]
+  },
+  "audio": {
+    "title": "我好喜欢她",
+    "bookSlug": "carmela-s1-09",
+    "path": "public/audio/carmela-s1/carmela-s1-09.mp3",
+    "sourcePath": "source/不一样的卡梅拉/09-我好喜欢她.mp3",
+    "markers": [],
+    "markerNote": "当前只接入整本音频；没有可靠的场景时间点证据，因此不添加 markers。"
+  },
+  "manualReview": {
+    "roleNames": [
+      "罗西娜、葛兰先生、小偷豪猪、独角兽和百花王国夫人等译名已按人工复核确认。",
+      "第 009 页 OCR 中佩罗名字前有杂字，已按系列角色统一为“佩罗”，并已按人工复核确认。"
+    ],
+    "plotPoints": [
+      "第 008 页粉色羽毛帽是寻找线索，已按人工复核确认。",
+      "第 011-013 页情书被抢和药水线并行发生，已按人工复核确认。",
+      "第 017-019 页独角兽与百花王国按剧情内幻想/童话元素处理，已按人工复核确认。"
+    ],
+    "backgroundEntries": [
+      "话剧、喜欢时的紧张、冬天玫瑰、巡回剧团、特里斯坦之水和独角兽均与本书剧情直接相关。",
+      "背景和百科解释图已按现有 generated 图片接入。"
+    ]
+  }
+}
