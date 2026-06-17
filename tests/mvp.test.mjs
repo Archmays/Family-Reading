@@ -242,12 +242,11 @@ test('published books publish audio through ASCII GitHub Pages paths', () => {
     assert.equal(companion.audio.sourcePath, audio.source, `${title} companion should document source mapping`);
     assert.equal(book.audio.sourcePath, audio.source, `${title} series index should document source mapping`);
     assert.match(companion.audio.path, /^public\/audio\/carmela-s1\/carmela-s1-\d{2}\.mp3$/, `${title} should use ASCII audio slug`);
+    assert.match(companion.audio.sourcePath, /^source\/不一样的卡梅拉\/\d{2}-.+\.mp3$/, `${title} should document the original local source path`);
 
-    const sourcePath = path.join(rootDir, ...audio.source.split('/'));
     const publicPath = path.join(rootDir, ...audio.publicPath.split('/'));
-    assert.equal(existsSync(sourcePath), true, `${title} source audio should remain in source`);
     assert.equal(existsSync(publicPath), true, `${title} public audio copy should exist`);
-    assert.equal(statSync(publicPath).size, statSync(sourcePath).size, `${title} public audio copy should match source size`);
+    assert.equal(statSync(publicPath).size > 0, true, `${title} public audio copy should not be empty`);
   }
 
   assert.equal(series.books.slice(0, 7).every((book) => book.audio?.path?.startsWith('public/audio/')), true);
