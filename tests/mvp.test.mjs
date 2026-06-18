@@ -153,7 +153,7 @@ const requiredWorkCellsTopics = [
   ['红血球母细胞与骨髓细胞', '第2卷 第7话'],
   ['癌细胞', '第2卷 第8-9话'],
   ['血液循环', '第3卷 第10话'],
-  ['感冒综合征', '第3卷 第11话'],
+  ['感冒症候群', '第3卷 第11话'],
   ['胸腺细胞', '第3卷 第12话'],
   ['获得性免疫', '第3卷 第13话'],
   ['痤疮', '第3卷 第14话'],
@@ -168,7 +168,7 @@ const requiredWorkCellsTopics = [
   ['癌细胞Ⅱ', '第5卷 第24-25话'],
   ['撞出肿包', '第6卷 第26话'],
   ['白细胞左移', '第6卷 第27话'],
-  ['诱导多能干细胞', '第6卷 第28话'],
+  ['iPS细胞', '第6卷 第28话'],
   ['银屑病', '第6卷 特别篇'],
   ['新型冠状病毒', '第6卷 第29话'],
 ];
@@ -317,7 +317,8 @@ test('Work Cells draft manifest reads the page map for topic media', () => {
   for (const [index, topic] of manifest.topics.entries()) {
     const pageMapTopic = pageMap.topics[index];
     assert.equal(topic.order, pageMapTopic.order, `${topic.title} should keep page-map order`);
-    assert.equal(topic.displayTitle, topic.title, `${topic.title} should use the confirmed topic title as displayTitle`);
+    const expectedDisplayTitle = topic.topicId === 'psoriasis' ? '银屑病（干癣）' : topic.title;
+    assert.equal(topic.displayTitle, expectedDisplayTitle, `${topic.title} should use the confirmed displayTitle`);
     assert.equal(topic.source.sourceLabel, pageMapTopic.sourceLabel, `${topic.title} should use page-map source note`);
     assert.equal(topic.mediaStatus, 'available', `${topic.title} should mark page media available`);
     assert.equal(topic.thumbnailPath, pageMapTopic.thumbnailPath, `${topic.title} should use page-map thumbnail`);

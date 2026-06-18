@@ -407,6 +407,25 @@ function scienceParentQuestionsSection(topic) {
   `;
 }
 
+function scienceEncyclopediaSection(topic) {
+  const taggedPages = (topic.pageAnnotations ?? [])
+    .filter((page) => Array.isArray(page.encyclopediaTags) && page.encyclopediaTags.length > 0);
+  return `
+    <section id="science-encyclopedia" class="content-section" aria-labelledby="science-encyclopedia-title">
+      <h2 id="science-encyclopedia-title">百科关联</h2>
+      ${plainList(topic.recommendedEncyclopediaEntries)}
+      <div class="annotation-grid compact-grid">
+        ${taggedPages.map((page) => `
+          <article class="annotation-card">
+            <h3>${html(page.pageRole)}</h3>
+            ${tagList(page.encyclopediaTags)}
+          </article>
+        `).join('')}
+      </div>
+    </section>
+  `;
+}
+
 function scienceSensitiveSection(topic) {
   const sensitivePages = (topic.pageAnnotations ?? [])
     .filter((page) => page.sensitiveContentNote);
@@ -776,6 +795,7 @@ function scienceTopicPage(scienceSeries, topic) {
           <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-overview">主题导读</a>
           <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-station">身体科学小站</a>
           <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-questions">亲子问题卡</a>
+          <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-encyclopedia">百科关联</a>
           <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-sensitive">家长提醒</a>
           <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-annotations">页面标注</a>
           <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/pages">漫画页图片</a>
@@ -791,6 +811,7 @@ function scienceTopicPage(scienceSeries, topic) {
         ${scienceOverviewSection(topic)}
         ${scienceStationSection(topic)}
         ${scienceParentQuestionsSection(topic)}
+        ${scienceEncyclopediaSection(topic)}
         ${scienceSensitiveSection(topic)}
         ${sciencePageAnnotationsSection(topic)}
         <section id="source" class="content-section" aria-labelledby="source-title">

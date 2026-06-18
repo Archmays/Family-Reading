@@ -19,6 +19,26 @@ const requiredTopicIds = [
   'food-poisoning',
   'heatstroke',
   'erythroblast-and-bone-marrow-cell',
+  'cancer-cell',
+  'blood-circulation',
+  'common-cold-syndrome',
+  'thymocyte',
+  'acquired-immunity',
+  'acne',
+  'staphylococcus-aureus',
+  'dengue-fever',
+  'hemorrhagic-shock',
+  'peyers-patches',
+  'helicobacter-pylori',
+  'antigenic-variation',
+  'cytokines',
+  'gut-microbiota',
+  'cancer-cell-ii',
+  'bump-on-head',
+  'left-shift',
+  'ips-cells',
+  'psoriasis',
+  'covid-19',
 ];
 const requiredTopicFields = [
   'topicSummary',
@@ -132,7 +152,7 @@ test('visual annotation merge uses topicId and preserves page annotation fields'
   assert.deepEqual(report.topics[0].missingImages, []);
 });
 
-test('imported Work Cells visual annotations are complete for batch 01-03', () => {
+test('imported Work Cells visual annotations are complete for imported batches', () => {
   const manifest = readJson(manifestPath);
 
   for (const topicId of requiredTopicIds) {
@@ -162,8 +182,10 @@ test('Work Cells topic page surfaces imported companion annotation sections', ()
   for (const phrase of [
     '身体科学小站',
     '亲子问题卡',
+    '百科关联',
     '家长提醒',
     '页面标注',
+    'science-encyclopedia',
     'pageAnnotations',
     'sensitiveContentGuidance',
   ]) {
