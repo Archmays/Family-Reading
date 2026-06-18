@@ -175,6 +175,42 @@ const requiredWorkCellsTopics = [
   ['银屑病', '第6卷 特别篇'],
   ['新型冠状病毒', '第6卷 第29话'],
 ];
+const requiredParentGuidanceTopicIds = [
+  'cancer-cell',
+  'cancer-cell-ii',
+  'hemorrhagic-shock',
+  'dengue-fever',
+  'covid-19',
+  'heatstroke',
+  'staphylococcus-aureus',
+  'bump-on-head',
+  'psoriasis',
+];
+const requiredBodyScienceStationFields = [
+  'stationId',
+  'topicId',
+  'title',
+  'coreQuestion',
+  'explanation',
+  'imagePromptId',
+  'imagePrompt',
+  'imageAsset',
+  'imageAlt',
+  'relatedPageIds',
+  'biologyConcepts',
+  'encyclopediaTags',
+  'parentNote',
+  'status',
+  'priority',
+];
+const requiredParentQuestionFields = [
+  'title',
+  'question',
+  'answer',
+  'relatedPageIds',
+  'parentHint',
+  'biologyConcepts',
+];
 
 function readJson(filePath) {
   return JSON.parse(readFileSync(filePath, 'utf8'));
@@ -336,6 +372,101 @@ test('Work Cells draft manifest reads the page map for topic media', () => {
       assert.equal(existsSync(path.join(rootDir, ...imagePath.split('/'))), true, `${topic.title} image should exist: ${imagePath}`);
     }
   }
+});
+
+test('Work Cells Cedar pollen sample defines body science station data', () => {
+  const manifest = readJson(workCellsDraftPath);
+  const topic = manifest.topics.find((item) => item.topicId === 'cedar-pollen-allergy');
+
+  assert.ok(topic, 'Cedar pollen allergy topic should exist');
+  assert.equal(topic.title, '杉树花粉过敏');
+  assert.equal(topic.bodyScienceStations.length, 6, 'Cedar pollen sample should define exactly 6 stations');
+
+  const stationIds = new Set();
+  const promptIds = new Set();
+  for (const station of topic.bodyScienceStations) {
+    for (const field of requiredBodyScienceStationFields) {
+      assert.equal(Object.hasOwn(station, field), true, `${station.stationId ?? 'station'} should include ${field}`);
+    }
+    assert.equal(station.topicId, topic.topicId);
+    assert.equal(station.status, 'published');
+    assert.match(station.priority, /^(high|medium|low)$/);
+    assert.match(station.imagePromptId, /^work-cells-cedar-pollen-allergy-/);
+    assert.match(station.imagePrompt, /原创/);
+    assert.match(station.imagePrompt, /不要模仿《工作细胞》/);
+    assert.match(station.imagePrompt, /Logo|水印/);
+    assert.equal(station.imagePrompt.includes('对白'), true, `${station.stationId} prompt should forbid dialogue text`);
+    assert.match(station.imageAsset, /^public\/assets\/cells-at-work\/science-station\/cedar-pollen-allergy\/.+\.png$/);
+    assert.equal(existsSync(path.join(rootDir, ...station.imageAsset.split('/'))), true, `${station.stationId} image asset should exist`);
+    assert.ok(station.imageAlt.length > 8, `${station.stationId} should include usable alt text`);
+    assert.ok(station.coreQuestion.length > 6, `${station.stationId} should include a child-facing question`);
+    assert.ok(station.explanation.length > 20, `${station.stationId} should include a science explanation`);
+    assert.equal(Array.isArray(station.relatedPageIds), true, `${station.stationId} should reference page ids only`);
+    assert.ok(station.relatedPageIds.length > 0, `${station.stationId} should reference at least one page id`);
+    assert.equal(station.relatedPageIds.every((pageId) => !pageId.includes('.webp')), true, `${station.stationId} should not store image paths as page ids`);
+    assert.ok(station.biologyConcepts.length > 0, `${station.stationId} should include biology concepts`);
+    assert.ok(station.encyclopediaTags.length > 0, `${station.stationId} should include encyclopedia tags`);
+    assert.ok(station.parentNote.length > 0, `${station.stationId} should include a parent note`);
+    stationIds.add(station.stationId);
+    promptIds.add(station.imagePromptId);
+  }
+
+  assert.equal(stationIds.size, 6, 'stationId values should be unique');
+  assert.equal(promptIds.size, 6, 'imagePromptId values should be unique');
+});
+
+test('Work Cells Cedar pollen sample defines refined parent question cards', () => {
+  const manifest = readJson(workCellsDraftPath);
+  const topic = manifest.topics.find((item) => item.topicId === 'cedar-pollen-allergy');
+  const cards = topic.parentQuestionCards;
+
+  assert.equal(cards.length, 8, 'Cedar pollen sample should define 8 refined parent question cards');
+  assert.deepEqual(
+    [...new Set(cards.map((card) => card.category))],
+    ['观察问题', '理解问题', '联系生活问题', '科学概念问题'],
+  );
+
+  for (const card of cards) {
+    for (const field of requiredParentQuestionFields) {
+      assert.equal(Object.hasOwn(card, field), true, `${card.title ?? 'question card'} should include ${field}`);
+    }
+    assert.match(card.category, /^(观察问题|理解问题|联系生活问题|科学概念问题)$/);
+    assert.ok(card.question.length > 8, `${card.title} should include a concrete question`);
+    assert.ok(card.answer.length > 6, `${card.title} should include a concise answer`);
+    assert.equal(card.answer.includes('对白'), false, `${card.title} should not ask children to repeat dialogue`);
+    assert.equal(Array.isArray(card.relatedPageIds), true, `${card.title} should reference page ids`);
+    assert.ok(card.relatedPageIds.length > 0, `${card.title} should reference at least one page`);
+    assert.ok(card.parentHint.length > 6, `${card.title} should include a parent hint`);
+    assert.ok(card.biologyConcepts.length > 0, `${card.title} should include biology concepts`);
+  }
+});
+
+test('Work Cells parent guidance remains limited to selected topics', () => {
+  const manifest = readJson(workCellsDraftPath);
+  const topicsById = new Map(manifest.topics.map((topic) => [topic.topicId, topic]));
+
+  for (const topicId of requiredParentGuidanceTopicIds) {
+    assert.match(
+      topicsById.get(topicId)?.sensitiveContentGuidance ?? '',
+      /\S/,
+      `${topicId} should keep parent co-reading guidance`,
+    );
+  }
+});
+
+test('Work Cells front end renders formal body science and parent guidance modules', () => {
+  const appJs = readFileSync(path.join(rootDir, 'assets', 'app.js'), 'utf8');
+  const stationBody = appJs.match(/function scienceStationSection\(topic\) \{[\s\S]*?\n\}\n\nfunction scienceParentQuestionsSection/)?.[0] ?? '';
+  const questionBody = appJs.match(/function scienceParentQuestionsSection\(topic\) \{[\s\S]*?\n\}\n\nfunction overviewSection/)?.[0] ?? '';
+  const topicPageBody = appJs.match(/function scienceTopicPage\(scienceSeries, topic\) \{[\s\S]*?function errorPage/)?.[0] ?? '';
+
+  assert.match(stationBody, /topic\.bodyScienceStations/, 'science station should prefer formal bodyScienceStations data');
+  assert.match(appJs, /imageAsset/, 'science station should render generated image assets when present');
+  assert.match(appJs, /解释图占位区/, 'science station should keep a placeholder for missing images');
+  assert.match(questionBody, /topic\.parentQuestionCards/, 'parent questions should prefer refined parentQuestionCards data');
+  assert.match(appJs, /家长共读提示/, 'topic detail page should include gentle parent guidance copy');
+  assert.match(appJs, /scienceParentGuidanceSection\(topic\)/, 'topic detail page should render parent guidance without a separate route');
+  assert.equal(topicPageBody.includes('/science-parent-guidance'), false, 'parent guidance should not add a separate route');
 });
 
 test('Work Cells merged topics keep confirmed boundaries', () => {

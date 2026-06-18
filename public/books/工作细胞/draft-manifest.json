@@ -2203,6 +2203,289 @@
       "sensitiveContentGuidance": "有灾难化画面、爆炸、水灾和药物武器化拟人。家长可提示：过敏反应可以不舒服，但多数过敏可以管理；药物画面是夸张表现，不应自行模仿用药。",
       "codexImportNotes": "本主题的科学小站应突出“免疫误报/反应过度”，避免把花粉描述成真正的病原体。第078-083页适合IgE与肥大细胞入口，第094-102页适合药物调节入口。",
       "notesForCodex": "本主题的科学小站应突出“免疫误报/反应过度”，避免把花粉描述成真正的病原体。第078-083页适合IgE与肥大细胞入口，第094-102页适合药物调节入口。",
+      "bodyScienceStations": [
+        {
+          "stationId": "cedar-pollen-allergy-pollen-recognition",
+          "topicId": "cedar-pollen-allergy",
+          "title": "花粉被身体认出来",
+          "coreQuestion": "花粉为什么会让身体紧张起来？",
+          "explanation": "杉树花粉本身不是细菌，也不会主动攻击身体。它进入鼻腔后，会碰到黏膜、黏液和免疫细胞。有些人的免疫系统会把这种外来小颗粒判断得太严重，于是过敏反应的第一步就开始了。",
+          "imagePromptId": "work-cells-cedar-pollen-allergy-pollen-recognition",
+          "imagePrompt": "请生成一张面向6-10岁儿童和家长共读的原创科学解释图，横向4:3构图，主题是杉树花粉进入鼻腔后被免疫系统识别。画面表现普通浅黄色花粉颗粒、淡粉色鼻腔黏膜、透明黏液、纤毛和抽象非拟人化免疫哨兵细胞。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、药品广告、战争、爆炸或恐怖医疗场景；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
+          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-pollen-recognition.png",
+          "imageAlt": "杉树花粉进入鼻腔，黏膜、黏液、纤毛和免疫细胞开始识别外来颗粒的科普图。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-065"
+          ],
+          "biologyConcepts": [
+            "过敏原识别",
+            "免疫误判",
+            "黏膜防御"
+          ],
+          "encyclopediaTags": [
+            "花粉",
+            "过敏原",
+            "鼻腔黏膜"
+          ],
+          "parentNote": "可以告诉孩子：花粉不是坏人，过敏更像身体把警报拉得太响。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "cedar-pollen-allergy-ige-preparation",
+          "topicId": "cedar-pollen-allergy",
+          "title": "IgE 抗体开始准备",
+          "coreQuestion": "身体为什么会准备一种和过敏有关的抗体？",
+          "explanation": "免疫系统收到花粉相关信息后，可能会让B细胞产生IgE抗体。抗体本来是身体识别外来物的重要工具，但在过敏里，IgE会让后面的反应更容易被触发。",
+          "imagePromptId": "work-cells-cedar-pollen-allergy-ige-preparation",
+          "imagePrompt": "请生成一张原创儿童科学解释图，横向4:3构图，主题是花粉信息被免疫系统传递，B细胞准备产生IgE抗体。画面使用抽象温和的细胞、柔和光点信号、圆润B细胞和小小Y形抗体符号。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、制服、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、文字标签、药品广告、战场或机器人生产线；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
+          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-ige-preparation.png",
+          "imageAlt": "花粉信息传向B细胞，周围出现Y形抗体符号的免疫信息传递科普图。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-071"
+          ],
+          "biologyConcepts": [
+            "B细胞活化",
+            "IgE抗体",
+            "过敏反应启动"
+          ],
+          "encyclopediaTags": [
+            "B细胞",
+            "IgE抗体",
+            "抗体"
+          ],
+          "parentNote": "这里重点是信息传递，不是身体真的在开战。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "cedar-pollen-allergy-mast-cell-histamine",
+          "topicId": "cedar-pollen-allergy",
+          "title": "肥大细胞释放信号",
+          "coreQuestion": "为什么会突然流鼻水、打喷嚏？",
+          "explanation": "IgE附在肥大细胞表面后，花粉再次出现时可能把肥大细胞触发。肥大细胞会释放组胺等信号物质，让鼻腔黏膜变得更敏感，于是鼻水、喷嚏、痒和肿胀会出现。",
+          "imagePromptId": "work-cells-cedar-pollen-allergy-mast-cell-histamine",
+          "imagePrompt": "请生成一张严谨但儿童友好的原创科学解释图，横向4:3构图，主题是花粉接触抗体接收器后，肥大细胞释放组胺等信号物质。画面中央是圆润肥大细胞、表面Y形接收器、普通花粉颗粒和柔和发光的小信号颗粒，背景为鼻腔黏膜、黏液、纤毛和小血管轮廓。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、文字标签、爆炸、炮火、武器或血腥切面；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
+          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-mast-cell-histamine.png",
+          "imageAlt": "花粉接近肥大细胞表面Y形接收器，肥大细胞释放信号小颗粒的科普图。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-078"
+          ],
+          "biologyConcepts": [
+            "肥大细胞脱颗粒",
+            "组胺释放",
+            "喷嚏和鼻水"
+          ],
+          "encyclopediaTags": [
+            "肥大细胞",
+            "组胺",
+            "鼻水",
+            "喷嚏"
+          ],
+          "parentNote": "可提醒孩子：肥大细胞是正常细胞，只是这次信号放大了。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "cedar-pollen-allergy-symptoms-peak",
+          "topicId": "cedar-pollen-allergy",
+          "title": "症状为什么会变明显",
+          "coreQuestion": "鼻水和喷嚏是在说明身体坏了吗？",
+          "explanation": "流鼻水、打喷嚏和黏膜肿胀，常常是身体想把外来颗粒推出去的一部分。过敏时，这些反应变得太强，人就会不舒服。重点不是花粉破坏身体，而是身体反应过头了。",
+          "imagePromptId": "work-cells-cedar-pollen-allergy-symptoms-peak",
+          "imagePrompt": "请生成一张儿童友好的原创科普插图，横向4:3构图，主题是过敏症状为什么会出现。画面表现放大的鼻腔黏膜小世界、普通浅黄色花粉、透明鼻水、纤毛、柔和喷嚏气流、小血管轻微扩张和黏膜轻微肿胀。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、文字标签、真实鼻涕照片、血液喷溅、病菌怪物或武器战斗；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
+          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-symptoms-peak.png",
+          "imageAlt": "鼻腔黏膜里鼻水变多、纤毛推动、喷嚏气流排出花粉的过敏症状科普图。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-084"
+          ],
+          "biologyConcepts": [
+            "炎症反应",
+            "过敏症状",
+            "免疫反应过强"
+          ],
+          "encyclopediaTags": [
+            "过敏",
+            "炎症",
+            "喷嚏"
+          ],
+          "parentNote": "可以把症状讲成身体在努力清理，但动作太用力了。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "cedar-pollen-allergy-symptom-control",
+          "topicId": "cedar-pollen-allergy",
+          "title": "过敏可以被照顾和管理",
+          "coreQuestion": "不舒服的时候，家里可以先做什么？",
+          "explanation": "过敏不舒服时，可以先减少接触花粉、清洁手和脸、补水休息，并请成人帮忙判断是否需要进一步处理。孩子不要自己决定用药，药物相关问题要由成人或医生指导。",
+          "imagePromptId": "work-cells-cedar-pollen-allergy-symptom-control",
+          "imagePrompt": "请生成一张原创家庭健康教育插图，横向4:3构图，主题是过敏症状可以被管理。画面表现窗外少量花粉、温和家庭室内、原创成年人陪伴原创孩子、纸巾、水杯、干净口罩、湿毛巾或洗手台，以及半透明鼻腔状态变平稳的小示意。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、具体药品品牌、处方、针头、医院恐惧场景或武器；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
+          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-symptom-control.png",
+          "imageAlt": "家庭室内成人陪孩子减少花粉接触、清洁、喝水休息，并观察鼻腔反应变平稳的科普图。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-091"
+          ],
+          "biologyConcepts": [
+            "症状管理",
+            "免疫调节",
+            "成人照护"
+          ],
+          "encyclopediaTags": [
+            "过敏治疗",
+            "症状管理",
+            "家庭照护"
+          ],
+          "parentNote": "这张适合强调：用药和处理方案要由成人来决定。",
+          "status": "published",
+          "priority": "medium"
+        },
+        {
+          "stationId": "cedar-pollen-allergy-medicine-regulation",
+          "topicId": "cedar-pollen-allergy",
+          "title": "药物是在调节反应",
+          "coreQuestion": "药物是在打败花粉吗？",
+          "explanation": "有些过敏药物的作用，是帮助身体把过强的反应降下来，而不是把花粉当成敌人消灭。漫画里的武器化画面是夸张表现，真实生活里用药需要成人或医生指导。",
+          "imagePromptId": "work-cells-cedar-pollen-allergy-medicine-regulation",
+          "imagePrompt": "请生成一张严谨、温和、原创的儿童健康科普插图，横向4:3构图，主题是药物帮助调节过敏反应。画面用抽象鼻腔黏膜左右状态对比表现反应过强到逐渐平稳，可使用无文字、无品牌的柔和调节象征，不要让药物像武器。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、机器人、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、药盒文字、处方、针头、输液、爆炸或战斗；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
+          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-medicine-regulation.png",
+          "imageAlt": "鼻腔黏膜从反应过强到被温和调节后变平稳的药物调节过敏反应科普图。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-094"
+          ],
+          "biologyConcepts": [
+            "药物抑制炎症",
+            "免疫调节",
+            "过敏缓解"
+          ],
+          "encyclopediaTags": [
+            "类固醇药物",
+            "炎症反应",
+            "过敏治疗"
+          ],
+          "parentNote": "适合温和说明：药物不是玩具，也不是孩子自己决定使用的东西。",
+          "status": "published",
+          "priority": "medium"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "category": "观察问题",
+          "title": "花粉像什么",
+          "question": "看相关页面时，花粉更像普通小颗粒，还是像会主动攻击身体的坏东西？",
+          "answer": "更适合理解成普通外来小颗粒。过敏的关键是身体反应太强。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-065"
+          ],
+          "parentHint": "引导孩子看画面里的夸张表现，再回到科学解释。",
+          "biologyConcepts": [
+            "过敏原",
+            "免疫误判"
+          ]
+        },
+        {
+          "category": "观察问题",
+          "title": "症状从哪里来",
+          "question": "画面里哪些线索让你想到鼻水、喷嚏或鼻子不舒服？",
+          "answer": "可以观察水、气流、黏膜变化和身体忙起来的画面。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-078",
+            "cedar-pollen-allergy__v01_page-084"
+          ],
+          "parentHint": "不要求复述对白，只说看见的变化。",
+          "biologyConcepts": [
+            "组胺释放",
+            "过敏症状"
+          ]
+        },
+        {
+          "category": "理解问题",
+          "title": "为什么会误报",
+          "question": "如果花粉不是细菌，身体为什么还会拉响警报？",
+          "answer": "因为免疫系统可能把花粉判断得太严重，启动了过强反应。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-065",
+            "cedar-pollen-allergy__v01_page-071"
+          ],
+          "parentHint": "可以用“烟雾报警器太灵敏”作类比。",
+          "biologyConcepts": [
+            "免疫误判",
+            "IgE抗体"
+          ]
+        },
+        {
+          "category": "理解问题",
+          "title": "肥大细胞做了什么",
+          "question": "肥大细胞被触发后，为什么鼻子会更难受？",
+          "answer": "它会释放组胺等信号，让黏膜反应变强，鼻水和喷嚏变明显。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-078"
+          ],
+          "parentHint": "把“释放信号”说成身体里的提醒消息即可。",
+          "biologyConcepts": [
+            "肥大细胞",
+            "组胺"
+          ]
+        },
+        {
+          "category": "联系生活问题",
+          "title": "花粉多时怎么办",
+          "question": "如果花粉多、鼻子不舒服，哪些做法可能让身体轻松一点？",
+          "answer": "减少接触花粉、清洁手脸、喝水休息，并请成人帮忙判断。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-091"
+          ],
+          "parentHint": "只讲家庭照护思路，不做诊断或用药建议。",
+          "biologyConcepts": [
+            "症状管理",
+            "成人照护"
+          ]
+        },
+        {
+          "category": "联系生活问题",
+          "title": "药能自己用吗",
+          "question": "漫画里药物很厉害，现实里孩子可以自己决定用药吗？",
+          "answer": "不可以。药物要由成人或医生指导，不能当玩具或武器。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-094"
+          ],
+          "parentHint": "用温和语气强调安全边界。",
+          "biologyConcepts": [
+            "药物抑制炎症",
+            "过敏缓解"
+          ]
+        },
+        {
+          "category": "科学概念问题",
+          "title": "IgE是什么",
+          "question": "IgE抗体在过敏反应里像什么？",
+          "answer": "它像一种识别标记，可能让肥大细胞更容易被花粉触发。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-071",
+            "cedar-pollen-allergy__v01_page-078"
+          ],
+          "parentHint": "避免说IgE是坏东西，它也是免疫系统的一部分。",
+          "biologyConcepts": [
+            "IgE抗体",
+            "肥大细胞"
+          ]
+        },
+        {
+          "category": "科学概念问题",
+          "title": "过敏不是感染",
+          "question": "过敏和被细菌感染是一回事吗？",
+          "answer": "不是。过敏常常是身体对花粉等东西反应过强，不等于有细菌入侵。",
+          "relatedPageIds": [
+            "cedar-pollen-allergy__v01_page-065",
+            "cedar-pollen-allergy__v01_page-084"
+          ],
+          "parentHint": "把重点放在“外来颗粒”和“反应过强”的区别上。",
+          "biologyConcepts": [
+            "过敏原",
+            "免疫反应过强"
+          ]
+        }
+      ],
       "pageAnnotations": [
         {
           "pageId": "cedar-pollen-allergy__v01_page-063",

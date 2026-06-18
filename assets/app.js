@@ -489,11 +489,52 @@ function ScienceAnnotationThumbnails(topic, pages) {
   return `<div class="page-thumbnail-list annotation-thumb-list">${thumbnails}</div>`;
 }
 
+function sciencePagesById(topic, pageIds) {
+  const pageById = new Map((topic.pageAnnotations ?? []).map((page) => [page.pageId, page]));
+  return (pageIds ?? []).map((pageId) => pageById.get(pageId)).filter(Boolean);
+}
+
+function ScienceRelatedPageRefs(topic, pageIds) {
+  const pages = sciencePagesById(topic, pageIds);
+  if (pages.length > 0) {
+    return ScienceAnnotationThumbnails(topic, pages);
+  }
+  if (!Array.isArray(pageIds) || pageIds.length === 0) {
+    return '<p class="thumbnail-empty">暂无关联页码</p>';
+  }
+  return `<p class="page-range">${pageIds.map((pageId) => html(pageId)).join('、')}</p>`;
+}
+
 function ScienceExplanationImagePlaceholder(topic, group) {
   const promptId = sciencePromptId(topic, group);
   return `
     <div class="science-illustration-placeholder">
       <p>解释图待补充</p>
+      <small>prompt-id：${html(promptId)}</small>
+    </div>
+  `;
+}
+
+function ScienceStationIllustration(station) {
+  const promptId = station.imagePromptId;
+  if (station.imageAsset) {
+    const src = sitePath(station.imageAsset);
+    return `
+      <button
+        class="science-station-image"
+        type="button"
+        data-lightbox-src="${src}"
+        data-lightbox-alt="${html(station.imageAlt || station.title)}"
+        aria-label="放大查看${html(station.title)}解释图"
+      >
+        <img src="${src}" alt="${html(station.imageAlt || station.title)}" loading="lazy">
+      </button>
+      <p class="prompt-id">prompt-id：${html(promptId)}</p>
+    `;
+  }
+  return `
+    <div class="science-illustration-placeholder">
+      <p>解释图占位区</p>
       <small>prompt-id：${html(promptId)}</small>
     </div>
   `;
@@ -511,6 +552,30 @@ function scienceOverviewSection(topic) {
 }
 
 function scienceStationSection(topic) {
+  if (Array.isArray(topic.bodyScienceStations) && topic.bodyScienceStations.length > 0) {
+    return `
+      <section id="science-station" class="content-section" aria-labelledby="science-station-title">
+        <h2 id="science-station-title">身体科学小站</h2>
+        <p>${html(topic.recommendedBodyScienceStationFocus ?? '身体科学小站重点待补充。')}</p>
+        <div class="annotation-grid science-station-grid">
+          ${topic.bodyScienceStations.map((station) => `
+            <article class="annotation-card science-station-card">
+              <h3>${html(station.title)}</h3>
+              <p class="core-question">${html(station.coreQuestion)}</p>
+              ${ScienceStationIllustration(station)}
+              <p>${html(station.explanation)}</p>
+              ${tagList(uniqueItems([...(station.biologyConcepts ?? []), ...(station.encyclopediaTags ?? [])]))}
+              <div class="related-pages">
+                <h4>关联漫画页面</h4>
+                ${ScienceRelatedPageRefs(topic, station.relatedPageIds)}
+              </div>
+            </article>
+          `).join('')}
+        </div>
+      </section>
+    `;
+  }
+
   const groups = groupSciencePagesByRole(
     (topic.pageAnnotations ?? []).filter((page) => (
       isHighScienceStationPage(page)
@@ -540,6 +605,37 @@ function scienceStationSection(topic) {
 }
 
 function scienceParentQuestionsSection(topic) {
+  if (Array.isArray(topic.parentQuestionCards) && topic.parentQuestionCards.length > 0) {
+    return `
+      <section id="science-questions" class="content-section" aria-labelledby="science-questions-title">
+        <h2 id="science-questions-title">亲子问题卡</h2>
+        <div class="annotation-grid compact-grid">
+          ${topic.parentQuestionCards.map((card) => `
+            <article class="annotation-card">
+              <p class="small-tag">${html(card.category)}</p>
+              <h3>${html(card.title)}</h3>
+              <div class="question-answer-list">
+                <section>
+                  <h4>问题</h4>
+                  <p>${html(card.question)}</p>
+                  <h4>答案</h4>
+                  <p>${html(card.answer)}</p>
+                  <h4>家长提示</h4>
+                  <p>${html(card.parentHint)}</p>
+                </section>
+              </div>
+              ${tagList(card.biologyConcepts)}
+              <div class="related-pages">
+                <h4>相应漫画页面</h4>
+                ${ScienceRelatedPageRefs(topic, card.relatedPageIds)}
+              </div>
+            </article>
+          `).join('')}
+        </div>
+      </section>
+    `;
+  }
+
   const groups = groupSciencePagesByRole(
     (topic.pageAnnotations ?? []).filter((page) => Array.isArray(page.parentPromptIdeas) && page.parentPromptIdeas.length > 0),
   ).filter((group) => !String(group.pageRole ?? '').includes('主题开场'));
@@ -567,6 +663,17 @@ function scienceParentQuestionsSection(topic) {
           </article>
         `).join('')}
       </div>
+    </section>
+  `;
+}
+
+function scienceParentGuidanceSection(topic) {
+  const parentNote = topic.parentNote || topic.sensitiveContentGuidance;
+  if (!parentNote) return '';
+  return `
+    <section id="science-parent-guidance" class="content-section parent-guidance-section" aria-labelledby="science-parent-guidance-title">
+      <h2 id="science-parent-guidance-title">家长共读提示</h2>
+      <p>${html(parentNote)}</p>
     </section>
   `;
 }
@@ -908,6 +1015,7 @@ function scienceTopicPage(scienceSeries, topic) {
         ${scienceOverviewSection(topic)}
         ${scienceStationSection(topic)}
         ${scienceParentQuestionsSection(topic)}
+        ${scienceParentGuidanceSection(topic)}
         <section id="source" class="content-section" aria-labelledby="source-title">
           <h2 id="source-title">来源备注</h2>
           <p>来源：${html(topic.source?.sourceLabel ?? '来源待核对')}</p>
@@ -944,11 +1052,12 @@ function currentRoute() {
 }
 
 function wireCoverFallbacks() {
-  document.querySelectorAll('.cover-frame img, .thumb-row img, .page-thumbnail img').forEach((image) => {
+  document.querySelectorAll('.cover-frame img, .thumb-row img, .page-thumbnail img, .science-station-image img').forEach((image) => {
     image.addEventListener('error', () => {
       image.hidden = true;
       image.closest('.cover-frame')?.classList.add('cover-missing');
       image.closest('.page-thumbnail')?.classList.add('thumbnail-missing');
+      image.closest('.science-station-image')?.classList.add('thumbnail-missing');
     });
   });
 }
