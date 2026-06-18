@@ -2212,7 +2212,7 @@
           "explanation": "杉树花粉本身不是细菌，也不会主动攻击身体。它进入鼻腔后，会碰到黏膜、黏液和免疫细胞。有些人的免疫系统会把这种外来小颗粒判断得太严重，于是过敏反应的第一步就开始了。",
           "imagePromptId": "work-cells-cedar-pollen-allergy-pollen-recognition",
           "imagePrompt": "请生成一张面向6-10岁儿童和家长共读的原创科学解释图，横向4:3构图，主题是杉树花粉进入鼻腔后被免疫系统识别。画面表现普通浅黄色花粉颗粒、淡粉色鼻腔黏膜、透明黏液、纤毛和抽象非拟人化免疫哨兵细胞。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、药品广告、战争、爆炸或恐怖医疗场景；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
-          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-pollen-recognition.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-v2-station-01.webp",
           "imageAlt": "杉树花粉进入鼻腔，黏膜、黏液、纤毛和免疫细胞开始识别外来颗粒的科普图。",
           "relatedPageIds": [
             "cedar-pollen-allergy__v01_page-065"
@@ -2229,7 +2229,10 @@
           ],
           "parentNote": "可以告诉孩子：花粉不是坏人，过敏更像身体把警报拉得太响。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "cedar-pollen-allergy-ige-preparation",
@@ -2239,7 +2242,7 @@
           "explanation": "免疫系统收到花粉相关信息后，可能会让B细胞产生IgE抗体。抗体本来是身体识别外来物的重要工具，但在过敏里，IgE会让后面的反应更容易被触发。",
           "imagePromptId": "work-cells-cedar-pollen-allergy-ige-preparation",
           "imagePrompt": "请生成一张原创儿童科学解释图，横向4:3构图，主题是花粉信息被免疫系统传递，B细胞准备产生IgE抗体。画面使用抽象温和的细胞、柔和光点信号、圆润B细胞和小小Y形抗体符号。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、制服、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、文字标签、药品广告、战场或机器人生产线；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
-          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-ige-preparation.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-v2-station-02.webp",
           "imageAlt": "花粉信息传向B细胞，周围出现Y形抗体符号的免疫信息传递科普图。",
           "relatedPageIds": [
             "cedar-pollen-allergy__v01_page-071"
@@ -2256,7 +2259,10 @@
           ],
           "parentNote": "这里重点是信息传递，不是身体真的在开战。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "cedar-pollen-allergy-mast-cell-histamine",
@@ -2266,7 +2272,7 @@
           "explanation": "IgE附在肥大细胞表面后，花粉再次出现时可能把肥大细胞触发。肥大细胞会释放组胺等信号物质，让鼻腔黏膜变得更敏感，于是鼻水、喷嚏、痒和肿胀会出现。",
           "imagePromptId": "work-cells-cedar-pollen-allergy-mast-cell-histamine",
           "imagePrompt": "请生成一张严谨但儿童友好的原创科学解释图，横向4:3构图，主题是花粉接触抗体接收器后，肥大细胞释放组胺等信号物质。画面中央是圆润肥大细胞、表面Y形接收器、普通花粉颗粒和柔和发光的小信号颗粒，背景为鼻腔黏膜、黏液、纤毛和小血管轮廓。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、文字标签、爆炸、炮火、武器或血腥切面；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
-          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-mast-cell-histamine.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-v2-station-03.webp",
           "imageAlt": "花粉接近肥大细胞表面Y形接收器，肥大细胞释放信号小颗粒的科普图。",
           "relatedPageIds": [
             "cedar-pollen-allergy__v01_page-078"
@@ -2284,7 +2290,10 @@
           ],
           "parentNote": "可提醒孩子：肥大细胞是正常细胞，只是这次信号放大了。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "cedar-pollen-allergy-symptoms-peak",
@@ -2294,7 +2303,7 @@
           "explanation": "流鼻水、打喷嚏和黏膜肿胀，常常是身体想把外来颗粒推出去的一部分。过敏时，这些反应变得太强，人就会不舒服。重点不是花粉破坏身体，而是身体反应过头了。",
           "imagePromptId": "work-cells-cedar-pollen-allergy-symptoms-peak",
           "imagePrompt": "请生成一张儿童友好的原创科普插图，横向4:3构图，主题是过敏症状为什么会出现。画面表现放大的鼻腔黏膜小世界、普通浅黄色花粉、透明鼻水、纤毛、柔和喷嚏气流、小血管轻微扩张和黏膜轻微肿胀。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、文字标签、真实鼻涕照片、血液喷溅、病菌怪物或武器战斗；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
-          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-symptoms-peak.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-v2-station-04.webp",
           "imageAlt": "鼻腔黏膜里鼻水变多、纤毛推动、喷嚏气流排出花粉的过敏症状科普图。",
           "relatedPageIds": [
             "cedar-pollen-allergy__v01_page-084"
@@ -2311,61 +2320,10 @@
           ],
           "parentNote": "可以把症状讲成身体在努力清理，但动作太用力了。",
           "status": "published",
-          "priority": "high"
-        },
-        {
-          "stationId": "cedar-pollen-allergy-symptom-control",
-          "topicId": "cedar-pollen-allergy",
-          "title": "过敏可以被照顾和管理",
-          "coreQuestion": "不舒服的时候，家里可以先做什么？",
-          "explanation": "过敏不舒服时，可以先减少接触花粉、清洁手和脸、补水休息，并请成人帮忙判断是否需要进一步处理。孩子不要自己决定用药，药物相关问题要由成人或医生指导。",
-          "imagePromptId": "work-cells-cedar-pollen-allergy-symptom-control",
-          "imagePrompt": "请生成一张原创家庭健康教育插图，横向4:3构图，主题是过敏症状可以被管理。画面表现窗外少量花粉、温和家庭室内、原创成年人陪伴原创孩子、纸巾、水杯、干净口罩、湿毛巾或洗手台，以及半透明鼻腔状态变平稳的小示意。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、具体药品品牌、处方、针头、医院恐惧场景或武器；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
-          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-symptom-control.webp",
-          "imageAlt": "家庭室内成人陪孩子减少花粉接触、清洁、喝水休息，并观察鼻腔反应变平稳的科普图。",
-          "relatedPageIds": [
-            "cedar-pollen-allergy__v01_page-091"
-          ],
-          "biologyConcepts": [
-            "症状管理",
-            "免疫调节",
-            "成人照护"
-          ],
-          "encyclopediaTags": [
-            "过敏治疗",
-            "症状管理",
-            "家庭照护"
-          ],
-          "parentNote": "这张适合强调：用药和处理方案要由成人来决定。",
-          "status": "published",
-          "priority": "medium"
-        },
-        {
-          "stationId": "cedar-pollen-allergy-medicine-regulation",
-          "topicId": "cedar-pollen-allergy",
-          "title": "药物是在调节反应",
-          "coreQuestion": "药物是在打败花粉吗？",
-          "explanation": "有些过敏药物的作用，是帮助身体把过强的反应降下来，而不是把花粉当成敌人消灭。漫画里的武器化画面是夸张表现，真实生活里用药需要成人或医生指导。",
-          "imagePromptId": "work-cells-cedar-pollen-allergy-medicine-regulation",
-          "imagePrompt": "请生成一张严谨、温和、原创的儿童健康科普插图，横向4:3构图，主题是药物帮助调节过敏反应。画面用抽象鼻腔黏膜左右状态对比表现反应过强到逐渐平稳，可使用无文字、无品牌的柔和调节象征，不要让药物像武器。不要模仿《工作细胞》或任何现有漫画、动画、影视、游戏角色、机器人、画风、分镜和构图；不要出现漫画对白、版权角色、真实品牌、Logo、水印、二维码、药盒文字、处方、针头、输液、爆炸或战斗；文字尽量不要直接嵌入图片，必要文字交给网页层渲染。",
-          "imageAsset": "public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-medicine-regulation.webp",
-          "imageAlt": "鼻腔黏膜从反应过强到被温和调节后变平稳的药物调节过敏反应科普图。",
-          "relatedPageIds": [
-            "cedar-pollen-allergy__v01_page-094"
-          ],
-          "biologyConcepts": [
-            "药物抑制炎症",
-            "免疫调节",
-            "过敏缓解"
-          ],
-          "encyclopediaTags": [
-            "类固醇药物",
-            "炎症反应",
-            "过敏治疗"
-          ],
-          "parentNote": "适合温和说明：药物不是玩具，也不是孩子自己决定使用的东西。",
-          "status": "published",
-          "priority": "medium"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         }
       ],
       "parentQuestionCards": [
@@ -2384,7 +2342,8 @@
           "biologyConcepts": [
             "过敏原",
             "免疫误判"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "cedar-pollen-allergy-q02",
@@ -2402,7 +2361,8 @@
           "biologyConcepts": [
             "组胺释放",
             "过敏症状"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "cedar-pollen-allergy-q03",
@@ -2420,7 +2380,8 @@
           "biologyConcepts": [
             "免疫误判",
             "IgE抗体"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "cedar-pollen-allergy-q04",
@@ -2437,7 +2398,8 @@
           "biologyConcepts": [
             "肥大细胞",
             "组胺"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "cedar-pollen-allergy-q05",
@@ -2454,7 +2416,8 @@
           "biologyConcepts": [
             "症状管理",
             "成人照护"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "cedar-pollen-allergy-q06",
@@ -2471,43 +2434,8 @@
           "biologyConcepts": [
             "药物抑制炎症",
             "过敏缓解"
-          ]
-        },
-        {
-          "cardId": "cedar-pollen-allergy-q07",
-          "topicId": "cedar-pollen-allergy",
-          "type": "science-concept",
-          "category": "科学概念问题",
-          "title": "IgE是什么",
-          "question": "IgE抗体在过敏反应里像什么？",
-          "answer": "它像一种识别标记，可能让肥大细胞更容易被花粉触发。",
-          "relatedPageIds": [
-            "cedar-pollen-allergy__v01_page-071",
-            "cedar-pollen-allergy__v01_page-078"
           ],
-          "parentHint": "避免说IgE是坏东西，它也是免疫系统的一部分。",
-          "biologyConcepts": [
-            "IgE抗体",
-            "肥大细胞"
-          ]
-        },
-        {
-          "cardId": "cedar-pollen-allergy-q08",
-          "topicId": "cedar-pollen-allergy",
-          "type": "science-concept",
-          "category": "科学概念问题",
-          "title": "过敏不是感染",
-          "question": "过敏和被细菌感染是一回事吗？",
-          "answer": "不是。过敏常常是身体对花粉等东西反应过强，不等于有细菌入侵。",
-          "relatedPageIds": [
-            "cedar-pollen-allergy__v01_page-065",
-            "cedar-pollen-allergy__v01_page-084"
-          ],
-          "parentHint": "把重点放在“外来颗粒”和“反应过强”的区别上。",
-          "biologyConcepts": [
-            "过敏原",
-            "免疫反应过强"
-          ]
+          "contentVersion": "work-cells-v2"
         }
       ],
       "pageAnnotations": [
@@ -3772,7 +3700,58 @@
         "cedar-pollen-allergy__v01_page-088",
         "cedar-pollen-allergy__v01_page-089",
         "cedar-pollen-allergy__v01_page-090"
-      ]
+      ],
+      "topicOverview": {
+        "title": "杉树花粉过敏",
+        "summary": "杉树花粉进入体内后，被免疫系统当成需要处理的对象，引发IgE、肥大细胞和炎症介质相关的连锁反应。漫画把过敏反应表现成水灾、地震和大型武器介入，适合帮助孩子理解“过敏不是花粉主动攻击身体，而是免疫系统反应过度”。",
+        "readingFocus": "“为什么会过敏”：用三步图解释过敏原进入、IgE/肥大细胞误报、组胺等物质引发流鼻水和喷嚏；同时提醒药物使用应由成人和医生指导。",
+        "keyBiologyConcepts": [
+          "过敏原",
+          "杉树花粉",
+          "IgE抗体",
+          "B细胞",
+          "肥大细胞",
+          "组胺等炎症介质",
+          "鼻水、喷嚏和肿胀",
+          "药物对过敏反应的抑制"
+        ]
+      },
+      "parentReadingNote": "???????????????????????????????????????????????????????????????????????????????????",
+      "parentNote": "???????????????????????????????????????????????????????????????????????????????????",
+      "sourceNotes": [
+        "??????1??2??????????????????????????????????????????",
+        "?????????????IgE????????????????????????",
+        "V2?????????PNG???data/cells-at-work/source-assets/science-station/cedar-pollen-allergy/png-originals/??????????WebP?"
+      ],
+      "relatedComicPages": [
+        "cedar-pollen-allergy__v01_page-065",
+        "cedar-pollen-allergy__v01_page-071",
+        "cedar-pollen-allergy__v01_page-078",
+        "cedar-pollen-allergy__v01_page-084",
+        "cedar-pollen-allergy__v01_page-091",
+        "cedar-pollen-allergy__v01_page-094"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "cedar-pollen-allergy-animation-s1e05-overview",
+          "sourceLabel": "?? S1 ?5?????????",
+          "summary": "??????????????????????????????????????",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 3,
@@ -4909,7 +4888,7 @@
         "influenza__v01_page-132",
         "influenza__v01_page-133"
       ],
-      "parentNote": "这是一段科普共读内容，不替代医学建议。可以把重点放在身体如何识别感染、合作清除病毒；如果孩子真的不舒服，应由成人判断并及时咨询医生。",
+      "parentNote": "????????????????????????????????????????????????????????????????????????????",
       "bodyScienceStations": [
         {
           "stationId": "influenza-virus-entry",
@@ -4919,7 +4898,7 @@
           "explanation": "流感病毒通常先接触呼吸道，再进入一些细胞里复制自己。被感染的细胞会发出异常信号，提醒免疫系统：这里需要帮助。",
           "imagePromptId": "work-cells-influenza-virus-entry",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是病毒进入身体后发生了什么：流感病毒接近呼吸道黏膜，少量细胞发出求助信号的温和儿童科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-virus-entry.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-v2-station-01.webp",
           "imageAlt": "流感病毒接近呼吸道黏膜，少量细胞发出求助信号的温和儿童科普图。",
           "relatedPageIds": [
             "influenza__v01_page-105"
@@ -4936,7 +4915,10 @@
           ],
           "parentNote": "可以用“病毒借用细胞机器复制”来解释，避免把病毒说成会思考的坏人。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "influenza-infected-cell-recognition",
@@ -4946,7 +4928,7 @@
           "explanation": "有些病毒躲进细胞里复制。免疫系统需要识别哪些细胞已经被感染，才能减少病毒继续扩散，这也是T细胞等免疫细胞的重要工作。",
           "imagePromptId": "work-cells-influenza-infected-cell-recognition",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是免疫细胞为什么要识别感染细胞：免疫细胞通过信号识别被感染细胞，周围健康细胞保持安全距离的解释图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-infected-cell-recognition.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-v2-station-02.webp",
           "imageAlt": "免疫细胞通过信号识别被感染细胞，周围健康细胞保持安全距离的解释图。",
           "relatedPageIds": [
             "influenza__v01_page-116",
@@ -4964,7 +4946,10 @@
           ],
           "parentNote": "强调“识别”是为了保护更多细胞，不需要把清除过程讲得激烈。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "influenza-symptom-response",
@@ -4974,7 +4959,7 @@
           "explanation": "很多不舒服来自身体的防御反应。发烧像把环境调得不适合病毒，疲劳提醒身体休息，鼻涕和咳嗽帮助把外来物带出去。",
           "imagePromptId": "work-cells-influenza-symptom-response",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是症状和免疫反应的关系：发热、休息、鼻腔黏液和免疫信号用温和图标连接起来的儿童科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-symptom-response.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-v2-station-03.webp",
           "imageAlt": "发热、休息、鼻腔黏液和免疫信号用温和图标连接起来的儿童科普图。",
           "relatedPageIds": [
             "influenza__v01_page-127",
@@ -4992,7 +4977,10 @@
           ],
           "parentNote": "说明症状是身体在努力工作；同时提醒真实生病时要听成人安排。",
           "status": "published",
-          "priority": "medium"
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "influenza-flu-vs-cold",
@@ -5002,7 +4990,7 @@
           "explanation": "流感由流感病毒引起，常常来得更急，可能更容易让人发热、酸痛和疲劳。普通感冒可能由很多不同病毒引起，通常较轻，但都需要休息和照护。",
           "imagePromptId": "work-cells-influenza-flu-vs-cold",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是流感和普通感冒不完全一样：两条并排的温和科普路径对比流感和普通感冒，使用抽象病毒和休息图标。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-flu-vs-cold.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-v2-station-04.webp",
           "imageAlt": "两条并排的温和科普路径对比流感和普通感冒，使用抽象病毒和休息图标。",
           "relatedPageIds": [
             "influenza__v01_page-134",
@@ -5020,7 +5008,10 @@
           ],
           "parentNote": "避免让孩子紧张，用“名字相近但不完全一样”帮助区分。",
           "status": "published",
-          "priority": "medium"
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         }
       ],
       "parentQuestionCards": [
@@ -5039,7 +5030,8 @@
           "biologyConcepts": [
             "病毒进入",
             "呼吸道"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "influenza-q02",
@@ -5056,7 +5048,8 @@
           "biologyConcepts": [
             "免疫防御",
             "感染细胞"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "influenza-q03",
@@ -5073,7 +5066,8 @@
           "biologyConcepts": [
             "T细胞识别",
             "抗原呈递"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "influenza-q04",
@@ -5090,7 +5084,8 @@
           "biologyConcepts": [
             "发热",
             "免疫反应"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "influenza-q05",
@@ -5107,7 +5102,8 @@
           "biologyConcepts": [
             "能量分配",
             "恢复"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "influenza-q06",
@@ -5124,43 +5120,61 @@
           "biologyConcepts": [
             "呼吸道传播",
             "生活防护"
-          ]
-        },
-        {
-          "cardId": "influenza-q07",
-          "topicId": "influenza",
-          "type": "science-concept",
-          "category": "科学概念问题",
-          "title": "T细胞在找什么",
-          "question": "T细胞识别感染细胞时，重点是在找什么线索？",
-          "answer": "它会根据细胞展示出的异常信号来判断哪里可能被感染。",
-          "relatedPageIds": [
-            "influenza__v01_page-123"
           ],
-          "parentHint": "把抗原说成“细胞展示出来的线索”。",
-          "biologyConcepts": [
-            "T细胞",
-            "抗原"
-          ]
-        },
-        {
-          "cardId": "influenza-q08",
-          "topicId": "influenza",
-          "type": "science-concept",
-          "category": "科学概念问题",
-          "title": "流感和感冒",
-          "question": "流感和普通感冒为什么不能完全画等号？",
-          "answer": "它们可能由不同病毒引起，严重程度和身体反应也不完全一样。",
-          "relatedPageIds": [
-            "influenza__v01_page-134"
-          ],
-          "parentHint": "不展开复杂诊断，只保留基本区别。",
-          "biologyConcepts": [
-            "流感病毒",
-            "普通感冒"
-          ]
+          "contentVersion": "work-cells-v2"
         }
-      ]
+      ],
+      "topicOverview": {
+        "title": "流行性感冒",
+        "summary": "流感病毒让普通细胞变成被感染细胞，初始T细胞起初胆怯无力，在树突细胞等免疫信号帮助下被激活并大量增殖。主题重点不是单纯“打怪”，而是适合展示病毒感染、抗原呈递、T细胞活化、克隆增殖和免疫团队协作。",
+        "readingFocus": "“从初始T细胞到活化T细胞”：用流程图说明病毒进入细胞、感染细胞被识别、树突细胞呈递抗原、T细胞活化并增殖，最后多种免疫细胞协同清除感染。",
+        "keyBiologyConcepts": [
+          "病毒感染细胞",
+          "流感病毒",
+          "初始T细胞",
+          "杀手T细胞",
+          "树突细胞与抗原呈递",
+          "T细胞活化",
+          "克隆增殖",
+          "B细胞与抗体",
+          "免疫记忆"
+        ]
+      },
+      "parentReadingNote": "????????????????????????????????????????????????????????????????????????????",
+      "sourceNotes": [
+        "??????1??3?????????????????????????????????????????",
+        "????????????????????????????????????????????",
+        "V2?????????PNG???data/cells-at-work/source-assets/science-station/influenza/png-originals/??????????WebP?"
+      ],
+      "relatedComicPages": [
+        "influenza__v01_page-105",
+        "influenza__v01_page-116",
+        "influenza__v01_page-123",
+        "influenza__v01_page-127",
+        "influenza__v01_page-134",
+        "influenza__v01_page-136"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "influenza-animation-s1e03-overview",
+          "sourceLabel": "?? S1 ?3????????",
+          "summary": "??????????????????????????????????????",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 4,

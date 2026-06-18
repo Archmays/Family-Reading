@@ -387,7 +387,7 @@ test('Work Cells Cedar pollen sample defines body science station data', () => {
 
   assert.ok(topic, 'Cedar pollen allergy topic should exist');
   assert.equal(topic.title, '杉树花粉过敏');
-  assert.equal(topic.bodyScienceStations.length, 6, 'Cedar pollen sample should define exactly 6 stations');
+  assert.equal(topic.bodyScienceStations.length, 4, 'Cedar pollen V2 sample should define exactly 4 stations');
 
   const stationIds = new Set();
   const promptIds = new Set();
@@ -418,8 +418,8 @@ test('Work Cells Cedar pollen sample defines body science station data', () => {
     promptIds.add(station.imagePromptId);
   }
 
-  assert.equal(stationIds.size, 6, 'stationId values should be unique');
-  assert.equal(promptIds.size, 6, 'imagePromptId values should be unique');
+  assert.equal(stationIds.size, 4, 'stationId values should be unique');
+  assert.equal(promptIds.size, 4, 'imagePromptId values should be unique');
 });
 
 test('Work Cells Cedar pollen sample defines refined parent question cards', () => {
@@ -427,10 +427,10 @@ test('Work Cells Cedar pollen sample defines refined parent question cards', () 
   const topic = manifest.topics.find((item) => item.topicId === 'cedar-pollen-allergy');
   const cards = topic.parentQuestionCards;
 
-  assert.equal(cards.length, 8, 'Cedar pollen sample should define 8 refined parent question cards');
+  assert.equal(cards.length, 6, 'Cedar pollen V2 sample should define 6 refined parent question cards');
   assert.deepEqual(
-    [...new Set(cards.map((card) => card.category))],
-    ['观察问题', '理解问题', '联系生活问题', '科学概念问题'],
+    [...new Set(cards.map((card) => card.type))],
+    ['observation', 'understanding', 'life-connection'],
   );
 
   for (const card of cards) {
@@ -448,6 +448,39 @@ test('Work Cells Cedar pollen sample defines refined parent question cards', () 
   }
 });
 
+test('Work Cells V2 pilot topics use approved WebP assets and metadata', () => {
+  const manifest = readJson(workCellsDraftPath);
+
+  for (const topicId of ['cedar-pollen-allergy', 'influenza']) {
+    const topic = manifest.topics.find((item) => item.topicId === topicId);
+    assert.ok(topic, `${topicId} topic should exist`);
+    assert.equal(topic.contentVersion, 'work-cells-v2');
+    assert.equal(topic.contentStatus?.text, 'approved-v2');
+    assert.equal(topic.contentStatus?.imagePromptStatus, 'asset-ready');
+    assert.equal(topic.contentStatus?.imageAssetStatus, 'ready');
+    assert.equal(topic.qualityFlags?.noFullComicText, true);
+    assert.equal(topic.qualityFlags?.noFullComicReader, true);
+    assert.equal(topic.qualityFlags?.noFullAnimationDialogue, true);
+    assert.equal(topic.qualityFlags?.noOriginalPngInPublic, true);
+    assert.match(topic.parentReadingNote ?? '', /\S/, `${topicId} should include parentReadingNote`);
+    assert.ok(topic.topicOverview?.summary?.length > 20, `${topicId} should include topicOverview`);
+    assert.ok(topic.sourceNotes?.length >= 3, `${topicId} should include sourceNotes`);
+    assert.ok(topic.relatedComicPages?.length > 0, `${topicId} should include relatedComicPages`);
+    assert.ok(topic.relatedAnimationScenes?.length > 0, `${topicId} should include relatedAnimationScenes`);
+    assert.equal(topic.bodyScienceStations.length, 4, `${topicId} should define 4 V2 station cards`);
+    assert.equal(topic.parentQuestionCards.length, 6, `${topicId} should define 6 V2 parent question cards`);
+
+    topic.bodyScienceStations.forEach((station, index) => {
+      const expectedAsset = `public/assets/cells-at-work/science-station/${topicId}/${topicId}-v2-station-${String(index + 1).padStart(2, '0')}.webp`;
+      assert.equal(station.contentVersion, 'work-cells-v2');
+      assert.equal(station.imagePromptStatus, 'asset-ready');
+      assert.equal(station.imageAssetStatus, 'ready');
+      assert.equal(station.imageAsset, expectedAsset);
+      assert.equal(existsSync(path.join(rootDir, ...expectedAsset.split('/'))), true, `${expectedAsset} should exist`);
+    });
+  }
+});
+
 test('Work Cells batch one topics define formal science station and parent question data', () => {
   const manifest = readJson(workCellsDraftPath);
   const topics = ['influenza', 'abrasion', 'heatstroke'].map((topicId) => {
@@ -456,10 +489,15 @@ test('Work Cells batch one topics define formal science station and parent quest
     return topic;
   });
   const expectedQuestionTypes = ['observation', 'understanding', 'life-connection', 'science-concept'];
+  const expectedQuestionCounts = new Map([
+    ['influenza', 6],
+    ['abrasion', 8],
+    ['heatstroke', 8],
+  ]);
 
   for (const topic of topics) {
     assert.equal(topic.bodyScienceStations.length, 4, `${topic.topicId} should define exactly 4 stations`);
-    assert.equal(topic.parentQuestionCards.length, 8, `${topic.topicId} should define exactly 8 question cards`);
+    assert.equal(topic.parentQuestionCards.length, expectedQuestionCounts.get(topic.topicId), `${topic.topicId} should define the expected question card count`);
     assert.match(topic.parentNote ?? '', /\S/, `${topic.topicId} should include gentle parent co-reading guidance`);
 
     const stationIds = new Set();
@@ -495,7 +533,10 @@ test('Work Cells batch one topics define formal science station and parent quest
     assert.equal(promptIds.size, 4, `${topic.topicId} imagePromptId values should be unique`);
 
     const typeSet = new Set(topic.parentQuestionCards.map((card) => card.type));
-    for (const type of expectedQuestionTypes) {
+    const requiredTypes = topic.topicId === 'influenza'
+      ? ['observation', 'understanding', 'life-connection']
+      : expectedQuestionTypes;
+    for (const type of requiredTypes) {
       assert.equal(typeSet.has(type), true, `${topic.topicId} should include ${type} question cards`);
     }
     for (const card of topic.parentQuestionCards) {

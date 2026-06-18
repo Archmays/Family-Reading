@@ -668,7 +668,7 @@ function scienceParentQuestionsSection(topic) {
 }
 
 function scienceParentGuidanceSection(topic) {
-  const parentNote = topic.parentNote || topic.sensitiveContentGuidance;
+  const parentNote = topic.parentReadingNote || topic.parentNote || topic.sensitiveContentGuidance;
   if (!parentNote) return '';
   return `
     <section id="science-parent-guidance" class="content-section parent-guidance-section" aria-labelledby="science-parent-guidance-title">
@@ -1019,6 +1019,7 @@ function scienceTopicPage(scienceSeries, topic) {
         <section id="source" class="content-section" aria-labelledby="source-title">
           <h2 id="source-title">来源备注</h2>
           <p>来源：${html(topic.source?.sourceLabel ?? '来源待核对')}</p>
+          ${plainList(topic.sourceNotes)}
         </section>
       </div>
     </main>
