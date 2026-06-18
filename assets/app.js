@@ -540,18 +540,36 @@ function ScienceStationIllustration(station) {
   `;
 }
 
+function isWorkCellsV2Topic(topic) {
+  return topic?.contentVersion === 'work-cells-v2';
+}
+
+function scienceV2InProgressSection(sectionId, title) {
+  return `
+    <section id="${sectionId}" class="content-section" aria-labelledby="${sectionId}-title">
+      <h2 id="${sectionId}-title">${html(title)}</h2>
+      <p class="thumbnail-empty">V2 内容制作中。当前只展示已经验收的 V2 正式内容。</p>
+    </section>
+  `;
+}
+
 function scienceOverviewSection(topic) {
+  const overview = isWorkCellsV2Topic(topic) ? topic.topicOverview : null;
   return `
     <section id="science-overview" class="content-section" aria-labelledby="science-overview-title">
       <h2 id="science-overview-title">主题导读</h2>
-      <p>${html(topic.topicSummary ?? '主题摘要待补充。')}</p>
+      <p>${html(overview?.summary ?? topic.topicSummary ?? '主题摘要待补充。')}</p>
       <h3>核心生物概念</h3>
-      ${plainList(topic.keyBiologyConcepts)}
+      ${plainList(overview?.keyBiologyConcepts ?? topic.keyBiologyConcepts)}
     </section>
   `;
 }
 
 function scienceStationSection(topic) {
+  if (!isWorkCellsV2Topic(topic)) {
+    return scienceV2InProgressSection('science-station', '身体科学小站');
+  }
+
   if (Array.isArray(topic.bodyScienceStations) && topic.bodyScienceStations.length > 0) {
     return `
       <section id="science-station" class="content-section" aria-labelledby="science-station-title">
@@ -605,6 +623,10 @@ function scienceStationSection(topic) {
 }
 
 function scienceParentQuestionsSection(topic) {
+  if (!isWorkCellsV2Topic(topic)) {
+    return scienceV2InProgressSection('science-questions', '亲子问题卡');
+  }
+
   if (Array.isArray(topic.parentQuestionCards) && topic.parentQuestionCards.length > 0) {
     return `
       <section id="science-questions" class="content-section" aria-labelledby="science-questions-title">

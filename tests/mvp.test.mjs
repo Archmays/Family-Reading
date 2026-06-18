@@ -16,6 +16,8 @@ const workCellsAnimationInventoryPath = path.join(rootDir, 'data-private', 'cell
 const workCellsAnimationTopicMapPath = path.join(rootDir, 'data-private', 'cells-at-work', 'animation', 'animation-topic-map.json');
 const workCellsTerminologyPath = path.join(rootDir, 'docs', 'work-cells-terminology-review.md');
 const workCellsImportReportPath = path.join(rootDir, 'docs', 'work-cells-import-report.md');
+const workCellsV2ContentStandardPath = path.join(rootDir, 'docs', 'work-cells-v2-content-standard.md');
+const workCellsV2ImageWorkflowPath = path.join(rootDir, 'docs', 'work-cells-v2-image-workflow.md');
 const requiredTitles = [
   '我想去看海',
   '我想有颗星星',
@@ -569,19 +571,62 @@ test('Work Cells parent guidance remains limited to selected topics', () => {
   }
 });
 
-test('Work Cells front end renders formal body science and parent guidance modules', () => {
+test('Work Cells front end renders only V2 formal body science and parent guidance modules', () => {
   const appJs = readFileSync(path.join(rootDir, 'assets', 'app.js'), 'utf8');
   const stationBody = appJs.match(/function scienceStationSection\(topic\) \{[\s\S]*?\n\}\n\nfunction scienceParentQuestionsSection/)?.[0] ?? '';
   const questionBody = appJs.match(/function scienceParentQuestionsSection\(topic\) \{[\s\S]*?\n\}\n\nfunction overviewSection/)?.[0] ?? '';
   const topicPageBody = appJs.match(/function scienceTopicPage\(scienceSeries, topic\) \{[\s\S]*?function errorPage/)?.[0] ?? '';
 
+  assert.match(appJs, /function isWorkCellsV2Topic/, 'front end should define a V2 content gate');
+  assert.match(appJs, /contentVersion === 'work-cells-v2'/, 'front end should gate formal modules by V2 contentVersion');
+  assert.match(appJs, /V2 内容制作中/, 'front end should show an in-progress state for non-V2 topics');
   assert.match(stationBody, /topic\.bodyScienceStations/, 'science station should prefer formal bodyScienceStations data');
+  assert.match(stationBody, /!isWorkCellsV2Topic\(topic\)/, 'science station should not render legacy or V1 station cards as formal V2 content');
   assert.match(appJs, /imageAsset/, 'science station should render generated image assets when present');
   assert.match(appJs, /解释图占位区/, 'science station should keep a placeholder for missing images');
   assert.match(questionBody, /topic\.parentQuestionCards/, 'parent questions should prefer refined parentQuestionCards data');
+  assert.match(questionBody, /!isWorkCellsV2Topic\(topic\)/, 'parent questions should not render legacy question cards as formal V2 content');
   assert.match(appJs, /家长共读提示/, 'topic detail page should include gentle parent guidance copy');
   assert.match(appJs, /scienceParentGuidanceSection\(topic\)/, 'topic detail page should render parent guidance without a separate route');
   assert.equal(topicPageBody.includes('/science-parent-guidance'), false, 'parent guidance should not add a separate route');
+});
+
+test('Work Cells V2 standard and image workflow are frozen in docs', () => {
+  const contentStandard = readFileSync(workCellsV2ContentStandardPath, 'utf8');
+  const imageWorkflow = readFileSync(workCellsV2ImageWorkflowPath, 'utf8');
+
+  for (const required of [
+    'topicOverview',
+    'bodyScienceStations',
+    'parentQuestionCards',
+    'parentReadingNote',
+    'sourceNotes',
+    'relatedComicPages',
+    'relatedAnimationScenes',
+    'contentStatus',
+    'qualityFlags',
+    '27 个主题',
+    '不展示漫画全文',
+    '不展示动画全文',
+    '完整 OCR',
+  ]) {
+    assert.match(contentStandard, new RegExp(required), `content standard should mention ${required}`);
+  }
+
+  for (const required of [
+    'Codex 不得自行生成身体科学小站配图',
+    'recommendedFileName',
+    'targetPath',
+    'mustShow',
+    'mustAvoid',
+    'acceptanceCriteria',
+    'png-originals',
+    'public/assets/cells-at-work/science-station/<topicId>/',
+    '只有 WebP',
+    '不得进入 dist',
+  ]) {
+    assert.match(imageWorkflow, new RegExp(required), `image workflow should mention ${required}`);
+  }
 });
 
 test('Work Cells merged topics keep confirmed boundaries', () => {

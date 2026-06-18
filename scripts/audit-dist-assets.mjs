@@ -17,6 +17,10 @@ const forbiddenReleasePatterns = [
   { pattern: /(^|\/)screenshot-candidates(\/|$)/i, message: 'Remove screenshot-candidates from dist; only selected published WebP stills may ship.' },
   { pattern: /(^|\/)review-contact-sheets(\/|$)/i, message: 'Remove review-contact-sheets from dist; contact sheets are review-only artifacts.' },
   { pattern: /(^|\/)scene-notes(\/|$)/i, message: 'Remove scene-notes from dist; publish only explicitly reduced JSON if needed.' },
+  { pattern: /(^|\/)pages-by-volume(\/|$)/i, message: 'Remove pages-by-volume from dist; publish page-thumbnails instead.' },
+  { pattern: /(^|\/)visual-annotation-bundles(\/|$)/i, message: 'Remove visual-annotation-bundles from dist; keep review bundles outside public publishing paths.' },
+  { pattern: /(^|\/)png-originals(\/|$)/i, message: 'Remove PNG originals from dist; source station PNG files must stay outside the release package.' },
+  { pattern: /science-station\/.+\.png$/i, message: 'Remove science-station PNG images from dist; only WebP station assets may ship.' },
 ];
 
 function formatSize(bytes) {
