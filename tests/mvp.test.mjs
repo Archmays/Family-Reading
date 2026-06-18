@@ -4,6 +4,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 import test from 'node:test';
 import './work-cells-epub-import.test.mjs';
+import './work-cells-visual-annotations.test.mjs';
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const seriesPath = path.join(rootDir, 'public', 'books', '不一样的卡梅拉', 'series.json');
@@ -144,12 +145,12 @@ const childAddressBlockedPhrases = [
 ];
 const requiredWorkCellsTopics = [
   ['肺炎链球菌', '第1卷 第1话'],
-  ['杉花粉过敏', '第1卷 第2话'],
-  ['流感', '第1卷 第3话'],
+  ['杉树花粉过敏', '第1卷 第2话'],
+  ['流行性感冒', '第1卷 第3话'],
   ['擦伤', '第1卷 第4话'],
   ['食物中毒', '第2卷 第5话'],
   ['中暑', '第2卷 第6话'],
-  ['红细胞母细胞与骨髓球', '第2卷 第7话'],
+  ['红血球母细胞与骨髓细胞', '第2卷 第7话'],
   ['癌细胞', '第2卷 第8-9话'],
   ['血液循环', '第3卷 第10话'],
   ['感冒综合征', '第3卷 第11话'],

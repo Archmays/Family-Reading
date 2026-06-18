@@ -577,6 +577,55 @@ summary:focus-visible {
   background: #f7fcfb;
 }
 
+.annotation-grid,
+.annotation-list {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.annotation-grid {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.compact-grid {
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+}
+
+.annotation-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fffdf8;
+  padding: 14px;
+}
+
+.annotation-card h3 {
+  color: var(--teal);
+}
+
+.annotation-detail summary {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  cursor: pointer;
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.annotation-detail small,
+.annotation-note {
+  color: var(--muted);
+}
+
+.annotation-thumb {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.annotation-thumb .page-thumbnail {
+  grid-template-rows: 150px auto;
+}
+
 .image-lightbox[hidden] {
   display: none;
 }

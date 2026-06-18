@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-18T00:44:47.625Z",
+  "sourceFiles": [
+    "data/cells-at-work/page-map.json",
+    "data/cells-at-work/manual-topic-ranges.json",
+    "public/books/工作细胞/draft-manifest.json"
+  ],
+  "outputDirectory": "reports/cells-at-work/visual-annotation-bundles",
+  "zipCount": 11,
+  "topicCount": 27,
+  "totalImagePages": 991,
+  "pageMapTotalImagePages": 991,
+  "coversAll27Topics": true,
+  "containsFullEpub": false,
+  "containsOcrFullText": false,
+  "containsOcrReorderedText": false,
+  "batchRule": {
+    "targetMinimumPages": 80,
+    "maximumPages": 120,
+    "note": "Topics are never split; exact 80-120 page coverage is not possible with the current topic counts."
+  },
+  "zipFiles": [
+    {
+      "batchNumber": 1,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-01.zip",
+      "sizeBytes": 58355643,
+      "pageCount": 96,
+      "topics": [
+        {
+          "topicId": "pneumococcus",
+          "imageCount": 56
+        },
+        {
+          "topicId": "cedar-pollen-allergy",
+          "imageCount": 40
+        }
+      ]
+    },
+    {
+      "batchNumber": 2,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-02.zip",
+      "sizeBytes": 40701401,
+      "pageCount": 68,
+      "topics": [
+        {
+          "topicId": "influenza",
+          "imageCount": 32
+        },
+        {
+          "topicId": "abrasion",
+          "imageCount": 36
+        }
+      ]
+    },
+    {
+      "batchNumber": 3,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-03.zip",
+      "sizeBytes": 52670185,
+      "pageCount": 88,
+      "topics": [
+        {
+          "topicId": "food-poisoning",
+          "imageCount": 28
+        },
+        {
+          "topicId": "heatstroke",
+          "imageCount": 30
+        },
+        {
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "imageCount": 30
+        }
+      ]
+    },
+    {
+      "batchNumber": 4,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-04.zip",
+      "sizeBytes": 56315296,
+      "pageCount": 93,
+      "topics": [
+        {
+          "topicId": "cancer-cell",
+          "imageCount": 68
+        },
+        {
+          "topicId": "blood-circulation",
+          "imageCount": 25
+        }
+      ]
+    },
+    {
+      "batchNumber": 5,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-05.zip",
+      "sizeBytes": 55063557,
+      "pageCount": 94,
+      "topics": [
+        {
+          "topicId": "common-cold-syndrome",
+          "imageCount": 28
+        },
+        {
+          "topicId": "thymocyte",
+          "imageCount": 36
+        },
+        {
+          "topicId": "acquired-immunity",
+          "imageCount": 30
+        }
+      ]
+    },
+    {
+      "batchNumber": 6,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-06.zip",
+      "sizeBytes": 56218706,
+      "pageCount": 89,
+      "topics": [
+        {
+          "topicId": "acne",
+          "imageCount": 30
+        },
+        {
+          "topicId": "staphylococcus-aureus",
+          "imageCount": 29
+        },
+        {
+          "topicId": "dengue-fever",
+          "imageCount": 30
+        }
+      ]
+    },
+    {
+      "batchNumber": 7,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-07.zip",
+      "sizeBytes": 62117891,
+      "pageCount": 101,
+      "topics": [
+        {
+          "topicId": "hemorrhagic-shock",
+          "imageCount": 70
+        },
+        {
+          "topicId": "peyers-patches",
+          "imageCount": 31
+        }
+      ]
+    },
+    {
+      "batchNumber": 8,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-08.zip",
+      "sizeBytes": 53793416,
+      "pageCount": 98,
+      "topics": [
+        {
+          "topicId": "helicobacter-pylori",
+          "imageCount": 40
+        },
+        {
+          "topicId": "antigenic-variation",
+          "imageCount": 28
+        },
+        {
+          "topicId": "cytokines",
+          "imageCount": 30
+        }
+      ]
+    },
+    {
+      "batchNumber": 9,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-09.zip",
+      "sizeBytes": 66563169,
+      "pageCount": 108,
+      "topics": [
+        {
+          "topicId": "gut-microbiota",
+          "imageCount": 32
+        },
+        {
+          "topicId": "cancer-cell-ii",
+          "imageCount": 76
+        }
+      ]
+    },
+    {
+      "batchNumber": 10,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-10.zip",
+      "sizeBytes": 49551465,
+      "pageCount": 102,
+      "topics": [
+        {
+          "topicId": "bump-on-head",
+          "imageCount": 34
+        },
+        {
+          "topicId": "left-shift",
+          "imageCount": 17
+        },
+        {
+          "topicId": "ips-cells",
+          "imageCount": 51
+        }
+      ]
+    },
+    {
+      "batchNumber": 11,
+      "zipPath": "reports/cells-at-work/visual-annotation-bundles/work-cells-visual-annotation-batch-11.zip",
+      "sizeBytes": 24890582,
+      "pageCount": 54,
+      "topics": [
+        {
+          "topicId": "psoriasis",
+          "imageCount": 16
+        },
+        {
+          "topicId": "covid-19",
+          "imageCount": 38
+        }
+      ]
+    }
+  ]
+}

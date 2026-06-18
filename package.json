@@ -4,6 +4,7 @@
     "test": "node --test tests/mvp.test.mjs",
     "build": "node scripts/build.mjs",
     "import:work-cells-epub": "node scripts/work-cells-epub-import.mjs",
+    "import:work-cells-annotations": "node scripts/import-work-cells-visual-annotations.mjs",
     "extract:work-cells-pages": "python scripts/extract_work_cells_pages.py"
   }
 }
