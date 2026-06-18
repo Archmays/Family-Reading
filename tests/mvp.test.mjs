@@ -12,6 +12,8 @@ const bookIndexPath = path.join(rootDir, 'public', 'books', 'index.json');
 const contentTypesPath = path.join(rootDir, 'public', 'books', 'content-types.json');
 const workCellsDraftPath = path.join(rootDir, 'public', 'books', '工作细胞', 'draft-manifest.json');
 const workCellsPageMapPath = path.join(rootDir, 'data', 'cells-at-work', 'page-map.json');
+const workCellsAnimationInventoryPath = path.join(rootDir, 'data-private', 'cells-at-work', 'animation', 'animation-resource-inventory.json');
+const workCellsAnimationTopicMapPath = path.join(rootDir, 'data-private', 'cells-at-work', 'animation', 'animation-topic-map.json');
 const workCellsTerminologyPath = path.join(rootDir, 'docs', 'work-cells-terminology-review.md');
 const workCellsImportReportPath = path.join(rootDir, 'docs', 'work-cells-import-report.md');
 const requiredTitles = [
@@ -827,4 +829,64 @@ test('dist asset audit script is available', () => {
   assert.match(auditScript, /warningLimitBytes/);
   assert.match(auditScript, /largest directories/i);
   assert.match(auditScript, /largest files/i);
+});
+
+test('Work Cells animation inventory records private source resources only', () => {
+  const inventory = readJson(workCellsAnimationInventoryPath);
+
+  assert.equal(inventory.schemaVersion, 1);
+  assert.equal(inventory.sourceDirectory, 'source/工作细胞');
+  assert.equal(inventory.summary.mp4Count, 22);
+  assert.equal(inventory.summary.srtCount, 14);
+  assert.equal(inventory.summary.matchedPairCount, 14);
+  assert.equal(inventory.summary.mp4MissingSrtCount, 8);
+  assert.equal(inventory.summary.orphanSrtCount, 0);
+  assert.equal(inventory.resources.length, 22);
+  assert.equal(inventory.orphanSrtFiles.length, 0);
+
+  for (const item of inventory.resources) {
+    assert.match(item.videoPath, /^source\/工作细胞\/.+\.mp4$/);
+    assert.equal(item.videoPath.includes('/dist/'), false);
+    assert.equal(item.videoPath.includes('/public/'), false);
+    if (item.hasSrt) {
+      assert.match(item.srtPath, /^source\/工作细胞\/.+_English\.srt$/);
+    } else {
+      assert.equal(item.srtFileName, null);
+      assert.equal(item.srtPath, null);
+    }
+  }
+});
+
+test('Work Cells animation topic map keeps summaries and mappings non-publishable', () => {
+  const topicMap = readJson(workCellsAnimationTopicMapPath);
+
+  assert.equal(topicMap.schemaVersion, 1);
+  assert.equal(topicMap.topicMappings.length, 27);
+  assert.equal(topicMap.contentPolicy.doNotQuoteDialogue, true);
+  assert.equal(topicMap.contentPolicy.noFullSubtitleRelease, true);
+  assert.equal(topicMap.contentPolicy.noAnimationPlayer, true);
+
+  const byId = new Map(topicMap.topicMappings.map((item) => [item.topicId, item]));
+  assert.equal(byId.get('cancer-cell').matchConfidence, 'high');
+  assert.equal(byId.get('cancer-cell-ii').matchConfidence, 'high');
+  assert.notDeepEqual(byId.get('cancer-cell').matchedAnimationFiles, byId.get('cancer-cell-ii').matchedAnimationFiles);
+  assert.equal(byId.get('hemorrhagic-shock').matchedAnimationFiles.length, 2);
+  assert.equal(byId.get('covid-19').matchConfidence, 'none');
+  assert.deepEqual(byId.get('covid-19').matchedAnimationFiles, []);
+});
+
+test('build and dist audit block animation source and private review assets', () => {
+  const buildScript = readFileSync(path.join(rootDir, 'scripts', 'build.mjs'), 'utf8');
+  const auditScript = readFileSync(path.join(rootDir, 'scripts', 'audit-dist-assets.mjs'), 'utf8');
+
+  for (const extension of ['.mp4', '.srt', '.vtt', '.ass', '.ssa', '.mov', '.m4v', '.webm']) {
+    assert.match(buildScript, new RegExp(`['"]\\${extension}['"]`), `build should exclude ${extension}`);
+    assert.match(auditScript, new RegExp(extension.replace('.', '\\.')), `audit should detect ${extension}`);
+  }
+
+  for (const privateFolder of ['screenshot-candidates', 'review-contact-sheets', 'scene-notes']) {
+    assert.match(auditScript, new RegExp(privateFolder), `audit should reject ${privateFolder}`);
+  }
+
+  assert.match(auditScript, /process\.exitCode\s*=\s*1/);
 });

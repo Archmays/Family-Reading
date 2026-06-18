@@ -2,7 +2,15 @@ dist/
 source/
 source-private/
 private/
-data-private/
+data-private/*
+!data-private/cells-at-work/
+data-private/cells-at-work/*
+!data-private/cells-at-work/animation/
+data-private/cells-at-work/animation/*
+!data-private/cells-at-work/animation/*.json
+!data-private/cells-at-work/animation/scene-notes/
+data-private/cells-at-work/animation/scene-notes/*
+!data-private/cells-at-work/animation/scene-notes/*.json
 local-epubs/
 *.epub
 *.zip

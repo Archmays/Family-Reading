@@ -13,7 +13,24 @@ const excludedRelativeDirectories = new Set([
   'public/assets/cells-at-work/pages-by-volume',
   'public/assets/cells-at-work/pages-by-topic',
 ]);
-const excludedExtensions = new Set(['.pdf', '.epub', '.zip', '.7z', '.tar', '.gz', '.log', '.tmp']);
+const excludedExtensions = new Set([
+  '.pdf',
+  '.epub',
+  '.zip',
+  '.7z',
+  '.tar',
+  '.gz',
+  '.log',
+  '.tmp',
+  '.mp4',
+  '.mov',
+  '.m4v',
+  '.webm',
+  '.srt',
+  '.vtt',
+  '.ass',
+  '.ssa',
+]);
 const excludedFileNames = new Set(['volume-page-index.json', 'review-index.md', 'review-topics.json']);
 const seriesIndexPath = path.join(rootDir, 'public', 'books', '不一样的卡梅拉', 'series.json');
 const publicBooksIndexPath = path.join(rootDir, 'public', 'books', 'index.json');

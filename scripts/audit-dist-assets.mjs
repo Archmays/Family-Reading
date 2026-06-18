@@ -7,6 +7,17 @@ const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const distDir = path.join(rootDir, 'dist');
 const warningLimitBytes = Number(process.env.BUILD_SIZE_WARNING_MB ?? 900) * 1024 * 1024;
 const topLimit = Number(process.env.BUILD_SIZE_TOP_N ?? 30);
+const forbiddenVideoExtensions = ['.mp4', '.mov', '.m4v', '.webm'];
+const forbiddenSubtitleExtensions = ['.srt', '.vtt', '.ass', '.ssa'];
+const forbiddenVideoPattern = new RegExp(`(${forbiddenVideoExtensions.map((extension) => extension.replace('.', '\\.')).join('|')})$`, 'i');
+const forbiddenSubtitlePattern = new RegExp(`(${forbiddenSubtitleExtensions.map((extension) => extension.replace('.', '\\.')).join('|')})$`, 'i');
+const forbiddenReleasePatterns = [
+  { pattern: forbiddenVideoPattern, message: 'Remove video files from dist; animation MP4 assets must stay outside the GitHub Pages package.' },
+  { pattern: forbiddenSubtitlePattern, message: 'Remove subtitle files from dist; full subtitle files must stay private.' },
+  { pattern: /(^|\/)screenshot-candidates(\/|$)/i, message: 'Remove screenshot-candidates from dist; only selected published WebP stills may ship.' },
+  { pattern: /(^|\/)review-contact-sheets(\/|$)/i, message: 'Remove review-contact-sheets from dist; contact sheets are review-only artifacts.' },
+  { pattern: /(^|\/)scene-notes(\/|$)/i, message: 'Remove scene-notes from dist; publish only explicitly reduced JSON if needed.' },
+];
 
 function formatSize(bytes) {
   if (bytes >= 1024 ** 3) return `${(bytes / 1024 ** 3).toFixed(2)} GB`;
@@ -77,6 +88,20 @@ function cleanupSuggestions(files) {
     : ['No obvious Work Cells cleanup item detected in dist.'];
 }
 
+function forbiddenReleaseItems(files) {
+  const allPaths = files.map((file) => relativePath(file.path));
+  const items = [];
+
+  for (const { pattern, message } of forbiddenReleasePatterns) {
+    const matches = allPaths.filter((filePath) => pattern.test(filePath));
+    if (matches.length > 0) {
+      items.push({ message, matches });
+    }
+  }
+
+  return items;
+}
+
 if (!existsSync(distDir)) {
   console.error('dist does not exist. Run node scripts/build.mjs first.');
   process.exit(1);
@@ -88,6 +113,7 @@ const largestFiles = [...files]
   .sort((a, b) => b.size - a.size)
   .slice(0, topLimit)
   .map((file) => ({ path: relativePath(file.path), size: file.size }));
+const forbiddenItems = forbiddenReleaseItems(files);
 
 console.log(`dist total size: ${formatSize(totalBytes)} (${totalBytes} bytes)`);
 console.log(`warning limit: ${formatSize(warningLimitBytes)} (${warningLimitBytes} bytes)`);
@@ -108,6 +134,19 @@ for (const suggestion of cleanupSuggestions(files)) {
   console.log(`- ${suggestion}`);
 }
 
-if (totalBytes > warningLimitBytes) {
+if (forbiddenItems.length > 0) {
+  console.log('\nforbidden release items:');
+  for (const item of forbiddenItems) {
+    console.log(`- ${item.message}`);
+    for (const match of item.matches.slice(0, topLimit)) {
+      console.log(`  - ${match}`);
+    }
+    if (item.matches.length > topLimit) {
+      console.log(`  - ...and ${item.matches.length - topLimit} more`);
+    }
+  }
+}
+
+if (totalBytes > warningLimitBytes || forbiddenItems.length > 0) {
   process.exitCode = 1;
 }
