@@ -2,51 +2,63 @@
 
 ## 本次处理主题
 
-本次为 4 个已完成 V2 主题补齐 summary-only、timecoded scene notes。所有输出均为内部分析数据，未接入前端，未截图，未抽取音频。
+本次为《工作细胞》V2 第二批 5 个候选主题生成 summary-only、timecoded animation scene notes。所有输出均为内部分析数据；未接入前端，未修改 V2 manifest，未截图，未生成图片，未输出完整转写、完整对白、完整字幕、逐句翻译或可替代观看动画的完整剧情文本。
 
-| topicId | topicName | MP4 | SRT | sourceMode | scene notes |
-| --- | --- | --- | --- | --- | ---: |
-| `abrasion` | 擦伤 | `S1-第2话 擦伤-1080P 高清-AVC.mp4` | `S1-第2话 擦伤-1080P 高清-AVC_English.srt` | `srt` | 8 |
-| `heatstroke` | 中暑 | `S1-第11话 中暑-1080P 高清-AVC.mp4` | `S1-第11话 中暑-1080P 高清-AVC_English.srt` | `srt` | 8 |
-| `blood-circulation` | 血液循环 | `S1-第8话 血液循环-1080P 高清-AVC.mp4` | `S1-第8话 血液循环-1080P 高清-AVC_English.srt` | `srt` | 8 |
-| `hemorrhagic-shock` | 出血性休克 | `S1-第12话 失血性休克 前篇-1080P 高清-AVC.mp4`; `S1-第13话 失血性休克 后篇-1080P 高清-AVC.mp4` | `S1-第12话 失血性休克 前篇-1080P 高清-AVC_English.srt`; `S1-第13话 失血性休克 后篇-1080P 高清-AVC_English.srt` | `srt` | 12 |
+| topicId | topicName | matchConfidence | MP4 | SRT | sourceMode | scene notes |
+| --- | --- | --- | --- | --- | --- | ---: |
+| `food-poisoning` | 食物中毒 | `high` | `S1-第4话 食物中毒-1080P 高清-AVC.mp4` | `S1-第4话 食物中毒-1080P 高清-AVC_English.srt` | `srt` | 8 |
+| `common-cold-syndrome` | 感冒症候群 | `high` | `S1-OAD 感冒综合征-1080P 高清-AVC.mp4` | `S1-OAD 感冒综合征-1080P 高清-AVC_English.srt` | `srt` | 8 |
+| `staphylococcus-aureus` | 金黄色葡萄球菌 | `high` | `S1-第10话 金黄色葡萄球菌-1080P 高清-AVC.mp4` | `S1-第10话 金黄色葡萄球菌-1080P 高清-AVC_English.srt` | `srt` | 8 |
+| `gut-microbiota` | 肠道菌群 | `medium` | `S2-第6话 有害菌-1080P 高清-AVC.mp4` | none | `audio-fallback` | 8 |
+| `bump-on-head` | 撞出肿包 | `high` | `S2-第1话 肿包-1080P 高清-AVC.mp4` | none | `audio-fallback` | 8 |
 
 ## Audio Fallback
 
-本次 4 个主题均匹配到同名 SRT，因此没有使用 `audio-fallback`，没有从 MP4 抽取音频，也没有生成 transcript。`hemorrhagic-shock` 保留前篇和后篇两个 episode 来源，但仍只生成一个主题文件：`data-private/cells-at-work/animation/scene-notes/hemorrhagic-shock.v2.json`。
+`gut-microbiota` 和 `bump-on-head` 没有同名 SRT，因此本次使用 audio-fallback。安装并使用了用户缓存目录中的便携版 `ffmpeg 8.1.1-essentials_build`，只从对应 MP4 临时抽取单声道 16 kHz WAV 供 `faster-whisper-tiny` 做时间窗级分析。临时音频已删除，未保存 transcript，未把音频或转写写入项目文件。
+
+`gut-microbiota` 的匹配置信度为 `medium`，原因是动画标题为“有害菌”，属于肠道菌群相关内容，但标题不等同于“肠道菌群”。本主题 scene notes 保守聚焦肠道生态、有益菌/有害菌平衡、黏膜屏障和免疫协作；后续若要选截图或进入前端，需人工复核候选时间点。
 
 ## 输出文件
 
-- `data-private/cells-at-work/animation/scene-notes/abrasion.v2.json`
-- `data-private/cells-at-work/animation/scene-notes/heatstroke.v2.json`
-- `data-private/cells-at-work/animation/scene-notes/blood-circulation.v2.json`
-- `data-private/cells-at-work/animation/scene-notes/hemorrhagic-shock.v2.json`
+- `data-private/cells-at-work/animation/scene-notes/food-poisoning.v2.json`
+- `data-private/cells-at-work/animation/scene-notes/common-cold-syndrome.v2.json`
+- `data-private/cells-at-work/animation/scene-notes/staphylococcus-aureus.v2.json`
+- `data-private/cells-at-work/animation/scene-notes/gut-microbiota.v2.json`
+- `data-private/cells-at-work/animation/scene-notes/bump-on-head.v2.json`
 
-## 可帮助优化的内容
+## 可帮助后续内容优化的 scene notes
 
 `topicOverview`:
-- `abrasion` 可补强“皮肤/血管屏障破损、细菌入侵、血小板止血、纤维蛋白加固”的顺序。
-- `heatstroke` 可补强“高温、出汗散热失败、脱水、降温补水、恢复”的因果链。
-- `blood-circulation` 可补强“心脏泵血、肺循环、体循环、毛细血管交换”的闭环。
-- `hemorrhagic-shock` 可补强“血容量下降、血压下降、供氧不足、外部急救支持”的系统性说明。
+
+- `food-poisoning` 的 `food-poisoning-s1e04-v2-002`、`v2-004`、`v2-007` 可帮助梳理有害细菌或毒素、排出反应、恢复稳态的因果链。
+- `common-cold-syndrome` 的 `common-cold-syndrome-s1oad-v2-001`、`v2-003`、`v2-005` 可帮助把感冒症候群拆成上呼吸道入口、喷嚏鼻涕咳嗽、防御症状组合。
+- `staphylococcus-aureus` 的 `staphylococcus-aureus-s1e10-v2-001`、`v2-002`、`v2-007` 可帮助说明皮肤屏障、金黄色葡萄球菌和局部感染因果链。
+- `gut-microbiota` 的 `gut-microbiota-s2e06-v2-001`、`v2-004`、`v2-008` 可帮助建立肠道菌群是生态系统，而非单一细菌角色。
+- `bump-on-head` 的 `bump-on-head-s2e01-v2-002`、`v2-004`、`v2-007` 可帮助解释撞击、小血管受损、肿胀和恢复阶段。
 
 `bodyScienceStations`:
-- `abrasion` 的 `abrasion-s1e02-v2-002`、`006`、`008` 适合转化为止血流程、血小板聚集、纤维蛋白加固小站。
-- `heatstroke` 的 `heatstroke-s1e11-v2-003`、`005`、`006` 适合转化为出汗散热、脱水、降温补水小站。
-- `blood-circulation` 的 `blood-circulation-s1e08-v2-003`、`005`、`007`、`008` 适合转化为心脏泵血、毛细血管交换、肺泡取氧和循环闭环小站。
-- `hemorrhagic-shock` 的 `hemorrhagic-shock-s1e12-v2-004`、`005`、`hemorrhagic-shock-s1e13-v2-003`、`006` 适合转化为出血性休克因果链和恢复机制小站。
+
+- `food-poisoning-s1e04-v2-004`、`v2-005`、`v2-007` 适合转化为食物中毒排出机制、免疫清理和脱水风险小站。
+- `common-cold-syndrome-s1oad-v2-003`、`v2-004`、`v2-006` 适合转化为鼻涕喷嚏咳嗽、免疫工作量和四步感染反应小站。
+- `staphylococcus-aureus-s1e10-v2-003`、`v2-005`、`v2-006` 适合转化为趋化、吞噬、炎症和免疫细胞分工小站。
+- `gut-microbiota-s2e06-v2-003`、`v2-004`、`v2-006` 适合转化为黏膜屏障、有益菌竞争占位和营养影响菌群的小站。
+- `bump-on-head-s2e01-v2-003`、`v2-005`、`v2-006` 适合转化为血小板止血、纤维蛋白加固和肿胀吸收恢复小站。
 
 `parentQuestionCards`:
-- `abrasion` 可增加“擦伤为什么要清洁”“血小板和白细胞分工不同吗”。
-- `heatstroke` 可增加“为什么出汗不一定降温”“为什么中暑风险出现时要离开热环境”。
-- `blood-circulation` 可增加“红细胞的旅行为什么叫循环”“毛细血管为什么要很细”。
-- `hemorrhagic-shock` 可增加“严重出血为什么要马上找成人和专业帮助”“医学上的休克和害怕有什么不同”。
+
+- `food-poisoning` 可增加“身体为什么会想把有害物排出去”“食物中毒和细菌/毒素有什么关系”。
+- `common-cold-syndrome` 可增加“喷嚏鼻涕咳嗽是在做什么”“为什么感冒时需要休息”。
+- `staphylococcus-aureus` 可增加“皮肤屏障为什么重要”“红肿热痛和免疫反应有什么关系”。
+- `gut-microbiota` 可增加“肠道里为什么不该把所有细菌都当坏人”“菌群平衡是什么意思”。
+- `bump-on-head` 可增加“撞到头为什么会鼓起来”“血小板止血和肿包消退是不是一回事”。
 
 `imagePromptDocs`:
-- `abrasion` 可用原创剖面图表达小破口、血小板聚集、纤维蛋白网加固。
-- `heatstroke` 可用原创因果链表达高温、汗液蒸发、脱水、降温补水。
-- `blood-circulation` 可用原创路线图表达心脏、肺、全身组织和毛细血管交换。
-- `hemorrhagic-shock` 可用严肃但不恐怖的信息图表达失血、血容量下降、血压下降、供氧不足和急救支持。
+
+- `food-poisoning` 可用原创肠道剖面、细菌/毒素图标、排出反应和恢复流程图，让后续配图更直观。
+- `common-cold-syndrome` 可用原创上呼吸道黏膜、黏液纤毛清理、症状地图和恢复支持图。
+- `staphylococcus-aureus` 可用原创皮肤屏障、成簇小球状细菌、白细胞趋化和炎症剖面图。
+- `gut-microbiota` 可用原创肠道生态图、菌群天平、有益菌占位和黏膜免疫三层关系图。
+- `bump-on-head` 可用原创皮下肿胀剖面、小血管渗出、血小板封堵和吸收恢复流程图。
 
 ## 仍不进入前端的内容
 
@@ -54,18 +66,23 @@
 - `data-private/cells-at-work/animation/scene-notes/` 下的完整 scene notes。
 - screenshot-candidates、review-contact-sheets、未筛选动画截图。
 - 可替代观看动画的完整剧情文本。
-- 医疗诊断、用药指导或让孩子自行判断病情的内容。
+- 医疗诊断、用药指导、头部外伤自行判断流程或让孩子自行判断病情的内容。
 
 ## 当前累计有 scene notes 的主题
 
-当前有 V2 scene notes 的主题：
+当前已有 V2 scene notes 的主题：
 
 - `pneumococcus`
 - `cedar-pollen-allergy`
 - `influenza`
 - `abrasion`
+- `food-poisoning`
 - `heatstroke`
 - `blood-circulation`
+- `common-cold-syndrome`
+- `staphylococcus-aureus`
 - `hemorrhagic-shock`
+- `gut-microbiota`
+- `bump-on-head`
 
 另有旧试点样例文件仍保留在 private 路径中：`pneumococcus.sample.json`、`hemorrhagic-shock.sample.json`。
