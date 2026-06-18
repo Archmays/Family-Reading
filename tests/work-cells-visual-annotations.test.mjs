@@ -184,11 +184,22 @@ test('Work Cells topic page surfaces imported companion annotation sections', ()
     '亲子问题卡',
     '百科关联',
     '家长提醒',
-    '页面标注',
     'science-encyclopedia',
+    'groupSciencePagesByRole',
+    'ScienceAnnotationThumbnails',
+    'annotation-thumb-list',
     'pageAnnotations',
     'sensitiveContentGuidance',
   ]) {
     assert.match(appText, new RegExp(phrase), `app should include ${phrase}`);
+  }
+
+  for (const blockedPhrase of [
+    'science-annotations',
+    '/pages">漫画页图片',
+    'function sciencePageAnnotationsSection',
+    'function SciencePageThumbnails',
+  ]) {
+    assert.equal(appText.includes(blockedPhrase), false, `app should not expose ${blockedPhrase}`);
   }
 });

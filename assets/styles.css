@@ -586,6 +586,7 @@ summary:focus-visible {
 
 .annotation-grid {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  align-items: start;
 }
 
 .compact-grid {
@@ -624,6 +625,16 @@ summary:focus-visible {
 
 .annotation-thumb .page-thumbnail {
   grid-template-rows: 150px auto;
+}
+
+.annotation-thumb-list {
+  grid-template-columns: repeat(auto-fill, minmax(76px, 96px));
+  align-items: start;
+  margin: 0 0 12px;
+}
+
+.annotation-thumb-list .page-thumbnail {
+  grid-template-rows: 112px auto;
 }
 
 .image-lightbox[hidden] {
