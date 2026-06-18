@@ -219,6 +219,8 @@ test('Work Cells science station image prompts are documented for generation', (
     'prompt-id: work-cells-cedar-pollen-allergy-cedar-pollen-allergy__v01_page-065',
     'prompt-id: work-cells-cedar-pollen-allergy-cedar-pollen-allergy__v01_page-071',
     'prompt-id: work-cells-cedar-pollen-allergy-cedar-pollen-allergy__v01_page-078',
+    '目标保存路径：`public/assets/cells-at-work/science-station/cedar-pollen-allergy/cedar-pollen-allergy-pollen-recognition.png`',
+    '至少 1600 x 1200 px',
     '【ChatGPT image】',
     '不要模仿《工作细胞》',
   ]) {
