@@ -65,25 +65,35 @@ No current animation match:
 
 ## Processing Rules
 
-Use existing SRT files first. Do not extract audio unless an SRT is missing or unusable and a later task explicitly approves fallback transcription.
+Use same-base SRT files first. If no same-base SRT exists for the MP4, audio extraction is allowed only as a fallback analysis step for creating summary-only, timecoded scene notes.
+
+Audio fallback rules:
+
+1. Prefer the same-base SRT when it exists.
+2. If no same-base SRT exists, extract audio from the corresponding MP4 only for supplemental analysis.
+3. Audio extraction may be used only to create summary-only, timecoded scene notes.
+4. Do not output a full audio transcript.
+5. Do not output full Chinese dialogue.
+6. Do not output full English subtitles.
+7. Do not translate sentence by sentence.
+8. Do not generate a complete plot text that could replace watching the animation.
+9. Keep extracted audio intermediates out of `public` and `dist`.
+10. If the environment lacks usable local audio or transcription tools, stop and report the blocker. Do not install heavy dependencies or upload source material to external services.
 
 Scene notes should be summary-only and timecoded. A valid scene note includes:
 
 - `sceneId`
 - `topicId`
-- `topicName`
-- `animationFile`
-- `srtFile`
 - `startTime`
 - `endTime`
 - `shortSummaryZh`
 - `scienceFocus`
-- `candidateScreenshotTimes`
-- `candidateScreenshotPurpose`
 - `parentQuestionIdeas`
 - `bodyScienceStationIdeas`
-- `sensitiveContentNote`
+- `imagePromptImprovementIdeas`
+- `candidateScreenshotTimes`
 - `doNotQuoteDialogue: true`
+- `sourceMode: srt` or `sourceMode: audio-fallback`
 
 Do not output full Chinese dialogue, full English subtitles, sentence-by-sentence subtitle translation, or a complete plot retelling. The animation is support material for topic understanding, screenshot location, content refinement, and original explanation-image prompt design.
 
@@ -113,7 +123,7 @@ The build script excludes video and subtitle extensions:
 - `.ass`
 - `.ssa`
 
-The dist audit fails if it finds video files, subtitle files, `screenshot-candidates`, `review-contact-sheets`, or `scene-notes` inside `dist`.
+The dist audit fails if it finds MP4/video files, SRT/subtitle files, Work Cells extracted audio files, transcript temporary files, `screenshot-candidates`, `review-contact-sheets`, or `scene-notes` inside `dist`.
 
 Allowed release material remains limited to app code, selected lightweight public assets, page thumbnails, approved original explanation images, selected WebP animation stills, and explicitly reduced JSON data.
 

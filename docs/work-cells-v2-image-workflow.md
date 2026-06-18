@@ -36,6 +36,8 @@ Codex 在用户确认后只做格式转换与接入，将 PNG 转为 WebP。
 - PNG 原图
 - MP4
 - SRT
+- 音频抽取文件
+- transcript 临时文件
 - 完整字幕
 - 完整对白
 - 完整 OCR

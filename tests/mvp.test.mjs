@@ -18,6 +18,8 @@ const workCellsTerminologyPath = path.join(rootDir, 'docs', 'work-cells-terminol
 const workCellsImportReportPath = path.join(rootDir, 'docs', 'work-cells-import-report.md');
 const workCellsV2ContentStandardPath = path.join(rootDir, 'docs', 'work-cells-v2-content-standard.md');
 const workCellsV2ImageWorkflowPath = path.join(rootDir, 'docs', 'work-cells-v2-image-workflow.md');
+const workCellsAnimationProcessingPlanPath = path.join(rootDir, 'docs', 'work-cells-animation-processing-plan.md');
+const workCellsAnimationPilotReportPath = path.join(rootDir, 'docs', 'work-cells-animation-scene-notes-pilot-report.md');
 const requiredTitles = [
   '我想去看海',
   '我想有颗星星',
@@ -642,6 +644,40 @@ test('Work Cells V2 standard and image workflow are frozen in docs', () => {
   }
 });
 
+test('Work Cells animation rules use SRT first with audio fallback only for summary notes', () => {
+  const processingPlan = readFileSync(workCellsAnimationProcessingPlanPath, 'utf8');
+  const pilotReport = readFileSync(workCellsAnimationPilotReportPath, 'utf8');
+  const contentStandard = readFileSync(workCellsV2ContentStandardPath, 'utf8');
+  const imageWorkflow = readFileSync(workCellsV2ImageWorkflowPath, 'utf8');
+  const combinedDocs = [processingPlan, pilotReport, contentStandard, imageWorkflow].join('\n');
+
+  for (const required of [
+    'Use same-base SRT files first',
+    'If no same-base SRT exists',
+    '优先使用同名 SRT',
+    '如果没有同名 SRT',
+    'summary-only',
+    'timecoded scene notes',
+    'sourceMode: srt',
+    'sourceMode: audio-fallback',
+    'doNotQuoteDialogue: true',
+    '不输出完整音频转写',
+    '不输出完整中文对白',
+    '不输出完整英文字幕',
+    '不做逐句翻译',
+    '不生成可替代观看动画的完整剧情文本',
+    '音频中间文件不得进入',
+    '`public`',
+    '`dist`',
+    '不要安装重依赖',
+    '不要上传到外部服务',
+    '音频抽取文件',
+    'transcript 临时文件',
+  ]) {
+    assert.match(combinedDocs, new RegExp(required.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `animation rules should mention ${required}`);
+  }
+});
+
 test('Work Cells merged topics keep confirmed boundaries', () => {
   const manifest = readJson(workCellsDraftPath);
   const byTitle = new Map(manifest.topics.map((topic) => [topic.title, topic]));
@@ -983,9 +1019,21 @@ test('build and dist audit block animation source and private review assets', ()
     assert.match(auditScript, new RegExp(extension.replace('.', '\\.')), `audit should detect ${extension}`);
   }
 
-  for (const privateFolder of ['screenshot-candidates', 'review-contact-sheets', 'scene-notes']) {
+  for (const privateFolder of [
+    'screenshot-candidates',
+    'review-contact-sheets',
+    'scene-notes',
+    'audio-extracts',
+    'extracted-audio',
+    'audio-fallback',
+    'transcript',
+    'transcripts',
+  ]) {
+    assert.match(buildScript, new RegExp(privateFolder), `build should exclude ${privateFolder}`);
     assert.match(auditScript, new RegExp(privateFolder), `audit should reject ${privateFolder}`);
   }
 
+  assert.match(auditScript, /forbiddenWorkCellsAudioPattern/, 'audit should detect Work Cells audio files without blocking all public audio');
+  assert.match(auditScript, /topic-readable-transcripts/, 'audit should reject transcript review artifacts');
   assert.match(auditScript, /process\.exitCode\s*=\s*1/);
 });

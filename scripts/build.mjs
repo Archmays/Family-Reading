@@ -8,7 +8,19 @@ const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const outputDir = path.join(rootDir, 'dist');
 const outputDirName = 'dist';
 const publishedBookCount = 12;
-const excludedDirectoryNames = new Set(['ocr', 'source', 'visual-annotation-bundles']);
+const excludedDirectoryNames = new Set([
+  'ocr',
+  'source',
+  'visual-annotation-bundles',
+  'screenshot-candidates',
+  'review-contact-sheets',
+  'scene-notes',
+  'audio-extracts',
+  'extracted-audio',
+  'audio-fallback',
+  'transcript',
+  'transcripts',
+]);
 const excludedRelativeDirectories = new Set([
   'public/assets/cells-at-work/pages-by-volume',
   'public/assets/cells-at-work/pages-by-topic',

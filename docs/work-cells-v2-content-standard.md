@@ -58,3 +58,10 @@
 - 不展示完整 OCR。
 - 不恢复漫画全文浏览、页面标注浏览、百科独立路由或动画播放器。
 - V2 内容是纸书伴读材料，不是电子书、字幕站、OCR 阅读器或动画播放器。
+
+## 动画 scene notes 边界
+
+- `relatedAnimationScenes` 只能引用 summary-only 的 timecoded scene notes，不得引用完整字幕、完整对白、完整音频转写或逐句翻译。
+- 动画资源处理优先使用同名 SRT；没有同名 SRT 时，才允许从对应 MP4 抽取音频做补充分析。
+- 音频 fallback 只用于生成摘要型 scene notes，不得生成可替代观看动画的完整剧情文本。
+- scene notes 必须包含 `sourceMode: srt` 或 `sourceMode: audio-fallback`，并保持 `doNotQuoteDialogue: true`。

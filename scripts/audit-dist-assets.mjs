@@ -11,9 +11,13 @@ const forbiddenVideoExtensions = ['.mp4', '.mov', '.m4v', '.webm'];
 const forbiddenSubtitleExtensions = ['.srt', '.vtt', '.ass', '.ssa'];
 const forbiddenVideoPattern = new RegExp(`(${forbiddenVideoExtensions.map((extension) => extension.replace('.', '\\.')).join('|')})$`, 'i');
 const forbiddenSubtitlePattern = new RegExp(`(${forbiddenSubtitleExtensions.map((extension) => extension.replace('.', '\\.')).join('|')})$`, 'i');
+const forbiddenWorkCellsAudioPattern = /(^|\/)(cells-at-work|work-cells|工作细胞)(\/.*)?\.(mp3|wav|m4a|aac|flac|ogg)$/i;
 const forbiddenReleasePatterns = [
   { pattern: forbiddenVideoPattern, message: 'Remove video files from dist; animation MP4 assets must stay outside the GitHub Pages package.' },
   { pattern: forbiddenSubtitlePattern, message: 'Remove subtitle files from dist; full subtitle files must stay private.' },
+  { pattern: forbiddenWorkCellsAudioPattern, message: 'Remove Work Cells audio files from dist; extracted animation audio is analysis-only.' },
+  { pattern: /(^|\/)(audio-extracts?|extracted-audio|audio-fallback)(\/|$)/i, message: 'Remove extracted audio intermediates from dist; audio fallback files must stay private.' },
+  { pattern: /(^|\/)(transcripts?|topic-readable-transcripts)(\/|\.|$)/i, message: 'Remove transcript temporary files from dist; publish only reduced companion data.' },
   { pattern: /(^|\/)screenshot-candidates(\/|$)/i, message: 'Remove screenshot-candidates from dist; only selected published WebP stills may ship.' },
   { pattern: /(^|\/)review-contact-sheets(\/|$)/i, message: 'Remove review-contact-sheets from dist; contact sheets are review-only artifacts.' },
   { pattern: /(^|\/)scene-notes(\/|$)/i, message: 'Remove scene-notes from dist; publish only explicitly reduced JSON if needed.' },
