@@ -220,6 +220,24 @@ const requiredParentQuestionFields = [
   'parentHint',
   'biologyConcepts',
 ];
+const workCellsV2TopicIds = [
+  'cedar-pollen-allergy',
+  'influenza',
+  'pneumococcus',
+  'abrasion',
+  'heatstroke',
+  'blood-circulation',
+  'hemorrhagic-shock',
+];
+const workCellsV2QuestionCounts = new Map([
+  ['cedar-pollen-allergy', 6],
+  ['influenza', 6],
+  ['pneumococcus', 6],
+  ['abrasion', 8],
+  ['heatstroke', 8],
+  ['blood-circulation', 6],
+  ['hemorrhagic-shock', 6],
+]);
 
 function readJson(filePath) {
   return JSON.parse(readFileSync(filePath, 'utf8'));
@@ -450,10 +468,10 @@ test('Work Cells Cedar pollen sample defines refined parent question cards', () 
   }
 });
 
-test('Work Cells V2 pilot topics use approved WebP assets and metadata', () => {
+test('Work Cells V2 topics use approved WebP assets and metadata', () => {
   const manifest = readJson(workCellsDraftPath);
 
-  for (const topicId of ['cedar-pollen-allergy', 'influenza']) {
+  for (const topicId of workCellsV2TopicIds) {
     const topic = manifest.topics.find((item) => item.topicId === topicId);
     assert.ok(topic, `${topicId} topic should exist`);
     assert.equal(topic.contentVersion, 'work-cells-v2');
@@ -470,7 +488,7 @@ test('Work Cells V2 pilot topics use approved WebP assets and metadata', () => {
     assert.ok(topic.relatedComicPages?.length > 0, `${topicId} should include relatedComicPages`);
     assert.ok(topic.relatedAnimationScenes?.length > 0, `${topicId} should include relatedAnimationScenes`);
     assert.equal(topic.bodyScienceStations.length, 4, `${topicId} should define 4 V2 station cards`);
-    assert.equal(topic.parentQuestionCards.length, 6, `${topicId} should define 6 V2 parent question cards`);
+    assert.equal(topic.parentQuestionCards.length, workCellsV2QuestionCounts.get(topicId), `${topicId} should define the expected V2 parent question card count`);
 
     topic.bodyScienceStations.forEach((station, index) => {
       const expectedAsset = `public/assets/cells-at-work/science-station/${topicId}/${topicId}-v2-station-${String(index + 1).padStart(2, '0')}.webp`;
@@ -485,21 +503,16 @@ test('Work Cells V2 pilot topics use approved WebP assets and metadata', () => {
 
 test('Work Cells batch one topics define formal science station and parent question data', () => {
   const manifest = readJson(workCellsDraftPath);
-  const topics = ['influenza', 'abrasion', 'heatstroke'].map((topicId) => {
+  const topics = ['pneumococcus', 'abrasion', 'heatstroke', 'blood-circulation', 'hemorrhagic-shock'].map((topicId) => {
     const topic = manifest.topics.find((item) => item.topicId === topicId);
     assert.ok(topic, `${topicId} topic should exist`);
     return topic;
   });
   const expectedQuestionTypes = ['observation', 'understanding', 'life-connection', 'science-concept'];
-  const expectedQuestionCounts = new Map([
-    ['influenza', 6],
-    ['abrasion', 8],
-    ['heatstroke', 8],
-  ]);
 
   for (const topic of topics) {
     assert.equal(topic.bodyScienceStations.length, 4, `${topic.topicId} should define exactly 4 stations`);
-    assert.equal(topic.parentQuestionCards.length, expectedQuestionCounts.get(topic.topicId), `${topic.topicId} should define the expected question card count`);
+    assert.equal(topic.parentQuestionCards.length, workCellsV2QuestionCounts.get(topic.topicId), `${topic.topicId} should define the expected question card count`);
     assert.match(topic.parentNote ?? '', /\S/, `${topic.topicId} should include gentle parent co-reading guidance`);
 
     const stationIds = new Set();
@@ -535,7 +548,7 @@ test('Work Cells batch one topics define formal science station and parent quest
     assert.equal(promptIds.size, 4, `${topic.topicId} imagePromptId values should be unique`);
 
     const typeSet = new Set(topic.parentQuestionCards.map((card) => card.type));
-    const requiredTypes = topic.topicId === 'influenza'
+    const requiredTypes = ['influenza', 'pneumococcus', 'blood-circulation', 'hemorrhagic-shock'].includes(topic.topicId)
       ? ['observation', 'understanding', 'life-connection']
       : expectedQuestionTypes;
     for (const type of requiredTypes) {

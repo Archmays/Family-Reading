@@ -2054,7 +2054,294 @@
         "pneumococcus__v01_page-055",
         "pneumococcus__v01_page-056",
         "pneumococcus__v01_page-057"
-      ]
+      ],
+      "topicOverview": {
+        "title": "肺炎链球菌",
+        "summary": "肺炎链球菌主题把“病原体入侵”和“身体防御”放在同一个入门故事里：红血球负责运输，白血球识别并清除细菌，气道和喷嚏也参与把外来物排出。共读时可以把战斗画面转回身体真实机制：细胞各司其职，免疫反应是在保护身体。",
+        "readingFocus": "“病原体进入后身体怎样处理”：用红血球运输、白血球清除、黏膜纤毛和喷嚏排出四个节点说明身体防御，不展示漫画全文或动画对白。",
+        "keyBiologyConcepts": [
+          "肺炎链球菌",
+          "红血球",
+          "白血球/中性粒细胞",
+          "病原体入侵",
+          "吞噬与清除",
+          "肺泡气体交换",
+          "黏膜防御",
+          "喷嚏反射"
+        ]
+      },
+      "parentNote": "这个主题有追逐和战斗画面。共读时可以先告诉孩子：漫画把免疫细胞画得很戏剧化，真实身体里是细胞识别、包围和清除病原体；如果出现健康问题，应由成人联系专业医务人员。",
+      "parentReadingNote": "这个主题有追逐和战斗画面。共读时可以先告诉孩子：漫画把免疫细胞画得很戏剧化，真实身体里是细胞识别、包围和清除病原体；如果出现健康问题，应由成人联系专业医务人员。",
+      "bodyScienceStations": [
+        {
+          "stationId": "pneumococcus-pathogen-entry",
+          "topicId": "pneumococcus",
+          "title": "肺炎链球菌是什么",
+          "coreQuestion": "为什么外来的细菌会让身体紧张起来？",
+          "explanation": "肺炎链球菌是一类可能进入呼吸道的细菌。身体会把它识别为外来病原体，并启动免疫细胞进行清理。",
+          "imagePromptId": "work-cells-pneumococcus-pathogen-entry",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是肺炎链球菌是什么：温和示意外来细菌靠近呼吸道黏膜，身体防线开始发出提醒。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/pneumococcus/pneumococcus-v2-station-01.webp",
+          "imageAlt": "外来细菌靠近呼吸道黏膜，周围防线发出温和提醒的儿童科普图。",
+          "relatedPageIds": [
+            "pneumococcus__v01_page-008",
+            "pneumococcus__v01_page-010"
+          ],
+          "biologyConcepts": [
+            "肺炎链球菌",
+            "病原体",
+            "呼吸道黏膜"
+          ],
+          "encyclopediaTags": [
+            "肺炎链球菌",
+            "病原体",
+            "黏膜防御"
+          ],
+          "parentNote": "把细菌讲成“外来访客”，避免把画面讲成恐怖怪物。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "pneumococcus-white-cell-cleanup",
+          "topicId": "pneumococcus",
+          "title": "白血球为什么会追踪细菌",
+          "coreQuestion": "白血球在身体里像什么样的工作人员？",
+          "explanation": "白血球会巡逻并识别外来病原体，必要时把细菌包围和吞噬，帮助身体降低感染风险。",
+          "imagePromptId": "work-cells-pneumococcus-white-cell-cleanup",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是白血球为什么会追踪细菌：白血球巡逻并温和包围外来小颗粒，表现免疫清理过程。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/pneumococcus/pneumococcus-v2-station-02.webp",
+          "imageAlt": "白血球在身体通道中巡逻并包围外来小颗粒的温和科普图。",
+          "relatedPageIds": [
+            "pneumococcus__v01_page-016",
+            "pneumococcus__v01_page-020"
+          ],
+          "biologyConcepts": [
+            "白血球",
+            "中性粒细胞",
+            "吞噬作用"
+          ],
+          "encyclopediaTags": [
+            "白血球",
+            "免疫防御",
+            "吞噬"
+          ],
+          "parentNote": "把“战斗”转成“清理和保护”，不复述漫画动作细节。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "pneumococcus-red-cell-gas-transport",
+          "topicId": "pneumococcus",
+          "title": "红血球为什么运送氧气和二氧化碳",
+          "coreQuestion": "红血球平时在身体里运什么？",
+          "explanation": "红血球把氧气从肺部带到身体各处，也把二氧化碳带回肺部。病原体入侵时，这些日常运输工作仍然很重要。",
+          "imagePromptId": "work-cells-pneumococcus-red-cell-gas-transport",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是红血球为什么运送氧气和二氧化碳：红血球沿血管路线运送氧气并带回二氧化碳，路线清楚但不医学化。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/pneumococcus/pneumococcus-v2-station-03.webp",
+          "imageAlt": "红血球沿血管路线运送氧气并带回二氧化碳的清楚示意图。",
+          "relatedPageIds": [
+            "pneumococcus__v01_page-013",
+            "pneumococcus__v01_page-014"
+          ],
+          "biologyConcepts": [
+            "红血球",
+            "氧气运输",
+            "二氧化碳运输"
+          ],
+          "encyclopediaTags": [
+            "红血球",
+            "氧气",
+            "二氧化碳"
+          ],
+          "parentNote": "用“配送员”类比红血球，不加入阅读进度或任务系统。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "pneumococcus-sneeze-defense",
+          "topicId": "pneumococcus",
+          "title": "喷嚏怎样帮身体排出异物",
+          "coreQuestion": "为什么身体有时会打喷嚏？",
+          "explanation": "鼻腔和气道里的黏液、纤毛和喷嚏反射，可以帮助把灰尘、病原体等外来物往外排。",
+          "imagePromptId": "work-cells-pneumococcus-sneeze-defense",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是喷嚏怎样帮身体排出异物：鼻腔黏液纤毛和喷嚏气流把外来小颗粒排出的温和流程图。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/pneumococcus/pneumococcus-v2-station-04.webp",
+          "imageAlt": "黏液、纤毛和喷嚏气流协助排出外来小颗粒的儿童科普图。",
+          "relatedPageIds": [
+            "pneumococcus__v01_page-054",
+            "pneumococcus__v01_page-060"
+          ],
+          "biologyConcepts": [
+            "黏膜防御",
+            "纤毛",
+            "喷嚏反射"
+          ],
+          "encyclopediaTags": [
+            "黏液",
+            "纤毛",
+            "喷嚏"
+          ],
+          "parentNote": "提醒孩子喷嚏要遮挡口鼻、洗手，保持生活化。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "pneumococcus-q01",
+          "topicId": "pneumococcus",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "谁在做什么",
+          "question": "看相关页面时，红血球和白血球分别在做什么工作？",
+          "answer": "红血球负责运输，白血球负责识别和清理外来病原体。",
+          "relatedPageIds": [
+            "pneumococcus__v01_page-013",
+            "pneumococcus__v01_page-016"
+          ],
+          "parentHint": "让孩子先观察角色工作，不复述对白。",
+          "biologyConcepts": [
+            "红血球",
+            "白血球"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "pneumococcus-q02",
+          "topicId": "pneumococcus",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "细菌在哪里",
+          "question": "哪些画面线索说明有外来细菌进入身体？",
+          "answer": "可以看细菌形象、身体防线反应和免疫细胞靠近的位置。",
+          "relatedPageIds": [
+            "pneumococcus__v01_page-008"
+          ],
+          "parentHint": "把细菌说成需要被清理的外来物。",
+          "biologyConcepts": [
+            "病原体",
+            "免疫防御"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "pneumococcus-q03",
+          "topicId": "pneumococcus",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么白血球要清理细菌",
+          "question": "白血球为什么要追踪和清除肺炎链球菌？",
+          "answer": "因为外来细菌可能干扰身体工作，白血球清理它们是在保护身体。",
+          "relatedPageIds": [
+            "pneumococcus__v01_page-020"
+          ],
+          "parentHint": "避免把免疫过程讲成单纯打斗。",
+          "biologyConcepts": [
+            "白血球",
+            "肺炎链球菌"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "pneumococcus-q04",
+          "topicId": "pneumococcus",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "红血球为什么忙",
+          "question": "病原体出现时，红血球的运输任务还重要吗？",
+          "answer": "重要。身体各处仍然需要氧气，二氧化碳也需要被带回肺部。",
+          "relatedPageIds": [
+            "pneumococcus__v01_page-014"
+          ],
+          "parentHint": "联系“身体城市仍要运转”的类比。",
+          "biologyConcepts": [
+            "红血球",
+            "气体运输"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "pneumococcus-q05",
+          "topicId": "pneumococcus",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "喷嚏和卫生",
+          "question": "打喷嚏时为什么要遮挡口鼻、之后洗手？",
+          "answer": "这样可以减少飞出的飞沫和外来物传播给别人。",
+          "relatedPageIds": [
+            "pneumococcus__v01_page-060"
+          ],
+          "parentHint": "保持生活习惯提醒，不制造恐慌。",
+          "biologyConcepts": [
+            "喷嚏",
+            "卫生习惯"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "pneumococcus-q06",
+          "topicId": "pneumococcus",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "病原体",
+          "question": "病原体这个词是什么意思？",
+          "answer": "它指可能让身体不舒服、需要被防御系统处理的外来微生物。",
+          "relatedPageIds": [
+            "pneumococcus__v01_page-008"
+          ],
+          "parentHint": "用“可能带来麻烦的外来微生物”解释即可。",
+          "biologyConcepts": [
+            "病原体"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "sourceNotes": [
+        "漫画来源：第1卷 第1话，只保留页码线索，不展示漫画全文。",
+        "动画来源只记录主题级摘要和集数线索，不接入视频、字幕或对白。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/pneumococcus/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "pneumococcus__v01_page-008",
+        "pneumococcus__v01_page-013",
+        "pneumococcus__v01_page-016",
+        "pneumococcus__v01_page-020",
+        "pneumococcus__v01_page-054",
+        "pneumococcus__v01_page-060"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "pneumococcus-animation-s1e01-overview",
+          "sourceLabel": "动画 S1 第1话摘要",
+          "summary": "只记录肺炎链球菌主题与动画集数的对应关系，以及免疫防御和红血球运输的摘要线索。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 2,
@@ -3716,12 +4003,12 @@
           "药物对过敏反应的抑制"
         ]
       },
-      "parentReadingNote": "???????????????????????????????????????????????????????????????????????????????????",
-      "parentNote": "???????????????????????????????????????????????????????????????????????????????????",
+      "parentReadingNote": "这个主题把过敏反应画得很夸张。共读时可以告诉孩子：花粉本身不是怪物，过敏是免疫系统把普通花粉误判成需要强烈处理的对象；药物和诊疗建议要听成人和医生安排。",
+      "parentNote": "这个主题把过敏反应画得很夸张。共读时可以告诉孩子：花粉本身不是怪物，过敏是免疫系统把普通花粉误判成需要强烈处理的对象；药物和诊疗建议要听成人和医生安排。",
       "sourceNotes": [
-        "??????1??2??????????????????????????????????????????",
-        "?????????????IgE????????????????????????",
-        "V2?????????PNG???data/cells-at-work/source-assets/science-station/cedar-pollen-allergy/png-originals/??????????WebP?"
+        "漫画来源：第1卷 第2话，只保留与过敏反应相关的页码线索，不展示漫画全文。",
+        "动画来源只记录杉树花粉过敏主题级摘要，不接入视频、字幕或对白。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/cedar-pollen-allergy/png-originals/，正式前端资源只使用WebP。"
       ],
       "relatedComicPages": [
         "cedar-pollen-allergy__v01_page-065",
@@ -3734,8 +4021,8 @@
       "relatedAnimationScenes": [
         {
           "sceneId": "cedar-pollen-allergy-animation-s1e05-overview",
-          "sourceLabel": "?? S1 ?5?????????",
-          "summary": "??????????????????????????????????????",
+          "sourceLabel": "动画 S1 第5话摘要",
+          "summary": "只记录过敏原、IgE、肥大细胞和症状反应的摘要线索，不接入完整动画内容。",
           "policy": "no-video-no-subtitle-no-dialogue"
         }
       ],
@@ -4888,7 +5175,7 @@
         "influenza__v01_page-132",
         "influenza__v01_page-133"
       ],
-      "parentNote": "????????????????????????????????????????????????????????????????????????????",
+      "parentNote": "这个主题有病毒感染和免疫细胞战斗画面。共读时可以把重点放在“免疫系统如何识别被感染细胞并协作处理”，不要把发热或用药讲成固定处置；真实健康问题应由成人咨询专业医务人员。",
       "bodyScienceStations": [
         {
           "stationId": "influenza-virus-entry",
@@ -5140,11 +5427,11 @@
           "免疫记忆"
         ]
       },
-      "parentReadingNote": "????????????????????????????????????????????????????????????????????????????",
+      "parentReadingNote": "这个主题有病毒感染和免疫细胞战斗画面。共读时可以把重点放在“免疫系统如何识别被感染细胞并协作处理”，不要把发热或用药讲成固定处置；真实健康问题应由成人咨询专业医务人员。",
       "sourceNotes": [
-        "??????1??3?????????????????????????????????????????",
-        "????????????????????????????????????????????",
-        "V2?????????PNG???data/cells-at-work/source-assets/science-station/influenza/png-originals/??????????WebP?"
+        "漫画来源：第1卷 第3话，只保留与流感病毒和免疫协作相关的页码线索，不展示漫画全文。",
+        "动画来源只记录流行性感冒主题级摘要，不接入视频、字幕或对白。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/influenza/png-originals/，正式前端资源只使用WebP。"
       ],
       "relatedComicPages": [
         "influenza__v01_page-105",
@@ -5157,8 +5444,8 @@
       "relatedAnimationScenes": [
         {
           "sceneId": "influenza-animation-s1e03-overview",
-          "sourceLabel": "?? S1 ?3????????",
-          "summary": "??????????????????????????????????????",
+          "sourceLabel": "动画 S1 第3话摘要",
+          "summary": "只记录病毒感染、抗原呈递、T细胞活化和免疫协作的摘要线索，不接入完整动画内容。",
           "policy": "no-video-no-subtitle-no-dialogue"
         }
       ],
@@ -6468,7 +6755,7 @@
           "explanation": "皮肤把身体内部和外界隔开，像一道柔软的保护墙。擦伤时这道保护墙出现小缺口，灰尘和细菌就更容易靠近。",
           "imagePromptId": "work-cells-abrasion-skin-wall",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是皮肤为什么像身体的城墙：皮肤表面像柔软城墙一样保护身体，外界小颗粒被挡在外面的儿童科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-skin-wall.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-v2-station-01.webp",
           "imageAlt": "皮肤表面像柔软城墙一样保护身体，外界小颗粒被挡在外面的儿童科普图。",
           "relatedPageIds": [
             "abrasion__v01_page-142"
@@ -6485,7 +6772,10 @@
           ],
           "parentNote": "可以把皮肤说成“会自我修补的保护层”，避免恐怖化伤口。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "abrasion-why-bleeding",
@@ -6495,7 +6785,7 @@
           "explanation": "皮肤下面有很多细小血管。擦伤如果碰到这些血管，血液就会从小缺口流出来；这也是身体发现受伤并开始修复的信号。",
           "imagePromptId": "work-cells-abrasion-why-bleeding",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是擦伤后为什么会流血：皮肤浅层小血管被擦到，少量血液从小缺口流出的温和非血腥示意图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-why-bleeding.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-v2-station-02.webp",
           "imageAlt": "皮肤浅层小血管被擦到，少量血液从小缺口流出的温和非血腥示意图。",
           "relatedPageIds": [
             "abrasion__v01_page-142",
@@ -6513,7 +6803,10 @@
           ],
           "parentNote": "用“红色信号”解释少量出血，不渲染疼痛。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "abrasion-platelet-clot",
@@ -6523,7 +6816,7 @@
           "explanation": "血小板会在伤口附近集合，和纤维蛋白一起形成网，像临时补丁一样帮助止血，并保护伤口慢慢结痂。",
           "imagePromptId": "work-cells-abrasion-platelet-clot",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是血小板和凝血如何帮助止血：血小板小圆片聚集，纤维蛋白像细网一样温和封住浅表伤口的科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-platelet-clot.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-v2-station-03.webp",
           "imageAlt": "血小板小圆片聚集，纤维蛋白像细网一样温和封住浅表伤口的科普图。",
           "relatedPageIds": [
             "abrasion__v01_page-164",
@@ -6541,7 +6834,10 @@
           ],
           "parentNote": "提醒孩子不要抠痂，因为那是身体正在修补的保护层。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "abrasion-white-cells-arrive",
@@ -6551,7 +6847,7 @@
           "explanation": "擦伤让外界细菌有机会靠近，白细胞会到伤口附近巡逻和清理，帮助降低感染风险，让修复环境更安全。",
           "imagePromptId": "work-cells-abrasion-white-cells-arrive",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是白细胞为什么来到伤口附近：白细胞在浅表伤口附近温和巡逻，清理少量外来小颗粒的儿童科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-white-cells-arrive.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-v2-station-04.webp",
           "imageAlt": "白细胞在浅表伤口附近温和巡逻，清理少量外来小颗粒的儿童科普图。",
           "relatedPageIds": [
             "abrasion__v01_page-146",
@@ -6569,7 +6865,10 @@
           ],
           "parentNote": "把白细胞讲成清理队，不把细菌画成恐怖怪物。",
           "status": "published",
-          "priority": "medium"
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         }
       ],
       "parentQuestionCards": [
@@ -6588,7 +6887,8 @@
           "biologyConcepts": [
             "皮肤屏障",
             "擦伤"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "abrasion-q02",
@@ -6606,7 +6906,8 @@
           "biologyConcepts": [
             "血小板",
             "白细胞"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "abrasion-q03",
@@ -6623,7 +6924,8 @@
           "biologyConcepts": [
             "毛细血管",
             "出血"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "abrasion-q04",
@@ -6640,7 +6942,8 @@
           "biologyConcepts": [
             "血小板",
             "凝血"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "abrasion-q05",
@@ -6657,7 +6960,8 @@
           "biologyConcepts": [
             "伤口护理",
             "细菌"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "abrasion-q06",
@@ -6674,7 +6978,8 @@
           "biologyConcepts": [
             "结痂",
             "组织修复"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "abrasion-q07",
@@ -6690,7 +6995,8 @@
           "parentHint": "用衣服、门或城墙作日常类比。",
           "biologyConcepts": [
             "皮肤屏障"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "abrasion-q08",
@@ -6707,9 +7013,60 @@
           "biologyConcepts": [
             "白细胞",
             "感染风险"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         }
-      ]
+      ],
+      "topicOverview": {
+        "title": "擦伤",
+        "summary": "皮肤屏障被擦破后，外界细菌进入伤口，白血球负责清除病原，血小板负责聚集并用纤维蛋白形成血栓/痂，最终帮助伤口隔离与修复。这个主题非常适合把“伤口为什么会出血、结痂、需要保持清洁”讲给孩子。",
+        "readingFocus": "“从出血到结痂”：做一张四步图：皮肤破损、血小板集合、纤维蛋白拉网、形成痂保护伤口；再补充保持清洁、避免抠痂的生活提醒。",
+        "keyBiologyConcepts": [
+          "皮肤屏障",
+          "擦伤与开放伤口",
+          "细菌入侵",
+          "白血球/中性粒细胞",
+          "血小板聚集",
+          "纤维蛋白网",
+          "凝血与血栓",
+          "结痂和组织修复"
+        ]
+      },
+      "parentReadingNote": "这个主题会涉及伤口和止血画面。共读时可以把重点放在皮肤如何保护身体、血小板如何帮忙止血，以及受伤后找成人清洁和照护。",
+      "sourceNotes": [
+        "漫画来源：第1卷 第4话，只保留页码线索，不展示漫画全文。",
+        "动画来源只记录主题级摘要和集数线索，不接入视频、字幕或对白。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/abrasion/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "abrasion__v01_page-142",
+        "abrasion__v01_page-146",
+        "abrasion__v01_page-154",
+        "abrasion__v01_page-164",
+        "abrasion__v01_page-167",
+        "abrasion__v01_page-168"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "abrasion-animation-s1e02-overview",
+          "sourceLabel": "动画 S1 第2话摘要",
+          "summary": "只记录擦伤主题与动画集数的对应关系，以及皮肤屏障、止血和白血球清理的摘要线索。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 5,
@@ -8821,7 +9178,7 @@
           "explanation": "身体里的细胞适合在比较稳定的温度下工作。环境太热、身体散热不够时，细胞会变得吃力，人也可能头晕、无力。",
           "imagePromptId": "work-cells-heatstroke-temperature-balance",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是身体为什么需要保持体温稳定：身体像温和的平衡系统一样保持体温稳定，外界太阳和体内细胞用清楚结构表现。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-temperature-balance.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-v2-station-01.webp",
           "imageAlt": "身体像温和的平衡系统一样保持体温稳定，外界太阳和体内细胞用清楚结构表现。",
           "relatedPageIds": [
             "heatstroke__v02_page-033"
@@ -8838,7 +9195,10 @@
           ],
           "parentNote": "用“身体喜欢稳定温度”解释，不把中暑画成可怕事件。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "heatstroke-sweat-cooling",
@@ -8848,7 +9208,7 @@
           "explanation": "出汗后，汗水从皮肤表面蒸发，会带走一部分热量。这个过程需要身体有足够水分，所以热天补水很重要。",
           "imagePromptId": "work-cells-heatstroke-sweat-cooling",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是出汗为什么可以帮助散热：皮肤表面汗滴蒸发带走热量，旁边有清凉气流和水分补充图标的儿童科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-sweat-cooling.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-v2-station-02.webp",
           "imageAlt": "皮肤表面汗滴蒸发带走热量，旁边有清凉气流和水分补充图标的儿童科普图。",
           "relatedPageIds": [
             "heatstroke__v02_page-036"
@@ -8865,7 +9225,10 @@
           ],
           "parentNote": "可以让孩子想象洗手后风吹会凉，但强调热天仍要休息补水。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "heatstroke-water-salt-loss",
@@ -8875,7 +9238,7 @@
           "explanation": "大量出汗会让身体失去水分，也会带走一些盐分。缺水会让血液循环更吃力，严重时需要成人及时处理。",
           "imagePromptId": "work-cells-heatstroke-water-salt-loss",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是缺水和盐分流失为什么会危险：水滴和盐分小颗粒从身体散热系统流失，循环管道变得吃力的温和示意图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-water-salt-loss.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-v2-station-03.webp",
           "imageAlt": "水滴和盐分小颗粒从身体散热系统流失，循环管道变得吃力的温和示意图。",
           "relatedPageIds": [
             "heatstroke__v02_page-040",
@@ -8893,7 +9256,10 @@
           ],
           "parentNote": "不让孩子自行判断严重程度，强调不舒服要告诉成人。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         },
         {
           "stationId": "heatstroke-cool-rest-help",
@@ -8903,7 +9269,7 @@
           "explanation": "中暑风险出现时，应尽快离开高温环境，到阴凉处休息，降温和补水，并及时让成人知道；严重不适要寻求专业帮助。",
           "imagePromptId": "work-cells-heatstroke-cool-rest-help",
           "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是中暑时为什么要降温、补水、休息并求助：孩子在阴凉处休息、补水、用凉毛巾降温，成人在旁边帮助的温和安全科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
-          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-cool-rest-help.webp",
+          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-v2-station-04.webp",
           "imageAlt": "孩子在阴凉处休息、补水、用凉毛巾降温，成人在旁边帮助的温和安全科普图。",
           "relatedPageIds": [
             "heatstroke__v02_page-056",
@@ -8921,7 +9287,10 @@
           ],
           "parentNote": "把它作为安全行动清单：停下来、去阴凉处、喝水、找成人。",
           "status": "published",
-          "priority": "high"
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
         }
       ],
       "parentQuestionCards": [
@@ -8940,7 +9309,8 @@
           "biologyConcepts": [
             "高温环境",
             "中暑"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "heatstroke-q02",
@@ -8957,7 +9327,8 @@
           "biologyConcepts": [
             "脱水",
             "休息"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "heatstroke-q03",
@@ -8974,7 +9345,8 @@
           "biologyConcepts": [
             "体温调节",
             "稳态"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "heatstroke-q04",
@@ -8991,7 +9363,8 @@
           "biologyConcepts": [
             "出汗",
             "蒸发散热"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "heatstroke-q05",
@@ -9008,7 +9381,8 @@
           "biologyConcepts": [
             "补水",
             "避暑"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "heatstroke-q06",
@@ -9025,7 +9399,8 @@
           "biologyConcepts": [
             "求助成人",
             "安全行动"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "heatstroke-q07",
@@ -9042,7 +9417,8 @@
           "biologyConcepts": [
             "水分平衡",
             "循环"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         },
         {
           "cardId": "heatstroke-q08",
@@ -9059,9 +9435,61 @@
           "biologyConcepts": [
             "降温",
             "补水"
-          ]
+          ],
+          "contentVersion": "work-cells-v2"
         }
-      ]
+      ],
+      "topicOverview": {
+        "title": "中暑",
+        "summary": "高温环境下，身体水分减少、体温上升、血液循环变得吃力，细胞和免疫系统逐渐失去工作能力。外部补水、降温和输液等支持让身体恢复。主题适合转化为家庭安全教育：热天补水、避暑、休息和识别中暑信号。",
+        "readingFocus": "“热天身体怎么散热”：用汗腺、血流和补水三个图示说明人体如何散热；把“口渴、头晕、脸红、无力”做成孩子能识别的中暑信号卡。",
+        "keyBiologyConcepts": [
+          "中暑",
+          "体温调节",
+          "出汗散热",
+          "脱水",
+          "血容量减少",
+          "电解质与水分平衡",
+          "循环负担",
+          "补水和降温",
+          "输液支持"
+        ]
+      },
+      "parentReadingNote": "中暑可能危险，但共读时不必制造紧张感。请把重点放在预防、休息、降温、补水，以及头晕、无力、很热时及时求助成人。",
+      "sourceNotes": [
+        "漫画来源：第2卷 第6话，只保留页码线索，不展示漫画全文。",
+        "动画来源只记录主题级摘要和集数线索，不接入视频、字幕或对白。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/heatstroke/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "heatstroke__v02_page-033",
+        "heatstroke__v02_page-036",
+        "heatstroke__v02_page-040",
+        "heatstroke__v02_page-050",
+        "heatstroke__v02_page-056",
+        "heatstroke__v02_page-062"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "heatstroke-animation-s1e11-overview",
+          "sourceLabel": "动画 S1 第11话摘要",
+          "summary": "只记录中暑主题与动画集数的对应关系，以及高温、散热、补水和求助成人的摘要线索。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 7,
@@ -14187,7 +14615,297 @@
         "blood-circulation__v03_page-022",
         "blood-circulation__v03_page-025",
         "blood-circulation__v03_page-028"
-      ]
+      ],
+      "topicOverview": {
+        "title": "血液循环",
+        "summary": "血液循环主题把红血球的路线变成一次“配送任务”：血液从心脏出发，经过肺部交换气体，再把氧气送到身体各处并带回二氧化碳。它适合作为循环系统入口，帮助孩子理解心脏、血管、肺循环和体循环如何协作。",
+        "readingFocus": "“一圈循环路线”：用心脏、肺部、全身组织、静脉回流四个节点说明血液怎么流动，避免把主题做成漫画全文路线浏览。",
+        "keyBiologyConcepts": [
+          "血液循环",
+          "心脏",
+          "肺循环",
+          "体循环",
+          "动脉",
+          "静脉",
+          "毛细血管",
+          "氧气运输",
+          "二氧化碳运输",
+          "红血球"
+        ]
+      },
+      "parentNote": "这个主题适合拿来画路线图。共读时可以问“红血球现在在去哪里”，再把答案拉回心脏泵血、肺部换气和全身供氧；不要把它变成背诵路线或进度打卡。",
+      "parentReadingNote": "这个主题适合拿来画路线图。共读时可以问“红血球现在在去哪里”，再把答案拉回心脏泵血、肺部换气和全身供氧；不要把它变成背诵路线或进度打卡。",
+      "bodyScienceStations": [
+        {
+          "stationId": "blood-circulation-route-map",
+          "topicId": "blood-circulation",
+          "title": "血液循环像一张身体交通图",
+          "coreQuestion": "红血球为什么要沿着路线走？",
+          "explanation": "血液循环有固定方向，帮助红血球把氧气送到需要的地方，再把二氧化碳带回肺部。",
+          "imagePromptId": "work-cells-blood-circulation-route-map",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是血液循环像一张身体交通图：用简洁身体交通路线表现心脏、肺部和全身组织之间的循环方向。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/blood-circulation/blood-circulation-v2-station-01.webp",
+          "imageAlt": "心脏、肺部和全身组织之间形成清楚循环路线的儿童科普图。",
+          "relatedPageIds": [
+            "blood-circulation__v03_page-004",
+            "blood-circulation__v03_page-009"
+          ],
+          "biologyConcepts": [
+            "血液循环",
+            "循环路线",
+            "红血球运输"
+          ],
+          "encyclopediaTags": [
+            "血液循环",
+            "红血球",
+            "路线图"
+          ],
+          "parentNote": "可以让孩子用手指沿图走一圈，但不记录进度。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "blood-circulation-heart-pump",
+          "topicId": "blood-circulation",
+          "title": "心脏为什么像泵",
+          "coreQuestion": "血液为什么能不断往前流？",
+          "explanation": "心脏有节律地收缩和舒张，把血液推向肺部和全身，是循环路线的动力来源。",
+          "imagePromptId": "work-cells-blood-circulation-heart-pump",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是心脏为什么像泵：心脏像温和泵站一样推动血液沿管道前进的非医学化示意图。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/blood-circulation/blood-circulation-v2-station-02.webp",
+          "imageAlt": "心脏像泵站一样推动血液沿管道前进的温和示意图。",
+          "relatedPageIds": [
+            "blood-circulation__v03_page-013",
+            "blood-circulation__v03_page-014"
+          ],
+          "biologyConcepts": [
+            "心脏",
+            "泵血",
+            "血流方向"
+          ],
+          "encyclopediaTags": [
+            "心脏",
+            "泵",
+            "血流"
+          ],
+          "parentNote": "强调心脏很重要，但不讲复杂病理。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "blood-circulation-lung-exchange",
+          "topicId": "blood-circulation",
+          "title": "肺部为什么是换气站",
+          "coreQuestion": "红血球到肺部时会交换什么？",
+          "explanation": "在肺部，红血球装上氧气，同时把二氧化碳交出去，之后再把氧气送往身体各处。",
+          "imagePromptId": "work-cells-blood-circulation-lung-exchange",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是肺部为什么是换气站：肺泡旁红血球交换氧气和二氧化碳，两种气体用清楚图标表示。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/blood-circulation/blood-circulation-v2-station-03.webp",
+          "imageAlt": "红血球在肺泡旁交换氧气和二氧化碳的清楚儿童科普图。",
+          "relatedPageIds": [
+            "blood-circulation__v03_page-017",
+            "blood-circulation__v03_page-019"
+          ],
+          "biologyConcepts": [
+            "肺泡",
+            "氧气",
+            "二氧化碳"
+          ],
+          "encyclopediaTags": [
+            "肺部",
+            "气体交换",
+            "肺循环"
+          ],
+          "parentNote": "用“换货站”解释气体交换，避免过度术语化。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "blood-circulation-capillary-delivery",
+          "topicId": "blood-circulation",
+          "title": "毛细血管怎样把氧气送到细胞旁边",
+          "coreQuestion": "为什么血管要分得很细？",
+          "explanation": "毛细血管很细，能让血液靠近组织细胞，方便氧气送达、二氧化碳被带走。",
+          "imagePromptId": "work-cells-blood-circulation-capillary-delivery",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是毛细血管怎样把氧气送到细胞旁边：毛细血管网络靠近组织细胞，红血球把氧气送到细胞旁边。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/blood-circulation/blood-circulation-v2-station-04.webp",
+          "imageAlt": "毛细血管网络靠近组织细胞并完成氧气递送的温和示意图。",
+          "relatedPageIds": [
+            "blood-circulation__v03_page-021",
+            "blood-circulation__v03_page-024"
+          ],
+          "biologyConcepts": [
+            "毛细血管",
+            "组织供氧",
+            "二氧化碳回收"
+          ],
+          "encyclopediaTags": [
+            "毛细血管",
+            "组织细胞",
+            "氧气"
+          ],
+          "parentNote": "可以把毛细血管比作细小小路，帮助配送更接近目的地。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "blood-circulation-q01",
+          "topicId": "blood-circulation",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "路线从哪里开始",
+          "question": "看相关页面时，红血球从哪些地方经过？",
+          "answer": "可以找心脏、肺部、血管通道和身体组织这些路线线索。",
+          "relatedPageIds": [
+            "blood-circulation__v03_page-004",
+            "blood-circulation__v03_page-009"
+          ],
+          "parentHint": "把答案放在路线观察上，不要求背完整路径。",
+          "biologyConcepts": [
+            "循环路线",
+            "红血球"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "blood-circulation-q02",
+          "topicId": "blood-circulation",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "O2和CO2在哪里",
+          "question": "画面里哪些符号提示氧气或二氧化碳正在被运输？",
+          "answer": "可以观察O2、CO2标记和红血球搬运的位置。",
+          "relatedPageIds": [
+            "blood-circulation__v03_page-017"
+          ],
+          "parentHint": "让孩子先找符号，再说意思。",
+          "biologyConcepts": [
+            "氧气",
+            "二氧化碳"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "blood-circulation-q03",
+          "topicId": "blood-circulation",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么需要心脏",
+          "question": "如果没有心脏推动，血液循环会遇到什么困难？",
+          "answer": "血液就不容易持续流向肺部和全身，氧气运输也会受影响。",
+          "relatedPageIds": [
+            "blood-circulation__v03_page-013"
+          ],
+          "parentHint": "用泵或水流作温和类比。",
+          "biologyConcepts": [
+            "心脏",
+            "泵血"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "blood-circulation-q04",
+          "topicId": "blood-circulation",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么要去肺部",
+          "question": "红血球为什么要经过肺部？",
+          "answer": "因为肺部能让红血球装上氧气，并把二氧化碳交出去。",
+          "relatedPageIds": [
+            "blood-circulation__v03_page-017"
+          ],
+          "parentHint": "把肺部说成换气站。",
+          "biologyConcepts": [
+            "肺循环",
+            "气体交换"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "blood-circulation-q05",
+          "topicId": "blood-circulation",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "运动后为什么喘",
+          "question": "跑跳后为什么会呼吸变快、心跳变快？",
+          "answer": "身体需要更多氧气，心脏和肺会更忙地帮助运输和换气。",
+          "relatedPageIds": [
+            "blood-circulation__v03_page-019"
+          ],
+          "parentHint": "联系生活体验即可，不做健康判断。",
+          "biologyConcepts": [
+            "运动",
+            "氧气需求"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "blood-circulation-q06",
+          "topicId": "blood-circulation",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "体循环和肺循环",
+          "question": "体循环和肺循环有什么简单区别？",
+          "answer": "肺循环主要去肺部换气，体循环主要把氧气送到身体各处。",
+          "relatedPageIds": [
+            "blood-circulation__v03_page-004"
+          ],
+          "parentHint": "保持一句话区分，不要求画复杂图。",
+          "biologyConcepts": [
+            "肺循环",
+            "体循环"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "sourceNotes": [
+        "漫画来源：第3卷 第10话，只保留页码线索，不展示漫画全文。",
+        "动画来源只记录主题级摘要和集数线索，不接入视频、字幕或对白。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/blood-circulation/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "blood-circulation__v03_page-004",
+        "blood-circulation__v03_page-009",
+        "blood-circulation__v03_page-013",
+        "blood-circulation__v03_page-017",
+        "blood-circulation__v03_page-021",
+        "blood-circulation__v03_page-024"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "blood-circulation-animation-s1e08-overview",
+          "sourceLabel": "动画 S1 第8话摘要",
+          "summary": "只记录血液循环主题与动画集数的对应关系，以及红血球路线、心脏泵血和肺部换气的摘要线索。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 10,
@@ -25638,7 +26356,303 @@
         "hemorrhagic-shock__v04_page-128",
         "hemorrhagic-shock__v04_page-129",
         "hemorrhagic-shock__v04_page-132"
-      ]
+      ],
+      "topicOverview": {
+        "title": "出血性休克",
+        "summary": "出血性休克主题由前后篇组成，但在项目里作为一个主题展示。它帮助孩子理解严重失血不只是“看到血”，还会影响血液循环、血压和氧气运输。共读时重点应放在严重外伤需要成人和专业救助，以及红血球、血小板、血管和输血支持之间的关系。",
+        "readingFocus": "“为什么大量失血会影响全身”：用失血、血压下降、氧气送不到、凝血和输血支持四个节点解释，不展示完整剧情或急救教程。",
+        "keyBiologyConcepts": [
+          "出血性休克",
+          "失血",
+          "血压下降",
+          "氧气运输",
+          "组织缺氧",
+          "红血球",
+          "血小板",
+          "凝血",
+          "输血",
+          "专业救助"
+        ]
+      },
+      "parentNote": "这个主题比前几个更紧张，包含严重外伤和休克概念。共读时请先说明：普通小擦伤和大量出血完全不同；严重出血要立刻找成人并寻求专业帮助。页面内容只做科学理解，不替代急救训练或医学建议。",
+      "parentReadingNote": "这个主题比前几个更紧张，包含严重外伤和休克概念。共读时请先说明：普通小擦伤和大量出血完全不同；严重出血要立刻找成人并寻求专业帮助。页面内容只做科学理解，不替代急救训练或医学建议。",
+      "bodyScienceStations": [
+        {
+          "stationId": "hemorrhagic-shock-blood-volume",
+          "topicId": "hemorrhagic-shock",
+          "title": "为什么大量失血会影响全身",
+          "coreQuestion": "血液少了，身体会遇到什么困难？",
+          "explanation": "大量失血会让血管里的血液总量下降，循环压力变弱，氧气和养分就更难被送到全身组织。",
+          "imagePromptId": "work-cells-hemorrhagic-shock-blood-volume",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是为什么大量失血会影响全身：血管内血液量明显减少，红血球运输路线变得稀疏吃力的温和示意图。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/hemorrhagic-shock/hemorrhagic-shock-v2-station-01.webp",
+          "imageAlt": "血管内血液量减少、运输路线变得吃力的儿童科普图。",
+          "relatedPageIds": [
+            "hemorrhagic-shock__v04_page-068",
+            "hemorrhagic-shock__v04_page-080"
+          ],
+          "biologyConcepts": [
+            "失血",
+            "血容量",
+            "血压下降"
+          ],
+          "encyclopediaTags": [
+            "失血",
+            "血压",
+            "循环"
+          ],
+          "parentNote": "强调这是严重情况，不和普通小伤口混为一谈。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "hemorrhagic-shock-oxygen-delivery-risk",
+          "topicId": "hemorrhagic-shock",
+          "title": "红血球送不到氧气会怎样",
+          "coreQuestion": "为什么红血球数量和路线都很重要？",
+          "explanation": "红血球负责运送氧气。大量失血时，能运送氧气的红血球变少，身体组织可能得不到足够氧气。",
+          "imagePromptId": "work-cells-hemorrhagic-shock-oxygen-delivery-risk",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是红血球送不到氧气会怎样：红血球数量减少导致氧气包裹难以送到组织细胞旁边的清楚流程图。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/hemorrhagic-shock/hemorrhagic-shock-v2-station-02.webp",
+          "imageAlt": "红血球减少后氧气难以送到组织细胞旁边的温和流程图。",
+          "relatedPageIds": [
+            "hemorrhagic-shock__v04_page-071",
+            "hemorrhagic-shock__v04_page-088"
+          ],
+          "biologyConcepts": [
+            "红血球",
+            "氧气运输",
+            "组织供氧不足"
+          ],
+          "encyclopediaTags": [
+            "红血球",
+            "氧气",
+            "组织缺氧"
+          ],
+          "parentNote": "把“供氧不足”讲成细胞拿不到需要的氧气，不渲染危险画面。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "hemorrhagic-shock-platelet-repair",
+          "topicId": "hemorrhagic-shock",
+          "title": "血小板为什么要帮助止血",
+          "coreQuestion": "身体怎样努力把破口堵住？",
+          "explanation": "血小板会在受伤血管附近集合，和凝血过程一起形成临时堵漏结构，帮助减少继续失血。",
+          "imagePromptId": "work-cells-hemorrhagic-shock-platelet-repair",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是血小板为什么要帮助止血：血小板和纤维蛋白在破损血管边缘形成温和堵漏结构的示意图。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/hemorrhagic-shock/hemorrhagic-shock-v2-station-03.webp",
+          "imageAlt": "血小板和纤维蛋白在破损血管边缘形成堵漏结构的儿童科普图。",
+          "relatedPageIds": [
+            "hemorrhagic-shock__v04_page-104",
+            "hemorrhagic-shock__v04_page-106"
+          ],
+          "biologyConcepts": [
+            "血小板",
+            "凝血",
+            "血管破裂"
+          ],
+          "encyclopediaTags": [
+            "血小板",
+            "凝血",
+            "伤口修复"
+          ],
+          "parentNote": "说明身体会努力止血，但严重失血仍需要专业处理。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "hemorrhagic-shock-transfusion-support",
+          "topicId": "hemorrhagic-shock",
+          "title": "输血为什么能帮助恢复运输能力",
+          "coreQuestion": "为什么有时需要外来的血液帮助？",
+          "explanation": "在严重失血时，医学处理可能需要补充血液成分，让循环和氧气运输能力逐步恢复。孩子只需要理解这是专业人员处理的帮助方式。",
+          "imagePromptId": "work-cells-hemorrhagic-shock-transfusion-support",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是输血为什么能帮助恢复运输能力：医疗场景被抽象为安全补充血液运输队伍，红血球重新增加的温和示意图。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/hemorrhagic-shock/hemorrhagic-shock-v2-station-04.webp",
+          "imageAlt": "专业医疗帮助下血液运输能力逐步恢复的温和儿童科普图。",
+          "relatedPageIds": [
+            "hemorrhagic-shock__v04_page-121",
+            "hemorrhagic-shock__v04_page-128"
+          ],
+          "biologyConcepts": [
+            "输血",
+            "循环支持",
+            "氧气运输恢复"
+          ],
+          "encyclopediaTags": [
+            "输血",
+            "医疗帮助",
+            "恢复供氧"
+          ],
+          "parentNote": "明确不让孩子自行处理，严重情况找成人和专业医护。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "hemorrhagic-shock-q01",
+          "topicId": "hemorrhagic-shock",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "哪里显示情况严重",
+          "question": "看相关页面时，哪些线索说明这不是普通小伤口？",
+          "answer": "可以看血液流失、细胞被冲散、环境变冷和运输变困难等线索。",
+          "relatedPageIds": [
+            "hemorrhagic-shock__v04_page-068",
+            "hemorrhagic-shock__v04_page-080"
+          ],
+          "parentHint": "先区分严重外伤和小擦伤。",
+          "biologyConcepts": [
+            "失血",
+            "严重外伤"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "hemorrhagic-shock-q02",
+          "topicId": "hemorrhagic-shock",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "红血球还在努力什么",
+          "question": "危机中红血球最重要的任务是什么？",
+          "answer": "仍然是把氧气送到身体需要的地方。",
+          "relatedPageIds": [
+            "hemorrhagic-shock__v04_page-071"
+          ],
+          "parentHint": "把焦点放回供氧任务。",
+          "biologyConcepts": [
+            "红血球",
+            "氧气运输"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "hemorrhagic-shock-q03",
+          "topicId": "hemorrhagic-shock",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么大量失血危险",
+          "question": "为什么大量失血会影响身体各处？",
+          "answer": "因为血液负责运输氧气和维持循环，少太多时全身组织都可能受影响。",
+          "relatedPageIds": [
+            "hemorrhagic-shock__v04_page-088"
+          ],
+          "parentHint": "不讲复杂急救步骤，只讲运输变困难。",
+          "biologyConcepts": [
+            "血液循环",
+            "组织供氧"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "hemorrhagic-shock-q04",
+          "topicId": "hemorrhagic-shock",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "血小板在帮什么忙",
+          "question": "血小板为什么要赶到破损血管附近？",
+          "answer": "它们会帮助止血和修补破口，减少继续流失。",
+          "relatedPageIds": [
+            "hemorrhagic-shock__v04_page-104"
+          ],
+          "parentHint": "和擦伤主题做温和连接。",
+          "biologyConcepts": [
+            "血小板",
+            "凝血"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "hemorrhagic-shock-q05",
+          "topicId": "hemorrhagic-shock",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "看到严重出血怎么办",
+          "question": "如果看到严重出血，孩子第一件事应该做什么？",
+          "answer": "马上找附近成人帮忙，并让成人联系专业救助。",
+          "relatedPageIds": [
+            "hemorrhagic-shock__v04_page-080"
+          ],
+          "parentHint": "这是安全边界，不让孩子自己处理。",
+          "biologyConcepts": [
+            "求助成人",
+            "专业救助"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "hemorrhagic-shock-q06",
+          "topicId": "hemorrhagic-shock",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "休克",
+          "question": "这里说的休克是什么意思？",
+          "answer": "可以简单理解为循环供血不足，身体组织得不到足够支持的危险状态。",
+          "relatedPageIds": [
+            "hemorrhagic-shock__v04_page-088"
+          ],
+          "parentHint": "保持概念层解释，不替代医学判断。",
+          "biologyConcepts": [
+            "休克",
+            "循环供血"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "sourceNotes": [
+        "漫画来源：第4卷 第17-18话，只保留页码线索，不展示漫画全文。",
+        "动画来源只记录主题级摘要和集数线索，不接入视频、字幕或对白。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/hemorrhagic-shock/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "hemorrhagic-shock__v04_page-068",
+        "hemorrhagic-shock__v04_page-071",
+        "hemorrhagic-shock__v04_page-080",
+        "hemorrhagic-shock__v04_page-088",
+        "hemorrhagic-shock__v04_page-104",
+        "hemorrhagic-shock__v04_page-121"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "hemorrhagic-shock-animation-s1e12-overview",
+          "sourceLabel": "动画 S1 第12话摘要",
+          "summary": "只记录前篇与大量失血、循环压力和氧气运输受阻相关的摘要线索。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "hemorrhagic-shock-animation-s1e13-overview",
+          "sourceLabel": "动画 S1 第13话摘要",
+          "summary": "只记录后篇与循环支持、止血和恢复运输能力相关的摘要线索。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 17,
