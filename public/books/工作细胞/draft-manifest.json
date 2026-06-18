@@ -2370,6 +2370,9 @@
       ],
       "parentQuestionCards": [
         {
+          "cardId": "cedar-pollen-allergy-q01",
+          "topicId": "cedar-pollen-allergy",
+          "type": "observation",
           "category": "观察问题",
           "title": "花粉像什么",
           "question": "看相关页面时，花粉更像普通小颗粒，还是像会主动攻击身体的坏东西？",
@@ -2384,6 +2387,9 @@
           ]
         },
         {
+          "cardId": "cedar-pollen-allergy-q02",
+          "topicId": "cedar-pollen-allergy",
+          "type": "observation",
           "category": "观察问题",
           "title": "症状从哪里来",
           "question": "画面里哪些线索让你想到鼻水、喷嚏或鼻子不舒服？",
@@ -2399,6 +2405,9 @@
           ]
         },
         {
+          "cardId": "cedar-pollen-allergy-q03",
+          "topicId": "cedar-pollen-allergy",
+          "type": "understanding",
           "category": "理解问题",
           "title": "为什么会误报",
           "question": "如果花粉不是细菌，身体为什么还会拉响警报？",
@@ -2414,6 +2423,9 @@
           ]
         },
         {
+          "cardId": "cedar-pollen-allergy-q04",
+          "topicId": "cedar-pollen-allergy",
+          "type": "understanding",
           "category": "理解问题",
           "title": "肥大细胞做了什么",
           "question": "肥大细胞被触发后，为什么鼻子会更难受？",
@@ -2428,6 +2440,9 @@
           ]
         },
         {
+          "cardId": "cedar-pollen-allergy-q05",
+          "topicId": "cedar-pollen-allergy",
+          "type": "life-connection",
           "category": "联系生活问题",
           "title": "花粉多时怎么办",
           "question": "如果花粉多、鼻子不舒服，哪些做法可能让身体轻松一点？",
@@ -2442,6 +2457,9 @@
           ]
         },
         {
+          "cardId": "cedar-pollen-allergy-q06",
+          "topicId": "cedar-pollen-allergy",
+          "type": "life-connection",
           "category": "联系生活问题",
           "title": "药能自己用吗",
           "question": "漫画里药物很厉害，现实里孩子可以自己决定用药吗？",
@@ -2456,6 +2474,9 @@
           ]
         },
         {
+          "cardId": "cedar-pollen-allergy-q07",
+          "topicId": "cedar-pollen-allergy",
+          "type": "science-concept",
           "category": "科学概念问题",
           "title": "IgE是什么",
           "question": "IgE抗体在过敏反应里像什么？",
@@ -2471,6 +2492,9 @@
           ]
         },
         {
+          "cardId": "cedar-pollen-allergy-q08",
+          "topicId": "cedar-pollen-allergy",
+          "type": "science-concept",
           "category": "科学概念问题",
           "title": "过敏不是感染",
           "question": "过敏和被细菌感染是一回事吗？",
@@ -4884,6 +4908,258 @@
         "influenza__v01_page-131",
         "influenza__v01_page-132",
         "influenza__v01_page-133"
+      ],
+      "parentNote": "这是一段科普共读内容，不替代医学建议。可以把重点放在身体如何识别感染、合作清除病毒；如果孩子真的不舒服，应由成人判断并及时咨询医生。",
+      "bodyScienceStations": [
+        {
+          "stationId": "influenza-virus-entry",
+          "topicId": "influenza",
+          "title": "病毒进入身体后发生了什么",
+          "coreQuestion": "流感病毒进来后，会马上让人很难受吗？",
+          "explanation": "流感病毒通常先接触呼吸道，再进入一些细胞里复制自己。被感染的细胞会发出异常信号，提醒免疫系统：这里需要帮助。",
+          "imagePromptId": "work-cells-influenza-virus-entry",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是病毒进入身体后发生了什么：流感病毒接近呼吸道黏膜，少量细胞发出求助信号的温和儿童科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-virus-entry.webp",
+          "imageAlt": "流感病毒接近呼吸道黏膜，少量细胞发出求助信号的温和儿童科普图。",
+          "relatedPageIds": [
+            "influenza__v01_page-105"
+          ],
+          "biologyConcepts": [
+            "流感病毒",
+            "呼吸道黏膜",
+            "细胞感染"
+          ],
+          "encyclopediaTags": [
+            "病毒",
+            "呼吸道",
+            "被感染细胞"
+          ],
+          "parentNote": "可以用“病毒借用细胞机器复制”来解释，避免把病毒说成会思考的坏人。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "influenza-infected-cell-recognition",
+          "topicId": "influenza",
+          "title": "免疫细胞为什么要识别感染细胞",
+          "coreQuestion": "为什么身体不是只找病毒，也要找被感染的细胞？",
+          "explanation": "有些病毒躲进细胞里复制。免疫系统需要识别哪些细胞已经被感染，才能减少病毒继续扩散，这也是T细胞等免疫细胞的重要工作。",
+          "imagePromptId": "work-cells-influenza-infected-cell-recognition",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是免疫细胞为什么要识别感染细胞：免疫细胞通过信号识别被感染细胞，周围健康细胞保持安全距离的解释图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-infected-cell-recognition.webp",
+          "imageAlt": "免疫细胞通过信号识别被感染细胞，周围健康细胞保持安全距离的解释图。",
+          "relatedPageIds": [
+            "influenza__v01_page-116",
+            "influenza__v01_page-123"
+          ],
+          "biologyConcepts": [
+            "被感染细胞",
+            "抗原呈递",
+            "T细胞识别"
+          ],
+          "encyclopediaTags": [
+            "T细胞",
+            "抗原",
+            "免疫识别"
+          ],
+          "parentNote": "强调“识别”是为了保护更多细胞，不需要把清除过程讲得激烈。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "influenza-symptom-response",
+          "topicId": "influenza",
+          "title": "症状和免疫反应的关系",
+          "coreQuestion": "发烧、疲劳、流鼻涕一定都是病毒直接造成的吗？",
+          "explanation": "很多不舒服来自身体的防御反应。发烧像把环境调得不适合病毒，疲劳提醒身体休息，鼻涕和咳嗽帮助把外来物带出去。",
+          "imagePromptId": "work-cells-influenza-symptom-response",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是症状和免疫反应的关系：发热、休息、鼻腔黏液和免疫信号用温和图标连接起来的儿童科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-symptom-response.webp",
+          "imageAlt": "发热、休息、鼻腔黏液和免疫信号用温和图标连接起来的儿童科普图。",
+          "relatedPageIds": [
+            "influenza__v01_page-127",
+            "influenza__v01_page-134"
+          ],
+          "biologyConcepts": [
+            "发热",
+            "炎症信号",
+            "休息恢复"
+          ],
+          "encyclopediaTags": [
+            "发烧",
+            "鼻涕",
+            "免疫反应"
+          ],
+          "parentNote": "说明症状是身体在努力工作；同时提醒真实生病时要听成人安排。",
+          "status": "published",
+          "priority": "medium"
+        },
+        {
+          "stationId": "influenza-flu-vs-cold",
+          "topicId": "influenza",
+          "title": "流感和普通感冒不完全一样",
+          "coreQuestion": "流感是不是普通感冒的另一个名字？",
+          "explanation": "流感由流感病毒引起，常常来得更急，可能更容易让人发热、酸痛和疲劳。普通感冒可能由很多不同病毒引起，通常较轻，但都需要休息和照护。",
+          "imagePromptId": "work-cells-influenza-flu-vs-cold",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是流感和普通感冒不完全一样：两条并排的温和科普路径对比流感和普通感冒，使用抽象病毒和休息图标。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-flu-vs-cold.webp",
+          "imageAlt": "两条并排的温和科普路径对比流感和普通感冒，使用抽象病毒和休息图标。",
+          "relatedPageIds": [
+            "influenza__v01_page-134",
+            "influenza__v01_page-136"
+          ],
+          "biologyConcepts": [
+            "流感病毒",
+            "普通感冒",
+            "症状差异"
+          ],
+          "encyclopediaTags": [
+            "流感",
+            "普通感冒",
+            "休息"
+          ],
+          "parentNote": "避免让孩子紧张，用“名字相近但不完全一样”帮助区分。",
+          "status": "published",
+          "priority": "medium"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "influenza-q01",
+          "topicId": "influenza",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "哪里像入口",
+          "question": "看相关页面时，哪些画面线索让你想到病毒进入了身体？",
+          "answer": "可以找呼吸道、细胞变化和免疫细胞开始忙起来的线索。",
+          "relatedPageIds": [
+            "influenza__v01_page-105"
+          ],
+          "parentHint": "只观察画面现象，不要求复述对白。",
+          "biologyConcepts": [
+            "病毒进入",
+            "呼吸道"
+          ]
+        },
+        {
+          "cardId": "influenza-q02",
+          "topicId": "influenza",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "身体忙起来",
+          "question": "画面里有哪些地方表现出身体正在防御？",
+          "answer": "免疫细胞聚集、信号传递和被感染细胞被关注，都说明身体在防御。",
+          "relatedPageIds": [
+            "influenza__v01_page-116"
+          ],
+          "parentHint": "把“打斗”转成“身体在处理问题”。",
+          "biologyConcepts": [
+            "免疫防御",
+            "感染细胞"
+          ]
+        },
+        {
+          "cardId": "influenza-q03",
+          "topicId": "influenza",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么要找感染细胞",
+          "question": "病毒如果躲进细胞里，免疫系统为什么还要识别那个细胞？",
+          "answer": "因为被感染细胞可能继续制造病毒，识别它能帮助减少扩散。",
+          "relatedPageIds": [
+            "influenza__v01_page-123"
+          ],
+          "parentHint": "用“找出正在冒烟的房间”作温和类比。",
+          "biologyConcepts": [
+            "T细胞识别",
+            "抗原呈递"
+          ]
+        },
+        {
+          "cardId": "influenza-q04",
+          "topicId": "influenza",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "发烧像什么",
+          "question": "发烧一定是坏事吗？身体为什么会升高温度？",
+          "answer": "发烧可能是防御反应的一部分，但温度太高或不舒服时要让成人处理。",
+          "relatedPageIds": [
+            "influenza__v01_page-127"
+          ],
+          "parentHint": "科普不替代照护；强调需要成人判断。",
+          "biologyConcepts": [
+            "发热",
+            "免疫反应"
+          ]
+        },
+        {
+          "cardId": "influenza-q05",
+          "topicId": "influenza",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "生病时为什么要休息",
+          "question": "流感或感冒时，为什么大人常说要多休息？",
+          "answer": "休息能让身体把能量更多用在恢复和免疫工作上。",
+          "relatedPageIds": [
+            "influenza__v01_page-134"
+          ],
+          "parentHint": "联系孩子熟悉的“充电”经验。",
+          "biologyConcepts": [
+            "能量分配",
+            "恢复"
+          ]
+        },
+        {
+          "cardId": "influenza-q06",
+          "topicId": "influenza",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "怎样减少传播",
+          "question": "如果身边有人咳嗽流鼻涕，哪些做法可以保护大家？",
+          "answer": "洗手、通风、咳嗽时遮挡、身体不舒服时休息，都能减少传播。",
+          "relatedPageIds": [
+            "influenza__v01_page-136"
+          ],
+          "parentHint": "保持温和，不责备生病的人。",
+          "biologyConcepts": [
+            "呼吸道传播",
+            "生活防护"
+          ]
+        },
+        {
+          "cardId": "influenza-q07",
+          "topicId": "influenza",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "T细胞在找什么",
+          "question": "T细胞识别感染细胞时，重点是在找什么线索？",
+          "answer": "它会根据细胞展示出的异常信号来判断哪里可能被感染。",
+          "relatedPageIds": [
+            "influenza__v01_page-123"
+          ],
+          "parentHint": "把抗原说成“细胞展示出来的线索”。",
+          "biologyConcepts": [
+            "T细胞",
+            "抗原"
+          ]
+        },
+        {
+          "cardId": "influenza-q08",
+          "topicId": "influenza",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "流感和感冒",
+          "question": "流感和普通感冒为什么不能完全画等号？",
+          "answer": "它们可能由不同病毒引起，严重程度和身体反应也不完全一样。",
+          "relatedPageIds": [
+            "influenza__v01_page-134"
+          ],
+          "parentHint": "不展开复杂诊断，只保留基本区别。",
+          "biologyConcepts": [
+            "流感病毒",
+            "普通感冒"
+          ]
+        }
       ]
     },
     {
@@ -6167,6 +6443,258 @@
         "abrasion__v01_page-172",
         "abrasion__v01_page-173",
         "abrasion__v01_page-174"
+      ],
+      "parentNote": "这个主题会涉及伤口和止血画面。共读时可以把重点放在皮肤如何保护身体、血小板如何帮忙止血，以及受伤后找成人清洁和照护。",
+      "bodyScienceStations": [
+        {
+          "stationId": "abrasion-skin-wall",
+          "topicId": "abrasion",
+          "title": "皮肤为什么像身体的城墙",
+          "coreQuestion": "为什么小小的擦伤也要认真清洁？",
+          "explanation": "皮肤把身体内部和外界隔开，像一道柔软的保护墙。擦伤时这道保护墙出现小缺口，灰尘和细菌就更容易靠近。",
+          "imagePromptId": "work-cells-abrasion-skin-wall",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是皮肤为什么像身体的城墙：皮肤表面像柔软城墙一样保护身体，外界小颗粒被挡在外面的儿童科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-skin-wall.webp",
+          "imageAlt": "皮肤表面像柔软城墙一样保护身体，外界小颗粒被挡在外面的儿童科普图。",
+          "relatedPageIds": [
+            "abrasion__v01_page-142"
+          ],
+          "biologyConcepts": [
+            "皮肤屏障",
+            "开放伤口",
+            "感染入口"
+          ],
+          "encyclopediaTags": [
+            "皮肤",
+            "屏障",
+            "擦伤"
+          ],
+          "parentNote": "可以把皮肤说成“会自我修补的保护层”，避免恐怖化伤口。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "abrasion-why-bleeding",
+          "topicId": "abrasion",
+          "title": "擦伤后为什么会流血",
+          "coreQuestion": "为什么皮肤破了以后会看到血？",
+          "explanation": "皮肤下面有很多细小血管。擦伤如果碰到这些血管，血液就会从小缺口流出来；这也是身体发现受伤并开始修复的信号。",
+          "imagePromptId": "work-cells-abrasion-why-bleeding",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是擦伤后为什么会流血：皮肤浅层小血管被擦到，少量血液从小缺口流出的温和非血腥示意图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-why-bleeding.webp",
+          "imageAlt": "皮肤浅层小血管被擦到，少量血液从小缺口流出的温和非血腥示意图。",
+          "relatedPageIds": [
+            "abrasion__v01_page-142",
+            "abrasion__v01_page-145"
+          ],
+          "biologyConcepts": [
+            "毛细血管",
+            "出血",
+            "伤口信号"
+          ],
+          "encyclopediaTags": [
+            "血管",
+            "血液",
+            "伤口"
+          ],
+          "parentNote": "用“红色信号”解释少量出血，不渲染疼痛。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "abrasion-platelet-clot",
+          "topicId": "abrasion",
+          "title": "血小板和凝血如何帮助止血",
+          "coreQuestion": "身体怎样把伤口的小洞堵住？",
+          "explanation": "血小板会在伤口附近集合，和纤维蛋白一起形成网，像临时补丁一样帮助止血，并保护伤口慢慢结痂。",
+          "imagePromptId": "work-cells-abrasion-platelet-clot",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是血小板和凝血如何帮助止血：血小板小圆片聚集，纤维蛋白像细网一样温和封住浅表伤口的科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-platelet-clot.webp",
+          "imageAlt": "血小板小圆片聚集，纤维蛋白像细网一样温和封住浅表伤口的科普图。",
+          "relatedPageIds": [
+            "abrasion__v01_page-164",
+            "abrasion__v01_page-167"
+          ],
+          "biologyConcepts": [
+            "血小板",
+            "纤维蛋白",
+            "凝血"
+          ],
+          "encyclopediaTags": [
+            "血小板",
+            "凝血",
+            "结痂"
+          ],
+          "parentNote": "提醒孩子不要抠痂，因为那是身体正在修补的保护层。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "abrasion-white-cells-arrive",
+          "topicId": "abrasion",
+          "title": "白细胞为什么来到伤口附近",
+          "coreQuestion": "伤口附近为什么会有白细胞赶来？",
+          "explanation": "擦伤让外界细菌有机会靠近，白细胞会到伤口附近巡逻和清理，帮助降低感染风险，让修复环境更安全。",
+          "imagePromptId": "work-cells-abrasion-white-cells-arrive",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是白细胞为什么来到伤口附近：白细胞在浅表伤口附近温和巡逻，清理少量外来小颗粒的儿童科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-white-cells-arrive.webp",
+          "imageAlt": "白细胞在浅表伤口附近温和巡逻，清理少量外来小颗粒的儿童科普图。",
+          "relatedPageIds": [
+            "abrasion__v01_page-146",
+            "abrasion__v01_page-154"
+          ],
+          "biologyConcepts": [
+            "白细胞",
+            "细菌清理",
+            "炎症反应"
+          ],
+          "encyclopediaTags": [
+            "白细胞",
+            "细菌",
+            "伤口护理"
+          ],
+          "parentNote": "把白细胞讲成清理队，不把细菌画成恐怖怪物。",
+          "status": "published",
+          "priority": "medium"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "abrasion-q01",
+          "topicId": "abrasion",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "皮肤哪里破了",
+          "question": "看相关页面时，哪些线索说明皮肤这道保护层出现了缺口？",
+          "answer": "可以观察伤口边缘、血液和细胞聚集的位置。",
+          "relatedPageIds": [
+            "abrasion__v01_page-142"
+          ],
+          "parentHint": "提醒孩子只看线索，不需要害怕伤口。",
+          "biologyConcepts": [
+            "皮肤屏障",
+            "擦伤"
+          ]
+        },
+        {
+          "cardId": "abrasion-q02",
+          "topicId": "abrasion",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "谁在赶来",
+          "question": "伤口出现后，哪些身体成员开始靠近伤口？",
+          "answer": "血小板和白细胞都会来到附近，各自做不同工作。",
+          "relatedPageIds": [
+            "abrasion__v01_page-146",
+            "abrasion__v01_page-164"
+          ],
+          "parentHint": "引导孩子区分“止血”和“清理”。",
+          "biologyConcepts": [
+            "血小板",
+            "白细胞"
+          ]
+        },
+        {
+          "cardId": "abrasion-q03",
+          "topicId": "abrasion",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么会流血",
+          "question": "擦伤后为什么有时会看到血？",
+          "answer": "因为皮肤下的小血管被碰到，血液从小缺口流出来。",
+          "relatedPageIds": [
+            "abrasion__v01_page-145"
+          ],
+          "parentHint": "用浅表小血管解释，不强化血腥画面。",
+          "biologyConcepts": [
+            "毛细血管",
+            "出血"
+          ]
+        },
+        {
+          "cardId": "abrasion-q04",
+          "topicId": "abrasion",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "血小板怎么堵洞",
+          "question": "血小板怎样帮助伤口不再一直流血？",
+          "answer": "它们会聚在一起，并和纤维蛋白形成临时补丁，帮助止血。",
+          "relatedPageIds": [
+            "abrasion__v01_page-164"
+          ],
+          "parentHint": "可以用“临时小补丁”作类比。",
+          "biologyConcepts": [
+            "血小板",
+            "凝血"
+          ]
+        },
+        {
+          "cardId": "abrasion-q05",
+          "topicId": "abrasion",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "为什么要清洁伤口",
+          "question": "擦伤后为什么要让成人帮忙清洁伤口？",
+          "answer": "清洁能减少灰尘和细菌，让身体修复更顺利。",
+          "relatedPageIds": [
+            "abrasion__v01_page-146"
+          ],
+          "parentHint": "保持为生活照护建议，不替代医疗处理。",
+          "biologyConcepts": [
+            "伤口护理",
+            "细菌"
+          ]
+        },
+        {
+          "cardId": "abrasion-q06",
+          "topicId": "abrasion",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "为什么不要抠痂",
+          "question": "伤口结痂后，为什么最好不要一直抠？",
+          "answer": "痂像身体做出的保护盖，抠掉可能让伤口重新打开。",
+          "relatedPageIds": [
+            "abrasion__v01_page-168"
+          ],
+          "parentHint": "如果孩子有经历，可以聊“痒也要忍一忍”。",
+          "biologyConcepts": [
+            "结痂",
+            "组织修复"
+          ]
+        },
+        {
+          "cardId": "abrasion-q07",
+          "topicId": "abrasion",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "皮肤屏障",
+          "question": "皮肤屏障这个词是什么意思？",
+          "answer": "它指皮肤像保护层一样，把身体内部和外界隔开。",
+          "relatedPageIds": [
+            "abrasion__v01_page-142"
+          ],
+          "parentHint": "用衣服、门或城墙作日常类比。",
+          "biologyConcepts": [
+            "皮肤屏障"
+          ]
+        },
+        {
+          "cardId": "abrasion-q08",
+          "topicId": "abrasion",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "白细胞清理队",
+          "question": "白细胞来到伤口附近，主要想解决什么问题？",
+          "answer": "它们会帮助清理外来细菌和杂物，降低感染风险。",
+          "relatedPageIds": [
+            "abrasion__v01_page-154"
+          ],
+          "parentHint": "把免疫反应说成合作清理，不讲成吓人的战斗。",
+          "biologyConcepts": [
+            "白细胞",
+            "感染风险"
+          ]
+        }
       ]
     },
     {
@@ -8268,6 +8796,257 @@
         "heatstroke__v02_page-060",
         "heatstroke__v02_page-061",
         "heatstroke__v02_page-062"
+      ],
+      "parentNote": "中暑可能危险，但共读时不必制造紧张感。请把重点放在预防、休息、降温、补水，以及头晕、无力、很热时及时求助成人。",
+      "bodyScienceStations": [
+        {
+          "stationId": "heatstroke-temperature-balance",
+          "topicId": "heatstroke",
+          "title": "身体为什么需要保持体温稳定",
+          "coreQuestion": "为什么身体不能一直变得很热？",
+          "explanation": "身体里的细胞适合在比较稳定的温度下工作。环境太热、身体散热不够时，细胞会变得吃力，人也可能头晕、无力。",
+          "imagePromptId": "work-cells-heatstroke-temperature-balance",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是身体为什么需要保持体温稳定：身体像温和的平衡系统一样保持体温稳定，外界太阳和体内细胞用清楚结构表现。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-temperature-balance.webp",
+          "imageAlt": "身体像温和的平衡系统一样保持体温稳定，外界太阳和体内细胞用清楚结构表现。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-033"
+          ],
+          "biologyConcepts": [
+            "体温调节",
+            "高温环境",
+            "细胞稳态"
+          ],
+          "encyclopediaTags": [
+            "体温",
+            "稳态",
+            "中暑"
+          ],
+          "parentNote": "用“身体喜欢稳定温度”解释，不把中暑画成可怕事件。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "heatstroke-sweat-cooling",
+          "topicId": "heatstroke",
+          "title": "出汗为什么可以帮助散热",
+          "coreQuestion": "汗水怎么帮身体变凉？",
+          "explanation": "出汗后，汗水从皮肤表面蒸发，会带走一部分热量。这个过程需要身体有足够水分，所以热天补水很重要。",
+          "imagePromptId": "work-cells-heatstroke-sweat-cooling",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是出汗为什么可以帮助散热：皮肤表面汗滴蒸发带走热量，旁边有清凉气流和水分补充图标的儿童科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-sweat-cooling.webp",
+          "imageAlt": "皮肤表面汗滴蒸发带走热量，旁边有清凉气流和水分补充图标的儿童科普图。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-036"
+          ],
+          "biologyConcepts": [
+            "出汗散热",
+            "蒸发",
+            "水分平衡"
+          ],
+          "encyclopediaTags": [
+            "汗腺",
+            "出汗",
+            "散热"
+          ],
+          "parentNote": "可以让孩子想象洗手后风吹会凉，但强调热天仍要休息补水。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "heatstroke-water-salt-loss",
+          "topicId": "heatstroke",
+          "title": "缺水和盐分流失为什么会危险",
+          "coreQuestion": "只要喝一点水，就一定没事了吗？",
+          "explanation": "大量出汗会让身体失去水分，也会带走一些盐分。缺水会让血液循环更吃力，严重时需要成人及时处理。",
+          "imagePromptId": "work-cells-heatstroke-water-salt-loss",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是缺水和盐分流失为什么会危险：水滴和盐分小颗粒从身体散热系统流失，循环管道变得吃力的温和示意图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-water-salt-loss.webp",
+          "imageAlt": "水滴和盐分小颗粒从身体散热系统流失，循环管道变得吃力的温和示意图。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-040",
+            "heatstroke__v02_page-050"
+          ],
+          "biologyConcepts": [
+            "脱水",
+            "电解质",
+            "血液循环负担"
+          ],
+          "encyclopediaTags": [
+            "水分",
+            "盐分",
+            "脱水"
+          ],
+          "parentNote": "不让孩子自行判断严重程度，强调不舒服要告诉成人。",
+          "status": "published",
+          "priority": "high"
+        },
+        {
+          "stationId": "heatstroke-cool-rest-help",
+          "topicId": "heatstroke",
+          "title": "中暑时为什么要降温、补水、休息并求助",
+          "coreQuestion": "觉得很热很晕时，身体最需要什么帮助？",
+          "explanation": "中暑风险出现时，应尽快离开高温环境，到阴凉处休息，降温和补水，并及时让成人知道；严重不适要寻求专业帮助。",
+          "imagePromptId": "work-cells-heatstroke-cool-rest-help",
+          "imagePrompt": "【ChatGPT image】请生成一张原创儿童科普插图，横向4:3构图，主题是中暑时为什么要降温、补水、休息并求助：孩子在阴凉处休息、补水、用凉毛巾降温，成人在旁边帮助的温和安全科普图。。画面明亮、干净、温和、结构清楚，适合家庭阅读助手中6-10岁儿童和家长共读。不要使用《工作细胞》漫画角色，不要模仿《工作细胞》画风，不复刻任何漫画分镜或角色服装，不出现漫画对白，不出现完整漫画页面，不出现品牌、Logo、水印、二维码，不使用医学诊断图风格，不要血腥、恐怖或过度医学化。尽量不要在图片内嵌文字，文字说明交给网页层。",
+          "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-cool-rest-help.webp",
+          "imageAlt": "孩子在阴凉处休息、补水、用凉毛巾降温，成人在旁边帮助的温和安全科普图。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-056",
+            "heatstroke__v02_page-062"
+          ],
+          "biologyConcepts": [
+            "降温",
+            "补水",
+            "成人求助"
+          ],
+          "encyclopediaTags": [
+            "阴凉处",
+            "休息",
+            "求助成人"
+          ],
+          "parentNote": "把它作为安全行动清单：停下来、去阴凉处、喝水、找成人。",
+          "status": "published",
+          "priority": "high"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "heatstroke-q01",
+          "topicId": "heatstroke",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "哪里很热",
+          "question": "看相关页面时，哪些线索让你觉得环境太热了？",
+          "answer": "可以看太阳、高温、细胞无力和水分减少的线索。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-033"
+          ],
+          "parentHint": "把观察转成安全提醒。",
+          "biologyConcepts": [
+            "高温环境",
+            "中暑"
+          ]
+        },
+        {
+          "cardId": "heatstroke-q02",
+          "topicId": "heatstroke",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "身体缺什么",
+          "question": "画面里哪些地方让你想到身体需要水分和休息？",
+          "answer": "口渴、无力、流汗多和行动变慢，都可能提示身体需要帮助。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-036"
+          ],
+          "parentHint": "鼓励孩子说出现象，不做诊断。",
+          "biologyConcepts": [
+            "脱水",
+            "休息"
+          ]
+        },
+        {
+          "cardId": "heatstroke-q03",
+          "topicId": "heatstroke",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么要稳定体温",
+          "question": "为什么身体要努力保持合适的温度？",
+          "answer": "因为细胞在稳定温度下更容易正常工作。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-033"
+          ],
+          "parentHint": "用“机器太热会不好工作”作简单类比。",
+          "biologyConcepts": [
+            "体温调节",
+            "稳态"
+          ]
+        },
+        {
+          "cardId": "heatstroke-q04",
+          "topicId": "heatstroke",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "汗水怎样散热",
+          "question": "出汗为什么能让身体凉一点？",
+          "answer": "汗水蒸发时会带走热量，帮助皮肤表面降温。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-036"
+          ],
+          "parentHint": "可以联系洗手后风吹变凉的体验。",
+          "biologyConcepts": [
+            "出汗",
+            "蒸发散热"
+          ]
+        },
+        {
+          "cardId": "heatstroke-q05",
+          "topicId": "heatstroke",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "热天怎么预防",
+          "question": "大热天外出前，可以做哪些准备保护身体？",
+          "answer": "带水、戴帽子、避开暴晒、安排休息，并听成人安排。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-056"
+          ],
+          "parentHint": "强调预防，不制造恐慌。",
+          "biologyConcepts": [
+            "补水",
+            "避暑"
+          ]
+        },
+        {
+          "cardId": "heatstroke-q06",
+          "topicId": "heatstroke",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "什么时候找成人",
+          "question": "如果你觉得头晕、很热、没力气，应该怎么办？",
+          "answer": "马上告诉成人，去阴凉处休息、降温、补水；严重不适要及时求助。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-062"
+          ],
+          "parentHint": "这是安全边界，孩子不需要自己硬撑。",
+          "biologyConcepts": [
+            "求助成人",
+            "安全行动"
+          ]
+        },
+        {
+          "cardId": "heatstroke-q07",
+          "topicId": "heatstroke",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "水分平衡",
+          "question": "水分平衡是什么意思？",
+          "answer": "身体需要足够水分来帮助血液循环、出汗散热和细胞工作。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-040"
+          ],
+          "parentHint": "不要讲复杂指标，只讲身体需要水。",
+          "biologyConcepts": [
+            "水分平衡",
+            "循环"
+          ]
+        },
+        {
+          "cardId": "heatstroke-q08",
+          "topicId": "heatstroke",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "降温和补水",
+          "question": "中暑风险出现时，为什么要同时降温和补水？",
+          "answer": "降温帮助身体减轻热负担，补水帮助恢复流失的水分。",
+          "relatedPageIds": [
+            "heatstroke__v02_page-056"
+          ],
+          "parentHint": "强调行动顺序：停下、阴凉、降温、补水、找成人。",
+          "biologyConcepts": [
+            "降温",
+            "补水"
+          ]
+        }
       ]
     },
     {

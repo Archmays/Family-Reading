@@ -176,6 +176,8 @@ const requiredWorkCellsTopics = [
   ['新型冠状病毒', '第6卷 第29话'],
 ];
 const requiredParentGuidanceTopicIds = [
+  'influenza',
+  'abrasion',
   'cancer-cell',
   'cancer-cell-ii',
   'hemorrhagic-shock',
@@ -204,6 +206,9 @@ const requiredBodyScienceStationFields = [
   'priority',
 ];
 const requiredParentQuestionFields = [
+  'cardId',
+  'topicId',
+  'type',
   'title',
   'question',
   'answer',
@@ -438,6 +443,73 @@ test('Work Cells Cedar pollen sample defines refined parent question cards', () 
     assert.ok(card.relatedPageIds.length > 0, `${card.title} should reference at least one page`);
     assert.ok(card.parentHint.length > 6, `${card.title} should include a parent hint`);
     assert.ok(card.biologyConcepts.length > 0, `${card.title} should include biology concepts`);
+  }
+});
+
+test('Work Cells batch one topics define formal science station and parent question data', () => {
+  const manifest = readJson(workCellsDraftPath);
+  const topics = ['influenza', 'abrasion', 'heatstroke'].map((topicId) => {
+    const topic = manifest.topics.find((item) => item.topicId === topicId);
+    assert.ok(topic, `${topicId} topic should exist`);
+    return topic;
+  });
+  const expectedQuestionTypes = ['observation', 'understanding', 'life-connection', 'science-concept'];
+
+  for (const topic of topics) {
+    assert.equal(topic.bodyScienceStations.length, 4, `${topic.topicId} should define exactly 4 stations`);
+    assert.equal(topic.parentQuestionCards.length, 8, `${topic.topicId} should define exactly 8 question cards`);
+    assert.match(topic.parentNote ?? '', /\S/, `${topic.topicId} should include gentle parent co-reading guidance`);
+
+    const stationIds = new Set();
+    const promptIds = new Set();
+    for (const station of topic.bodyScienceStations) {
+      for (const field of requiredBodyScienceStationFields) {
+        assert.equal(Object.hasOwn(station, field), true, `${station.stationId ?? 'station'} should include ${field}`);
+      }
+      assert.equal(station.topicId, topic.topicId);
+      assert.equal(station.status, 'published');
+      assert.match(station.priority, /^(high|medium|low)$/);
+      assert.match(station.imagePromptId, new RegExp(`^work-cells-${topic.topicId}-`));
+      assert.match(station.imagePrompt, /^【ChatGPT image】/);
+      assert.match(station.imagePrompt, /原创儿童科普插图/);
+      assert.match(station.imagePrompt, /不要模仿《工作细胞》/);
+      assert.match(station.imagePrompt, /不(?:要)?出现漫画对白/);
+      assert.match(station.imagePrompt, /Logo|水印|二维码/);
+      assert.match(station.imageAsset, new RegExp(`^public/assets/cells-at-work/science-station/${topic.topicId}/.+\\.webp$`));
+      assert.equal(existsSync(path.join(rootDir, ...station.imageAsset.split('/'))), true, `${station.stationId} webp image should exist`);
+      assert.ok(station.imageAlt.length > 8, `${station.stationId} should include usable alt text`);
+      assert.ok(station.coreQuestion.length > 6, `${station.stationId} should include a child-facing question`);
+      assert.ok(station.explanation.length > 20, `${station.stationId} should include a science explanation`);
+      assert.equal(Array.isArray(station.relatedPageIds), true, `${station.stationId} should reference page ids only`);
+      assert.ok(station.relatedPageIds.length > 0, `${station.stationId} should reference at least one page id`);
+      assert.equal(station.relatedPageIds.every((pageId) => !pageId.includes('.webp')), true, `${station.stationId} should not store image paths as page ids`);
+      assert.ok(station.biologyConcepts.length > 0, `${station.stationId} should include biology concepts`);
+      assert.ok(station.encyclopediaTags.length > 0, `${station.stationId} should include encyclopedia tags`);
+      assert.ok(station.parentNote.length > 0, `${station.stationId} should include a parent note`);
+      stationIds.add(station.stationId);
+      promptIds.add(station.imagePromptId);
+    }
+    assert.equal(stationIds.size, 4, `${topic.topicId} stationId values should be unique`);
+    assert.equal(promptIds.size, 4, `${topic.topicId} imagePromptId values should be unique`);
+
+    const typeSet = new Set(topic.parentQuestionCards.map((card) => card.type));
+    for (const type of expectedQuestionTypes) {
+      assert.equal(typeSet.has(type), true, `${topic.topicId} should include ${type} question cards`);
+    }
+    for (const card of topic.parentQuestionCards) {
+      for (const field of requiredParentQuestionFields) {
+        assert.equal(Object.hasOwn(card, field), true, `${card.title ?? 'question card'} should include ${field}`);
+      }
+      assert.equal(card.topicId, topic.topicId);
+      assert.match(card.type, /^(observation|understanding|life-connection|science-concept)$/);
+      assert.ok(card.question.length > 8, `${card.title} should include a concrete question`);
+      assert.ok(card.answer.length > 6, `${card.title} should include a concise answer`);
+      assert.equal(card.answer.includes('对白'), false, `${card.title} should not ask children to repeat dialogue`);
+      assert.equal(Array.isArray(card.relatedPageIds), true, `${card.title} should reference page ids`);
+      assert.ok(card.relatedPageIds.length > 0, `${card.title} should reference at least one page`);
+      assert.ok(card.parentHint.length > 6, `${card.title} should include a parent hint`);
+      assert.ok(card.biologyConcepts.length > 0, `${card.title} should include biology concepts`);
+    }
   }
 });
 
