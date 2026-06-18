@@ -136,7 +136,7 @@ function bookCard(book, compact = false) {
   return `
     <article class="book-card">
       <div class="cover-frame">
-        <img src="${sitePath(book.cover)}" alt="${html(book.title)}封面">
+        <img src="${sitePath(book.cover)}" alt="${html(book.title)}封面" loading="lazy">
         <span class="cover-fallback">封面图片暂时无法显示</span>
       </div>
       <div class="card-body">
@@ -156,7 +156,7 @@ function seriesEntryCard({ title, description, href, typeLabel, coverImage, acti
     <article class="series-entry-card">
       <a class="series-entry-link" href="${href}" aria-label="进入${html(title)}">
         <div class="series-entry-cover">
-          ${coverImage ? `<img src="${sitePath(coverImage)}" alt="${html(title)}入口图">` : ''}
+          ${coverImage ? `<img src="${sitePath(coverImage)}" alt="${html(title)}入口图" loading="lazy">` : ''}
           <span class="cover-fallback">入口图片暂时无法显示</span>
         </div>
         <div class="series-entry-body">
@@ -250,7 +250,7 @@ function scienceTopicCard(scienceSeries, topic) {
   return `
     <article class="book-card">
       <div class="cover-frame">
-        ${thumbnail ? `<img src="${sitePath(thumbnail)}" alt="${html(topic.displayTitle)}页面缩略图">` : ''}
+        ${thumbnail ? `<img src="${sitePath(thumbnail)}" alt="${html(topic.displayTitle)}页面缩略图" loading="lazy">` : ''}
         <span class="cover-fallback">页面图片暂时无法显示</span>
       </div>
       <div class="card-body">

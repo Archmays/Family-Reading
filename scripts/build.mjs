@@ -8,8 +8,13 @@ const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 const outputDir = path.join(rootDir, 'dist');
 const outputDirName = 'dist';
 const publishedBookCount = 12;
-const excludedDirectoryNames = new Set(['ocr', 'source']);
-const excludedExtensions = new Set(['.pdf', '.epub']);
+const excludedDirectoryNames = new Set(['ocr', 'source', 'visual-annotation-bundles']);
+const excludedRelativeDirectories = new Set([
+  'public/assets/cells-at-work/pages-by-volume',
+  'public/assets/cells-at-work/pages-by-topic',
+]);
+const excludedExtensions = new Set(['.pdf', '.epub', '.zip', '.7z', '.tar', '.gz', '.log', '.tmp']);
+const excludedFileNames = new Set(['volume-page-index.json', 'review-index.md', 'review-topics.json']);
 const seriesIndexPath = path.join(rootDir, 'public', 'books', '不一样的卡梅拉', 'series.json');
 const publicBooksIndexPath = path.join(rootDir, 'public', 'books', 'index.json');
 const contentTypesPath = path.join(rootDir, 'public', 'books', 'content-types.json');
@@ -42,7 +47,22 @@ async function pathExists(targetPath) {
   }
 }
 
+function projectRelativePath(targetPath) {
+  return path.relative(rootDir, targetPath).split(path.sep).join('/');
+}
+
+function isExcludedRelativeDirectory(sourcePath) {
+  const relativePath = projectRelativePath(sourcePath);
+  return [...excludedRelativeDirectories].some((excludedPath) => (
+    relativePath === excludedPath || relativePath.startsWith(`${excludedPath}/`)
+  ));
+}
+
 async function copyTree(sourceDir, targetDir) {
+  if (isExcludedRelativeDirectory(sourceDir)) {
+    return;
+  }
+
   await mkdir(targetDir, { recursive: true });
   const entries = await readdir(sourceDir, { withFileTypes: true });
 
@@ -55,11 +75,18 @@ async function copyTree(sourceDir, targetDir) {
     const targetPath = path.join(targetDir, entry.name);
 
     if (entry.isDirectory()) {
+      if (isExcludedRelativeDirectory(sourcePath)) {
+        continue;
+      }
       await copyTree(sourcePath, targetPath);
       continue;
     }
 
     if (entry.isFile() && excludedExtensions.has(path.extname(entry.name).toLowerCase())) {
+      continue;
+    }
+
+    if (entry.isFile() && excludedFileNames.has(entry.name)) {
       continue;
     }
 
@@ -72,9 +99,15 @@ async function copyTree(sourceDir, targetDir) {
 
 async function copyPublishablePublic() {
   await copyTree(path.join(rootDir, 'public', 'audio'), path.join(outputDir, 'public', 'audio'));
-  const publicAssetsDir = path.join(rootDir, 'public', 'assets');
-  if (await pathExists(publicAssetsDir)) {
-    await copyTree(publicAssetsDir, path.join(outputDir, 'public', 'assets'));
+  const workCellsAssetDirs = [
+    'public/assets/cells-at-work/page-thumbnails',
+    'public/assets/cells-at-work/science-station',
+  ];
+  for (const assetDir of workCellsAssetDirs) {
+    const sourceDir = path.join(rootDir, ...assetDir.split('/'));
+    if (await pathExists(sourceDir)) {
+      await copyTree(sourceDir, path.join(outputDir, ...assetDir.split('/')));
+    }
   }
   await mkdir(path.join(outputDir, 'public', 'books'), { recursive: true });
   await copyFile(publicBooksIndexPath, path.join(outputDir, 'public', 'books', 'index.json'));

@@ -396,7 +396,7 @@ test('Work Cells Cedar pollen sample defines body science station data', () => {
     assert.match(station.imagePrompt, /不要模仿《工作细胞》/);
     assert.match(station.imagePrompt, /Logo|水印/);
     assert.equal(station.imagePrompt.includes('对白'), true, `${station.stationId} prompt should forbid dialogue text`);
-    assert.match(station.imageAsset, /^public\/assets\/cells-at-work\/science-station\/cedar-pollen-allergy\/.+\.png$/);
+    assert.match(station.imageAsset, /^public\/assets\/cells-at-work\/science-station\/cedar-pollen-allergy\/.+\.webp$/);
     assert.equal(existsSync(path.join(rootDir, ...station.imageAsset.split('/'))), true, `${station.stationId} image asset should exist`);
     assert.ok(station.imageAlt.length > 8, `${station.stationId} should include usable alt text`);
     assert.ok(station.coreQuestion.length > 6, `${station.stationId} should include a child-facing question`);
@@ -705,4 +705,54 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
       assert.match(doc, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `${path.basename(docPath)} should include ${phrase}`);
     }
   }
+});
+
+test('Work Cells publishable media uses thumbnails and webp science station images', () => {
+  const manifest = readJson(workCellsDraftPath);
+  const pageMap = readJson(workCellsPageMapPath);
+  const cedarTopic = manifest.topics.find((topic) => topic.topicId === 'cedar-pollen-allergy');
+
+  for (const topic of pageMap.topics) {
+    assert.match(topic.thumbnailPath, /^public\/assets\/cells-at-work\/page-thumbnails\/.+\.webp$/);
+    assert.equal(topic.thumbnailPath.includes('/pages-by-volume/'), false);
+
+    for (const imagePath of topic.pageImagePaths) {
+      assert.match(imagePath, /^public\/assets\/cells-at-work\/page-thumbnails\/.+\.webp$/);
+      assert.equal(imagePath.includes('/pages-by-volume/'), false);
+      assert.equal(existsSync(path.join(rootDir, ...imagePath.split('/'))), true, `${imagePath} should exist`);
+    }
+
+    for (const page of topic.pageAnnotations ?? []) {
+      assert.match(page.sourcePath, /^public\/assets\/cells-at-work\/page-thumbnails\/.+\.webp$/);
+      assert.equal(page.sourcePath.includes('/pages-by-volume/'), false);
+    }
+  }
+
+  assert.ok(cedarTopic, 'Cedar pollen allergy topic should exist');
+  for (const station of cedarTopic.bodyScienceStations) {
+    assert.match(station.imageAsset, /^public\/assets\/cells-at-work\/science-station\/cedar-pollen-allergy\/.+\.webp$/);
+    assert.equal(existsSync(path.join(rootDir, ...station.imageAsset.split('/'))), true, `${station.stationId} webp image should exist`);
+  }
+});
+
+test('build script excludes full Work Cells page images from dist', () => {
+  const buildScript = readFileSync(path.join(rootDir, 'scripts', 'build.mjs'), 'utf8');
+
+  assert.match(buildScript, /excludedRelativeDirectories/);
+  assert.match(buildScript, /pages-by-volume/);
+  assert.match(buildScript, /page-thumbnails/);
+  assert.match(buildScript, /science-station/);
+});
+
+test('dist asset audit script is available', () => {
+  const packageJson = readJson(path.join(rootDir, 'package.json'));
+  const auditScriptPath = path.join(rootDir, 'scripts', 'audit-dist-assets.mjs');
+
+  assert.equal(packageJson.scripts?.['audit:dist'], 'node scripts/audit-dist-assets.mjs');
+  assert.equal(existsSync(auditScriptPath), true, 'dist asset audit script should exist');
+
+  const auditScript = readFileSync(auditScriptPath, 'utf8');
+  assert.match(auditScript, /warningLimitBytes/);
+  assert.match(auditScript, /largest directories/i);
+  assert.match(auditScript, /largest files/i);
 });
