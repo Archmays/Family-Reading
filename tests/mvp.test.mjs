@@ -81,6 +81,9 @@ const expectedAudio = new Map([
 ]);
 const requiredUiText = [
   'Book Companion / 家庭阅读助手',
+  '选择阅读主题',
+  '进入卡梅拉',
+  '进入工作细胞',
   '不一样的卡梅拉',
   '类型：绘本',
   '进入辅助页',
@@ -391,6 +394,20 @@ test('static app files and required visible labels exist', () => {
   for (const removed of removedHomeText) {
     assert.equal(text.includes(removed), false, `${removed} should be removed from the app UI`);
   }
+});
+
+test('home page shows series entrances before book or topic lists', () => {
+  const appJs = readFileSync(path.join(rootDir, 'assets', 'app.js'), 'utf8');
+  const homeBody = appJs.match(/function homePage\(\) \{[\s\S]*?\n\}\n\nfunction carmelaSeriesPage/)?.[0] ?? '';
+  const carmelaSeriesBody = appJs.match(/function carmelaSeriesPage\(\) \{[\s\S]*?\n\}\n\nfunction scienceSeriesSection/)?.[0] ?? '';
+  const scienceSeriesBody = appJs.match(/function scienceSeriesSection\(scienceSeries\) \{[\s\S]*?\n\}\n\nfunction scienceTopicCard/)?.[0] ?? '';
+
+  assert.match(homeBody, /#\/series\/\$\{CARMELA_SERIES_SLUG\}/, 'home should link to the Carmela series entrance');
+  assert.match(homeBody, /#\/series\/\$\{WORK_CELLS_SERIES_SLUG\}/, 'home should link to the Work Cells series entrance');
+  assert.equal(homeBody.includes('model.books.map((book) => bookCard(book))'), false, 'home should not render all Carmela books directly');
+  assert.equal(homeBody.includes('scienceSeriesSection(model.scienceSeries)'), false, 'home should not render all Work Cells topics directly');
+  assert.match(carmelaSeriesBody, /model\.books\.map\(\(book\) => bookCard\(book\)\)/, 'Carmela series page should render book cards');
+  assert.match(scienceSeriesBody, /scienceSeries\.manifest\.topics\.map\(\(topic\) => scienceTopicCard\(scienceSeries, topic\)\)/, 'Work Cells series page should render topic cards');
 });
 
 test('published books have companion data and usable media paths', () => {

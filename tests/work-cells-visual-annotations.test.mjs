@@ -182,24 +182,46 @@ test('Work Cells topic page surfaces imported companion annotation sections', ()
   for (const phrase of [
     '身体科学小站',
     '亲子问题卡',
-    '百科关联',
-    '家长提醒',
-    'science-encyclopedia',
     'groupSciencePagesByRole',
     'ScienceAnnotationThumbnails',
+    'scienceStationExplanation',
+    'answerForScienceQuestion',
+    'science-illustration-placeholder',
     'annotation-thumb-list',
     'pageAnnotations',
-    'sensitiveContentGuidance',
   ]) {
     assert.match(appText, new RegExp(phrase), `app should include ${phrase}`);
   }
 
   for (const blockedPhrase of [
+    'science-encyclopedia',
+    'science-sensitive',
     'science-annotations',
+    '/science-sensitive"',
+    '/science-encyclopedia"',
     '/pages">漫画页图片',
     'function sciencePageAnnotationsSection',
     'function SciencePageThumbnails',
+    'function scienceEncyclopediaSection',
+    'function scienceSensitiveSection',
   ]) {
     assert.equal(appText.includes(blockedPhrase), false, `app should not expose ${blockedPhrase}`);
+  }
+});
+
+test('Work Cells science station image prompts are documented for generation', () => {
+  const promptPath = path.join(rootDir, 'docs', 'work-cells-body-science-station-prompts.md');
+  assert.equal(existsSync(promptPath), true, 'Work Cells science station prompt document should exist');
+  const promptDoc = readFileSync(promptPath, 'utf8');
+
+  for (const phrase of [
+    '杉树花粉过敏',
+    'prompt-id: work-cells-cedar-pollen-allergy-cedar-pollen-allergy__v01_page-065',
+    'prompt-id: work-cells-cedar-pollen-allergy-cedar-pollen-allergy__v01_page-071',
+    'prompt-id: work-cells-cedar-pollen-allergy-cedar-pollen-allergy__v01_page-078',
+    '【ChatGPT image】',
+    '不要模仿《工作细胞》',
+  ]) {
+    assert.match(promptDoc, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `prompt doc should include ${phrase}`);
   }
 });

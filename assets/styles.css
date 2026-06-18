@@ -123,6 +123,12 @@ summary:focus-visible {
   padding: 18px min(6vw, 56px) 50px;
 }
 
+.series-entry-section {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 18px min(6vw, 56px) 56px;
+}
+
 .section-heading {
   display: flex;
   align-items: end;
@@ -137,6 +143,12 @@ summary:focus-visible {
   letter-spacing: 0;
 }
 
+.section-heading h1 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  letter-spacing: 0;
+}
+
 .section-heading p {
   margin: 0;
   color: var(--muted);
@@ -146,6 +158,74 @@ summary:focus-visible {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 18px;
+}
+
+.series-entry-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.series-entry-card {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.series-entry-link {
+  display: grid;
+  grid-template-columns: minmax(150px, 38%) minmax(0, 1fr);
+  min-height: 260px;
+  color: inherit;
+}
+
+.series-entry-cover {
+  position: relative;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  background: linear-gradient(135deg, var(--teal-soft), #fff1d6);
+}
+
+.series-entry-cover img {
+  width: min(100%, 170px);
+  max-height: 220px;
+  object-fit: contain;
+  border-radius: 6px;
+  box-shadow: 0 12px 26px rgba(38, 46, 50, 0.22);
+  background: #ffffff;
+}
+
+.series-entry-body {
+  display: grid;
+  align-content: center;
+  justify-items: start;
+  gap: 12px;
+  padding: 22px;
+}
+
+.series-entry-type {
+  border-radius: 8px;
+  background: var(--teal-soft);
+  color: #176f70;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.series-entry-body h2 {
+  margin: 0;
+  font-size: clamp(1.55rem, 2.6vw, 2.2rem);
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
+.series-entry-body p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.72;
 }
 
 .book-card {
@@ -604,6 +684,53 @@ summary:focus-visible {
   color: var(--teal);
 }
 
+.science-illustration-placeholder {
+  min-height: 128px;
+  margin: 12px 0;
+  border: 1px dashed rgba(24, 140, 140, 0.38);
+  border-radius: 8px;
+  background: #f7fcfb;
+  display: grid;
+  place-items: center;
+  padding: 18px;
+  text-align: center;
+}
+
+.science-illustration-placeholder p {
+  margin: 0;
+  color: var(--teal);
+  font-weight: 800;
+}
+
+.science-illustration-placeholder small {
+  color: var(--muted);
+  overflow-wrap: anywhere;
+}
+
+.question-answer-list section {
+  padding: 10px 0;
+  border-top: 1px solid rgba(108, 155, 94, 0.18);
+}
+
+.question-answer-list section:first-child {
+  border-top: 0;
+}
+
+.question-answer-list h4,
+.related-pages h4 {
+  margin: 0 0 6px;
+  color: var(--teal);
+  font-size: 0.94rem;
+}
+
+.question-answer-list p {
+  margin: 0 0 8px;
+}
+
+.related-pages {
+  margin-top: 12px;
+}
+
 .annotation-detail summary {
   display: flex;
   justify-content: space-between;
@@ -832,7 +959,12 @@ audio {
     grid-template-columns: 1fr;
   }
 
-  .book-grid {
+  .book-grid,
+  .series-entry-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .series-entry-link {
     grid-template-columns: 1fr;
   }
 
@@ -865,6 +997,7 @@ audio {
   }
 
   .season-section,
+  .series-entry-section,
   .book-layout {
     padding-left: 16px;
     padding-right: 16px;

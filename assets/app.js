@@ -151,21 +151,77 @@ function bookCard(book, compact = false) {
   `;
 }
 
+function seriesEntryCard({ title, description, href, typeLabel, coverImage, actionLabel }) {
+  return `
+    <article class="series-entry-card">
+      <a class="series-entry-link" href="${href}" aria-label="进入${html(title)}">
+        <div class="series-entry-cover">
+          ${coverImage ? `<img src="${sitePath(coverImage)}" alt="${html(title)}入口图">` : ''}
+          <span class="cover-fallback">入口图片暂时无法显示</span>
+        </div>
+        <div class="series-entry-body">
+          <span class="series-entry-type">${html(typeLabel)}</span>
+          <h2>${html(title)}</h2>
+          <p>${html(description)}</p>
+          <span class="action-button">${html(actionLabel)}</span>
+        </div>
+      </a>
+    </article>
+  `;
+}
+
 function homePage() {
+  const carmelaCover = model.books[0]?.cover ?? '';
+  const workCellsCover = model.scienceSeries?.manifest?.topics?.[0]?.thumbnailPath ?? '';
+  return `
+    ${header()}
+    <main>
+      <section class="series-entry-section" aria-labelledby="home-title">
+        <div class="section-heading">
+          <div>
+            <h1 id="home-title">选择阅读主题</h1>
+            <p>先选系列，再进入这个主题里的书籍或科学主题。</p>
+          </div>
+        </div>
+        <div class="series-entry-grid">
+          ${seriesEntryCard({
+            title: '不一样的卡梅拉',
+            description: '绘本伴读入口：进入后选择具体书目，再查看故事回顾、问题卡、背景补充、百科和音频。',
+            href: `#/series/${CARMELA_SERIES_SLUG}`,
+            typeLabel: '绘本系列',
+            coverImage: carmelaCover,
+            actionLabel: '进入卡梅拉',
+          })}
+          ${seriesEntryCard({
+            title: model.scienceSeries?.manifest?.seriesTitle ?? '工作细胞',
+            description: '科学漫画伴读入口：进入后按主题查看导读、身体科学小站和亲子问题卡。',
+            href: `#/series/${WORK_CELLS_SERIES_SLUG}`,
+            typeLabel: '科学漫画主题',
+            coverImage: workCellsCover,
+            actionLabel: '进入工作细胞',
+          })}
+        </div>
+      </section>
+    </main>
+  `;
+}
+
+function carmelaSeriesPage() {
   return `
     ${header()}
     <main>
       <section class="season-section" aria-labelledby="season-title">
+        <a class="back-link" href="#/">返回首页</a>
         <div class="section-heading">
           <div>
-            <h2 id="season-title">不一样的卡梅拉</h2>
+            <h1 id="season-title">不一样的卡梅拉</h1>
+            <p>选择一本书，打开对应的家庭阅读助手内容。</p>
           </div>
         </div>
         <div class="book-grid">
           ${model.books.map((book) => bookCard(book)).join('')}
         </div>
       </section>
-      ${scienceSeriesSection(model.scienceSeries)}
     </main>
   `;
 }
@@ -174,9 +230,11 @@ function scienceSeriesSection(scienceSeries) {
   if (!scienceSeries?.manifest?.topics?.length) return '';
   return `
     <section class="season-section" aria-labelledby="science-title">
+      <a class="back-link" href="#/">返回首页</a>
       <div class="section-heading">
         <div>
-          <h2 id="science-title">${html(scienceSeries.manifest.seriesTitle)}</h2>
+          <h1 id="science-title">${html(scienceSeries.manifest.seriesTitle)}</h1>
+          <p>按主题进入伴读内容，不按卷展示。</p>
         </div>
       </div>
       <div class="book-grid">
@@ -206,6 +264,15 @@ function scienceTopicCard(scienceSeries, topic) {
         </div>
       </div>
     </article>
+  `;
+}
+
+function scienceSeriesPage(scienceSeries) {
+  return `
+    ${header()}
+    <main>
+      ${scienceSeriesSection(scienceSeries)}
+    </main>
   `;
 }
 
@@ -354,6 +421,42 @@ function groupSciencePagesByRole(pages) {
   }));
 }
 
+function sciencePromptId(topic, group) {
+  const firstPageId = group.pages[0]?.pageId ?? 'science-card';
+  return `work-cells-${topic.topicId}-${firstPageId}`;
+}
+
+function isScienceStationKnowledgeGroup(group) {
+  const title = String(group.pageRole ?? '');
+  if (title.includes('主题开场') || title.includes('标题')) return false;
+  return group.biologyConcepts.length > 0 || group.encyclopediaTags.length > 0;
+}
+
+function scienceStationExplanation(group) {
+  const concepts = group.biologyConcepts.slice(0, 4).join('、');
+  const tags = group.encyclopediaTags.slice(0, 4).join('、');
+  const focus = group.bodyScienceStationUse
+    .map((item) => item.replace(/^高：|^中高：|^中：/, ''))
+    .join(' ');
+  return [
+    focus,
+    concepts ? `可以把这里理解为一个关于“${concepts}”的小知识点。` : '',
+    tags ? `阅读时重点观察这些词或现象：${tags}。` : '',
+  ].filter(Boolean).join(' ');
+}
+
+function answerForScienceQuestion(group, question) {
+  const concepts = group.biologyConcepts.slice(0, 3).join('、') || '身体里的细胞协作';
+  const tags = group.encyclopediaTags.slice(0, 3).join('、') || concepts;
+  if (question.includes('哪里') || question.includes('画面')) {
+    return `可以先看这一组漫画页面里的角色动作、环境变化和提示词，再把它们和“${tags}”联系起来。`;
+  }
+  if (question.includes('为什么')) {
+    return `因为这里表现的是“${concepts}”相关过程。漫画把身体反应画得夸张，真实身体里通常是细胞和信号一步步协作。`;
+  }
+  return `这一组页面可以引导孩子从“发生了什么”说到“身体正在怎样处理”。重点答案围绕：${concepts}。`;
+}
+
 function tagList(items) {
   if (!Array.isArray(items) || items.length === 0) return '';
   return `
@@ -386,27 +489,34 @@ function ScienceAnnotationThumbnails(topic, pages) {
   return `<div class="page-thumbnail-list annotation-thumb-list">${thumbnails}</div>`;
 }
 
+function ScienceExplanationImagePlaceholder(topic, group) {
+  const promptId = sciencePromptId(topic, group);
+  return `
+    <div class="science-illustration-placeholder">
+      <p>解释图待补充</p>
+      <small>prompt-id：${html(promptId)}</small>
+    </div>
+  `;
+}
+
 function scienceOverviewSection(topic) {
   return `
     <section id="science-overview" class="content-section" aria-labelledby="science-overview-title">
       <h2 id="science-overview-title">主题导读</h2>
       <p>${html(topic.topicSummary ?? '主题摘要待补充。')}</p>
-      <div class="two-column">
-        <div>
-          <h3>核心生物概念</h3>
-          ${plainList(topic.keyBiologyConcepts)}
-        </div>
-        <div>
-          <h3>百科条目</h3>
-          ${plainList(topic.recommendedEncyclopediaEntries)}
-        </div>
-      </div>
+      <h3>核心生物概念</h3>
+      ${plainList(topic.keyBiologyConcepts)}
     </section>
   `;
 }
 
 function scienceStationSection(topic) {
-  const groups = groupSciencePagesByRole((topic.pageAnnotations ?? []).filter(isHighScienceStationPage));
+  const groups = groupSciencePagesByRole(
+    (topic.pageAnnotations ?? []).filter((page) => (
+      isHighScienceStationPage(page)
+      || (Array.isArray(page.encyclopediaTags) && page.encyclopediaTags.length > 0)
+    )),
+  ).filter(isScienceStationKnowledgeGroup);
   return `
     <section id="science-station" class="content-section" aria-labelledby="science-station-title">
       <h2 id="science-station-title">身体科学小站</h2>
@@ -414,11 +524,13 @@ function scienceStationSection(topic) {
       <div class="annotation-grid">
         ${groups.map((group) => `
           <article class="annotation-card">
-            ${ScienceAnnotationThumbnails(topic, group.pages)}
-            <div>
-              <h3>${html(group.pageRole)}</h3>
-              ${plainList(group.bodyScienceStationUse)}
-              ${tagList(group.biologyConcepts)}
+            <h3>${html(group.pageRole)}</h3>
+            ${ScienceExplanationImagePlaceholder(topic, group)}
+            <p>${html(scienceStationExplanation(group))}</p>
+            ${tagList(uniqueItems([...group.biologyConcepts, ...group.encyclopediaTags]))}
+            <div class="related-pages">
+              <h4>剧情相关页面</h4>
+              ${ScienceAnnotationThumbnails(topic, group.pages)}
             </div>
           </article>
         `).join('') || '<p class="thumbnail-empty">暂无高优先级候选页</p>'}
@@ -430,57 +542,28 @@ function scienceStationSection(topic) {
 function scienceParentQuestionsSection(topic) {
   const groups = groupSciencePagesByRole(
     (topic.pageAnnotations ?? []).filter((page) => Array.isArray(page.parentPromptIdeas) && page.parentPromptIdeas.length > 0),
-  );
+  ).filter((group) => !String(group.pageRole ?? '').includes('主题开场'));
   return `
     <section id="science-questions" class="content-section" aria-labelledby="science-questions-title">
       <h2 id="science-questions-title">亲子问题卡</h2>
-      ${plainList(topic.recommendedParentQuestions)}
       <div class="annotation-grid compact-grid">
         ${groups.map((group) => `
           <article class="annotation-card">
-            ${ScienceAnnotationThumbnails(topic, group.pages)}
             <h3>${html(group.pageRole)}</h3>
-            ${plainList(group.parentPromptIdeas)}
-          </article>
-        `).join('')}
-      </div>
-    </section>
-  `;
-}
-
-function scienceEncyclopediaSection(topic) {
-  const groups = groupSciencePagesByRole(
-    (topic.pageAnnotations ?? []).filter((page) => Array.isArray(page.encyclopediaTags) && page.encyclopediaTags.length > 0),
-  );
-  return `
-    <section id="science-encyclopedia" class="content-section" aria-labelledby="science-encyclopedia-title">
-      <h2 id="science-encyclopedia-title">百科关联</h2>
-      ${plainList(topic.recommendedEncyclopediaEntries)}
-      <div class="annotation-grid compact-grid">
-        ${groups.map((group) => `
-          <article class="annotation-card">
-            ${ScienceAnnotationThumbnails(topic, group.pages)}
-            <h3>${html(group.pageRole)}</h3>
-            ${tagList(group.encyclopediaTags)}
-          </article>
-        `).join('')}
-      </div>
-    </section>
-  `;
-}
-
-function scienceSensitiveSection(topic) {
-  const groups = groupSciencePagesByRole((topic.pageAnnotations ?? []).filter((page) => page.sensitiveContentNote));
-  return `
-    <section id="science-sensitive" class="content-section" aria-labelledby="science-sensitive-title">
-      <h2 id="science-sensitive-title">家长提醒</h2>
-      <p>${html(topic.sensitiveContentGuidance ?? '暂无额外敏感内容提醒。')}</p>
-      <div class="annotation-grid compact-grid">
-        ${groups.map((group) => `
-          <article class="annotation-card">
-            ${ScienceAnnotationThumbnails(topic, group.pages)}
-            <h3>${html(group.pageRole)}</h3>
-            ${plainList(group.sensitiveContentNote)}
+            <div class="question-answer-list">
+              ${group.parentPromptIdeas.map((question) => `
+                <section>
+                  <h4>问题</h4>
+                  <p>${html(question)}</p>
+                  <h4>答案</h4>
+                  <p>${html(answerForScienceQuestion(group, question))}</p>
+                </section>
+              `).join('')}
+            </div>
+            <div class="related-pages">
+              <h4>相应漫画页面</h4>
+              ${ScienceAnnotationThumbnails(topic, group.pages)}
+            </div>
           </article>
         `).join('')}
       </div>
@@ -784,7 +867,7 @@ function bookPage(book) {
       </aside>
       <div class="book-main">
         <section class="book-title-block">
-          <a class="back-link" href="#/">返回首页</a>
+          <a class="back-link" href="#/series/${CARMELA_SERIES_SLUG}">返回不一样的卡梅拉</a>
           <h1>${html(book.title)}</h1>
           <p>${html(book.companion.overview.oneLine)}</p>
         </section>
@@ -813,22 +896,18 @@ function scienceTopicPage(scienceSeries, topic) {
           <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-overview">主题导读</a>
           <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-station">身体科学小站</a>
           <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-questions">亲子问题卡</a>
-          <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-encyclopedia">百科关联</a>
-          <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-sensitive">家长提醒</a>
           <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/source">来源备注</a>
         </nav>
       </aside>
       <div class="book-main">
         <section class="book-title-block">
-          <a class="back-link" href="#/">返回首页</a>
+          <a class="back-link" href="#/series/${scienceSeries.seriesSlug}">返回工作细胞</a>
           <h1>${html(topic.displayTitle)}</h1>
           <p>${html(topic.category)}</p>
         </section>
         ${scienceOverviewSection(topic)}
         ${scienceStationSection(topic)}
         ${scienceParentQuestionsSection(topic)}
-        ${scienceEncyclopediaSection(topic)}
-        ${scienceSensitiveSection(topic)}
         <section id="source" class="content-section" aria-labelledby="source-title">
           <h2 id="source-title">来源备注</h2>
           <p>来源：${html(topic.source?.sourceLabel ?? '来源待核对')}</p>
@@ -852,6 +931,9 @@ function errorPage(message) {
 
 function currentRoute() {
   const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+  if (parts[0] === 'series') {
+    return { view: 'series', seriesSlug: parts[1] };
+  }
   if (parts[0] === 'book') {
     return { view: 'book', slug: parts[1], target: parts[2] };
   }
@@ -1046,6 +1128,20 @@ function render() {
     app.innerHTML = homePage();
     afterRender(route);
     return;
+  }
+
+  if (route.view === 'series') {
+    if (route.seriesSlug === CARMELA_SERIES_SLUG) {
+      app.innerHTML = carmelaSeriesPage();
+      afterRender(route);
+      return;
+    }
+
+    if (route.seriesSlug === WORK_CELLS_SERIES_SLUG) {
+      app.innerHTML = scienceSeriesPage(model.scienceSeries);
+      afterRender(route);
+      return;
+    }
   }
 
   const book = model.books.find((item) => item.slug === route.slug);
