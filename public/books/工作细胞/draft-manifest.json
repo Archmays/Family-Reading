@@ -35213,7 +35213,7 @@
       "topicOverview": {
         "title": "肠道菌群",
         "summary": "肠道菌群主题强调“身体里也有微小伙伴”：肠道里有有益菌、机会菌和有害菌，它们与食物、黏膜屏障和免疫系统共同组成生态。共读时应避免把所有细菌都讲成敌人。",
-        "readingFocus": "“菌群平衡是什么意思”：用肠道生态、有益菌占位、黏膜屏障、饮食影响和免疫协作五个节点解释；动画匹配为 medium，相关线索需人工复核后再扩展。",
+        "readingFocus": "“菌群平衡是什么意思”：用肠道生态、有益菌占位、黏膜屏障、饮食影响和免疫协作五个节点解释；动画主题已由用户确认为完全匹配，可作为摘要线索使用。",
         "keyBiologyConcepts": [
           "肠道菌群",
           "微生物生态",
@@ -35466,13 +35466,13 @@
           "contentVersion": "work-cells-v2"
         }
       ],
-      "parentReadingNote": "这个主题适合温和地讲“不是所有细菌都是敌人”。请避免把乳酸菌或任何单一食物讲成治疗方案；若涉及健康问题，应咨询专业医务人员。动画匹配置信度为 medium，因对应动画标题为“有害菌”，后续使用画面线索前需人工复核。",
-      "parentNote": "这个主题适合温和地讲“不是所有细菌都是敌人”。请避免把乳酸菌或任何单一食物讲成治疗方案；若涉及健康问题，应咨询专业医务人员。动画匹配置信度为 medium，因对应动画标题为“有害菌”，后续使用画面线索前需人工复核。",
+      "parentReadingNote": "这个主题适合温和地讲“不是所有细菌都是敌人”。请避免把乳酸菌或任何单一食物讲成治疗方案；若涉及健康问题，应咨询专业医务人员。动画主题已由用户确认为完全匹配。",
+      "parentNote": "这个主题适合温和地讲“不是所有细菌都是敌人”。请避免把乳酸菌或任何单一食物讲成治疗方案；若涉及健康问题，应咨询专业医务人员。动画主题已由用户确认为完全匹配。",
       "sourceNotes": [
         "漫画来源：第5卷 第23话，只保留页码线索，不展示漫画全文。",
         "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。",
         "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/gut-microbiota/png-originals/，正式前端资源只使用WebP。",
-        "gut-microbiota 动画匹配置信度为 medium；动画标题为“有害菌”，相关画面和时间点后续使用前需人工复核。"
+        "gut-microbiota 动画主题已由用户确认与肠道菌群完全匹配；仍只使用 summary-only scene notes，不接入视频、字幕或对白。"
       ],
       "relatedComicPages": [
         "gut-microbiota__v05_page-109",
@@ -35485,19 +35485,19 @@
       "relatedAnimationScenes": [
         {
           "sceneId": "gut-microbiota-s2e06-v2-001",
-          "sourceLabel": "动画 S2 第6话摘要（medium，需人工复核）",
-          "summary": "可作为肠道菌群主题入口，但因动画标题为“有害菌”，前端扩展前需人工复核。",
+          "sourceLabel": "动画 S2 第6话摘要（用户确认完全匹配）",
+          "summary": "可作为肠道菌群主题入口，用户已确认完全匹配。",
           "policy": "no-video-no-subtitle-no-dialogue"
         },
         {
           "sceneId": "gut-microbiota-s2e06-v2-004",
-          "sourceLabel": "动画 S2 第6话摘要（medium，需人工复核）",
+          "sourceLabel": "动画 S2 第6话摘要（用户确认完全匹配）",
           "summary": "适合说明有益菌、有害菌和肠道环境的平衡关系。",
           "policy": "no-video-no-subtitle-no-dialogue"
         },
         {
           "sceneId": "gut-microbiota-s2e06-v2-006",
-          "sourceLabel": "动画 S2 第6话摘要（medium，需人工复核）",
+          "sourceLabel": "动画 S2 第6话摘要（用户确认完全匹配）",
           "summary": "适合连接黏膜屏障、有益菌竞争占位和免疫协作。",
           "policy": "no-video-no-subtitle-no-dialogue"
         }

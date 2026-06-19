@@ -6,8 +6,8 @@
     "topicName": "肠道菌群",
     "animationFile": "S2-第6话 有害菌-1080P 高清-AVC.mp4",
     "srtFile": null,
-    "matchConfidence": "medium",
-    "matchReason": "有害菌属于肠道菌群相关内容，但动画标题不等同；按主题映射处理并在报告中保留 medium 说明。",
+    "matchConfidence": "high",
+    "matchReason": "用户已确认动画主题与肠道菌群完全匹配；按 high-confidence 主题映射处理。",
     "sourceMode": "audio-fallback",
     "audioFallback": {
       "ffmpegVersion": "8.1.1-essentials_build",
@@ -43,11 +43,11 @@
       "shortSummaryZh": "开场建立肠道相关环境和异常菌群风险，适合把主题限定为肠道生态而非单一细菌。",
       "scienceFocus": ["肠道环境", "菌群生态", "有害菌风险"],
       "candidateScreenshotTimes": ["00:00:55", "00:01:40"],
-      "candidateScreenshotPurpose": "可作为肠道菌群主题入口，后续若截图需人工复核画面是否清楚呈现肠道环境。",
+      "candidateScreenshotPurpose": "可作为肠道菌群主题入口，后续若截图仍需确认画面是否清楚呈现肠道环境。",
       "parentQuestionIdeas": ["肠道里为什么会有很多种细菌？", "所有细菌都是坏的吗？"],
       "bodyScienceStationIdeas": ["解释肠道菌群是多种微生物共同生活的生态。", "区分有益菌、中性菌和有害菌的概念。"],
       "imagePromptImprovementIdeas": ["画一张原创肠道剖面生态图，用不同颜色小图标区分菌群类别。", "不要用动画截图或具体角色形象。"],
-      "sensitiveContentNote": "medium 匹配，摘要只保留肠道菌群机制，不扩展完整剧情。",
+      "sensitiveContentNote": "用户已确认完全匹配；摘要只保留肠道菌群机制，不扩展完整剧情。",
       "doNotQuoteDialogue": true
     },
     {
@@ -161,7 +161,7 @@
       "parentQuestionIdeas": ["当有害菌被控制后，为什么还要恢复菌群平衡？", "什么叫肠道生态恢复？"],
       "bodyScienceStationIdeas": ["复盘失衡、识别、控制、恢复四步。", "说明有益菌不是药物，而是生态的一部分。"],
       "imagePromptImprovementIdeas": ["用四步环形图表现肠道菌群从失衡到恢复。", "不要生成完整剧情图集。"],
-      "sensitiveContentNote": "medium 匹配内容需后续人工复核截图候选。",
+      "sensitiveContentNote": "用户已确认完全匹配；截图候选仍需按发布标准筛选。",
       "doNotQuoteDialogue": true
     },
     {
@@ -180,7 +180,7 @@
       "parentQuestionIdeas": ["看完这一段，肠道里的“好”和“坏”可以怎样理解？", "身体为什么需要和一些细菌和平共处？"],
       "bodyScienceStationIdeas": ["总结共生、失衡、防御、恢复四个关键词。", "强调肠道菌群是生态系统，不是单个角色。"],
       "imagePromptImprovementIdeas": ["做一张总结型原创图，展示肠道生态圈、黏膜屏障和免疫细胞三层关系。", "不出现对白、字幕、完整剧情或动画标志。"],
-      "sensitiveContentNote": "不进入前端前需人工复核 medium 匹配和画面候选。",
+      "sensitiveContentNote": "用户已确认完全匹配；进入前端前仍需按发布标准筛选画面候选。",
       "doNotQuoteDialogue": true
     }
   ]

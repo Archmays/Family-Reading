@@ -9,14 +9,14 @@
 | `food-poisoning` | 食物中毒 | `high` | `S1-第4话 食物中毒-1080P 高清-AVC.mp4` | `S1-第4话 食物中毒-1080P 高清-AVC_English.srt` | `srt` | 8 |
 | `common-cold-syndrome` | 感冒症候群 | `high` | `S1-OAD 感冒综合征-1080P 高清-AVC.mp4` | `S1-OAD 感冒综合征-1080P 高清-AVC_English.srt` | `srt` | 8 |
 | `staphylococcus-aureus` | 金黄色葡萄球菌 | `high` | `S1-第10话 金黄色葡萄球菌-1080P 高清-AVC.mp4` | `S1-第10话 金黄色葡萄球菌-1080P 高清-AVC_English.srt` | `srt` | 8 |
-| `gut-microbiota` | 肠道菌群 | `medium` | `S2-第6话 有害菌-1080P 高清-AVC.mp4` | none | `audio-fallback` | 8 |
+| `gut-microbiota` | 肠道菌群 | `high` | `S2-第6话 有害菌-1080P 高清-AVC.mp4` | none | `audio-fallback` | 8 |
 | `bump-on-head` | 撞出肿包 | `high` | `S2-第1话 肿包-1080P 高清-AVC.mp4` | none | `audio-fallback` | 8 |
 
 ## Audio Fallback
 
 `gut-microbiota` 和 `bump-on-head` 没有同名 SRT，因此本次使用 audio-fallback。安装并使用了用户缓存目录中的便携版 `ffmpeg 8.1.1-essentials_build`，只从对应 MP4 临时抽取单声道 16 kHz WAV 供 `faster-whisper-tiny` 做时间窗级分析。临时音频已删除，未保存 transcript，未把音频或转写写入项目文件。
 
-`gut-microbiota` 的匹配置信度为 `medium`，原因是动画标题为“有害菌”，属于肠道菌群相关内容，但标题不等同于“肠道菌群”。本主题 scene notes 保守聚焦肠道生态、有益菌/有害菌平衡、黏膜屏障和免疫协作；后续若要选截图或进入前端，需人工复核候选时间点。
+`gut-microbiota` 已由用户确认与肠道菌群主题完全匹配，匹配置信度更新为 `high`。本主题 scene notes 仍保守聚焦肠道生态、有益菌/有害菌平衡、黏膜屏障和免疫协作；后续若要选截图或进入前端，仍需按发布标准筛选候选时间点。
 
 ## 输出文件
 
