@@ -8058,7 +8058,310 @@
         "food-poisoning__v02_page-026",
         "food-poisoning__v02_page-027",
         "food-poisoning__v02_page-028"
-      ]
+      ],
+      "topicOverview": {
+        "title": "食物中毒",
+        "summary": "食物中毒主题把消化道屏障、食源性细菌或毒素、排出反应、免疫清理和恢复放在一起。共读时可以把夸张的身体内部危机转成四个科学节点：发现异常、减少停留、免疫清理、恢复稳定。",
+        "readingFocus": "“身体为什么想把有害物排出去”：用消化道屏障、细菌/毒素、呕吐腹泻等排出机制、白血球清理和补水休息五个节点解释，不提供诊断或治疗建议。",
+        "keyBiologyConcepts": [
+          "食物中毒",
+          "消化道黏膜",
+          "食源性细菌",
+          "毒素刺激",
+          "排出反应",
+          "白血球/中性粒细胞",
+          "嗜酸性粒细胞",
+          "身体稳态"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "food-poisoning-gut-barrier",
+          "topicId": "food-poisoning",
+          "title": "消化道也是防线",
+          "coreQuestion": "吃进去的东西为什么要经过层层检查？",
+          "explanation": "消化道负责消化和吸收，也要把有害微生物挡在身体外。黏膜、胃酸、肠道运动和免疫细胞一起形成第一道防线。",
+          "imagePromptId": "work-cells-food-poisoning-gut-barrier",
+          "imagePrompt": "Phase 12 approved image prompt for 消化道也是防线; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/food-poisoning/food-poisoning-v2-station-01.webp",
+          "imageAlt": "消化道剖面中，黏膜屏障、胃酸和免疫细胞一起守住入口的儿童科普图。",
+          "relatedPageIds": [
+            "food-poisoning__v02_page-004",
+            "food-poisoning__v02_page-005"
+          ],
+          "biologyConcepts": [
+            "消化道黏膜",
+            "胃酸",
+            "屏障防御"
+          ],
+          "encyclopediaTags": [
+            "消化道",
+            "食物中毒",
+            "黏膜防御"
+          ],
+          "parentNote": "先把消化道讲成“边吸收边守门”的通道。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "food-poisoning-microbe-or-toxin",
+          "topicId": "food-poisoning",
+          "title": "问题常来自细菌或毒素",
+          "coreQuestion": "食物中毒是不是食物自己在攻击身体？",
+          "explanation": "很多食物中毒和看不见的细菌、病毒或毒素有关。重点不是害怕食物，而是理解清洁、熟食和保存为什么重要。",
+          "imagePromptId": "work-cells-food-poisoning-microbe-or-toxin",
+          "imagePrompt": "Phase 12 approved image prompt for 问题常来自细菌或毒素; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/food-poisoning/food-poisoning-v2-station-02.webp",
+          "imageAlt": "放大镜下的食物表面有抽象细菌和毒素图标，旁边有温和的安全提示元素。",
+          "relatedPageIds": [
+            "food-poisoning__v02_page-006",
+            "food-poisoning__v02_page-012"
+          ],
+          "biologyConcepts": [
+            "食源性细菌",
+            "毒素",
+            "食品安全"
+          ],
+          "encyclopediaTags": [
+            "食物中毒",
+            "细菌",
+            "毒素"
+          ],
+          "parentNote": "避免吓孩子，把重点放在“看不见所以要讲卫生”。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "food-poisoning-expel-response",
+          "topicId": "food-poisoning",
+          "title": "排出反应是在减少停留",
+          "coreQuestion": "为什么身体有时会想把不合适的东西排出去？",
+          "explanation": "呕吐、腹泻等反应可能是身体试图减少有害物质停留的方式。它们会让人不舒服，也可能带来脱水风险，所以需要成人照护。",
+          "imagePromptId": "work-cells-food-poisoning-expel-response",
+          "imagePrompt": "Phase 12 approved image prompt for 排出反应是在减少停留; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/food-poisoning/food-poisoning-v2-station-03.webp",
+          "imageAlt": "肠道受到刺激后用清楚箭头表示排出反应和水分流失风险的安全科普图。",
+          "relatedPageIds": [
+            "food-poisoning__v02_page-013",
+            "food-poisoning__v02_page-018"
+          ],
+          "biologyConcepts": [
+            "排出机制",
+            "脱水风险",
+            "身体稳态"
+          ],
+          "encyclopediaTags": [
+            "腹泻",
+            "呕吐",
+            "补水"
+          ],
+          "parentNote": "只解释机制，不给处理方案；严重或持续不适要找成人和医生。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "food-poisoning-recovery-steps",
+          "topicId": "food-poisoning",
+          "title": "发现、排出、清理、恢复",
+          "coreQuestion": "身体处理食物中毒时会经历哪些步骤？",
+          "explanation": "身体不是只靠一个细胞解决问题。消化道反应、免疫清理、休息和水分补充一起帮助身体慢慢恢复稳定。",
+          "imagePromptId": "work-cells-food-poisoning-recovery-steps",
+          "imagePrompt": "Phase 12 approved image prompt for 发现、排出、清理、恢复; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/food-poisoning/food-poisoning-v2-station-04.webp",
+          "imageAlt": "四步流程图表现发现异常、排出刺激、免疫清理和恢复稳定。",
+          "relatedPageIds": [
+            "food-poisoning__v02_page-021",
+            "food-poisoning__v02_page-028"
+          ],
+          "biologyConcepts": [
+            "免疫协作",
+            "恢复稳态",
+            "水分平衡"
+          ],
+          "encyclopediaTags": [
+            "白血球",
+            "消化道",
+            "身体稳态"
+          ],
+          "parentNote": "把故事收束成流程，不展开完整剧情。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "food-poisoning-q01",
+          "topicId": "food-poisoning",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "故事发生在哪里",
+          "question": "看相关页面时，哪些线索说明这里是消化道环境？",
+          "answer": "可以找管道、胃肠背景、食物进入和防御细胞巡逻等线索。",
+          "relatedPageIds": [
+            "food-poisoning__v02_page-004",
+            "food-poisoning__v02_page-005"
+          ],
+          "parentHint": "先让孩子说画面线索，不要求复述对白。",
+          "biologyConcepts": [
+            "消化道",
+            "胃肠环境"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "food-poisoning-q02",
+          "topicId": "food-poisoning",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "谁来处理异常",
+          "question": "画面里哪些细胞像是在处理外来威胁？",
+          "answer": "白血球等免疫细胞会靠近异常来源，嗜酸性粒细胞也有自己的专长。",
+          "relatedPageIds": [
+            "food-poisoning__v02_page-006",
+            "food-poisoning__v02_page-014"
+          ],
+          "parentHint": "把“战斗”翻译成识别和清理。",
+          "biologyConcepts": [
+            "白血球",
+            "嗜酸性粒细胞"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "food-poisoning-q03",
+          "topicId": "food-poisoning",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么要排出去",
+          "question": "身体为什么有时会想把有害东西尽快排出去？",
+          "answer": "因为减少有害物质停留，可能帮助身体降低刺激和风险。",
+          "relatedPageIds": [
+            "food-poisoning__v02_page-013",
+            "food-poisoning__v02_page-018"
+          ],
+          "parentHint": "说明这是机制，不是让孩子自行判断病情。",
+          "biologyConcepts": [
+            "排出机制",
+            "毒素刺激"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "food-poisoning-q04",
+          "topicId": "food-poisoning",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "不同细胞不同专长",
+          "question": "为什么不是每一种免疫细胞都做同一件事？",
+          "answer": "免疫细胞有分工，有的更擅长处理细菌，有的更适合寄生虫等不同对象。",
+          "relatedPageIds": [
+            "food-poisoning__v02_page-012",
+            "food-poisoning__v02_page-020"
+          ],
+          "parentHint": "用“工具不同、任务不同”解释。",
+          "biologyConcepts": [
+            "免疫分工",
+            "嗜酸性粒细胞"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "food-poisoning-q05",
+          "topicId": "food-poisoning",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "吃东西前后",
+          "question": "为了减少食物中毒风险，生活里可以注意什么？",
+          "answer": "洗手、熟食、分开生熟、注意保存和不吃明显变质食物，都是常识层面的防线。",
+          "relatedPageIds": [
+            "food-poisoning__v02_page-004"
+          ],
+          "parentHint": "只做常识提醒，不替代食品安全或医疗判断。",
+          "biologyConcepts": [
+            "食品安全",
+            "生活防护"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "food-poisoning-q06",
+          "topicId": "food-poisoning",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "稳态是什么意思",
+          "question": "恢复稳定和“打赢敌人”有什么不同？",
+          "answer": "恢复稳定表示身体的水分、屏障、免疫清理和日常工作都慢慢回到可工作的状态。",
+          "relatedPageIds": [
+            "food-poisoning__v02_page-028"
+          ],
+          "parentHint": "把结尾引向身体平衡。",
+          "biologyConcepts": [
+            "身体稳态",
+            "恢复"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "这个主题可能让孩子联想到呕吐、腹泻或肚子痛。共读时请把重点放在消化道防线和免疫协作，不提供诊断、用药或处置建议；真实不适应由成人联系专业医务人员。",
+      "parentNote": "这个主题可能让孩子联想到呕吐、腹泻或肚子痛。共读时请把重点放在消化道防线和免疫协作，不提供诊断、用药或处置建议；真实不适应由成人联系专业医务人员。",
+      "sourceNotes": [
+        "漫画来源：第2卷 第5话，只保留页码线索，不展示漫画全文。",
+        "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/food-poisoning/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "food-poisoning__v02_page-004",
+        "food-poisoning__v02_page-005",
+        "food-poisoning__v02_page-013",
+        "food-poisoning__v02_page-018",
+        "food-poisoning__v02_page-021",
+        "food-poisoning__v02_page-028"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "food-poisoning-s1e04-v2-002",
+          "sourceLabel": "动画 S1 第4话摘要",
+          "summary": "有害微生物或毒素相关风险被引入，适合说明食物中毒不是食物本身“攻击”身体。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "food-poisoning-s1e04-v2-004",
+          "sourceLabel": "动画 S1 第4话摘要",
+          "summary": "消化道反应可转成“减少有害物停留”的排出机制说明。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "food-poisoning-s1e04-v2-007",
+          "sourceLabel": "动画 S1 第4话摘要",
+          "summary": "适合把主题收束为发现、排出、清理、恢复四步。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 6,
@@ -16115,7 +16418,310 @@
         "common-cold-syndrome__v03_page-041",
         "common-cold-syndrome__v03_page-052",
         "common-cold-syndrome__v03_page-053"
-      ]
+      ],
+      "topicOverview": {
+        "title": "感冒症候群",
+        "summary": "感冒症候群主题把普通细胞、病毒感染、黏膜防御和喷嚏鼻涕咳嗽等症状放在同一条线索里。共读时可帮助孩子理解：感冒不是一个单一动作，而是一组由呼吸道和免疫系统共同参与的反应。",
+        "readingFocus": "“喷嚏、鼻涕、咳嗽是在做什么”：用病毒进入、细胞被利用、黏膜清理、症状组合和休息恢复五个节点解释，避免做成动画剧情复述。",
+        "keyBiologyConcepts": [
+          "感冒症候群",
+          "病毒感染",
+          "普通细胞",
+          "被感染细胞",
+          "呼吸道黏膜",
+          "鼻涕/喷嚏/咳嗽",
+          "白血球巡逻",
+          "感染传播"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "common-cold-syndrome-virus-entry",
+          "topicId": "common-cold-syndrome",
+          "title": "感冒常从呼吸道入口开始",
+          "coreQuestion": "病毒通常从哪里进入身体？",
+          "explanation": "许多普通感冒和呼吸道病毒有关。病毒先接触鼻腔、咽喉等黏膜表面，再寻找能进入的细胞。",
+          "imagePromptId": "work-cells-common-cold-syndrome-virus-entry",
+          "imagePrompt": "Phase 12 approved image prompt for 感冒常从呼吸道入口开始; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-01.webp",
+          "imageAlt": "鼻腔和咽喉黏膜入口处，有抽象病毒颗粒靠近但未恐怖化的儿童科普图。",
+          "relatedPageIds": [
+            "common-cold-syndrome__v03_page-031",
+            "common-cold-syndrome__v03_page-032"
+          ],
+          "biologyConcepts": [
+            "病毒感染",
+            "呼吸道黏膜",
+            "感染入口"
+          ],
+          "encyclopediaTags": [
+            "普通感冒",
+            "鼻病毒",
+            "黏膜"
+          ],
+          "parentNote": "把病毒讲成需要借用细胞复制的微小颗粒。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "common-cold-syndrome-cell-hijack",
+          "topicId": "common-cold-syndrome",
+          "title": "病毒为什么要进入细胞",
+          "coreQuestion": "为什么病毒不只是在外面待着？",
+          "explanation": "病毒自己不能像细胞那样完整工作，它需要进入细胞并借用细胞里的机器复制自己。被感染细胞会成为免疫系统要识别的线索。",
+          "imagePromptId": "work-cells-common-cold-syndrome-cell-hijack",
+          "imagePrompt": "Phase 12 approved image prompt for 病毒为什么要进入细胞; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-02.webp",
+          "imageAlt": "一个普通细胞旁边有病毒进入和异常信号的温和流程示意。",
+          "relatedPageIds": [
+            "common-cold-syndrome__v03_page-041",
+            "common-cold-syndrome__v03_page-052"
+          ],
+          "biologyConcepts": [
+            "被感染细胞",
+            "病毒复制",
+            "免疫识别"
+          ],
+          "encyclopediaTags": [
+            "病毒",
+            "普通细胞",
+            "被感染细胞"
+          ],
+          "parentNote": "避免把病毒拟人化成会策划的坏人。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "common-cold-syndrome-symptom-map",
+          "topicId": "common-cold-syndrome",
+          "title": "鼻涕、喷嚏、咳嗽是防御动作",
+          "coreQuestion": "这些症状为什么常常一起出现？",
+          "explanation": "鼻涕能黏住外来物，喷嚏和咳嗽能把刺激物排出，喉咙不舒服则提示局部正在应对刺激。它们共同组成感冒症候群。",
+          "imagePromptId": "work-cells-common-cold-syndrome-symptom-map",
+          "imagePrompt": "Phase 12 approved image prompt for 鼻涕、喷嚏、咳嗽是防御动作; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-03.webp",
+          "imageAlt": "上呼吸道症状地图，鼻涕、喷嚏、咳嗽用清楚图标和箭头表现。",
+          "relatedPageIds": [
+            "common-cold-syndrome__v03_page-052",
+            "common-cold-syndrome__v03_page-053"
+          ],
+          "biologyConcepts": [
+            "喷嚏",
+            "鼻涕",
+            "咳嗽",
+            "黏膜清理"
+          ],
+          "encyclopediaTags": [
+            "感冒症状",
+            "呼吸道防御"
+          ],
+          "parentNote": "把不舒服的症状解释成身体在忙，但不提供治疗建议。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "common-cold-syndrome-rest-and-recovery",
+          "topicId": "common-cold-syndrome",
+          "title": "休息让免疫系统有余力",
+          "coreQuestion": "为什么感冒时身体会觉得累？",
+          "explanation": "免疫系统处理感染需要能量。休息、喝水和减少传播风险能帮助身体把工作重点放回恢复上。",
+          "imagePromptId": "work-cells-common-cold-syndrome-rest-and-recovery",
+          "imagePrompt": "Phase 12 approved image prompt for 休息让免疫系统有余力; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-04.webp",
+          "imageAlt": "免疫细胞、呼吸道黏膜和休息补水图标共同组成恢复支持图。",
+          "relatedPageIds": [
+            "common-cold-syndrome__v03_page-053",
+            "common-cold-syndrome__v03_page-056"
+          ],
+          "biologyConcepts": [
+            "免疫工作量",
+            "恢复",
+            "减少传播"
+          ],
+          "encyclopediaTags": [
+            "休息",
+            "补水",
+            "传播防护"
+          ],
+          "parentNote": "只做生活常识提醒；病情判断交给成人和医生。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "common-cold-syndrome-q01",
+          "topicId": "common-cold-syndrome",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "哪里像入口",
+          "question": "看相关页面时，哪些画面线索像是感染源进入身体？",
+          "answer": "可以找黑色飞行物、呼吸道环境、普通细胞变化和免疫细胞开始追查的线索。",
+          "relatedPageIds": [
+            "common-cold-syndrome__v03_page-031",
+            "common-cold-syndrome__v03_page-032"
+          ],
+          "parentHint": "先观察入口和变化。",
+          "biologyConcepts": [
+            "病毒进入",
+            "呼吸道"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "common-cold-syndrome-q02",
+          "topicId": "common-cold-syndrome",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "谁被利用了",
+          "question": "普通细胞有没有马上发现异常？",
+          "answer": "不一定。故事里的线索适合说明病毒感染初期可能不容易被发现。",
+          "relatedPageIds": [
+            "common-cold-syndrome__v03_page-034",
+            "common-cold-syndrome__v03_page-041"
+          ],
+          "parentHint": "把判断力线索连接到科学概念。",
+          "biologyConcepts": [
+            "普通细胞",
+            "被感染细胞"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "common-cold-syndrome-q03",
+          "topicId": "common-cold-syndrome",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么会有症状",
+          "question": "鼻涕、喷嚏和咳嗽都只是在捣乱吗？",
+          "answer": "不是。它们常常和黏膜清理、排出刺激物、提醒身体休息有关。",
+          "relatedPageIds": [
+            "common-cold-syndrome__v03_page-052",
+            "common-cold-syndrome__v03_page-053"
+          ],
+          "parentHint": "让孩子把不舒服和防御联系起来。",
+          "biologyConcepts": [
+            "感冒症状",
+            "黏膜防御"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "common-cold-syndrome-q04",
+          "topicId": "common-cold-syndrome",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "免疫为什么要巡逻",
+          "question": "白血球为什么要追查异常细胞？",
+          "answer": "因为被感染细胞可能帮助病毒复制，免疫系统需要识别并处理异常。",
+          "relatedPageIds": [
+            "common-cold-syndrome__v03_page-036",
+            "common-cold-syndrome__v03_page-041"
+          ],
+          "parentHint": "不要复述战斗对白。",
+          "biologyConcepts": [
+            "白血球",
+            "免疫识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "common-cold-syndrome-q05",
+          "topicId": "common-cold-syndrome",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "感冒时怎么照顾别人",
+          "question": "感冒时为什么要遮住咳嗽、洗手、少靠近别人？",
+          "answer": "这些做法能减少飞沫和接触传播风险，也是在照顾家人和同学。",
+          "relatedPageIds": [
+            "common-cold-syndrome__v03_page-052"
+          ],
+          "parentHint": "引到生活习惯，不做责备。",
+          "biologyConcepts": [
+            "感染传播",
+            "卫生习惯"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "common-cold-syndrome-q06",
+          "topicId": "common-cold-syndrome",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "症候群是什么意思",
+          "question": "为什么叫“感冒症候群”，而不只说一个症状？",
+          "answer": "因为它通常是一组表现，比如鼻涕、喷嚏、咳嗽、喉咙不舒服和疲劳。",
+          "relatedPageIds": [
+            "common-cold-syndrome__v03_page-053"
+          ],
+          "parentHint": "强调“一组现象”。",
+          "biologyConcepts": [
+            "症候群",
+            "感冒症状"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "这个主题有恶作剧和追逐感。共读时可以把轻松剧情转成“病毒进入细胞、黏膜和免疫系统一起应对”的科学线索；不要把感冒处理讲成固定用药或诊断。",
+      "parentNote": "这个主题有恶作剧和追逐感。共读时可以把轻松剧情转成“病毒进入细胞、黏膜和免疫系统一起应对”的科学线索；不要把感冒处理讲成固定用药或诊断。",
+      "sourceNotes": [
+        "漫画来源：第3卷 第11话，只保留页码线索，不展示漫画全文。",
+        "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/common-cold-syndrome/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "common-cold-syndrome__v03_page-031",
+        "common-cold-syndrome__v03_page-032",
+        "common-cold-syndrome__v03_page-041",
+        "common-cold-syndrome__v03_page-052",
+        "common-cold-syndrome__v03_page-053",
+        "common-cold-syndrome__v03_page-056"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "common-cold-syndrome-s1oad-v2-001",
+          "sourceLabel": "动画 S1 OAD 摘要",
+          "summary": "适合导入感冒症候群是一组呼吸道与免疫反应线索。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "common-cold-syndrome-s1oad-v2-003",
+          "sourceLabel": "动画 S1 OAD 摘要",
+          "summary": "适合说明病毒进入细胞以及免疫系统开始识别异常。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "common-cold-syndrome-s1oad-v2-006",
+          "sourceLabel": "动画 S1 OAD 摘要",
+          "summary": "适合把鼻、喉、气道和全身反应整理为症状地图。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 11,
@@ -21661,7 +22267,306 @@
         "staphylococcus-aureus__v04_page-023",
         "staphylococcus-aureus__v04_page-031",
         "staphylococcus-aureus__v04_page-032"
-      ]
+      ],
+      "topicOverview": {
+        "title": "金黄色葡萄球菌",
+        "summary": "金黄色葡萄球菌主题适合解释皮肤屏障、伤口感染、细菌成团聚集、毒素和化脓性炎症。共读时可以把敌人画面转成真实身体机制：皮肤破口让细菌有机会进入，白血球聚集清理，炎症是防御的一部分。",
+        "readingFocus": "“皮肤屏障为什么重要”：用屏障破损、葡萄球菌聚集、趋化信号、白血球吞噬和红肿热痛五个节点说明，不展示完整漫画或动画对白。",
+        "keyBiologyConcepts": [
+          "金黄色葡萄球菌",
+          "皮肤屏障",
+          "伤口感染",
+          "细菌聚集",
+          "毒素",
+          "白血球/中性粒细胞",
+          "吞噬",
+          "化脓性炎症"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "staphylococcus-aureus-skin-barrier",
+          "topicId": "staphylococcus-aureus",
+          "title": "皮肤屏障挡住外来细菌",
+          "coreQuestion": "为什么皮肤破口会增加感染风险？",
+          "explanation": "完整皮肤像一层保护墙。破损后，金黄色葡萄球菌等细菌更容易靠近内部组织，免疫系统也会更忙。",
+          "imagePromptId": "work-cells-staphylococcus-aureus-skin-barrier",
+          "imagePrompt": "Phase 12 approved image prompt for 皮肤屏障挡住外来细菌; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/staphylococcus-aureus/staphylococcus-aureus-v2-station-01.webp",
+          "imageAlt": "皮肤剖面中，完整屏障和小破口旁的球状细菌形成对比。",
+          "relatedPageIds": [
+            "staphylococcus-aureus__v04_page-004",
+            "staphylococcus-aureus__v04_page-008"
+          ],
+          "biologyConcepts": [
+            "皮肤屏障",
+            "伤口感染",
+            "细菌入口"
+          ],
+          "encyclopediaTags": [
+            "皮肤",
+            "金黄色葡萄球菌",
+            "感染入口"
+          ],
+          "parentNote": "把伤口清洁讲成保护屏障，不渲染恐怖。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "staphylococcus-aureus-cluster-shape",
+          "topicId": "staphylococcus-aureus",
+          "title": "为什么叫“葡萄球菌”",
+          "coreQuestion": "这些细菌为什么常被画成一团一团？",
+          "explanation": "葡萄球菌在显微概念上常呈成簇排列，名字里的“葡萄”就来自这种聚集形态。科普图可以用小球成簇帮助孩子理解名称。",
+          "imagePromptId": "work-cells-staphylococcus-aureus-cluster-shape",
+          "imagePrompt": "Phase 12 approved image prompt for 为什么叫“葡萄球菌”; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/staphylococcus-aureus/staphylococcus-aureus-v2-station-02.webp",
+          "imageAlt": "放大视角下，成簇小球状细菌像一串葡萄旁边有免疫警报。",
+          "relatedPageIds": [
+            "staphylococcus-aureus__v04_page-008",
+            "staphylococcus-aureus__v04_page-015"
+          ],
+          "biologyConcepts": [
+            "葡萄球菌",
+            "细菌形态",
+            "聚集"
+          ],
+          "encyclopediaTags": [
+            "金黄色葡萄球菌",
+            "细菌形态"
+          ],
+          "parentNote": "只讲名称和形态，不让孩子自行辨认真实感染。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "staphylococcus-aureus-white-cell-cleanup",
+          "topicId": "staphylococcus-aureus",
+          "title": "白血球会被信号叫来",
+          "coreQuestion": "免疫细胞怎么知道哪里出问题？",
+          "explanation": "组织受刺激时会释放信号，吸引白血球靠近。白血球到达后会包围、吞噬并清理细菌。",
+          "imagePromptId": "work-cells-staphylococcus-aureus-white-cell-cleanup",
+          "imagePrompt": "Phase 12 approved image prompt for 白血球会被信号叫来; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/staphylococcus-aureus/staphylococcus-aureus-v2-station-03.webp",
+          "imageAlt": "白血球沿着化学信号箭头靠近皮肤破口附近细菌的科普图。",
+          "relatedPageIds": [
+            "staphylococcus-aureus__v04_page-009",
+            "staphylococcus-aureus__v04_page-023"
+          ],
+          "biologyConcepts": [
+            "趋化",
+            "白血球",
+            "吞噬"
+          ],
+          "encyclopediaTags": [
+            "中性粒细胞",
+            "免疫清理"
+          ],
+          "parentNote": "把追击画面转成“信号把细胞叫来”。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "staphylococcus-aureus-pus-and-inflammation",
+          "topicId": "staphylococcus-aureus",
+          "title": "化脓是免疫战场的痕迹",
+          "coreQuestion": "红肿和脓为什么和免疫反应有关？",
+          "explanation": "化脓常和细菌、死亡细胞和白血球清理后的残留有关。红肿热痛也可能来自局部炎症反应，是身体防御的一部分。",
+          "imagePromptId": "work-cells-staphylococcus-aureus-pus-and-inflammation",
+          "imagePrompt": "Phase 12 approved image prompt for 化脓是免疫战场的痕迹; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/staphylococcus-aureus/staphylococcus-aureus-v2-station-04.webp",
+          "imageAlt": "局部炎症剖面中，白血球清理细菌并形成温和的红肿示意。",
+          "relatedPageIds": [
+            "staphylococcus-aureus__v04_page-031",
+            "staphylococcus-aureus__v04_page-032"
+          ],
+          "biologyConcepts": [
+            "化脓",
+            "炎症",
+            "组织修复"
+          ],
+          "encyclopediaTags": [
+            "化脓性炎症",
+            "红肿热痛"
+          ],
+          "parentNote": "提醒孩子有伤口问题要找成人，不自行挤压或处理。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "staphylococcus-aureus-q01",
+          "topicId": "staphylococcus-aureus",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "入口在哪里",
+          "question": "看相关页面时，哪些线索说明细菌可能从皮肤或伤口附近进入？",
+          "answer": "可以找皮肤表层、破损环境、细菌靠近和白血球反应的线索。",
+          "relatedPageIds": [
+            "staphylococcus-aureus__v04_page-004",
+            "staphylococcus-aureus__v04_page-008"
+          ],
+          "parentHint": "先看入口，不复述战斗。",
+          "biologyConcepts": [
+            "皮肤屏障",
+            "感染入口"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "staphylococcus-aureus-q02",
+          "topicId": "staphylococcus-aureus",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "细菌像什么形状",
+          "question": "金黄色葡萄球菌相关画面里，细菌是单个出现还是成团出现？",
+          "answer": "常可观察到成团聚集，这能帮助理解“葡萄球菌”的名称。",
+          "relatedPageIds": [
+            "staphylococcus-aureus__v04_page-015"
+          ],
+          "parentHint": "把形状观察连接到名字。",
+          "biologyConcepts": [
+            "细菌形态",
+            "葡萄球菌"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "staphylococcus-aureus-q03",
+          "topicId": "staphylococcus-aureus",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么会红肿",
+          "question": "伤口附近红肿是不是完全没有用？",
+          "answer": "红肿可能来自炎症反应，说明血流和免疫细胞正在参与防御，但严重或异常要找成人判断。",
+          "relatedPageIds": [
+            "staphylococcus-aureus__v04_page-023",
+            "staphylococcus-aureus__v04_page-031"
+          ],
+          "parentHint": "解释机制，同时保留求助边界。",
+          "biologyConcepts": [
+            "炎症",
+            "免疫反应"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "staphylococcus-aureus-q04",
+          "topicId": "staphylococcus-aureus",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "白血球做什么",
+          "question": "白血球在细菌感染里主要做什么？",
+          "answer": "它们会被信号吸引到局部，识别、吞噬并清理细菌。",
+          "relatedPageIds": [
+            "staphylococcus-aureus__v04_page-009",
+            "staphylococcus-aureus__v04_page-023"
+          ],
+          "parentHint": "用“清理队”解释。",
+          "biologyConcepts": [
+            "白血球",
+            "吞噬"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "staphylococcus-aureus-q05",
+          "topicId": "staphylococcus-aureus",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "伤口为什么要清洁",
+          "question": "小伤口为什么要告诉成人并清洁？",
+          "answer": "清洁和保护伤口能减少细菌进入机会，也保护皮肤屏障继续修复。",
+          "relatedPageIds": [
+            "staphylococcus-aureus__v04_page-004"
+          ],
+          "parentHint": "联系生活，不制造焦虑。",
+          "biologyConcepts": [
+            "伤口护理",
+            "皮肤屏障"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "staphylococcus-aureus-q06",
+          "topicId": "staphylococcus-aureus",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "化脓是什么线索",
+          "question": "脓和免疫细胞有什么关系？",
+          "answer": "脓可能包含死亡的白血球、细菌和组织残留，是局部免疫反应后的痕迹之一。",
+          "relatedPageIds": [
+            "staphylococcus-aureus__v04_page-031"
+          ],
+          "parentHint": "讲概念，不指导处理。",
+          "biologyConcepts": [
+            "化脓",
+            "白血球"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "这个主题有细菌入侵和化脓相关画面。共读时请把重点放在皮肤屏障、伤口清洁和免疫清理；如果孩子联想到真实伤口，提醒找成人处理并在需要时咨询专业医务人员。",
+      "parentNote": "这个主题有细菌入侵和化脓相关画面。共读时请把重点放在皮肤屏障、伤口清洁和免疫清理；如果孩子联想到真实伤口，提醒找成人处理并在需要时咨询专业医务人员。",
+      "sourceNotes": [
+        "漫画来源：第4卷 第15话，只保留页码线索，不展示漫画全文。",
+        "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/staphylococcus-aureus/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "staphylococcus-aureus__v04_page-004",
+        "staphylococcus-aureus__v04_page-008",
+        "staphylococcus-aureus__v04_page-015",
+        "staphylococcus-aureus__v04_page-023",
+        "staphylococcus-aureus__v04_page-031",
+        "staphylococcus-aureus__v04_page-032"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "staphylococcus-aureus-s1e10-v2-001",
+          "sourceLabel": "动画 S1 第10话摘要",
+          "summary": "适合说明皮肤或黏膜附近的局部屏障背景。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "staphylococcus-aureus-s1e10-v2-003",
+          "sourceLabel": "动画 S1 第10话摘要",
+          "summary": "适合转化为趋化、白血球靠近和局部免疫清理机制。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "staphylococcus-aureus-s1e10-v2-006",
+          "sourceLabel": "动画 S1 第10话摘要",
+          "summary": "适合说明炎症和免疫细胞分工。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 15,
@@ -34304,7 +35209,312 @@
         "gut-microbiota__v05_page-124",
         "gut-microbiota__v05_page-125",
         "gut-microbiota__v05_page-126"
-      ]
+      ],
+      "topicOverview": {
+        "title": "肠道菌群",
+        "summary": "肠道菌群主题强调“身体里也有微小伙伴”：肠道里有有益菌、机会菌和有害菌，它们与食物、黏膜屏障和免疫系统共同组成生态。共读时应避免把所有细菌都讲成敌人。",
+        "readingFocus": "“菌群平衡是什么意思”：用肠道生态、有益菌占位、黏膜屏障、饮食影响和免疫协作五个节点解释；动画匹配为 medium，相关线索需人工复核后再扩展。",
+        "keyBiologyConcepts": [
+          "肠道菌群",
+          "微生物生态",
+          "益菌",
+          "害菌",
+          "机会菌",
+          "乳酸菌",
+          "肠道屏障",
+          "肠道免疫",
+          "菌群平衡"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "gut-microbiota-ecosystem",
+          "topicId": "gut-microbiota",
+          "title": "肠道菌群像生态系统",
+          "coreQuestion": "肠道里的细菌都是坏的吗？",
+          "explanation": "不是。肠道里生活着很多微生物，有些帮助维持环境，有些在条件变化时可能带来麻烦。它们共同构成菌群生态。",
+          "imagePromptId": "work-cells-gut-microbiota-ecosystem",
+          "imagePrompt": "Phase 12 approved image prompt for 肠道菌群像生态系统; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-01.webp",
+          "imageAlt": "肠道剖面中多种温和微生物共同生活，形成生态系统的儿童科普图。",
+          "relatedPageIds": [
+            "gut-microbiota__v05_page-109",
+            "gut-microbiota__v05_page-112"
+          ],
+          "biologyConcepts": [
+            "肠道菌群",
+            "微生物生态",
+            "大肠"
+          ],
+          "encyclopediaTags": [
+            "肠道菌群",
+            "益菌",
+            "机会菌"
+          ],
+          "parentNote": "先强调“不是所有细菌都是敌人”。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "gut-microbiota-balance",
+          "topicId": "gut-microbiota",
+          "title": "益菌、有害菌和机会菌的平衡",
+          "coreQuestion": "菌群平衡是不是只有一种好细菌？",
+          "explanation": "菌群平衡更像多种微生物保持合适比例。益菌可以占住位置，有害菌过多时环境就可能变得不稳定。",
+          "imagePromptId": "work-cells-gut-microbiota-balance",
+          "imagePrompt": "Phase 12 approved image prompt for 益菌、有害菌和机会菌的平衡; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-02.webp",
+          "imageAlt": "天平和肠道生态结合，表现益菌、有害菌和机会菌比例变化。",
+          "relatedPageIds": [
+            "gut-microbiota__v05_page-113",
+            "gut-microbiota__v05_page-117"
+          ],
+          "biologyConcepts": [
+            "益菌",
+            "害菌",
+            "机会菌",
+            "菌群平衡"
+          ],
+          "encyclopediaTags": [
+            "乳酸菌",
+            "微生物生态"
+          ],
+          "parentNote": "避免把单一产品或单一菌种讲成万能答案。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "gut-microbiota-mucosal-barrier",
+          "topicId": "gut-microbiota",
+          "title": "肠道屏障和免疫细胞协作",
+          "coreQuestion": "肠道为什么既要接纳菌群又要防御？",
+          "explanation": "肠道屏障要吸收营养，也要防止有害因素穿过。免疫细胞会判断哪些信号需要处理，维持边界稳定。",
+          "imagePromptId": "work-cells-gut-microbiota-mucosal-barrier",
+          "imagePrompt": "Phase 12 approved image prompt for 肠道屏障和免疫细胞协作; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-03.webp",
+          "imageAlt": "肠道黏膜、黏液层、菌群和免疫细胞分层协作的科普图。",
+          "relatedPageIds": [
+            "gut-microbiota__v05_page-113",
+            "gut-microbiota__v05_page-124"
+          ],
+          "biologyConcepts": [
+            "肠道屏障",
+            "肠道免疫",
+            "免疫识别"
+          ],
+          "encyclopediaTags": [
+            "黏膜防御",
+            "NK细胞",
+            "白血球"
+          ],
+          "parentNote": "把“接纳”和“防御”同时讲清楚。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "gut-microbiota-food-influence",
+          "topicId": "gut-microbiota",
+          "title": "食物会影响肠道环境",
+          "coreQuestion": "我们吃的东西会影响菌群吗？",
+          "explanation": "饮食会改变肠道里的营养和环境，进而影响不同微生物的生长机会。稳定、多样的饮食习惯通常更有利于肠道生态。",
+          "imagePromptId": "work-cells-gut-microbiota-food-influence",
+          "imagePrompt": "Phase 12 approved image prompt for 食物会影响肠道环境; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-04.webp",
+          "imageAlt": "食物纤维、肠道菌群和稳定环境用箭头连接的儿童科普图。",
+          "relatedPageIds": [
+            "gut-microbiota__v05_page-125",
+            "gut-microbiota__v05_page-126"
+          ],
+          "biologyConcepts": [
+            "饮食影响",
+            "菌群生态",
+            "恢复稳定"
+          ],
+          "encyclopediaTags": [
+            "膳食纤维",
+            "肠道健康"
+          ],
+          "parentNote": "保持常识层面，不宣传具体产品。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "gut-microbiota-q01",
+          "topicId": "gut-microbiota",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "细菌都是敌人吗",
+          "question": "看相关页面时，细菌被画成敌人、伙伴，还是两者之间？",
+          "answer": "可以观察到不同类型的菌，有些像伙伴，有些可能带来风险。",
+          "relatedPageIds": [
+            "gut-microbiota__v05_page-109",
+            "gut-microbiota__v05_page-112"
+          ],
+          "parentHint": "帮助孩子打破“细菌全是坏的”的想法。",
+          "biologyConcepts": [
+            "肠道菌群",
+            "益菌"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "gut-microbiota-q02",
+          "topicId": "gut-microbiota",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "哪里像肠道环境",
+          "question": "哪些画面线索说明故事发生在肠道里？",
+          "answer": "可以找管道、大肠环境、菌群说明和免疫细胞判断等线索。",
+          "relatedPageIds": [
+            "gut-microbiota__v05_page-109",
+            "gut-microbiota__v05_page-113"
+          ],
+          "parentHint": "先看环境，再谈生态。",
+          "biologyConcepts": [
+            "大肠",
+            "肠道环境"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "gut-microbiota-q03",
+          "topicId": "gut-microbiota",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么要平衡",
+          "question": "为什么肠道菌群不是越少越好？",
+          "answer": "因为肠道需要多种微生物共同维持环境，全部清掉并不等于健康。",
+          "relatedPageIds": [
+            "gut-microbiota__v05_page-113",
+            "gut-microbiota__v05_page-117"
+          ],
+          "parentHint": "强调生态概念。",
+          "biologyConcepts": [
+            "菌群平衡",
+            "微生物生态"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "gut-microbiota-q04",
+          "topicId": "gut-microbiota",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "身体怎么判断",
+          "question": "身体怎样判断一个微生物是不是需要攻击？",
+          "answer": "免疫系统会结合位置、数量、信号和屏障状态来判断，不是只看“是不是细菌”。",
+          "relatedPageIds": [
+            "gut-microbiota__v05_page-113",
+            "gut-microbiota__v05_page-124"
+          ],
+          "parentHint": "可以用“看情况做决定”解释。",
+          "biologyConcepts": [
+            "免疫识别",
+            "肠道屏障"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "gut-microbiota-q05",
+          "topicId": "gut-microbiota",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "吃什么会影响环境",
+          "question": "日常饮食为什么可能影响肠道菌群？",
+          "answer": "食物给不同微生物提供不同营养，也会影响肠道环境是否稳定。",
+          "relatedPageIds": [
+            "gut-microbiota__v05_page-125"
+          ],
+          "parentHint": "不推荐具体产品，只谈均衡饮食。",
+          "biologyConcepts": [
+            "饮食影响",
+            "肠道生态"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "gut-microbiota-q06",
+          "topicId": "gut-microbiota",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "生态系统是什么意思",
+          "question": "为什么说肠道菌群像生态系统？",
+          "answer": "因为里面有多种微生物、营养、空间和身体屏障，它们互相影响。",
+          "relatedPageIds": [
+            "gut-microbiota__v05_page-109",
+            "gut-microbiota__v05_page-126"
+          ],
+          "parentHint": "把生态系统讲成“很多成员一起影响环境”。",
+          "biologyConcepts": [
+            "生态系统",
+            "菌群"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "这个主题适合温和地讲“不是所有细菌都是敌人”。请避免把乳酸菌或任何单一食物讲成治疗方案；若涉及健康问题，应咨询专业医务人员。动画匹配置信度为 medium，因对应动画标题为“有害菌”，后续使用画面线索前需人工复核。",
+      "parentNote": "这个主题适合温和地讲“不是所有细菌都是敌人”。请避免把乳酸菌或任何单一食物讲成治疗方案；若涉及健康问题，应咨询专业医务人员。动画匹配置信度为 medium，因对应动画标题为“有害菌”，后续使用画面线索前需人工复核。",
+      "sourceNotes": [
+        "漫画来源：第5卷 第23话，只保留页码线索，不展示漫画全文。",
+        "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/gut-microbiota/png-originals/，正式前端资源只使用WebP。",
+        "gut-microbiota 动画匹配置信度为 medium；动画标题为“有害菌”，相关画面和时间点后续使用前需人工复核。"
+      ],
+      "relatedComicPages": [
+        "gut-microbiota__v05_page-109",
+        "gut-microbiota__v05_page-112",
+        "gut-microbiota__v05_page-113",
+        "gut-microbiota__v05_page-117",
+        "gut-microbiota__v05_page-124",
+        "gut-microbiota__v05_page-126"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "gut-microbiota-s2e06-v2-001",
+          "sourceLabel": "动画 S2 第6话摘要（medium，需人工复核）",
+          "summary": "可作为肠道菌群主题入口，但因动画标题为“有害菌”，前端扩展前需人工复核。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "gut-microbiota-s2e06-v2-004",
+          "sourceLabel": "动画 S2 第6话摘要（medium，需人工复核）",
+          "summary": "适合说明有益菌、有害菌和肠道环境的平衡关系。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "gut-microbiota-s2e06-v2-006",
+          "sourceLabel": "动画 S2 第6话摘要（medium，需人工复核）",
+          "summary": "适合连接黏膜屏障、有益菌竞争占位和免疫协作。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 22,
@@ -39687,7 +40897,312 @@
         "bump-on-head__v06_page-035",
         "bump-on-head__v06_page-036",
         "bump-on-head__v06_page-037"
-      ]
+      ],
+      "topicOverview": {
+        "title": "撞出肿包",
+        "summary": "撞出肿包主题把外部碰撞转成身体内部的血管损伤、血液外渗、血小板集合、凝血加固和肿胀吸收恢复。共读时重点是让孩子知道：肿包不是凭空长出来，而是身体在处理微小损伤。",
+        "readingFocus": "“撞到头后身体里发生什么”：用撞击、血管受损、血液外渗、血小板止血、纤维蛋白加固和恢复观察六个节点解释，同时保留头部外伤需成人判断的边界。",
+        "keyBiologyConcepts": [
+          "撞伤",
+          "肿包",
+          "血管损伤",
+          "血液外渗",
+          "血小板",
+          "凝血",
+          "纤维蛋白",
+          "血肿",
+          "炎症反应",
+          "组织修复"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "bump-on-head-impact-to-tissue",
+          "topicId": "bump-on-head",
+          "title": "撞击会传到身体内部",
+          "coreQuestion": "外面只是撞一下，里面为什么会忙起来？",
+          "explanation": "撞击力会传到皮下组织和小血管。即使表面只看到鼓起来，内部也可能有小血管受损和局部组织反应。",
+          "imagePromptId": "work-cells-bump-on-head-impact-to-tissue",
+          "imagePrompt": "Phase 12 approved image prompt for 撞击会传到身体内部; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/bump-on-head/bump-on-head-v2-station-01.webp",
+          "imageAlt": "头部皮下剖面中，外部撞击力传到小血管和组织的温和示意图。",
+          "relatedPageIds": [
+            "bump-on-head__v06_page-004",
+            "bump-on-head__v06_page-009"
+          ],
+          "biologyConcepts": [
+            "机械性损伤",
+            "组织损伤",
+            "血管损伤"
+          ],
+          "encyclopediaTags": [
+            "肿包",
+            "外伤",
+            "头部安全"
+          ],
+          "parentNote": "先解释机制，再提醒头部撞伤要让成人判断。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "bump-on-head-swelling-pocket",
+          "topicId": "bump-on-head",
+          "title": "肿包来自局部液体和血液聚集",
+          "coreQuestion": "为什么撞到的地方会鼓起来？",
+          "explanation": "小血管受损后，血液或组织液可能跑到周围组织里，形成局部肿胀或血肿，看起来就像鼓起一个包。",
+          "imagePromptId": "work-cells-bump-on-head-swelling-pocket",
+          "imagePrompt": "Phase 12 approved image prompt for 肿包来自局部液体和血液聚集; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/bump-on-head/bump-on-head-v2-station-02.webp",
+          "imageAlt": "皮下小血管渗出，局部形成温和肿胀口袋的科普剖面图。",
+          "relatedPageIds": [
+            "bump-on-head__v06_page-015",
+            "bump-on-head__v06_page-018"
+          ],
+          "biologyConcepts": [
+            "血液外渗",
+            "血肿",
+            "肿胀"
+          ],
+          "encyclopediaTags": [
+            "血肿",
+            "淤青",
+            "组织液"
+          ],
+          "parentNote": "避免把画面讲得吓人，用“跑到不该去的地方”解释。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "bump-on-head-platelet-plug",
+          "topicId": "bump-on-head",
+          "title": "血小板先来堵住破口",
+          "coreQuestion": "身体怎样让受损小血管不再漏？",
+          "explanation": "血小板会在受损处聚集，像临时施工队一样先把破口堵住，帮助止血流程启动。",
+          "imagePromptId": "work-cells-bump-on-head-platelet-plug",
+          "imagePrompt": "Phase 12 approved image prompt for 血小板先来堵住破口; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/bump-on-head/bump-on-head-v2-station-03.webp",
+          "imageAlt": "血小板在小血管破口处集合，形成临时封堵的儿童科普图。",
+          "relatedPageIds": [
+            "bump-on-head__v06_page-010",
+            "bump-on-head__v06_page-014"
+          ],
+          "biologyConcepts": [
+            "血小板黏附",
+            "止血",
+            "凝血启动"
+          ],
+          "encyclopediaTags": [
+            "血小板",
+            "止血",
+            "凝血"
+          ],
+          "parentNote": "可以说“施工队”，但不要加入进度或打卡。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "bump-on-head-fibrin-repair",
+          "topicId": "bump-on-head",
+          "title": "纤维蛋白让修补更牢",
+          "coreQuestion": "临时堵住以后还需要什么？",
+          "explanation": "凝血过程中会形成纤维蛋白网，让血小板塞子更稳。之后身体会慢慢清理多余液体，肿胀逐渐恢复。",
+          "imagePromptId": "work-cells-bump-on-head-fibrin-repair",
+          "imagePrompt": "Phase 12 approved image prompt for 纤维蛋白让修补更牢; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/bump-on-head/bump-on-head-v2-station-04.webp",
+          "imageAlt": "纤维蛋白网加固血小板塞子，周围肿胀逐步恢复的流程图。",
+          "relatedPageIds": [
+            "bump-on-head__v06_page-020",
+            "bump-on-head__v06_page-030"
+          ],
+          "biologyConcepts": [
+            "纤维蛋白",
+            "凝血",
+            "组织修复"
+          ],
+          "encyclopediaTags": [
+            "纤维蛋白",
+            "恢复",
+            "血小板"
+          ],
+          "parentNote": "把恢复讲成逐步过程，同时保留观察和求助边界。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "bump-on-head-q01",
+          "topicId": "bump-on-head",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "撞击从哪里来",
+          "question": "看相关页面时，哪些线索说明这是外部撞击造成的内部反应？",
+          "answer": "可以找外部撞到头、冲击传入体内、细胞被影响和小血管受损的线索。",
+          "relatedPageIds": [
+            "bump-on-head__v06_page-004",
+            "bump-on-head__v06_page-009"
+          ],
+          "parentHint": "先把外部事件和内部变化连起来。",
+          "biologyConcepts": [
+            "外伤",
+            "组织损伤"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "bump-on-head-q02",
+          "topicId": "bump-on-head",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "谁像施工队",
+          "question": "画面里哪些角色或结构像是在修补现场？",
+          "answer": "血小板最像先到场的施工队，凝血和纤维蛋白会让修补更稳。",
+          "relatedPageIds": [
+            "bump-on-head__v06_page-010",
+            "bump-on-head__v06_page-014"
+          ],
+          "parentHint": "让孩子找角色功能，不讲完整剧情。",
+          "biologyConcepts": [
+            "血小板",
+            "凝血"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "bump-on-head-q03",
+          "topicId": "bump-on-head",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么会鼓起来",
+          "question": "为什么撞到后外面会鼓起一个包？",
+          "answer": "局部小血管和组织受影响后，血液或组织液聚在周围，就会形成肿胀。",
+          "relatedPageIds": [
+            "bump-on-head__v06_page-015",
+            "bump-on-head__v06_page-018"
+          ],
+          "parentHint": "用剖面概念解释，不制造恐惧。",
+          "biologyConcepts": [
+            "血肿",
+            "肿胀"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "bump-on-head-q04",
+          "topicId": "bump-on-head",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "止血和消肿一样吗",
+          "question": "血小板止血和肿包慢慢消退是不是同一件事？",
+          "answer": "不是。止血是先堵住破口，消肿是后面慢慢清理和恢复的过程。",
+          "relatedPageIds": [
+            "bump-on-head__v06_page-020",
+            "bump-on-head__v06_page-030"
+          ],
+          "parentHint": "帮助孩子分清先后。",
+          "biologyConcepts": [
+            "止血",
+            "组织修复"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "bump-on-head-q05",
+          "topicId": "bump-on-head",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "撞到头要告诉谁",
+          "question": "撞到头后为什么要告诉成人？",
+          "answer": "头部撞伤需要成人观察和判断，尤其是很痛、头晕、呕吐、嗜睡或情况异常时。",
+          "relatedPageIds": [
+            "bump-on-head__v06_page-004"
+          ],
+          "parentHint": "保留明确安全边界，不给急救教程。",
+          "biologyConcepts": [
+            "头部安全",
+            "成人判断"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "bump-on-head-q06",
+          "topicId": "bump-on-head",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "血肿是什么",
+          "question": "血肿和普通皮肤颜色变化有什么关系？",
+          "answer": "血肿是血液跑到血管外局部聚集，后来可能伴随颜色变化和逐步吸收。",
+          "relatedPageIds": [
+            "bump-on-head__v06_page-015"
+          ],
+          "parentHint": "讲概念，不让孩子自行诊断。",
+          "biologyConcepts": [
+            "血肿",
+            "淤青"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "头部撞伤需要更谨慎。共读时可以解释肿包形成、血小板止血和恢复过程，但如果孩子真实撞到头，尤其出现头晕、呕吐、嗜睡、持续疼痛或异常表现，应由成人及时寻求专业帮助。",
+      "parentNote": "头部撞伤需要更谨慎。共读时可以解释肿包形成、血小板止血和恢复过程，但如果孩子真实撞到头，尤其出现头晕、呕吐、嗜睡、持续疼痛或异常表现，应由成人及时寻求专业帮助。",
+      "sourceNotes": [
+        "漫画来源：第6卷 第26话，只保留页码线索，不展示漫画全文。",
+        "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/bump-on-head/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "bump-on-head__v06_page-004",
+        "bump-on-head__v06_page-009",
+        "bump-on-head__v06_page-010",
+        "bump-on-head__v06_page-015",
+        "bump-on-head__v06_page-020",
+        "bump-on-head__v06_page-030"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "bump-on-head-s2e01-v2-002",
+          "sourceLabel": "动画 S2 第1话摘要",
+          "summary": "适合说明撞击传入身体内部和小血管受损。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "bump-on-head-s2e01-v2-005",
+          "sourceLabel": "动画 S2 第1话摘要",
+          "summary": "适合说明血小板集合和止血流程。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        },
+        {
+          "sceneId": "bump-on-head-s2e01-v2-006",
+          "sourceLabel": "动画 S2 第1话摘要",
+          "summary": "适合说明纤维蛋白加固和肿胀恢复。",
+          "policy": "no-video-no-subtitle-no-dialogue"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 24,

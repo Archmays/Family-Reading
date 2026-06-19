@@ -227,18 +227,28 @@ const workCellsV2TopicIds = [
   'influenza',
   'pneumococcus',
   'abrasion',
+  'food-poisoning',
   'heatstroke',
+  'common-cold-syndrome',
   'blood-circulation',
+  'staphylococcus-aureus',
   'hemorrhagic-shock',
+  'gut-microbiota',
+  'bump-on-head',
 ];
 const workCellsV2QuestionCounts = new Map([
   ['cedar-pollen-allergy', 6],
   ['influenza', 6],
   ['pneumococcus', 6],
   ['abrasion', 8],
+  ['food-poisoning', 6],
   ['heatstroke', 8],
+  ['common-cold-syndrome', 6],
   ['blood-circulation', 6],
+  ['staphylococcus-aureus', 6],
   ['hemorrhagic-shock', 6],
+  ['gut-microbiota', 6],
+  ['bump-on-head', 6],
 ]);
 
 function readJson(filePath) {
