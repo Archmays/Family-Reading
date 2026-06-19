@@ -9901,7 +9901,12 @@
         "巨噬细胞/育成环境",
         "红血球进入循环"
       ],
-      "recommendedBodyScienceStationFocus": "“血细胞在哪里出生”：用“红骨髓学校”类比说明未成熟细胞如何接受训练、分化成红血球或白血球；强调这是拟人化，真实过程是细胞增殖和分化。",
+      "recommendedBodyScienceStationFocus": [
+        "红骨髓为什么像身体里的造血工厂",
+        "红血球母细胞怎样逐步成熟",
+        "骨髓细胞/白血球前体为什么要分化",
+        "成熟血细胞怎样离开骨髓去工作"
+      ],
       "recommendedParentQuestions": [
         "为什么红血球不是一开始就会送氧气？",
         "红骨髓像学校这个比喻帮你理解了什么？",
@@ -10860,7 +10865,312 @@
         "erythroblast-and-bone-marrow-cell__v02_page-071",
         "erythroblast-and-bone-marrow-cell__v02_page-072",
         "erythroblast-and-bone-marrow-cell__v02_page-073"
-      ]
+      ],
+      "topicOverview": {
+        "title": "红血球母细胞与骨髓细胞",
+        "summary": "红血球母细胞与骨髓细胞主题把“血细胞从哪里来”讲成红骨髓中的成长故事。共读时可以把学校和训练的拟人化画面转回真实机制：红骨髓持续制造血细胞，未成熟细胞经过分化和成熟，最后承担运输氧气或免疫防护等不同任务。",
+        "readingFocus": "“血细胞在哪里出生”：用红骨髓造血、红血球母细胞成熟、白血球前体分化和成熟后进入循环四个节点说明，不展示漫画全文或动画对白。",
+        "keyBiologyConcepts": [
+          "红骨髓",
+          "造血",
+          "造血干细胞",
+          "红血球母细胞",
+          "骨髓细胞/白血球前体",
+          "细胞分化",
+          "细胞成熟",
+          "红血球进入循环"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "erythroblast-and-bone-marrow-cell-bone-marrow-factory",
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "title": "红骨髓是造血工厂",
+          "coreQuestion": "身体里的新血细胞从哪里来？",
+          "explanation": "红骨髓是重要的造血场所。许多未成熟细胞会在这里增殖、分化，逐渐准备承担运输、免疫等不同工作。",
+          "imagePromptId": "work-cells-erythroblast-and-bone-marrow-cell-bone-marrow-factory",
+          "imagePrompt": "Phase 15 approved image prompt for 红骨髓是造血工厂; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/erythroblast-and-bone-marrow-cell/erythroblast-and-bone-marrow-cell-v2-station-01.webp",
+          "imageAlt": "红骨髓剖面中，未成熟血细胞在安全环境里逐步生成的儿童科普图。",
+          "relatedPageIds": [
+            "erythroblast-and-bone-marrow-cell__v02_page-065",
+            "erythroblast-and-bone-marrow-cell__v02_page-066"
+          ],
+          "biologyConcepts": [
+            "红骨髓",
+            "造血",
+            "造血环境"
+          ],
+          "encyclopediaTags": [
+            "红骨髓",
+            "造血",
+            "血细胞"
+          ],
+          "parentNote": "可以把“工厂”或“学校”当成比喻，再说明真实过程是细胞增殖和分化。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "erythroblast-and-bone-marrow-cell-erythroblast-maturation",
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "title": "红血球母细胞会逐步成熟",
+          "coreQuestion": "幼年的红血球和成熟红血球有什么不同？",
+          "explanation": "红血球母细胞还在发育阶段。成熟过程中，它会逐渐变成更适合携带氧气、通过血管运行的红血球。",
+          "imagePromptId": "work-cells-erythroblast-and-bone-marrow-cell-erythroblast-maturation",
+          "imagePrompt": "Phase 15 approved image prompt for 红血球母细胞会逐步成熟; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/erythroblast-and-bone-marrow-cell/erythroblast-and-bone-marrow-cell-v2-station-02.webp",
+          "imageAlt": "红血球母细胞经过几个阶段逐步成熟为红血球的流程示意图。",
+          "relatedPageIds": [
+            "erythroblast-and-bone-marrow-cell__v02_page-068",
+            "erythroblast-and-bone-marrow-cell__v02_page-070"
+          ],
+          "biologyConcepts": [
+            "红血球母细胞",
+            "红血球成熟",
+            "氧气运输"
+          ],
+          "encyclopediaTags": [
+            "红血球",
+            "细胞成熟",
+            "氧气运输"
+          ],
+          "parentNote": "帮助孩子理解“长大后会做不同工作”，不要把成熟过程讲成考试排名。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "erythroblast-and-bone-marrow-cell-myeloid-cell-path",
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "title": "骨髓细胞也会走向免疫工作",
+          "coreQuestion": "为什么骨髓里不只培养红血球？",
+          "explanation": "骨髓里还会产生走向免疫任务的细胞前体。不同细胞根据身体需要分化，未来负责运输、巡逻或清理风险。",
+          "imagePromptId": "work-cells-erythroblast-and-bone-marrow-cell-myeloid-cell-path",
+          "imagePrompt": "Phase 15 approved image prompt for 骨髓细胞也会走向免疫工作; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/erythroblast-and-bone-marrow-cell/erythroblast-and-bone-marrow-cell-v2-station-03.webp",
+          "imageAlt": "骨髓环境中不同未成熟细胞走向红血球和免疫细胞分支的示意图。",
+          "relatedPageIds": [
+            "erythroblast-and-bone-marrow-cell__v02_page-073",
+            "erythroblast-and-bone-marrow-cell__v02_page-081"
+          ],
+          "biologyConcepts": [
+            "骨髓细胞",
+            "白血球前体",
+            "细胞分化"
+          ],
+          "encyclopediaTags": [
+            "骨髓细胞",
+            "白血球",
+            "免疫细胞"
+          ],
+          "parentNote": "强调这是分工，不是哪个细胞更重要。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "erythroblast-and-bone-marrow-cell-entering-circulation",
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "title": "成熟后进入循环去工作",
+          "coreQuestion": "血细胞成熟后会去哪里？",
+          "explanation": "成熟血细胞会离开骨髓，进入血液循环。红血球把氧气送到各处，免疫细胞则帮助身体识别和处理风险。",
+          "imagePromptId": "work-cells-erythroblast-and-bone-marrow-cell-entering-circulation",
+          "imagePrompt": "Phase 15 approved image prompt for 成熟后进入循环去工作; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/erythroblast-and-bone-marrow-cell/erythroblast-and-bone-marrow-cell-v2-station-04.webp",
+          "imageAlt": "成熟红血球和免疫细胞从骨髓进入血管并开始工作的温和路线图。",
+          "relatedPageIds": [
+            "erythroblast-and-bone-marrow-cell__v02_page-089",
+            "erythroblast-and-bone-marrow-cell__v02_page-090"
+          ],
+          "biologyConcepts": [
+            "血液循环",
+            "红血球",
+            "免疫细胞分工"
+          ],
+          "encyclopediaTags": [
+            "循环系统",
+            "红血球",
+            "免疫防御"
+          ],
+          "parentNote": "把成长线收束到“身体一直在补充能工作的细胞”。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "erythroblast-and-bone-marrow-cell-q01",
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "骨髓像什么地方",
+          "question": "看相关页面时，红骨髓被画得更像普通房间、学校，还是运输道路？",
+          "answer": "更像学校或训练环境，用来帮助理解未成熟细胞在这里成长。",
+          "relatedPageIds": [
+            "erythroblast-and-bone-marrow-cell__v02_page-065"
+          ],
+          "parentHint": "先观察画面比喻，再回到“造血场所”。",
+          "biologyConcepts": [
+            "红骨髓",
+            "造血环境"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "erythroblast-and-bone-marrow-cell-q02",
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "谁还没成熟",
+          "question": "哪些画面线索说明红血球母细胞还在学习和成长？",
+          "answer": "可以看训练、老师、同伴和未来任务的提示。",
+          "relatedPageIds": [
+            "erythroblast-and-bone-marrow-cell__v02_page-068",
+            "erythroblast-and-bone-marrow-cell__v02_page-070"
+          ],
+          "parentHint": "不复述对白，只看成长线索。",
+          "biologyConcepts": [
+            "红血球母细胞",
+            "细胞成熟"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "erythroblast-and-bone-marrow-cell-q03",
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么要造血",
+          "question": "身体为什么需要不断制造新的血细胞？",
+          "answer": "血细胞有自己的寿命和任务，身体需要持续补充能工作的细胞。",
+          "relatedPageIds": [
+            "erythroblast-and-bone-marrow-cell__v02_page-066"
+          ],
+          "parentHint": "可以类比“工作队伍需要补充新成员”。",
+          "biologyConcepts": [
+            "造血",
+            "血细胞更新"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "erythroblast-and-bone-marrow-cell-q04",
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "分化是什么意思",
+          "question": "同在骨髓里的未成熟细胞，为什么后来会有不同工作？",
+          "answer": "因为细胞会分化，逐渐走向不同功能，例如运输氧气或参与免疫。",
+          "relatedPageIds": [
+            "erythroblast-and-bone-marrow-cell__v02_page-073",
+            "erythroblast-and-bone-marrow-cell__v02_page-081"
+          ],
+          "parentHint": "把分化讲成“逐渐变得适合某种工作”。",
+          "biologyConcepts": [
+            "细胞分化",
+            "免疫细胞"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "erythroblast-and-bone-marrow-cell-q05",
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "血液为什么重要",
+          "question": "如果把红血球的工作和日常生活联系起来，它像在帮身体送什么？",
+          "answer": "它像在帮身体运送氧气，让各处组织有需要的供应。",
+          "relatedPageIds": [
+            "erythroblast-and-bone-marrow-cell__v02_page-090"
+          ],
+          "parentHint": "避免记录阅读进度，只做短讨论。",
+          "biologyConcepts": [
+            "红血球",
+            "氧气运输"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "erythroblast-and-bone-marrow-cell-q06",
+          "topicId": "erythroblast-and-bone-marrow-cell",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "红骨髓不是普通骨头",
+          "question": "为什么红骨髓在这个主题里很关键？",
+          "answer": "因为红骨髓是造血组织，许多血细胞从这里发育成熟。",
+          "relatedPageIds": [
+            "erythroblast-and-bone-marrow-cell__v02_page-065",
+            "erythroblast-and-bone-marrow-cell__v02_page-066"
+          ],
+          "parentHint": "把“骨头里面也有活跃组织”说清楚。",
+          "biologyConcepts": [
+            "红骨髓",
+            "造血"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "这个主题有幼年细胞遇险和战斗回忆。共读时请把重点放在造血、成长和分工，不把“害怕”讲成孩子需要独自变强；真实健康问题应咨询专业医务人员。",
+      "parentNote": "这个主题有幼年细胞遇险和战斗回忆。共读时请把重点放在造血、成长和分工，不把“害怕”讲成孩子需要独自变强；真实健康问题应咨询专业医务人员。",
+      "sourceNotes": [
+        "漫画来源：第2卷 第7话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S1 第6话 summary-only scene notes，sourceMode: srt；不接入视频、字幕或对白。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/erythroblast-and-bone-marrow-cell/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "erythroblast-and-bone-marrow-cell__v02_page-065",
+        "erythroblast-and-bone-marrow-cell__v02_page-068",
+        "erythroblast-and-bone-marrow-cell__v02_page-073",
+        "erythroblast-and-bone-marrow-cell__v02_page-081",
+        "erythroblast-and-bone-marrow-cell__v02_page-089",
+        "erythroblast-and-bone-marrow-cell__v02_page-090"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "erythroblast-and-bone-marrow-cell-s1e06-v2-001",
+          "sourceLabel": "动画 S1 第6话摘要",
+          "summary": "适合导入骨髓是血细胞成长和造血的重要环境。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "srt"
+        },
+        {
+          "sceneId": "erythroblast-and-bone-marrow-cell-s1e06-v2-002",
+          "sourceLabel": "动画 S1 第6话摘要",
+          "summary": "适合说明红血球母细胞逐步成熟并准备承担氧气运输任务。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "srt"
+        },
+        {
+          "sceneId": "erythroblast-and-bone-marrow-cell-s1e06-v2-004",
+          "sourceLabel": "动画 S1 第6话摘要",
+          "summary": "适合连接骨髓里的幼年细胞保护和未来免疫分工。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "srt"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 8,
@@ -11055,11 +11365,10 @@
         "免疫清除"
       ],
       "recommendedBodyScienceStationFocus": [
-        "什么是癌细胞：来自身体自己的异常细胞",
-        "细胞为什么需要“按规则分裂”",
-        "NK细胞和T细胞怎样识别异常细胞",
-        "免疫系统为什么要监视身体内部",
-        "漫画中的战斗与现实免疫反应的区别"
+        "癌细胞为什么不是外来病原体",
+        "细胞分裂为什么需要规则",
+        "NK细胞和T细胞怎样参与免疫监视",
+        "为什么不能把癌症讲成简单的坏人故事"
       ],
       "recommendedParentQuestions": [
         "癌细胞和细菌最大的不同是什么？",
@@ -13798,7 +14107,317 @@
         "cancer-cell__v02_page-131",
         "cancer-cell__v02_page-133",
         "cancer-cell__v02_page-137"
-      ]
+      ],
+      "topicOverview": {
+        "title": "癌细胞",
+        "summary": "癌细胞主题适合解释“异常来自身体内部”：癌细胞不是外来细菌或病毒，而是身体自身细胞在调控失常后异常增殖。共读时应把战斗画面转成免疫监视、异常识别、细胞分裂规则和多种免疫细胞协作。",
+        "readingFocus": "“身体怎样发现异常细胞”：用自身细胞异常变化、免疫监视、NK细胞快速反应、杀手T细胞协同清除四个节点说明；cancer-cell 保持独立，不与 cancer-cell-ii 合并。",
+        "keyBiologyConcepts": [
+          "癌细胞",
+          "自身细胞异常",
+          "细胞突变",
+          "异常增殖",
+          "免疫监视",
+          "NK细胞",
+          "杀手T细胞",
+          "抗原识别",
+          "免疫清除"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "cancer-cell-self-cell-abnormality",
+          "topicId": "cancer-cell",
+          "title": "癌细胞来自自身细胞异常变化",
+          "coreQuestion": "癌细胞和细菌、病毒最大的不同是什么？",
+          "explanation": "细菌和病毒多是外来风险，而癌细胞来自身体自己的细胞。它们因为调控出问题，可能失去正常分裂和停止的规则。",
+          "imagePromptId": "work-cells-cancer-cell-self-cell-abnormality",
+          "imagePrompt": "Phase 15 approved image prompt for 癌细胞来自自身细胞异常变化; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell/cancer-cell-v2-station-01.webp",
+          "imageAlt": "正常细胞和异常增殖细胞并列对比，显示癌细胞来自自身细胞变化的科普图。",
+          "relatedPageIds": [
+            "cancer-cell__v02_page-097",
+            "cancer-cell__v02_page-120"
+          ],
+          "biologyConcepts": [
+            "癌细胞",
+            "自身细胞异常",
+            "细胞突变"
+          ],
+          "encyclopediaTags": [
+            "癌细胞",
+            "细胞突变",
+            "自身细胞"
+          ],
+          "parentNote": "避免把癌细胞讲成外来的怪物，改说“身体细胞失去规则”。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "cancer-cell-division-rules",
+          "topicId": "cancer-cell",
+          "title": "细胞分裂需要按规则进行",
+          "coreQuestion": "为什么细胞不能想分裂多少就分裂多少？",
+          "explanation": "正常细胞分裂受到身体调控。异常增殖会挤占空间和资源，也会让周围组织难以维持稳定。",
+          "imagePromptId": "work-cells-cancer-cell-division-rules",
+          "imagePrompt": "Phase 15 approved image prompt for 细胞分裂需要按规则进行; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell/cancer-cell-v2-station-02.webp",
+          "imageAlt": "正常细胞有序分裂与异常细胞过度增殖的温和对照图。",
+          "relatedPageIds": [
+            "cancer-cell__v02_page-127",
+            "cancer-cell__v02_page-128"
+          ],
+          "biologyConcepts": [
+            "细胞分裂",
+            "异常增殖",
+            "身体稳态"
+          ],
+          "encyclopediaTags": [
+            "细胞分裂",
+            "异常增殖",
+            "稳态"
+          ],
+          "parentNote": "把“规则”讲成身体维持秩序，不做现实癌症诊断解释。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "cancer-cell-immune-surveillance",
+          "topicId": "cancer-cell",
+          "title": "免疫系统会监视异常信号",
+          "coreQuestion": "如果异常细胞像自己的细胞，身体怎么发现它？",
+          "explanation": "免疫系统会寻找异常分子信号和不正常行为。NK细胞、T细胞等会参与判断和清除风险。",
+          "imagePromptId": "work-cells-cancer-cell-immune-surveillance",
+          "imagePrompt": "Phase 15 approved image prompt for 免疫系统会监视异常信号; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell/cancer-cell-v2-station-03.webp",
+          "imageAlt": "免疫细胞在组织中巡逻并识别异常细胞信号的儿童科普图。",
+          "relatedPageIds": [
+            "cancer-cell__v02_page-102",
+            "cancer-cell__v02_page-123"
+          ],
+          "biologyConcepts": [
+            "免疫监视",
+            "NK细胞",
+            "杀手T细胞"
+          ],
+          "encyclopediaTags": [
+            "免疫系统",
+            "NK细胞",
+            "T细胞"
+          ],
+          "parentNote": "强调免疫监视是保护机制，不把免疫反应讲成万能。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "cancer-cell-cooperation-boundary",
+          "topicId": "cancer-cell",
+          "title": "清除异常细胞需要多层协作",
+          "coreQuestion": "为什么不是一个细胞单独解决全部问题？",
+          "explanation": "异常细胞识别和清除常需要多种免疫细胞协作。漫画会把过程画得激烈，真实身体机制更复杂，也不能替代医学判断。",
+          "imagePromptId": "work-cells-cancer-cell-cooperation-boundary",
+          "imagePrompt": "Phase 15 approved image prompt for 清除异常细胞需要多层协作; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell/cancer-cell-v2-station-04.webp",
+          "imageAlt": "不同免疫细胞围绕异常细胞协作判断和清除风险的非战斗式示意图。",
+          "relatedPageIds": [
+            "cancer-cell__v02_page-126",
+            "cancer-cell__v02_page-134"
+          ],
+          "biologyConcepts": [
+            "免疫协作",
+            "异常细胞清除",
+            "医学边界"
+          ],
+          "encyclopediaTags": [
+            "免疫协作",
+            "癌细胞",
+            "医学边界"
+          ],
+          "parentNote": "保留边界：这只是科普伴读，不讨论治疗方案。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "cancer-cell-q01",
+          "topicId": "cancer-cell",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "它是外来的吗",
+          "question": "看相关页面时，哪些线索说明癌细胞不像普通细菌那样从外面进入？",
+          "answer": "它更像身体内部细胞发生异常变化后被免疫系统发现。",
+          "relatedPageIds": [
+            "cancer-cell__v02_page-097",
+            "cancer-cell__v02_page-120"
+          ],
+          "parentHint": "先区分“外来病原体”和“自身异常细胞”。",
+          "biologyConcepts": [
+            "癌细胞",
+            "自身细胞异常"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cancer-cell-q02",
+          "topicId": "cancer-cell",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "谁在判断",
+          "question": "哪些免疫细胞在观察、追踪或判断异常细胞？",
+          "answer": "可以看到NK细胞、白血球和杀手T细胞等免疫角色参与。",
+          "relatedPageIds": [
+            "cancer-cell__v02_page-100",
+            "cancer-cell__v02_page-102"
+          ],
+          "parentHint": "观察分工，不复述战斗对白。",
+          "biologyConcepts": [
+            "NK细胞",
+            "杀手T细胞"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cancer-cell-q03",
+          "topicId": "cancer-cell",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么不能乱分裂",
+          "question": "细胞分裂如果失去规则，会给身体带来什么麻烦？",
+          "answer": "异常增殖可能挤占空间和资源，让组织稳定受到影响。",
+          "relatedPageIds": [
+            "cancer-cell__v02_page-127",
+            "cancer-cell__v02_page-128"
+          ],
+          "parentHint": "用“空间和资源被挤占”来温和解释。",
+          "biologyConcepts": [
+            "细胞分裂",
+            "异常增殖"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cancer-cell-q04",
+          "topicId": "cancer-cell",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "免疫监视是什么",
+          "question": "免疫系统为什么要监视身体内部，而不只是对付外来细菌？",
+          "answer": "因为身体内部也可能出现异常细胞，免疫系统需要识别这些风险。",
+          "relatedPageIds": [
+            "cancer-cell__v02_page-123",
+            "cancer-cell__v02_page-144"
+          ],
+          "parentHint": "不要让孩子把真实疾病道德化。",
+          "biologyConcepts": [
+            "免疫监视",
+            "异常识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cancer-cell-q05",
+          "topicId": "cancer-cell",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "听到癌症怎么办",
+          "question": "如果孩子把漫画里的癌细胞和现实疾病联系起来，家长可以怎样回应？",
+          "answer": "可以说这是帮助理解机制的科普故事，现实健康问题需要医生判断。",
+          "relatedPageIds": [
+            "cancer-cell__v02_page-120"
+          ],
+          "parentHint": "保持平静，不做诊断或治疗讨论。",
+          "biologyConcepts": [
+            "医学边界",
+            "健康科普"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cancer-cell-q06",
+          "topicId": "cancer-cell",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "为什么要分开两个主题",
+          "question": "为什么这个 cancer-cell 主题不能和 cancer-cell-ii 合并？",
+          "answer": "它们来自不同卷和不同话次，项目里必须作为两个独立主题维护。",
+          "relatedPageIds": [
+            "cancer-cell__v02_page-098",
+            "cancer-cell-ii__v05_page-143"
+          ],
+          "parentHint": "这是项目分类边界，不把两个故事混讲。",
+          "biologyConcepts": [
+            "主题边界",
+            "癌细胞"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "本主题含“癌症”相关联想、强烈战斗和身体损伤画面。共读时请强调这是医学拟人化科普，癌细胞不是简单坏人，现实癌症问题必须由专业医务人员判断；本主题不得与癌细胞Ⅱ合并。",
+      "parentNote": "本主题含“癌症”相关联想、强烈战斗和身体损伤画面。共读时请强调这是医学拟人化科普，癌细胞不是简单坏人，现实癌症问题必须由专业医务人员判断；本主题不得与癌细胞Ⅱ合并。",
+      "sourceNotes": [
+        "漫画来源：第2卷 第8-9话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S1 第7话 summary-only scene notes，sourceMode: srt；不接入视频、字幕或对白。",
+        "cancer-cell 保持独立，不与 cancer-cell-ii / 癌细胞Ⅱ 合并。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/cancer-cell/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "cancer-cell__v02_page-097",
+        "cancer-cell__v02_page-120",
+        "cancer-cell__v02_page-123",
+        "cancer-cell__v02_page-127",
+        "cancer-cell__v02_page-128",
+        "cancer-cell__v02_page-134"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "cancer-cell-s1e07-v2-001",
+          "sourceLabel": "动画 S1 第7话摘要",
+          "summary": "适合把癌细胞解释为身体自身细胞发生异常变化。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "srt"
+        },
+        {
+          "sceneId": "cancer-cell-s1e07-v2-003",
+          "sourceLabel": "动画 S1 第7话摘要",
+          "summary": "适合说明NK细胞和免疫监视对异常细胞的快速反应。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "srt"
+        },
+        {
+          "sceneId": "cancer-cell-s1e07-v2-008",
+          "sourceLabel": "动画 S1 第7话摘要",
+          "summary": "适合收束为异常细胞清除和日常秩序恢复的摘要线索。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "srt"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true,
+        "mustNotMergeWithCancerCellIi": true
+      }
     },
     {
       "order": 9,
@@ -16845,10 +17464,9 @@
       ],
       "recommendedBodyScienceStationFocus": [
         "胸腺是T细胞成熟的重要场所",
-        "为什么免疫细胞要学会区分自己和敌人",
-        "阳性选择和阴性选择的儿童化解释",
-        "成熟T细胞的分工",
-        "训练与筛选的比喻哪里准确、哪里夸张"
+        "T细胞需要学会识别抗原",
+        "筛选机制帮助减少误伤",
+        "成熟T细胞再参与免疫任务"
       ],
       "recommendedParentQuestions": [
         "为什么T细胞需要训练和考试？",
@@ -18330,7 +18948,313 @@
         "thymocyte__v03_page-083",
         "thymocyte__v03_page-093",
         "thymocyte__v03_page-096"
-      ]
+      ],
+      "topicOverview": {
+        "title": "胸腺细胞",
+        "summary": "胸腺细胞主题把T细胞成熟过程画成训练与筛选。共读时可以把考核画面转回真实机制：T细胞需要在胸腺中学习识别目标，经过选择过程，减少无效反应和误伤自身的风险，最后成为能参与免疫工作的成熟T细胞。",
+        "readingFocus": "“T细胞为什么要训练”：用胸腺环境、抗原识别、阳性/阴性选择和成熟后分工四个节点说明，不展示漫画全文或动画对白。",
+        "keyBiologyConcepts": [
+          "胸腺",
+          "胸腺细胞",
+          "T细胞成熟",
+          "阳性选择",
+          "阴性选择",
+          "自我/非我识别",
+          "抗原识别",
+          "免疫耐受"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "thymocyte-thymus-training-place",
+          "topicId": "thymocyte",
+          "title": "胸腺像T细胞训练场",
+          "coreQuestion": "T细胞为什么不是一出生就直接上岗？",
+          "explanation": "T细胞在胸腺中经历成熟和筛选。这个过程帮助它们具备识别目标、参与免疫反应的能力。",
+          "imagePromptId": "work-cells-thymocyte-thymus-training-place",
+          "imagePrompt": "Phase 15 approved image prompt for 胸腺像T细胞训练场; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/thymocyte/thymocyte-v2-station-01.webp",
+          "imageAlt": "胸腺剖面中未成熟T细胞经过训练检查点的科普示意图。",
+          "relatedPageIds": [
+            "thymocyte__v03_page-061",
+            "thymocyte__v03_page-067"
+          ],
+          "biologyConcepts": [
+            "胸腺",
+            "胸腺细胞",
+            "T细胞成熟"
+          ],
+          "encyclopediaTags": [
+            "胸腺",
+            "T细胞",
+            "免疫成熟"
+          ],
+          "parentNote": "把训练场作为比喻，避免讲成排名或输赢。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "thymocyte-antigen-recognition",
+          "topicId": "thymocyte",
+          "title": "T细胞要学会识别抗原",
+          "coreQuestion": "免疫细胞为什么要认得目标？",
+          "explanation": "抗原像免疫系统识别目标的线索。T细胞需要能读懂这些线索，才可能在需要时参与反应。",
+          "imagePromptId": "work-cells-thymocyte-antigen-recognition",
+          "imagePrompt": "Phase 15 approved image prompt for T细胞要学会识别抗原; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/thymocyte/thymocyte-v2-station-02.webp",
+          "imageAlt": "T细胞面对不同抗原线索并学习识别目标的原创流程图。",
+          "relatedPageIds": [
+            "thymocyte__v03_page-083",
+            "thymocyte__v03_page-085"
+          ],
+          "biologyConcepts": [
+            "抗原识别",
+            "T细胞受体",
+            "目标识别"
+          ],
+          "encyclopediaTags": [
+            "抗原",
+            "T细胞",
+            "免疫识别"
+          ],
+          "parentNote": "可以用“看线索”解释抗原，不把抗原画成敌人名字牌。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "thymocyte-selection-reduces-mistakes",
+          "topicId": "thymocyte",
+          "title": "筛选帮助减少误伤",
+          "coreQuestion": "为什么免疫系统不能随便攻击？",
+          "explanation": "胸腺选择会帮助筛掉不合适的T细胞，让免疫系统更可能攻击真正风险，而不是伤到身体自己。",
+          "imagePromptId": "work-cells-thymocyte-selection-reduces-mistakes",
+          "imagePrompt": "Phase 15 approved image prompt for 筛选帮助减少误伤; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/thymocyte/thymocyte-v2-station-03.webp",
+          "imageAlt": "胸腺选择检查点把合适和不合适T细胞分开的温和示意图。",
+          "relatedPageIds": [
+            "thymocyte__v03_page-080",
+            "thymocyte__v03_page-084"
+          ],
+          "biologyConcepts": [
+            "阳性选择",
+            "阴性选择",
+            "免疫耐受"
+          ],
+          "encyclopediaTags": [
+            "胸腺选择",
+            "自我识别",
+            "免疫耐受"
+          ],
+          "parentNote": "强调“少误伤”比“谁最强”更重要。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "thymocyte-mature-t-cell-work",
+          "topicId": "thymocyte",
+          "title": "成熟T细胞再去参与免疫任务",
+          "coreQuestion": "通过筛选后，T细胞会做什么？",
+          "explanation": "成熟T细胞会离开胸腺，在身体里承担辅助、识别或清除相关任务。不同T细胞分工不同。",
+          "imagePromptId": "work-cells-thymocyte-mature-t-cell-work",
+          "imagePrompt": "Phase 15 approved image prompt for 成熟T细胞再去参与免疫任务; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/thymocyte/thymocyte-v2-station-04.webp",
+          "imageAlt": "成熟T细胞从胸腺出发，分成不同免疫任务路线的儿童科普图。",
+          "relatedPageIds": [
+            "thymocyte__v03_page-089",
+            "thymocyte__v03_page-094"
+          ],
+          "biologyConcepts": [
+            "成熟T细胞",
+            "辅助T细胞",
+            "杀手T细胞"
+          ],
+          "encyclopediaTags": [
+            "T细胞分工",
+            "免疫系统",
+            "细胞成熟"
+          ],
+          "parentNote": "把结尾落在“合适的细胞做合适的工作”。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "thymocyte-q01",
+          "topicId": "thymocyte",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "训练在哪里发生",
+          "question": "看相关页面时，哪些线索说明这是T细胞训练和筛选的地方？",
+          "answer": "可以找胸腺环境、训练规则、考核队列和筛选关卡。",
+          "relatedPageIds": [
+            "thymocyte__v03_page-061",
+            "thymocyte__v03_page-067"
+          ],
+          "parentHint": "先观察环境，不复述冲突。",
+          "biologyConcepts": [
+            "胸腺",
+            "T细胞成熟"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "thymocyte-q02",
+          "topicId": "thymocyte",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "检查点像什么",
+          "question": "哪些页面让你感觉T细胞正在经过检查点？",
+          "answer": "考核、队列、选择机制和通过/出局对照都像检查点。",
+          "relatedPageIds": [
+            "thymocyte__v03_page-080",
+            "thymocyte__v03_page-084"
+          ],
+          "parentHint": "把检查点讲成身体保护机制。",
+          "biologyConcepts": [
+            "胸腺选择",
+            "筛选"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "thymocyte-q03",
+          "topicId": "thymocyte",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么要识别抗原",
+          "question": "T细胞为什么要学会识别抗原，而不是看到东西就攻击？",
+          "answer": "因为免疫反应需要目标线索，随便攻击可能造成误伤。",
+          "relatedPageIds": [
+            "thymocyte__v03_page-083"
+          ],
+          "parentHint": "用“先认线索再行动”解释。",
+          "biologyConcepts": [
+            "抗原识别",
+            "免疫耐受"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "thymocyte-q04",
+          "topicId": "thymocyte",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么要减少误伤",
+          "question": "如果T细胞分不清自己和外来风险，会发生什么问题？",
+          "answer": "它可能攻击身体自己的组织，所以胸腺筛选很重要。",
+          "relatedPageIds": [
+            "thymocyte__v03_page-085"
+          ],
+          "parentHint": "保持概念层面，不展开疾病诊断。",
+          "biologyConcepts": [
+            "自我/非我识别",
+            "免疫耐受"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "thymocyte-q05",
+          "topicId": "thymocyte",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "训练不是比赛",
+          "question": "家长怎样把漫画里的训练讲成身体机制，而不是排名比赛？",
+          "answer": "可以说身体在挑选“适合做免疫工作的细胞”，不是评谁最厉害。",
+          "relatedPageIds": [
+            "thymocyte__v03_page-079",
+            "thymocyte__v03_page-087"
+          ],
+          "parentHint": "避免把失败讲成羞辱。",
+          "biologyConcepts": [
+            "细胞成熟",
+            "筛选机制"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "thymocyte-q06",
+          "topicId": "thymocyte",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "胸腺有什么用",
+          "question": "胸腺在免疫系统里最适合被理解成什么？",
+          "answer": "它是T细胞成熟和筛选的重要场所。",
+          "relatedPageIds": [
+            "thymocyte__v03_page-061",
+            "thymocyte__v03_page-067"
+          ],
+          "parentHint": "用一句话收束概念。",
+          "biologyConcepts": [
+            "胸腺",
+            "T细胞成熟"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "这个主题有竞争、淘汰和训练失败的拟人化画面。共读时请把重点放在胸腺筛选如何减少误伤，不把筛选讲成孩子之间的强弱比较。",
+      "parentNote": "这个主题有竞争、淘汰和训练失败的拟人化画面。共读时请把重点放在胸腺筛选如何减少误伤，不把筛选讲成孩子之间的强弱比较。",
+      "sourceNotes": [
+        "漫画来源：第3卷 第12话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S1 第9话 summary-only scene notes，sourceMode: srt；不接入视频、字幕或对白。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/thymocyte/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "thymocyte__v03_page-061",
+        "thymocyte__v03_page-067",
+        "thymocyte__v03_page-080",
+        "thymocyte__v03_page-083",
+        "thymocyte__v03_page-089",
+        "thymocyte__v03_page-094"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "thymocyte-s1e09-v2-001",
+          "sourceLabel": "动画 S1 第9话摘要",
+          "summary": "适合把胸腺解释为T细胞筛选与成熟的重要场所。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "srt"
+        },
+        {
+          "sceneId": "thymocyte-s1e09-v2-003",
+          "sourceLabel": "动画 S1 第9话摘要",
+          "summary": "适合说明抗原识别训练和避免随意攻击。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "srt"
+        },
+        {
+          "sceneId": "thymocyte-s1e09-v2-006",
+          "sourceLabel": "动画 S1 第9话摘要",
+          "summary": "适合连接成熟T细胞分工和后续免疫任务。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "srt"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true
+      }
     },
     {
       "order": 12,
@@ -18441,11 +19365,10 @@
         "特异性识别"
       ],
       "recommendedBodyScienceStationFocus": [
-        "获得性免疫和先天免疫的区别",
-        "记忆细胞不是预言，而是保存过去的免疫信息",
-        "抗体如何帮助锁定病原",
-        "二次遇到同类抗原时为什么反应更快",
-        "疫苗概念的温和铺垫"
+        "免疫记忆为什么有用",
+        "抗原像免疫系统记录目标的线索",
+        "B细胞和抗体怎样更有针对性",
+        "再次遇到相似病原体时反应为什么可能更快"
       ],
       "recommendedParentQuestions": [
         "记忆细胞为什么看起来像预言家？",
@@ -19689,7 +20612,317 @@
         "acquired-immunity__v03_page-126",
         "acquired-immunity__v03_page-127",
         "acquired-immunity__v03_page-128"
-      ]
+      ],
+      "topicOverview": {
+        "title": "获得性免疫",
+        "summary": "获得性免疫主题适合解释身体如何“记住”遇过的病原体，并在再次遇到相似风险时更有针对性地反应。共读时可把记忆细胞、抗原信息、B细胞和抗体放在同一条流程里，同时保留 audio-fallback 来源需要人工复核的边界。",
+        "readingFocus": "“身体怎样记住目标”：用抗原线索、记忆细胞、B细胞/抗体和二次应答四个节点说明；动画线索来自 audio-fallback，只作为摘要级参考并保留人工复核提醒。",
+        "keyBiologyConcepts": [
+          "获得性免疫",
+          "免疫记忆",
+          "抗原",
+          "记忆细胞",
+          "B细胞",
+          "抗体",
+          "二次免疫反应",
+          "疫苗原理边界"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "acquired-immunity-immune-memory-file",
+          "topicId": "acquired-immunity",
+          "title": "身体会保存免疫记忆线索",
+          "coreQuestion": "身体为什么会记住见过的病原体？",
+          "explanation": "获得性免疫会把曾经遇到的抗原线索留下来。以后再遇到相似目标时，身体更容易调动合适的反应。",
+          "imagePromptId": "work-cells-acquired-immunity-immune-memory-file",
+          "imagePrompt": "Phase 15 approved image prompt for 身体会保存免疫记忆线索; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/acquired-immunity/acquired-immunity-v2-station-01.webp",
+          "imageAlt": "免疫细胞把抗原形状记录进记忆档案的儿童科普示意图。",
+          "relatedPageIds": [
+            "acquired-immunity__v03_page-102",
+            "acquired-immunity__v03_page-103"
+          ],
+          "biologyConcepts": [
+            "免疫记忆",
+            "记忆细胞",
+            "抗原记录"
+          ],
+          "encyclopediaTags": [
+            "免疫记忆",
+            "记忆细胞",
+            "抗原"
+          ],
+          "parentNote": "把记忆讲成线索记录，不讲成身体有真正的想法。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "acquired-immunity-antigen-matching",
+          "topicId": "acquired-immunity",
+          "title": "抗原帮助免疫系统认目标",
+          "coreQuestion": "免疫系统记住的到底是什么？",
+          "explanation": "抗原是病原体或异常目标上的识别线索。身体根据这些线索准备更有针对性的免疫反应。",
+          "imagePromptId": "work-cells-acquired-immunity-antigen-matching",
+          "imagePrompt": "Phase 15 approved image prompt for 抗原帮助免疫系统认目标; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/acquired-immunity/acquired-immunity-v2-station-02.webp",
+          "imageAlt": "抗原形状和免疫记录互相匹配的温和钥匙锁示意图。",
+          "relatedPageIds": [
+            "acquired-immunity__v03_page-106",
+            "acquired-immunity__v03_page-118"
+          ],
+          "biologyConcepts": [
+            "抗原",
+            "目标识别",
+            "免疫记忆"
+          ],
+          "encyclopediaTags": [
+            "抗原",
+            "免疫识别",
+            "记忆细胞"
+          ],
+          "parentNote": "可以用“线索卡”解释抗原，避免把抗体说成万能药。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "acquired-immunity-b-cells-antibodies",
+          "topicId": "acquired-immunity",
+          "title": "B细胞和抗体让反应更有针对性",
+          "coreQuestion": "抗体为什么要和目标匹配？",
+          "explanation": "B细胞可以产生抗体。抗体的形状需要和目标线索相配，才能帮助免疫系统更准确地处理风险。",
+          "imagePromptId": "work-cells-acquired-immunity-b-cells-antibodies",
+          "imagePrompt": "Phase 15 approved image prompt for B细胞和抗体让反应更有针对性; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/acquired-immunity/acquired-immunity-v2-station-03.webp",
+          "imageAlt": "B细胞产生匹配抗体，抗体与抗原线索相配的流程图。",
+          "relatedPageIds": [
+            "acquired-immunity__v03_page-112",
+            "acquired-immunity__v03_page-121"
+          ],
+          "biologyConcepts": [
+            "B细胞",
+            "抗体",
+            "抗原匹配"
+          ],
+          "encyclopediaTags": [
+            "B细胞",
+            "抗体",
+            "获得性免疫"
+          ],
+          "parentNote": "说明抗体是身体机制，不引导自行用药或治疗判断。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "acquired-immunity-second-response",
+          "topicId": "acquired-immunity",
+          "title": "再次遇到相似目标时反应可能更快",
+          "coreQuestion": "为什么第二次遇到相似病原体时身体可能反应更快？",
+          "explanation": "如果身体已经留下免疫记忆，下一次遇到相似抗原时，就能更快调动记忆细胞、B细胞和抗体相关反应。",
+          "imagePromptId": "work-cells-acquired-immunity-second-response",
+          "imagePrompt": "Phase 15 approved image prompt for 再次遇到相似目标时反应可能更快; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/acquired-immunity/acquired-immunity-v2-station-04.webp",
+          "imageAlt": "第一次记录抗原和第二次更快调动免疫反应的时间轴示意图。",
+          "relatedPageIds": [
+            "acquired-immunity__v03_page-123",
+            "acquired-immunity__v03_page-124"
+          ],
+          "biologyConcepts": [
+            "二次免疫反应",
+            "免疫记忆",
+            "抗体"
+          ],
+          "encyclopediaTags": [
+            "二次应答",
+            "免疫记忆",
+            "抗体"
+          ],
+          "parentNote": "可以联系疫苗原理的概念边界，但不做接种建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "acquired-immunity-q01",
+          "topicId": "acquired-immunity",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "谁在记住线索",
+          "question": "看相关页面时，哪些画面线索让你想到身体在记录曾遇到的目标？",
+          "answer": "可以找记忆细胞、预兆感、抗原线索和后续快速反应。",
+          "relatedPageIds": [
+            "acquired-immunity__v03_page-102",
+            "acquired-immunity__v03_page-103"
+          ],
+          "parentHint": "把“预言”转回免疫记忆。",
+          "biologyConcepts": [
+            "记忆细胞",
+            "免疫记忆"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "acquired-immunity-q02",
+          "topicId": "acquired-immunity",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "抗体在哪里出现",
+          "question": "哪些页面显示B细胞或抗体相关线索？",
+          "answer": "可以看B细胞导入、抗体准备和抗体锁定病原的画面。",
+          "relatedPageIds": [
+            "acquired-immunity__v03_page-112",
+            "acquired-immunity__v03_page-121"
+          ],
+          "parentHint": "不复述战斗，只看机制线索。",
+          "biologyConcepts": [
+            "B细胞",
+            "抗体"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "acquired-immunity-q03",
+          "topicId": "acquired-immunity",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么要有记忆",
+          "question": "免疫记忆对身体有什么帮助？",
+          "answer": "它让身体再次遇到相似目标时更容易调动针对性的反应。",
+          "relatedPageIds": [
+            "acquired-immunity__v03_page-118"
+          ],
+          "parentHint": "用“下次更快找对工具”解释。",
+          "biologyConcepts": [
+            "免疫记忆",
+            "二次应答"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "acquired-immunity-q04",
+          "topicId": "acquired-immunity",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "抗体为什么要匹配",
+          "question": "为什么抗体不能随便对付所有病原体？",
+          "answer": "抗体需要和抗原线索相配，反应才更有针对性。",
+          "relatedPageIds": [
+            "acquired-immunity__v03_page-119",
+            "acquired-immunity__v03_page-123"
+          ],
+          "parentHint": "用钥匙和锁作比喻，但说明只是比喻。",
+          "biologyConcepts": [
+            "抗体",
+            "抗原匹配"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "acquired-immunity-q05",
+          "topicId": "acquired-immunity",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "疫苗只讲原理边界",
+          "question": "如果孩子问疫苗，家长可以怎样简短回应？",
+          "answer": "可以说疫苗利用免疫记忆原理帮助身体提前练习，但具体接种问题要问专业医务人员。",
+          "relatedPageIds": [
+            "acquired-immunity__v03_page-127"
+          ],
+          "parentHint": "只讲科普原理，不提供医疗建议。",
+          "biologyConcepts": [
+            "疫苗原理",
+            "免疫记忆"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "acquired-immunity-q06",
+          "topicId": "acquired-immunity",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "获得性免疫是什么",
+          "question": "获得性免疫和更快的普通防御有什么不同？",
+          "answer": "获得性免疫更依赖特定抗原线索、记忆细胞和针对性抗体反应。",
+          "relatedPageIds": [
+            "acquired-immunity__v03_page-124"
+          ],
+          "parentHint": "帮助孩子抓住“针对性”和“记忆”。",
+          "biologyConcepts": [
+            "获得性免疫",
+            "针对性反应"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "本主题涉及免疫记忆、抗体和疫苗原理。共读时请保持科普边界，不给接种、诊断或治疗建议；动画摘要来自 audio-fallback，相关时间窗仍需人工复核。",
+      "parentNote": "本主题涉及免疫记忆、抗体和疫苗原理。共读时请保持科普边界，不给接种、诊断或治疗建议；动画摘要来自 audio-fallback，相关时间窗仍需人工复核。",
+      "sourceNotes": [
+        "漫画来源：第3卷 第13话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S2 第2话 summary-only scene notes，sourceMode: audio-fallback；无同名 SRT，不接入视频、字幕、对白或转写。",
+        "audio-fallback 线索只作为摘要级参考；后半段可能与派尔集合淋巴结相关内容重叠，保留人工复核提醒。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/acquired-immunity/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "acquired-immunity__v03_page-102",
+        "acquired-immunity__v03_page-106",
+        "acquired-immunity__v03_page-112",
+        "acquired-immunity__v03_page-118",
+        "acquired-immunity__v03_page-121",
+        "acquired-immunity__v03_page-124"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "acquired-immunity-s2e02-v2-001",
+          "sourceLabel": "动画 S2 第2话摘要（audio-fallback，需人工复核）",
+          "summary": "适合导入免疫记忆和既往抗原记录。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "acquired-immunity-s2e02-v2-003",
+          "sourceLabel": "动画 S2 第2话摘要（audio-fallback，需人工复核）",
+          "summary": "适合说明疫苗式预先训练和免疫准备的概念边界。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "acquired-immunity-s2e02-v2-006",
+          "sourceLabel": "动画 S2 第2话摘要（audio-fallback，需人工复核）",
+          "summary": "适合讲获得性免疫需要识别、记录、增援和处理等多步骤协作。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true,
+        "audioFallbackNeedsHumanReview": true
+      }
     },
     {
       "order": 13,
@@ -22677,11 +23910,10 @@
         "防蚊"
       ],
       "recommendedBodyScienceStationFocus": [
-        "蚊子叮咬和蚊媒传播的区别",
-        "登革热病毒如何进入身体",
-        "为什么登革热可能影响血小板",
-        "发热是身体反应的一部分",
-        "防蚊、清积水和及时就医的家庭安全提示"
+        "登革热为什么和蚊媒传播有关",
+        "皮肤入口和局部免疫信号",
+        "病毒进入后免疫系统怎样响应",
+        "为什么血小板风险需要专业医学边界"
       ],
       "recommendedParentQuestions": [
         "普通蚊子包和蚊媒疾病有什么不同？",
@@ -23931,7 +25163,327 @@
         "dengue-fever__v04_page-055",
         "dengue-fever__v04_page-061",
         "dengue-fever__v04_page-062"
-      ]
+      ],
+      "topicOverview": {
+        "title": "登革热",
+        "summary": "登革热主题适合解释蚊媒传播、皮肤入口、局部免疫信号、病毒感染和血小板风险。共读时应把蚊子叮咬和激烈战斗画面转成“病毒通常通过蚊媒进入身体”的科学线索，同时保留 audio-fallback 与人工复核提醒。",
+        "readingFocus": "“登革热怎样和蚊媒传播有关”：用蚊子叮咬入口、皮肤局部反应、登革病毒入侵和血小板风险四个节点说明；不提供症状自查、诊断或治疗建议。",
+        "keyBiologyConcepts": [
+          "登革热",
+          "登革病毒",
+          "蚊媒传播",
+          "皮肤屏障",
+          "局部炎症",
+          "免疫信号",
+          "血小板减少风险",
+          "防蚊边界"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "dengue-fever-mosquito-borne-entry",
+          "topicId": "dengue-fever",
+          "title": "登革热通常通过蚊媒进入身体",
+          "coreQuestion": "为什么预防蚊子叮咬能帮助预防登革热？",
+          "explanation": "登革病毒主要通过带病毒的蚊子叮咬传播。皮肤被叮咬的位置是病毒进入身体的入口线索。",
+          "imagePromptId": "work-cells-dengue-fever-mosquito-borne-entry",
+          "imagePrompt": "Phase 15 approved image prompt for 登革热通常通过蚊媒进入身体; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/dengue-fever/dengue-fever-v2-station-01.webp",
+          "imageAlt": "皮肤剖面和蚊媒传播入口的温和儿童科普示意图。",
+          "relatedPageIds": [
+            "dengue-fever__v04_page-035",
+            "dengue-fever__v04_page-042"
+          ],
+          "biologyConcepts": [
+            "蚊媒传播",
+            "登革病毒",
+            "皮肤入口"
+          ],
+          "encyclopediaTags": [
+            "登革热",
+            "蚊媒传播",
+            "防蚊"
+          ],
+          "parentNote": "把重点放在传播方式，不制造恐惧画面。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "dengue-fever-local-skin-signal",
+          "topicId": "dengue-fever",
+          "title": "皮肤局部会发出免疫信号",
+          "coreQuestion": "身体怎样知道入口附近出问题了？",
+          "explanation": "皮肤和局部组织会通过炎症信号提醒免疫细胞靠近。红肿、痒和局部反应是身体防线被调动的线索。",
+          "imagePromptId": "work-cells-dengue-fever-local-skin-signal",
+          "imagePrompt": "Phase 15 approved image prompt for 皮肤局部会发出免疫信号; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/dengue-fever/dengue-fever-v2-station-02.webp",
+          "imageAlt": "皮肤局部释放温和信号波，免疫细胞收到提醒的流程图。",
+          "relatedPageIds": [
+            "dengue-fever__v04_page-036",
+            "dengue-fever__v04_page-038"
+          ],
+          "biologyConcepts": [
+            "皮肤屏障",
+            "局部炎症",
+            "免疫信号"
+          ],
+          "encyclopediaTags": [
+            "皮肤",
+            "炎症",
+            "免疫信号"
+          ],
+          "parentNote": "不把局部反应等同于诊断，只讲防线启动。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "dengue-fever-virus-and-immune-response",
+          "topicId": "dengue-fever",
+          "title": "病毒进入后免疫系统会响应",
+          "coreQuestion": "登革热为什么不只是普通蚊子包？",
+          "explanation": "登革热涉及病毒感染。免疫系统需要识别病毒相关线索并调动防御，过程比普通叮咬反应更复杂。",
+          "imagePromptId": "work-cells-dengue-fever-virus-and-immune-response",
+          "imagePrompt": "Phase 15 approved image prompt for 病毒进入后免疫系统会响应; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/dengue-fever/dengue-fever-v2-station-03.webp",
+          "imageAlt": "登革病毒进入组织后，免疫细胞根据病毒线索响应的非恐怖示意图。",
+          "relatedPageIds": [
+            "dengue-fever__v04_page-037",
+            "dengue-fever__v04_page-046"
+          ],
+          "biologyConcepts": [
+            "登革病毒",
+            "病毒感染",
+            "免疫反应"
+          ],
+          "encyclopediaTags": [
+            "病毒",
+            "登革热",
+            "免疫系统"
+          ],
+          "parentNote": "帮助孩子区分普通蚊子包和蚊媒疾病风险。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "dengue-fever-platelet-risk-boundary",
+          "topicId": "dengue-fever",
+          "title": "血小板风险需要医学边界",
+          "coreQuestion": "为什么登革热会让家长更谨慎？",
+          "explanation": "登革热可能涉及血小板减少等医学风险。伴读材料只解释概念，真实发热、出血点或不适必须由成人联系专业医务人员。",
+          "imagePromptId": "work-cells-dengue-fever-platelet-risk-boundary",
+          "imagePrompt": "Phase 15 approved image prompt for 血小板风险需要医学边界; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/dengue-fever/dengue-fever-v2-station-04.webp",
+          "imageAlt": "血小板数量风险用安全仪表盘和医生边界提示表达的儿童科普图。",
+          "relatedPageIds": [
+            "dengue-fever__v04_page-044",
+            "dengue-fever__v04_page-061"
+          ],
+          "biologyConcepts": [
+            "血小板",
+            "医学边界",
+            "登革热风险"
+          ],
+          "encyclopediaTags": [
+            "血小板",
+            "医学边界",
+            "登革热"
+          ],
+          "parentNote": "明确不做症状自查或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "dengue-fever-q01",
+          "topicId": "dengue-fever",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "入口在哪里",
+          "question": "看相关页面时，哪些线索说明登革热和蚊子叮咬有关？",
+          "answer": "可以找蚊子、皮肤入口、叮咬路线和病毒进入的提示。",
+          "relatedPageIds": [
+            "dengue-fever__v04_page-035",
+            "dengue-fever__v04_page-042"
+          ],
+          "parentHint": "先看传播入口，不复述战斗。",
+          "biologyConcepts": [
+            "蚊媒传播",
+            "皮肤入口"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "dengue-fever-q02",
+          "topicId": "dengue-fever",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "局部有什么反应",
+          "question": "皮肤附近哪些画面说明局部防线被调动了？",
+          "answer": "红肿、痒、组织反应和免疫细胞靠近都可以作为线索。",
+          "relatedPageIds": [
+            "dengue-fever__v04_page-036",
+            "dengue-fever__v04_page-038"
+          ],
+          "parentHint": "不把局部反应当成诊断。",
+          "biologyConcepts": [
+            "局部炎症",
+            "免疫信号"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "dengue-fever-q03",
+          "topicId": "dengue-fever",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么和普通蚊子包不同",
+          "question": "登革热为什么不能只理解成一个普通蚊子包？",
+          "answer": "因为它涉及登革病毒通过蚊媒进入身体，并引发更复杂的免疫反应。",
+          "relatedPageIds": [
+            "dengue-fever__v04_page-037",
+            "dengue-fever__v04_page-046"
+          ],
+          "parentHint": "用“传播病毒的入口”解释差别。",
+          "biologyConcepts": [
+            "登革病毒",
+            "蚊媒传播"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "dengue-fever-q04",
+          "topicId": "dengue-fever",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "血小板为什么被提到",
+          "question": "为什么登革热主题里会提到血小板风险？",
+          "answer": "登革热可能影响血小板相关指标，所以伴读时要保留医学边界。",
+          "relatedPageIds": [
+            "dengue-fever__v04_page-044",
+            "dengue-fever__v04_page-061"
+          ],
+          "parentHint": "只讲风险概念，健康问题找医生。",
+          "biologyConcepts": [
+            "血小板",
+            "医学边界"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "dengue-fever-q05",
+          "topicId": "dengue-fever",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "怎样讲防蚊",
+          "question": "家长可以怎样把这个主题联系到生活中的防蚊？",
+          "answer": "可以说减少蚊子叮咬能减少蚊媒传播风险，但具体健康问题要问专业人士。",
+          "relatedPageIds": [
+            "dengue-fever__v04_page-064"
+          ],
+          "parentHint": "讲生活防护，不做治疗建议。",
+          "biologyConcepts": [
+            "防蚊",
+            "蚊媒传播"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "dengue-fever-q06",
+          "topicId": "dengue-fever",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "蚊媒传播是什么",
+          "question": "“蚊媒传播”这四个字是什么意思？",
+          "answer": "意思是蚊子在叮咬过程中可能把病原体从一个宿主带到另一个宿主。",
+          "relatedPageIds": [
+            "dengue-fever__v04_page-042"
+          ],
+          "parentHint": "用“蚊子像传播路径的一环”解释。",
+          "biologyConcepts": [
+            "蚊媒传播",
+            "病原体"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "本主题涉及登革热、病毒、血小板风险和现实防蚊。请只做科普伴读，不提供症状自查、诊断或治疗建议；动画摘要来自 audio-fallback，且同一 MP4 后半段转入痤疮内容，必须保留人工复核和主题边界提醒。",
+      "parentNote": "本主题涉及登革热、病毒、血小板风险和现实防蚊。请只做科普伴读，不提供症状自查、诊断或治疗建议；动画摘要来自 audio-fallback，且同一 MP4 后半段转入痤疮内容，必须保留人工复核和主题边界提醒。",
+      "sourceNotes": [
+        "漫画来源：第4卷 第16话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S2 第3话 summary-only scene notes，sourceMode: audio-fallback；无同名 SRT，不接入视频、字幕、对白或转写。",
+        "audio-fallback 线索只作为摘要级参考；同一 MP4 后半段转入痤疮相关内容，登革热取材必须在边界点前停止并保留人工复核提醒。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/dengue-fever/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "dengue-fever__v04_page-035",
+        "dengue-fever__v04_page-036",
+        "dengue-fever__v04_page-042",
+        "dengue-fever__v04_page-044",
+        "dengue-fever__v04_page-061",
+        "dengue-fever__v04_page-064"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "dengue-fever-s2e03-v2-001",
+          "sourceLabel": "动画 S2 第3话摘要（audio-fallback，需人工复核）",
+          "summary": "适合导入皮肤入口和蚊媒传播位置。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "dengue-fever-s2e03-v2-003",
+          "sourceLabel": "动画 S2 第3话摘要（audio-fallback，需人工复核）",
+          "summary": "适合说明登革热不是普通接触传播，而与蚊媒吸血有关。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "dengue-fever-s2e03-v2-005",
+          "sourceLabel": "动画 S2 第3话摘要（audio-fallback，需人工复核）",
+          "summary": "适合讲炎症信号强度和身体损害控制。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "dengue-fever-s2e03-v2-006",
+          "sourceLabel": "动画 S2 第3话边界摘要（audio-fallback，需人工复核）",
+          "summary": "边界提醒：后续转入痤疮相关内容，不归入登革热前端材料。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true,
+        "audioFallbackNeedsHumanReview": true,
+        "stopBeforeAcneSegment": true
+      }
     },
     {
       "order": 16,
