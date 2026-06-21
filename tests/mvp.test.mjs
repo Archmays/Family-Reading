@@ -555,6 +555,62 @@ test('Work Cells V2 topics use approved WebP assets and metadata', () => {
   }
 });
 
+test('Work Cells V2 user-visible fields do not contain replacement question-mark runs', () => {
+  const manifest = readJson(workCellsDraftPath);
+  const replacementRun = /\?{3,}/;
+  const failures = [];
+  const pushValue = (topicId, fieldPath, value) => {
+    if (typeof value === 'string' && replacementRun.test(value)) {
+      failures.push(`${topicId}.${fieldPath}`);
+    } else if (Array.isArray(value)) {
+      value.forEach((item, index) => pushValue(topicId, `${fieldPath}[${index}]`, item));
+    }
+  };
+
+  for (const topicId of workCellsV2TopicIds) {
+    const topic = manifest.topics.find((item) => item.topicId === topicId);
+    assert.ok(topic, `${topicId} topic should exist`);
+
+    pushValue(topicId, 'title', topic.title);
+    pushValue(topicId, 'displayTitle', topic.displayTitle);
+    pushValue(topicId, 'topicOverview.title', topic.topicOverview?.title);
+    pushValue(topicId, 'topicOverview.summary', topic.topicOverview?.summary);
+    pushValue(topicId, 'topicOverview.readingFocus', topic.topicOverview?.readingFocus);
+    pushValue(topicId, 'topicOverview.keyBiologyConcepts', topic.topicOverview?.keyBiologyConcepts);
+    pushValue(topicId, 'recommendedBodyScienceStationFocus', topic.recommendedBodyScienceStationFocus);
+    pushValue(topicId, 'parentReadingNote', topic.parentReadingNote);
+    pushValue(topicId, 'parentNote', topic.parentNote);
+    pushValue(topicId, 'sensitiveContentGuidance', topic.sensitiveContentGuidance);
+    pushValue(topicId, 'sourceNotes', topic.sourceNotes);
+    pushValue(topicId, 'contentStatus.text', topic.contentStatus?.text);
+    pushValue(topicId, 'contentStatus.imagePromptStatus', topic.contentStatus?.imagePromptStatus);
+    pushValue(topicId, 'contentStatus.imageAssetStatus', topic.contentStatus?.imageAssetStatus);
+
+    topic.bodyScienceStations.forEach((station, index) => {
+      const stationPath = `bodyScienceStations[${index}]`;
+      pushValue(topicId, `${stationPath}.title`, station.title);
+      pushValue(topicId, `${stationPath}.coreQuestion`, station.coreQuestion);
+      pushValue(topicId, `${stationPath}.explanation`, station.explanation);
+      pushValue(topicId, `${stationPath}.imageAlt`, station.imageAlt);
+      pushValue(topicId, `${stationPath}.biologyConcepts`, station.biologyConcepts);
+      pushValue(topicId, `${stationPath}.encyclopediaTags`, station.encyclopediaTags);
+      pushValue(topicId, `${stationPath}.parentNote`, station.parentNote);
+    });
+
+    topic.parentQuestionCards.forEach((card, index) => {
+      const cardPath = `parentQuestionCards[${index}]`;
+      pushValue(topicId, `${cardPath}.category`, card.category);
+      pushValue(topicId, `${cardPath}.title`, card.title);
+      pushValue(topicId, `${cardPath}.question`, card.question);
+      pushValue(topicId, `${cardPath}.answer`, card.answer);
+      pushValue(topicId, `${cardPath}.parentHint`, card.parentHint);
+      pushValue(topicId, `${cardPath}.biologyConcepts`, card.biologyConcepts);
+    });
+  }
+
+  assert.deepEqual(failures, []);
+});
+
 test('Work Cells batch one topics define formal science station and parent question data', () => {
   const manifest = readJson(workCellsDraftPath);
   const topics = ['pneumococcus', 'abrasion', 'heatstroke', 'blood-circulation', 'hemorrhagic-shock'].map((topicId) => {
