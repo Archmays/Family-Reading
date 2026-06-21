@@ -102,7 +102,8 @@
 
 - 本地 GitHub Pages 静态构建：通过。
 - Pages workflow：`.github/workflows/pages.yml` 配置为 `main` push 后构建并部署 `dist`。
-- 远端 GitHub Pages 部署结果：需以本次提交 push 后的 GitHub Actions 结果为准。
+- 远端 GitHub Pages 部署结果：通过。`Deploy GitHub Pages` run `27891273431` 针对提交 `dbb9e8f` 完成，`build` 与 `deploy` job 均成功。
+- Actions 链接：<https://github.com/Archmays/Family-Reading/actions/runs/27891273431>。
 
 ## 后续可选优化建议
 
