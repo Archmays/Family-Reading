@@ -246,7 +246,17 @@ const workCellsV2TopicIds = [
   'antigenic-variation',
   'cytokines',
   'cancer-cell-ii',
+  'left-shift',
+  'ips-cells',
+  'psoriasis',
+  'covid-19',
 ];
+const workCellsNoReliableAnimationTopicIds = new Set([
+  'left-shift',
+  'ips-cells',
+  'psoriasis',
+  'covid-19',
+]);
 const workCellsV2QuestionCounts = new Map([
   ['cedar-pollen-allergy', 6],
   ['influenza', 6],
@@ -271,6 +281,10 @@ const workCellsV2QuestionCounts = new Map([
   ['antigenic-variation', 6],
   ['cytokines', 6],
   ['cancer-cell-ii', 6],
+  ['left-shift', 6],
+  ['ips-cells', 6],
+  ['psoriasis', 6],
+  ['covid-19', 6],
 ]);
 
 function readJson(filePath) {
@@ -505,7 +519,7 @@ test('Work Cells Cedar pollen sample defines refined parent question cards', () 
 test('Work Cells V2 topics use approved WebP assets and metadata', () => {
   const manifest = readJson(workCellsDraftPath);
 
-  assert.equal(workCellsV2TopicIds.length, 23, 'Work Cells should track 23 approved V2 topics');
+  assert.equal(workCellsV2TopicIds.length, 27, 'Work Cells should track 27 approved V2 topics');
 
   for (const topicId of workCellsV2TopicIds) {
     const topic = manifest.topics.find((item) => item.topicId === topicId);
@@ -522,7 +536,11 @@ test('Work Cells V2 topics use approved WebP assets and metadata', () => {
     assert.ok(topic.topicOverview?.summary?.length > 20, `${topicId} should include topicOverview`);
     assert.ok(topic.sourceNotes?.length >= 3, `${topicId} should include sourceNotes`);
     assert.ok(topic.relatedComicPages?.length > 0, `${topicId} should include relatedComicPages`);
-    assert.ok(topic.relatedAnimationScenes?.length > 0, `${topicId} should include relatedAnimationScenes`);
+    if (workCellsNoReliableAnimationTopicIds.has(topicId)) {
+      assert.deepEqual(topic.relatedAnimationScenes, [], `${topicId} should not force unreliable animation matches`);
+    } else {
+      assert.ok(topic.relatedAnimationScenes?.length > 0, `${topicId} should include relatedAnimationScenes`);
+    }
     assert.equal(topic.bodyScienceStations.length, 4, `${topicId} should define 4 V2 station cards`);
     assert.equal(topic.parentQuestionCards.length, workCellsV2QuestionCounts.get(topicId), `${topicId} should define the expected V2 parent question card count`);
 
