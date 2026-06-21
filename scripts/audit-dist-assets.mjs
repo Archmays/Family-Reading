@@ -9,12 +9,14 @@ const warningLimitBytes = Number(process.env.BUILD_SIZE_WARNING_MB ?? 900) * 102
 const topLimit = Number(process.env.BUILD_SIZE_TOP_N ?? 30);
 const forbiddenVideoExtensions = ['.mp4', '.mov', '.m4v', '.webm'];
 const forbiddenSubtitleExtensions = ['.srt', '.vtt', '.ass', '.ssa'];
+const forbiddenArchivePattern = /\.(zip|7z|tar|gz)$/i;
 const forbiddenVideoPattern = new RegExp(`(${forbiddenVideoExtensions.map((extension) => extension.replace('.', '\\.')).join('|')})$`, 'i');
 const forbiddenSubtitlePattern = new RegExp(`(${forbiddenSubtitleExtensions.map((extension) => extension.replace('.', '\\.')).join('|')})$`, 'i');
 const forbiddenWorkCellsAudioPattern = /(^|\/)(cells-at-work|work-cells|工作细胞)(\/.*)?\.(mp3|wav|m4a|aac|flac|ogg)$/i;
 const forbiddenReleasePatterns = [
   { pattern: forbiddenVideoPattern, message: 'Remove video files from dist; animation MP4 assets must stay outside the GitHub Pages package.' },
   { pattern: forbiddenSubtitlePattern, message: 'Remove subtitle files from dist; full subtitle files must stay private.' },
+  { pattern: forbiddenArchivePattern, message: 'Remove archive files from dist; release packages should not ship ZIP or compressed review bundles.' },
   { pattern: forbiddenWorkCellsAudioPattern, message: 'Remove Work Cells audio files from dist; extracted animation audio is analysis-only.' },
   { pattern: /(^|\/)(audio-extracts?|extracted-audio|audio-fallback)(\/|$)/i, message: 'Remove extracted audio intermediates from dist; audio fallback files must stay private.' },
   { pattern: /(^|\/)(transcripts?|topic-readable-transcripts)(\/|\.|$)/i, message: 'Remove transcript temporary files from dist; publish only reduced companion data.' },
