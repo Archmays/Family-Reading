@@ -303,10 +303,14 @@ function readJson(filePath) {
   return JSON.parse(readFileSync(filePath, 'utf8'));
 }
 
-function parentQuestionTitleFromQuestion(question) {
+function parentQuestionQuestionWithoutPrefix(question) {
   const text = String(question ?? '').trim();
   const prefix = workCellsParentQuestionPrefixes.find((item) => text.startsWith(item));
   return prefix ? text.slice(prefix.length).trim() : text;
+}
+
+function normalizedParentQuestionText(value) {
+  return String(value ?? '').replace(/[\s\u201c\u201d"'？?：:，,。！!、]/g, '');
 }
 
 function appText() {
@@ -629,7 +633,7 @@ test('Work Cells V2 user-visible fields do not contain replacement question-mark
   assert.deepEqual(failures, []);
 });
 
-test('Work Cells V2 parent question card titles are complete normalized questions', () => {
+test('Work Cells V2 parent question card titles are concise non-duplicative labels', () => {
   const manifest = readJson(workCellsDraftPath);
   const failures = [];
   let cardCount = 0;
@@ -642,7 +646,10 @@ test('Work Cells V2 parent question card titles are complete normalized question
       cardCount += 1;
       const cardPath = `${topicId}.parentQuestionCards[${index}]`;
       const expectedCategory = workCellsParentQuestionCategoryByType.get(card.type);
-      const expectedTitle = parentQuestionTitleFromQuestion(card.question);
+      const title = String(card.title ?? '').trim();
+      const questionWithoutPrefix = parentQuestionQuestionWithoutPrefix(card.question);
+      const normalizedTitle = normalizedParentQuestionText(title);
+      const normalizedQuestion = normalizedParentQuestionText(questionWithoutPrefix);
 
       if (card.category !== expectedCategory) {
         failures.push(`${cardPath}.category expected ${expectedCategory}, got ${card.category}`);
@@ -650,13 +657,16 @@ test('Work Cells V2 parent question card titles are complete normalized question
       if (/^(observation|understanding|life-connection|science-concept)/.test(card.category ?? '')) {
         failures.push(`${cardPath}.category keeps an internal type label`);
       }
-      if (!card.title || card.title.trim() !== expectedTitle) {
-        failures.push(`${cardPath}.title expected ${expectedTitle}, got ${card.title}`);
+      if (title.length < 3) {
+        failures.push(`${cardPath}.title should be a readable short label`);
       }
-      if (workCellsParentQuestionPrefixes.some((prefix) => card.title?.startsWith(prefix))) {
+      if (workCellsParentQuestionPrefixes.some((prefix) => title.startsWith(prefix))) {
         failures.push(`${cardPath}.title keeps a question category prefix`);
       }
-      if (card.question !== card.title && String(card.question ?? '').startsWith(card.title ?? '')) {
+      if (normalizedTitle === normalizedQuestion) {
+        failures.push(`${cardPath}.title duplicates the visible question text`);
+      }
+      if (normalizedQuestion.startsWith(normalizedTitle)) {
         failures.push(`${cardPath}.title is a truncated question prefix`);
       }
     });
