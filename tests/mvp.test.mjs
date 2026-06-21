@@ -286,9 +286,27 @@ const workCellsV2QuestionCounts = new Map([
   ['psoriasis', 6],
   ['covid-19', 6],
 ]);
+const workCellsParentQuestionCategoryByType = new Map([
+  ['observation', '\u89c2\u5bdf\u95ee\u9898'],
+  ['understanding', '\u7406\u89e3\u95ee\u9898'],
+  ['life-connection', '\u8054\u7cfb\u751f\u6d3b\u95ee\u9898'],
+  ['science-concept', '\u79d1\u5b66\u6982\u5ff5\u95ee\u9898'],
+]);
+const workCellsParentQuestionPrefixes = [
+  '\u89c2\u5bdf\uff1a',
+  '\u7406\u89e3\uff1a',
+  '\u8054\u7cfb\u751f\u6d3b\uff1a',
+  '\u79d1\u5b66\u6982\u5ff5\uff1a',
+];
 
 function readJson(filePath) {
   return JSON.parse(readFileSync(filePath, 'utf8'));
+}
+
+function parentQuestionTitleFromQuestion(question) {
+  const text = String(question ?? '').trim();
+  const prefix = workCellsParentQuestionPrefixes.find((item) => text.startsWith(item));
+  return prefix ? text.slice(prefix.length).trim() : text;
 }
 
 function appText() {
@@ -608,6 +626,43 @@ test('Work Cells V2 user-visible fields do not contain replacement question-mark
     });
   }
 
+  assert.deepEqual(failures, []);
+});
+
+test('Work Cells V2 parent question card titles are complete normalized questions', () => {
+  const manifest = readJson(workCellsDraftPath);
+  const failures = [];
+  let cardCount = 0;
+
+  for (const topicId of workCellsV2TopicIds) {
+    const topic = manifest.topics.find((item) => item.topicId === topicId);
+    assert.ok(topic, `${topicId} topic should exist`);
+
+    topic.parentQuestionCards.forEach((card, index) => {
+      cardCount += 1;
+      const cardPath = `${topicId}.parentQuestionCards[${index}]`;
+      const expectedCategory = workCellsParentQuestionCategoryByType.get(card.type);
+      const expectedTitle = parentQuestionTitleFromQuestion(card.question);
+
+      if (card.category !== expectedCategory) {
+        failures.push(`${cardPath}.category expected ${expectedCategory}, got ${card.category}`);
+      }
+      if (/^(observation|understanding|life-connection|science-concept)/.test(card.category ?? '')) {
+        failures.push(`${cardPath}.category keeps an internal type label`);
+      }
+      if (!card.title || card.title.trim() !== expectedTitle) {
+        failures.push(`${cardPath}.title expected ${expectedTitle}, got ${card.title}`);
+      }
+      if (workCellsParentQuestionPrefixes.some((prefix) => card.title?.startsWith(prefix))) {
+        failures.push(`${cardPath}.title keeps a question category prefix`);
+      }
+      if (card.question !== card.title && String(card.question ?? '').startsWith(card.title ?? '')) {
+        failures.push(`${cardPath}.title is a truncated question prefix`);
+      }
+    });
+  }
+
+  assert.equal(cardCount, 162);
   assert.deepEqual(failures, []);
 });
 
