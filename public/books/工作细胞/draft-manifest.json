@@ -22251,7 +22251,340 @@
         "acne__v03_page-153",
         "acne__v03_page-154",
         "acne__v03_page-160"
-      ]
+      ],
+      "topicOverview": {
+        "title": "痤疮",
+        "summary": "主题把皮肤毛孔、皮脂、毛囊和痤疮相关细菌拟人化。毛孔被皮脂和角质堵塞后，局部环境变得适合细菌繁殖，白血球进入后引发炎症反应，形成脓液和痘痘。故事也通过毛母细胞和皮肤细胞的互动，适合向孩子解释：痘痘不是“脏”或“羞耻”，而是皮肤结构、皮脂和免疫反应共同造成的。",
+        "readingFocus": "“痘痘怎样形成”：用毛孔堵塞、皮脂增多、痤疮相关细菌繁殖和白血球炎症反应四个节点说明；同时避免把痘痘说成羞耻或单纯不干净。",
+        "keyBiologyConcepts": [
+          "痤疮",
+          "皮肤",
+          "毛孔",
+          "毛囊",
+          "皮脂腺",
+          "皮脂",
+          "角质堵塞",
+          "痤疮丙酸杆菌",
+          "炎症",
+          "脓液"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "acne-pore-blockage",
+          "topicId": "acne",
+          "title": "痘痘形成的四个因素：毛孔、皮脂、细菌、炎症",
+          "coreQuestion": "这一页能看到毛孔、皮脂或细菌的哪个线索？",
+          "explanation": "这个小站围绕毛孔堵塞、皮脂分泌、细菌繁殖展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察痤疮、皮肤、毛孔，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-acne-pore-blockage",
+          "imagePrompt": "Phase 18 approved image prompt for 痤疮 痘痘形成的四个因素：毛孔、皮脂、细菌、炎症; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/acne/acne-v2-station-01.webp",
+          "imageAlt": "痤疮：痘痘形成的四个因素：毛孔、皮脂、细菌、炎症的儿童科普解释图。",
+          "relatedPageIds": [
+            "acne__v03_page-133",
+            "acne__v03_page-138"
+          ],
+          "biologyConcepts": [
+            "毛孔堵塞",
+            "皮脂分泌",
+            "细菌繁殖",
+            "炎症反应",
+            "脓液形成"
+          ],
+          "encyclopediaTags": [
+            "痤疮",
+            "皮肤",
+            "毛孔",
+            "皮脂腺",
+            "痤疮丙酸杆菌"
+          ],
+          "parentNote": "把“痘痘形成的四个因素：毛孔、皮脂、细菌、炎症”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "acne-sebum-and-bacteria",
+          "topicId": "acne",
+          "title": "毛囊和皮脂腺在皮肤里的位置",
+          "coreQuestion": "为什么痘痘不是简单的“脏”造成的？",
+          "explanation": "这个小站围绕毛孔堵塞、皮脂分泌、细菌繁殖展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察痤疮、皮肤、毛孔，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-acne-sebum-and-bacteria",
+          "imagePrompt": "Phase 18 approved image prompt for 痤疮 毛囊和皮脂腺在皮肤里的位置; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/acne/acne-v2-station-02.webp",
+          "imageAlt": "痤疮：毛囊和皮脂腺在皮肤里的位置的儿童科普解释图。",
+          "relatedPageIds": [
+            "acne__v03_page-136",
+            "acne__v03_page-139"
+          ],
+          "biologyConcepts": [
+            "毛孔堵塞",
+            "皮脂分泌",
+            "细菌繁殖",
+            "炎症反应",
+            "脓液形成"
+          ],
+          "encyclopediaTags": [
+            "痤疮",
+            "皮肤",
+            "毛孔",
+            "皮脂腺",
+            "痤疮丙酸杆菌"
+          ],
+          "parentNote": "把“毛囊和皮脂腺在皮肤里的位置”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "acne-inflammation-and-pus",
+          "topicId": "acne",
+          "title": "为什么不能乱挤痘痘",
+          "coreQuestion": "这一页能看到毛孔、皮脂或细菌的哪个线索？",
+          "explanation": "这个小站围绕毛孔堵塞、皮脂分泌、细菌繁殖展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察痤疮、皮肤、毛孔，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-acne-inflammation-and-pus",
+          "imagePrompt": "Phase 18 approved image prompt for 痤疮 为什么不能乱挤痘痘; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/acne/acne-v2-station-03.webp",
+          "imageAlt": "痤疮：为什么不能乱挤痘痘的儿童科普解释图。",
+          "relatedPageIds": [
+            "acne__v03_page-147",
+            "acne__v03_page-152"
+          ],
+          "biologyConcepts": [
+            "毛孔堵塞",
+            "皮脂分泌",
+            "细菌繁殖",
+            "炎症反应",
+            "脓液形成"
+          ],
+          "encyclopediaTags": [
+            "痤疮",
+            "皮肤",
+            "毛孔",
+            "皮脂腺",
+            "痤疮丙酸杆菌"
+          ],
+          "parentNote": "把“为什么不能乱挤痘痘”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "acne-gentle-skin-care-boundary",
+          "topicId": "acne",
+          "title": "脓液是免疫细胞战斗后的结果之一",
+          "coreQuestion": "为什么痘痘不是简单的“脏”造成的？",
+          "explanation": "这个小站围绕毛孔堵塞、皮脂分泌、细菌繁殖展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察痤疮、皮肤、毛孔，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-acne-gentle-skin-care-boundary",
+          "imagePrompt": "Phase 18 approved image prompt for 痤疮 脓液是免疫细胞战斗后的结果之一; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/acne/acne-v2-station-04.webp",
+          "imageAlt": "痤疮：脓液是免疫细胞战斗后的结果之一的儿童科普解释图。",
+          "relatedPageIds": [
+            "acne__v03_page-153",
+            "acne__v03_page-154"
+          ],
+          "biologyConcepts": [
+            "毛孔堵塞",
+            "皮脂分泌",
+            "细菌繁殖",
+            "炎症反应",
+            "脓液形成"
+          ],
+          "encyclopediaTags": [
+            "痤疮",
+            "皮肤",
+            "毛孔",
+            "皮脂腺",
+            "痤疮丙酸杆菌"
+          ],
+          "parentNote": "把“脓液是免疫细胞战斗后的结果之一”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "acne-q01",
+          "topicId": "acne",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "痘痘是因为一个原因造成的吗",
+          "question": "痘痘是因为一个原因造成的吗？",
+          "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "acne__v03_page-133",
+            "acne__v03_page-138"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "毛孔堵塞",
+            "皮脂分泌",
+            "细菌繁殖"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "acne-q02",
+          "topicId": "acne",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "画面里哪里显示毛孔被堵住",
+          "question": "画面里哪里显示毛孔被堵住？",
+          "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "acne__v03_page-136",
+            "acne__v03_page-139"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "毛孔堵塞",
+            "皮脂分泌",
+            "细菌繁殖"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "acne-q03",
+          "topicId": "acne",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "白血球在痘痘里做了什么工作",
+          "question": "白血球在痘痘里做了什么工作？",
+          "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "acne__v03_page-147",
+            "acne__v03_page-152"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "毛孔堵塞",
+            "皮脂分泌",
+            "细菌繁殖"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "acne-q04",
+          "topicId": "acne",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么看到痘痘不应该嘲笑别人",
+          "question": "为什么看到痘痘不应该嘲笑别人？",
+          "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "acne__v03_page-153",
+            "acne__v03_page-154"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "毛孔堵塞",
+            "皮脂分泌",
+            "细菌繁殖"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "acne-q05",
+          "topicId": "acne",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "这一页能看到毛孔、皮脂或细菌的哪",
+          "question": "这一页能看到毛孔、皮脂或细菌的哪个线索？",
+          "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "acne__v03_page-133",
+            "acne__v03_page-138"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "毛孔堵塞",
+            "皮脂分泌",
+            "细菌繁殖"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "acne-q06",
+          "topicId": "acne",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "为什么痘痘不是简单的“脏”造成的",
+          "question": "为什么痘痘不是简单的“脏”造成的？",
+          "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "acne__v03_page-136",
+            "acne__v03_page-139"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "毛孔堵塞",
+            "皮脂分泌",
+            "细菌繁殖"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "本主题涉及脓液、皮肤红肿和外貌话题。共读时请使用非羞辱语言，强调痤疮是皮肤结构、皮脂、细菌和免疫反应共同造成的；动画线索来自 audio-fallback 且为 medium confidence，需要保留人工复核提醒。",
+      "parentNote": "本主题涉及脓液、皮肤红肿和外貌话题。共读时请使用非羞辱语言，强调痤疮是皮肤结构、皮脂、细菌和免疫反应共同造成的；动画线索来自 audio-fallback 且为 medium confidence，需要保留人工复核提醒。",
+      "sourceNotes": [
+        "漫画来源：第3卷 第14话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S2 第3话后半段 summary-only scene notes，sourceMode: audio-fallback；与登革热同一 MP4 分段，必须保留主题边界和人工复核提醒。",
+        "audio-fallback 与 medium-confidence 线索只作摘要级参考，不接入视频、字幕、对白或转写。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/acne/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "acne__v03_page-133",
+        "acne__v03_page-138",
+        "acne__v03_page-136",
+        "acne__v03_page-139",
+        "acne__v03_page-147",
+        "acne__v03_page-152",
+        "acne__v03_page-153",
+        "acne__v03_page-154"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "acne-s2e03-v2-001",
+          "sourceLabel": "动画 S2 第3话后半段摘要（audio-fallback，medium-confidence，需人工复核）",
+          "summary": "适合导入毛孔堵塞、皮脂和局部皮肤环境变化。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "acne-s2e03-v2-003",
+          "sourceLabel": "动画 S2 第3话后半段摘要（audio-fallback，medium-confidence，需人工复核）",
+          "summary": "适合说明白血球参与局部炎症清理，但不作为诊断或护理建议。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true,
+        "audioFallbackNeedsHumanReview": true,
+        "mediumConfidenceNeedsHumanReview": true,
+        "topicBoundaryWithDengueFever": true
+      }
     },
     {
       "order": 14,
@@ -30545,7 +30878,342 @@
         "peyers-patches__v04_page-165",
         "peyers-patches__v04_page-166",
         "peyers-patches__v04_page-169"
-      ]
+      ],
+      "topicOverview": {
+        "title": "派尔斑",
+        "summary": "这一主题把场景放在小肠黏膜免疫系统中，重点展示派尔斑如何像“肠道边防站”一样收集肠腔里的信息、区分食物、益菌与可能的病原体。故事中可见M细胞、免疫细胞、乳酸菌/益菌和病原菌的互动，适合帮助孩子理解肠道并不只是消化食物，也有重要的免疫监视和防御功能。",
+        "readingFocus": "“肠道里的免疫观察站”：用小肠黏膜、M细胞采样、派尔斑免疫细胞、IgA抗体和益菌/病原菌区分来解释肠道免疫。",
+        "keyBiologyConcepts": [
+          "派尔斑",
+          "小肠",
+          "M细胞",
+          "肠道黏膜免疫",
+          "抗原采样",
+          "抗原呈递",
+          "免疫细胞",
+          "B细胞",
+          "浆细胞",
+          "IgA抗体",
+          "乳酸菌/益菌",
+          "肠道菌群",
+          "致病菌"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "peyers-patches-intestinal-lookout",
+          "topicId": "peyers-patches",
+          "title": "派尔斑为什么像肠道里的免疫观察站",
+          "coreQuestion": "这一页把肠道画成了什么样的空间？",
+          "explanation": "这个小站围绕小肠环境、黏膜免疫、小肠结构展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察派尔斑、小肠、M细胞，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-peyers-patches-intestinal-lookout",
+          "imagePrompt": "Phase 18 approved image prompt for 派尔斑 派尔斑为什么像肠道里的免疫观察站; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/peyers-patches/peyers-patches-v2-station-01.webp",
+          "imageAlt": "派尔斑：派尔斑为什么像肠道里的免疫观察站的儿童科普解释图。",
+          "relatedPageIds": [
+            "peyers-patches__v04_page-139",
+            "peyers-patches__v04_page-140"
+          ],
+          "biologyConcepts": [
+            "小肠环境",
+            "黏膜免疫",
+            "小肠结构",
+            "肠道黏膜免疫",
+            "抗原采样"
+          ],
+          "encyclopediaTags": [
+            "派尔斑",
+            "小肠",
+            "M细胞",
+            "肠道菌群"
+          ],
+          "parentNote": "把“派尔斑为什么像肠道里的免疫观察站”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "peyers-patches-m-cell-sampling",
+          "topicId": "peyers-patches",
+          "title": "M细胞怎样把肠道里的信息递给免疫系统",
+          "coreQuestion": "免疫细胞为什么需要先观察，再决定是否攻击？",
+          "explanation": "这个小站围绕抗原采样、抗原呈递、IgA抗体展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察M细胞、抗原呈递、派尔斑，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-peyers-patches-m-cell-sampling",
+          "imagePrompt": "Phase 18 approved image prompt for 派尔斑 M细胞怎样把肠道里的信息递给免疫系统; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/peyers-patches/peyers-patches-v2-station-02.webp",
+          "imageAlt": "派尔斑：M细胞怎样把肠道里的信息递给免疫系统的儿童科普解释图。",
+          "relatedPageIds": [
+            "peyers-patches__v04_page-160",
+            "peyers-patches__v04_page-162"
+          ],
+          "biologyConcepts": [
+            "抗原采样",
+            "抗原呈递",
+            "IgA抗体",
+            "肠道黏膜免疫",
+            "免疫监视"
+          ],
+          "encyclopediaTags": [
+            "M细胞",
+            "抗原呈递",
+            "派尔斑",
+            "IgA抗体",
+            "小肠"
+          ],
+          "parentNote": "把“M细胞怎样把肠道里的信息递给免疫系统”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "peyers-patches-friend-or-risk",
+          "topicId": "peyers-patches",
+          "title": "肠道菌群中“益菌”和“致病菌”的区别",
+          "coreQuestion": "这一页最适合做哪个身体科学小站：结构、功能、风险，还是救援？",
+          "explanation": "这个小站围绕肠道菌群、益菌与病原菌、免疫识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察乳酸菌、肠道菌群、派尔斑，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-peyers-patches-friend-or-risk",
+          "imagePrompt": "Phase 18 approved image prompt for 派尔斑 肠道菌群中“益菌”和“致病菌”的区别; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/peyers-patches/peyers-patches-v2-station-03.webp",
+          "imageAlt": "派尔斑：肠道菌群中“益菌”和“致病菌”的区别的儿童科普解释图。",
+          "relatedPageIds": [
+            "peyers-patches__v04_page-147",
+            "peyers-patches__v04_page-148"
+          ],
+          "biologyConcepts": [
+            "肠道菌群",
+            "益菌与病原菌",
+            "免疫识别",
+            "肠道黏膜免疫",
+            "抗原采样"
+          ],
+          "encyclopediaTags": [
+            "乳酸菌",
+            "肠道菌群",
+            "派尔斑",
+            "小肠",
+            "M细胞"
+          ],
+          "parentNote": "把“肠道菌群中“益菌”和“致病菌”的区别”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "peyers-patches-iga-surface-defense",
+          "topicId": "peyers-patches",
+          "title": "黏膜免疫为什么需要既警觉又不过度反应",
+          "coreQuestion": "这一页把肠道画成了什么样的空间？",
+          "explanation": "这个小站围绕抗原呈递、肠道免疫组织、抗原采样展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察派尔斑、抗原、M细胞，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-peyers-patches-iga-surface-defense",
+          "imagePrompt": "Phase 18 approved image prompt for 派尔斑 黏膜免疫为什么需要既警觉又不过度反应; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/peyers-patches/peyers-patches-v2-station-04.webp",
+          "imageAlt": "派尔斑：黏膜免疫为什么需要既警觉又不过度反应的儿童科普解释图。",
+          "relatedPageIds": [
+            "peyers-patches__v04_page-164",
+            "peyers-patches__v04_page-166"
+          ],
+          "biologyConcepts": [
+            "抗原呈递",
+            "肠道免疫组织",
+            "抗原采样",
+            "IgA抗体",
+            "肠道黏膜免疫"
+          ],
+          "encyclopediaTags": [
+            "派尔斑",
+            "抗原",
+            "M细胞",
+            "IgA抗体",
+            "小肠"
+          ],
+          "parentNote": "把“黏膜免疫为什么需要既警觉又不过度反应”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "peyers-patches-q01",
+          "topicId": "peyers-patches",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "小肠除了消化吸收，还承担什么防御",
+          "question": "小肠除了消化吸收，还承担什么防御工作？",
+          "answer": "可以围绕小肠环境、黏膜免疫、小肠结构来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "peyers-patches__v04_page-139",
+            "peyers-patches__v04_page-140"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "小肠环境",
+            "黏膜免疫",
+            "小肠结构"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "peyers-patches-q02",
+          "topicId": "peyers-patches",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "派尔斑为什么不能把所有细菌都一概",
+          "question": "派尔斑为什么不能把所有细菌都一概消灭？",
+          "answer": "可以围绕抗原采样、抗原呈递、IgA抗体来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "peyers-patches__v04_page-160",
+            "peyers-patches__v04_page-162"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "抗原采样",
+            "抗原呈递",
+            "IgA抗体"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "peyers-patches-q03",
+          "topicId": "peyers-patches",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "M细胞像身体里的什么职业",
+          "question": "M细胞像身体里的什么职业？",
+          "answer": "可以围绕肠道菌群、益菌与病原菌、免疫识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "peyers-patches__v04_page-147",
+            "peyers-patches__v04_page-148"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "肠道菌群",
+            "益菌与病原菌",
+            "免疫识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "peyers-patches-q04",
+          "topicId": "peyers-patches",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "画面中哪些细胞像“检查员”或“传",
+          "question": "画面中哪些细胞像“检查员”或“传递员”？",
+          "answer": "可以围绕抗原呈递、肠道免疫组织、抗原采样来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "peyers-patches__v04_page-164",
+            "peyers-patches__v04_page-166"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "抗原呈递",
+            "肠道免疫组织",
+            "抗原采样"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "peyers-patches-q05",
+          "topicId": "peyers-patches",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "这一页把肠道画成了什么样的空间",
+          "question": "这一页把肠道画成了什么样的空间？",
+          "answer": "可以围绕小肠环境、黏膜免疫、小肠结构来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "peyers-patches__v04_page-139",
+            "peyers-patches__v04_page-140"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "小肠环境",
+            "黏膜免疫",
+            "小肠结构"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "peyers-patches-q06",
+          "topicId": "peyers-patches",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "免疫细胞为什么需要先观察，再决定",
+          "question": "免疫细胞为什么需要先观察，再决定是否攻击？",
+          "answer": "可以围绕抗原采样、抗原呈递、IgA抗体来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "peyers-patches__v04_page-160",
+            "peyers-patches__v04_page-162"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "抗原采样",
+            "抗原呈递",
+            "IgA抗体"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "本主题适合把肠道讲成既消化又防御的边界空间。动画线索来自 audio-fallback 且为 medium confidence，并与获得性免疫同集内容相邻，需保留人工复核提醒。",
+      "parentNote": "本主题适合把肠道讲成既消化又防御的边界空间。动画线索来自 audio-fallback 且为 medium confidence，并与获得性免疫同集内容相邻，需保留人工复核提醒。",
+      "sourceNotes": [
+        "漫画来源：第4卷 第19话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S2 第2话后段 summary-only scene notes，sourceMode: audio-fallback；与 acquired-immunity 内容相邻，保留人工复核提醒。",
+        "audio-fallback 与 medium-confidence 线索只作摘要级参考，不接入视频、字幕、对白或转写。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/peyers-patches/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "peyers-patches__v04_page-139",
+        "peyers-patches__v04_page-140",
+        "peyers-patches__v04_page-160",
+        "peyers-patches__v04_page-162",
+        "peyers-patches__v04_page-147",
+        "peyers-patches__v04_page-148",
+        "peyers-patches__v04_page-164",
+        "peyers-patches__v04_page-166"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "peyers-patches-s2e02-v2-001",
+          "sourceLabel": "动画 S2 第2话后段摘要（audio-fallback，medium-confidence，需人工复核）",
+          "summary": "适合导入小肠黏膜免疫和派尔斑观察站概念。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "peyers-patches-s2e02-v2-003",
+          "sourceLabel": "动画 S2 第2话后段摘要（audio-fallback，medium-confidence，需人工复核）",
+          "summary": "适合说明M细胞、抗原采样与益菌/病原菌区分。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true,
+        "audioFallbackNeedsHumanReview": true,
+        "mediumConfidenceNeedsHumanReview": true,
+        "topicBoundaryWithAcquiredImmunity": true
+      }
     },
     {
       "order": 18,
@@ -32401,7 +33069,341 @@
         "helicobacter-pylori__v05_page-039",
         "helicobacter-pylori__v05_page-041",
         "helicobacter-pylori__v05_page-044"
-      ]
+      ],
+      "topicOverview": {
+        "title": "幽门螺杆菌",
+        "summary": "这一主题将场景放在胃部，围绕幽门螺杆菌、胃酸、胃黏膜和益菌展开。故事从胃部细胞的日常生活开始，出现可爱的益菌/乳酸菌角色，随后幽门螺杆菌以螺旋形态和强破坏力登场，引发胃黏膜受损、胃痛和炎症危机。后半段通过益菌的帮助与免疫细胞的应对，适合帮助孩子理解：胃里虽然有强酸环境，但仍可能有特殊细菌生存；胃黏膜保护和菌群平衡对健康很重要。",
+        "readingFocus": "“胃里为什么也可能有细菌”：用胃酸、胃黏膜保护、幽门螺杆菌适应、益菌差异和医学边界说明胃部防御。",
+        "keyBiologyConcepts": [
+          "幽门螺杆菌",
+          "胃",
+          "胃酸",
+          "胃黏膜",
+          "胃壁细胞",
+          "胃炎",
+          "胃溃疡",
+          "乳酸菌",
+          "益菌",
+          "胃部菌群",
+          "免疫反应",
+          "黏膜保护",
+          "抗体/免疫识别"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "helicobacter-pylori-stomach-acid-environment",
+          "topicId": "helicobacter-pylori",
+          "title": "幽门螺杆菌为什么能在胃里生活",
+          "coreQuestion": "这一页里，胃部环境被画成了什么样？",
+          "explanation": "这个小站围绕幽门螺杆菌感染、胃部免疫、胃部环境展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察幽门螺杆菌、胃、胃酸，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-helicobacter-pylori-stomach-acid-environment",
+          "imagePrompt": "Phase 18 approved image prompt for 幽门螺杆菌 幽门螺杆菌为什么能在胃里生活; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-01.webp",
+          "imageAlt": "幽门螺杆菌：幽门螺杆菌为什么能在胃里生活的儿童科普解释图。",
+          "relatedPageIds": [
+            "helicobacter-pylori__v05_page-005",
+            "helicobacter-pylori__v05_page-007"
+          ],
+          "biologyConcepts": [
+            "幽门螺杆菌感染",
+            "胃部免疫",
+            "胃部环境",
+            "消化系统",
+            "胃部防御"
+          ],
+          "encyclopediaTags": [
+            "幽门螺杆菌",
+            "胃",
+            "胃酸",
+            "胃黏膜",
+            "乳酸菌"
+          ],
+          "parentNote": "把“幽门螺杆菌为什么能在胃里生活”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "helicobacter-pylori-spiral-bacterium",
+          "topicId": "helicobacter-pylori",
+          "title": "胃酸有什么作用，为什么胃自己不会被胃酸伤害",
+          "coreQuestion": "怎样区分故事里的益菌和病原菌？",
+          "explanation": "这个小站围绕细菌形态、螺旋运动、幽门螺杆菌感染展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察幽门螺杆菌、细菌形态、胃炎，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-helicobacter-pylori-spiral-bacterium",
+          "imagePrompt": "Phase 18 approved image prompt for 幽门螺杆菌 胃酸有什么作用，为什么胃自己不会被胃酸伤害; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-02.webp",
+          "imageAlt": "幽门螺杆菌：胃酸有什么作用，为什么胃自己不会被胃酸伤害的儿童科普解释图。",
+          "relatedPageIds": [
+            "helicobacter-pylori__v05_page-019",
+            "helicobacter-pylori__v05_page-020"
+          ],
+          "biologyConcepts": [
+            "细菌形态",
+            "螺旋运动",
+            "幽门螺杆菌感染",
+            "胃黏膜损伤",
+            "炎症反应"
+          ],
+          "encyclopediaTags": [
+            "幽门螺杆菌",
+            "细菌形态",
+            "胃炎",
+            "胃酸",
+            "胃黏膜"
+          ],
+          "parentNote": "把“胃酸有什么作用，为什么胃自己不会被胃酸伤害”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "helicobacter-pylori-mucosa-inflammation",
+          "topicId": "helicobacter-pylori",
+          "title": "胃黏膜像身体里的什么保护层",
+          "coreQuestion": "这一页最适合做哪个身体科学小站：结构、功能、风险，还是救援？",
+          "explanation": "这个小站围绕胃黏膜损伤、胃酸刺激、幽门螺杆菌感染展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察胃酸、胃黏膜、幽门螺杆菌，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-helicobacter-pylori-mucosa-inflammation",
+          "imagePrompt": "Phase 18 approved image prompt for 幽门螺杆菌 胃黏膜像身体里的什么保护层; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-03.webp",
+          "imageAlt": "幽门螺杆菌：胃黏膜像身体里的什么保护层的儿童科普解释图。",
+          "relatedPageIds": [
+            "helicobacter-pylori__v05_page-022",
+            "helicobacter-pylori__v05_page-024"
+          ],
+          "biologyConcepts": [
+            "胃黏膜损伤",
+            "胃酸刺激",
+            "幽门螺杆菌感染",
+            "炎症反应",
+            "胃部防御"
+          ],
+          "encyclopediaTags": [
+            "胃酸",
+            "胃黏膜",
+            "幽门螺杆菌",
+            "胃炎",
+            "乳酸菌"
+          ],
+          "parentNote": "把“胃黏膜像身体里的什么保护层”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "helicobacter-pylori-beneficial-bacteria-boundary",
+          "topicId": "helicobacter-pylori",
+          "title": "乳酸菌/益菌与病原菌有什么不同",
+          "coreQuestion": "这一页里，胃部环境被画成了什么样？",
+          "explanation": "这个小站围绕益菌、菌群识别、免疫警戒展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察乳酸菌、益菌、白血球，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-helicobacter-pylori-beneficial-bacteria-boundary",
+          "imagePrompt": "Phase 18 approved image prompt for 幽门螺杆菌 乳酸菌/益菌与病原菌有什么不同; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-04.webp",
+          "imageAlt": "幽门螺杆菌：乳酸菌/益菌与病原菌有什么不同的儿童科普解释图。",
+          "relatedPageIds": [
+            "helicobacter-pylori__v05_page-009",
+            "helicobacter-pylori__v05_page-011"
+          ],
+          "biologyConcepts": [
+            "益菌",
+            "菌群识别",
+            "免疫警戒",
+            "胃部防御",
+            "黏膜保护"
+          ],
+          "encyclopediaTags": [
+            "乳酸菌",
+            "益菌",
+            "白血球",
+            "幽门螺杆菌",
+            "胃酸"
+          ],
+          "parentNote": "把“乳酸菌/益菌与病原菌有什么不同”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "helicobacter-pylori-q01",
+          "topicId": "helicobacter-pylori",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "胃酸很强，为什么胃里还可能有细菌",
+          "question": "胃酸很强，为什么胃里还可能有细菌？",
+          "answer": "可以围绕幽门螺杆菌感染、胃部免疫、胃部环境来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "helicobacter-pylori__v05_page-005",
+            "helicobacter-pylori__v05_page-007"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "幽门螺杆菌感染",
+            "胃部免疫",
+            "胃部环境"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "helicobacter-pylori-q02",
+          "topicId": "helicobacter-pylori",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "画面里哪些地方表现了胃黏膜受损",
+          "question": "画面里哪些地方表现了胃黏膜受损？",
+          "answer": "可以围绕细菌形态、螺旋运动、幽门螺杆菌感染来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "helicobacter-pylori__v05_page-019",
+            "helicobacter-pylori__v05_page-020"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "细菌形态",
+            "螺旋运动",
+            "幽门螺杆菌感染"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "helicobacter-pylori-q03",
+          "topicId": "helicobacter-pylori",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "益菌和幽门螺杆菌在故事里有什么不",
+          "question": "益菌和幽门螺杆菌在故事里有什么不同？",
+          "answer": "可以围绕胃黏膜损伤、胃酸刺激、幽门螺杆菌感染来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "helicobacter-pylori__v05_page-022",
+            "helicobacter-pylori__v05_page-024"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "胃黏膜损伤",
+            "胃酸刺激",
+            "幽门螺杆菌感染"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "helicobacter-pylori-q04",
+          "topicId": "helicobacter-pylori",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "如果胃不舒服，为什么应该找医生而",
+          "question": "如果胃不舒服，为什么应该找医生而不是自己猜原因？",
+          "answer": "可以围绕益菌、菌群识别、免疫警戒来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "helicobacter-pylori__v05_page-009",
+            "helicobacter-pylori__v05_page-011"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "益菌",
+            "菌群识别",
+            "免疫警戒"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "helicobacter-pylori-q05",
+          "topicId": "helicobacter-pylori",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "这一页里，胃部环境被画成了什么样",
+          "question": "这一页里，胃部环境被画成了什么样？",
+          "answer": "可以围绕幽门螺杆菌感染、胃部免疫、胃部环境来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "helicobacter-pylori__v05_page-005",
+            "helicobacter-pylori__v05_page-007"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "幽门螺杆菌感染",
+            "胃部免疫",
+            "胃部环境"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "helicobacter-pylori-q06",
+          "topicId": "helicobacter-pylori",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "怎样区分故事里的益菌和病原菌",
+          "question": "怎样区分故事里的益菌和病原菌？",
+          "answer": "可以围绕细菌形态、螺旋运动、幽门螺杆菌感染来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "helicobacter-pylori__v05_page-019",
+            "helicobacter-pylori__v05_page-020"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "细菌形态",
+            "螺旋运动",
+            "幽门螺杆菌感染"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "本主题涉及胃痛、胃黏膜损伤和幽门螺杆菌。共读只做科普，不做感染判断、治疗建议或用药建议；动画线索来自 audio-fallback，需保留人工复核提醒。",
+      "parentNote": "本主题涉及胃痛、胃黏膜损伤和幽门螺杆菌。共读只做科普，不做感染判断、治疗建议或用药建议；动画线索来自 audio-fallback，需保留人工复核提醒。",
+      "sourceNotes": [
+        "漫画来源：第5卷 第20话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S2 第4话前段 summary-only scene notes，sourceMode: audio-fallback；无同名 SRT，不接入视频、字幕、对白或转写。",
+        "audio-fallback 线索只作为摘要级参考，胃部不适或幽门螺杆菌问题应由专业医务人员判断。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/helicobacter-pylori/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "helicobacter-pylori__v05_page-005",
+        "helicobacter-pylori__v05_page-007",
+        "helicobacter-pylori__v05_page-019",
+        "helicobacter-pylori__v05_page-020",
+        "helicobacter-pylori__v05_page-022",
+        "helicobacter-pylori__v05_page-024",
+        "helicobacter-pylori__v05_page-009",
+        "helicobacter-pylori__v05_page-011"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "helicobacter-pylori-s2e04-v2-001",
+          "sourceLabel": "动画 S2 第4话摘要（audio-fallback，需人工复核）",
+          "summary": "适合导入胃部环境、胃酸和胃黏膜保护。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "helicobacter-pylori-s2e04-v2-003",
+          "sourceLabel": "动画 S2 第4话摘要（audio-fallback，需人工复核）",
+          "summary": "适合说明幽门螺杆菌特征、黏膜受损和局部免疫反应。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true,
+        "audioFallbackNeedsHumanReview": true
+      }
     },
     {
       "order": 19,
@@ -33712,7 +34714,340 @@
         "antigenic-variation__v05_page-070",
         "antigenic-variation__v05_page-072",
         "antigenic-variation__v05_page-074"
-      ]
+      ],
+      "topicOverview": {
+        "title": "抗原变异",
+        "summary": "这一主题围绕“抗原变异”展开：病原体通过改变表面特征，让免疫系统难以沿用过去的识别经验。故事继续使用乳酸菌/益菌、免疫细胞和可变形病原体的互动，展示免疫系统为什么需要不断识别、学习和更新判断。适合帮助孩子理解疫苗、免疫记忆、病毒变异和“为什么同一种病原可能反复出现”之间的基础关系。",
+        "readingFocus": "“病原体改变外表后，免疫为什么要重新识别”：用抗原、免疫记忆、识别延迟、免疫逃逸和变异边界解释。",
+        "keyBiologyConcepts": [
+          "抗原",
+          "抗原变异",
+          "免疫逃逸",
+          "免疫记忆",
+          "抗体",
+          "NK细胞",
+          "白血球/中性粒细胞",
+          "乳酸菌/益菌",
+          "病原体变异",
+          "病毒类型差异",
+          "免疫识别更新"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "antigenic-variation-antigen-name-tag",
+          "topicId": "antigenic-variation",
+          "title": "什么是抗原：免疫系统识别的“标志”",
+          "coreQuestion": "这一页里，病原体有什么“变得不一样”的线索？",
+          "explanation": "这个小站围绕抗原变异、免疫识别、抗原识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察抗原变异、抗原、免疫记忆，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-antigenic-variation-antigen-name-tag",
+          "imagePrompt": "Phase 18 approved image prompt for 抗原变异 什么是抗原：免疫系统识别的“标志”; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/antigenic-variation/antigenic-variation-v2-station-01.webp",
+          "imageAlt": "抗原变异：什么是抗原：免疫系统识别的“标志”的儿童科普解释图。",
+          "relatedPageIds": [
+            "antigenic-variation__v05_page-047",
+            "antigenic-variation__v05_page-049"
+          ],
+          "biologyConcepts": [
+            "抗原变异",
+            "免疫识别",
+            "抗原识别",
+            "免疫逃逸",
+            "免疫记忆更新"
+          ],
+          "encyclopediaTags": [
+            "抗原变异",
+            "抗原",
+            "免疫记忆",
+            "病毒变异",
+            "免疫逃逸"
+          ],
+          "parentNote": "把“什么是抗原：免疫系统识别的“标志””讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "antigenic-variation-variation-and-recognition",
+          "topicId": "antigenic-variation",
+          "title": "抗原变异为什么会让免疫系统认错或认慢",
+          "coreQuestion": "免疫系统为什么不能只记住一次经验？",
+          "explanation": "这个小站围绕免疫识别、识别延迟、抗原识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察免疫细胞、抗原、抗原变异，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-antigenic-variation-variation-and-recognition",
+          "imagePrompt": "Phase 18 approved image prompt for 抗原变异 抗原变异为什么会让免疫系统认错或认慢; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/antigenic-variation/antigenic-variation-v2-station-02.webp",
+          "imageAlt": "抗原变异：抗原变异为什么会让免疫系统认错或认慢的儿童科普解释图。",
+          "relatedPageIds": [
+            "antigenic-variation__v05_page-050",
+            "antigenic-variation__v05_page-061"
+          ],
+          "biologyConcepts": [
+            "免疫识别",
+            "识别延迟",
+            "抗原识别",
+            "免疫逃逸",
+            "免疫记忆更新"
+          ],
+          "encyclopediaTags": [
+            "免疫细胞",
+            "抗原",
+            "抗原变异",
+            "免疫记忆",
+            "病毒变异"
+          ],
+          "parentNote": "把“抗原变异为什么会让免疫系统认错或认慢”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "antigenic-variation-immune-escape",
+          "topicId": "antigenic-variation",
+          "title": "免疫记忆不是万能的原因",
+          "coreQuestion": "这一页最适合做哪个身体科学小站：结构、功能、风险，还是救援？",
+          "explanation": "这个小站围绕抗原改变、免疫逃逸、抗原识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察抗原、免疫逃逸、抗原变异，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-antigenic-variation-immune-escape",
+          "imagePrompt": "Phase 18 approved image prompt for 抗原变异 免疫记忆不是万能的原因; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/antigenic-variation/antigenic-variation-v2-station-03.webp",
+          "imageAlt": "抗原变异：免疫记忆不是万能的原因的儿童科普解释图。",
+          "relatedPageIds": [
+            "antigenic-variation__v05_page-049",
+            "antigenic-variation__v05_page-057"
+          ],
+          "biologyConcepts": [
+            "抗原改变",
+            "免疫逃逸",
+            "抗原识别",
+            "免疫记忆更新",
+            "病原体变异"
+          ],
+          "encyclopediaTags": [
+            "抗原",
+            "免疫逃逸",
+            "抗原变异",
+            "免疫记忆",
+            "病毒变异"
+          ],
+          "parentNote": "把“免疫记忆不是万能的原因”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "antigenic-variation-update-memory",
+          "topicId": "antigenic-variation",
+          "title": "病毒变异和“类型不同”可以怎样用儿童语言解释",
+          "coreQuestion": "这一页里，病原体有什么“变得不一样”的线索？",
+          "explanation": "这个小站围绕免疫判断、抗原识别、NK细胞展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察免疫系统、抗原、NK细胞，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-antigenic-variation-update-memory",
+          "imagePrompt": "Phase 18 approved image prompt for 抗原变异 病毒变异和“类型不同”可以怎样用儿童语言解释; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/antigenic-variation/antigenic-variation-v2-station-04.webp",
+          "imageAlt": "抗原变异：病毒变异和“类型不同”可以怎样用儿童语言解释的儿童科普解释图。",
+          "relatedPageIds": [
+            "antigenic-variation__v05_page-059",
+            "antigenic-variation__v05_page-060"
+          ],
+          "biologyConcepts": [
+            "免疫判断",
+            "抗原识别",
+            "NK细胞",
+            "免疫记忆",
+            "抗原变化"
+          ],
+          "encyclopediaTags": [
+            "免疫系统",
+            "抗原",
+            "NK细胞",
+            "免疫记忆",
+            "抗原变异"
+          ],
+          "parentNote": "把“病毒变异和“类型不同”可以怎样用儿童语言解释”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "antigenic-variation-q01",
+          "topicId": "antigenic-variation",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "如果病原体换了外表，免疫系统为什",
+          "question": "如果病原体换了外表，免疫系统为什么会更难认出来？",
+          "answer": "可以围绕抗原变异、免疫识别、抗原识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "antigenic-variation__v05_page-047",
+            "antigenic-variation__v05_page-049"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "抗原变异",
+            "免疫识别",
+            "抗原识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "antigenic-variation-q02",
+          "topicId": "antigenic-variation",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "抗原像身体安全系统里的什么信息",
+          "question": "抗原像身体安全系统里的什么信息？",
+          "answer": "可以围绕免疫识别、识别延迟、抗原识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "antigenic-variation__v05_page-050",
+            "antigenic-variation__v05_page-061"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "免疫识别",
+            "识别延迟",
+            "抗原识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "antigenic-variation-q03",
+          "topicId": "antigenic-variation",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么以前见过一种病原，不代表一",
+          "question": "为什么以前见过一种病原，不代表一定能立刻打败新的变体？",
+          "answer": "可以围绕抗原改变、免疫逃逸、抗原识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "antigenic-variation__v05_page-049",
+            "antigenic-variation__v05_page-057"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "抗原改变",
+            "免疫逃逸",
+            "抗原识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "antigenic-variation-q04",
+          "topicId": "antigenic-variation",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "画面里哪些地方表现了“它变得不一",
+          "question": "画面里哪些地方表现了“它变得不一样了”？",
+          "answer": "可以围绕免疫判断、抗原识别、NK细胞来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "antigenic-variation__v05_page-059",
+            "antigenic-variation__v05_page-060"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "免疫判断",
+            "抗原识别",
+            "NK细胞"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "antigenic-variation-q05",
+          "topicId": "antigenic-variation",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "这一页里，病原体有什么“变得不一",
+          "question": "这一页里，病原体有什么“变得不一样”的线索？",
+          "answer": "可以围绕抗原变异、免疫识别、抗原识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "antigenic-variation__v05_page-047",
+            "antigenic-variation__v05_page-049"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "抗原变异",
+            "免疫识别",
+            "抗原识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "antigenic-variation-q06",
+          "topicId": "antigenic-variation",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "免疫系统为什么不能只记住一次经验",
+          "question": "免疫系统为什么不能只记住一次经验？",
+          "answer": "可以围绕免疫识别、识别延迟、抗原识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "antigenic-variation__v05_page-050",
+            "antigenic-variation__v05_page-061"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "免疫识别",
+            "识别延迟",
+            "抗原识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "本主题概念抽象，适合用“识别标记改变”解释抗原变异。动画线索来自 audio-fallback，且为 medium confidence，并可能与同一集幽门螺杆菌/后续细胞因子边界相邻，需保留人工复核提醒。",
+      "parentNote": "本主题概念抽象，适合用“识别标记改变”解释抗原变异。动画线索来自 audio-fallback，且为 medium confidence，并可能与同一集幽门螺杆菌/后续细胞因子边界相邻，需保留人工复核提醒。",
+      "sourceNotes": [
+        "漫画来源：第5卷 第21话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S2 第4话后段 summary-only scene notes，sourceMode: audio-fallback；无同名 SRT，且 matchConfidence 为 medium。",
+        "medium-confidence 线索只作摘要级参考，需与幽门螺杆菌和细胞因子主题保持边界，不接入视频、字幕、对白或转写。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/antigenic-variation/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "antigenic-variation__v05_page-047",
+        "antigenic-variation__v05_page-049",
+        "antigenic-variation__v05_page-050",
+        "antigenic-variation__v05_page-061",
+        "antigenic-variation__v05_page-057",
+        "antigenic-variation__v05_page-059",
+        "antigenic-variation__v05_page-060"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "antigenic-variation-s2e04-v2-001",
+          "sourceLabel": "动画 S2 第4话后段摘要（audio-fallback，medium-confidence，需人工复核）",
+          "summary": "适合导入抗原线索改变和免疫重新识别。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "antigenic-variation-s2e04-v2-004",
+          "sourceLabel": "动画 S2 第4话后段摘要（audio-fallback，medium-confidence，需人工复核）",
+          "summary": "适合说明免疫记忆需要更新，且主题边界需人工复核。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true,
+        "audioFallbackNeedsHumanReview": true,
+        "mediumConfidenceNeedsHumanReview": true,
+        "boundaryWithHelicobacterAndCytokines": true
+      }
     },
     {
       "order": 20,
@@ -35114,7 +36449,340 @@
         "cytokines__v05_page-103",
         "cytokines__v05_page-104",
         "cytokines__v05_page-106"
-      ]
+      ],
+      "topicOverview": {
+        "title": "细胞因子",
+        "summary": "这一主题围绕细胞因子（漫画中常以“细胞激素”呈现）展开，表现免疫细胞之间怎样通过信号互相通知、激活和协作。故事中可见NK细胞、乳酸菌/益菌、免疫细胞被激活、IL-12等信号线索，以及因免疫反应增强而出现的剧烈战斗和炎症化场面。适合帮助孩子理解：免疫系统不是单个细胞各自战斗，而是通过化学信号形成团队协作；信号过强或失控也可能带来问题。",
+        "readingFocus": "“免疫细胞怎样互相发消息”：用细胞因子、IL-12、细胞活化、信号放大、炎症调节和过强反应的边界说明免疫协作。",
+        "keyBiologyConcepts": [
+          "细胞因子",
+          "细胞激素",
+          "IL-12",
+          "免疫信号",
+          "细胞活化",
+          "NK细胞",
+          "白血球/中性粒细胞",
+          "巨噬细胞/树突状细胞",
+          "炎症反应",
+          "免疫调节",
+          "免疫协作",
+          "乳酸菌/益菌"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "cytokines-chemical-messages",
+          "topicId": "cytokines",
+          "title": "细胞因子是什么：细胞之间的化学信息",
+          "coreQuestion": "这一页里，哪个画面像“细胞在互相发消息”？",
+          "explanation": "这个小站围绕免疫信号、细胞活化、炎症反应展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察细胞因子、免疫信号、IL-12，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-cytokines-chemical-messages",
+          "imagePrompt": "Phase 18 approved image prompt for 细胞因子 细胞因子是什么：细胞之间的化学信息; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cytokines/cytokines-v2-station-01.webp",
+          "imageAlt": "细胞因子：细胞因子是什么：细胞之间的化学信息的儿童科普解释图。",
+          "relatedPageIds": [
+            "cytokines__v05_page-077",
+            "cytokines__v05_page-080"
+          ],
+          "biologyConcepts": [
+            "免疫信号",
+            "细胞活化",
+            "炎症反应",
+            "免疫协作",
+            "细胞因子作用"
+          ],
+          "encyclopediaTags": [
+            "细胞因子",
+            "免疫信号",
+            "IL-12",
+            "NK细胞",
+            "炎症反应"
+          ],
+          "parentNote": "把“细胞因子是什么：细胞之间的化学信息”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "cytokines-il12-activation",
+          "topicId": "cytokines",
+          "title": "IL-12怎样帮助激活免疫细胞",
+          "coreQuestion": "免疫反应为什么需要被调节，而不是无限增强？",
+          "explanation": "这个小站围绕细胞活化、免疫信号、IL-12展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察细胞活化、细胞因子、IL-12，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-cytokines-il12-activation",
+          "imagePrompt": "Phase 18 approved image prompt for 细胞因子 IL-12怎样帮助激活免疫细胞; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cytokines/cytokines-v2-station-02.webp",
+          "imageAlt": "细胞因子：IL-12怎样帮助激活免疫细胞的儿童科普解释图。",
+          "relatedPageIds": [
+            "cytokines__v05_page-090",
+            "cytokines__v05_page-093"
+          ],
+          "biologyConcepts": [
+            "细胞活化",
+            "免疫信号",
+            "IL-12",
+            "免疫协作",
+            "炎症反应"
+          ],
+          "encyclopediaTags": [
+            "细胞活化",
+            "细胞因子",
+            "IL-12",
+            "NK细胞",
+            "炎症反应"
+          ],
+          "parentNote": "把“IL-12怎样帮助激活免疫细胞”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "cytokines-team-coordination",
+          "topicId": "cytokines",
+          "title": "免疫细胞为什么需要互相通知",
+          "coreQuestion": "这一页最适合做哪个身体科学小站：结构、功能、风险，还是救援？",
+          "explanation": "这个小站围绕NK细胞活化、信号传递、免疫判断展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察NK细胞、细胞因子、乳酸菌，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-cytokines-team-coordination",
+          "imagePrompt": "Phase 18 approved image prompt for 细胞因子 免疫细胞为什么需要互相通知; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cytokines/cytokines-v2-station-03.webp",
+          "imageAlt": "细胞因子：免疫细胞为什么需要互相通知的儿童科普解释图。",
+          "relatedPageIds": [
+            "cytokines__v05_page-084",
+            "cytokines__v05_page-094"
+          ],
+          "biologyConcepts": [
+            "NK细胞活化",
+            "信号传递",
+            "免疫判断",
+            "免疫信号",
+            "细胞活化"
+          ],
+          "encyclopediaTags": [
+            "NK细胞",
+            "细胞因子",
+            "乳酸菌",
+            "IL-12",
+            "炎症反应"
+          ],
+          "parentNote": "把“免疫细胞为什么需要互相通知”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "cytokines-too-strong-signals",
+          "topicId": "cytokines",
+          "title": "炎症反应为什么既有保护作用也可能造成不适",
+          "coreQuestion": "这一页里，哪个画面像“细胞在互相发消息”？",
+          "explanation": "这个小站围绕信号扩散、免疫协作、IL-12展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察细胞活化、免疫协作、IL-12，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-cytokines-too-strong-signals",
+          "imagePrompt": "Phase 18 approved image prompt for 细胞因子 炎症反应为什么既有保护作用也可能造成不适; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cytokines/cytokines-v2-station-04.webp",
+          "imageAlt": "细胞因子：炎症反应为什么既有保护作用也可能造成不适的儿童科普解释图。",
+          "relatedPageIds": [
+            "cytokines__v05_page-095",
+            "cytokines__v05_page-099"
+          ],
+          "biologyConcepts": [
+            "信号扩散",
+            "免疫协作",
+            "IL-12",
+            "细胞活化",
+            "免疫信号"
+          ],
+          "encyclopediaTags": [
+            "细胞活化",
+            "免疫协作",
+            "IL-12",
+            "细胞因子",
+            "NK细胞"
+          ],
+          "parentNote": "把“炎症反应为什么既有保护作用也可能造成不适”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "cytokines-q01",
+          "topicId": "cytokines",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "如果免疫细胞不能互相传信，会发生",
+          "question": "如果免疫细胞不能互相传信，会发生什么？",
+          "answer": "可以围绕免疫信号、细胞活化、炎症反应来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cytokines__v05_page-077",
+            "cytokines__v05_page-080"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "免疫信号",
+            "细胞活化",
+            "炎症反应"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cytokines-q02",
+          "topicId": "cytokines",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "细胞因子像生活中的什么通信方式",
+          "question": "细胞因子像生活中的什么通信方式？",
+          "answer": "可以围绕细胞活化、免疫信号、IL-12来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cytokines__v05_page-090",
+            "cytokines__v05_page-093"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "细胞活化",
+            "免疫信号",
+            "IL-12"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cytokines-q03",
+          "topicId": "cytokines",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么免疫反应越强不一定越好",
+          "question": "为什么免疫反应越强不一定越好？",
+          "answer": "可以围绕NK细胞活化、信号传递、免疫判断来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cytokines__v05_page-084",
+            "cytokines__v05_page-094"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "NK细胞活化",
+            "信号传递",
+            "免疫判断"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cytokines-q04",
+          "topicId": "cytokines",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "画面里哪些地方表现了“信号被放大",
+          "question": "画面里哪些地方表现了“信号被放大”？",
+          "answer": "可以围绕信号扩散、免疫协作、IL-12来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cytokines__v05_page-095",
+            "cytokines__v05_page-099"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "信号扩散",
+            "免疫协作",
+            "IL-12"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cytokines-q05",
+          "topicId": "cytokines",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "这一页里，哪个画面像“细胞在互相",
+          "question": "这一页里，哪个画面像“细胞在互相发消息”？",
+          "answer": "可以围绕免疫信号、细胞活化、炎症反应来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cytokines__v05_page-077",
+            "cytokines__v05_page-080"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "免疫信号",
+            "细胞活化",
+            "炎症反应"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cytokines-q06",
+          "topicId": "cytokines",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "免疫反应为什么需要被调节，而不是",
+          "question": "免疫反应为什么需要被调节，而不是无限增强？",
+          "answer": "可以围绕细胞活化、免疫信号、IL-12来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cytokines__v05_page-090",
+            "cytokines__v05_page-093"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "细胞活化",
+            "免疫信号",
+            "IL-12"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "本主题涉及免疫信号、强烈战斗和“细胞因子风暴”等延伸词。共读时请强调漫画夸张不等于现实重症判断；动画线索来自 audio-fallback，需保留人工复核提醒。",
+      "parentNote": "本主题涉及免疫信号、强烈战斗和“细胞因子风暴”等延伸词。共读时请强调漫画夸张不等于现实重症判断；动画线索来自 audio-fallback，需保留人工复核提醒。",
+      "sourceNotes": [
+        "漫画来源：第5卷 第22话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S2 第5话 summary-only scene notes，sourceMode: audio-fallback；无同名 SRT，不接入视频、字幕、对白或转写。",
+        "audio-fallback 线索只作为摘要级参考；涉及细胞因子风暴时只保留科普边界，不提供医学判断。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/cytokines/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "cytokines__v05_page-077",
+        "cytokines__v05_page-080",
+        "cytokines__v05_page-090",
+        "cytokines__v05_page-093",
+        "cytokines__v05_page-084",
+        "cytokines__v05_page-094",
+        "cytokines__v05_page-095",
+        "cytokines__v05_page-099"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "cytokines-s2e05-v2-001",
+          "sourceLabel": "动画 S2 第5话摘要（audio-fallback，需人工复核）",
+          "summary": "适合导入细胞因子作为免疫细胞之间的信号。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "cytokines-s2e05-v2-004",
+          "sourceLabel": "动画 S2 第5话摘要（audio-fallback，需人工复核）",
+          "summary": "适合说明细胞活化、信号放大和炎症调节边界。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true,
+        "audioFallbackNeedsHumanReview": true
+      }
     },
     {
       "order": 21,
@@ -40748,7 +42416,343 @@
         "cancer-cell-ii__v05_page-210",
         "cancer-cell-ii__v05_page-211",
         "cancer-cell-ii__v05_page-212"
-      ]
+      ],
+      "topicOverview": {
+        "title": "癌细胞Ⅱ",
+        "summary": "这一主题是“癌细胞Ⅱ”，由第5卷第24-25话合并组成，但必须作为独立主题呈现，不能与前面的“癌细胞”合并。故事围绕癌细胞再次出现、免疫系统追击、正常细胞与乳酸菌的牵连以及后篇决战展开。画面通过白血球、NK细胞、记忆细胞、T细胞等角色的协作，呈现免疫监视、异常细胞识别、癌细胞逃逸与清除等概念，同时也保留了癌细胞作为“身体自身异常细胞”的复杂性。",
+        "readingFocus": "“异常细胞为什么难处理”：用身体自身细胞异常、免疫监视、NK细胞和杀手T细胞分工、免疫逃逸、细胞凋亡和医学边界说明；必须与 cancer-cell 独立。",
+        "keyBiologyConcepts": [
+          "癌细胞",
+          "癌细胞Ⅱ",
+          "细胞突变",
+          "异常增殖",
+          "免疫监视",
+          "免疫逃逸",
+          "NK细胞",
+          "白血球/中性粒细胞",
+          "杀手T细胞",
+          "记忆细胞",
+          "调节性T细胞",
+          "乳酸菌",
+          "细胞凋亡",
+          "肿瘤微环境"
+        ]
+      },
+      "bodyScienceStations": [
+        {
+          "stationId": "cancer-cell-ii-separate-topic",
+          "topicId": "cancer-cell-ii",
+          "title": "癌细胞为什么来自身体自己的细胞",
+          "coreQuestion": "这一页里，免疫细胞是怎样判断“异常”的？",
+          "explanation": "这个小站围绕癌细胞、免疫监视、异常细胞识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察癌细胞、免疫系统、NK细胞，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-cancer-cell-ii-separate-topic",
+          "imagePrompt": "Phase 18 approved image prompt for 癌细胞Ⅱ 癌细胞为什么来自身体自己的细胞; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell-ii/cancer-cell-ii-v2-station-01.webp",
+          "imageAlt": "癌细胞Ⅱ：癌细胞为什么来自身体自己的细胞的儿童科普解释图。",
+          "relatedPageIds": [
+            "cancer-cell-ii__v05_page-143",
+            "cancer-cell-ii__v05_page-144"
+          ],
+          "biologyConcepts": [
+            "癌细胞",
+            "免疫监视",
+            "异常细胞识别",
+            "剧情回顾",
+            "癌细胞复现"
+          ],
+          "encyclopediaTags": [
+            "癌细胞",
+            "免疫系统",
+            "NK细胞",
+            "免疫监视"
+          ],
+          "parentNote": "把“癌细胞为什么来自身体自己的细胞”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "high",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "cancer-cell-ii-self-cell-abnormal",
+          "topicId": "cancer-cell-ii",
+          "title": "免疫系统怎样识别异常细胞",
+          "coreQuestion": "画面里哪些线索说明情况比普通感染更复杂？",
+          "explanation": "这个小站围绕癌细胞、免疫监视、异常细胞识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察癌细胞、免疫系统、NK细胞，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-cancer-cell-ii-self-cell-abnormal",
+          "imagePrompt": "Phase 18 approved image prompt for 癌细胞Ⅱ 免疫系统怎样识别异常细胞; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell-ii/cancer-cell-ii-v2-station-02.webp",
+          "imageAlt": "癌细胞Ⅱ：免疫系统怎样识别异常细胞的儿童科普解释图。",
+          "relatedPageIds": [
+            "cancer-cell-ii__v05_page-145",
+            "cancer-cell-ii__v05_page-150"
+          ],
+          "biologyConcepts": [
+            "癌细胞",
+            "免疫监视",
+            "异常细胞识别",
+            "异常细胞清除",
+            "先天免疫"
+          ],
+          "encyclopediaTags": [
+            "癌细胞",
+            "免疫系统",
+            "NK细胞",
+            "白血球"
+          ],
+          "parentNote": "把“免疫系统怎样识别异常细胞”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "cancer-cell-ii-immune-surveillance",
+          "topicId": "cancer-cell-ii",
+          "title": "NK细胞与杀手T细胞的角色差异",
+          "coreQuestion": "漫画怎样表现“细胞不按规则生长”？",
+          "explanation": "这个小站围绕癌细胞、免疫监视、异常细胞识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察癌细胞、免疫系统、NK细胞，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-cancer-cell-ii-immune-surveillance",
+          "imagePrompt": "Phase 18 approved image prompt for 癌细胞Ⅱ NK细胞与杀手T细胞的角色差异; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell-ii/cancer-cell-ii-v2-station-03.webp",
+          "imageAlt": "癌细胞Ⅱ：NK细胞与杀手T细胞的角色差异的儿童科普解释图。",
+          "relatedPageIds": [
+            "cancer-cell-ii__v05_page-166",
+            "cancer-cell-ii__v05_page-176"
+          ],
+          "biologyConcepts": [
+            "癌细胞",
+            "免疫监视",
+            "异常细胞识别",
+            "异常增殖",
+            "免疫逃逸"
+          ],
+          "encyclopediaTags": [
+            "癌细胞",
+            "免疫系统",
+            "NK细胞",
+            "肿瘤",
+            "异常增殖"
+          ],
+          "parentNote": "把“NK细胞与杀手T细胞的角色差异”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "stationId": "cancer-cell-ii-escape-and-boundary",
+          "topicId": "cancer-cell-ii",
+          "title": "癌细胞逃避免疫监视的漫画化表现",
+          "coreQuestion": "免疫细胞为什么不能只靠一个角色完成任务？",
+          "explanation": "这个小站围绕癌细胞、免疫监视、异常细胞识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察癌细胞、免疫系统、NK细胞，只保留页码和概念线索，不展示漫画全文。",
+          "imagePromptId": "work-cells-cancer-cell-ii-escape-and-boundary",
+          "imagePrompt": "Phase 18 approved image prompt for 癌细胞Ⅱ 癌细胞逃避免疫监视的漫画化表现; final PNG asset accepted by user and converted to WebP. Do not regenerate or rewrite prompt.",
+          "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell-ii/cancer-cell-ii-v2-station-04.webp",
+          "imageAlt": "癌细胞Ⅱ：癌细胞逃避免疫监视的漫画化表现的儿童科普解释图。",
+          "relatedPageIds": [
+            "cancer-cell-ii__v05_page-190",
+            "cancer-cell-ii__v05_page-204"
+          ],
+          "biologyConcepts": [
+            "癌细胞",
+            "免疫监视",
+            "异常细胞识别",
+            "肠道免疫",
+            "菌群影响"
+          ],
+          "encyclopediaTags": [
+            "癌细胞",
+            "免疫系统",
+            "NK细胞",
+            "乳酸菌",
+            "肠道菌群"
+          ],
+          "parentNote": "把“癌细胞逃避免疫监视的漫画化表现”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。",
+          "status": "published",
+          "priority": "medium",
+          "imagePromptStatus": "asset-ready",
+          "imageAssetStatus": "ready",
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentQuestionCards": [
+        {
+          "cardId": "cancer-cell-ii-q01",
+          "topicId": "cancer-cell-ii",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "癌细胞为什么比普通病菌更难判断",
+          "question": "癌细胞为什么比普通病菌更难判断？",
+          "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cancer-cell-ii__v05_page-143",
+            "cancer-cell-ii__v05_page-144"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "癌细胞",
+            "免疫监视",
+            "异常细胞识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cancer-cell-ii-q02",
+          "topicId": "cancer-cell-ii",
+          "type": "observation",
+          "category": "观察问题",
+          "title": "画面里哪些角色在做“侦查”，哪些",
+          "question": "画面里哪些角色在做“侦查”，哪些角色在做“攻击”？",
+          "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cancer-cell-ii__v05_page-145",
+            "cancer-cell-ii__v05_page-150"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "癌细胞",
+            "免疫监视",
+            "异常细胞识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cancer-cell-ii-q03",
+          "topicId": "cancer-cell-ii",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "为什么这类主题要区分漫画剧情和真",
+          "question": "为什么这类主题要区分漫画剧情和真实医学？",
+          "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cancer-cell-ii__v05_page-166",
+            "cancer-cell-ii__v05_page-176"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "癌细胞",
+            "免疫监视",
+            "异常细胞识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cancer-cell-ii-q04",
+          "topicId": "cancer-cell-ii",
+          "type": "understanding",
+          "category": "理解问题",
+          "title": "如果异常细胞来自身体自己，免疫系",
+          "question": "如果异常细胞来自身体自己，免疫系统会遇到什么难题？",
+          "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cancer-cell-ii__v05_page-190",
+            "cancer-cell-ii__v05_page-204"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "癌细胞",
+            "免疫监视",
+            "异常细胞识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cancer-cell-ii-q05",
+          "topicId": "cancer-cell-ii",
+          "type": "life-connection",
+          "category": "联系生活问题",
+          "title": "这一页里，免疫细胞是怎样判断“异",
+          "question": "这一页里，免疫细胞是怎样判断“异常”的？",
+          "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cancer-cell-ii__v05_page-143",
+            "cancer-cell-ii__v05_page-144"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "癌细胞",
+            "免疫监视",
+            "异常细胞识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        },
+        {
+          "cardId": "cancer-cell-ii-q06",
+          "topicId": "cancer-cell-ii",
+          "type": "science-concept",
+          "category": "科学概念问题",
+          "title": "画面里哪些线索说明情况比普通感染",
+          "question": "画面里哪些线索说明情况比普通感染更复杂？",
+          "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+          "relatedPageIds": [
+            "cancer-cell-ii__v05_page-145",
+            "cancer-cell-ii__v05_page-150"
+          ],
+          "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+          "biologyConcepts": [
+            "癌细胞",
+            "免疫监视",
+            "异常细胞识别"
+          ],
+          "contentVersion": "work-cells-v2"
+        }
+      ],
+      "parentReadingNote": "本主题含癌症联想、强烈战斗和角色危机场面。共读时请强调癌细胞是身体自身细胞异常变化，不把疾病或患者道德化；cancer-cell-ii 必须与 cancer-cell 保持独立。动画线索来自两集 audio-fallback，需人工复核。",
+      "parentNote": "本主题含癌症联想、强烈战斗和角色危机场面。共读时请强调癌细胞是身体自身细胞异常变化，不把疾病或患者道德化；cancer-cell-ii 必须与 cancer-cell 保持独立。动画线索来自两集 audio-fallback，需人工复核。",
+      "sourceNotes": [
+        "漫画来源：第5卷 第24-25话，只保留页码线索，不展示漫画全文。",
+        "动画来源：S2 第7话与第8话 summary-only scene notes，sourceMode: audio-fallback；两集线索合并到 cancer-cell-ii，但不得与 S1 cancer-cell 合并。",
+        "audio-fallback 线索只作为摘要级参考，不接入视频、字幕、对白或转写；本主题保留高敏感内容提醒。",
+        "cancer-cell-ii 保持独立，不与 cancer-cell / 癌细胞合并。",
+        "V2正式配图由用户提供PNG转换而来；源PNG位于 data/cells-at-work/source-assets/science-station/cancer-cell-ii/png-originals/，正式前端资源只使用WebP。"
+      ],
+      "relatedComicPages": [
+        "cancer-cell-ii__v05_page-143",
+        "cancer-cell-ii__v05_page-144",
+        "cancer-cell-ii__v05_page-145",
+        "cancer-cell-ii__v05_page-150",
+        "cancer-cell-ii__v05_page-166",
+        "cancer-cell-ii__v05_page-176",
+        "cancer-cell-ii__v05_page-190",
+        "cancer-cell-ii__v05_page-204"
+      ],
+      "relatedAnimationScenes": [
+        {
+          "sceneId": "cancer-cell-ii-s2e07-v2-001",
+          "sourceLabel": "动画 S2 第7话摘要（audio-fallback，需人工复核）",
+          "summary": "适合导入癌细胞Ⅱ前篇、异常细胞再现和免疫监视。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        },
+        {
+          "sceneId": "cancer-cell-ii-s2e08-v2-007",
+          "sourceLabel": "动画 S2 第8话摘要（audio-fallback，需人工复核）",
+          "summary": "适合说明后篇决战、免疫协作和异常细胞清除边界。",
+          "policy": "no-video-no-subtitle-no-dialogue",
+          "sourceMode": "audio-fallback",
+          "reviewStatus": "needs-human-review"
+        }
+      ],
+      "contentVersion": "work-cells-v2",
+      "contentStatus": {
+        "text": "approved-v2",
+        "imagePromptStatus": "asset-ready",
+        "imageAssetStatus": "ready"
+      },
+      "qualityFlags": {
+        "noFullComicText": true,
+        "noFullComicReader": true,
+        "noFullAnimationDialogue": true,
+        "noOriginalPngInPublic": true,
+        "v2ImageAssetsReady": true,
+        "audioFallbackNeedsHumanReview": true,
+        "mustNotMergeWithCancerCell": true,
+        "keepTwoEpisodeSourcesInOneTopic": true
+      }
     },
     {
       "order": 23,

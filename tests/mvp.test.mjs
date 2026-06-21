@@ -240,6 +240,12 @@ const workCellsV2TopicIds = [
   'thymocyte',
   'acquired-immunity',
   'dengue-fever',
+  'acne',
+  'peyers-patches',
+  'helicobacter-pylori',
+  'antigenic-variation',
+  'cytokines',
+  'cancer-cell-ii',
 ];
 const workCellsV2QuestionCounts = new Map([
   ['cedar-pollen-allergy', 6],
@@ -259,6 +265,12 @@ const workCellsV2QuestionCounts = new Map([
   ['thymocyte', 6],
   ['acquired-immunity', 6],
   ['dengue-fever', 6],
+  ['acne', 6],
+  ['peyers-patches', 6],
+  ['helicobacter-pylori', 6],
+  ['antigenic-variation', 6],
+  ['cytokines', 6],
+  ['cancer-cell-ii', 6],
 ]);
 
 function readJson(filePath) {
@@ -493,7 +505,7 @@ test('Work Cells Cedar pollen sample defines refined parent question cards', () 
 test('Work Cells V2 topics use approved WebP assets and metadata', () => {
   const manifest = readJson(workCellsDraftPath);
 
-  assert.equal(workCellsV2TopicIds.length, 17, 'Work Cells should track 17 approved V2 topics');
+  assert.equal(workCellsV2TopicIds.length, 23, 'Work Cells should track 23 approved V2 topics');
 
   for (const topicId of workCellsV2TopicIds) {
     const topic = manifest.topics.find((item) => item.topicId === topicId);
