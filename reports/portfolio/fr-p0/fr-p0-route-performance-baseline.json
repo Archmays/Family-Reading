@@ -1,0 +1,419 @@
+{
+  "baselineAt": "2026-07-18T08:56:00Z",
+  "browserEvidence": {
+    "consoleErrors": 0,
+    "localOnlyDirectory": "task-scratch/fr-p0-20260718T083821Z",
+    "screenshots": [
+      {
+        "bytes": 71287,
+        "file": "01-home-desktop.png",
+        "sha256": "872ef5738a8f942b12cd3cd14017ce79ef560b8c1df51e6a74aef6446b8977ca"
+      },
+      {
+        "bytes": 131067,
+        "file": "02-carmela-series-desktop.png",
+        "sha256": "6e2dc3e6bf5aefeb00ed7184fe99da210a1f97aa8cbbea03e8667b3bbc2364f0"
+      },
+      {
+        "bytes": 101296,
+        "file": "03-carmela-book-desktop.png",
+        "sha256": "a9aba3a6e84856c0b384894ecb36c4024c22a3cf12b80f44d3c978db2dd740e2"
+      },
+      {
+        "bytes": 134974,
+        "file": "04-work-cells-series-desktop.png",
+        "sha256": "2a088589b2c2ae36bd71b66f197d4674a3cb47ab9a0ee8bf313ec3209f8548ff"
+      },
+      {
+        "bytes": 93683,
+        "file": "05-work-cells-topic-desktop.png",
+        "sha256": "953674d9aac143808e44644b10f2a7f190b8540f561f53ef0bbdd2e8f2efc0d1"
+      },
+      {
+        "bytes": 40138,
+        "file": "06-home-mobile.png",
+        "sha256": "6e3219112316172fd96270b8b4cb8347ee8d2ae174f3a3cba68c9157d717bf7f"
+      },
+      {
+        "bytes": 34431,
+        "file": "07-carmela-series-mobile.png",
+        "sha256": "85d529c6ec8d99a854f8e1ba09cee05aabe567691f8d91e2fc1c83297bcc4f87"
+      },
+      {
+        "bytes": 28866,
+        "file": "08-carmela-book-mobile.png",
+        "sha256": "058bdabd04b3bc1f1050d27ce1f865f5ba451186bdc24a02767486861538748f"
+      },
+      {
+        "bytes": 41402,
+        "file": "09-work-cells-series-mobile.png",
+        "sha256": "637c56eda4020571f64076ea9fc291827935a2c6b970b93776306106075bd1f1"
+      },
+      {
+        "bytes": 33952,
+        "file": "10-work-cells-topic-mobile.png",
+        "sha256": "0eeb9081b5a5b1f10fd1a8028dd125567be61ee284ae18ae31eda5ce050b2607"
+      },
+      {
+        "bytes": 34175,
+        "file": "11-carmela-book-short-landscape.png",
+        "sha256": "e8597955e9cf347a502faf8a90a8e697b8260a761d1b30392132d0144deefa57"
+      }
+    ],
+    "tool": "Codex in-app browser with bounded DOM and referenced-asset inspection",
+    "viewports": [
+      {
+        "height": 900,
+        "label": "desktop",
+        "width": 1440
+      },
+      {
+        "height": 844,
+        "label": "mobile",
+        "width": 390
+      },
+      {
+        "height": 1024,
+        "label": "tablet",
+        "width": 768
+      },
+      {
+        "height": 400,
+        "label": "short-landscape-wide",
+        "width": 1024
+      },
+      {
+        "height": 375,
+        "label": "short-landscape-narrow",
+        "width": 667
+      }
+    ]
+  },
+  "budgetsRecommendedForFutureGates": {
+    "detailRouteInitialImageBytes": 1500000,
+    "distFailBytes": 629145600,
+    "distWarnBytes": 524288000,
+    "homeInitialReferencedBytes": 750000,
+    "initialJsonBytes": 200000,
+    "initialJsonRequests": 6,
+    "notes": [
+      "These are proposed gates, not current pass thresholds.",
+      "Rights approval and exact publish allowlisting precede optimization.",
+      "Transfer budgets must use compressed cold-cache telemetry; raw-byte inventory remains a separate gate."
+    ],
+    "routeInteractiveElements": 80,
+    "seriesInitialImageBytes": 1500000
+  },
+  "interactionResults": {
+    "answerToggle": {
+      "ariaControlsPresent": false,
+      "ariaExpandedAfterClick": "true",
+      "buttonTextAfterClick": "隐藏参考答案",
+      "focusRetainedOnButton": true,
+      "result": "FUNCTIONAL_WITH_SEMANTIC_GAP"
+    },
+    "audio": {
+      "controls": true,
+      "durationSeconds": 650.926395,
+      "initialPaused": true,
+      "preload": "metadata",
+      "readyStateOnLocalServer": 4,
+      "result": "FUNCTIONAL_METADATA_BASELINE",
+      "transferLimitation": "The browser inventory does not expose audio range-transfer bytes."
+    },
+    "invalidRoutes": {
+      "bookNotFound": {
+        "focusAfterRender": "BODY",
+        "heading": "页面暂时无法打开",
+        "result": "ERROR_VIEW"
+      },
+      "unknownTopLevel": {
+        "focusAfterRender": "BODY",
+        "heading": "选择阅读主题",
+        "result": "SILENT_HOME_FALLBACK"
+      }
+    },
+    "lightbox": {
+      "backgroundInert": false,
+      "bodyScrollLockedWhileOpen": true,
+      "closeButtonFocusedOnOpen": true,
+      "escapeCloses": true,
+      "focusReturnedToTrigger": false,
+      "result": "FUNCTIONAL_WITH_ACCESSIBILITY_BLOCKERS",
+      "roleDialog": true
+    },
+    "routeHistory": {
+      "backNavigationWorked": true,
+      "focusAfterQuickNav": "BODY",
+      "quickNavTargetAligned": true,
+      "stateRebuiltOnHashChange": true
+    }
+  },
+  "limitations": [
+    "Referenced-asset inspection is an equivalent raw-byte inventory, not Lighthouse.",
+    "The browser surface did not expose Resource Timing, Web Vitals, compressed transfer bytes, cache hit state, CPU throttling, or network throttling.",
+    "Referenced assets include DOM-discovered lazy media and therefore must not be described as bytes actually transferred.",
+    "Audio is absent from the referenced-asset capability; its source size is recorded separately.",
+    "Forced-colors, reduced-motion, print, and 200 percent zoom were assessed statically or by responsive proxy, not through media emulation."
+  ],
+  "measurementDefinition": {
+    "assetBytes": "Raw file bytes in local dist for assets referenced or observed by the browser capability.",
+    "assetRequests": "Unique referenced or observed asset URLs, not a HAR request count.",
+    "coldRoute": "Fresh document navigation to the representative hash route with a cache-busting query.",
+    "timing": "Not available from the selected browser runtime."
+  },
+  "representativeRoutes": {
+    "book-carmela-s1-01": {
+      "audioPotentialAdditionalBytes": 5208122,
+      "desktopDom": {
+        "buttons": 98,
+        "domElements": 702,
+        "focusableElements": 110,
+        "imageElements": 91,
+        "imagesWithoutExplicitDimensions": 91,
+        "scrollHeight": 11785,
+        "sections": 10
+      },
+      "mobileDom": {
+        "domElements": 702,
+        "focusableElements": 110,
+        "imageElements": 91,
+        "scrollHeight": 18178
+      },
+      "observedAssets": {
+        "image": {
+          "bytes": 42772306,
+          "count": 26
+        },
+        "json": {
+          "bytes": 2807138,
+          "count": 28
+        },
+        "script": {
+          "bytes": 46477,
+          "count": 1
+        },
+        "stylesheet": {
+          "bytes": 17432,
+          "count": 1
+        },
+        "totalBytes": 45643353,
+        "totalCount": 56
+      },
+      "route": "#/book/carmela-s1-01"
+    },
+    "home": {
+      "desktopDom": {
+        "domElements": 43,
+        "focusableElements": 3,
+        "imageElements": 2,
+        "imagesWithoutExplicitDimensions": 2,
+        "scrollHeight": 900
+      },
+      "mobileDom": {
+        "domElements": 43,
+        "focusableElements": 3,
+        "imageElements": 2,
+        "scrollHeight": 1276
+      },
+      "observedAssets": {
+        "image": {
+          "bytes": 684247,
+          "count": 2
+        },
+        "json": {
+          "bytes": 2807138,
+          "count": 28
+        },
+        "script": {
+          "bytes": 46477,
+          "count": 1
+        },
+        "stylesheet": {
+          "bytes": 17432,
+          "count": 1
+        },
+        "totalBytes": 3555294,
+        "totalCount": 32
+      },
+      "route": "#/"
+    },
+    "series-carmela": {
+      "desktopDom": {
+        "cards": 12,
+        "domElements": 192,
+        "focusableElements": 50,
+        "imageElements": 12,
+        "imagesWithoutExplicitDimensions": 12,
+        "scrollHeight": 1269
+      },
+      "mobileDom": {
+        "cards": 12,
+        "domElements": 192,
+        "focusableElements": 50,
+        "imageElements": 12,
+        "minimumControlHeightPixels": 21,
+        "scrollHeight": 7306
+      },
+      "observedAssets": {
+        "image": {
+          "bytes": 14675080,
+          "count": 12
+        },
+        "json": {
+          "bytes": 2807138,
+          "count": 28
+        },
+        "script": {
+          "bytes": 46477,
+          "count": 1
+        },
+        "stylesheet": {
+          "bytes": 17432,
+          "count": 1
+        },
+        "totalBytes": 17546127,
+        "totalCount": 42
+      },
+      "route": "#/series/carmela-season-1"
+    },
+    "series-work-cells": {
+      "desktopDom": {
+        "cards": 27,
+        "domElements": 321,
+        "focusableElements": 29,
+        "imageElements": 27,
+        "imagesWithoutExplicitDimensions": 27,
+        "scrollHeight": 2517
+      },
+      "mobileDom": {
+        "cards": 27,
+        "domElements": 321,
+        "focusableElements": 29,
+        "imageElements": 27,
+        "minimumControlHeightPixels": 21,
+        "scrollHeight": 12476
+      },
+      "observedAssets": {
+        "image": {
+          "bytes": 996240,
+          "count": 27
+        },
+        "json": {
+          "bytes": 2807138,
+          "count": 28
+        },
+        "script": {
+          "bytes": 46477,
+          "count": 1
+        },
+        "stylesheet": {
+          "bytes": 17432,
+          "count": 1
+        },
+        "totalBytes": 3867287,
+        "totalCount": 57
+      },
+      "route": "#/series/work-cells"
+    },
+    "topic-cancer-cell-ii": {
+      "desktopDom": {
+        "articles": 11,
+        "buttons": 27,
+        "domElements": 329,
+        "focusableElements": 34,
+        "imageElements": 26,
+        "imagesWithoutExplicitDimensions": 26,
+        "scrollHeight": 5918,
+        "sections": 12
+      },
+      "mobileDom": {
+        "domElements": 329,
+        "focusableElements": 34,
+        "imageElements": 26,
+        "scrollHeight": 10946,
+        "sections": 12
+      },
+      "observedAssets": {
+        "image": {
+          "bytes": 1218218,
+          "count": 12
+        },
+        "json": {
+          "bytes": 2807138,
+          "count": 28
+        },
+        "script": {
+          "bytes": 46477,
+          "count": 1
+        },
+        "stylesheet": {
+          "bytes": 17432,
+          "count": 1
+        },
+        "totalBytes": 4089265,
+        "totalCount": 42
+      },
+      "route": "#/science/work-cells/cancer-cell-ii"
+    }
+  },
+  "responsiveResults": {
+    "desktop1440x900": "PASS_NO_HORIZONTAL_OVERFLOW",
+    "mobile390x844": "PASS_NO_HORIZONTAL_OVERFLOW_WITH_LONG_PAGE_DENSITY",
+    "shortLandscape1024x400": {
+      "result": "FAIL_STICKY_SIDEBAR_CONTENT_BELOW_VIEWPORT",
+      "sidebarHeight": 789.6,
+      "sidebarPosition": "sticky"
+    },
+    "shortLandscape667x375": "PASS_NO_HORIZONTAL_OVERFLOW_SINGLE_COLUMN",
+    "tablet768x1024": "PASS_NO_HORIZONTAL_OVERFLOW_SINGLE_COLUMN"
+  },
+  "schemaVersion": 1,
+  "startup": {
+    "criticalSequence": [
+      "public/books/index.json",
+      "Carmela series.json",
+      "24 Carmela per-book JSON documents",
+      "Work Cells draft-manifest.json",
+      "Work Cells page-map.json"
+    ],
+    "jsonBytes": 2807138,
+    "jsonRequests": 28,
+    "largestJson": [
+      {
+        "bytes": 2445765,
+        "path": "public/books/工作细胞/draft-manifest.json"
+      },
+      {
+        "bytes": 104188,
+        "path": "data/cells-at-work/page-map.json"
+      }
+    ],
+    "renderDependency": "All 28 JSON fetches complete before the first route render.",
+    "status": "FAIL_ROUTE_SCOPING"
+  },
+  "staticAccessibilityAndMediaQueries": {
+    "forcedColorsRule": false,
+    "imagesUseSrcsetSizes": false,
+    "imagesWithExplicitWidthHeight": false,
+    "prefersReducedMotionRule": false,
+    "printRule": false,
+    "responsiveBreakpointsPixels": [
+      560,
+      920
+    ]
+  },
+  "status": "BASELINE_COMPLETE_WITH_RUNTIME_TELEMETRY_LIMITATIONS",
+  "worstCaseStaticReferences": {
+    "carmela-s1-11": {
+      "imageElements": 120,
+      "rawUniqueImageBytes": 73675601,
+      "uniqueImageAssets": 53
+    },
+    "work-cells-novel-coronavirus": {
+      "imageElements": 48,
+      "rawUniqueImageBytes": 1697944,
+      "uniqueImageAssets": 37
+    }
+  }
+}

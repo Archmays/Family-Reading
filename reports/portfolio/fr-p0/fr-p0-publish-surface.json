@@ -1,0 +1,348 @@
+{
+  "baselineAt": "2026-07-18T08:45:41Z",
+  "blockers": [
+    {
+      "code": "CARMELA_RIGHTS_BASIS_MISSING",
+      "evidence": "The repository has no Carmela license or authorization record while Pages publishes complete page-image sequences and 12 full-book MP3 files.",
+      "severity": "BLOCKER"
+    },
+    {
+      "code": "PRIVATE_METADATA_TRACKED_PUBLICLY",
+      "evidence": "origin/main tracks 27 JSON files under data-private/cells-at-work/animation even though their own policy and tests classify the material as private or non-publishable.",
+      "severity": "BLOCKER"
+    },
+    {
+      "code": "RAW_CARMELA_HISTORY_REACHABLE",
+      "evidence": "The complete Carmela PDF and 12 source MP3 files remain reachable from public main history.",
+      "severity": "BLOCKER"
+    },
+    {
+      "code": "CARMELA_OCR_TRACKED",
+      "evidence": "origin/main tracks 344 OCR artifacts, including 12 full-text files and three reports containing local absolute paths.",
+      "severity": "BLOCKER"
+    }
+  ],
+  "buildPolicy": {
+    "allowlistMode": false,
+    "auditCommand": "npm run audit:dist",
+    "auditInvokedByBuild": false,
+    "auditInvokedByPagesWorkflow": false,
+    "auditLimitBytes": 943718400,
+    "auditLimitLabel": "900 MiB hard exit despite warning terminology",
+    "auditResult": "PASS_CURRENT_DIST",
+    "buildCommand": "npm run build",
+    "buildCopies": [
+      "index.html",
+      "assets/app.js",
+      "assets/styles.css",
+      "public/books runtime JSON and selected media",
+      "public/audio",
+      "selected Work Cells thumbnails and science-station WebP",
+      "data/cells-at-work/page-map.json",
+      ".nojekyll"
+    ],
+    "buildExclusionsObserved": [
+      "source",
+      "private roots",
+      "OCR directories",
+      "PDF",
+      "EPUB",
+      "Work Cells pages-by-volume",
+      "animation source media",
+      "selected authoring and review artifacts"
+    ],
+    "mode": "BLACKLIST_WITH_PATH_GUARDS",
+    "workflowCommand": "npm run build"
+  },
+  "currentDist": {
+    "bytes": 837983345,
+    "files": 1533,
+    "generatedAt": "2026-07-18T08:43:41Z",
+    "groups": [
+      {
+        "bytes": 516,
+        "files": 2,
+        "path": "(root files)"
+      },
+      {
+        "bytes": 63909,
+        "files": 2,
+        "path": "assets"
+      },
+      {
+        "bytes": 104188,
+        "files": 1,
+        "path": "data/cells-at-work"
+      },
+      {
+        "bytes": 85545615,
+        "files": 12,
+        "path": "public/audio/carmela-s1"
+      },
+      {
+        "bytes": 22382190,
+        "files": 108,
+        "path": "public/assets/cells-at-work/science-station"
+      },
+      {
+        "bytes": 36531228,
+        "files": 991,
+        "path": "public/assets/cells-at-work/page-thumbnails"
+      },
+      {
+        "bytes": 1833,
+        "files": 2,
+        "path": "public/books/(root JSON)"
+      },
+      {
+        "bytes": 690908101,
+        "files": 414,
+        "path": "public/books/不一样的卡梅拉"
+      },
+      {
+        "bytes": 2445765,
+        "files": 1,
+        "path": "public/books/工作细胞"
+      }
+    ],
+    "nonZeroFilesMappedByteIdenticallyToRepositoryPeers": 1532,
+    "nonZeroFilesMappedByteIdenticallyToRepositoryPeersBytes": 837983345,
+    "onlyUnmappedOutput": ".nojekyll",
+    "status": "STRUCTURALLY_CLEAN_BUT_RIGHTS_BLOCKED"
+  },
+  "currentPublicGitTree": {
+    "rightsSensitiveClasses": [
+      {
+        "blobBytes": 284928,
+        "files": 27,
+        "pages": false,
+        "path": "data-private/cells-at-work/animation/**",
+        "status": "BLOCKED_PRIVATE_METADATA_PUBLIC_REPO"
+      },
+      {
+        "blobBytes": 864508,
+        "files": 344,
+        "pages": false,
+        "path": "public/books/不一样的卡梅拉/*/ocr/**",
+        "status": "BLOCKED_PROCESSING_DERIVATIVES_PUBLIC_REPO"
+      },
+      {
+        "blobBytes": 521728595,
+        "files": 320,
+        "pages": true,
+        "path": "public/books/不一样的卡梅拉/*/pages/*.png",
+        "status": "BLOCKED_PENDING_AUTHORIZATION_EVIDENCE"
+      },
+      {
+        "blobBytes": 168923162,
+        "files": 69,
+        "pages": true,
+        "path": "public/books/不一样的卡梅拉/*/generated/*.png",
+        "status": "DOCUMENTED_PROVENANCE_LIMITATION"
+      },
+      {
+        "blobBytes": 85545615,
+        "files": 12,
+        "pages": true,
+        "path": "public/audio/carmela-s1/*.mp3",
+        "status": "BLOCKED_PENDING_AUTHORIZATION_EVIDENCE"
+      },
+      {
+        "blobBytes": 591732034,
+        "files": 1062,
+        "pages": false,
+        "path": "public/assets/cells-at-work/pages-by-volume/**",
+        "status": "HIGH_RIGHTS_LIMITATION_PUBLIC_GIT"
+      },
+      {
+        "blobBytes": 36531228,
+        "files": 991,
+        "pages": true,
+        "path": "public/assets/cells-at-work/page-thumbnails/**",
+        "status": "ALLOWED_ONLY_UNDER_RECORDED_USER_ASSERTION"
+      },
+      {
+        "blobBytes": 22382190,
+        "files": 108,
+        "pages": true,
+        "path": "public/assets/cells-at-work/science-station/**",
+        "status": "PASS_WITH_ASSET_LEVEL_PROVENANCE_GAP"
+      },
+      {
+        "blobBytes": 220317818,
+        "files": 108,
+        "pages": false,
+        "path": "data/cells-at-work/source-assets/science-station/*/png-originals/**",
+        "status": "RIGHTS_SENSITIVE_SOURCE_DERIVATIVE_PUBLIC_GIT"
+      }
+    ],
+    "status": "FAIL"
+  },
+  "forbiddenClassesFuture": [
+    "source/**",
+    "source-private/**",
+    "private/**",
+    "data-private/**",
+    "local-epubs/**",
+    "**/ocr/**",
+    "**/full-text.txt",
+    "public/assets/cells-at-work/pages-by-volume/**",
+    "data/**/png-originals/**",
+    "docs/**",
+    "reports/**",
+    "*.pdf",
+    "*.epub",
+    "*.mp4",
+    "*.mov",
+    "*.m4v",
+    "*.webm",
+    "*.srt",
+    "*.vtt",
+    "*.ass",
+    "*.ssa",
+    "transcripts/**",
+    "scene-notes/**",
+    "audio-extracts/**",
+    "archives",
+    "HAR",
+    "trace",
+    "browser profiles",
+    "logs"
+  ],
+  "historyExposure": {
+    "carmelaRawSource": {
+      "addedCommit": "b26eefa490ce0993b14952e87d436453062032fa",
+      "bytes": 162784261,
+      "files": 13,
+      "pdfBytes": 77238646,
+      "removedFromCurrentTreeCommit": "1b43993d3084814c6ba7d98bc70cb1930a08d77e",
+      "sourceMp3Bytes": 85545615,
+      "status": "REACHABLE_FROM_PUBLIC_MAIN"
+    }
+  },
+  "limitations": [
+    "Work Cells licenseBasis=user_confirmed_authorization is a repository-recorded user assertion, not external or legal verification.",
+    "The latest Pages artifact is expired, so file-level artifact-versus-dist comparison was not available.",
+    "The current audit is a blacklist and size gate, not a strict rights-aware allowlist.",
+    "Current Pages success proves deployment mechanics, not rights clearance."
+  ],
+  "pagesArtifact": {
+    "bytes": 828688767,
+    "expired": true,
+    "id": 7777926862,
+    "localDistDifferenceBytes": 9294578,
+    "localDistLargerPercent": 1.1092,
+    "name": "github-pages",
+    "note": "Artifact metadata size is an uploaded archive measure and is not directly comparable to unpacked dist raw bytes."
+  },
+  "publishMatrix": [
+    {
+      "assetClass": "Carmela raw PDF and MP3",
+      "git": "HISTORY_REACHABLE",
+      "pages": "NO_RAW_PATH",
+      "rightsBasis": "NONE_RECORDED",
+      "status": "BLOCKER"
+    },
+    {
+      "assetClass": "Carmela page PNG",
+      "git": "YES",
+      "pages": "YES_COMPLETE_SEQUENCE",
+      "rightsBasis": "NONE_RECORDED",
+      "status": "BLOCKER"
+    },
+    {
+      "assetClass": "Carmela public MP3",
+      "git": "YES",
+      "pages": "YES_FULL_BOOKS",
+      "rightsBasis": "NONE_RECORDED",
+      "status": "BLOCKER"
+    },
+    {
+      "assetClass": "Carmela OCR",
+      "git": "YES",
+      "pages": "NO",
+      "rightsBasis": "NONE_RECORDED",
+      "status": "BLOCKER"
+    },
+    {
+      "assetClass": "Carmela companion JSON",
+      "git": "YES",
+      "pages": "YES",
+      "rightsBasis": "NONE_RECORDED",
+      "status": "DOCUMENTED_LIMITATION"
+    },
+    {
+      "assetClass": "Carmela generated art",
+      "git": "YES",
+      "pages": "YES",
+      "rightsBasis": "NO_ASSET_LEVEL_MANIFEST",
+      "status": "DOCUMENTED_LIMITATION"
+    },
+    {
+      "assetClass": "Work Cells raw EPUB MP4 SRT",
+      "git": "NO_CURRENT_OR_REACHABLE_SOURCE_HISTORY_FOUND",
+      "pages": "NO",
+      "rightsBasis": "RECORDED_USER_ASSERTION_WITH_FULL_WORK_EXCLUSION",
+      "status": "BOUNDARY_PASS_LEGAL_LIMITATION"
+    },
+    {
+      "assetClass": "Work Cells full page WebP",
+      "git": "YES",
+      "pages": "NO",
+      "rightsBasis": "RECORDED_USER_ASSERTION",
+      "status": "HIGH_LIMITATION"
+    },
+    {
+      "assetClass": "Work Cells thumbnails",
+      "git": "YES",
+      "pages": "YES",
+      "rightsBasis": "RECORDED_USER_ASSERTION",
+      "status": "DOCUMENTED_LIMITATION"
+    },
+    {
+      "assetClass": "Work Cells station WebP",
+      "git": "YES",
+      "pages": "YES",
+      "rightsBasis": "RECORDED_USER_ASSERTION_AND_USER_CONFIRMED_ASSETS",
+      "status": "PASS_WITH_PROVENANCE_GAP"
+    },
+    {
+      "assetClass": "Private animation authoring metadata",
+      "git": "YES",
+      "pages": "NO",
+      "rightsBasis": "EXPLICITLY_PRIVATE",
+      "status": "BLOCKER"
+    },
+    {
+      "assetClass": "Reduced animation references",
+      "git": "YES",
+      "pages": "YES_SUMMARY_ONLY",
+      "rightsBasis": "RECORDED_USER_ASSERTION",
+      "status": "PASS_WITH_REVIEW_LIMITATION"
+    }
+  ],
+  "recommendedAllowlistShape": [
+    ".nojekyll",
+    "index.html",
+    "assets/app.js",
+    "assets/styles.css",
+    "public/books/index.json",
+    "public/books/content-types.json",
+    "public/books/不一样的卡梅拉/series.json",
+    "public/books/不一样的卡梅拉/<rights-approved-title>/book-assets.json",
+    "public/books/不一样的卡梅拉/<rights-approved-title>/companion.json",
+    "public/books/不一样的卡梅拉/<rights-approved-title>/generated/<manifest-referenced-file>",
+    "public/books/工作细胞/<reduced-runtime-manifest>.json",
+    "public/assets/cells-at-work/science-station/<topicId>/<approved-webp>",
+    "public/assets/cells-at-work/page-thumbnails/<runtime-referenced-webp>",
+    "data/cells-at-work/<reduced-runtime-page-map>.json"
+  ],
+  "repository": {
+    "defaultBranch": "main",
+    "identity": "Archmays/Family-Reading",
+    "mainSha": "9c74e3f26a84ff9d82cb7e664c0314ed87998ef6",
+    "visibility": "PUBLIC"
+  },
+  "schemaVersion": 1,
+  "status": "FAIL"
+}

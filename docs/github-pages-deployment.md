@@ -36,19 +36,19 @@
 
 ## 不发布的内容
 
-`scripts/build.mjs` 只复制 `index.html`、`assets/` 和筛选后的 `public/`。当前发布面只包含前四本书，因为首页和书籍页只开放前四本：
+`scripts/build.mjs` 只复制 `index.html`、`assets/` 和筛选后的 `public/` / page map。当前构建包含 12 册卡梅拉和 27 个工作细胞主题：
 
 - 不复制 `source/`
 - 不复制 PDF
 - 不复制 `ocr/` OCR 中间文件夹
-- 不复制未上线 8 本书的页面图片
+- 不复制工作细胞完整页面目录、动画源素材或私有 review 资料
 - 不复制不必要的大型中间文件
 
-`source/` 需要保留在仓库中作为原始素材来源，但不建议进入 GitHub Pages 发布目录。若仓库体积后续继续增大，建议把原始 PDF 和全量音频迁移到 Git LFS 或私有备份位置，仓库只保留生成后的轻量发布资源和来源说明；不要在未确认前删除、压缩或移动 `source/` 文件。
+`source/` 是受保护的本地原始素材来源，不进入 GitHub Pages 发布目录。不得因仓库体积删除、迁移、压缩、重编码或重写其历史；任何 visibility、历史清理或存储迁移都需要单独明确授权。当前 public Git 历史和运行时素材存在 P0 权利阻断，详见 `docs/portfolio/fr-p0/FR-P0-source-rights-and-publishing-audit.md`。
 
 ## 音频策略
 
-当前前四本音频位于 `public/audio/carmela-s1/`，页面使用 `preload="metadata"`，不会在首页一次性加载整段音频。后续音频建议按已上线书籍分批发布，并保留 `sourcePath` 用于追溯原始文件。
+当前 12 册音频位于 `public/audio/carmela-s1/`，页面使用 `preload="metadata"`。浏览器的实际 range/transfer 行为仍需网络遥测验证；完整音频是否可公开发布必须先有仓库内可审计的授权依据。
 
 如果音频路径不可访问，页面会显示友好提示，其他伴读内容仍可使用。
 
@@ -67,12 +67,13 @@ npm run build
 - `dist/public/books/**/pages/*.png` 单图是否过大。
 - `dist/public/audio/**/*.mp3` 是否只包含当前需要发布的音频。
 
-本轮实际检查结果：
+2026-07-18 P0 当前 HEAD 实测：
 
-- `dist`：136 个文件，230.26 MiB。
-- `dist` 中未发现 `source/`、PDF 或 `ocr/` OCR 中间文件。
-- `dist/public/audio`：4 个 MP3，20.28 MiB，分别对应前四本书。
-- `source/`：13 个原始素材，155.24 MiB，其中原始 PDF 为 73.66 MiB；这些文件保留在仓库素材区，但不会发布到 Pages。
-- 当前较大的发布图片约 2.3-2.9 MiB/张，最大检查值为 2.88 MiB。
+- `dist`：1,533 个文件，837,983,345 B（799.16 MiB）。
+- `dist` 中未发现 `source/`、PDF、EPUB、动画源素材或 `ocr/` OCR 中间文件。
+- `dist/public/audio`：12 个 MP3，85,545,615 B。
+- 卡梅拉构建输出：426 个文件，776,453,716 B。
+- 工作细胞 manifest、page map 与筛选媒体：1,101 个文件，61,463,371 B。
+- 最新 Pages artifact metadata：828,688,767 B；artifact 已过期，无法做文件级比较。该值是上传 artifact metadata，不等于解包后的 `dist` 原始字节。
 
-不建议继续按当前 PNG 体积直接扩展到 12 本全部上线。后续如果要发布更多书，建议先做一次确认过的派生资源优化：为缩略图生成较小尺寸图片，为放大图生成 WebP/JPEG 或压缩 PNG，并继续保留 `source/` 原始素材不变。
+此前的 136 文件、230.26 MiB、4 MP3 和 2.3–2.9 MiB/图是历史快照，不是当前发布基线。后续优化必须保留 `source/` 不变，并以权利批准、route-scoped 加载、响应式缩略图/detail 分层和发布 allowlist 为前置。

@@ -1,0 +1,231 @@
+{
+  "artifactHashes": [
+    {
+      "bytes": 1968,
+      "path": "README.md",
+      "sha256": "3f7f07aa867c61d92768169eecb21597a164cea5e7280a7180dde37f03e48d64"
+    },
+    {
+      "bytes": 3535,
+      "path": "docs/github-pages-deployment.md",
+      "sha256": "bf1130605306d0576c76f31bc465b8a9fcbb334779f7e3a526afdb8ec6cd90b6"
+    },
+    {
+      "bytes": 11649,
+      "path": "docs/portfolio/fr-p0/FR-P0-baseline-report.md",
+      "sha256": "ffcc606214c10baf15a62b1eec9f97821c946db6086225d4745bab42b5b9a137"
+    },
+    {
+      "bytes": 8426,
+      "path": "docs/portfolio/fr-p0/FR-P0-performance-build-tests-and-pages-audit.md",
+      "sha256": "36f7c70873f2b5883b6f67f833b8e0efc8f395d42ebe495b83c918e03c4c8ef6"
+    },
+    {
+      "bytes": 8862,
+      "path": "docs/portfolio/fr-p0/FR-P0-final-report.md",
+      "sha256": "c9453e54b932b8e4412a8e77c9c5e906c34ca33ee5d0e5ee1e93e0d0fb9ee03e"
+    },
+    {
+      "bytes": 14624,
+      "path": "docs/portfolio/fr-p0/FR-P0-implementation-roadmap.md",
+      "sha256": "289f5ebab420fb6e4778bd7cf7ec2cf8aab3e187f92c7876a7ab8a57641353c0"
+    },
+    {
+      "bytes": 9238,
+      "path": "docs/portfolio/fr-p0/FR-P0-source-rights-and-publishing-audit.md",
+      "sha256": "f168e1d95cd8d6f9918f25b9218f89fb78ea2fb5fe09f08617f66425b21769f0"
+    },
+    {
+      "bytes": 9255,
+      "path": "docs/portfolio/fr-p0/FR-P0-ui-and-content-model-audit.md",
+      "sha256": "94332fbb1d13fb027e585640ea9de19ced7d4e9f5b6cd1f92230e8f698bb721a"
+    },
+    {
+      "bytes": 10433,
+      "path": "reports/portfolio/fr-p0/fr-p0-publish-surface.json",
+      "sha256": "287a1d384144083cbcc6553a5cc4cd6a966bb686b80e2687965d1a374d131e8a"
+    },
+    {
+      "bytes": 12015,
+      "path": "reports/portfolio/fr-p0/fr-p0-route-performance-baseline.json",
+      "sha256": "8482fd25ecb238213e655bf2e8fb02e8d465e86b608ea359dece8aba288ad2a8"
+    },
+    {
+      "bytes": 43551,
+      "path": "reports/portfolio/fr-p0/fr-p0-size-and-history-baseline.json",
+      "sha256": "827c1a909086fe12f8a2deb622bc890a07e3a7aa1ea9d775418346e3d5804296"
+    }
+  ],
+  "artifactPaths": [
+    "docs/portfolio/fr-p0/FR-P0-baseline-report.md",
+    "docs/portfolio/fr-p0/FR-P0-final-report.md",
+    "docs/portfolio/fr-p0/FR-P0-implementation-roadmap.md",
+    "docs/portfolio/fr-p0/FR-P0-performance-build-tests-and-pages-audit.md",
+    "docs/portfolio/fr-p0/FR-P0-source-rights-and-publishing-audit.md",
+    "docs/portfolio/fr-p0/FR-P0-ui-and-content-model-audit.md",
+    "reports/portfolio/fr-p0/fr-p0-publish-surface.json",
+    "reports/portfolio/fr-p0/fr-p0-route-performance-baseline.json",
+    "reports/portfolio/fr-p0/fr-p0-run-manifest.json",
+    "reports/portfolio/fr-p0/fr-p0-size-and-history-baseline.json"
+  ],
+  "blockers": [
+    {
+      "code": "BLOCKED_PRIVACY_OR_RIGHTS_EXPOSURE",
+      "details": [
+        "Public origin/main tracks metadata explicitly classified as private/non-publishable under data-private/cells-at-work/animation/**.",
+        "Public origin/main history contains the complete Carmela source PDF and 12 source MP3 files.",
+        "Current Git and Pages publish complete Carmela page-image sequences and full-book MP3 files without a repository-recorded Carmela authorization basis.",
+        "Current public Git tracks Carmela OCR full-text derivatives and reports containing local absolute paths."
+      ],
+      "mergeAllowed": false,
+      "pushAllowed": false
+    }
+  ],
+  "branch": {
+    "finalMainSha": "not_merged",
+    "localTaskBranch": "codex/fr-portfolio-p0-baseline",
+    "remoteTaskBranchCreated": false,
+    "startMainSha": "9c74e3f26a84ff9d82cb7e664c0314ed87998ef6",
+    "taskBranchDisposition": "retain_local_auditable_branch_due_blocker"
+  },
+  "cleanup": {
+    "browserTabsFinalized": true,
+    "extraWorktrees": 0,
+    "localStaticServerStopped": true,
+    "stashChanged": false,
+    "taskScratchDeleted": true
+  },
+  "commands": [
+    {
+      "command": "git fetch --prune origin",
+      "durationMs": null,
+      "exitCode": 0,
+      "note": "Initial sandbox attempt could not write FETCH_HEAD; approved retry passed."
+    },
+    {
+      "command": "npm run build",
+      "durationMs": null,
+      "exitCode": 1,
+      "note": "Initial sandbox spawn EPERM; environment failure."
+    },
+    {
+      "command": "npm run build",
+      "durationMs": null,
+      "exitCode": 1,
+      "note": "Read-only dist scan temporarily held one WebP and caused EBUSY; no product failure."
+    },
+    {
+      "command": "npm run build",
+      "durationMs": 2487,
+      "exitCode": 0,
+      "note": "Meaningful acceptance baseline; 40 tests passed."
+    },
+    {
+      "command": "npm run audit:dist",
+      "durationMs": 574,
+      "exitCode": 0,
+      "note": "1,533 files; 837,983,345 bytes."
+    },
+    {
+      "command": "Codex in-app browser representative route audit",
+      "durationMs": null,
+      "exitCode": 0,
+      "note": "Desktop/mobile/tablet/short-landscape plus answer/lightbox/audio/history/invalid route."
+    },
+    {
+      "command": "GitHub API and gh Pages/run/artifact inspection",
+      "durationMs": null,
+      "exitCode": 0,
+      "note": "Current main run and metadata verified."
+    },
+    {
+      "command": "npm run build (final acceptance)",
+      "durationMs": 2700,
+      "exitCode": 0,
+      "note": "40/40 tests passed; node test duration 431.1755 ms; dist rebuilt."
+    },
+    {
+      "command": "npm run audit:dist (final acceptance)",
+      "durationMs": 700,
+      "exitCode": 0,
+      "note": "1,533 files; 837,983,345 bytes; status OK."
+    }
+  ],
+  "finishedAt": "2026-07-18T09:33:25Z",
+  "gitHubStatus": {
+    "defaultBranch": "main",
+    "mainProtected": false,
+    "openIssues": 0,
+    "openPullRequests": 0,
+    "remoteMainSha": "9c74e3f26a84ff9d82cb7e664c0314ed87998ef6",
+    "repositoryDiskUsageKb": 2247861,
+    "viewerPermission": "ADMIN",
+    "visibility": "PUBLIC_UNCHANGED"
+  },
+  "limitations": [
+    "Latest Pages artifact is expired; file-level comparison with local dist was unavailable.",
+    "Browser runtime did not expose Resource Timing, Web Vitals, HAR, cache state, network throttle, forced-colors/reduced-motion emulation, or true 200 percent zoom.",
+    "Local acceptance used Node 24.16.0 while Pages workflow declares Node 22 and package.json has no engines.",
+    "Current-tree token/API-key regex scan is not a full historical secret scan.",
+    "Work Cells user_confirmed_authorization is a repository-recorded assertion, not external or legal verification.",
+    "Task commit was not deployed because privacy/rights rules require stopping before push."
+  ],
+  "localPath": ".",
+  "pagesStatus": {
+    "artifactBytes": 828688767,
+    "artifactExpired": true,
+    "artifactId": 7777926862,
+    "buildType": "workflow",
+    "currentLiveHomeBrowserSmoke": "PASS",
+    "latestRunConclusion": "success",
+    "latestRunId": 27912960467,
+    "latestRunSha": "9c74e3f26a84ff9d82cb7e664c0314ed87998ef6",
+    "latestRunUrl": "https://github.com/Archmays/Family-Reading/actions/runs/27912960467",
+    "taskCommitDeployment": "NOT_RUN_BLOCKED",
+    "url": "https://archmays.github.io/Family-Reading/"
+  },
+  "qualityCompromises": [],
+  "repository": {
+    "defaultBranch": "main",
+    "identity": "Archmays/Family-Reading",
+    "origin": "https://github.com/Archmays/Family-Reading.git",
+    "visibility": "PUBLIC"
+  },
+  "runId": "fr-p0-20260718T083821Z",
+  "schemaVersion": 1,
+  "sourceIntegrity": {
+    "afterCanonicalSha256": "a32e8366a11f85c8b591c3bf06a2b7813950904a0a81f1a0fd64971af71eee67",
+    "afterFiles": 1649,
+    "afterManifestBytes": 737537,
+    "afterManifestSha256": "e81d574108d6d1c347b0866cb0015e252fbf23fbdf486ac26e6762164a1fe165",
+    "beforeCanonicalSha256": "a32e8366a11f85c8b591c3bf06a2b7813950904a0a81f1a0fd64971af71eee67",
+    "beforeFiles": 1649,
+    "beforeManifestBytes": 706207,
+    "beforeManifestSha256": "18a6d5bd3047aad335d9a224af89adf28c96f2fb6adf511ab602fa9dcd3a484c",
+    "bytes": 7884142200,
+    "changedFiles": 0,
+    "missingFiles": 0,
+    "status": "VERIFIED_UNCHANGED"
+  },
+  "startedAt": "2026-07-18T08:38:21Z",
+  "status": "BLOCKED",
+  "testAndBuild": {
+    "baselineBuildDurationMs": 2487,
+    "baselineDistAuditDurationMs": 574,
+    "build": "PASS",
+    "buildDurationMs": 2700,
+    "distAudit": "PASS",
+    "distAuditDurationMs": 700,
+    "tests": "PASS",
+    "testsDurationMs": 431.1755,
+    "testsFailed": 0,
+    "testsPassed": 40
+  },
+  "toolVersions": {
+    "gh": "2.94.0",
+    "git": "2.54.0.windows.1",
+    "node": "24.16.0",
+    "npm": "11.13.0",
+    "python": "3.12.7"
+  }
+}
