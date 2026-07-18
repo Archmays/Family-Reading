@@ -3,105 +3,128 @@
 ## Sequence
 
 ```text
-FR-P1 Safety and Publishing Containment
+FR-P1 Privacy and Publishing Hygiene — conditional completion in P0R1
   → FR-P2 Design System and Core IA
   → FR-P3 Carmela Companion Core
-  → FR-P4 Science Topic and Data Loading
+  → FR-P4 Science Topic and Route-Scoped Data Loading
   → FR-P5 Media and Pages Performance
   → FR-P6 Final Acceptance and Release
 ```
 
-P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding 或压图扩大公开发布面。P0 到此停止，不自动执行任何 future phase。
+FR-P1 不再是 rights-clearance phase。P0R1 已把它重写并完成为 private/current-tree hygiene、absolute-path cleanup、public repository validator 和 build/Pages fail-closed integration；本地 Node 22 acceptance 与 Source 已 PASS，post-commit Git/Pages immutable evidence 由 final handoff 记录。P0R1 到此停止，不自动执行 FR-P2。
 
-## FR-P1 Safety and Publishing Containment
+## FR-P1 Privacy and Publishing Hygiene
 
-**Scope**
+**Status**
 
-- 用户明确决定 public-repo containment 与每类媒体的权利状态。
-- 把 private animation authoring metadata、OCR processing artifacts 和未经批准的 full-work runtime assets 从 current public tree / Pages allowlist 中隔离。
-- 建立 asset-level rights/provenance manifest。
-- 用 exact allowlist 替代 build/audit 的 blacklist-only 逻辑。
-- 把 publish/source/privacy tests 从大 `mvp` suite 中先行拆出。
-- 决定但不默认执行 history rewrite。
+- Privacy disposition implemented；validator/build/Pages integration and final acceptance underway.
+- Rights status is fixed independently as `PASS_BY_USER_AUTHORIZATION`.
+- Result：`COMPLETE_WITH_DOCUMENTED_LIMITATIONS`.
+
+**Implemented and active scope**
+
+- 27 个明确 private 的 animation authoring JSON 从 public Git index 取消跟踪，本地文件保留。
+- 344 个 processing-only OCR artifacts 从 public Git index 取消跟踪，本地文件保留。
+- 13 个 runtime JSON 中的 48 个 stale OCR locator fields 与 content template 中的 3 个同类字段已清理；runtime 继续使用既有 27-topic reduced projection。
+- 三个 OCR report 的本机绝对路径不再位于 tracked current tree。
+- `.gitignore` 取消 private JSON 反向放行，并覆盖 OCR、full text、processing reports、test/browser scratch。
+- public repository validator 已接入 tracked current tree 的 private roots、OCR processing、absolute paths、secret patterns、scratch/HAR/trace/profile/log 检查。
+- build/Pages 已接入同一 fail-closed chain：复制前 validator、build 后 dist audit、upload 前统一验证。
+- 无 copyright/license clearance、rights manifest requirement、full-work/page/audio gate 或 history cleanup。
 
 **Hard boundaries**
 
-- 不删除、移动、压缩、重编码本地 `source/`。
-- visibility、history rewrite、BFG/filter-repo/LFS/force push 都要单独明确授权。
+- 不删除、移动、压缩、覆盖或重编码本地 `source/`、`source-private/` 或其他 protected roots。
+- 不改 visibility，不运行 history rewrite、BFG/filter-repo/LFS migrate、force push 或 reflog purge。
 - 不做 UI redesign、media optimization 或 content rewrite。
+- 不因 full-work、page sequence、audio length、OCR content 或 missing rights record 阻断。
 
 **Likely files**
 
 - `.gitignore`
+- `scripts/validate-public-repository.mjs`
 - `scripts/build.mjs`
 - `scripts/audit-dist-assets.mjs`
-- one rights/provenance schema + approved asset manifest
+- `package.json`
+- `.github/workflows/pages.yml`
 - focused `source-boundary` / `publish-surface` / `build` tests
-- Pages workflow only after local gates are proven
-- current tracked private/OCR paths as explicitly approved removals from Git index
+- P0/P0R1 docs and machine-readable reports
 
 **Dependencies**
 
-- 用户对 Carmela 公开权利、Work Cells asset classes、临时 visibility 和 history 处置的明确决定。
+- Global `User-Authorized Project Resources` policy installed and verified.
+- No asset-level rights approval or visibility/history decision.
 
-**Expected changes**
+**Gate behavior**
 
-- fail-closed `publicApproved` + `runtimeRefs`；
-- JSON audit output；
-- forbidden-path and rights checks run inside build；
-- Pages workflow runs the same gate；
+- fail-closed tracked-file validation with human-readable and JSON output；
+- Windows/Linux path normalization and case-insensitive blocking where required；
+- validator before build copy；
+- dist audit after build；
+- Pages upload only after the same validation chain passes；
 - reduced Work Cells runtime manifest boundary；
-- no authoring/private paths in runtime payload。
+- no private/authoring/local-path fields in runtime payload；
+- no copyright/license checks or rights-derived release hold。
 
 **Tests**
 
-- positive allowlist fixture；
-- forbidden PDF/EPUB/video/subtitle/OCR/private negative fixtures；
-- missing rights record；
-- orphan/unreferenced media；
-- path case and traversal；
-- current tracked-tree privacy scan；
-- atomic build failure behavior。
+- tracked `data-private` negative fixture；
+- OCR processing path negative fixture with synthetic-fixture exception；
+- Windows and Unix absolute paths；
+- secret token；
+- task scratch/HAR/trace；
+- allowed repository-relative `source/...` reference；
+- allowed Carmela page/audio/full-work path；
+- allowed `user_confirmed_authorization`；
+- build fails before artifact upload；
+- valid JSON report；
+- original 40/40 baseline retained；P0R1 final count 63/63。
 
 **Browser QA**
 
-- current content may be intentionally unavailable with a clear family-safe notice；
-- no unrelated series failure when one rights set is absent；
-- direct route and error/fallback states。
+- home、Carmela series/book、Work Cells series/heavy topic；
+- no runtime 404 after private/OCR index cleanup；
+- direct hash、lightbox、answer、audio metadata、mobile；
+- final local result `PASS_NODE22_63_OF_63_VALIDATOR_BUILD_DIST`。
 
 **Performance gates**
 
-- Do not optimize media yet；
+- do not optimize media in P0R1；
 - ensure reduced manifest does not increase startup bytes；
-- record new dist/artifact baseline。
+- record final dist/artifact evidence without rerunning the full P0 size audit。
 
-**Rights/privacy gates**
+**Privacy/publishing gates**
 
 - active private/OCR current-tree exposure removed；
-- every public asset class has explicit basis；
-- Carmela full pages/audio are either approved or absent；
-- history decision documented separately。
+- no real secret/PII/local absolute path in tracked current tree；
+- Source and raw runtime-format exclusions preserved；
+- Carmela pages/audio and all other user-authorized resources remain publishable；
+- history retained unchanged。
 
 **Rollback**
 
-- revert current-tree containment commit；
-- restore previous build only on a private/local branch, never by weakening public gate；
-- preserve source and before manifests。
+- revert the P0R1 commit if validation exposes an in-scope regression；
+- never roll back by re-tracking explicitly private or processing-only files；
+- preserve local source, local private/OCR files and before manifests。
 
 **Complexity**
 
-- Very high; external decision and potentially high-risk Git coordination.
+- High but bounded；no high-risk history operation.
 
 **Fits one ≤2 hour Codex task?**
 
-- No. Split into at least: decision/containment, validator/build, and separately authorized history operation.
+- Yes as P0R1 only with targeted checks and one final acceptance；no FR-P2 work.
 
 **Done condition**
 
-- `PRIVACY_STATUS: PASS` and `RIGHTS_STATUS: PASS` for current tree + Pages；
-- exact allowlist gates build/workflow；
-- no source mutation；
-- if history remains exposed by explicit decision, repository visibility and risk acceptance are recorded and release policy reflects it。
+- `PRIVACY_STATUS: PASS`；
+- `RIGHTS_STATUS: PASS_BY_USER_AUTHORIZATION`；
+- validator/build/dist/Pages chain passes once；
+- Source verified at 1,649 files / 7,884,142,200 B with identical P0R1 before-after signature；
+- final main SHA and Pages run for that SHA recorded in the post-commit final handoff；
+- clean main/worktree/stash/branch evidence recorded in the post-commit final handoff；
+- quality compromises 0；
+- stop before FR-P2。
 
 ## FR-P2 Design System and Core IA
 
@@ -126,7 +149,7 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 
 **Dependencies**
 
-- P1 rights-safe runtime inventory and stable public envelopes.
+- P0R1 privacy-safe current tree, public repository gate and stable public envelopes.
 
 **Expected changes**
 
@@ -134,7 +157,7 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 - accessible route shell；
 - distinct series card variants；
 - 1024×400 non-sticky/scroll-safe layout；
-- print hides navigation/media/full copyrighted pages。
+- companion-only print hides navigation and heavy media by product layout。
 
 **Tests**
 
@@ -160,10 +183,10 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 - CSS/JS growth budget agreed before implementation；
 - home referenced bytes remain within the P1 safe baseline。
 
-**Rights/privacy gates**
+**Privacy/publishing gates**
 
-- only rights-approved thumbnails/screenshots used；
-- print never emits full page sequences。
+- only runtime-referenced thumbnails/screenshots used；
+- print behavior follows companion-only product design, not a copyright restriction。
 
 **Rollback**
 
@@ -192,7 +215,7 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 **Hard boundaries**
 
 - No full ebook reading mode, OCR body, reading state, check-in or progress.
-- No new book titles and no source/media reprocessing without rights approval.
+- No new book titles and no source/media reprocessing without an explicit task request；Source originals remain immutable.
 
 **Likely files**
 
@@ -203,7 +226,7 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 
 **Dependencies**
 
-- P1 rights approval/allowlist；
+- P0R1 public repository/runtime-reference gate；
 - P2 shared shell/primitives.
 
 **Expected changes**
@@ -239,11 +262,11 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 - interactive elements ≤80 initial；
 - no unrelated Work Cells JSON for direct book route。
 
-**Rights/privacy gates**
+**Privacy/publishing gates**
 
-- only approved pages/audio/generated assets；
-- no full sequence if rights do not permit；
-- companion text stays transformative and source-linked without raw source path exposure。
+- only runtime-referenced pages/audio/generated assets；
+- complete Carmela page sequences and 12 audio files remain allowed；
+- companion text remains source-linked without raw local source path exposure。
 
 **Rollback**
 
@@ -260,9 +283,9 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 
 **Done condition**
 
-- first and complex book pass content, accessibility, responsive, performance and rights gates with static Pages compatibility.
+- first and complex book pass content, accessibility, responsive, performance and publishing gates with static Pages compatibility.
 
-## FR-P4 Science Topic and Data Loading
+## FR-P4 Science Topic and Route-Scoped Data Loading
 
 **Scope**
 
@@ -274,9 +297,9 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 **Hard boundaries**
 
 - No medical content rewrite without review；
-- no full EPUB/comic pages/animation dialogue/subtitle；
+- no raw EPUB/video/subtitle or private animation dialogue in runtime；no ebook-style full comic reading mode；
 - no merge of distinct topics such as Cancer Cell and Cancer Cell II；
-- no audio feature unless separately sourced and approved。
+- no audio feature unless separately requested and supported by the runtime model。
 
 **Likely files**
 
@@ -288,7 +311,7 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 
 **Dependencies**
 
-- P1 allowlist/schema rules；
+- P0R1 public repository/runtime boundary；
 - P2 shell；
 - P3 shared answer/dialog primitives.
 
@@ -327,11 +350,11 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 - no 2.45 MB draft manifest in runtime；
 - no full 991 thumbnails unless referenced by current route。
 
-**Rights/privacy gates**
+**Privacy/publishing gates**
 
 - reduced summaries only；
 - no `zipPath`, `notesForCodex`, transcript/dialogue/private scene notes；
-- each media ref must exist in approved manifest。
+- each media ref must exist in the runtime manifest。
 
 **Rollback**
 
@@ -348,13 +371,13 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 
 **Done condition**
 
-- all 27 topics validate from one authoring source, representative routes are isolated and small, and no private/full-work field enters dist.
+- all 27 topics validate from one authoring source, representative routes are isolated and small, and no private/raw-source/authoring-only field enters dist.
 
 ## FR-P5 Media and Pages Performance
 
 **Scope**
 
-- Build responsive thumbnail/detail image derivatives from rights-approved inputs.
+- Build responsive thumbnail/detail image derivatives from user-authorized, source-integrity-verified inputs.
 - Define audio metadata/range strategy.
 - Add content-hash/cache busting, dist/artifact budgets and Pages cache verification.
 - Reduce upload/deploy cost without deleting source.
@@ -362,7 +385,7 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 **Hard boundaries**
 
 - No source overwrite/re-encode；
-- no rights-unapproved conversion；
+- no unrequested conversion of protected originals；
 - no service worker/PWA/backend；
 - no performance pass by removing required companion content。
 
@@ -376,7 +399,7 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 
 **Dependencies**
 
-- P1 approved assets；
+- P0R1 validated public resources and protected-source boundary；
 - P3/P4 exact runtime refs.
 
 **Expected changes**
@@ -410,21 +433,21 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 **Performance gates**
 
 - proposed route budgets from P0；
-- dist warn 500 MiB / fail 600 MiB, revisited after P1 rights surface；
+- dist warn 500 MiB / fail 600 MiB, revisited after the P0R1 corrected publish surface；
 - Pages artifact and workflow duration budget；
 - LCP/CLS/INP targets set from first real Lighthouse baseline。
 
-**Rights/privacy gates**
+**Privacy/publishing gates**
 
-- derivative manifest links every output to approved source class；
-- no full-work output unless explicitly authorized；
+- derivative manifest links every output to its source class for reproducibility；
+- full-work output remains allowed by user authorization；
 - source hash/integrity unchanged。
 
 **Rollback**
 
 - retain old runtime manifest for one release；
 - switch manifest pointer back；
-- never roll back by restoring forbidden public assets。
+- never roll back by restoring explicitly private or processing-only public-tree artifacts。
 
 **Complexity**
 
@@ -450,7 +473,7 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 
 - No feature work or threshold weakening during acceptance；
 - unavailable device/AT coverage must be reported, not invented；
-- no merge if rights/privacy/source/build/test/Pages gate fails。
+- no merge if privacy/source/build/test/Pages gate fails。
 
 **Likely files**
 
@@ -459,7 +482,7 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 
 **Dependencies**
 
-- P1–P5 complete and rights cleared.
+- P1–P5 complete；global authorization remains `PASS_BY_USER_AUTHORIZATION`.
 
 **Expected changes**
 
@@ -471,7 +494,7 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 **Tests**
 
 - one final full build；
-- exact allowlist/dist audit；
+- exact runtime-reference/public-repository/dist audit；
 - schemas/content；
 - browser/axe/Lighthouse/visual；
 - Pages artifact/live smoke。
@@ -490,9 +513,9 @@ P1 是硬依赖。未解除 rights/privacy blocker 前，不得以 UI、sharding
 - all P5 gates pass on local and live build；
 - local dist, artifact and route transfer reported separately。
 
-**Rights/privacy gates**
+**Privacy/publishing gates**
 
-- current tree/history decision/dist/live all match approved release policy；
+- current tree/dist/live all match the privacy and publishing policy；history remains unchanged；
 - no task scratch, profiles, HAR secrets or raw source committed。
 
 **Rollback**

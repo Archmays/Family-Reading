@@ -11,7 +11,6 @@
       "folder": "public/books/不一样的卡梅拉/我想去看海",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我想去看海",
         "path": "public/audio/carmela-s1/carmela-s1-01.mp3",
@@ -25,7 +24,6 @@
       "folder": "public/books/不一样的卡梅拉/我想有颗星星",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我想有颗星星",
         "path": "public/audio/carmela-s1/carmela-s1-02.mp3",
@@ -39,7 +37,6 @@
       "folder": "public/books/不一样的卡梅拉/我想有个弟弟",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我想有个弟弟",
         "path": "public/audio/carmela-s1/carmela-s1-03.mp3",
@@ -53,7 +50,6 @@
       "folder": "public/books/不一样的卡梅拉/我去找回太阳",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我去找回太阳",
         "path": "public/audio/carmela-s1/carmela-s1-04.mp3",
@@ -67,7 +63,6 @@
       "folder": "public/books/不一样的卡梅拉/我爱小黑猫",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我爱小黑猫",
         "path": "public/audio/carmela-s1/carmela-s1-05.mp3",
@@ -81,7 +76,6 @@
       "folder": "public/books/不一样的卡梅拉/我能打败怪兽",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我能打败怪兽",
         "path": "public/audio/carmela-s1/carmela-s1-06.mp3",
@@ -95,7 +89,6 @@
       "folder": "public/books/不一样的卡梅拉/我要找到朗朗",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我要找到朗朗",
         "path": "public/audio/carmela-s1/carmela-s1-07.mp3",
@@ -109,7 +102,6 @@
       "folder": "public/books/不一样的卡梅拉/我不要被吃掉",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我不要被吃掉",
         "path": "public/audio/carmela-s1/carmela-s1-08.mp3",
@@ -123,7 +115,6 @@
       "folder": "public/books/不一样的卡梅拉/我好喜欢她",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我好喜欢她",
         "path": "public/audio/carmela-s1/carmela-s1-09.mp3",
@@ -137,7 +128,6 @@
       "folder": "public/books/不一样的卡梅拉/我要救出贝里奥",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我要救出贝里奥",
         "path": "public/audio/carmela-s1/carmela-s1-10.mp3",
@@ -151,7 +141,6 @@
       "folder": "public/books/不一样的卡梅拉/我不是胆小鬼",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我不是胆小鬼",
         "path": "public/audio/carmela-s1/carmela-s1-11.mp3",
@@ -165,7 +154,6 @@
       "folder": "public/books/不一样的卡梅拉/我爱平底锅",
       "assetFile": "book-assets.json",
       "companionFile": "companion.json",
-      "ocrReport": "ocr/ocr-report.json",
       "audio": {
         "title": "我爱平底锅",
         "path": "public/audio/carmela-s1/carmela-s1-12.mp3",

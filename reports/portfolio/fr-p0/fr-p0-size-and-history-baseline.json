@@ -1,5 +1,12 @@
 {
+  "authorizationPolicyVersion": "global-resource-authorization-v1-2026-07-18",
   "baselineAt": "2026-07-18T08:36:52Z",
+  "correctedAt": "2026-07-18T12:07:17Z",
+  "correctedStatus": "MEASUREMENTS_UNCHANGED",
+  "correctionRunId": "fr-p0r1-20260718T120717Z",
+  "globalAgentsSha256": "B39392ADA206E539F2F086480CCAE20ACDD66B4E49DE9DC71833230B13A17229",
+  "originalStatus": "NOT_PREVIOUSLY_DECLARED_MEASUREMENT_BASELINE",
+  "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
   "currentTree": {
     "blobBytes": 1651869664,
     "files": 3134,

@@ -1,6 +1,12 @@
 {
+  "authorizationPolicyVersion": "global-resource-authorization-v1-2026-07-18",
   "baselineAt": "2026-07-18T08:45:41Z",
-  "blockers": [
+  "blockers": [],
+  "correctedAt": "2026-07-18T12:07:17Z",
+  "correctedStatus": "PASS",
+  "correctionRunId": "fr-p0r1-20260718T120717Z",
+  "globalAgentsSha256": "B39392ADA206E539F2F086480CCAE20ACDD66B4E49DE9DC71833230B13A17229",
+  "originalBlockers": [
     {
       "code": "CARMELA_RIGHTS_BASIS_MISSING",
       "evidence": "The repository has no Carmela license or authorization record while Pages publishes complete page-image sequences and 12 full-book MP3 files.",
@@ -22,7 +28,7 @@
       "severity": "BLOCKER"
     }
   ],
-  "buildPolicy": {
+  "originalBuildPolicy": {
     "allowlistMode": false,
     "auditCommand": "npm run audit:dist",
     "auditInvokedByBuild": false,
@@ -54,7 +60,41 @@
     "mode": "BLACKLIST_WITH_PATH_GUARDS",
     "workflowCommand": "npm run build"
   },
-  "currentDist": {
+  "buildPolicy": {
+    "auditCommand": "npm run audit:dist",
+    "auditInvokedByBuild": true,
+    "auditInvokedByPagesWorkflow": true,
+    "auditLimitBytes": 943718400,
+    "auditResult": "PASS",
+    "buildCommand": "npm run build",
+    "buildCopies": [
+      "index.html",
+      "assets/app.js",
+      "assets/styles.css",
+      "assets/favicon.svg",
+      "public/books runtime JSON and manifest-selected Carmela media",
+      "public/audio",
+      "selected Work Cells thumbnails and science-station WebP",
+      "data/cells-at-work/page-map.json",
+      ".nojekyll"
+    ],
+    "buildExclusionsObserved": [
+      "source and private roots",
+      "OCR processing directories and reports",
+      "PDF and EPUB",
+      "video and subtitle formats",
+      "Work Cells pages-by-volume",
+      "animation source media",
+      "task scratch, HAR, trace, browser profile, logs and temporary bundles"
+    ],
+    "mode": "TRACKED_TREE_FAIL_CLOSED_PLUS_DIST_TECHNICAL_EXCLUSIONS",
+    "nodeVersion": "22.23.1",
+    "publicRepositoryValidatorCommand": "npm run validate:public-repo",
+    "testSuiteInvocationsPerVerifyRelease": 1,
+    "verifyReleaseCommand": "npm run verify:release",
+    "workflowCommand": "npm run verify:release"
+  },
+  "originalCurrentDist": {
     "bytes": 837983345,
     "files": 1533,
     "generatedAt": "2026-07-18T08:43:41Z",
@@ -108,75 +148,138 @@
     "nonZeroFilesMappedByteIdenticallyToRepositoryPeers": 1532,
     "nonZeroFilesMappedByteIdenticallyToRepositoryPeersBytes": 837983345,
     "onlyUnmappedOutput": ".nojekyll",
-    "status": "STRUCTURALLY_CLEAN_BUT_RIGHTS_BLOCKED"
+    "originalStatus": "STRUCTURALLY_CLEAN_BUT_RIGHTS_BLOCKED",
+    "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+    "status": "PASS"
+  },
+  "currentDist": {
+    "bytes": 837981919,
+    "files": 1534,
+    "generatedAt": "2026-07-18T12:53:09Z",
+    "groups": [
+      {
+        "bytes": 66722,
+        "files": 7,
+        "path": "app shell and other static files"
+      },
+      {
+        "bytes": 85545615,
+        "files": 12,
+        "path": "public/audio/carmela-s1"
+      },
+      {
+        "bytes": 690906211,
+        "files": 414,
+        "path": "public/books/不一样的卡梅拉"
+      },
+      {
+        "bytes": 61463371,
+        "files": 1101,
+        "path": "Work Cells runtime data and media"
+      }
+    ],
+    "originalStatus": "STRUCTURALLY_CLEAN_BUT_RIGHTS_BLOCKED",
+    "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+    "status": "PASS"
   },
   "currentPublicGitTree": {
     "rightsSensitiveClasses": [
       {
         "blobBytes": 284928,
+        "correctedTrackedFiles": 0,
+        "disposition": "RESOLVED_CURRENT_TREE_UNTRACKED_LOCAL_PRESERVED",
         "files": 27,
+        "originalStatus": "BLOCKED_PRIVATE_METADATA_PUBLIC_REPO",
         "pages": false,
         "path": "data-private/cells-at-work/animation/**",
-        "status": "BLOCKED_PRIVATE_METADATA_PUBLIC_REPO"
+        "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+        "status": "RESOLVED_CURRENT_TREE_UNTRACKED_LOCAL_PRESERVED"
       },
       {
         "blobBytes": 864508,
+        "correctedTrackedFiles": 0,
+        "disposition": "RESOLVED_CURRENT_TREE_UNTRACKED_LOCAL_PRESERVED",
         "files": 344,
+        "originalStatus": "BLOCKED_PROCESSING_DERIVATIVES_PUBLIC_REPO",
         "pages": false,
         "path": "public/books/不一样的卡梅拉/*/ocr/**",
-        "status": "BLOCKED_PROCESSING_DERIVATIVES_PUBLIC_REPO"
+        "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+        "status": "RESOLVED_CURRENT_TREE_UNTRACKED_LOCAL_PRESERVED"
       },
       {
         "blobBytes": 521728595,
         "files": 320,
+        "originalStatus": "BLOCKED_PENDING_AUTHORIZATION_EVIDENCE",
         "pages": true,
         "path": "public/books/不一样的卡梅拉/*/pages/*.png",
-        "status": "BLOCKED_PENDING_AUTHORIZATION_EVIDENCE"
+        "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+        "status": "PASS"
       },
       {
         "blobBytes": 168923162,
         "files": 69,
+        "originalStatus": "DOCUMENTED_PROVENANCE_LIMITATION",
         "pages": true,
         "path": "public/books/不一样的卡梅拉/*/generated/*.png",
-        "status": "DOCUMENTED_PROVENANCE_LIMITATION"
+        "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+        "status": "PASS"
       },
       {
         "blobBytes": 85545615,
         "files": 12,
+        "originalStatus": "BLOCKED_PENDING_AUTHORIZATION_EVIDENCE",
         "pages": true,
         "path": "public/audio/carmela-s1/*.mp3",
-        "status": "BLOCKED_PENDING_AUTHORIZATION_EVIDENCE"
+        "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+        "status": "PASS"
       },
       {
         "blobBytes": 591732034,
         "files": 1062,
+        "originalStatus": "HIGH_RIGHTS_LIMITATION_PUBLIC_GIT",
         "pages": false,
         "path": "public/assets/cells-at-work/pages-by-volume/**",
-        "status": "HIGH_RIGHTS_LIMITATION_PUBLIC_GIT"
+        "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+        "status": "PASS"
       },
       {
         "blobBytes": 36531228,
         "files": 991,
+        "originalStatus": "ALLOWED_ONLY_UNDER_RECORDED_USER_ASSERTION",
         "pages": true,
         "path": "public/assets/cells-at-work/page-thumbnails/**",
-        "status": "ALLOWED_ONLY_UNDER_RECORDED_USER_ASSERTION"
+        "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+        "status": "PASS"
       },
       {
         "blobBytes": 22382190,
         "files": 108,
+        "originalStatus": "PASS_WITH_ASSET_LEVEL_PROVENANCE_GAP",
         "pages": true,
         "path": "public/assets/cells-at-work/science-station/**",
-        "status": "PASS_WITH_ASSET_LEVEL_PROVENANCE_GAP"
+        "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+        "status": "PASS"
       },
       {
         "blobBytes": 220317818,
         "files": 108,
+        "originalStatus": "RIGHTS_SENSITIVE_SOURCE_DERIVATIVE_PUBLIC_GIT",
         "pages": false,
         "path": "data/cells-at-work/source-assets/science-station/*/png-originals/**",
-        "status": "RIGHTS_SENSITIVE_SOURCE_DERIVATIVE_PUBLIC_GIT"
+        "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+        "status": "PASS"
       }
     ],
-    "status": "FAIL"
+    "currentCorrectedTree": {
+      "dataPrivateTrackedFiles": 0,
+      "dataPrivateDisposition": "RESOLVED_CURRENT_TREE_UNTRACKED_LOCAL_PRESERVED",
+      "ocrProcessingDisposition": "RESOLVED_CURRENT_TREE_UNTRACKED_LOCAL_PRESERVED",
+      "ocrProcessingTrackedFiles": 0,
+      "status": "PASS"
+    },
+    "originalStatus": "FAIL",
+    "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+    "status": "PASS"
   },
   "forbiddenClassesFuture": [
     "source/**",
@@ -216,15 +319,16 @@
       "files": 13,
       "pdfBytes": 77238646,
       "removedFromCurrentTreeCommit": "1b43993d3084814c6ba7d98bc70cb1930a08d77e",
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
       "sourceMp3Bytes": 85545615,
-      "status": "REACHABLE_FROM_PUBLIC_MAIN"
+      "status": "REACHABLE_FROM_PUBLIC_MAIN",
+      "classification": "ENGINEERING_SIZE_AND_CLONE_EVIDENCE_NOT_A_BLOCKER",
+      "isBlocker": false
     }
   },
   "limitations": [
-    "Work Cells licenseBasis=user_confirmed_authorization is a repository-recorded user assertion, not external or legal verification.",
     "The latest Pages artifact is expired, so file-level artifact-versus-dist comparison was not available.",
-    "The current audit is a blacklist and size gate, not a strict rights-aware allowlist.",
-    "Current Pages success proves deployment mechanics, not rights clearance."
+    "The baseline publish-surface audit used a blacklist and size gate; P0R1 adds a fail-closed public-repository validator while retaining technical path exclusions."
   ],
   "pagesArtifact": {
     "bytes": 828688767,
@@ -239,86 +343,114 @@
     {
       "assetClass": "Carmela raw PDF and MP3",
       "git": "HISTORY_REACHABLE",
+      "originalRightsBasis": "NONE_RECORDED",
+      "originalStatus": "BLOCKER",
       "pages": "NO_RAW_PATH",
-      "rightsBasis": "NONE_RECORDED",
-      "status": "BLOCKER"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "PASS"
     },
     {
       "assetClass": "Carmela page PNG",
       "git": "YES",
+      "originalRightsBasis": "NONE_RECORDED",
+      "originalStatus": "BLOCKER",
       "pages": "YES_COMPLETE_SEQUENCE",
-      "rightsBasis": "NONE_RECORDED",
-      "status": "BLOCKER"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "PASS"
     },
     {
       "assetClass": "Carmela public MP3",
       "git": "YES",
+      "originalRightsBasis": "NONE_RECORDED",
+      "originalStatus": "BLOCKER",
       "pages": "YES_FULL_BOOKS",
-      "rightsBasis": "NONE_RECORDED",
-      "status": "BLOCKER"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "PASS"
     },
     {
       "assetClass": "Carmela OCR",
+      "correctedGit": "NO_CURRENT_TREE",
+      "disposition": "RESOLVED_CURRENT_TREE_UNTRACKED_LOCAL_PRESERVED",
       "git": "YES",
+      "originalRightsBasis": "NONE_RECORDED",
+      "originalStatus": "BLOCKER",
       "pages": "NO",
-      "rightsBasis": "NONE_RECORDED",
-      "status": "BLOCKER"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "RESOLVED_CURRENT_TREE_UNTRACKED_LOCAL_PRESERVED"
     },
     {
       "assetClass": "Carmela companion JSON",
       "git": "YES",
+      "originalRightsBasis": "NONE_RECORDED",
+      "originalStatus": "DOCUMENTED_LIMITATION",
       "pages": "YES",
-      "rightsBasis": "NONE_RECORDED",
-      "status": "DOCUMENTED_LIMITATION"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "PASS"
     },
     {
       "assetClass": "Carmela generated art",
       "git": "YES",
+      "originalRightsBasis": "NO_ASSET_LEVEL_MANIFEST",
+      "originalStatus": "DOCUMENTED_LIMITATION",
       "pages": "YES",
-      "rightsBasis": "NO_ASSET_LEVEL_MANIFEST",
-      "status": "DOCUMENTED_LIMITATION"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "PASS"
     },
     {
       "assetClass": "Work Cells raw EPUB MP4 SRT",
       "git": "NO_CURRENT_OR_REACHABLE_SOURCE_HISTORY_FOUND",
+      "originalRightsBasis": "RECORDED_USER_ASSERTION_WITH_FULL_WORK_EXCLUSION",
+      "originalStatus": "BOUNDARY_PASS_LEGAL_LIMITATION",
       "pages": "NO",
-      "rightsBasis": "RECORDED_USER_ASSERTION_WITH_FULL_WORK_EXCLUSION",
-      "status": "BOUNDARY_PASS_LEGAL_LIMITATION"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "PASS"
     },
     {
       "assetClass": "Work Cells full page WebP",
       "git": "YES",
+      "originalRightsBasis": "RECORDED_USER_ASSERTION",
+      "originalStatus": "HIGH_LIMITATION",
       "pages": "NO",
-      "rightsBasis": "RECORDED_USER_ASSERTION",
-      "status": "HIGH_LIMITATION"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "PASS"
     },
     {
       "assetClass": "Work Cells thumbnails",
       "git": "YES",
+      "originalRightsBasis": "RECORDED_USER_ASSERTION",
+      "originalStatus": "DOCUMENTED_LIMITATION",
       "pages": "YES",
-      "rightsBasis": "RECORDED_USER_ASSERTION",
-      "status": "DOCUMENTED_LIMITATION"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "PASS"
     },
     {
       "assetClass": "Work Cells station WebP",
       "git": "YES",
+      "originalRightsBasis": "RECORDED_USER_ASSERTION_AND_USER_CONFIRMED_ASSETS",
+      "originalStatus": "PASS_WITH_PROVENANCE_GAP",
       "pages": "YES",
-      "rightsBasis": "RECORDED_USER_ASSERTION_AND_USER_CONFIRMED_ASSETS",
-      "status": "PASS_WITH_PROVENANCE_GAP"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "PASS"
     },
     {
       "assetClass": "Private animation authoring metadata",
+      "correctedGit": "NO_CURRENT_TREE",
+      "disposition": "RESOLVED_CURRENT_TREE_UNTRACKED_LOCAL_PRESERVED",
       "git": "YES",
+      "originalRightsBasis": "EXPLICITLY_PRIVATE",
+      "originalStatus": "BLOCKER",
       "pages": "NO",
-      "rightsBasis": "EXPLICITLY_PRIVATE",
-      "status": "BLOCKER"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "RESOLVED_CURRENT_TREE_UNTRACKED_LOCAL_PRESERVED"
     },
     {
       "assetClass": "Reduced animation references",
       "git": "YES",
+      "originalRightsBasis": "RECORDED_USER_ASSERTION",
+      "originalStatus": "PASS_WITH_REVIEW_LIMITATION",
       "pages": "YES_SUMMARY_ONLY",
-      "rightsBasis": "RECORDED_USER_ASSERTION",
-      "status": "PASS_WITH_REVIEW_LIMITATION"
+      "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+      "status": "PASS"
     }
   ],
   "recommendedAllowlistShape": [
@@ -329,11 +461,13 @@
     "public/books/index.json",
     "public/books/content-types.json",
     "public/books/不一样的卡梅拉/series.json",
-    "public/books/不一样的卡梅拉/<rights-approved-title>/book-assets.json",
-    "public/books/不一样的卡梅拉/<rights-approved-title>/companion.json",
-    "public/books/不一样的卡梅拉/<rights-approved-title>/generated/<manifest-referenced-file>",
+    "public/books/不一样的卡梅拉/<title>/book-assets.json",
+    "public/books/不一样的卡梅拉/<title>/companion.json",
+    "public/books/不一样的卡梅拉/<title>/generated/<manifest-referenced-file>",
+    "public/books/不一样的卡梅拉/<title>/pages/<manifest-referenced-file>",
+    "public/audio/carmela-s1/<manifest-referenced-file>",
     "public/books/工作细胞/<reduced-runtime-manifest>.json",
-    "public/assets/cells-at-work/science-station/<topicId>/<approved-webp>",
+    "public/assets/cells-at-work/science-station/<topicId>/<runtime-referenced-webp>",
     "public/assets/cells-at-work/page-thumbnails/<runtime-referenced-webp>",
     "data/cells-at-work/<reduced-runtime-page-map>.json"
   ],
@@ -343,6 +477,8 @@
     "mainSha": "9c74e3f26a84ff9d82cb7e664c0314ed87998ef6",
     "visibility": "PUBLIC"
   },
+  "originalStatus": "FAIL",
+  "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
   "schemaVersion": 1,
-  "status": "FAIL"
+  "status": "PASS"
 }

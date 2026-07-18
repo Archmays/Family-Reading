@@ -1,5 +1,6 @@
 {
-  "artifactHashes": [
+  "authorizationPolicyVersion": "global-resource-authorization-v1-2026-07-18",
+  "originalArtifactHashes": [
     {
       "bytes": 1968,
       "path": "README.md",
@@ -56,19 +57,101 @@
       "sha256": "827c1a909086fe12f8a2deb622bc890a07e3a7aa1ea9d775418346e3d5804296"
     }
   ],
+  "artifactHashes": [
+    {
+      "bytes": 2183,
+      "path": "README.md",
+      "sha256": "765585f7f1e8c8a976bef433712801332ec72d7d69ad7449c90510e0ff3ea1ec"
+    },
+    {
+      "bytes": 3789,
+      "path": "docs/github-pages-deployment.md",
+      "sha256": "22d01a1f714f9ba19e51d50e4c66b31d2510a8126db3cf1ea0b8f3f9a4216d4e"
+    },
+    {
+      "bytes": 13942,
+      "path": "docs/portfolio/fr-p0/FR-P0-baseline-report.md",
+      "sha256": "22aa8bc0a4b5aa42a145ba9746e2e3f6463b9de21f1087608f3fc8d471ae1824"
+    },
+    {
+      "bytes": 16712,
+      "path": "docs/portfolio/fr-p0/FR-P0-final-report.md",
+      "sha256": "d2de475bdcd39aa0d285eb342e9090bb0875931cfa1ec9facfd76ae297e27fd8"
+    },
+    {
+      "bytes": 17092,
+      "path": "docs/portfolio/fr-p0/FR-P0-implementation-roadmap.md",
+      "sha256": "dd3ac97f9e45bec36c376cc47bf9deb0fc429e84e1bf9fae9dc4a5fe29d5f554"
+    },
+    {
+      "bytes": 8922,
+      "path": "docs/portfolio/fr-p0/FR-P0-performance-build-tests-and-pages-audit.md",
+      "sha256": "03258e91918e0a293ee64a649f8104b5a794f0dfe0e8b6650dc3d3b8e8e3c4c9"
+    },
+    {
+      "bytes": 12393,
+      "path": "docs/portfolio/fr-p0/FR-P0-source-rights-and-publishing-audit.md",
+      "sha256": "ef4267a456ee7eec27bef4746d1070ae73016141c232efd5b6d1d84b49ea1dce"
+    },
+    {
+      "bytes": 9777,
+      "path": "docs/portfolio/fr-p0/FR-P0-ui-and-content-model-audit.md",
+      "sha256": "0ec429eed64d7770cc75bc390fbceb389032cd1d7192390555df44882b7f4c8f"
+    },
+    {
+      "bytes": 10911,
+      "path": "docs/portfolio/fr-p0/FR-P0R1-authorization-and-privacy-correction.md",
+      "sha256": "c769e879ed6e6af805e32bf97892bc06e08378ccead7edd5288ba3bed9c09820"
+    },
+    {
+      "bytes": 15889,
+      "path": "reports/portfolio/fr-p0/fr-p0-publish-surface.json",
+      "sha256": "83675405d8625d3fce88a5a22c30e51198879ab914c47e31134a129dad02bf4b"
+    },
+    {
+      "bytes": 12521,
+      "path": "reports/portfolio/fr-p0/fr-p0-route-performance-baseline.json",
+      "sha256": "65cce5aa3479c9447319ff7832fc9dbe9bea612a5a1dfa058176735ba3cafea9"
+    },
+    {
+      "bytes": 43975,
+      "path": "reports/portfolio/fr-p0/fr-p0-size-and-history-baseline.json",
+      "sha256": "90d5c4cfb28c34b0552539f6e918e8490dbbf50544a1e0fcf121aa5ca1e9d9e5"
+    }
+  ],
   "artifactPaths": [
+    "README.md",
+    "docs/github-pages-deployment.md",
     "docs/portfolio/fr-p0/FR-P0-baseline-report.md",
     "docs/portfolio/fr-p0/FR-P0-final-report.md",
     "docs/portfolio/fr-p0/FR-P0-implementation-roadmap.md",
     "docs/portfolio/fr-p0/FR-P0-performance-build-tests-and-pages-audit.md",
     "docs/portfolio/fr-p0/FR-P0-source-rights-and-publishing-audit.md",
     "docs/portfolio/fr-p0/FR-P0-ui-and-content-model-audit.md",
+    "docs/portfolio/fr-p0/FR-P0R1-authorization-and-privacy-correction.md",
     "reports/portfolio/fr-p0/fr-p0-publish-surface.json",
     "reports/portfolio/fr-p0/fr-p0-route-performance-baseline.json",
     "reports/portfolio/fr-p0/fr-p0-run-manifest.json",
     "reports/portfolio/fr-p0/fr-p0-size-and-history-baseline.json"
   ],
-  "blockers": [
+  "blockers": [],
+  "correctedAt": "2026-07-18T12:07:17Z",
+  "correctedStatus": "COMPLETE_WITH_DOCUMENTED_LIMITATIONS",
+  "correctionAcceptance": {
+    "browserSmoke": "PASS_AFTER_FOCUSED_FAVICON_REPAIR",
+    "build": "PASS",
+    "distAudit": "PASS_1534_FILES_837981919_BYTES",
+    "finalAcceptance": "PASS_NODE22_63_OF_63_VALIDATOR_BUILD_DIST",
+    "finalMainSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "finalTestCount": "63/63",
+    "gitCloseout": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "pagesRun": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "publicRepositoryValidator": "PASS",
+    "sourceFinal": "VERIFIED_UNCHANGED"
+  },
+  "correctionRunId": "fr-p0r1-20260718T120717Z",
+  "globalAgentsSha256": "B39392ADA206E539F2F086480CCAE20ACDD66B4E49DE9DC71833230B13A17229",
+  "originalBlockers": [
     {
       "code": "BLOCKED_PRIVACY_OR_RIGHTS_EXPOSURE",
       "details": [
@@ -81,17 +164,32 @@
       "pushAllowed": false
     }
   ],
-  "branch": {
+  "originalBranch": {
     "finalMainSha": "not_merged",
     "localTaskBranch": "codex/fr-portfolio-p0-baseline",
     "remoteTaskBranchCreated": false,
     "startMainSha": "9c74e3f26a84ff9d82cb7e664c0314ed87998ef6",
     "taskBranchDisposition": "retain_local_auditable_branch_due_blocker"
   },
+  "branch": {
+    "finalMainSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "localTaskBranch": "codex/fr-portfolio-p0-baseline",
+    "remoteTaskBranchCreated": false,
+    "startMainSha": "9c74e3f26a84ff9d82cb7e664c0314ed87998ef6",
+    "taskBranchDisposition": "DELETE_AFTER_FAST_FORWARD_AND_PAGES_VERIFICATION"
+  },
+  "originalCleanup": {
+    "browserTabsFinalized": true,
+    "extraWorktrees": 0,
+    "localStaticServerStopped": true,
+    "stashChanged": false,
+    "taskScratchDeleted": true
+  },
   "cleanup": {
     "browserTabsFinalized": true,
     "extraWorktrees": 0,
     "localStaticServerStopped": true,
+    "postCommitGitState": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
     "stashChanged": false,
     "taskScratchDeleted": true
   },
@@ -149,10 +247,34 @@
       "durationMs": 700,
       "exitCode": 0,
       "note": "1,533 files; 837,983,345 bytes; status OK."
+    },
+    {
+      "command": "npx --yes node@22 scripts/verify-release.mjs",
+      "durationMs": null,
+      "exitCode": 0,
+      "note": "P0R1 single full acceptance: Node 22.23.1; 63/63 tests; tracked-index validator, build and dist audit passed."
+    },
+    {
+      "command": "Playwright CLI representative local browser smoke",
+      "durationMs": null,
+      "exitCode": 0,
+      "note": "Representative desktop/mobile routes and interactions passed; an initial favicon 404 was repaired and cleanly rechecked."
+    },
+    {
+      "command": "npx --yes node@22 --test --test-name-pattern focused favicon test",
+      "durationMs": null,
+      "exitCode": 0,
+      "note": "One affected test passed without repeating the 63-test suite."
+    },
+    {
+      "command": "npx --yes node@22 scripts/build.mjs",
+      "durationMs": null,
+      "exitCode": 0,
+      "note": "Affected-only rebuild after favicon repair: validator passed; 1,534 dist files; 837,981,919 bytes; audit passed."
     }
   ],
   "finishedAt": "2026-07-18T09:33:25Z",
-  "gitHubStatus": {
+  "originalGitHubStatus": {
     "defaultBranch": "main",
     "mainProtected": false,
     "openIssues": 0,
@@ -162,16 +284,30 @@
     "viewerPermission": "ADMIN",
     "visibility": "PUBLIC_UNCHANGED"
   },
-  "limitations": [
+  "gitHubStatus": {
+    "defaultBranch": "main",
+    "finalMainSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "remoteMainShaBeforeCloseout": "9c74e3f26a84ff9d82cb7e664c0314ed87998ef6",
+    "repositoryDiskUsageKbAtOriginalP0": 2247861,
+    "viewerPermission": "ADMIN",
+    "visibility": "PUBLIC_UNCHANGED"
+  },
+  "originalLimitations": [
     "Latest Pages artifact is expired; file-level comparison with local dist was unavailable.",
     "Browser runtime did not expose Resource Timing, Web Vitals, HAR, cache state, network throttle, forced-colors/reduced-motion emulation, or true 200 percent zoom.",
     "Local acceptance used Node 24.16.0 while Pages workflow declares Node 22 and package.json has no engines.",
     "Current-tree token/API-key regex scan is not a full historical secret scan.",
-    "Work Cells user_confirmed_authorization is a repository-recorded assertion, not external or legal verification.",
-    "Task commit was not deployed because privacy/rights rules require stopping before push."
+    "The original P0 rights limitation is withdrawn: RIGHTS_STATUS is PASS_BY_USER_AUTHORIZATION and user_confirmed_authorization requires no external or legal verification.",
+    "The original P0 task commit was not deployed; P0R1 final merge, Pages verification, source recheck, and Git closeout are tracked by correctionAcceptance."
+  ],
+  "limitations": [
+    "The original Pages artifact is expired; its archive bytes remain a preserved P0 measurement rather than a current dist comparison.",
+    "The bounded current tracked-tree scanner is not a full historical secret scan; no history rewrite was requested or performed.",
+    "The tracked report cannot contain the commit SHA that is produced from that report or the subsequently created Pages run ID; exact final SHA, run, live and clean-closeout evidence is recorded in the post-commit final handoff.",
+    "The original P0 rights limitation is withdrawn: RIGHTS_STATUS is PASS_BY_USER_AUTHORIZATION and user_confirmed_authorization requires no external or legal verification."
   ],
   "localPath": ".",
-  "pagesStatus": {
+  "originalPagesStatus": {
     "artifactBytes": 828688767,
     "artifactExpired": true,
     "artifactId": 7777926862,
@@ -184,6 +320,16 @@
     "taskCommitDeployment": "NOT_RUN_BLOCKED",
     "url": "https://archmays.github.io/Family-Reading/"
   },
+  "pagesStatus": {
+    "buildType": "workflow",
+    "finalLiveBrowserSmoke": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "finalRunConclusion": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "finalRunId": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "finalRunSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "gateCommand": "npm run verify:release",
+    "taskCommitDeployment": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "url": "https://archmays.github.io/Family-Reading/"
+  },
   "qualityCompromises": [],
   "repository": {
     "defaultBranch": "main",
@@ -191,9 +337,11 @@
     "origin": "https://github.com/Archmays/Family-Reading.git",
     "visibility": "PUBLIC"
   },
+  "originalStatus": "BLOCKED",
+  "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
   "runId": "fr-p0-20260718T083821Z",
   "schemaVersion": 1,
-  "sourceIntegrity": {
+  "originalSourceIntegrity": {
     "afterCanonicalSha256": "a32e8366a11f85c8b591c3bf06a2b7813950904a0a81f1a0fd64971af71eee67",
     "afterFiles": 1649,
     "afterManifestBytes": 737537,
@@ -207,9 +355,24 @@
     "missingFiles": 0,
     "status": "VERIFIED_UNCHANGED"
   },
+  "sourceIntegrity": {
+    "afterCompactJsonSha256": "444a3a11c2507608504678aaaeb7a9ca43a2238a0d19f8762e92e7d5f423b9db",
+    "afterFiles": 1649,
+    "beforeCompactJsonSha256": "444a3a11c2507608504678aaaeb7a9ca43a2238a0d19f8762e92e7d5f423b9db",
+    "beforeFiles": 1649,
+    "bytes": 7884142200,
+    "changedFileBytes": 0,
+    "indexOnlyUntracking": {
+      "dataPrivateFiles": 27,
+      "localFilesPreservedAndBlobIdentical": true,
+      "ocrFiles": 344,
+      "trackedFilesAfter": 0
+    },
+    "status": "VERIFIED_UNCHANGED"
+  },
   "startedAt": "2026-07-18T08:38:21Z",
-  "status": "BLOCKED",
-  "testAndBuild": {
+  "status": "COMPLETE_WITH_DOCUMENTED_LIMITATIONS",
+  "originalTestAndBuild": {
     "baselineBuildDurationMs": 2487,
     "baselineDistAuditDurationMs": 574,
     "build": "PASS",
@@ -221,10 +384,31 @@
     "testsFailed": 0,
     "testsPassed": 40
   },
-  "toolVersions": {
+  "testAndBuild": {
+    "affectedFaviconBuild": "PASS",
+    "affectedFaviconFocusedTest": "PASS_1_OF_1",
+    "build": "PASS",
+    "distAudit": "PASS",
+    "distBytes": 837981919,
+    "distFiles": 1534,
+    "fullSuiteInvocations": 1,
+    "node": "22.23.1",
+    "publicRepositoryValidator": "PASS",
+    "tests": "PASS",
+    "testsFailed": 0,
+    "testsPassed": 63
+  },
+  "originalToolVersions": {
     "gh": "2.94.0",
     "git": "2.54.0.windows.1",
     "node": "24.16.0",
+    "npm": "11.13.0",
+    "python": "3.12.7"
+  },
+  "toolVersions": {
+    "gh": "2.94.0",
+    "git": "2.54.0.windows.1",
+    "nodeAcceptance": "22.23.1",
     "npm": "11.13.0",
     "python": "3.12.7"
   }

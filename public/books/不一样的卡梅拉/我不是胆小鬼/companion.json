@@ -7,9 +7,6 @@
   "contentType": "picture-book-companion",
   "sourceEvidence": {
     "pageImages": "pages/",
-    "ocrPages": "ocr/pages/",
-    "ocrFullText": "ocr/full-text.txt",
-    "ocrReport": "ocr/ocr-report.json",
     "ocrUse": "processing evidence only, not a child-facing reading body"
   },
   "overview": {

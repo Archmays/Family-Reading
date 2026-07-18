@@ -1,5 +1,12 @@
 {
+  "authorizationPolicyVersion": "global-resource-authorization-v1-2026-07-18",
   "baselineAt": "2026-07-18T08:56:00Z",
+  "correctedAt": "2026-07-18T12:07:17Z",
+  "correctedStatus": "BASELINE_COMPLETE_WITH_RUNTIME_TELEMETRY_LIMITATIONS",
+  "correctionRunId": "fr-p0r1-20260718T120717Z",
+  "globalAgentsSha256": "B39392ADA206E539F2F086480CCAE20ACDD66B4E49DE9DC71833230B13A17229",
+  "originalStatus": "BASELINE_COMPLETE_WITH_RUNTIME_TELEMETRY_LIMITATIONS",
+  "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
   "browserEvidence": {
     "consoleErrors": 0,
     "localOnlyDirectory": "task-scratch/fr-p0-20260718T083821Z",
@@ -98,7 +105,7 @@
     "initialJsonRequests": 6,
     "notes": [
       "These are proposed gates, not current pass thresholds.",
-      "Rights approval and exact publish allowlisting precede optimization.",
+      "Public-repository and build hygiene validation precede optimization; resource rights are not a performance gate.",
       "Transfer budgets must use compressed cold-cache telemetry; raw-byte inventory remains a separate gate."
     ],
     "routeInteractiveElements": 80,

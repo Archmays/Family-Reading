@@ -3,14 +3,35 @@ import { access, mkdir, readdir, rm, copyFile, readFile, writeFile } from 'node:
 import { constants } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import path from 'node:path';
+import { resolveCarmelaBookPaths } from './release-path-policy.mjs';
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const outputDir = path.join(rootDir, 'dist');
 const outputDirName = 'dist';
 const publishedBookCount = 12;
 const excludedDirectoryNames = new Set([
+  '.playwright',
+  'authoring-notes',
+  'blob-report',
+  'browser-data',
+  'browser-profile',
+  'browser-profiles',
+  'chrome-profile',
+  'data-private',
+  'internal-notes',
   'ocr',
+  'ocr-artifacts',
+  'ocr-output',
+  'ocr-processing-output',
+  'playwright-report',
+  'private',
+  'private-notes',
   'source',
+  'source-private',
+  'task-scratch',
+  'test-results',
+  'traces',
+  'user-data-dir',
   'visual-annotation-bundles',
   'screenshot-candidates',
   'review-contact-sheets',
@@ -28,12 +49,16 @@ const excludedRelativeDirectories = new Set([
 const excludedExtensions = new Set([
   '.pdf',
   '.epub',
+  '.har',
+  '.trace',
   '.zip',
   '.7z',
   '.tar',
   '.gz',
   '.log',
   '.tmp',
+  '.temp',
+  '.bak',
   '.mp4',
   '.mov',
   '.m4v',
@@ -43,7 +68,18 @@ const excludedExtensions = new Set([
   '.ass',
   '.ssa',
 ]);
-const excludedFileNames = new Set(['volume-page-index.json', 'review-index.md', 'review-topics.json']);
+const excludedFileNames = new Set([
+  'cookies',
+  'cookies.json',
+  'cookies.sqlite',
+  'full-text.txt',
+  'ocr-report.json',
+  'playwright-trace.json',
+  'review-index.md',
+  'review-topics.json',
+  'trace.json',
+  'volume-page-index.json',
+]);
 const seriesIndexPath = path.join(rootDir, 'public', 'books', '不一样的卡梅拉', 'series.json');
 const publicBooksIndexPath = path.join(rootDir, 'public', 'books', 'index.json');
 const contentTypesPath = path.join(rootDir, 'public', 'books', 'content-types.json');
@@ -96,7 +132,10 @@ async function copyTree(sourceDir, targetDir) {
   const entries = await readdir(sourceDir, { withFileTypes: true });
 
   for (const entry of entries) {
-    if (entry.isDirectory() && excludedDirectoryNames.has(entry.name)) {
+    if (
+      entry.isDirectory()
+      && excludedDirectoryNames.has(entry.name.toLocaleLowerCase('en-US'))
+    ) {
       continue;
     }
 
@@ -115,7 +154,10 @@ async function copyTree(sourceDir, targetDir) {
       continue;
     }
 
-    if (entry.isFile() && excludedFileNames.has(entry.name)) {
+    if (
+      entry.isFile()
+      && excludedFileNames.has(entry.name.toLocaleLowerCase('en-US'))
+    ) {
       continue;
     }
 
@@ -149,9 +191,14 @@ async function copyPublishablePublic() {
 
   const series = JSON.parse(await readFile(seriesIndexPath, 'utf8'));
   for (const book of series.books.slice(0, publishedBookCount)) {
+    const bookPaths = resolveCarmelaBookPaths({
+      folder: book.folder,
+      rootDir,
+      outputDir,
+    });
     await copyTree(
-      path.join(rootDir, ...book.folder.split('/')),
-      path.join(outputDir, ...book.folder.split('/')),
+      bookPaths.sourcePath,
+      bookPaths.targetPath,
     );
   }
 
@@ -164,8 +211,8 @@ async function copyPublishableData() {
   await copyFile(workCellsPageMapPath, targetPath);
 }
 
-function runTests() {
-  const result = spawnSync(process.execPath, ['--test', 'tests/mvp.test.mjs'], {
+function runNodeGate(scriptPath) {
+  const result = spawnSync(process.execPath, [scriptPath], {
     cwd: rootDir,
     stdio: 'inherit',
     shell: false,
@@ -177,7 +224,7 @@ function runTests() {
 }
 
 assertSafeOutputDirectory();
-runTests();
+runNodeGate('scripts/validate-public-repository.mjs');
 
 await rm(outputDir, { recursive: true, force: true });
 await mkdir(outputDir, { recursive: true });
@@ -189,3 +236,4 @@ await copyPublishableData();
 await writeFile(path.join(outputDir, '.nojekyll'), '', 'utf8');
 
 console.log('Static GitHub Pages build written to dist.');
+runNodeGate('scripts/audit-dist-assets.mjs');

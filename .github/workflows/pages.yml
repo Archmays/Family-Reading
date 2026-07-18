@@ -27,8 +27,8 @@ jobs:
         with:
           node-version: 22
 
-      - name: Build static site
-        run: npm run build
+      - name: Verify release and build static site
+        run: npm run verify:release
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

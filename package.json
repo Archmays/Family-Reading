@@ -1,10 +1,12 @@
 {
   "private": true,
   "scripts": {
-    "test": "node --test tests/mvp.test.mjs",
+    "test": "node scripts/run-tests.mjs",
+    "validate:public-repo": "node scripts/validate-public-repository.mjs",
     "validate:work-cells-annotations": "node scripts/validate-work-cells-visual-annotations.mjs",
     "audit:dist": "node scripts/audit-dist-assets.mjs",
     "build": "node scripts/build.mjs",
+    "verify:release": "node scripts/verify-release.mjs",
     "import:work-cells-epub": "node scripts/work-cells-epub-import.mjs",
     "import:work-cells-annotations": "node scripts/import-work-cells-visual-annotations.mjs",
     "extract:work-cells-pages": "python scripts/extract_work_cells_pages.py"

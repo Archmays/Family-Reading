@@ -2,16 +2,28 @@
 
 ## Answer-first executive summary
 
-FR-P0 已完成可信基线、审计证据和后续路线，但交付状态是 **BLOCKED**，不是可发布完成。仓库身份、公开可见性、当前 main、Git/GitHub、工作区、历史、source、public、dist、Pages、路线资源、内容模型、UI、build/tests 都已重新实测；受保护根 before/after 为 1,649 文件、7,884,142,200 B，规范化 SHA-256 均为 `a32e8366a11f85c8b591c3bf06a2b7813950904a0a81f1a0fd64971af71eee67`。
+FR-P0 已完成可信基线、审计证据和后续路线。原交付状态按旧规则记录为 **BLOCKED**；P0R1 已纠正其中的 rights 结论并完成 private/OCR current-tree hygiene，最终验收状态为 `COMPLETE_WITH_DOCUMENTED_LIMITATIONS`。仓库身份、公开可见性、原 main、Git/GitHub、工作区、历史、source、public、dist、Pages、路线资源、内容模型、UI、build/tests 都已重新实测；受保护根 before/after 为 1,649 文件、7,884,142,200 B，规范化 SHA-256 均为 `a32e8366a11f85c8b591c3bf06a2b7813950904a0a81f1a0fd64971af71eee67`。
 
-阻断原因有四项：
+原 P0 按旧规则记录的四项阻断如下：
 
 1. 公开 `origin/main` 跟踪了被文件自身策略与测试标记为 private/non-publishable 的 `data-private/cells-at-work/animation/**` 元数据。
 2. 完整卡梅拉 PDF 与 12 个源 MP3 仍可从公开 main 历史取得。
 3. 当前 Git 与 Pages 发布卡梅拉完整逐页图片和 12 个整册 MP3，但仓库没有卡梅拉公开授权依据。
 4. 当前 Git 跟踪 344 个卡梅拉 OCR 产物，其中包括 12 份全文和 3 份带本机绝对路径的报告。
 
-按 FR-P0 规则，本分支不合并、不推送、不改 visibility、不重写历史。建议下一阶段仅处理 `FR-P1 Safety and Publishing Containment`，不要先做 UI 重构或媒体优化。
+P0R1 纠偏后，第 2、3 项不再是 rights blocker；第 4 项也不因 OCR/full-work 内容本身阻断，只按 processing/current-tree/local-path hygiene 处理。第 1 项与第 4 项的独立 publishing/privacy 问题已通过 index-only 隔离和引用净化处理，本地原文件全部保留。FR-P1 已重写并执行为 `FR-P1 Privacy and Publishing Hygiene`；Node 22 acceptance、Source 与本地 browser smoke 均通过，下一阶段是 `FR-P2 Design System and Core IA`。
+
+## P0R1 Authorization Correction
+
+- Global authorization file：the uniquely resolved active Codex global `AGENTS.md`
+- Before SHA-256：`143ABA59F15DBAF8F0BE3F263BA0B97FE1F53439BC77696758E4133FF9C6F228`
+- After SHA-256：`B39392ADA206E539F2F086480CCAE20ACDD66B4E49DE9DC71833230B13A17229`
+- Exact seven-bullet section：installed once；no conflicting global copyright gate
+- Corrected rights conclusion：`RIGHTS_STATUS: PASS_BY_USER_AUTHORIZATION`
+- Original measurements：retained unchanged
+- Final acceptance：`PASS_NODE22_63_OF_63_VALIDATOR_BUILD_DIST`
+
+完整审计轨迹与 exact installed section 见 [`FR-P0R1-authorization-and-privacy-correction.md`](FR-P0R1-authorization-and-privacy-correction.md)。
 
 机器证据：
 
@@ -80,20 +92,20 @@ Before/after：
 
 ## Rights, privacy, and publishing
 
-`PRIVACY_STATUS` 和 `RIGHTS_STATUS` 均为 `BLOCKED`；`PUBLISH_SURFACE_STATUS` 为 `FAIL`。完整 rights/provenance matrix、公开路径、历史 commit 和未来 allowlist 见 [`FR-P0-source-rights-and-publishing-audit.md`](FR-P0-source-rights-and-publishing-audit.md)。
+原 P0 的 `PRIVACY_STATUS` 和 `RIGHTS_STATUS` 均为 `BLOCKED`，`PUBLISH_SURFACE_STATUS` 为 `FAIL`。P0R1 当前结论为 `PRIVACY_STATUS: PASS`、`RIGHTS_STATUS: PASS_BY_USER_AUTHORIZATION`、`PUBLISH_SURFACE_STATUS: PASS`。原 matrix、公开路径和历史 commit 继续见 [`FR-P0-source-rights-and-publishing-audit.md`](FR-P0-source-rights-and-publishing-audit.md)。
 
 关键区别：
 
-- Work Cells 的 `licenseBasis: user_confirmed_authorization` 只是仓库记录的用户声明，不是外部或法律审查结论。
+- Work Cells 的 `licenseBasis: user_confirmed_authorization` 是充分的用户项目授权，不需要外部或法律审查证明。
 - Pages 不复制 `source/`，不代表公开 Git 历史没有 source。
 - `data-private` 不进入 `dist`，不代表它没有被公开 Git 跟踪。
-- 当前 `audit:dist` 通过，只证明已知黑名单和 900 MiB 总量门禁通过，不证明权利或 allowlist 通过。
+- 当前 `audit:dist` 通过，只证明已知技术黑名单和 900 MiB 总量门禁通过；rights 已由用户全局授权独立通过。
 
 ## Current publish surface
 
 当前 dist 结构扫描通过：未发现 source、PDF、EPUB、OCR、动画源媒体或完整 Work Cells 页面目录。非零 1,532 个文件、全部 837,983,345 B 均与仓库映射源逐字节 SHA-256 一致，额外文件只有零字节 `.nojekyll`。
 
-但结构安全不等于权利安全。dist 中卡梅拉 426 文件、776,453,716 B；其中完整页图与 12 个整册音频缺少公开权利依据，所以发布面总体失败。未来必须从 rights-approved runtime references 生成 exact allowlist。
+dist 中卡梅拉 426 文件、776,453,716 B；完整页图与 12 个整册音频均可继续发布，缺少 repository-local rights manifest 不再造成失败。发布面仍应从 runtime references 和明确的 private/source/processing exclusions 生成 fail-closed 技术边界。
 
 ## Content model
 
@@ -102,7 +114,7 @@ Before/after：
 - Carmela：系列 → 书 → 页边界、故事回顾、场景、三类问题卡、背景、百科、家长提示、整册音频。
 - Work Cells：系列 → 科学主题 → 卷/话来源、科学导读、4 个 science stations、6 个亲子问题、敏感内容边界、来源备注和 reduced animation summaries。
 
-推荐只共享稳定 envelope：identity、series/item、navigation、publication、verification、rights、media summary；领域 payload 使用 discriminated union。详细字段和 source-of-truth 见 [`FR-P0-ui-and-content-model-audit.md`](FR-P0-ui-and-content-model-audit.md)。
+推荐只共享稳定 envelope：identity、series/item、navigation、publication、verification、authorization/provenance、media summary；领域 payload 使用 discriminated union。Authorization metadata 只用于记录，不是 gate。详细字段和 source-of-truth 见 [`FR-P0-ui-and-content-model-audit.md`](FR-P0-ui-and-content-model-audit.md)。
 
 ## UI and UX
 
@@ -133,41 +145,41 @@ Raw referenced-asset baseline：
 
 这些是本地 raw reference bytes，不是压缩传输、HAR 或 Web Vitals。浏览器接口未提供 Resource Timing、LCP/CLS/INP、cache 或 throttle，因此没有伪造 Lighthouse 分数。详细定义与未来预算见 route JSON。
 
-## Build, tests, and Pages
+## Original P0 build, tests, and Pages
 
 - 本地 acceptance `npm run build`：PASS，40/40 tests，约 2.487 s。
 - `npm run audit:dist`：PASS，约 0.574 s，799.16 MiB，低于 900 MiB hard exit。
 - 本地 Node `v24.16.0`；Pages 使用 Node 22，`package.json` 没有 engines，属于环境差异。
 - 测试总数是 40，不是旧报告的 38。`mvp.test.mjs` 导入另外两个 suite，未来直接 glob 三文件会重复成 48。
-- Pages workflow 只运行 build，不运行 `audit:dist`；因此 audit-only 条件不是发布门禁。
+- 原 P0 Pages workflow 只运行 build，不运行 `audit:dist`；因此 audit-only 条件不是发布门禁。
 - 当前 main 最新 Pages run `27912960467` 对应 `9c74e3f…`，success，122 s；最近 10 次均成功。
-- 当前 live Pages 首页已在浏览器加载并呈现两系列入口；任务分支因 blocker 未部署。
+- 原 main live Pages 首页已在浏览器加载并呈现两系列入口；P0R1 最终 SHA deployment 的精确 immutable IDs 由 post-commit final handoff 记录。
 
 详情见 [`FR-P0-performance-build-tests-and-pages-audit.md`](FR-P0-performance-build-tests-and-pages-audit.md)。
 
-## Blockers and recovery
+## Original blockers and P0R1 disposition
 
 ### BLOCKED_PRIVACY_OR_RIGHTS_EXPOSURE
 
-恢复需要单独、安全、分阶段授权：
+该标题是原 P0 的历史审计轨迹，不再是当前 rights status。P0R1 处置如下：
 
-1. 先决定公开仓库临时 containment（visibility 是否调整必须由用户明确决定）。
-2. 获取并记录 Carmela 公开发布权利，或把完整页图和整册音频从 public Git/Pages 发布面移除。
-3. 把 private animation authoring metadata 和 OCR processing artifacts 从当前公开树移出，并增加 fail-closed validator。
-4. 单独决定是否重写公开历史；这一步必须另行授权，禁止在 FR-P0 自动执行。
-5. 在新的安全基线重新扫描 current tree、history、dist、artifact 和 live Pages 后，才允许恢复 merge/push。
+1. visibility 保持 public；不因 rights 调整 visibility。
+2. Carmela 完整页图、12 个整册音频、generated images、OCR 与历史 source 均为 `PASS_BY_USER_AUTHORIZATION`，不移除、不要求补充 rights manifest。
+3. 27 个 private animation JSON 与 344 个 OCR processing artifacts 已从 Git index 取消跟踪，本地原文件保留；14 个 tracked JSON 中的 51 个 stale OCR locator fields 已移除，`.gitignore` 已加固。
+4. 本任务不重写历史；history 中 PDF/MP3 只作为体积、clone 性能和维护证据保留。
+5. public repository validator、build、dist 与 Source 的本地统一验收为 PASS；Git main 与 live Pages 是 post-commit external state，其精确 immutable evidence 由 final handoff 记录。
 
 ## Limitations
 
 - 最新 Pages artifact 已过期，无法下载做文件级比较。
 - 浏览器没有 HAR、Resource Timing、Web Vitals、forced-colors/reduced-motion 仿真和真实 200% zoom。
 - 当前 tracked-tree token/API-key regex 无命中，但不是完整历史 secret scanner。
-- Work Cells 医学术语 27/27 仍待人工核对；内容 `approved-v2` 不覆盖医学/版权验证。
-- 当前 live Pages smoke 证明旧 main 页面可加载；没有任务 commit 的 Pages run，因为规则要求阻断 push。
+- Work Cells 医学术语 27/27 仍待人工核对；内容 `approved-v2` 不覆盖医学验证，但 rights 已由用户授权通过。
+- 当前 live Pages smoke 证明旧 main 页面可加载；P0R1 最终 SHA 的 Pages run/live 证据由 post-commit final handoff 记录。
 
-## No-go decisions
+## Original P0 no-go decisions
 
-本阶段没有：
+原 P0 阶段没有：
 
 - UI redesign、framework migration、app.js 组件化、styles.css 大拆分；
 - manifest sharding、媒体批量转换或音频重编码；
@@ -175,14 +187,14 @@ Raw referenced-asset baseline：
 - source 删除/迁移/压缩；
 - LFS migrate、history rewrite、force push、visibility change；
 - ebook、progress、check-in、statistics、account、dashboard；
-- 自动开始 P1。
+- 自动开始 P1。P0R1 同样不自动开始 FR-P2。
 
-## Change-impact map
+## Original P0 change-impact map
 
 | 改动 | 当前影响 | 未来消费者 | 回滚 |
 |---|---|---|---|
 | P0 docs / JSON | 只增加审计证据，不改变 runtime | P1–P6 | 删除本 P0 目录 |
-| README 事实修正 | 修正 4 本→12 本/两系列、rights 提示 | 开发者 onboarding | 恢复两个文档块 |
+| README 事实修正 | 修正 4 本→12 本/两系列；原 rights 提示由 P0R1 纠偏 | 开发者 onboarding | 恢复两个文档块 |
 | Pages doc 事实修正 | 历史体积改为当前分层数据 | 部署维护者 | 恢复文档块 |
 | 无 runtime/tool change | dist 与 live 行为不变 | — | 不需要 |
 
@@ -190,8 +202,10 @@ Raw referenced-asset baseline：
 
 | 决策 | Evidence | Rejected alternative | 原因 | Future phase |
 |---|---|---|---|---|
-| 状态设为 BLOCKED | 公开 private metadata、历史 raw source、Carmela rights 缺失 | 把“dist 不含 source”当 pass | Git/Pages 边界不同 | P1 |
-| 不合并、不推送 | FR-P0 blocker rule | “先发报告再修风险” | 推送会扩大公开状态并触发 Pages | P1 |
+| 原 P0 状态设为 BLOCKED | 公开 private metadata、历史 raw source、旧规则下的 Carmela rights 缺失 | 把“dist 不含 source”当 pass | 这是被 P0R1 supersede 的历史决策 | P0R1 |
+| P0R1 撤销 rights blocker | 全局七条用户授权、before/after hash、无冲突 | 继续索取 asset-level approval | 用户授权覆盖完整作品、派生物和历史 blob | P0R1 |
+| P0R1 只处理 privacy/publishing hygiene | 27 private JSON、344 OCR artifacts、3 local paths | 删除用户资源或重写历史 | 保持 rights 与隐私独立 | P0R1 |
 | 保留两个领域 payload | 现有字段与家庭任务不同 | 单一 book/topic 大 schema | 避免错误抽象 | P2/P4 |
-| 先 route-scoped JSON，再媒体优化 | 2.68 MiB 全站 JSON 是共同首屏阻塞 | 先批量压图 | 先解决架构和 rights | P4/P5 |
-| 不添加第二个审计脚本 | 现有命令足以生成 P0；代码门禁应在 P1 设计 | P0 临时堆脚本 | 控制范围、避免无测试工具债 | P1 |
+| 先 route-scoped JSON，再媒体优化 | 2.68 MiB 全站 JSON 是共同首屏阻塞 | 先批量压图 | 先解决架构和发布工程边界 | P4/P5 |
+| 原 P0 不添加第二个审计脚本 | 现有命令足以生成 P0；代码门禁留给后续 | P0 临时堆脚本 | 控制原 P0 范围 | P0R1 |
+| P0R1 新增 public repository validator | private/OCR/path/secret current-tree hygiene 需要 fail-closed | 继续依赖 `.gitignore` | ignored 与 tracked/public tree 是不同边界 | P0R1 |

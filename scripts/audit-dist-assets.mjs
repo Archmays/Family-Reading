@@ -14,19 +14,30 @@ const forbiddenVideoPattern = new RegExp(`(${forbiddenVideoExtensions.map((exten
 const forbiddenSubtitlePattern = new RegExp(`(${forbiddenSubtitleExtensions.map((extension) => extension.replace('.', '\\.')).join('|')})$`, 'i');
 const forbiddenWorkCellsAudioPattern = /(^|\/)(cells-at-work|work-cells|工作细胞)(\/.*)?\.(mp3|wav|m4a|aac|flac|ogg)$/i;
 const forbiddenReleasePatterns = [
-  { pattern: forbiddenVideoPattern, message: 'Remove video files from dist; animation MP4 assets must stay outside the GitHub Pages package.' },
-  { pattern: forbiddenSubtitlePattern, message: 'Remove subtitle files from dist; full subtitle files must stay private.' },
-  { pattern: forbiddenArchivePattern, message: 'Remove archive files from dist; release packages should not ship ZIP or compressed review bundles.' },
-  { pattern: forbiddenWorkCellsAudioPattern, message: 'Remove Work Cells audio files from dist; extracted animation audio is analysis-only.' },
-  { pattern: /(^|\/)(audio-extracts?|extracted-audio|audio-fallback)(\/|$)/i, message: 'Remove extracted audio intermediates from dist; audio fallback files must stay private.' },
-  { pattern: /(^|\/)(transcripts?|topic-readable-transcripts)(\/|\.|$)/i, message: 'Remove transcript temporary files from dist; publish only reduced companion data.' },
-  { pattern: /(^|\/)screenshot-candidates(\/|$)/i, message: 'Remove screenshot-candidates from dist; only selected published WebP stills may ship.' },
-  { pattern: /(^|\/)review-contact-sheets(\/|$)/i, message: 'Remove review-contact-sheets from dist; contact sheets are review-only artifacts.' },
-  { pattern: /(^|\/)scene-notes(\/|$)/i, message: 'Remove scene-notes from dist; publish only explicitly reduced JSON if needed.' },
-  { pattern: /(^|\/)pages-by-volume(\/|$)/i, message: 'Remove pages-by-volume from dist; publish page-thumbnails instead.' },
-  { pattern: /(^|\/)visual-annotation-bundles(\/|$)/i, message: 'Remove visual-annotation-bundles from dist; keep review bundles outside public publishing paths.' },
-  { pattern: /(^|\/)png-originals(\/|$)/i, message: 'Remove PNG originals from dist; source station PNG files must stay outside the release package.' },
-  { pattern: /science-station\/.+\.png$/i, message: 'Remove science-station PNG images from dist; only WebP station assets may ship.' },
+  { code: 'RAW_SOURCE', pattern: /(^|\/)(?:source|source-private)(\/|$)/i, message: 'Remove raw source roots from dist.' },
+  { code: 'PRIVATE_ROOT', pattern: /(^|\/)(?:private|data-private)(\/|$)/i, message: 'Remove explicitly private roots from dist.' },
+  { code: 'OCR_PROCESSING', pattern: /(^|\/)ocr(?:-output|-artifacts|-processing-output)?(\/|$)|(^|\/)(?:full-text\.txt|ocr[^/]*(?:report|result|summary|index)[^/]*)$/i, message: 'Remove OCR processing intermediates from dist.' },
+  { code: 'RAW_DOCUMENT', pattern: /\.(?:pdf|epub)$/i, message: 'Remove raw PDF and EPUB files from dist.' },
+  { code: 'VIDEO', pattern: forbiddenVideoPattern, message: 'Remove video files from dist; animation MP4 assets must stay outside the GitHub Pages package.' },
+  { code: 'SUBTITLE', pattern: forbiddenSubtitlePattern, message: 'Remove subtitle files from dist; full subtitle files must stay outside the runtime package.' },
+  { code: 'ARCHIVE', pattern: forbiddenArchivePattern, message: 'Remove archive files from dist; release packages should not ship ZIP or compressed review bundles.' },
+  { code: 'TEMPORARY_FILE', pattern: /\.(?:tmp|temp|bak)$/i, message: 'Remove temporary files from dist.' },
+  { code: 'HAR', pattern: /\.har$/i, message: 'Remove browser network archives from dist.' },
+  { code: 'TRACE', pattern: /(^|\/)(?:traces?|playwright-traces?)(\/|$)|(^|\/)(?:trace|playwright-trace)\.(?:json|zip|trace)$/i, message: 'Remove browser and test traces from dist.' },
+  { code: 'LOG', pattern: /\.log$/i, message: 'Remove generated logs from dist.' },
+  { code: 'BROWSER_PROFILE', pattern: /(^|\/)(?:browser-profiles?|chrome-profile|user-data-dir|browser-data)(\/|$)|(^|\/)cookies?(?:\.(?:json|sqlite))?$/i, message: 'Remove browser profiles and cookie stores from dist.' },
+  { code: 'TEST_OUTPUT', pattern: /(^|\/)(?:playwright-report|blob-report|test-results|\.playwright)(\/|$)/i, message: 'Remove generated browser-test output from dist.' },
+  { code: 'TASK_SCRATCH', pattern: /(^|\/)(?:\.?task[-_.]?scratch|\.?scratch|private-notes|internal-notes|authoring-notes)(?:[./-]|$)/i, message: 'Remove task scratch and internal authoring notes from dist.' },
+  { code: 'WORK_CELLS_AUDIO', pattern: forbiddenWorkCellsAudioPattern, message: 'Remove Work Cells audio files from dist; extracted animation audio is analysis-only.' },
+  { code: 'EXTRACTED_AUDIO', pattern: /(^|\/)(audio-extracts?|extracted-audio|audio-fallback)(\/|$)/i, message: 'Remove extracted audio intermediates from dist.' },
+  { code: 'TRANSCRIPT', pattern: /(^|\/)(transcripts?|topic-readable-transcripts)(\/|\.|$)/i, message: 'Remove transcript temporary files from dist; publish only reduced companion data.' },
+  { code: 'SCREENSHOT_CANDIDATE', pattern: /(^|\/)screenshot-candidates(\/|$)/i, message: 'Remove screenshot-candidates from dist; only selected published WebP stills may ship.' },
+  { code: 'REVIEW_CONTACT_SHEET', pattern: /(^|\/)review-contact-sheets(\/|$)/i, message: 'Remove review-contact-sheets from dist; contact sheets are review-only artifacts.' },
+  { code: 'SCENE_NOTES', pattern: /(^|\/)scene-notes(\/|$)/i, message: 'Remove scene-notes from dist; publish only explicitly reduced JSON if needed.' },
+  { code: 'PAGES_BY_VOLUME', pattern: /(^|\/)pages-by-volume(\/|$)/i, message: 'Remove pages-by-volume from dist; publish page-thumbnails instead.' },
+  { code: 'VISUAL_ANNOTATION_BUNDLE', pattern: /(^|\/)visual-annotation-bundles(\/|$)/i, message: 'Remove visual-annotation-bundles from dist; keep review bundles outside public publishing paths.' },
+  { code: 'PNG_ORIGINAL', pattern: /(^|\/)png-originals(\/|$)/i, message: 'Remove PNG originals from dist; source station PNG files must stay outside the release package.' },
+  { code: 'SCIENCE_STATION_PNG', pattern: /science-station\/.+\.png$/i, message: 'Remove science-station PNG images from dist; only WebP station assets may ship.' },
 ];
 
 function formatSize(bytes) {
@@ -98,65 +109,75 @@ function cleanupSuggestions(files) {
     : ['No obvious Work Cells cleanup item detected in dist.'];
 }
 
-function forbiddenReleaseItems(files) {
-  const allPaths = files.map((file) => relativePath(file.path));
+export function findForbiddenReleaseItems(relativePaths) {
   const items = [];
 
-  for (const { pattern, message } of forbiddenReleasePatterns) {
-    const matches = allPaths.filter((filePath) => pattern.test(filePath));
+  for (const { code, pattern, message } of forbiddenReleasePatterns) {
+    const matches = relativePaths.filter((filePath) => pattern.test(filePath));
     if (matches.length > 0) {
-      items.push({ message, matches });
+      items.push({ code, message, matches });
     }
   }
 
   return items;
 }
 
-if (!existsSync(distDir)) {
-  console.error('dist does not exist. Run node scripts/build.mjs first.');
-  process.exit(1);
-}
+export async function runDistAudit() {
+  if (!existsSync(distDir)) {
+    console.error('dist does not exist. Run node scripts/build.mjs first.');
+    return 1;
+  }
 
-const files = await collectFiles(distDir);
-const totalBytes = files.reduce((sum, file) => sum + file.size, 0);
-const largestFiles = [...files]
-  .sort((a, b) => b.size - a.size)
-  .slice(0, topLimit)
-  .map((file) => ({ path: relativePath(file.path), size: file.size }));
-const forbiddenItems = forbiddenReleaseItems(files);
+  const files = await collectFiles(distDir);
+  const totalBytes = files.reduce((sum, file) => sum + file.size, 0);
+  const largestFiles = [...files]
+    .sort((a, b) => b.size - a.size)
+    .slice(0, topLimit)
+    .map((file) => ({ path: relativePath(file.path), size: file.size }));
+  const allPaths = files.map((file) => relativePath(file.path));
+  const forbiddenItems = findForbiddenReleaseItems(allPaths);
 
-console.log(`dist total size: ${formatSize(totalBytes)} (${totalBytes} bytes)`);
-console.log(`warning limit: ${formatSize(warningLimitBytes)} (${warningLimitBytes} bytes)`);
-console.log(`status: ${totalBytes > warningLimitBytes ? 'OVER_LIMIT' : 'OK'}`);
+  console.log(`dist total size: ${formatSize(totalBytes)} (${totalBytes} bytes)`);
+  console.log(`warning limit: ${formatSize(warningLimitBytes)} (${warningLimitBytes} bytes)`);
+  console.log(`status: ${totalBytes > warningLimitBytes ? 'OVER_LIMIT' : 'OK'}`);
 
-console.log('\nlargest directories:');
-for (const item of largestDirectories(files)) {
-  console.log(`${formatSize(item.size).padStart(10)}  ${item.path}`);
-}
+  console.log('\nlargest directories:');
+  for (const item of largestDirectories(files)) {
+    console.log(`${formatSize(item.size).padStart(10)}  ${item.path}`);
+  }
 
-console.log('\nlargest files:');
-for (const item of largestFiles) {
-  console.log(`${formatSize(item.size).padStart(10)}  ${item.path}`);
-}
+  console.log('\nlargest files:');
+  for (const item of largestFiles) {
+    console.log(`${formatSize(item.size).padStart(10)}  ${item.path}`);
+  }
 
-console.log('\nsuggested cleanup items:');
-for (const suggestion of cleanupSuggestions(files)) {
-  console.log(`- ${suggestion}`);
-}
+  console.log('\nsuggested cleanup items:');
+  for (const suggestion of cleanupSuggestions(files)) {
+    console.log(`- ${suggestion}`);
+  }
 
-if (forbiddenItems.length > 0) {
-  console.log('\nforbidden release items:');
-  for (const item of forbiddenItems) {
-    console.log(`- ${item.message}`);
-    for (const match of item.matches.slice(0, topLimit)) {
-      console.log(`  - ${match}`);
-    }
-    if (item.matches.length > topLimit) {
-      console.log(`  - ...and ${item.matches.length - topLimit} more`);
+  if (forbiddenItems.length > 0) {
+    console.log('\nforbidden release items:');
+    for (const item of forbiddenItems) {
+      console.log(`- [${item.code}] ${item.message}`);
+      for (const match of item.matches.slice(0, topLimit)) {
+        console.log(`  - ${match}`);
+      }
+      if (item.matches.length > topLimit) {
+        console.log(`  - ...and ${item.matches.length - topLimit} more`);
+      }
     }
   }
+
+  return totalBytes > warningLimitBytes || forbiddenItems.length > 0 ? 1 : 0;
 }
 
-if (totalBytes > warningLimitBytes || forbiddenItems.length > 0) {
-  process.exitCode = 1;
+const directExecutionPath = process.argv[1] ? path.resolve(process.argv[1]) : '';
+const scriptPath = fileURLToPath(import.meta.url);
+const sameScript = process.platform === 'win32'
+  ? directExecutionPath.toLocaleLowerCase('en-US') === scriptPath.toLocaleLowerCase('en-US')
+  : directExecutionPath === scriptPath;
+
+if (sameScript) {
+  process.exitCode = await runDistAudit();
 }

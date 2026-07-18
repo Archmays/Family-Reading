@@ -2,16 +2,16 @@
 
 ## Answer first
 
-当前 build/tests 能稳定产出静态 Pages，但发布体系不是 fail-closed：
+原 P0 build/tests 能稳定产出静态 Pages，但发布体系不是 fail-closed：
 
 - 所有 route 首次 render 前加载 28 JSON、2,807,138 raw bytes；
 - dist 是 799.16 MiB，Actions 每次整包复制和上传；
-- build/workflow 不运行 `audit:dist`；
-- audit 是黑名单 + 900 MiB 总量，不是 rights-aware allowlist；
+- 原 P0 build/workflow 不运行 `audit:dist`；
+- 原 audit 是黑名单 + 900 MiB 总量，不是统一 public-repository/runtime-reference gate；
 - 本地 Node 24 与 workflow Node 22 不同；
 - 没有自动 browser/accessibility/route performance/live Pages tests。
 
-本地 acceptance 已通过；rights/privacy blocker 与性能问题不得混成同一个状态。
+原 P0 本地 acceptance 已通过；P0R1 将 rights 纠正为 `PASS_BY_USER_AUTHORIZATION`，并继续把 privacy/publishing hygiene 与性能问题分开。P0R1 最终 Node 22 build/test/dist/validator acceptance 为 PASS，63/63 tests。
 
 ## Build baseline
 
@@ -34,7 +34,7 @@
 
 ## Build behavior
 
-`scripts/build.mjs`：
+原 P0 `scripts/build.mjs`：
 
 1. 先运行 tests；
 2. tests PASS 后删除并重建 dist；
@@ -53,32 +53,32 @@
 - copy 中途失败会留下半成品 dist；
 - directory blacklist 是大小写敏感 exact name；
 - 没有 generated manifest、atomic swap、content hash 或 orphan check；
-- 当前 Carmela pages/audio 虽通过技术规则，rights 仍失败。
+- Carmela pages/audio 通过技术规则且由用户全局授权，可继续发布；后续只受 runtime-reference、体积和性能规则约束。
 
 ## Test responsibilities
 
 | File | Direct tests | Responsibility |
 |---|---:|---|
-| `tests/mvp.test.mjs` | 32 | product boundaries、IA/UI copy、Carmela、Work Cells、rights text、media、source/build/Pages source assertions |
+| `tests/mvp.test.mjs` | 32 | product boundaries、IA/UI copy、Carmela、Work Cells、authorization policy、media、source/build/Pages source assertions |
 | `tests/work-cells-epub-import.test.mjs` | 4 | ZIP/OPF/spine/nav、no-EPUB、multi-part、page-map/manual review |
 | `tests/work-cells-visual-annotations.test.mjs` | 4 | merge、27 topics/991 pages、frontend exposure、prompt docs |
 
 `mvp.test.mjs` 导入另两文件，所以 `npm test` 是 40。若未来直接 glob 三文件，导入 suite 会重复为 48。
 
-当前效率问题：
+原 P0 效率问题：
 
 - Work Cells 2.45 MB manifest 在链内至少重复 parse 12 次；
 - `publishedBookRecords()` 在 5 tests 重读 series + 24 per-book JSON；
 - 991 annotations 触发超过 5,100 次同步 exists check；
 - `npm test` 后再 `npm run build` 会重复完整 40 tests。
 
-当前覆盖缺口：
+原 P0 覆盖缺口：
 
 - build/audit 只做 source regex，缺 fixture-driven behavior test；
 - 无 browser、keyboard、axe、visual regression；
 - 无 route network/Lighthouse；
 - 无 live Pages smoke；
-- 无 rights approval/allowlist fixture。
+- 原 P0 无 tracked-private/OCR-processing/local-path/secret/public-repository focused fixtures。
 
 未来职责拆分建议：
 
@@ -95,7 +95,7 @@ browser-smoke/
 accessibility-visual/
 ```
 
-P0 不执行拆分。P1 先把 source/publish safety 独立为 fail-closed tests，再优化共享 manifest/book cache。
+P0 未执行拆分。P0R1/FR-P1 Privacy and Publishing Hygiene 已把 public-repository/source/publish safety 独立为 fail-closed tests；最终 test count 为 63/63，之后再优化共享 manifest/book cache。
 
 ## Startup and route payload
 
@@ -142,7 +142,7 @@ Referenced raw bytes：
 - manifest 991 annotations 和 authoring fields 远大于 runtime 所需。
 - 文件名无 content hash，cache invalidation 粗。
 
-不要通过删除 source 或未经批准转换原始资产伪造性能提升。未来顺序应是 rights/allowlist → route scoping → responsive derivatives → cache/versioning。
+不要通过删除、覆盖或未经用户请求转换原始 source 伪造性能提升。未来顺序应是 privacy/public-repository validation → route scoping → responsive derivatives → cache/versioning。
 
 ## Recommended future gates
 
@@ -163,7 +163,7 @@ Referenced raw bytes：
 
 ## Pages
 
-Workflow：
+原 P0 workflow：
 
 - trigger：main push / workflow_dispatch；
 - Node 22；
@@ -172,7 +172,7 @@ Workflow：
 - upload `dist`；
 - deploy。
 
-当前远端：
+原 P0 远端 baseline：
 
 | Item | Fact |
 |---|---|
@@ -191,7 +191,7 @@ Artifact 比 local dist 小 9,294,578 B（1.1092%），但 artifact 是上传归
 
 ## Browser and live QA
 
-Local representative routes 已验证：
+原 P0 local representative routes 已验证：
 
 - direct hash reload；
 - home、两 series、Carmela book、heavy science topic；
@@ -203,7 +203,7 @@ Local representative routes 已验证：
 - desktop、mobile、tablet、short landscape；
 - console errors 0。
 
-Current live Pages：
+原 P0 live Pages：
 
 - in-app browser 成功加载当前 main 首页；
 - title 正确；
@@ -211,7 +211,7 @@ Current live Pages：
 - Carmela 与 Work Cells 两入口均存在；
 - GitHub Pages API 与 run metadata 对应 current main。
 
-Shell HEAD probe 在本机 TLS 层失败，未把该环境错误写成站点 404。任务分支未 push，故没有“本任务 commit 的 Pages run”；这是 blocker 导致的正确停止，不是 connector limitation。
+Shell HEAD probe 在本机 TLS 层失败，未把该环境错误写成站点 404。原 P0 任务分支未 push；P0R1 最终 SHA 的 Pages run/live 精确证据由 post-commit final handoff 记录。
 
 ## Accessibility and visual performance limitations
 
@@ -226,7 +226,7 @@ Shell HEAD probe 在本机 TLS 层失败，未把该环境错误写成站点 404
 - lightbox focus return fail；
 - color contrast estimates need axe confirmation。
 
-P6 最终验收必须在 rights-cleared build 上运行：
+P6 最终验收必须在通过 privacy/public-repository/source/build gate 的 release build 上运行：
 
 - Lighthouse mobile/desktop；
 - axe；

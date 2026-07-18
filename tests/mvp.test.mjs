@@ -12,8 +12,6 @@ const bookIndexPath = path.join(rootDir, 'public', 'books', 'index.json');
 const contentTypesPath = path.join(rootDir, 'public', 'books', 'content-types.json');
 const workCellsDraftPath = path.join(rootDir, 'public', 'books', '工作细胞', 'draft-manifest.json');
 const workCellsPageMapPath = path.join(rootDir, 'data', 'cells-at-work', 'page-map.json');
-const workCellsAnimationInventoryPath = path.join(rootDir, 'data-private', 'cells-at-work', 'animation', 'animation-resource-inventory.json');
-const workCellsAnimationTopicMapPath = path.join(rootDir, 'data-private', 'cells-at-work', 'animation', 'animation-topic-map.json');
 const workCellsTerminologyPath = path.join(rootDir, 'docs', 'work-cells-terminology-review.md');
 const workCellsImportReportPath = path.join(rootDir, 'docs', 'work-cells-import-report.md');
 const workCellsV2ContentStandardPath = path.join(rootDir, 'docs', 'work-cells-v2-content-standard.md');
@@ -895,11 +893,17 @@ test('Work Cells terminology and import report document manual review boundaries
 });
 
 test('static app files and required visible labels exist', () => {
-  for (const file of ['index.html', path.join('assets', 'app.js'), path.join('assets', 'styles.css')]) {
+  for (const file of [
+    'index.html',
+    path.join('assets', 'app.js'),
+    path.join('assets', 'favicon.svg'),
+    path.join('assets', 'styles.css'),
+  ]) {
     assert.equal(existsSync(path.join(rootDir, file)), true, `${file} should exist`);
   }
 
   const text = appText();
+  assert.match(readFileSync(path.join(rootDir, 'index.html'), 'utf8'), /href="assets\/favicon\.svg"/);
   for (const label of requiredUiText) {
     assert.match(text, new RegExp(label.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `${label} should be present`);
   }
@@ -1048,8 +1052,25 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
   const workflowPath = path.join(rootDir, '.github', 'workflows', 'pages.yml');
   const readmePath = path.join(rootDir, 'README.md');
   const deploymentDocPath = path.join(rootDir, 'docs', 'github-pages-deployment.md');
+  const releaseVerificationPath = path.join(rootDir, 'scripts', 'verify-release.mjs');
+  const sharedTestRunnerPath = path.join(rootDir, 'scripts', 'run-tests.mjs');
 
   assert.equal(packageJson.scripts?.build, 'node scripts/build.mjs', 'build command should be configured');
+  assert.equal(
+    packageJson.scripts?.test,
+    'node scripts/run-tests.mjs',
+    'package and Pages verification should share one full-test entrypoint',
+  );
+  assert.equal(
+    packageJson.scripts?.['validate:public-repo'],
+    'node scripts/validate-public-repository.mjs',
+    'public repository validator should be configured',
+  );
+  assert.equal(
+    packageJson.scripts?.['verify:release'],
+    'node scripts/verify-release.mjs',
+    'release verification should use the cross-platform orchestrator',
+  );
   assert.match(buildScript, /\bdist\b/, 'build script should declare dist as the output directory');
   assert.match(buildScript, /\bpublic\b/, 'build script should publish public app assets');
   assert.match(buildScript, /\bassets\b/, 'build script should publish app assets');
@@ -1057,7 +1078,42 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
   assert.match(buildScript, /\bsource\b/, 'build script should explicitly keep source material out of dist');
   assert.match(buildScript, /publishedBookCount\s*=\s*12/, 'build script should publish the current twelve books');
   assert.match(buildScript, /series\.books\.slice\(0,\s*publishedBookCount\)/, 'build script should avoid publishing unused book folders');
+  assert.match(
+    buildScript,
+    /resolveCarmelaBookPaths\(\{[\s\S]*folder:\s*book\.folder/,
+    'build should contain every manifest-selected Carmela folder before reading or writing',
+  );
   assert.match(buildScript, /data[\s\S]*cells-at-work[\s\S]*page-map\.json/, 'build script should publish the Work Cells page map');
+  assert.equal(
+    buildScript.indexOf("runNodeGate('scripts/validate-public-repository.mjs')") < buildScript.indexOf('await rm(outputDir'),
+    true,
+    'public repository validation should fail before build copying starts',
+  );
+  assert.equal(
+    buildScript.indexOf("runNodeGate('scripts/audit-dist-assets.mjs')") > buildScript.indexOf("writeFile(path.join(outputDir, '.nojekyll')"),
+    true,
+    'dist audit should run after the static output is complete',
+  );
+  assert.doesNotMatch(buildScript, /--test/, 'build should not repeat the full test suite');
+
+  assert.equal(existsSync(releaseVerificationPath), true, 'release verification orchestrator should exist');
+  assert.equal(existsSync(sharedTestRunnerPath), true, 'shared full-test entrypoint should exist');
+  const releaseVerification = readFileSync(releaseVerificationPath, 'utf8');
+  assert.match(
+    releaseVerification,
+    /scripts\/run-tests\.mjs/,
+    'release verification should invoke the shared full-test entrypoint once',
+  );
+  assert.equal(
+    (releaseVerification.match(/scripts\/run-tests\.mjs/g) ?? []).length,
+    1,
+    'release verification should not duplicate the full test suite',
+  );
+  assert.doesNotMatch(
+    releaseVerification,
+    /tests\/.+\.test\.mjs/,
+    'release verification should not duplicate the package test-file list',
+  );
 
   assert.equal(existsSync(workflowPath), true, 'GitHub Pages workflow should exist');
   const workflow = readFileSync(workflowPath, 'utf8');
@@ -1065,18 +1121,23 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
     'actions/configure-pages',
     'actions/upload-pages-artifact',
     'actions/deploy-pages',
-    'npm run build',
+    'npm run verify:release',
     'path: dist',
   ]) {
     assert.match(workflow, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `workflow should include ${phrase}`);
   }
+  assert.equal(
+    workflow.indexOf('npm run verify:release') < workflow.indexOf('actions/upload-pages-artifact'),
+    true,
+    'Pages verification should fail before artifact upload',
+  );
 
   for (const docPath of [readmePath, deploymentDocPath]) {
     assert.equal(existsSync(docPath), true, `${path.basename(docPath)} should exist`);
     const doc = readFileSync(docPath, 'utf8');
     for (const phrase of [
       'GitHub Pages',
-      'npm run build',
+      'npm run verify:release',
       'dist',
       'Actions',
       'source/',
@@ -1139,48 +1200,51 @@ test('dist asset audit script is available', () => {
   assert.match(auditScript, /largest files/i);
 });
 
-test('Work Cells animation inventory records private source resources only', () => {
-  const inventory = readJson(workCellsAnimationInventoryPath);
+test('Work Cells runtime manifest contains only reduced animation projections', () => {
+  const manifest = readJson(workCellsDraftPath);
+  const allowedSceneFields = new Set([
+    'sceneId',
+    'sourceLabel',
+    'summary',
+    'policy',
+    'sourceMode',
+    'reviewStatus',
+  ]);
 
-  assert.equal(inventory.schemaVersion, 1);
-  assert.equal(inventory.sourceDirectory, 'source/工作细胞');
-  assert.equal(inventory.summary.mp4Count, 22);
-  assert.equal(inventory.summary.srtCount, 14);
-  assert.equal(inventory.summary.matchedPairCount, 14);
-  assert.equal(inventory.summary.mp4MissingSrtCount, 8);
-  assert.equal(inventory.summary.orphanSrtCount, 0);
-  assert.equal(inventory.resources.length, 22);
-  assert.equal(inventory.orphanSrtFiles.length, 0);
+  assert.equal(manifest.topics.length, 27);
+  assert.equal(
+    manifest.topics.filter((topic) => topic.relatedAnimationScenes.length > 0).length,
+    23,
+  );
 
-  for (const item of inventory.resources) {
-    assert.match(item.videoPath, /^source\/工作细胞\/.+\.mp4$/);
-    assert.equal(item.videoPath.includes('/dist/'), false);
-    assert.equal(item.videoPath.includes('/public/'), false);
-    if (item.hasSrt) {
-      assert.match(item.srtPath, /^source\/工作细胞\/.+_English\.srt$/);
-    } else {
-      assert.equal(item.srtFileName, null);
-      assert.equal(item.srtPath, null);
+  for (const topic of manifest.topics) {
+    assert.equal(Array.isArray(topic.relatedAnimationScenes), true);
+    assert.equal(topic.qualityFlags.noFullAnimationDialogue, true);
+    for (const scene of topic.relatedAnimationScenes) {
+      assert.deepEqual(
+        Object.keys(scene).filter((field) => !allowedSceneFields.has(field)),
+        [],
+        `${topic.topicId} exposes a private animation authoring field`,
+      );
+      assert.equal(scene.policy, 'no-video-no-subtitle-no-dialogue');
     }
   }
+
+  const serialized = JSON.stringify(manifest);
+  assert.equal(serialized.includes('data-private/'), false);
+  assert.equal(serialized.includes('candidateScreenshotTimes'), false);
+  assert.equal(serialized.includes('srtFile'), false);
+  assert.equal(serialized.includes('animationFile'), false);
 });
 
-test('Work Cells animation topic map keeps summaries and mappings non-publishable', () => {
-  const topicMap = readJson(workCellsAnimationTopicMapPath);
+test('private authoring metadata and OCR processing outputs stay ignored', () => {
+  const gitignore = readFileSync(path.join(rootDir, '.gitignore'), 'utf8');
 
-  assert.equal(topicMap.schemaVersion, 1);
-  assert.equal(topicMap.topicMappings.length, 27);
-  assert.equal(topicMap.contentPolicy.doNotQuoteDialogue, true);
-  assert.equal(topicMap.contentPolicy.noFullSubtitleRelease, true);
-  assert.equal(topicMap.contentPolicy.noAnimationPlayer, true);
-
-  const byId = new Map(topicMap.topicMappings.map((item) => [item.topicId, item]));
-  assert.equal(byId.get('cancer-cell').matchConfidence, 'high');
-  assert.equal(byId.get('cancer-cell-ii').matchConfidence, 'high');
-  assert.notDeepEqual(byId.get('cancer-cell').matchedAnimationFiles, byId.get('cancer-cell-ii').matchedAnimationFiles);
-  assert.equal(byId.get('hemorrhagic-shock').matchedAnimationFiles.length, 2);
-  assert.equal(byId.get('covid-19').matchConfidence, 'none');
-  assert.deepEqual(byId.get('covid-19').matchedAnimationFiles, []);
+  assert.match(gitignore, /^data-private\/$/m);
+  assert.doesNotMatch(gitignore, /^!data-private\//m);
+  assert.match(gitignore, /^\*\*\/ocr\/\*\*$/m);
+  assert.match(gitignore, /^\*\*\/full-text\.txt$/m);
+  assert.match(gitignore, /^\*\*\/ocr-report\.json$/m);
 });
 
 test('build and dist audit block animation source and private review assets', () => {
@@ -1208,5 +1272,14 @@ test('build and dist audit block animation source and private review assets', ()
 
   assert.match(auditScript, /forbiddenWorkCellsAudioPattern/, 'audit should detect Work Cells audio files without blocking all public audio');
   assert.match(auditScript, /topic-readable-transcripts/, 'audit should reject transcript review artifacts');
-  assert.match(auditScript, /process\.exitCode\s*=\s*1/);
+  assert.match(
+    auditScript,
+    /return totalBytes > warningLimitBytes \|\| forbiddenItems\.length > 0 \? 1 : 0/,
+    'audit should return failure when a size or forbidden-path gate fails',
+  );
+  assert.match(
+    auditScript,
+    /process\.exitCode\s*=\s*await runDistAudit\(\)/,
+    'audit CLI should propagate the fail-closed result',
+  );
 });

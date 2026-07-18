@@ -4,7 +4,7 @@
 
 现有产品方向正确：它是纸质书旁边的伴读面板，不是电子书或阅读管理产品。保留“暖色家庭书架”视觉与 `首页 → 系列 → 书/科学主题 → 伴读模块` IA；未来以共享 shell、tokens 和可访问 primitives 为基础，让 Carmela 使用故事伴读模板、Work Cells 使用科学主题模板。不要把两个领域压成同一内容结构。
 
-最需要先解决的不是视觉重做，而是 rights containment、首屏全站数据耦合、长页信息密度、route/focus 管理、lightbox 无障碍和短横屏。
+最需要先解决的不是视觉重做，而是 privacy/publishing hygiene、首屏全站数据耦合、长页信息密度、route/focus 管理、lightbox 无障碍和短横屏。P0R1 已完成 privacy disposition、validator/build/Pages integration 与 Node 22 acceptance；其余 UI 发现继续作为 FR-P2 输入。
 
 ## Skill audit
 
@@ -14,7 +14,7 @@
 | Frontend design | 任务要求设计系统与 UI 方向 | 保留现有色板/语气，提出 token/primitives 演进而非换皮 |
 | Browser / Playwright workflow | 任务要求真实浏览器、响应式和交互 QA | 采集桌面/手机/平板/短横屏、DOM、focus、lightbox、answer、history |
 
-截图仅保存在 task scratch，未提交完整版权页面或 browser profile。
+原 P0 截图仅保存在 task scratch，未保存 browser profile、cookies、HAR、trace 或 token。完整作品内容本身不再被视为 rights/privacy blocker。
 
 ## Existing information architecture
 
@@ -48,17 +48,17 @@
 | 职责 | 当前权威 | 重复/冲突 |
 |---|---|---|
 | 系列顺序、标题、slug、audio | `series.json` | assets/companion 重复 identity；companion 重复 audio |
-| 页边界、页图清单 | `book-assets.json` | companion sourceEvidence 再引用 OCR/page roots |
+| 页边界、页图清单 | `book-assets.json` | companion sourceEvidence 仅保留 page root 与 OCR 的非路径用途说明 |
 | 编辑内容 | `companion.json` | 包含系列/书 identity 和 source paths |
 | 书目发现 | `public/books/index.json` | 与 series identity 有轻度重复 |
 
 模型：
 
-- `series.json`：12 册，每册 `order,title,slug,folder,assetFile,companionFile,ocrReport,audio`。
+- `series.json`：12 册，每册 `order,title,slug,folder,assetFile,companionFile,audio`；P0R1 已移除 processing-only `ocrReport` locator。
 - `book-assets.json`：页边界、页数、`pageImages`、source PDF reference、review flag。
 - `companion.json`：overview、storyReview、scenes、三类 question cards、background、encyclopedia、parent guide、audio 和 manual review。
 
-全系列实测：320 页、73 scenes、108 questions、36 background items、40 encyclopedia items。第 1 册 26 页/6 scenes/9 questions；复杂样本第 11 册 48 页/7 scenes/15 个主要角色。旧 boundary review 对第 11 册仍写 follow-up，当前 data 却是 `needsReview:false`，需要 P1/P3 明确闭环。
+全系列实测：320 页、73 scenes、108 questions、36 background items、40 encyclopedia items。第 1 册 26 页/6 scenes/9 questions；复杂样本第 11 册 48 页/7 scenes/15 个主要角色。旧 boundary review 对第 11 册仍写 follow-up，当前 data 却是 `needsReview:false`，需要 P3 明确闭环。
 
 ## Work Cells source of truth
 
@@ -76,7 +76,7 @@ Manifest：2,445,765 B、52,214 行、27 topics、991 annotations、108 publishe
 - `verificationStatus: from_user_reference_only`
 - `licenseBasis: user_confirmed_authorization`
 
-topic 文案批准不能升级全局 release、医学或 rights 状态。
+topic 文案批准不能升级全局 release 或医学验证状态；rights 状态已由用户全局授权独立确定为 `PASS_BY_USER_AUTHORIZATION`。
 
 Page map：104,188 B、27 topics、991 paths；`sourceOfTruth: manual-topic-ranges`、无 missing images、无 OCR、未使用 EPUB nav。它与 manifest 媒体字段全量一致；显式展示名差异只有 psoriasis。
 
@@ -90,12 +90,12 @@ item: { id, slug, order, title, displayTitle? }
 navigationMode
 publication: { manifestStatus, contentStatus }
 verification: { status, basis, reviewedAt? }
-rights: { basis, allowedAssetClasses, restrictions, attribution? }
+authorization: { status: PASS_BY_USER_AUTHORIZATION, provenance? }
 mediaSummary: { thumbnail, hasAudio }
 payload: PictureBookPayload | ScienceTopicPayload
 ```
 
-`PictureBookPayload` 保留 story、scene/page range、三类问题、背景、百科、家长提示和音频。`ScienceTopicPayload` 保留 biology concepts、stations、typed parent cards、sensitive guidance、来源线索和 reduced animation summaries。
+`PictureBookPayload` 保留 story、scene/page range、三类问题、背景、百科、家长提示和音频。`ScienceTopicPayload` 保留 biology concepts、stations、typed parent cards、sensitive guidance、来源线索和 reduced animation summaries。Authorization/provenance 只用于记录和来源定位，不得成为 copyright/license gate。
 
 以下不得进入 public runtime envelope：
 
@@ -197,6 +197,6 @@ CSS 缺口：
 4. Work Cells detail 聚焦科学导读、stations、问题和敏感指导。
 5. 首页只加载系列 envelope；series 只加载该领域索引；detail 按 route/section 加载。
 6. 浏览使用 thumbnail；detail asset 只在展开/lightbox 时请求。
-7. 打印只允许 companion text/questions，不打印完整版权页。
+7. 打印默认聚焦 companion text/questions，并按产品布局隐藏导航和重媒体；这不是版权限制。
 
 本阶段只提出方向，没有改 UI、app.js 或 styles.css。
