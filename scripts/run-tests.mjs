@@ -5,6 +5,7 @@ import path from 'node:path';
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export const testFiles = [
   'tests/mvp.test.mjs',
+  'tests/fr-p2-ui.test.mjs',
   'tests/public-repository-validator.test.mjs',
   'tests/release-gates.test.mjs',
 ];

@@ -84,16 +84,17 @@ const expectedAudio = new Map([
   }],
 ]);
 const requiredUiText = [
-  'Book Companion / 家庭阅读助手',
+  '温暖伴读图册',
+  'Warm Companion Atlas',
+  '纸质书旁边的伴读工具',
   '选择阅读主题',
-  '进入卡梅拉',
-  '进入工作细胞',
+  '走进绘本书架',
+  '走进科学主题馆',
   '不一样的卡梅拉',
-  '类型：绘本',
-  '进入辅助页',
-  'Audio / 音频',
-  '问答',
-  '百科',
+  '打开伴读资料',
+  '含音频',
+  '问题卡',
+  '听音频',
   '书籍总览',
   '内容回顾',
   '场景 / 页码',
@@ -923,8 +924,16 @@ test('home page shows series entrances before book or topic lists', () => {
   assert.match(homeBody, /#\/series\/\$\{WORK_CELLS_SERIES_SLUG\}/, 'home should link to the Work Cells series entrance');
   assert.equal(homeBody.includes('model.books.map((book) => bookCard(book))'), false, 'home should not render all Carmela books directly');
   assert.equal(homeBody.includes('scienceSeriesSection(model.scienceSeries)'), false, 'home should not render all Work Cells topics directly');
-  assert.match(carmelaSeriesBody, /model\.books\.map\(\(book\) => bookCard\(book\)\)/, 'Carmela series page should render book cards');
-  assert.match(scienceSeriesBody, /scienceSeries\.manifest\.topics\.map\(\(topic\) => scienceTopicCard\(scienceSeries, topic\)\)/, 'Work Cells series page should render topic cards');
+  assert.match(
+    carmelaSeriesBody,
+    /model\.books\.map\(\(book\) => `<li id="book-\$\{book\.order\}">\$\{bookCard\(book\)\}<\/li>`\)/,
+    'Carmela series page should render addressable book cards',
+  );
+  assert.match(
+    scienceSeriesBody,
+    /categoryTopics\.map\(\(topic\) => scienceTopicCard\([\s\S]*?scienceSeries,[\s\S]*?topic,[\s\S]*?`category-\$\{index \+ 1\}`/,
+    'Work Cells category groups should render addressable topic cards',
+  );
 });
 
 test('published books have companion data and usable media paths', () => {

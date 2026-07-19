@@ -1,11 +1,17 @@
+import { wireImageLightbox } from './a11y.js';
+
 const BOOK_INDEX = 'public/books/index.json';
 const CARMELA_SERIES_SLUG = 'carmela-season-1';
 const WORK_CELLS_SERIES_SLUG = 'work-cells';
 const FIRST_BATCH = 12;
 const app = document.querySelector('#app');
+const main = document.querySelector('#main-content');
+const breadcrumb = document.querySelector('#breadcrumb');
+const routeAnnouncer = document.querySelector('#route-announcer');
+const skipLink = document.querySelector('.skip-link');
 let model = null;
-let lightboxItems = [];
-let lightboxIndex = 0;
+let currentPageKey = '';
+let cleanupView = () => {};
 
 const sectionNav = [
   ['overview', '书籍总览'],
@@ -16,6 +22,12 @@ const sectionNav = [
   ['encyclopedia', '剧情相关百科'],
   ['audio', '音频播放器'],
   ['parents', '家长使用提示'],
+];
+const scienceSectionNav = [
+  ['science-overview', '主题导读'],
+  ['science-station', '身体科学小站'],
+  ['science-questions', '亲子问题卡'],
+  ['source', '来源备注'],
 ];
 
 function sitePath(resourcePath) {
@@ -106,56 +118,52 @@ function mergeScienceManifest(manifest, pageMap) {
   };
 }
 
-function header() {
-  return `
-    <header class="site-header">
-      <div class="header-inner">
-        <a class="brand-link" href="#/" aria-label="返回首页">
-          <span class="brand-mark">书</span>
-          <span class="brand-text">
-            <span class="brand-title">Book Companion / 家庭阅读助手</span>
-          </span>
-        </a>
-      </div>
-    </header>
-  `;
-}
-
 function bookCard(book, compact = false) {
+  const orderLabel = String(book.order ?? '').padStart(2, '0');
+  const audioAvailable = Boolean(book.audio?.path);
+  const returnSection = `book-${book.order}`;
+  const returnAttributes = `data-return-series="${CARMELA_SERIES_SLUG}" data-return-section="${returnSection}"`;
   const cardActions = compact
     ? ''
     : `
       <div class="card-actions">
-        <a class="action-button" href="#/book/${book.slug}">进入辅助页</a>
-        <a class="ghost-button" href="#/book/${book.slug}/audio">Audio / 音频</a>
-        <a class="ghost-button" href="#/book/${book.slug}/questions">问答</a>
-        <a class="ghost-button" href="#/book/${book.slug}/encyclopedia">百科</a>
+        <a class="action-button" href="#/book/${book.slug}" ${returnAttributes}>打开伴读资料</a>
+        <div class="secondary-actions" aria-label="${html(book.title)}快捷入口">
+          <a href="#/book/${book.slug}/questions" ${returnAttributes}>问题卡</a>
+          ${audioAvailable ? `<a href="#/book/${book.slug}/audio" ${returnAttributes}>听音频</a>` : ''}
+        </div>
       </div>
     `;
+  const title = compact
+    ? `<p class="card-title">${html(book.title)}</p>`
+    : `<h2>${html(book.title)}</h2>`;
 
   return `
-    <article class="book-card">
+    <article class="book-card${compact ? ' book-card-compact' : ''}">
       <div class="cover-frame">
         <img src="${sitePath(book.cover)}" alt="${html(book.title)}封面" loading="lazy">
         <span class="cover-fallback">封面图片暂时无法显示</span>
       </div>
       <div class="card-body">
-        <h3>${html(book.title)}</h3>
-        <ul class="meta-list" aria-label="书籍资料">
-          <li>系列：${html(book.seriesTitle)}</li>
-          <li>类型：绘本</li>
-        </ul>
+        ${compact ? '' : `<p class="card-index"><span aria-hidden="true">册</span> ${html(orderLabel)}</p>`}
+        ${title}
+        <p class="card-meta">
+          <span>绘本伴读</span>
+          <span class="availability-label" data-available="${audioAvailable}">
+            ${audioAvailable ? '含音频' : '文字资料'}
+          </span>
+        </p>
         ${cardActions}
       </div>
     </article>
   `;
 }
 
-function seriesEntryCard({ title, description, href, typeLabel, coverImage, actionLabel }) {
+function seriesEntryCard({ title, description, href, typeLabel, coverImage, actionLabel, domain }) {
   return `
-    <article class="series-entry-card">
+    <article class="series-entry-card series-entry-card--${html(domain)}">
       <a class="series-entry-link" href="${href}" aria-label="进入${html(title)}">
-        <div class="series-entry-cover">
+        <div class="series-entry-cover${coverImage ? '' : ' cover-missing'}">
           ${coverImage ? `<img src="${sitePath(coverImage)}" alt="${html(title)}入口图" loading="lazy">` : ''}
           <span class="cover-fallback">入口图片暂时无法显示</span>
         </div>
@@ -174,94 +182,155 @@ function homePage() {
   const carmelaCover = model.books[0]?.cover ?? '';
   const workCellsCover = model.scienceSeries?.manifest?.topics?.[0]?.thumbnailPath ?? '';
   return `
-    ${header()}
-    <main>
-      <section class="series-entry-section" aria-labelledby="home-title">
-        <div class="section-heading">
-          <div>
-            <h1 id="home-title">选择阅读主题</h1>
-            <p>先选系列，再进入这个主题里的书籍或科学主题。</p>
-          </div>
+    <section class="series-entry-section" aria-labelledby="home-title">
+      <div class="section-heading section-heading--home">
+        <p class="eyebrow">纸质书旁边的温暖伴读</p>
+        <div>
+          <h1 id="home-title" data-route-heading tabindex="-1">选择阅读主题</h1>
+          <p>先选择正在阅读的系列，再按需要打开故事回顾、问题卡或科学补充。</p>
         </div>
-        <div class="series-entry-grid">
-          ${seriesEntryCard({
-            title: '不一样的卡梅拉',
-            description: '绘本伴读入口：进入后选择具体书目，再查看故事回顾、问题卡、背景补充、百科和音频。',
-            href: `#/series/${CARMELA_SERIES_SLUG}`,
-            typeLabel: '绘本系列',
-            coverImage: carmelaCover,
-            actionLabel: '进入卡梅拉',
-          })}
-          ${seriesEntryCard({
-            title: model.scienceSeries?.manifest?.seriesTitle ?? '工作细胞',
-            description: '科学漫画伴读入口：进入后按主题查看导读、身体科学小站和亲子问题卡。',
-            href: `#/series/${WORK_CELLS_SERIES_SLUG}`,
-            typeLabel: '科学漫画主题',
-            coverImage: workCellsCover,
-            actionLabel: '进入工作细胞',
-          })}
-        </div>
-      </section>
-    </main>
+      </div>
+      <div class="series-entry-grid">
+        ${seriesEntryCard({
+          title: '不一样的卡梅拉',
+          description: '从绘本书架选择书目，回顾故事、聊一聊问题，也可以听配套音频。',
+          href: `#/series/${CARMELA_SERIES_SLUG}`,
+          typeLabel: '绘本伴读',
+          coverImage: carmelaCover,
+          actionLabel: '走进绘本书架',
+          domain: 'carmela',
+        })}
+        ${seriesEntryCard({
+          title: model.scienceSeries?.manifest?.seriesTitle ?? '工作细胞',
+          description: '从科学主题馆按类别找到导读、身体科学小站与亲子问题卡。',
+          href: `#/series/${WORK_CELLS_SERIES_SLUG}`,
+          typeLabel: '科学主题伴读',
+          coverImage: workCellsCover,
+          actionLabel: '走进科学主题馆',
+          domain: 'science',
+        })}
+      </div>
+      <p class="usage-tip"><span aria-hidden="true">↗</span> 先读纸质书，再按需要查看辅助资料。</p>
+    </section>
   `;
 }
 
 function carmelaSeriesPage() {
   return `
-    ${header()}
-    <main>
-      <section class="season-section" aria-labelledby="season-title">
-        <a class="back-link" href="#/">返回首页</a>
-        <div class="section-heading">
-          <div>
-            <h1 id="season-title">不一样的卡梅拉</h1>
-            <p>选择一本书，打开对应的家庭阅读助手内容。</p>
-          </div>
+    <section class="season-section season-section--carmela" aria-labelledby="season-title">
+      <div class="section-heading">
+        <p class="eyebrow">绘本书架 · 第一季</p>
+        <div>
+          <h1 id="season-title" data-route-heading tabindex="-1">不一样的卡梅拉</h1>
+          <p>按册序选择手边的纸质书，再打开对应的伴读资料。</p>
         </div>
-        <div class="book-grid">
-          ${model.books.map((book) => bookCard(book)).join('')}
-        </div>
-      </section>
-    </main>
+      </div>
+      ${model.books.length
+        ? `<ol class="book-grid" aria-label="不一样的卡梅拉书目">
+            ${model.books.map((book) => `<li id="book-${book.order}">${bookCard(book)}</li>`).join('')}
+          </ol>`
+        : `<section class="empty-state" aria-labelledby="carmela-empty-title">
+            <h2 id="carmela-empty-title">暂时没有可显示的书目</h2>
+            <p>可以稍后重试，或先返回首页选择其他主题。</p>
+          </section>`}
+    </section>
   `;
 }
 
+function groupScienceTopics(topics) {
+  const groups = new Map();
+  topics.forEach((topic) => {
+    const category = topic.category || '其他科学主题';
+    if (!groups.has(category)) groups.set(category, []);
+    groups.get(category).push(topic);
+  });
+  return [...groups.entries()];
+}
+
 function scienceSeriesSection(scienceSeries) {
-  if (!scienceSeries?.manifest?.topics?.length) return '';
+  const topics = scienceSeries?.manifest?.topics ?? [];
+  const groups = groupScienceTopics(topics);
+  if (!topics.length) {
+    return `
+      <section class="season-section season-section--science" aria-labelledby="science-title">
+        <div class="section-heading">
+          <p class="eyebrow">科学主题馆</p>
+          <div>
+            <h1 id="science-title" data-route-heading tabindex="-1">工作细胞</h1>
+            <p>按身体与健康主题查找纸质漫画旁的补充资料。</p>
+          </div>
+        </div>
+        <section class="empty-state" aria-labelledby="science-empty-title">
+          <h2 id="science-empty-title">暂时没有可显示的科学主题</h2>
+          <p>可以稍后重试，或先返回首页选择其他主题。</p>
+        </section>
+      </section>
+    `;
+  }
+
   return `
-    <section class="season-section" aria-labelledby="science-title">
-      <a class="back-link" href="#/">返回首页</a>
+    <section class="season-section season-section--science" aria-labelledby="science-title">
       <div class="section-heading">
+        <p class="eyebrow">科学主题馆</p>
         <div>
-          <h1 id="science-title">${html(scienceSeries.manifest.seriesTitle)}</h1>
-          <p>按主题进入伴读内容，不按卷展示。</p>
+          <h1 id="science-title" data-route-heading tabindex="-1">${html(scienceSeries.manifest.seriesTitle)}</h1>
+          <p>按主题类别找到纸质漫画旁的科学导读，主题顺序与现有资料一致。</p>
         </div>
       </div>
-      <div class="book-grid">
-        ${scienceSeries.manifest.topics.map((topic) => scienceTopicCard(scienceSeries, topic)).join('')}
+      <nav class="category-navigation" aria-label="科学主题类别">
+        <details class="category-nav" data-category-nav open>
+          <summary>
+            <span>快速到达</span>
+            <strong>浏览 ${groups.length} 个主题类别</strong>
+          </summary>
+          <div>
+            ${groups.map(([category], index) => (
+              `<a href="#/series/${scienceSeries.seriesSlug}/category-${index + 1}">${html(category)}</a>`
+            )).join('')}
+          </div>
+        </details>
+      </nav>
+      <div class="topic-category-list">
+        ${groups.map(([category, categoryTopics], index) => `
+          <section id="category-${index + 1}" class="topic-category" aria-labelledby="category-${index + 1}-title">
+            <header class="topic-category-heading">
+              <p>${String(index + 1).padStart(2, '0')}</p>
+              <h2 id="category-${index + 1}-title" tabindex="-1">${html(category)}</h2>
+              <span>${categoryTopics.length} 个主题</span>
+            </header>
+            <div class="topic-grid">
+              ${categoryTopics.map((topic) => scienceTopicCard(
+                scienceSeries,
+                topic,
+                `category-${index + 1}`,
+              )).join('')}
+            </div>
+          </section>
+        `).join('')}
       </div>
     </section>
   `;
 }
 
-function scienceTopicCard(scienceSeries, topic) {
-  const sourceLabel = topic.source?.sourceLabel ?? '来源待核对';
+function scienceTopicCard(scienceSeries, topic, returnSection = '') {
+  const sourceLabel = topic.source?.sourceLabel ?? '来源信息暂缺';
   const thumbnail = topic.thumbnailPath;
+  const returnAttributes = returnSection
+    ? `data-return-series="${scienceSeries.seriesSlug}" data-return-section="${returnSection}"`
+    : '';
   return `
-    <article class="book-card">
-      <div class="cover-frame">
+    <article class="topic-card">
+      <div class="topic-thumbnail${thumbnail ? '' : ' thumbnail-missing'}">
         ${thumbnail ? `<img src="${sitePath(thumbnail)}" alt="${html(topic.displayTitle)}页面缩略图" loading="lazy">` : ''}
-        <span class="cover-fallback">页面图片暂时无法显示</span>
+        <span class="cover-fallback">主题图片暂时无法显示</span>
       </div>
-      <div class="card-body">
+      <div class="topic-card-body">
+        <p class="topic-category-label">${html(topic.category || '科学主题')}</p>
         <h3>${html(topic.displayTitle)}</h3>
-        <ul class="meta-list" aria-label="主题资料">
-          <li>类型：科学漫画伴读</li>
-          <li>来源：${html(sourceLabel)}</li>
-        </ul>
-        <div class="card-actions">
-          <a class="action-button" href="#/science/${scienceSeries.seriesSlug}/${topic.slug}">进入主题页</a>
-        </div>
+        <p class="topic-source">来源：${html(sourceLabel)}</p>
+        <a class="topic-link" href="#/science/${scienceSeries.seriesSlug}/${topic.slug}" ${returnAttributes}>
+          打开科学伴读 <span aria-hidden="true">→</span>
+        </a>
       </div>
     </article>
   `;
@@ -269,10 +338,7 @@ function scienceTopicCard(scienceSeries, topic) {
 
 function scienceSeriesPage(scienceSeries) {
   return `
-    ${header()}
-    <main>
-      ${scienceSeriesSection(scienceSeries)}
-    </main>
+    ${scienceSeriesSection(scienceSeries)}
   `;
 }
 
@@ -336,12 +402,13 @@ function ExplanationImages(book, item) {
 
 function ImageLightbox() {
   return `
-    <div class="image-lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-label="图片放大查看">
-      <div class="lightbox-backdrop" data-lightbox-close></div>
-      <div class="lightbox-panel">
-        <button class="lightbox-close" type="button" data-lightbox-close aria-label="关闭放大图">关闭</button>
+    <div class="image-lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-labelledby="lightbox-title" tabindex="-1">
+      <div class="lightbox-backdrop" aria-hidden="true"></div>
+      <div class="lightbox-panel" role="document">
+        <h2 id="lightbox-title" class="lightbox-title">页面图片放大查看</h2>
+        <button class="lightbox-close" type="button" data-lightbox-close data-lightbox-close-button aria-label="关闭放大图">关闭</button>
         <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="上一张">上一张</button>
-        <img data-lightbox-image alt="">
+        <img data-lightbox-image src="assets/favicon.svg" alt="">
         <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="下一张">下一张</button>
         <p class="lightbox-caption" data-lightbox-caption></p>
       </div>
@@ -419,11 +486,6 @@ function groupSciencePagesByRole(pages) {
     parentPromptIdeas: uniqueItems(group.parentPromptIdeas),
     sensitiveContentNote: uniqueItems(group.sensitiveContentNote),
   }));
-}
-
-function sciencePromptId(topic, group) {
-  const firstPageId = group.pages[0]?.pageId ?? 'science-card';
-  return `work-cells-${topic.topicId}-${firstPageId}`;
 }
 
 function isScienceStationKnowledgeGroup(group) {
@@ -506,17 +568,15 @@ function ScienceRelatedPageRefs(topic, pageIds) {
 }
 
 function ScienceExplanationImagePlaceholder(topic, group) {
-  const promptId = sciencePromptId(topic, group);
   return `
     <div class="science-illustration-placeholder">
       <p>解释图待补充</p>
-      <small>prompt-id：${html(promptId)}</small>
+      <small>现有文字伴读内容仍可正常使用。</small>
     </div>
   `;
 }
 
 function ScienceStationIllustration(station) {
-  const promptId = station.imagePromptId;
   if (station.imageAsset) {
     const src = sitePath(station.imageAsset);
     return `
@@ -529,13 +589,12 @@ function ScienceStationIllustration(station) {
       >
         <img src="${src}" alt="${html(station.imageAlt || station.title)}" loading="lazy">
       </button>
-      <p class="prompt-id">prompt-id：${html(promptId)}</p>
     `;
   }
   return `
     <div class="science-illustration-placeholder">
       <p>解释图占位区</p>
-      <small>prompt-id：${html(promptId)}</small>
+      <small>现有文字伴读内容仍可正常使用。</small>
     </div>
   `;
 }
@@ -775,7 +834,13 @@ function questionGroup(book, title, cards, kind) {
               <h4>${html(card.prompt)}</h4>
               <p class="page-range">页码：${html(card.pageRange)}</p>
               ${isOpen ? '<p class="open-note">开放表达，没有标准答案。</p>' : ''}
-              <button class="answer-button" type="button" data-answer-toggle="${answerId}" aria-expanded="false">
+              <button
+                class="answer-button"
+                type="button"
+                data-answer-toggle="${answerId}"
+                aria-controls="${answerId}"
+                aria-expanded="false"
+              >
                 ${isOpen ? '显示讨论提示' : '显示参考答案'}
               </button>
               <div id="${answerId}" class="answer" hidden>
@@ -971,7 +1036,7 @@ function parentsSection(book) {
 
 function pageCheckSection(book) {
   return `
-    <section class="content-section" aria-labelledby="page-check-title">
+    <section class="content-section page-check-section" aria-labelledby="page-check-title">
       <details class="page-check">
         <summary id="page-check-title">折叠式页面图片核对区</summary>
         <div class="thumb-row">
@@ -986,8 +1051,7 @@ function pageCheckSection(book) {
 
 function bookPage(book) {
   return `
-    ${header()}
-    <main class="book-layout">
+    <div class="book-layout companion-view">
       <aside class="book-side">
         ${bookCard(book, true)}
         <nav class="quick-nav" aria-label="页面模块">
@@ -997,7 +1061,7 @@ function bookPage(book) {
       <div class="book-main">
         <section class="book-title-block">
           <a class="back-link" href="#/series/${CARMELA_SERIES_SLUG}">返回不一样的卡梅拉</a>
-          <h1>${html(book.title)}</h1>
+          <h1 data-route-heading tabindex="-1">${html(book.title)}</h1>
           <p>${html(book.companion.overview.oneLine)}</p>
         </section>
         ${overviewSection(book)}
@@ -1010,28 +1074,43 @@ function bookPage(book) {
         ${parentsSection(book)}
         ${pageCheckSection(book)}
       </div>
-    </main>
+    </div>
     ${ImageLightbox()}
+  `;
+}
+
+function scienceTopicSummaryCard(topic) {
+  const thumbnail = topic.thumbnailPath;
+  return `
+    <article class="topic-summary-card">
+      <div class="topic-thumbnail${thumbnail ? '' : ' thumbnail-missing'}">
+        ${thumbnail ? `<img src="${sitePath(thumbnail)}" alt="${html(topic.displayTitle)}页面缩略图" loading="lazy">` : ''}
+        <span class="cover-fallback">主题图片暂时无法显示</span>
+      </div>
+      <div>
+        <p class="topic-category-label">${html(topic.category || '科学主题')}</p>
+        <p class="card-title">${html(topic.displayTitle)}</p>
+        <p class="topic-source">来源：${html(topic.source?.sourceLabel ?? '来源信息暂缺')}</p>
+      </div>
+    </article>
   `;
 }
 
 function scienceTopicPage(scienceSeries, topic) {
   return `
-    ${header()}
-    <main class="book-layout">
+    <div class="book-layout companion-view companion-view--science">
       <aside class="book-side">
-        ${scienceTopicCard(scienceSeries, topic)}
+        ${scienceTopicSummaryCard(topic)}
         <nav class="quick-nav" aria-label="主题模块">
-          <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-overview">主题导读</a>
-          <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-station">身体科学小站</a>
-          <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/science-questions">亲子问题卡</a>
-          <a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/source">来源备注</a>
+          ${scienceSectionNav.map(([id, label]) => (
+            `<a href="#/science/${scienceSeries.seriesSlug}/${topic.slug}/${id}">${label}</a>`
+          )).join('')}
         </nav>
       </aside>
       <div class="book-main">
         <section class="book-title-block">
           <a class="back-link" href="#/series/${scienceSeries.seriesSlug}">返回工作细胞</a>
-          <h1>${html(topic.displayTitle)}</h1>
+          <h1 data-route-heading tabindex="-1">${html(topic.displayTitle)}</h1>
           <p>${html(topic.category)}</p>
         </section>
         ${scienceOverviewSection(topic)}
@@ -1040,113 +1119,73 @@ function scienceTopicPage(scienceSeries, topic) {
         ${scienceParentGuidanceSection(topic)}
         <section id="source" class="content-section" aria-labelledby="source-title">
           <h2 id="source-title">来源备注</h2>
-          <p>来源：${html(topic.source?.sourceLabel ?? '来源待核对')}</p>
+          <p>来源：${html(topic.source?.sourceLabel ?? '来源信息暂缺')}</p>
           ${plainList(topic.sourceNotes)}
         </section>
       </div>
-    </main>
+    </div>
     ${ImageLightbox()}
   `;
 }
 
-function errorPage(message) {
+function errorPage(message, returnHref = '#/', returnLabel = '返回首页') {
   return `
-    ${header()}
-    <main class="error-card">
-      <h1>页面暂时无法打开</h1>
+    <section class="error-state" aria-labelledby="route-error-title">
+      <p class="state-kicker">方向标暂时没有指向这里</p>
+      <h1 id="route-error-title" data-route-heading tabindex="-1">没有找到这个伴读入口</h1>
       <p>${html(message)}</p>
-      <a class="action-button" href="#/">返回首页</a>
-    </main>
+      <a class="action-button" href="${html(returnHref)}">${html(returnLabel)}</a>
+    </section>
   `;
 }
 
 function currentRoute() {
   const parts = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean);
+  if (parts.length === 0) {
+    return { view: 'home' };
+  }
   if (parts[0] === 'series') {
-    return { view: 'series', seriesSlug: parts[1] };
+    return { view: 'series', seriesSlug: parts[1], target: parts[2], extra: parts.slice(3) };
   }
   if (parts[0] === 'book') {
-    return { view: 'book', slug: parts[1], target: parts[2] };
+    return { view: 'book', slug: parts[1], target: parts[2], extra: parts.slice(3) };
   }
   if (parts[0] === 'science') {
-    return { view: 'science', seriesSlug: parts[1], slug: parts[2], target: parts[3] };
+    return {
+      view: 'science',
+      seriesSlug: parts[1],
+      slug: parts[2],
+      target: parts[3],
+      extra: parts.slice(4),
+    };
   }
-  return { view: 'home' };
+  return { view: 'invalid' };
 }
 
-function wireCoverFallbacks() {
-  document.querySelectorAll('.cover-frame img, .thumb-row img, .page-thumbnail img, .science-station-image img').forEach((image) => {
-    image.addEventListener('error', () => {
+function wireCoverFallbacks(signal) {
+  document.querySelectorAll(
+    '.series-entry-cover img, .cover-frame img, .topic-thumbnail img, .thumb-row img, .page-thumbnail img, .science-station-image img',
+  ).forEach((image) => {
+    const showFallback = () => {
       image.hidden = true;
+      image.closest('.series-entry-cover')?.classList.add('cover-missing');
       image.closest('.cover-frame')?.classList.add('cover-missing');
+      image.closest('.topic-thumbnail')?.classList.add('thumbnail-missing');
       image.closest('.page-thumbnail')?.classList.add('thumbnail-missing');
       image.closest('.science-station-image')?.classList.add('thumbnail-missing');
-    });
+    };
+    image.addEventListener('error', showFallback, { once: true, signal });
+    if (image.complete && image.naturalWidth === 0) showFallback();
   });
-}
-
-function showLightboxItem(lightbox, index) {
-  if (lightboxItems.length === 0) return;
-  lightboxIndex = (index + lightboxItems.length) % lightboxItems.length;
-  const item = lightboxItems[lightboxIndex];
-  const image = lightbox.querySelector('[data-lightbox-image]');
-  const caption = lightbox.querySelector('[data-lightbox-caption]');
-  const previous = lightbox.querySelector('[data-lightbox-prev]');
-  const next = lightbox.querySelector('[data-lightbox-next]');
-
-  image.src = item.src;
-  image.alt = item.alt;
-  caption.textContent = item.alt;
-  previous.disabled = lightboxItems.length < 2;
-  next.disabled = lightboxItems.length < 2;
 }
 
 function wireLightbox() {
   const lightbox = document.querySelector('[data-lightbox]');
-  if (!lightbox) return;
-
   const openButtons = [...document.querySelectorAll('[data-lightbox-src]')];
-  const closeButtons = [...lightbox.querySelectorAll('[data-lightbox-close]')];
-  const previous = lightbox.querySelector('[data-lightbox-prev]');
-  const next = lightbox.querySelector('[data-lightbox-next]');
-  const closeButton = lightbox.querySelector('.lightbox-close');
-
-  lightboxItems = openButtons.map((button) => ({
-    src: button.dataset.lightboxSrc,
-    alt: button.dataset.lightboxAlt || '页面图',
-  }));
-
-  openButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      showLightboxItem(lightbox, index);
-      lightbox.hidden = false;
-      document.body.classList.add('lightbox-open');
-      closeButton?.focus();
-    });
-  });
-
-  closeButtons.forEach((button) => {
-    button.addEventListener('click', () => {
-      lightbox.hidden = true;
-      document.body.classList.remove('lightbox-open');
-    });
-  });
-
-  previous?.addEventListener('click', () => showLightboxItem(lightbox, lightboxIndex - 1));
-  next?.addEventListener('click', () => showLightboxItem(lightbox, lightboxIndex + 1));
-
-  window.onkeydown = (event) => {
-    if (lightbox.hidden) return;
-    if (event.key === 'Escape') {
-      lightbox.hidden = true;
-      document.body.classList.remove('lightbox-open');
-    }
-    if (event.key === 'ArrowLeft') showLightboxItem(lightbox, lightboxIndex - 1);
-    if (event.key === 'ArrowRight') showLightboxItem(lightbox, lightboxIndex + 1);
-  };
+  return wireImageLightbox(lightbox, openButtons);
 }
 
-function wireAnswers() {
+function wireAnswers(signal) {
   document.querySelectorAll('[data-answer-toggle]').forEach((button) => {
     button.addEventListener('click', () => {
       const answer = document.getElementById(button.dataset.answerToggle);
@@ -1157,18 +1196,18 @@ function wireAnswers() {
       button.textContent = willShow
         ? button.textContent.replace('显示', '隐藏')
         : button.textContent.replace('隐藏', '显示');
-    });
+    }, { signal });
   });
 }
 
-function wireAudio() {
+function wireAudio(signal) {
   const audio = document.querySelector('#book-audio');
   const button = document.querySelector('[data-audio-play]');
   const seek = document.querySelector('[data-audio-seek]');
   const currentTime = document.querySelector('[data-audio-current-time]');
   const totalTime = document.querySelector('[data-audio-total-time]');
   const message = document.querySelector('#audio-message');
-  if (!audio || !button) return;
+  if (!audio || !button) return () => {};
 
   function audioTotal() {
     const value = Reflect.get(audio, ['dur', 'ation'].join(''));
@@ -1198,19 +1237,19 @@ function wireAudio() {
         message.textContent = '浏览器暂时阻止了快捷按钮，请使用下方原生音频控件播放或暂停。';
       }
     }
-  });
+  }, { signal });
 
   audio.addEventListener('play', () => {
     button.textContent = '暂停音频';
-  });
+  }, { signal });
 
   audio.addEventListener('pause', () => {
     button.textContent = '播放音频';
-  });
+  }, { signal });
 
-  audio.addEventListener('loadedmetadata', syncDisplay);
-  audio.addEventListener('timeupdate', syncDisplay);
-  audio.addEventListener('ended', syncDisplay);
+  audio.addEventListener('loadedmetadata', syncDisplay, { signal });
+  audio.addEventListener('timeupdate', syncDisplay, { signal });
+  audio.addEventListener('ended', syncDisplay, { signal });
 
   seek?.addEventListener('input', () => {
     const nextTime = Number(seek.value);
@@ -1218,7 +1257,7 @@ function wireAudio() {
       audio.currentTime = nextTime;
       syncDisplay();
     }
-  });
+  }, { signal });
 
   document.querySelectorAll('[data-audio-marker]').forEach((markerButton) => {
     markerButton.addEventListener('click', () => {
@@ -1227,7 +1266,7 @@ function wireAudio() {
         audio.currentTime = nextTime;
         syncDisplay();
       }
-    });
+    }, { signal });
   });
 
   audio.addEventListener('error', () => {
@@ -1236,76 +1275,356 @@ function wireAudio() {
     if (message) {
       message.textContent = '音频路径暂时无法访问，页面其余内容仍可使用。';
     }
-  });
+  }, { signal });
 
   syncDisplay();
+  return () => audio.pause();
 }
 
-function afterRender(route) {
-  wireCoverFallbacks();
-  wireAnswers();
-  wireAudio();
-  wireLightbox();
-
-  if (route.target) {
-    requestAnimationFrame(() => {
-      document.getElementById(route.target)?.scrollIntoView({ block: 'start' });
-    });
-  }
+function wireReturnContext(signal) {
+  document.querySelectorAll('[data-return-series][data-return-section]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      if (
+        event.defaultPrevented
+        || event.button !== 0
+        || event.metaKey
+        || event.ctrlKey
+        || event.shiftKey
+        || event.altKey
+      ) {
+        return;
+      }
+      const { returnSeries, returnSection } = link.dataset;
+      history.replaceState(history.state, '', `#/series/${returnSeries}/${returnSection}`);
+    }, { signal });
+  });
 }
 
-function render() {
-  const route = currentRoute();
+function wireCategoryNavigation(signal) {
+  const categoryNavigation = document.querySelector('[data-category-nav]');
+  if (!categoryNavigation) return;
+  const compactNavigation = matchMedia('(max-width: 680px)');
+  const syncOpenState = () => {
+    categoryNavigation.open = !compactNavigation.matches;
+  };
+  syncOpenState();
+  compactNavigation.addEventListener('change', syncOpenState, { signal });
+}
+
+function afterRender() {
+  const controller = new AbortController();
+  const { signal } = controller;
+  wireCoverFallbacks(signal);
+  wireAnswers(signal);
+  wireReturnContext(signal);
+  wireCategoryNavigation(signal);
+  const cleanupAudio = wireAudio(signal);
+  const cleanupLightbox = wireLightbox();
+  return () => {
+    controller.abort();
+    cleanupAudio();
+    cleanupLightbox();
+  };
+}
+
+function invalidRoute(message, returnHref = '#/', returnLabel = '返回首页') {
+  return {
+    valid: false,
+    view: 'error',
+    pageKey: `error:${location.hash}`,
+    title: '页面未找到',
+    breadcrumbs: [{ label: '首页', href: '#/' }, { label: '页面未找到' }],
+    markup: errorPage(message, returnHref, returnLabel),
+  };
+}
+
+function resolveRoute(route) {
   if (route.view === 'home') {
-    app.innerHTML = homePage();
-    afterRender(route);
-    return;
+    return {
+      valid: true,
+      view: 'home',
+      pageKey: 'home',
+      title: '选择阅读主题',
+      breadcrumbs: [],
+      markup: homePage(),
+    };
   }
 
   if (route.view === 'series') {
+    if (!route.seriesSlug || route.extra.length) {
+      return invalidRoute('这个系列入口不完整，请从首页重新选择。');
+    }
     if (route.seriesSlug === CARMELA_SERIES_SLUG) {
-      app.innerHTML = carmelaSeriesPage();
-      afterRender(route);
-      return;
+      const bookNumber = Number(route.target?.match(/^book-(\d+)$/)?.[1] ?? 0);
+      const canonicalBookTarget = bookNumber
+        ? `book-${bookNumber}`
+        : '';
+      const bookTargetExists = model.books.some((book) => book.order === bookNumber);
+      if (
+        route.target
+        && (
+          !bookNumber
+          || route.target !== canonicalBookTarget
+          || !bookTargetExists
+        )
+      ) {
+        return invalidRoute(
+          '这个绘本书架中没有对应的分区。',
+          `#/series/${CARMELA_SERIES_SLUG}`,
+          '返回绘本书架',
+        );
+      }
+      return {
+        valid: true,
+        view: 'series',
+        domain: 'carmela',
+        target: route.target,
+        pageKey: `series:${CARMELA_SERIES_SLUG}`,
+        title: '不一样的卡梅拉',
+        breadcrumbs: [{ label: '首页', href: '#/' }, { label: '不一样的卡梅拉' }],
+        markup: carmelaSeriesPage(),
+      };
     }
-
     if (route.seriesSlug === WORK_CELLS_SERIES_SLUG) {
-      app.innerHTML = scienceSeriesPage(model.scienceSeries);
-      afterRender(route);
-      return;
+      const groupCount = groupScienceTopics(model.scienceSeries?.manifest?.topics ?? []).length;
+      const categoryNumber = Number(route.target?.match(/^category-(\d+)$/)?.[1] ?? 0);
+      const canonicalCategoryTarget = categoryNumber
+        ? `category-${categoryNumber}`
+        : '';
+      if (
+        route.target
+        && (
+          !categoryNumber
+          || route.target !== canonicalCategoryTarget
+          || categoryNumber > groupCount
+        )
+      ) {
+        return invalidRoute(
+          '这个科学主题类别不存在。',
+          `#/series/${WORK_CELLS_SERIES_SLUG}`,
+          '返回科学主题馆',
+        );
+      }
+      return {
+        valid: true,
+        view: 'series',
+        domain: 'science',
+        target: route.target,
+        pageKey: `series:${WORK_CELLS_SERIES_SLUG}`,
+        title: model.scienceSeries?.manifest?.seriesTitle ?? '工作细胞',
+        breadcrumbs: [{ label: '首页', href: '#/' }, { label: '工作细胞' }],
+        markup: scienceSeriesPage(model.scienceSeries),
+      };
     }
+    return invalidRoute('没有找到这个阅读系列。');
   }
 
-  const book = model.books.find((item) => item.slug === route.slug);
-  if (book) {
-    app.innerHTML = bookPage(book);
-    afterRender(route);
-    return;
+  if (route.view === 'book') {
+    if (!route.slug || route.extra.length) {
+      return invalidRoute('这个绘本伴读入口不完整，请从绘本书架重新选择。');
+    }
+    const book = model.books.find((item) => item.slug === route.slug);
+    if (!book) {
+      return invalidRoute(
+        '没有找到这本书的伴读资料。',
+        `#/series/${CARMELA_SERIES_SLUG}`,
+        '返回绘本书架',
+      );
+    }
+    if (route.target && !sectionNav.some(([id]) => id === route.target)) {
+      return invalidRoute(
+        '这本书的伴读资料中没有对应的内容段落。',
+        `#/book/${book.slug}`,
+        `返回《${book.title}》`,
+      );
+    }
+    return {
+      valid: true,
+      view: 'book',
+      domain: 'carmela',
+      target: route.target,
+      pageKey: `book:${book.slug}`,
+      title: book.title,
+      breadcrumbs: [
+        { label: '首页', href: '#/' },
+        { label: '不一样的卡梅拉', href: `#/series/${CARMELA_SERIES_SLUG}` },
+        { label: book.title },
+      ],
+      markup: bookPage(book),
+    };
   }
 
   if (route.view === 'science') {
-    const scienceSeries = model.scienceSeries;
-    const topic = scienceSeries?.seriesSlug === route.seriesSlug
-      ? scienceSeries.manifest.topics.find((item) => item.slug === route.slug)
-      : null;
-    if (topic) {
-      app.innerHTML = scienceTopicPage(scienceSeries, topic);
-      afterRender(route);
-      return;
+    if (!route.seriesSlug || !route.slug || route.extra.length) {
+      return invalidRoute('这个科学伴读入口不完整，请从科学主题馆重新选择。');
     }
+    if (route.seriesSlug !== WORK_CELLS_SERIES_SLUG) {
+      return invalidRoute('没有找到这个科学伴读系列。');
+    }
+    const scienceSeries = model.scienceSeries;
+    const topic = scienceSeries?.manifest?.topics?.find((item) => item.slug === route.slug);
+    if (!topic) {
+      return invalidRoute(
+        '没有找到这个科学主题的伴读资料。',
+        `#/series/${WORK_CELLS_SERIES_SLUG}`,
+        '返回科学主题馆',
+      );
+    }
+    if (route.target && !scienceSectionNav.some(([id]) => id === route.target)) {
+      return invalidRoute(
+        '这个科学主题中没有对应的内容段落。',
+        `#/science/${WORK_CELLS_SERIES_SLUG}/${topic.slug}`,
+        `返回“${topic.displayTitle}”`,
+      );
+    }
+    return {
+      valid: true,
+      view: 'science',
+      domain: 'science',
+      target: route.target,
+      pageKey: `science:${scienceSeries.seriesSlug}:${topic.slug}`,
+      title: topic.displayTitle,
+      breadcrumbs: [
+        { label: '首页', href: '#/' },
+        { label: '工作细胞', href: `#/series/${WORK_CELLS_SERIES_SLUG}` },
+        { label: topic.displayTitle },
+      ],
+      markup: scienceTopicPage(scienceSeries, topic),
+    };
   }
 
-  app.innerHTML = errorPage('没有找到这本书的 companion 页面。');
+  return invalidRoute('这个地址没有对应的伴读入口。');
+}
+
+function updateBreadcrumb(items) {
+  if (!items.length) {
+    breadcrumb.hidden = true;
+    breadcrumb.replaceChildren();
+    return;
+  }
+  breadcrumb.hidden = false;
+  breadcrumb.innerHTML = `
+    <ol>
+      ${items.map((item, index) => {
+        const isCurrent = index === items.length - 1;
+        return `<li>${
+          isCurrent
+            ? `<span aria-current="page">${html(item.label)}</span>`
+            : `<a href="${html(item.href)}">${html(item.label)}</a>`
+        }</li>`;
+      }).join('')}
+    </ol>
+  `;
+}
+
+function focusRoute(route) {
+  requestAnimationFrame(() => {
+    let focusTarget = null;
+    if (route.target) {
+      const section = document.getElementById(route.target);
+      focusTarget = section?.matches('h1, h2, h3')
+        ? section
+        : section?.querySelector('h1, h2, h3') ?? section;
+    } else {
+      focusTarget = document.querySelector('[data-route-heading]');
+    }
+
+    if (focusTarget) {
+      if (!focusTarget.hasAttribute('tabindex')) {
+        focusTarget.setAttribute('tabindex', '-1');
+      }
+      focusTarget.focus({ preventScroll: true });
+      if (route.target) {
+        focusTarget.scrollIntoView({ block: 'start', behavior: 'instant' });
+      } else {
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+      }
+    }
+
+    routeAnnouncer.textContent = '';
+    requestAnimationFrame(() => {
+      routeAnnouncer.textContent = route.target && focusTarget
+        ? `已到达：${focusTarget.textContent.trim()}`
+        : `已打开：${route.title}`;
+    });
+  });
+}
+
+function render() {
+  const route = resolveRoute(currentRoute());
+  document.title = `${route.title} | 温暖伴读图册`;
+  updateBreadcrumb(route.breadcrumbs);
+
+  if (route.valid && route.pageKey === currentPageKey) {
+    document.querySelector('[data-lightbox]:not([hidden]) [data-lightbox-close-button]')?.click();
+    focusRoute(route);
+    return;
+  }
+
+  cleanupView();
+  cleanupView = () => {};
+  currentPageKey = route.pageKey;
+  main.dataset.view = route.view;
+  if (route.domain) {
+    main.dataset.domain = route.domain;
+  } else {
+    delete main.dataset.domain;
+  }
+  app.innerHTML = route.markup;
+  app.setAttribute('aria-busy', 'false');
+  cleanupView = afterRender();
+  focusRoute(route);
+}
+
+let routerStarted = false;
+
+function showLoadError() {
+  cleanupView();
+  cleanupView = () => {};
+  currentPageKey = 'load-error';
+  document.title = '资料载入失败 | 温暖伴读图册';
+  updateBreadcrumb([{ label: '首页', href: '#/' }, { label: '资料载入失败' }]);
+  main.dataset.view = 'error';
+  delete main.dataset.domain;
+  app.setAttribute('aria-busy', 'false');
+  app.innerHTML = `
+    <section class="error-state" aria-labelledby="load-error-title">
+      <p class="state-kicker">书架暂时没有准备好</p>
+      <h1 id="load-error-title" data-route-heading tabindex="-1">伴读资料载入失败</h1>
+      <p>请检查网络连接后重试。页面不会显示内部文件位置。</p>
+      <div class="state-actions">
+        <button class="action-button" type="button" data-retry>重新载入</button>
+        <a class="ghost-button" href="#/">返回首页</a>
+      </div>
+    </section>
+  `;
+  document.querySelector('[data-retry]')?.addEventListener('click', () => start());
+  focusRoute({ title: '伴读资料载入失败' });
 }
 
 async function start() {
+  app.setAttribute('aria-busy', 'true');
   try {
     await loadModel();
+    if (!routerStarted) {
+      window.addEventListener('hashchange', render);
+      routerStarted = true;
+    }
     render();
-    window.addEventListener('hashchange', render);
-  } catch (error) {
-    app.innerHTML = errorPage(error.message);
+  } catch {
+    showLoadError();
   }
 }
+
+if ('scrollRestoration' in history) {
+  history.scrollRestoration = 'manual';
+}
+
+skipLink?.addEventListener('click', (event) => {
+  event.preventDefault();
+  const skipTarget = document.querySelector('[data-route-heading]') ?? main;
+  skipTarget.focus({ preventScroll: true });
+  skipTarget.scrollIntoView({ block: 'start', behavior: 'instant' });
+});
 
 start();

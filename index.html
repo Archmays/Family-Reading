@@ -3,16 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Book Companion / 家庭阅读助手</title>
+    <meta name="description" content="放在纸质书旁边使用的家庭伴读资料：故事回顾、问题卡、背景补充、科学主题与音频。">
+    <meta name="theme-color" content="#fff8ed">
+    <title>选择阅读主题 | 温暖伴读图册</title>
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css?v=fr-p2-20260719e">
   </head>
   <body>
-    <div id="app" class="app-shell">
-      <main class="loading-card" aria-live="polite">
-        <p>正在载入家庭阅读辅助资料...</p>
+    <a class="skip-link" href="#main-content">跳到主要内容</a>
+    <div class="app-shell">
+      <header class="site-header">
+        <div class="header-inner">
+          <a class="brand-link" href="#/" aria-label="温暖伴读图册首页">
+            <span class="brand-mark" aria-hidden="true">伴</span>
+            <span class="brand-text">
+              <span class="brand-title">温暖伴读图册</span>
+              <span class="brand-kicker">Warm Companion Atlas</span>
+            </span>
+          </a>
+          <p class="header-note">纸质书旁边的伴读工具</p>
+        </div>
+      </header>
+      <nav id="breadcrumb" class="breadcrumb" aria-label="面包屑" hidden></nav>
+      <p id="route-announcer" class="visually-hidden" role="status" aria-live="polite" aria-atomic="true"></p>
+      <main id="main-content" class="route-main" tabindex="-1">
+        <div id="app" aria-busy="true">
+          <section class="loading-state" aria-labelledby="loading-title" role="status" aria-live="polite">
+            <span class="loading-mark" aria-hidden="true"></span>
+            <h1 id="loading-title" tabindex="-1">正在准备伴读资料</h1>
+            <p>请稍候，书架和科学主题馆正在打开。</p>
+          </section>
+        </div>
       </main>
     </div>
-    <script type="module" src="assets/app.js"></script>
+    <script type="module" src="assets/app.js?v=fr-p2-20260719e"></script>
   </body>
 </html>
