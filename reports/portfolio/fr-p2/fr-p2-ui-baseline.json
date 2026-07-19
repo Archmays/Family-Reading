@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "runId": "fr-p2-20260718T211115Z",
+  "direction": "WARM_COMPANION_ATLAS",
+  "persistentBaseline": {
+    "count": 6,
+    "totalBytes": 246686,
+    "maxLongestSide": 1440,
+    "files": [
+      {
+        "path": "docs/portfolio/fr-p2/screenshots/home-desktop.webp",
+        "route": "#/",
+        "viewport": { "width": 1440, "height": 900 },
+        "bytes": 51808,
+        "sha256": "87c94e79ff928ac3649029f24b039ab4291c681ed06eb4f0a34bd6bf5e24d142"
+      },
+      {
+        "path": "docs/portfolio/fr-p2/screenshots/home-mobile.webp",
+        "route": "#/",
+        "viewport": { "width": 390, "height": 844 },
+        "bytes": 25018,
+        "sha256": "35917391a0b108b657910bbc5c0e84f9c7d468f35f607b9e28a50ee783b84993"
+      },
+      {
+        "path": "docs/portfolio/fr-p2/screenshots/carmela-desktop.webp",
+        "route": "#/series/carmela-season-1",
+        "viewport": { "width": 1440, "height": 900 },
+        "bytes": 64534,
+        "sha256": "06bbc59c03b40317e727657303023d44eead2b81c813cac957109688e72c92fd"
+      },
+      {
+        "path": "docs/portfolio/fr-p2/screenshots/carmela-mobile.webp",
+        "route": "#/series/carmela-season-1",
+        "viewport": { "width": 390, "height": 844 },
+        "bytes": 25470,
+        "sha256": "edda5913702432fa1da69d688f42e39508d485b056afa508588cc35a56a27bcb"
+      },
+      {
+        "path": "docs/portfolio/fr-p2/screenshots/work-cells-desktop.webp",
+        "route": "#/series/work-cells",
+        "viewport": { "width": 1440, "height": 900 },
+        "bytes": 55696,
+        "sha256": "8a5bea62d8bee864daf80624c34b44e67032d0994a13c3e8d52114946d1ee91d"
+      },
+      {
+        "path": "docs/portfolio/fr-p2/screenshots/work-cells-mobile.webp",
+        "route": "#/series/work-cells",
+        "viewport": { "width": 390, "height": 844 },
+        "bytes": 24160,
+        "sha256": "df5da184ca72ad66de7bc37a11f322f3916c1384b93e3c4ba4871965780f39d8"
+      }
+    ]
+  },
+  "beforeBaseline": {
+    "repositoryRetention": "LOCAL_ONLY_REMOVED_AT_CLOSEOUT",
+    "captures": [
+      {
+        "artifactId": "before-home-desktop",
+        "route": "#/",
+        "viewport": { "width": 1440, "height": 900 },
+        "bytes": 71287,
+        "sha256": "872ef5738a8f942b12cd3cd14017ce79ef560b8c1df51e6a74aef6446b8977ca"
+      },
+      {
+        "artifactId": "before-home-mobile",
+        "route": "#/",
+        "viewport": { "width": 390, "height": 844 },
+        "bytes": 40135,
+        "sha256": "f8c0afca0946c2397129ff2669765b3d236c386111b6fa41e9c62dbc3b5bea13"
+      },
+      {
+        "artifactId": "before-carmela-desktop",
+        "route": "#/series/carmela-season-1",
+        "viewport": { "width": 1440, "height": 900 },
+        "bytes": 95859,
+        "sha256": "277c57985bd730a41497ef9d5586680cad05c9b28a88021c638a7b0b9abc3a44"
+      },
+      {
+        "artifactId": "before-carmela-mobile",
+        "route": "#/series/carmela-season-1",
+        "viewport": { "width": 390, "height": 844 },
+        "bytes": 34486,
+        "sha256": "66df9b08e534ec5ba8eda884766446844e12c7e40fb7e2a23311dc15b4c96481"
+      },
+      {
+        "artifactId": "before-work-cells-desktop",
+        "route": "#/series/work-cells",
+        "viewport": { "width": 1440, "height": 900 },
+        "bytes": 90114,
+        "sha256": "6e8528807e8f2d949b86f82a198329e5356cbaf04e1a8c612125104fa64fcae4"
+      },
+      {
+        "artifactId": "before-work-cells-mobile",
+        "route": "#/series/work-cells",
+        "viewport": { "width": 390, "height": 844 },
+        "bytes": 41412,
+        "sha256": "7650a6fc2d75536d4c132616e9c47f70756f914ea50057efb63abe88e28a6859"
+      },
+      {
+        "artifactId": "before-carmela-detail-short-landscape",
+        "route": "#/book/carmela-s1-01",
+        "viewport": { "width": 1024, "height": 400 },
+        "bytes": 34188,
+        "sha256": "2f25e3c1b54e1825e2aa1b7b029b9b4e49f1f050d35797846dd433b697b21c6b",
+        "finding": "one empty initial lightbox image source; resolved in P2"
+      }
+    ]
+  },
+  "localModeEvidence": [
+    {
+      "artifactId": "short-landscape-work-cells-1024x400",
+      "repositoryRetention": "LOCAL_ONLY_REMOVED_AT_CLOSEOUT",
+      "bytes": 39593,
+      "sha256": "24fa59953cec91aa7460b7d835d7b8f0c07e04a95618c266b1dc83433043a294"
+    },
+    {
+      "artifactId": "forced-colors-work-cells-1280x720",
+      "repositoryRetention": "LOCAL_ONLY_REMOVED_AT_CLOSEOUT",
+      "bytes": 97061,
+      "sha256": "1727787690a140634bc93a29f8a5e62eda8196fc5d8d9df6aacd9fa1464a9ebc"
+    },
+    {
+      "artifactId": "a4-companion-print",
+      "repositoryRetention": "LOCAL_ONLY_REMOVED_AT_CLOSEOUT",
+      "pages": 11,
+      "bytes": 1423822,
+      "sha256": "3d0ed7feb57b523e4efa98fbf19a31a32f84fafc5811e00cb7f54f7fa4de9ebc"
+    }
+  ],
+  "status": "PASS"
+}

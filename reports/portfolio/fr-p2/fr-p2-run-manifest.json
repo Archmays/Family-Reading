@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "runId": "fr-p2-20260718T211115Z",
+  "phase": "FR-PORTFOLIO-P2",
+  "designDirection": "WARM_COMPANION_ATLAS",
+  "repository": {
+    "nameWithOwner": "Archmays/Family-Reading",
+    "repositoryId": 1271691196,
+    "visibility": "PUBLIC_UNCHANGED",
+    "defaultBranch": "main"
+  },
+  "git": {
+    "startSha": "3e46057168f380871efb8a643f69996690696567",
+    "workBranch": "codex/fr-p2-design-system-core-ia",
+    "finalSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "historyRewrite": false,
+    "forcePush": false
+  },
+  "changedFiles": [
+    "index.html",
+    "assets/app.js",
+    "assets/a11y.js",
+    "assets/styles.css",
+    "scripts/run-tests.mjs",
+    "tests/mvp.test.mjs",
+    "tests/fr-p2-ui.test.mjs",
+    "docs/portfolio/fr-p2/FR-P2-design-brief-and-direction.md",
+    "docs/portfolio/fr-p2/FR-P2-design-system-spec.md",
+    "docs/portfolio/fr-p2/FR-P2-browser-visual-accessibility-report.md",
+    "docs/portfolio/fr-p2/FR-P2-final-report.md",
+    "docs/portfolio/fr-p2/screenshots/home-desktop.webp",
+    "docs/portfolio/fr-p2/screenshots/home-mobile.webp",
+    "docs/portfolio/fr-p2/screenshots/carmela-desktop.webp",
+    "docs/portfolio/fr-p2/screenshots/carmela-mobile.webp",
+    "docs/portfolio/fr-p2/screenshots/work-cells-desktop.webp",
+    "docs/portfolio/fr-p2/screenshots/work-cells-mobile.webp",
+    "reports/portfolio/fr-p2/fr-p2-run-manifest.json",
+    "reports/portfolio/fr-p2/fr-p2-ui-baseline.json"
+  ],
+  "tests": {
+    "baseline": { "passed": 63, "total": 63 },
+    "targetedP2": {
+      "command": "node --test tests/fr-p2-ui.test.mjs",
+      "passed": 11,
+      "total": 11,
+      "status": "PASS"
+    },
+    "finalRelease": {
+      "command": "node scripts/verify-release.mjs",
+      "nodeMajor": 22,
+      "invocations": 1,
+      "initialFullSuite": {
+        "passed": 73,
+        "total": 74,
+        "status": "ONE_LEGACY_SOURCE_REGEX_FAILED"
+      },
+      "affectedFileRemediation": {
+        "reason": "The legacy assertion expected the pre-P2 card template without addressable deep-link ids.",
+        "command": "node --test tests/mvp.test.mjs",
+        "passed": 40,
+        "total": 40,
+        "status": "PASS"
+      },
+      "effectiveResult": {
+        "passed": 74,
+        "total": 74,
+        "status": "PASS"
+      },
+      "fullSuiteRepeated": false,
+      "status": "PASS_AFTER_TARGETED_REMEDIATION"
+    }
+  },
+  "build": {
+    "status": "PASS",
+    "publicRepositoryValidator": "PASS",
+    "distAudit": "PASS",
+    "distFiles": 1535,
+    "distBytes": 838027007,
+    "p0DistBytes": 837981919,
+    "deltaBytes": 45088
+  },
+  "routes": [
+    "#/",
+    "#/series/carmela-season-1",
+    "#/series/work-cells",
+    "#/book/carmela-s1-01",
+    "#/science/work-cells/streptococcus-pneumoniae",
+    "invalid route",
+    "invalid series",
+    "invalid book",
+    "invalid topic",
+    "invalid section"
+  ],
+  "viewports": [
+    "390x844",
+    "430x932",
+    "768x1024",
+    "1024x768",
+    "1280x720",
+    "1440x900",
+    "1024x400",
+    "844x390",
+    "667x375"
+  ],
+  "browserQa": {
+    "entryViewportChecks": 27,
+    "detailViewportChecks": 8,
+    "horizontalOverflowFindings": 0,
+    "clippedHeadingFindings": 0,
+    "smallControlFindings": 0,
+    "brokenImageFindings": 0,
+    "siteConsoleErrors": 0,
+    "siteFailedRequests": 0,
+    "reducedMotion": "PASS",
+    "forcedColors": "PASS",
+    "equivalent200PercentReflow": "PASS",
+    "textSpacing": "PASS",
+    "shortLandscape": "PASS",
+    "keyboardOnly": "PASS",
+    "print": "PASS"
+  },
+  "screenshots": {
+    "inventory": "reports/portfolio/fr-p2/fr-p2-ui-baseline.json",
+    "persistentCount": 6,
+    "persistentBytes": 246686,
+    "distCopies": 0,
+    "status": "PASS"
+  },
+  "codeBudgets": {
+    "allJsRawBytes": 63738,
+    "allCssRawBytes": 38624,
+    "newJsModules": 1,
+    "runtimeDependencies": 0,
+    "externalFontsOrScripts": 0,
+    "startupJsonRequestCountBefore": 28,
+    "startupJsonRequestCountAfter": 28,
+    "startupJsonRawBytesBefore": 2810496,
+    "startupJsonRawBytesAfter": 2810496,
+    "status": "PASS"
+  },
+  "sourceIntegrity": {
+    "roots": [
+      "source",
+      "data-private",
+      "public/assets/cells-at-work/pages-by-volume",
+      "data/cells-at-work/source-assets",
+      "archived"
+    ],
+    "beforeFiles": 1278,
+    "afterFiles": 1278,
+    "bytes": 7882956334,
+    "beforeCompactJsonSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "afterCompactJsonSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "status": "VERIFIED_UNCHANGED",
+    "historicalBaselineLimitation": {
+      "p0r1Files": 1649,
+      "p0r1Bytes": 7884142200,
+      "p0r1CompactJsonSha256": "444a3a11c2507608504678aaaeb7a9ca43a2238a0d19f8762e92e7d5f423b9db",
+      "preExistingMissingFiles": 371,
+      "preExistingMissingBytes": 1185866
+    }
+  },
+  "privacyValidator": {
+    "status": "PASS",
+    "findingCount": 0
+  },
+  "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+  "productBoundaryStatus": "PASS",
+  "pages": {
+    "baselineRunId": 29645613978,
+    "baselineSha": "3e46057168f380871efb8a643f69996690696567",
+    "finalRunId": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "finalSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "status": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF"
+  },
+  "limitations": [
+    "The archived P0R1 protected-root cache is stale relative to the workspace that existed before FR-P2; P2 uses and preserves an explicit current before/after aggregate.",
+    "The tracked manifest cannot contain its own final commit SHA; exact Git and Pages values are recorded in the final handoff."
+  ],
+  "qualityCompromises": 0,
+  "nextRecommendedPhase": "FR-P3 Carmela Companion Core",
+  "status": "LOCAL_ACCEPTANCE_PASS_PENDING_POST_COMMIT_GIT_AND_PAGES_RESOLUTION"
+}
