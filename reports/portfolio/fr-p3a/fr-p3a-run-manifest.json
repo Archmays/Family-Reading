@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "runId": "fr-p3a-20260720T220345Z",
+  "phase": "FR-PORTFOLIO-P3A",
+  "repository": {
+    "nameWithOwner": "Archmays/Family-Reading",
+    "repositoryId": 1271691196,
+    "visibility": "PUBLIC_UNCHANGED",
+    "defaultBranch": "main"
+  },
+  "git": {
+    "startSha": "7397effccb417e7fa990490713b0f244fbb5c512",
+    "workBranch": "codex/fr-p3a-carmela-companion-architecture",
+    "finalSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "historyRewrite": false,
+    "forcePush": false
+  },
+  "changedFiles": [
+    "index.html",
+    "assets/app.js",
+    "assets/styles.css",
+    "assets/carmela-companion.js",
+    "scripts/run-tests.mjs",
+    "tests/mvp.test.mjs",
+    "tests/fr-p2-ui.test.mjs",
+    "tests/fr-p3a-carmela.test.mjs",
+    "docs/portfolio/fr-p3a/FR-P3A-carmela-detail-design-and-ia.md",
+    "docs/portfolio/fr-p3a/FR-P3A-content-parity-report.md",
+    "docs/portfolio/fr-p3a/FR-P3A-browser-visual-accessibility-report.md",
+    "docs/portfolio/fr-p3a/FR-P3A-final-report.md",
+    "docs/portfolio/fr-p3a/screenshots/book1-desktop-overview.webp",
+    "docs/portfolio/fr-p3a/screenshots/book1-mobile-overview.webp",
+    "docs/portfolio/fr-p3a/screenshots/book1-questions.webp",
+    "docs/portfolio/fr-p3a/screenshots/book11-desktop-story-trail.webp",
+    "docs/portfolio/fr-p3a/screenshots/book11-mobile.webp",
+    "docs/portfolio/fr-p3a/screenshots/book11-background-encyclopedia.webp",
+    "reports/portfolio/fr-p3a/fr-p3a-run-manifest.json",
+    "reports/portfolio/fr-p3a/fr-p3a-carmela-content-inventory-before.json",
+    "reports/portfolio/fr-p3a/fr-p3a-carmela-content-inventory-after.json",
+    "reports/portfolio/fr-p3a/fr-p3a-ui-baseline.json"
+  ],
+  "tests": {
+    "baseline": { "passed": 74, "total": 74 },
+    "targeted": [
+      {
+        "scope": "implementation and P2 compatibility",
+        "command": "node --test tests/fr-p3a-carmela.test.mjs tests/fr-p2-ui.test.mjs tests/mvp.test.mjs",
+        "passed": 59,
+        "total": 59,
+        "status": "PASS"
+      },
+      {
+        "scope": "audio source error handling",
+        "command": "node --test tests/fr-p3a-carmela.test.mjs",
+        "passed": 8,
+        "total": 8,
+        "status": "PASS"
+      },
+      {
+        "scope": "before and after inventory parity",
+        "command": "node --test tests/fr-p3a-carmela.test.mjs",
+        "passed": 9,
+        "total": 9,
+        "status": "PASS"
+      }
+    ],
+    "finalRelease": {
+      "command": "npm run verify:release",
+      "node": "v24.16.0",
+      "localInvocations": 1,
+      "passed": 83,
+      "total": 83,
+      "failed": 0,
+      "failedJobReruns": 0,
+      "status": "PASS"
+    }
+  },
+  "build": {
+    "status": "PASS",
+    "publicRepositoryValidator": "PASS",
+    "distAudit": "PASS",
+    "distFiles": 1536,
+    "distBytes": 838058575,
+    "p2DistBytes": 838027007,
+    "deltaBytes": 31568
+  },
+  "contentInventory": {
+    "before": "reports/portfolio/fr-p3a/fr-p3a-carmela-content-inventory-before.json",
+    "after": "reports/portfolio/fr-p3a/fr-p3a-carmela-content-inventory-after.json",
+    "bookCount": 12,
+    "questions": 108,
+    "scenes": 73,
+    "pageImageRefOccurrences": 912,
+    "availableAudio": 12,
+    "status": "PASS"
+  },
+  "routes": {
+    "representativeBooks": ["carmela-s1-01", "carmela-s1-11"],
+    "sectionTargets": [
+      "overview",
+      "review",
+      "scenes",
+      "questions",
+      "background",
+      "encyclopedia",
+      "audio",
+      "parents"
+    ],
+    "representativeChecks": 20,
+    "remainingBookSmokeChecks": 20,
+    "status": "PASS"
+  },
+  "viewports": [
+    "390x844",
+    "430x932",
+    "768x1024",
+    "1024x768",
+    "1280x720",
+    "1440x900",
+    "1024x400",
+    "844x390",
+    "667x375"
+  ],
+  "browserQa": {
+    "inventory": "reports/portfolio/fr-p3a/fr-p3a-ui-baseline.json",
+    "representativeViewportChecks": 18,
+    "remainingBookViewportChecks": 20,
+    "horizontalOverflowFindings": 0,
+    "clippedHeadingFindings": 0,
+    "smallControlFindings": 0,
+    "brokenImageFindings": 0,
+    "duplicateIdFindings": 0,
+    "unexpectedConsoleErrors": 0,
+    "unexpectedFailedRequests": 0,
+    "keyboardOnly": "PASS",
+    "forcedColors": "PASS",
+    "reducedMotion": "PASS",
+    "equivalent200PercentReflow": "PASS",
+    "textSpacing": "PASS",
+    "shortLandscape": "PASS",
+    "print": "PASS",
+    "audio": "PASS",
+    "lightbox": "PASS",
+    "status": "PASS"
+  },
+  "screenshots": {
+    "inventory": "reports/portfolio/fr-p3a/fr-p3a-ui-baseline.json",
+    "persistentCount": 6,
+    "persistentBytes": 267620,
+    "distCopies": 0,
+    "status": "PASS"
+  },
+  "codeBudgets": {
+    "allJsRawBytes": 75016,
+    "allJsWarningBytes": 92160,
+    "allJsHardBytes": 112640,
+    "allCssRawBytes": 58877,
+    "allCssWarningBytes": 56320,
+    "allCssHardBytes": 71680,
+    "cssWarning": "EXCEEDED_BY_2557_BYTES",
+    "newJsModules": 1,
+    "runtimeDependencies": 0,
+    "externalFontsOrScripts": 0,
+    "startupJsonRequestCountBefore": 28,
+    "startupJsonRequestCountAfter": 28,
+    "startupJsonRawBytesBefore": 2810496,
+    "startupJsonRawBytesAfter": 2810496,
+    "startupJsonSha256": "0d4cd84f6ade6a7cfab334820afef40084c2d73844bdbdb959b5c3bc97f265d2",
+    "status": "PASS_WITH_CSS_WARNING"
+  },
+  "sourceIntegrity": {
+    "roots": [
+      "source",
+      "data-private",
+      "public/assets/cells-at-work/pages-by-volume",
+      "data/cells-at-work/source-assets",
+      "archived"
+    ],
+    "beforeFiles": 1278,
+    "afterFiles": 1278,
+    "beforeBytes": 7882956334,
+    "afterBytes": 7882956334,
+    "beforeCompactJsonSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "afterCompactJsonSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "trackedSourceAndDataDiffs": 0,
+    "status": "VERIFIED_UNCHANGED"
+  },
+  "privacyValidator": {
+    "status": "PASS",
+    "findingCount": 0
+  },
+  "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+  "productBoundaryStatus": "PASS",
+  "pages": {
+    "finalRunId": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "finalSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "status": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF"
+  },
+  "limitations": [
+    "A tracked manifest cannot contain the SHA of the commit that contains itself; exact Git and Pages values are recorded in the final handoff."
+  ],
+  "qualityCompromises": 0,
+  "nextRecommendedPhase": "FR-P3B Carmela Media, Audio and Interaction Refinement",
+  "status": "LOCAL_ACCEPTANCE_PASS_PENDING_POST_COMMIT_GIT_AND_PAGES_RESOLUTION"
+}

@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-PORTFOLIO-P3A",
+  "generatedAt": "2026-07-20T22:59:08Z",
+  "baseline": {
+    "startSha": "7397effccb417e7fa990490713b0f244fbb5c512",
+    "referencePhase": "FR-P2",
+    "referenceScreenshots": "docs/portfolio/fr-p2/screenshots"
+  },
+  "browserMatrix": {
+    "representativeBooks": ["carmela-s1-01", "carmela-s1-11"],
+    "viewports": [
+      "390x844",
+      "430x932",
+      "768x1024",
+      "1024x768",
+      "1280x720",
+      "1440x900",
+      "1024x400",
+      "844x390",
+      "667x375"
+    ],
+    "representativeViewportChecks": 18,
+    "remainingBookSmokeChecks": 20,
+    "routeChecks": 20,
+    "horizontalOverflowFindings": 0,
+    "clippedHeadingFindings": 0,
+    "smallControlFindings": 0,
+    "brokenImageFindings": 0,
+    "duplicateIdFindings": 0,
+    "nestedControlFindings": 0,
+    "unexpectedConsoleErrors": 0,
+    "unexpectedFailedRequests": 0
+  },
+  "representativeMetrics": [
+    {
+      "slug": "carmela-s1-01",
+      "domNodes": 830,
+      "initialTabbables": 49,
+      "imagesInDom": 87,
+      "eagerImages": 2,
+      "lazyImages": 85
+    },
+    {
+      "slug": "carmela-s1-11",
+      "domNodes": 936,
+      "initialTabbables": 49,
+      "imagesInDom": 117,
+      "eagerImages": 2,
+      "lazyImages": 115
+    }
+  ],
+  "interactionResults": {
+    "skipLink": "PASS",
+    "breadcrumb": "PASS",
+    "companionNavigation": "PASS",
+    "directSectionFocus": "PASS",
+    "backForward": "PASS",
+    "mobileNativeDetailsKeyboard": "PASS",
+    "storyEvidenceDisclosure": "PASS",
+    "questionAnswerToggle": "PASS",
+    "answerEvidenceDisclosure": "PASS",
+    "backgroundAndEncyclopedia": "PASS",
+    "lightboxEscapeArrowsAndFocusRestore": "PASS",
+    "audioPlayPauseSeekAndTeardown": "PASS",
+    "audioFailureState": "PASS",
+    "keyboardOnly": "PASS"
+  },
+  "accessibilityModes": {
+    "forcedColors": "PASS",
+    "forcedColorsLocalOnlySha256": "9fa3f221001936a89d5653390fe4e2d36d1ee917170c0e7c02192d6e055eabef",
+    "reducedMotion": "PASS",
+    "equivalent200PercentReflow": "PASS",
+    "textSpacing": "PASS",
+    "shortLandscape": "PASS",
+    "shortLandscapeLocalOnlySha256": "8f51b37bd8117e91082c147da6938b7ff2f630e7aea69ffb17481194a5b81114",
+    "print": {
+      "status": "PASS",
+      "format": "A4",
+      "pages": 11,
+      "answersPrinted": 9,
+      "evidenceGalleriesPrinted": 0,
+      "localOnlyPdfSha256": "5d48b434d8a98915305ca41d3f2aa23d6fa1b0db4179ecfac58e6e914cff80df",
+      "visualPagesReviewed": [1, 6, 11]
+    }
+  },
+  "screenshots": [
+    {
+      "file": "docs/portfolio/fr-p3a/screenshots/book1-desktop-overview.webp",
+      "viewport": "1440x900",
+      "bytes": 52874,
+      "sha256": "5e474f652f5daca14aa8ef600559adff4cb1fe37a6cca382e95634b29bdac786"
+    },
+    {
+      "file": "docs/portfolio/fr-p3a/screenshots/book1-mobile-overview.webp",
+      "viewport": "390x844",
+      "bytes": 27342,
+      "sha256": "cd81eff928cadb10cf06f9cfd799dfbb08a864fb3f2a9fd4bfab7ec21374badc"
+    },
+    {
+      "file": "docs/portfolio/fr-p3a/screenshots/book1-questions.webp",
+      "viewport": "1280x900",
+      "bytes": 37686,
+      "sha256": "7e8d119121b755c138deaf4488d7dd4ff0115ed3078e5d7d4447832974f6eff2"
+    },
+    {
+      "file": "docs/portfolio/fr-p3a/screenshots/book11-desktop-story-trail.webp",
+      "viewport": "1440x900",
+      "bytes": 58478,
+      "sha256": "595c4862ebf72c12a8588f509d54e3845c5877674a916f4e063d9fc2191d1c49"
+    },
+    {
+      "file": "docs/portfolio/fr-p3a/screenshots/book11-mobile.webp",
+      "viewport": "390x844",
+      "bytes": 28532,
+      "sha256": "e27f81dc33e59bedbe7dd5859e57b5d362bb31226f2a763c4bba23d5aa85e553"
+    },
+    {
+      "file": "docs/portfolio/fr-p3a/screenshots/book11-background-encyclopedia.webp",
+      "viewport": "1280x900",
+      "bytes": 62708,
+      "sha256": "b3c6dcfe4a8dec238f3abdc7a30357209cffc66d1ccd54cda4a9fafb5ddd24a9"
+    }
+  ],
+  "persistentScreenshotCount": 6,
+  "persistentScreenshotBytes": 267620,
+  "screenshotsCopiedToDist": 0,
+  "status": "PASS"
+}
