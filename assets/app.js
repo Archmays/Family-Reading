@@ -1,4 +1,5 @@
 import { wireImageLightbox } from './a11y.js';
+import { createCarmelaCompanionViewModel } from './carmela-companion.js';
 
 const BOOK_INDEX = 'public/books/index.json';
 const CARMELA_SERIES_SLUG = 'carmela-season-1';
@@ -14,14 +15,14 @@ let currentPageKey = '';
 let cleanupView = () => {};
 
 const sectionNav = [
-  ['overview', '书籍总览'],
-  ['review', '内容回顾'],
-  ['scenes', '场景 / 页码'],
-  ['questions', '问答卡片'],
-  ['background', '背景补充'],
-  ['encyclopedia', '剧情相关百科'],
-  ['audio', '音频播放器'],
-  ['parents', '家长使用提示'],
+  ['overview', '快速了解'],
+  ['review', '故事回顾'],
+  ['scenes', '故事路线'],
+  ['questions', '一起聊一聊'],
+  ['background', '背景发现'],
+  ['encyclopedia', '剧情百科'],
+  ['audio', '听一听'],
+  ['parents', '家长共读'],
 ];
 const scienceSectionNav = [
   ['science-overview', '主题导读'],
@@ -348,17 +349,20 @@ function pageLabel(imageRef, prefix = '页面') {
 }
 
 function PageThumbnail(book, imageRef, index = 0, labelPrefix = '页面') {
-  const label = pageLabel(imageRef, labelPrefix);
-  const src = sitePath(`${book.folder}/${imageRef}`);
+  const parsedLabel = pageLabel(imageRef, labelPrefix);
+  const label = parsedLabel === labelPrefix ? `${labelPrefix} ${index + 1}` : parsedLabel;
+  const title = book.identity?.title ?? book.title;
+  const mediaBase = book.identity?.mediaBase ?? book.folder;
+  const src = sitePath(`${mediaBase}/${imageRef}`);
   return `
     <button
       class="page-thumbnail"
       type="button"
-      data-lightbox-src="${src}"
-      data-lightbox-alt="${html(`${book.title} ${label}`)}"
+      data-lightbox-src="${html(src)}"
+      data-lightbox-alt="${html(`${title} ${label}`)}"
       aria-label="放大查看${html(label)}"
     >
-      <img src="${src}" alt="${html(book.title)}${html(label)}" loading="lazy">
+      <img src="${html(src)}" alt="${html(title)}${html(label)}" loading="lazy">
       <span>${html(label)}</span>
     </button>
   `;
@@ -376,27 +380,25 @@ function EvidencePageThumbnails(book, imageRefs, emptyText = '暂无对应页面
   `;
 }
 
-function ExplanationImages(book, item) {
-  const generatedImageRefs = item.generatedImageRefs ?? [];
-  const promptRefs = [
-    ...(item.imagePromptRefs ?? []),
-    item.generatedImagePromptId,
-  ].filter(Boolean);
-  const promptNote = promptRefs.length > 0
-    ? `<p class="thumbnail-empty">待补充解释图：${promptRefs.map((ref) => html(ref)).join('、')}</p>`
-    : '<p class="thumbnail-empty">待补充解释图</p>';
-
+function EvidenceDisclosure(book, imageRefs, summary = '查看页面线索', labelPrefix = '页面线索') {
+  if (!Array.isArray(imageRefs) || imageRefs.length === 0) return '';
   return `
-    <div class="visual-group explanation-group">
-      <h4>解释图</h4>
-      ${generatedImageRefs.length > 0
-        ? EvidencePageThumbnails(book, generatedImageRefs, '解释图待生成', '解释图')
-        : promptNote}
-    </div>
-    <div class="visual-group evidence-group">
-      <h4>绘本页面证据</h4>
-      ${EvidencePageThumbnails(book, item.imageRefs, '暂无页面图', '绘本页面')}
-    </div>
+    <details class="evidence-disclosure">
+      <summary>${html(summary)} <span aria-hidden="true">(${imageRefs.length})</span></summary>
+      ${EvidencePageThumbnails(book, imageRefs, '', labelPrefix)}
+    </details>
+  `;
+}
+
+function ExplanationImages(book, item) {
+  const explanationImages = item.explanationImages ?? [];
+  return `
+    ${explanationImages.length > 0 ? `
+      <div class="explanation-images" role="group" aria-label="相关解释图">
+        ${EvidencePageThumbnails(book, explanationImages, '', '解释图')}
+      </div>
+    ` : ''}
+    ${EvidenceDisclosure(book, item.pageImages, '查看相关绘本页面', '相关绘本页面')}
   `;
 }
 
@@ -759,39 +761,82 @@ function scienceParentGuidanceSection(topic) {
   `;
 }
 
-function overviewSection(book) {
-  const { overview } = book.companion;
+function companionSectionHeading(kicker, title, id) {
   return `
-    <section id="overview" class="content-section" aria-labelledby="overview-title">
-      <h2 id="overview-title">书籍总览</h2>
-      <p>${html(overview.oneLine)}</p>
-      <div class="two-column">
-        <div>
-          <h3>主要角色</h3>
-          <ul class="plain-list">${overview.mainCharacters.map((item) => `<li>${html(item)}</li>`).join('')}</ul>
-        </div>
-        <div>
-          <h3>重要地点</h3>
-          <ul class="plain-list">${overview.importantPlaces.map((item) => `<li>${html(item)}</li>`).join('')}</ul>
-        </div>
+    <header class="companion-section-heading">
+      <p>${html(kicker)}</p>
+      <h2 id="${id}">${html(title)}</h2>
+    </header>
+  `;
+}
+
+function compactFactList(items, label) {
+  const firstItems = items.slice(0, 6);
+  const remainingItems = items.slice(6);
+  return `
+    <ul class="companion-fact-list" aria-label="${html(label)}">
+      ${firstItems.map((item) => `<li>${html(item)}</li>`).join('')}
+    </ul>
+    ${remainingItems.length > 0 ? `
+      <details class="compact-list-disclosure">
+        <summary>再看 ${remainingItems.length} 项</summary>
+        <ul class="companion-fact-list">
+          ${remainingItems.map((item) => `<li>${html(item)}</li>`).join('')}
+        </ul>
+      </details>
+    ` : ''}
+  `;
+}
+
+function overviewSection(book) {
+  return `
+    <section id="overview" class="companion-section companion-overview" aria-labelledby="overview-title">
+      ${companionSectionHeading('先认识角色与方向', '快速了解', 'overview-title')}
+      <p class="companion-lede">${html(book.summary)}</p>
+      <div class="companion-facts-grid">
+        <section aria-labelledby="characters-title">
+          <h3 id="characters-title">主要角色</h3>
+          ${compactFactList(book.facts.characters, '主要角色')}
+        </section>
+        <section aria-labelledby="places-title">
+          <h3 id="places-title">重要地点</h3>
+          ${compactFactList(book.facts.places, '重要地点')}
+        </section>
       </div>
-      <h3>关键冲突</h3>
-      <p>${html(overview.keyConflict)}</p>
-      <div class="focus-tags" aria-label="情绪线索">
-        ${overview.emotionalArc.map((item) => `<span>${html(item)}</span>`).join('')}
+      ${book.facts.relationships.length > 0 ? `
+        <details class="relationship-disclosure">
+          <summary>角色之间 <span aria-hidden="true">(${book.facts.relationships.length})</span></summary>
+          <ul class="plain-list">
+            ${book.facts.relationships.map((item) => `<li>${html(item)}</li>`).join('')}
+          </ul>
+        </details>
+      ` : ''}
+      <article class="conflict-note">
+        <h3>故事里的难题</h3>
+        <p>${html(book.facts.conflict)}</p>
+      </article>
+      <div class="emotion-route">
+        <h3>情绪怎么变化</h3>
+        <ol>
+          ${book.facts.emotionalArc.map((item) => `<li><span>${html(item)}</span></li>`).join('')}
+        </ol>
       </div>
     </section>
   `;
 }
 
 function reviewSection(book) {
-  const { storyReview } = book.companion;
   return `
-    <section id="review" class="content-section" aria-labelledby="review-title">
-      <h2 id="review-title">内容回顾</h2>
-      <p>${html(storyReview.shortReview)}</p>
-      <ol class="plain-list">
-        ${storyReview.mainPlot.map((item) => `<li>${html(item)}</li>`).join('')}
+    <section id="review" class="companion-section companion-review" aria-labelledby="review-title">
+      ${companionSectionHeading('把故事重新串起来', '故事回顾', 'review-title')}
+      <p class="companion-lede">${html(book.storyReview.introduction)}</p>
+      <ol class="story-beats">
+        ${book.storyReview.beats.map((item, index) => `
+          <li>
+            <span aria-hidden="true">${index + 1}</span>
+            <p>${html(item)}</p>
+          </li>
+        `).join('')}
       </ol>
     </section>
   `;
@@ -799,89 +844,104 @@ function reviewSection(book) {
 
 function scenesSection(book) {
   return `
-    <section id="scenes" class="content-section" aria-labelledby="scenes-title">
-      <h2 id="scenes-title">场景 / 页码</h2>
-      <div class="scene-list">
-        ${book.companion.scenes.map((scene) => `
-          <article class="scene-card">
-            <header>
-              <h3>${html(scene.title)}</h3>
-              <span class="page-range">页码：${html(scene.pageRange)}</span>
-            </header>
-            <p>${html(scene.summary)}</p>
-            <div class="focus-tags">
-              ${scene.discussionFocus.map((item) => `<span>${html(item)}</span>`).join('')}
-            </div>
-            ${EvidencePageThumbnails(book, scene.imageRefs, '暂无页面图', '场景页面')}
-          </article>
+    <section id="scenes" class="companion-section companion-scenes" aria-labelledby="scenes-title">
+      ${companionSectionHeading('沿着关键场景往前走', '故事路线', 'scenes-title')}
+      <ol class="story-trail">
+        ${book.scenes.map((scene) => `
+          <li class="story-trail-item">
+            <span class="story-trail-number" aria-hidden="true">${scene.sequence}</span>
+            <article aria-labelledby="scene-${scene.sequence}-title">
+              <header>
+                <div>
+                  <p class="story-trail-label">第 ${scene.sequence} 站</p>
+                  <h3 id="scene-${scene.sequence}-title">${html(scene.title)}</h3>
+                </div>
+                ${scene.pageRange ? `<span class="page-range">绘本页 ${html(scene.pageRange)}</span>` : ''}
+              </header>
+              <p>${html(scene.summary)}</p>
+              ${scene.discussionFocus.length > 0 ? `
+                <ul class="focus-tags" aria-label="这一站可以关注">
+                  ${scene.discussionFocus.map((item) => `<li>${html(item)}</li>`).join('')}
+                </ul>
+              ` : ''}
+              ${EvidenceDisclosure(book, scene.pageImages, '查看这一站的绘本页面', '故事路线页面')}
+            </article>
+          </li>
         `).join('')}
-      </div>
+      </ol>
     </section>
   `;
 }
 
-function questionGroup(book, title, cards, kind) {
+function questionGroup(book, group) {
+  const groupTitleId = `question-group-${group.key}-title`;
   return `
-    <div class="qa-type">
-      <h3>${html(title)}</h3>
-      <div class="qa-grid">
-        ${cards.map((card, index) => {
-          const answerId = `${kind}-${index}`;
-          const isOpen = kind === 'open';
+    <section class="question-group" aria-labelledby="${groupTitleId}">
+      <header>
+        <h3 id="${groupTitleId}">${html(group.label)}</h3>
+        <p>${html(group.purpose)}</p>
+      </header>
+      <div class="question-list">
+        ${group.questions.map((question) => {
+          const collapsedLabel = question.openEnded ? '查看讨论提示' : '查看参考答案';
+          const expandedLabel = question.openEnded ? '收起讨论提示' : '收起参考答案';
           return `
-            <article class="qa-card">
-              <p class="small-tag">${isOpen ? '开放表达' : '参考答案默认隐藏'}</p>
-              <h4>${html(card.prompt)}</h4>
-              <p class="page-range">页码：${html(card.pageRange)}</p>
-              ${isOpen ? '<p class="open-note">开放表达，没有标准答案。</p>' : ''}
+            <article class="question-card" aria-labelledby="${question.id}">
+              <p class="question-sequence">问题 ${question.sequence}</p>
+              <h4 id="${question.id}">${html(question.prompt)}</h4>
+              ${question.pageRange ? `<p class="page-range">绘本页 ${html(question.pageRange)}</p>` : ''}
+              ${question.openEnded ? '<p class="open-note">没有唯一答案，欢迎说说自己的想法。</p>' : ''}
               <button
+                id="${question.toggleId}"
                 class="answer-button"
                 type="button"
-                data-answer-toggle="${answerId}"
-                aria-controls="${answerId}"
+                data-answer-toggle="${question.answerId}"
+                data-label-collapsed="${collapsedLabel}"
+                data-label-expanded="${expandedLabel}"
+                aria-controls="${question.answerId}"
                 aria-expanded="false"
+              >${collapsedLabel}</button>
+              <div
+                id="${question.answerId}"
+                class="answer"
+                role="region"
+                aria-labelledby="${question.toggleId}"
+                hidden
               >
-                ${isOpen ? '显示讨论提示' : '显示参考答案'}
-              </button>
-              <div id="${answerId}" class="answer" hidden>
+                <h5>${question.openEnded ? '讨论提示' : '参考答案'}</h5>
                 <ul class="plain-list">
-                  ${card.talkingPoints.map((item) => `<li>${html(item)}</li>`).join('')}
+                  ${question.talkingPoints.map((item) => `<li>${html(item)}</li>`).join('')}
                 </ul>
-                <div class="answer-evidence">
-                  <h5>答案依据页面</h5>
-                  ${EvidencePageThumbnails(book, card.evidenceImageRefs, '暂无对应页面图', '答案依据页面')}
-                </div>
+                ${EvidenceDisclosure(book, question.evidenceImages, '查看回答所依据的页面', '回答线索页面')}
               </div>
             </article>
           `;
         }).join('')}
       </div>
-    </div>
+    </section>
   `;
 }
 
 function questionsSection(book) {
-  const { questionCards } = book.companion;
   return `
-    <section id="questions" class="content-section" aria-labelledby="questions-title">
-      <h2 id="questions-title">问答卡片</h2>
-      ${questionGroup(book, 'Factual recall', questionCards.factualRecall, 'factual')}
-      ${questionGroup(book, 'Comprehension', questionCards.comprehension, 'comprehension')}
-      ${questionGroup(book, 'Open expression', questionCards.openExpression, 'open')}
+    <section id="questions" class="companion-section companion-questions" aria-labelledby="questions-title">
+      ${companionSectionHeading('读完以后慢慢聊', '一起聊一聊', 'questions-title')}
+      <p class="section-intro">先从画面里的事实说起，再理解角色，最后留下自己的表达。参考内容默认收起。</p>
+      ${book.questionGroups.map((group) => questionGroup(book, group)).join('')}
     </section>
   `;
 }
 
 function backgroundSection(book) {
   return `
-    <section id="background" class="content-section" aria-labelledby="background-title">
-      <h2 id="background-title">背景补充</h2>
-      <div class="note-grid">
-        ${book.companion.backgroundNotes.map((note) => `
-          <article class="note-card">
+    <section id="background" class="companion-section companion-discovery" aria-labelledby="background-title">
+      ${companionSectionHeading('从故事走向更大的世界', '背景发现', 'background-title')}
+      <div class="discovery-list">
+        ${book.background.map((note) => `
+          <article class="discovery-entry">
             <header>
               <h3>${html(note.title)}</h3>
-              <span class="page-range">页码：${html(note.pageRange)}</span>
+              ${note.pageRange ? `<span class="page-range">绘本页 ${html(note.pageRange)}</span>` : ''}
             </header>
             <p>${html(note.note)}</p>
             ${ExplanationImages(book, note)}
@@ -894,34 +954,24 @@ function backgroundSection(book) {
 
 function encyclopediaSection(book) {
   return `
-    <section id="encyclopedia" class="content-section" aria-labelledby="encyclopedia-title">
-      <h2 id="encyclopedia-title">剧情相关百科</h2>
-      <div class="encyclopedia-grid">
-        ${book.companion.encyclopediaEntries.map((entry) => `
-          <article class="mini-card">
+    <section id="encyclopedia" class="companion-section companion-encyclopedia" aria-labelledby="encyclopedia-title">
+      ${companionSectionHeading('把画面里的知识讲清楚', '剧情百科', 'encyclopedia-title')}
+      <div class="discovery-list">
+        ${book.encyclopedia.map((entry) => `
+          <article class="discovery-entry encyclopedia-entry">
             <header>
               <h3>${html(entry.title)}</h3>
-              <span class="page-range">页码：${html(entry.pageRange)}</span>
+              ${entry.pageRange ? `<span class="page-range">绘本页 ${html(entry.pageRange)}</span>` : ''}
             </header>
+            <p class="discovery-summary">${html(entry.summary)}</p>
             <dl class="entry-facts">
-              <div>
-                <dt>故事中出现在哪里</dt>
-                <dd>${html(entry.storyAppearance ?? entry.anchor)}</dd>
-              </div>
-              <div>
-                <dt>它是什么</dt>
-                <dd>${html(entry.whatItIs ?? entry.summary)}</dd>
-              </div>
-              <div>
-                <dt>为什么和故事有关</dt>
-                <dd>${html(entry.whyItMatters ?? entry.summary)}</dd>
-              </div>
-              <div>
-                <dt>一起讨论</dt>
-                <dd>${html(entry.discussionQuestion ?? '一起找找对应页面里的细节。')}</dd>
-              </div>
+              ${entry.facts.filter((fact) => fact.value).map((fact) => `
+                <div>
+                  <dt>${html(fact.label)}</dt>
+                  <dd>${html(fact.value)}</dd>
+                </div>
+              `).join('')}
             </dl>
-            <p>${html(entry.summary)}</p>
             ${ExplanationImages(book, entry)}
           </article>
         `).join('')}
@@ -944,11 +994,11 @@ function markerList(markers) {
     : [];
 
   if (reliableMarkers.length === 0) {
-    return '<p class="audio-note">当前只接入整本音频；没有可靠的场景时间点证据，因此不显示 marker。</p>';
+    return '<p class="audio-note">当前提供整本音频；没有可靠的分段时间线索，因此不显示跳转点。</p>';
   }
 
   return `
-    <ol class="audio-marker-list" aria-label="音频 marker">
+    <ol class="audio-marker-list" aria-label="音频章节跳转点">
       ${reliableMarkers.map((marker) => `
         <li>
           <button type="button" data-audio-marker="${Number(marker.time)}">
@@ -962,15 +1012,15 @@ function markerList(markers) {
 }
 
 function audioSection(book) {
-  const audio = book.companion.audio;
+  const { audio } = book;
 
   if (!audio?.path) {
     return `
-      <section id="audio" class="content-section" aria-labelledby="audio-title">
-        <h2 id="audio-title">音频播放器</h2>
+      <section id="audio" class="companion-section companion-audio" aria-labelledby="audio-title">
+        ${companionSectionHeading('让故事换一种方式陪在身边', '听一听', 'audio-title')}
         <div class="audio-panel audio-panel-empty">
-          <h3>${html(book.title)}</h3>
-          <p class="audio-note">音频暂未接入。页面其余阅读辅助内容仍可使用。</p>
+          <h3>${html(book.identity.title)}</h3>
+          <p class="audio-note" role="status">这本书暂时没有可播放的音频，其他伴读内容仍可继续使用。</p>
         </div>
       </section>
     `;
@@ -979,13 +1029,13 @@ function audioSection(book) {
   const source = sitePath(audio.path);
 
   return `
-    <section id="audio" class="content-section" aria-labelledby="audio-title">
-      <h2 id="audio-title">音频播放器</h2>
+    <section id="audio" class="companion-section companion-audio" aria-labelledby="audio-title">
+      ${companionSectionHeading('让故事换一种方式陪在身边', '听一听', 'audio-title')}
       <div class="audio-panel">
         <h3>${html(audio.title)}</h3>
-        <p class="audio-note">点播辅助音频；不会保存任何播放记录。</p>
+        <p class="audio-note">按需要播放整本伴读音频；离开页面后不会保留播放位置。</p>
         <div class="audio-controls">
-          <button class="audio-main-button" type="button" data-audio-play aria-controls="book-audio">播放音频</button>
+          <button class="audio-main-button" type="button" data-audio-play aria-controls="book-audio" aria-describedby="audio-message">播放音频</button>
           <div class="audio-time" aria-label="当前时间和总时长">
             <span data-audio-current-time>0:00</span>
             <span>/</span>
@@ -1000,11 +1050,12 @@ function audioSection(book) {
           value="0"
           step="0.1"
           data-audio-seek
-          aria-label="音频进度条"
+          aria-label="调整音频播放位置"
+          aria-describedby="audio-message"
           disabled
         >
-        <p class="audio-note" id="audio-message">拖动进度条可调整播放位置。</p>
-        <audio id="book-audio" controls preload="metadata">
+        <p class="audio-note" id="audio-message" role="status" aria-live="polite" aria-atomic="true">拖动滑块可以调整播放位置。</p>
+        <audio id="book-audio" controls preload="metadata" aria-describedby="audio-message">
           <source src="${source}" type="audio/mpeg">
           当前浏览器不支持音频播放。
         </audio>
@@ -1015,64 +1066,80 @@ function audioSection(book) {
 }
 
 function parentsSection(book) {
-  const { parentGuide } = book.companion;
+  const { parentGuide } = book;
   return `
-    <section id="parents" class="content-section" aria-labelledby="parents-title">
-      <h2 id="parents-title">家长使用提示</h2>
+    <section id="parents" class="companion-section companion-parents" aria-labelledby="parents-title">
+      ${companionSectionHeading('把节奏留给孩子', '家长共读', 'parents-title')}
       <p>${html(parentGuide.readingUse)}</p>
-      <div class="two-column">
-        <div>
-          <h3>建议使用流程</h3>
+      <div class="parent-guide-grid">
+        <section>
+          <h3>可以这样陪读</h3>
           <ol class="plain-list">${parentGuide.suggestedFlow.map((item) => `<li>${html(item)}</li>`).join('')}</ol>
-        </div>
-        <div>
-          <h3>需要留意的讲法</h3>
+        </section>
+        <section>
+          <h3>谈到这些内容时</h3>
           <ul class="plain-list">${parentGuide.sensitivePoints.map((item) => `<li>${html(item)}</li>`).join('')}</ul>
+        </section>
+      </div>
+    </section>
+  `;
+}
+
+function bookHero(book) {
+  const { identity } = book;
+  const audioAvailable = Boolean(book.audio.path);
+  return `
+    <section class="carmela-hero" aria-labelledby="book-hero-title">
+      <div class="carmela-hero-cover cover-frame${identity.cover ? '' : ' cover-missing'}">
+        ${identity.cover ? `<img src="${html(sitePath(identity.cover))}" alt="${html(identity.title)}封面">` : ''}
+        <span class="cover-fallback">封面图片暂时无法显示</span>
+      </div>
+      <div class="carmela-hero-copy">
+        <a class="back-link" href="#/series/${CARMELA_SERIES_SLUG}">返回不一样的卡梅拉</a>
+        <p class="carmela-bookmark">${html(identity.seriesTitle)} · 第 ${identity.order} 册</p>
+        <div class="carmela-meta" role="list" aria-label="资料类型">
+          <span role="listitem">绘本伴读</span>
+          <span role="listitem">${audioAvailable ? '含音频' : '文字资料'}</span>
+        </div>
+        <h1 id="book-hero-title" data-route-heading tabindex="-1">${html(identity.title)}</h1>
+        <p class="carmela-hero-summary">${html(book.summary)}</p>
+        <div class="carmela-hero-actions">
+          <a class="action-button" href="#/book/${identity.slug}/overview">从故事总览开始</a>
+          ${audioAvailable ? `<a class="ghost-button" href="#/book/${identity.slug}/audio">听音频</a>` : ''}
         </div>
       </div>
     </section>
   `;
 }
 
-function pageCheckSection(book) {
-  return `
-    <section class="content-section page-check-section" aria-labelledby="page-check-title">
-      <details class="page-check">
-        <summary id="page-check-title">折叠式页面图片核对区</summary>
-        <div class="thumb-row">
-          ${book.previewPages.map((page, index) => `
-            <img src="${sitePath(page)}" alt="${html(book.title)}页面图片 ${index + 1}">
-          `).join('')}
-        </div>
-      </details>
-    </section>
-  `;
-}
-
 function bookPage(book) {
+  const companionBook = createCarmelaCompanionViewModel(book);
   return `
-    <div class="book-layout companion-view">
-      <aside class="book-side">
-        ${bookCard(book, true)}
-        <nav class="quick-nav" aria-label="页面模块">
-          ${sectionNav.map(([id, label]) => `<a href="#/book/${book.slug}/${id}">${label}</a>`).join('')}
-        </nav>
-      </aside>
-      <div class="book-main">
-        <section class="book-title-block">
-          <a class="back-link" href="#/series/${CARMELA_SERIES_SLUG}">返回不一样的卡梅拉</a>
-          <h1 data-route-heading tabindex="-1">${html(book.title)}</h1>
-          <p>${html(book.companion.overview.oneLine)}</p>
-        </section>
-        ${overviewSection(book)}
-        ${reviewSection(book)}
-        ${scenesSection(book)}
-        ${questionsSection(book)}
-        ${backgroundSection(book)}
-        ${encyclopediaSection(book)}
-        ${audioSection(book)}
-        ${parentsSection(book)}
-        ${pageCheckSection(book)}
+    <div class="companion-view companion-view--carmela">
+      ${bookHero(companionBook)}
+      <div class="companion-body">
+        <aside class="companion-route-rail">
+          <nav class="companion-nav" aria-label="这本书的伴读路线">
+            <details data-companion-nav open>
+              <summary>这本书的伴读路线</summary>
+              <div>
+                ${sectionNav.map(([id, label]) => `
+                  <a href="#/book/${companionBook.identity.slug}/${id}" data-companion-nav-link="${id}">${label}</a>
+                `).join('')}
+              </div>
+            </details>
+          </nav>
+        </aside>
+        <div class="book-main companion-reading">
+          ${overviewSection(companionBook)}
+          ${reviewSection(companionBook)}
+          ${scenesSection(companionBook)}
+          ${questionsSection(companionBook)}
+          ${backgroundSection(companionBook)}
+          ${encyclopediaSection(companionBook)}
+          ${audioSection(companionBook)}
+          ${parentsSection(companionBook)}
+        </div>
       </div>
     </div>
     ${ImageLightbox()}
@@ -1194,14 +1261,15 @@ function wireAnswers(signal) {
       answer.hidden = !willShow;
       button.setAttribute('aria-expanded', String(willShow));
       button.textContent = willShow
-        ? button.textContent.replace('显示', '隐藏')
-        : button.textContent.replace('隐藏', '显示');
+        ? button.dataset.labelExpanded
+        : button.dataset.labelCollapsed;
     }, { signal });
   });
 }
 
 function wireAudio(signal) {
   const audio = document.querySelector('#book-audio');
+  const audioSource = audio?.querySelector('source');
   const button = document.querySelector('[data-audio-play]');
   const seek = document.querySelector('[data-audio-seek]');
   const currentTime = document.querySelector('[data-audio-current-time]');
@@ -1269,13 +1337,17 @@ function wireAudio(signal) {
     }, { signal });
   });
 
-  audio.addEventListener('error', () => {
+  function handleAudioError() {
+    audio.pause();
     button.disabled = true;
     if (seek) seek.disabled = true;
     if (message) {
       message.textContent = '音频路径暂时无法访问，页面其余内容仍可使用。';
     }
-  }, { signal });
+  }
+
+  audio.addEventListener('error', handleAudioError, { signal });
+  audioSource?.addEventListener('error', handleAudioError, { signal });
 
   syncDisplay();
   return () => audio.pause();
@@ -1311,6 +1383,27 @@ function wireCategoryNavigation(signal) {
   compactNavigation.addEventListener('change', syncOpenState, { signal });
 }
 
+function wireCompanionNavigation(signal) {
+  const companionNavigation = document.querySelector('[data-companion-nav]');
+  if (!companionNavigation) return;
+  const compactNavigation = matchMedia('(max-width: 680px)');
+  const syncOpenState = () => {
+    companionNavigation.open = !compactNavigation.matches;
+  };
+  syncOpenState();
+  compactNavigation.addEventListener('change', syncOpenState, { signal });
+}
+
+function updateCompanionNavCurrent(target) {
+  document.querySelectorAll('[data-companion-nav-link]').forEach((link) => {
+    if (link.dataset.companionNavLink === target) {
+      link.setAttribute('aria-current', 'location');
+    } else {
+      link.removeAttribute('aria-current');
+    }
+  });
+}
+
 function afterRender() {
   const controller = new AbortController();
   const { signal } = controller;
@@ -1318,6 +1411,7 @@ function afterRender() {
   wireAnswers(signal);
   wireReturnContext(signal);
   wireCategoryNavigation(signal);
+  wireCompanionNavigation(signal);
   const cleanupAudio = wireAudio(signal);
   const cleanupLightbox = wireLightbox();
   return () => {
@@ -1557,6 +1651,7 @@ function render() {
 
   if (route.valid && route.pageKey === currentPageKey) {
     document.querySelector('[data-lightbox]:not([hidden]) [data-lightbox-close-button]')?.click();
+    updateCompanionNavCurrent(route.target);
     focusRoute(route);
     return;
   }
@@ -1573,6 +1668,7 @@ function render() {
   app.innerHTML = route.markup;
   app.setAttribute('aria-busy', 'false');
   cleanupView = afterRender();
+  updateCompanionNavCurrent(route.target);
   focusRoute(route);
 }
 

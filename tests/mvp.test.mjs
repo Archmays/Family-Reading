@@ -95,29 +95,29 @@ const requiredUiText = [
   '含音频',
   '问题卡',
   '听音频',
-  '书籍总览',
-  '内容回顾',
-  '场景 / 页码',
-  '问答卡片',
-  '背景补充',
-  '剧情相关百科',
-  '音频播放器',
+  '快速了解',
+  '故事回顾',
+  '故事路线',
+  '一起聊一聊',
+  '背景发现',
+  '剧情百科',
+  '听一听',
   'data-audio-play',
   'data-audio-seek',
   'data-audio-current-time',
   'data-audio-total-time',
   'preload="metadata"',
-  '音频暂未接入',
+  '暂时没有可播放的音频',
   '音频路径暂时无法访问',
-  '家长使用提示',
+  '家长共读',
   'PageThumbnail',
   'ImageLightbox',
   'EvidencePageThumbnails',
-  '暂无页面图',
-  '暂无对应页面图',
   '解释图',
-  '绘本页面证据',
-  '待补充解释图',
+  '查看相关绘本页面',
+  '查看参考答案',
+  '查看讨论提示',
+  '没有唯一答案',
   '故事中出现在哪里',
   '它是什么',
   '为什么和故事有关',
@@ -313,7 +313,12 @@ function normalizedParentQuestionText(value) {
 }
 
 function appText() {
-  return ['index.html', path.join('assets', 'app.js'), path.join('assets', 'styles.css')]
+  return [
+    'index.html',
+    path.join('assets', 'app.js'),
+    path.join('assets', 'carmela-companion.js'),
+    path.join('assets', 'styles.css'),
+  ]
     .map((file) => readFileSync(path.join(rootDir, file), 'utf8'))
     .join('\n');
 }
@@ -760,8 +765,8 @@ test('Work Cells parent guidance remains limited to selected topics', () => {
 
 test('Work Cells front end renders only V2 formal body science and parent guidance modules', () => {
   const appJs = readFileSync(path.join(rootDir, 'assets', 'app.js'), 'utf8');
-  const stationBody = appJs.match(/function scienceStationSection\(topic\) \{[\s\S]*?\n\}\n\nfunction scienceParentQuestionsSection/)?.[0] ?? '';
-  const questionBody = appJs.match(/function scienceParentQuestionsSection\(topic\) \{[\s\S]*?\n\}\n\nfunction overviewSection/)?.[0] ?? '';
+  const stationBody = appJs.match(/function scienceStationSection\(topic\) \{[\s\S]*?\r?\n\}\r?\n\r?\nfunction scienceParentQuestionsSection/)?.[0] ?? '';
+  const questionBody = appJs.match(/function scienceParentQuestionsSection\(topic\) \{[\s\S]*?\r?\n\}\r?\n\r?\nfunction companionSectionHeading/)?.[0] ?? '';
   const topicPageBody = appJs.match(/function scienceTopicPage\(scienceSeries, topic\) \{[\s\S]*?function errorPage/)?.[0] ?? '';
 
   assert.match(appJs, /function isWorkCellsV2Topic/, 'front end should define a V2 content gate');
@@ -916,9 +921,9 @@ test('static app files and required visible labels exist', () => {
 
 test('home page shows series entrances before book or topic lists', () => {
   const appJs = readFileSync(path.join(rootDir, 'assets', 'app.js'), 'utf8');
-  const homeBody = appJs.match(/function homePage\(\) \{[\s\S]*?\n\}\n\nfunction carmelaSeriesPage/)?.[0] ?? '';
-  const carmelaSeriesBody = appJs.match(/function carmelaSeriesPage\(\) \{[\s\S]*?\n\}\n\nfunction scienceSeriesSection/)?.[0] ?? '';
-  const scienceSeriesBody = appJs.match(/function scienceSeriesSection\(scienceSeries\) \{[\s\S]*?\n\}\n\nfunction scienceTopicCard/)?.[0] ?? '';
+  const homeBody = appJs.match(/function homePage\(\) \{[\s\S]*?\r?\n\}\r?\n\r?\nfunction carmelaSeriesPage/)?.[0] ?? '';
+  const carmelaSeriesBody = appJs.match(/function carmelaSeriesPage\(\) \{[\s\S]*?\r?\n\}\r?\n\r?\nfunction scienceSeriesSection/)?.[0] ?? '';
+  const scienceSeriesBody = appJs.match(/function scienceSeriesSection\(scienceSeries\) \{[\s\S]*?\r?\n\}\r?\n\r?\nfunction scienceTopicCard/)?.[0] ?? '';
 
   assert.match(homeBody, /#\/series\/\$\{CARMELA_SERIES_SLUG\}/, 'home should link to the Carmela series entrance');
   assert.match(homeBody, /#\/series\/\$\{WORK_CELLS_SERIES_SLUG\}/, 'home should link to the Work Cells series entrance');

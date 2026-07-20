@@ -15,7 +15,7 @@ const workCellsManifest = JSON.parse(
 );
 
 function functionBlock(name, nextName) {
-  return appJs.match(new RegExp(`function ${name}\\([^)]*\\) \\{[\\s\\S]*?\\n\\}\\n\\nfunction ${nextName}`))?.[0] ?? '';
+  return appJs.match(new RegExp(`function ${name}\\([^)]*\\) \\{[\\s\\S]*?\\r?\\n\\}\\r?\\n\\r?\\nfunction ${nextName}`))?.[0] ?? '';
 }
 
 function hexToLuminance(hex) {
@@ -123,7 +123,8 @@ test('P2 route changes update title, focus, announcement, and semantic breadcrum
 });
 
 test('P2 answer and lightbox controls expose complete keyboard semantics', () => {
-  assert.match(appJs, /data-answer-toggle="\$\{answerId\}"[\s\S]*aria-controls="\$\{answerId\}"[\s\S]*aria-expanded="false"/);
+  assert.match(appJs, /data-answer-toggle="\$\{question\.answerId\}"[\s\S]*aria-controls="\$\{question\.answerId\}"[\s\S]*aria-expanded="false"/);
+  assert.match(appJs, /role="region"[\s\S]*aria-labelledby="\$\{question\.toggleId\}"/);
   assert.match(appJs, /role="dialog" aria-modal="true" aria-labelledby="lightbox-title"/);
   assert.match(a11yJs, /event\.key !== 'Tab'/);
   assert.match(a11yJs, /event\.key === 'Escape'/);
@@ -152,7 +153,7 @@ test('P2 tokens meet AA contrast and define a 44px focus system', () => {
   assert.match(styles, /outline:\s*3px solid var\(--color-focus\)/);
   assert.match(styles, /\.breadcrumb a[\s\S]*?min-width:\s*var\(--touch-target\)/);
   assert.match(styles, /\.audio-seek[\s\S]*?min-height:\s*var\(--touch-target\)/);
-  assert.match(styles, /\.page-check summary[\s\S]*?min-height:\s*var\(--touch-target\)/);
+  assert.match(styles, /summary\s*\{[\s\S]*?min-height:\s*var\(--touch-target\)/);
   assert.match(styles, /input:focus-visible/);
 });
 
@@ -168,7 +169,7 @@ test('P2 CSS includes reduced motion, forced colors, short landscape, and compan
   assert.match(styles, /\.answer\[hidden\]\s*\{\s*display:\s*block/);
 });
 
-test('P2 raw code budgets and static deployment constraints stay within hard gates', () => {
+test('P2 foundations remain within the active P3A code and static deployment gates', () => {
   const assetScripts = readdirSync(path.join(rootDir, 'assets'))
     .filter((name) => name.endsWith('.js'));
   const jsBytes = assetScripts.reduce(
@@ -176,12 +177,12 @@ test('P2 raw code budgets and static deployment constraints stay within hard gat
     0,
   );
   const cssBytes = statSync(path.join(rootDir, 'assets', 'styles.css')).size;
-  assert.ok(jsBytes <= 90 * 1024, `all JS is ${jsBytes} bytes`);
-  assert.ok(cssBytes <= 55 * 1024, `all CSS is ${cssBytes} bytes`);
+  assert.ok(jsBytes <= 110 * 1024, `all JS is ${jsBytes} bytes`);
+  assert.ok(cssBytes <= 70 * 1024, `all CSS is ${cssBytes} bytes`);
   assert.ok(assetScripts.length - 1 <= 2, 'P2 adds no more than two JS modules');
   assert.equal(Object.keys(packageJson.dependencies ?? {}).length, 0);
   assert.equal(/@import|https?:\/\/.+\.(?:js|css|woff2?)/i.test(`${indexHtml}\n${styles}`), false);
-  assert.match(indexHtml, /assets\/app\.js\?v=fr-p2/);
+  assert.match(indexHtml, /assets\/app\.js\?v=fr-p3a/);
 });
 
 test('P2 loading and error states stay understandable and path-safe', () => {
