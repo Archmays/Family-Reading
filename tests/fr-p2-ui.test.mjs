@@ -138,7 +138,11 @@ test('P2 answer and lightbox controls expose complete keyboard semantics', () =>
   assert.match(appJs, /cleanupView\(\)/);
   assert.equal(`${appJs}\n${a11yJs}`.includes('window.onkeydown ='), false);
   assert.equal(/<div[^>]+data-lightbox-close/.test(appJs), false, 'a div must not be clickable');
-  assert.match(appJs, /data-lightbox-image src="assets\/favicon\.svg"/);
+  assert.match(appJs, /<img data-lightbox-image alt="" hidden>/);
+  assert.equal(/<img[^>]*data-lightbox-image[^>]*\bsrc=/.test(appJs), false, 'idle lightbox must not request an image');
+  assert.match(a11yJs, /function collectGroupItems\(groupId\)/);
+  assert.match(a11yJs, /root\.addEventListener\('click', onOpenerClick/);
+  assert.match(a11yJs, /image\.removeAttribute\('src'\)/);
 });
 
 test('P2 tokens meet AA contrast and define a 44px focus system', () => {
@@ -169,7 +173,7 @@ test('P2 CSS includes reduced motion, forced colors, short landscape, and compan
   assert.match(styles, /\.answer\[hidden\]\s*\{\s*display:\s*block/);
 });
 
-test('P2 foundations remain within the active P3A code and static deployment gates', () => {
+test('P2 foundations remain within the active P3B code and static deployment gates', () => {
   const assetScripts = readdirSync(path.join(rootDir, 'assets'))
     .filter((name) => name.endsWith('.js'));
   const jsBytes = assetScripts.reduce(
@@ -182,7 +186,7 @@ test('P2 foundations remain within the active P3A code and static deployment gat
   assert.ok(assetScripts.length - 1 <= 2, 'P2 adds no more than two JS modules');
   assert.equal(Object.keys(packageJson.dependencies ?? {}).length, 0);
   assert.equal(/@import|https?:\/\/.+\.(?:js|css|woff2?)/i.test(`${indexHtml}\n${styles}`), false);
-  assert.match(indexHtml, /assets\/app\.js\?v=fr-p3a/);
+  assert.match(indexHtml, /assets\/app\.js\?v=fr-p3b(?:-\d{8})?/);
 });
 
 test('P2 loading and error states stay understandable and path-safe', () => {
@@ -197,7 +201,16 @@ test('P2 loading and error states stay understandable and path-safe', () => {
 test('P2 fallback and return-context hooks close their runtime loops', () => {
   assert.match(appJs, /series-entry-cover\$\{coverImage \? '' : ' cover-missing'\}/);
   assert.match(appJs, /topic-thumbnail\$\{thumbnail \? '' : ' thumbnail-missing'\}/);
-  assert.match(appJs, /\.series-entry-cover img, \.cover-frame img, \.topic-thumbnail img/);
+  for (const selector of [
+    '.series-entry-cover img',
+    '.cover-frame img',
+    '.topic-thumbnail img',
+    '.page-thumbnail img',
+  ]) {
+    assert.ok(appJs.includes(`'${selector}'`), `${selector} should use the delegated fallback loop`);
+  }
+  assert.match(appJs, /document\.addEventListener\('error',[\s\S]*capture: true, signal/);
+  assert.match(appJs, /image\.closest\('\.page-thumbnail'\)\?\.classList\.add\('thumbnail-missing'\)/);
   assert.match(styles, /\.series-entry-cover\.cover-missing \.cover-fallback/);
   assert.match(styles, /\.topic-thumbnail\.thumbnail-missing \.cover-fallback/);
   assert.match(appJs, /data-return-series=/);

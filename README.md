@@ -26,6 +26,6 @@ npm run verify:release
 
 `source/` 下的本地原始素材是受保护、被 Git 忽略的追溯来源；构建不会将它们复制到 `dist`。用户提供或指定的项目资源适用全局授权，当前状态为 `RIGHTS_STATUS: PASS_BY_USER_AUTHORIZATION`；Source 不可变、隐私与发布工程边界仍独立执行。
 
-12 册音频当前均有 `public/audio/carmela-s1/` 发布副本，页面使用 `preload="metadata"`。后续是否进行格式、缓存或按需加载优化由性能阶段决定，不以额外版权或许可记录作为发布前置条件。
+12 册音频当前均有 `public/audio/carmela-s1/` 发布副本。播放器使用 `preload="none"`，且只在用户主动播放或操作原生控件后挂载音频路径；不自动播放，也不保存播放位置。不以额外版权或许可记录作为发布前置条件。
 
 更完整的部署检查和体积说明见 `docs/github-pages-deployment.md`。

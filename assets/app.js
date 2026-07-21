@@ -348,57 +348,70 @@ function pageLabel(imageRef, prefix = '页面') {
   return pageNumber ? `${prefix} ${pageNumber}` : prefix;
 }
 
-function PageThumbnail(book, imageRef, index = 0, labelPrefix = '页面') {
-  const parsedLabel = pageLabel(imageRef, labelPrefix);
-  const label = parsedLabel === labelPrefix ? `${labelPrefix} ${index + 1}` : parsedLabel;
-  const title = book.identity?.title ?? book.title;
-  const mediaBase = book.identity?.mediaBase ?? book.folder;
-  const src = sitePath(`${mediaBase}/${imageRef}`);
+function CarmelaMediaThumbnail(book, mediaId, group, index) {
+  const media = book.mediaRegistry?.[mediaId];
+  if (!media) return '';
+  const total = group.mediaIds.length;
+  const position = `第 ${index + 1} 张，共 ${total} 张`;
+  const src = sitePath(media.absolutePath);
   return `
     <button
-      class="page-thumbnail"
+      class="page-thumbnail media-kind-${html(media.kind)}"
       type="button"
       data-lightbox-src="${html(src)}"
-      data-lightbox-alt="${html(`${title} ${label}`)}"
-      aria-label="放大查看${html(label)}"
+      data-lightbox-alt="${html(media.alt)}"
+      data-lightbox-group="${html(group.id)}"
+      data-media-id="${html(media.id)}"
+      aria-label="放大查看${html(media.label)}，${html(position)}"
     >
-      <img src="${html(src)}" alt="${html(title)}${html(label)}" loading="lazy">
-      <span>${html(label)}</span>
+      <img
+        src="${html(src)}"
+        alt="${html(media.alt)}"
+        loading="lazy"
+        decoding="async"
+      >
+      <span>${html(media.label)}</span>
     </button>
   `;
 }
 
-function EvidencePageThumbnails(book, imageRefs, emptyText = '暂无对应页面图', labelPrefix = '证据页面') {
-  if (!Array.isArray(imageRefs) || imageRefs.length === 0) {
-    return `<p class="thumbnail-empty">${html(emptyText)}</p>`;
-  }
-
+function CarmelaMediaGroupTemplate(book, group) {
   return `
     <div class="page-thumbnail-list">
-      ${imageRefs.map((imageRef, index) => PageThumbnail(book, imageRef, index, labelPrefix)).join('')}
+      ${group.mediaIds.map((mediaId, index) => (
+        CarmelaMediaThumbnail(book, mediaId, group, index)
+      )).join('')}
     </div>
   `;
 }
 
-function EvidenceDisclosure(book, imageRefs, summary = '查看页面线索', labelPrefix = '页面线索') {
-  if (!Array.isArray(imageRefs) || imageRefs.length === 0) return '';
+function EvidenceDisclosure(book, groupId, summary = '查看页面线索') {
+  const group = book.mediaGroups?.[groupId];
+  if (!group?.mediaIds?.length) return '';
   return `
-    <details class="evidence-disclosure">
-      <summary>${html(summary)} <span aria-hidden="true">(${imageRefs.length})</span></summary>
-      ${EvidencePageThumbnails(book, imageRefs, '', labelPrefix)}
+    <details class="evidence-disclosure" data-media-disclosure data-media-group-id="${html(group.id)}">
+      <summary>${html(summary)} <span aria-hidden="true">(${group.mediaIds.length})</span></summary>
+      <div class="media-group-mount" data-media-mount aria-label="${html(group.label)}"></div>
+      <template data-media-template>
+        ${CarmelaMediaGroupTemplate(book, group)}
+      </template>
     </details>
   `;
 }
 
 function ExplanationImages(book, item) {
-  const explanationImages = item.explanationImages ?? [];
+  const explanationDisclosure = EvidenceDisclosure(
+    book,
+    item.explanationMediaGroupId,
+    '查看相关解释图',
+  );
   return `
-    ${explanationImages.length > 0 ? `
-      <div class="explanation-images" role="group" aria-label="相关解释图">
-        ${EvidencePageThumbnails(book, explanationImages, '', '解释图')}
+    ${explanationDisclosure ? `
+      <div class="explanation-images">
+        ${explanationDisclosure}
       </div>
     ` : ''}
-    ${EvidenceDisclosure(book, item.pageImages, '查看相关绘本页面', '相关绘本页面')}
+    ${EvidenceDisclosure(book, item.pageMediaGroupId, '查看相关绘本页面')}
   `;
 }
 
@@ -410,7 +423,7 @@ function ImageLightbox() {
         <h2 id="lightbox-title" class="lightbox-title">页面图片放大查看</h2>
         <button class="lightbox-close" type="button" data-lightbox-close data-lightbox-close-button aria-label="关闭放大图">关闭</button>
         <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="上一张">上一张</button>
-        <img data-lightbox-image src="assets/favicon.svg" alt="">
+        <img data-lightbox-image alt="" hidden>
         <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="下一张">下一张</button>
         <p class="lightbox-caption" data-lightbox-caption></p>
       </div>
@@ -864,7 +877,7 @@ function scenesSection(book) {
                   ${scene.discussionFocus.map((item) => `<li>${html(item)}</li>`).join('')}
                 </ul>
               ` : ''}
-              ${EvidenceDisclosure(book, scene.pageImages, '查看这一站的绘本页面', '故事路线页面')}
+              ${EvidenceDisclosure(book, scene.mediaGroupId, '查看这一站的绘本页面')}
             </article>
           </li>
         `).join('')}
@@ -912,7 +925,7 @@ function questionGroup(book, group) {
                 <ul class="plain-list">
                   ${question.talkingPoints.map((item) => `<li>${html(item)}</li>`).join('')}
                 </ul>
-                ${EvidenceDisclosure(book, question.evidenceImages, '查看回答所依据的页面', '回答线索页面')}
+                ${EvidenceDisclosure(book, question.mediaGroupId, '查看回答所依据的页面')}
               </div>
             </article>
           `;
@@ -1031,7 +1044,7 @@ function audioSection(book) {
   return `
     <section id="audio" class="companion-section companion-audio" aria-labelledby="audio-title">
       ${companionSectionHeading('让故事换一种方式陪在身边', '听一听', 'audio-title')}
-      <div class="audio-panel">
+      <div class="audio-panel" data-audio-phase="idle" aria-busy="false">
         <h3>${html(audio.title)}</h3>
         <p class="audio-note">按需要播放整本伴读音频；离开页面后不会保留播放位置。</p>
         <div class="audio-controls">
@@ -1039,7 +1052,7 @@ function audioSection(book) {
           <div class="audio-time" aria-label="当前时间和总时长">
             <span data-audio-current-time>0:00</span>
             <span>/</span>
-            <span data-audio-total-time>0:00</span>
+            <span data-audio-total-time>--:--</span>
           </div>
         </div>
         <input
@@ -1054,9 +1067,14 @@ function audioSection(book) {
           aria-describedby="audio-message"
           disabled
         >
-        <p class="audio-note" id="audio-message" role="status" aria-live="polite" aria-atomic="true">拖动滑块可以调整播放位置。</p>
-        <audio id="book-audio" controls preload="metadata" aria-describedby="audio-message">
-          <source src="${source}" type="audio/mpeg">
+        <p class="audio-note" id="audio-message" role="status" aria-live="polite" aria-atomic="true">尚未加载音频。选择播放后才会请求文件。</p>
+        <audio
+          id="book-audio"
+          controls
+          preload="none"
+          data-audio-src="${html(source)}"
+          aria-describedby="audio-message"
+        >
           当前浏览器不支持音频播放。
         </audio>
         ${markerList(audio.markers)}
@@ -1230,26 +1248,67 @@ function currentRoute() {
 }
 
 function wireCoverFallbacks(signal) {
-  document.querySelectorAll(
-    '.series-entry-cover img, .cover-frame img, .topic-thumbnail img, .thumb-row img, .page-thumbnail img, .science-station-image img',
-  ).forEach((image) => {
-    const showFallback = () => {
-      image.hidden = true;
-      image.closest('.series-entry-cover')?.classList.add('cover-missing');
-      image.closest('.cover-frame')?.classList.add('cover-missing');
-      image.closest('.topic-thumbnail')?.classList.add('thumbnail-missing');
-      image.closest('.page-thumbnail')?.classList.add('thumbnail-missing');
-      image.closest('.science-station-image')?.classList.add('thumbnail-missing');
-    };
-    image.addEventListener('error', showFallback, { once: true, signal });
-    if (image.complete && image.naturalWidth === 0) showFallback();
+  const selector = [
+    '.series-entry-cover img',
+    '.cover-frame img',
+    '.topic-thumbnail img',
+    '.thumb-row img',
+    '.page-thumbnail img',
+    '.science-station-image img',
+  ].join(',');
+
+  const showFallback = (image) => {
+    image.hidden = true;
+    image.closest('.series-entry-cover')?.classList.add('cover-missing');
+    image.closest('.cover-frame')?.classList.add('cover-missing');
+    image.closest('.topic-thumbnail')?.classList.add('thumbnail-missing');
+    image.closest('.page-thumbnail')?.classList.add('thumbnail-missing');
+    image.closest('.science-station-image')?.classList.add('thumbnail-missing');
+  };
+
+  document.addEventListener('error', (event) => {
+    if (event.target instanceof HTMLImageElement && event.target.matches(selector)) {
+      showFallback(event.target);
+    }
+  }, { capture: true, signal });
+
+  document.querySelectorAll(selector).forEach((image) => {
+    if (image.complete && image.naturalWidth === 0) showFallback(image);
   });
 }
 
 function wireLightbox() {
   const lightbox = document.querySelector('[data-lightbox]');
-  const openButtons = [...document.querySelectorAll('[data-lightbox-src]')];
-  return wireImageLightbox(lightbox, openButtons);
+  return wireImageLightbox(lightbox, document);
+}
+
+function wireEvidenceDisclosures(signal) {
+  const disclosures = [...document.querySelectorAll('[data-media-disclosure]')];
+
+  function mount(disclosure) {
+    if (!disclosure.open || disclosure.dataset.mediaMounted === 'true') return;
+    if (matchMedia('print').matches) return;
+    const template = disclosure.querySelector(':scope > [data-media-template]');
+    const target = disclosure.querySelector(':scope > [data-media-mount]');
+    if (!template || !target) return;
+    target.append(template.content.cloneNode(true));
+    disclosure.dataset.mediaMounted = 'true';
+  }
+
+  disclosures.forEach((disclosure) => {
+    disclosure.addEventListener('toggle', () => mount(disclosure), { signal });
+    mount(disclosure);
+  });
+
+  return () => {
+    disclosures.forEach((disclosure) => {
+      disclosure.querySelectorAll('[data-media-mount] img').forEach((image) => {
+        image.removeAttribute('src');
+      });
+      disclosure.querySelector('[data-media-mount]')?.replaceChildren();
+      delete disclosure.dataset.mediaMounted;
+    });
+  };
 }
 
 function wireAnswers(signal) {
@@ -1269,88 +1328,166 @@ function wireAnswers(signal) {
 
 function wireAudio(signal) {
   const audio = document.querySelector('#book-audio');
-  const audioSource = audio?.querySelector('source');
+  const panel = audio?.closest('[data-audio-phase]');
   const button = document.querySelector('[data-audio-play]');
   const seek = document.querySelector('[data-audio-seek]');
   const currentTime = document.querySelector('[data-audio-current-time]');
   const totalTime = document.querySelector('[data-audio-total-time]');
   const message = document.querySelector('#audio-message');
-  if (!audio || !button) return () => {};
+  if (!audio || !panel || !button) return () => {};
+
+  const sourcePath = audio.dataset.audioSrc;
+  let phase = 'idle';
+  let sourceAttached = false;
+  let tearingDown = false;
 
   function audioTotal() {
     const value = Reflect.get(audio, ['dur', 'ation'].join(''));
     return Number.isFinite(value) && value > 0 ? value : 0;
   }
 
+  function canSeek() {
+    return audioTotal() > 0 && ['ready', 'playing', 'paused', 'ended'].includes(phase);
+  }
+
   function syncDisplay() {
     const total = audioTotal();
-    if (currentTime) currentTime.textContent = formatClock(audio.currentTime);
-    if (totalTime) totalTime.textContent = total ? formatClock(total) : '0:00';
+    const rawCurrent = Number.isFinite(audio.currentTime) ? audio.currentTime : 0;
+    const safeCurrent = total > 0 ? Math.min(Math.max(rawCurrent, 0), total) : 0;
+    if (currentTime) currentTime.textContent = formatClock(safeCurrent);
+    if (totalTime) totalTime.textContent = total ? formatClock(total) : '--:--';
     if (seek) {
       seek.max = String(total || 0);
-      seek.value = String(Math.min(audio.currentTime, total || 0));
-      seek.disabled = total === 0;
+      seek.value = String(safeCurrent);
+      seek.disabled = !canSeek();
     }
   }
 
-  button.addEventListener('click', async () => {
+  const phaseCopy = {
+    idle: ['播放音频', '尚未加载音频。选择播放后才会请求文件。'],
+    loading: ['正在加载…', '正在加载音频，请稍候。'],
+    ready: ['播放音频', '音频已就绪，可以播放或调整位置。'],
+    playing: ['暂停音频', '正在播放。'],
+    paused: ['继续播放', '已暂停。'],
+    ended: ['重新播放', '播放结束，可以重新播放。'],
+    error: ['重试音频', '音频暂时无法加载。可以重试，页面其余内容仍可使用。'],
+  };
+
+  function setPhase(nextPhase, copy = '') {
+    phase = nextPhase;
+    panel.dataset.audioPhase = nextPhase;
+    panel.setAttribute('aria-busy', String(nextPhase === 'loading'));
+    button.textContent = phaseCopy[nextPhase][0];
+    button.disabled = false;
+    if (message) message.textContent = copy || phaseCopy[nextPhase][1];
+    syncDisplay();
+  }
+
+  function detachSource() {
+    audio.pause();
+    audio.removeAttribute('src');
+    sourceAttached = false;
+    audio.load();
+  }
+
+  function attachSource({ retry = false } = {}) {
+    if (!sourcePath) {
+      setPhase('error', '音频路径暂时不可用，页面其余内容仍可使用。');
+      return false;
+    }
+    if (retry && sourceAttached) detachSource();
+    if (sourceAttached) return true;
+    setPhase('loading');
+    audio.src = sourcePath;
+    sourceAttached = true;
+    audio.load();
+    return true;
+  }
+
+  async function requestPlay() {
+    const retry = phase === 'error';
+    if (!attachSource({ retry })) return;
+    if (phase === 'ended') audio.currentTime = 0;
     try {
-      if (audio.paused) {
-        await audio.play();
-      } else {
-        audio.pause();
-      }
-    } catch {
-      if (message) {
-        message.textContent = '浏览器暂时阻止了快捷按钮，请使用下方原生音频控件播放或暂停。';
-      }
+      await audio.play();
+    } catch (error) {
+      if (!tearingDown && error?.name !== 'AbortError') setPhase('error');
+    }
+  }
+
+  button.addEventListener('click', () => {
+    if (!audio.paused && ['loading', 'ready', 'playing'].includes(phase)) {
+      audio.pause();
+      return;
+    }
+    requestPlay();
+  }, { signal });
+
+  const primeNativeControls = () => {
+    attachSource({ retry: phase === 'error' });
+  };
+  audio.addEventListener('pointerdown', primeNativeControls, { signal });
+  audio.addEventListener('keydown', (event) => {
+    if (event.key === ' ' || event.key === 'Enter') primeNativeControls();
+  }, { signal });
+
+  audio.addEventListener('loadedmetadata', () => {
+    if (phase === 'loading') setPhase('ready');
+    else syncDisplay();
+  }, { signal });
+  audio.addEventListener('canplay', () => {
+    if (audio.paused && phase === 'loading') setPhase('ready');
+  }, { signal });
+  audio.addEventListener('timeupdate', syncDisplay, { signal });
+  audio.addEventListener('playing', () => setPhase('playing'), { signal });
+  audio.addEventListener('pause', () => {
+    if (sourceAttached && !['idle', 'error', 'ended', 'paused'].includes(phase) && !audio.ended) {
+      setPhase('paused');
     }
   }, { signal });
-
-  audio.addEventListener('play', () => {
-    button.textContent = '暂停音频';
-  }, { signal });
-
-  audio.addEventListener('pause', () => {
-    button.textContent = '播放音频';
-  }, { signal });
-
-  audio.addEventListener('loadedmetadata', syncDisplay, { signal });
-  audio.addEventListener('timeupdate', syncDisplay, { signal });
-  audio.addEventListener('ended', syncDisplay, { signal });
+  audio.addEventListener('ended', () => setPhase('ended'), { signal });
 
   seek?.addEventListener('input', () => {
+    const total = audioTotal();
     const nextTime = Number(seek.value);
-    if (Number.isFinite(nextTime)) {
-      audio.currentTime = nextTime;
-      syncDisplay();
-    }
+    if (!total || !Number.isFinite(nextTime)) return;
+    audio.currentTime = Math.min(Math.max(nextTime, 0), total);
+    syncDisplay();
   }, { signal });
 
   document.querySelectorAll('[data-audio-marker]').forEach((markerButton) => {
     markerButton.addEventListener('click', () => {
-      const nextTime = Number(markerButton.dataset.audioMarker);
-      if (Number.isFinite(nextTime)) {
-        audio.currentTime = nextTime;
+      const requestedTime = Number(markerButton.dataset.audioMarker);
+      if (!Number.isFinite(requestedTime) || !attachSource({ retry: phase === 'error' })) return;
+      const applyMarker = () => {
+        const total = audioTotal();
+        if (!total) return;
+        audio.currentTime = Math.min(Math.max(requestedTime, 0), total);
         syncDisplay();
-      }
+      };
+      if (audioTotal()) applyMarker();
+      else audio.addEventListener('loadedmetadata', applyMarker, { once: true, signal });
     }, { signal });
   });
 
   function handleAudioError() {
+    if (tearingDown) return;
     audio.pause();
-    button.disabled = true;
-    if (seek) seek.disabled = true;
-    if (message) {
-      message.textContent = '音频路径暂时无法访问，页面其余内容仍可使用。';
-    }
+    setPhase('error');
   }
 
   audio.addEventListener('error', handleAudioError, { signal });
-  audioSource?.addEventListener('error', handleAudioError, { signal });
 
-  syncDisplay();
-  return () => audio.pause();
+  setPhase('idle');
+  return () => {
+    tearingDown = true;
+    detachSource();
+    if (seek) {
+      seek.value = '0';
+      seek.max = '0';
+      seek.disabled = true;
+    }
+  };
 }
 
 function wireReturnContext(signal) {
@@ -1412,10 +1549,12 @@ function afterRender() {
   wireReturnContext(signal);
   wireCategoryNavigation(signal);
   wireCompanionNavigation(signal);
+  const cleanupEvidenceDisclosures = wireEvidenceDisclosures(signal);
   const cleanupAudio = wireAudio(signal);
   const cleanupLightbox = wireLightbox();
   return () => {
     controller.abort();
+    cleanupEvidenceDisclosures();
     cleanupAudio();
     cleanupLightbox();
   };

@@ -106,13 +106,15 @@ const requiredUiText = [
   'data-audio-seek',
   'data-audio-current-time',
   'data-audio-total-time',
-  'preload="metadata"',
+  'preload="none"',
+  'data-audio-src',
+  'audio.src = sourcePath',
   '暂时没有可播放的音频',
-  '音频路径暂时无法访问',
+  '音频路径暂时不可用',
   '家长共读',
-  'PageThumbnail',
+  'CarmelaMediaThumbnail',
   'ImageLightbox',
-  'EvidencePageThumbnails',
+  'EvidenceDisclosure',
   '解释图',
   '查看相关绘本页面',
   '查看参考答案',
@@ -983,17 +985,17 @@ test('published books publish audio through ASCII GitHub Pages paths', () => {
   assert.equal(series.books.slice(0, 12).every((book) => book.audio?.path?.startsWith('public/audio/')), true);
 });
 
-test('Carmela audio onboarding doc exists and documents future books', () => {
+test('Carmela audio onboarding doc documents maintenance and on-demand loading', () => {
   const docPath = path.join(rootDir, 'docs', 'how-to-add-carmela-audio.md');
   assert.equal(existsSync(docPath), true, 'audio onboarding doc should exist');
   const doc = readFileSync(docPath, 'utf8');
 
   for (const phrase of [
-    '第 5-12 本',
+    '新增或替换音频',
     'source/不一样的卡梅拉',
     'public/audio/carmela-s1',
     'ASCII',
-    'preload="metadata"',
+    'preload="none"',
     '不要添加播放历史',
     '不要编造 marker',
   ]) {

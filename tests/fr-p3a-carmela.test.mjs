@@ -44,19 +44,26 @@ function bookRecords() {
   });
 }
 
+function mediaPathsForGroup(view, groupId) {
+  const group = view.mediaGroups[groupId];
+  return (group?.mediaIds ?? []).map((mediaId) => view.mediaRegistry[mediaId]?.path).filter(Boolean);
+}
+
 function pageImageRefs(view) {
   return [
-    ...view.scenes.flatMap((scene) => scene.pageImages),
-    ...view.questionGroups.flatMap((group) => group.questions.flatMap((question) => question.evidenceImages)),
-    ...view.background.flatMap((entry) => entry.pageImages),
-    ...view.encyclopedia.flatMap((entry) => entry.pageImages),
+    ...view.scenes.flatMap((scene) => mediaPathsForGroup(view, scene.mediaGroupId)),
+    ...view.questionGroups.flatMap((group) => group.questions.flatMap((question) => (
+      mediaPathsForGroup(view, question.mediaGroupId)
+    ))),
+    ...view.background.flatMap((entry) => mediaPathsForGroup(view, entry.pageMediaGroupId)),
+    ...view.encyclopedia.flatMap((entry) => mediaPathsForGroup(view, entry.pageMediaGroupId)),
   ];
 }
 
 function explanationImageRefs(view) {
   return [
-    ...view.background.flatMap((entry) => entry.explanationImages),
-    ...view.encyclopedia.flatMap((entry) => entry.explanationImages),
+    ...view.background.flatMap((entry) => mediaPathsForGroup(view, entry.explanationMediaGroupId)),
+    ...view.encyclopedia.flatMap((entry) => mediaPathsForGroup(view, entry.explanationMediaGroupId)),
   ];
 }
 
@@ -100,7 +107,15 @@ test('P3A adapter preserves all twelve Carmela content skeletons exactly', () =>
       introduction: companion.storyReview.shortReview,
       beats: companion.storyReview.mainPlot,
     });
-    assert.deepEqual(view.scenes, companion.scenes.map((scene, index) => ({
+    assert.deepEqual(view.scenes.map((scene) => ({
+      sequence: scene.sequence,
+      id: scene.id,
+      title: scene.title,
+      pageRange: scene.pageRange,
+      summary: scene.summary,
+      discussionFocus: scene.discussionFocus,
+      pageImages: mediaPathsForGroup(view, scene.mediaGroupId),
+    })), companion.scenes.map((scene, index) => ({
       sequence: index + 1,
       id: scene.id,
       title: scene.title,
@@ -120,7 +135,7 @@ test('P3A adapter preserves all twelve Carmela content skeletons exactly', () =>
           prompt: question.prompt,
           pageRange: question.pageRange,
           talkingPoints: question.talkingPoints,
-          evidenceImages: question.evidenceImages,
+          evidenceImages: mediaPathsForGroup(view, question.mediaGroupId),
         })),
         companion.questionCards[sourceKey].map((question) => ({
           prompt: question.prompt,
@@ -131,7 +146,14 @@ test('P3A adapter preserves all twelve Carmela content skeletons exactly', () =>
       );
     }
 
-    assert.deepEqual(view.background, companion.backgroundNotes.map((entry, index) => ({
+    assert.deepEqual(view.background.map((entry) => ({
+      sequence: entry.sequence,
+      title: entry.title,
+      pageRange: entry.pageRange,
+      note: entry.note,
+      pageImages: mediaPathsForGroup(view, entry.pageMediaGroupId),
+      explanationImages: mediaPathsForGroup(view, entry.explanationMediaGroupId),
+    })), companion.backgroundNotes.map((entry, index) => ({
       sequence: index + 1,
       title: entry.title,
       pageRange: entry.pageRange,
@@ -139,7 +161,15 @@ test('P3A adapter preserves all twelve Carmela content skeletons exactly', () =>
       pageImages: entry.imageRefs,
       explanationImages: entry.generatedImageRefs,
     })));
-    assert.deepEqual(view.encyclopedia, companion.encyclopediaEntries.map((entry, index) => ({
+    assert.deepEqual(view.encyclopedia.map((entry) => ({
+      sequence: entry.sequence,
+      title: entry.title,
+      pageRange: entry.pageRange,
+      summary: entry.summary,
+      facts: entry.facts,
+      pageImages: mediaPathsForGroup(view, entry.pageMediaGroupId),
+      explanationImages: mediaPathsForGroup(view, entry.explanationMediaGroupId),
+    })), companion.encyclopediaEntries.map((entry, index) => ({
       sequence: index + 1,
       title: entry.title,
       pageRange: entry.pageRange,
@@ -311,12 +341,27 @@ test('P3A adapter is an explicit allowlist with no authoring or source metadata'
     'questionGroups',
     'background',
     'encyclopedia',
+    'mediaRegistry',
+    'mediaGroups',
     'audio',
     'parentGuide',
   ];
 
   for (const { rawBook, assets, companion, view } of bookRecords()) {
     assert.deepEqual(Object.keys(view), allowedRootKeys);
+    const registryEntries = Object.values(view.mediaRegistry);
+    assert.equal(
+      new Set(registryEntries.map((entry) => entry.path)).size,
+      registryEntries.length,
+      `${rawBook.title} should register each media path once`,
+    );
+    for (const [groupId, group] of Object.entries(view.mediaGroups)) {
+      assert.equal(group.id, groupId);
+      assert.equal(new Set(group.mediaIds).size, group.mediaIds.length, `${groupId} should deduplicate media ids`);
+      for (const mediaId of group.mediaIds) {
+        assert.ok(view.mediaRegistry[mediaId], `${groupId} should resolve ${mediaId}`);
+      }
+    }
     const viewKeys = collectKeys(view);
     for (const key of forbiddenKeys) {
       assert.equal(viewKeys.includes(key), false, `${rawBook.title} should exclude ${key}`);
@@ -383,13 +428,19 @@ test('P3A Carmela renderer exposes the requested long-page and accessible intera
   assert.match(detail, /aria-controls="\$\{question\.answerId\}"/);
   assert.match(detail, /role="region"[\s\S]*aria-labelledby="\$\{question\.toggleId\}"/);
   assert.match(detail, /没有唯一答案/);
-  assert.match(appJs, /<details class="evidence-disclosure">/);
-  assert.match(appJs, /<img src="\$\{html\(src\)\}" alt="[\s\S]*loading="lazy">/);
+  assert.match(appJs, /<details class="evidence-disclosure" data-media-disclosure data-media-group-id=/);
+  assert.match(appJs, /<div class="media-group-mount" data-media-mount[^>]*><\/div>[\s\S]*<template data-media-template>/);
+  assert.match(appJs, /template\.content\.cloneNode\(true\)/);
+  assert.match(appJs, /disclosure\.addEventListener\('toggle'/);
+  assert.match(appJs, /<img[\s\S]*?src="\$\{html\(src\)\}"[\s\S]*?loading="lazy"/);
   assert.match(detail, /role="status" aria-live="polite" aria-atomic="true"/);
   assert.match(detail, /aria-label="调整音频播放位置"/);
-  assert.match(detail, /preload="metadata" aria-describedby="audio-message"/);
-  assert.match(appJs, /const audioSource = audio\?\.querySelector\('source'\)/);
-  assert.match(appJs, /audioSource\?\.addEventListener\('error', handleAudioError/);
+  assert.match(detail, /preload="none"[\s\S]*data-audio-src="\$\{html\(source\)\}"/);
+  const idleAudioTag = detail.match(/<audio[\s\S]*?>/)?.[0] ?? '';
+  assert.ok(idleAudioTag, 'audio element should exist');
+  assert.equal(/\ssrc=/.test(idleAudioTag), false, 'idle audio element must not have src');
+  assert.match(appJs, /audio\.src = sourcePath/);
+  assert.match(appJs, /audio\.addEventListener\('error', handleAudioError/);
   assert.equal(detail.includes('<main'), false);
 
   for (const forbiddenCopy of [
@@ -453,8 +504,8 @@ test('P3A styles cover responsive, forced-color, print, and code budget gates', 
   assert.ok(assetScripts.length <= 3, `assets should contain at most 3 JavaScript files, found ${assetScripts.length}`);
   assert.equal(Object.keys(packageJson.dependencies ?? {}).length, 0);
   assert.equal(/@import|https?:\/\/.+\.(?:js|css|woff2?)/i.test(`${indexHtml}\n${styles}`), false);
-  assert.match(indexHtml, /assets\/styles\.css\?v=fr-p3a/);
-  assert.match(indexHtml, /assets\/app\.js\?v=fr-p3a/);
+  assert.match(indexHtml, /assets\/styles\.css\?v=fr-p3b(?:-\d{8})?/);
+  assert.match(indexHtml, /assets\/app\.js\?v=fr-p3b(?:-\d{8})?/);
 });
 
 test('P3A keeps the startup JSON closure at the P2 baseline', () => {

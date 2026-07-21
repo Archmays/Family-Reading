@@ -45,67 +45,201 @@ function restoreBackground(states) {
   });
 }
 
-export function wireImageLightbox(dialog, openers) {
+export function wireImageLightbox(dialog, openerRoot = document) {
   if (!dialog) return () => {};
 
   const controller = new AbortController();
   const { signal } = controller;
+  const root = openerRoot?.querySelectorAll && openerRoot?.addEventListener
+    ? openerRoot
+    : document;
   const image = dialog.querySelector('[data-lightbox-image]');
   const caption = dialog.querySelector('[data-lightbox-caption]');
   const closeButton = dialog.querySelector('[data-lightbox-close-button]');
   const previousButton = dialog.querySelector('[data-lightbox-prev]');
   const nextButton = dialog.querySelector('[data-lightbox-next]');
-  const items = openers.map((opener) => ({
-    opener,
-    src: opener.dataset.lightboxSrc,
-    alt: opener.dataset.lightboxAlt || '页面图',
-  }));
 
-  let activeIndex = 0;
+  let activeItems = [];
+  let activeGroupId = null;
+  let activeIndex = -1;
   let activeOpener = null;
+  let activeSummary = null;
+  let activeFallback = null;
   let backgroundStates = [];
   let savedBodyOverflow = '';
   let savedScrollX = 0;
   let savedScrollY = 0;
+  let imageRequestToken = 0;
 
   document.body.append(dialog);
 
+  function groupIdFor(opener) {
+    return opener.getAttribute('data-lightbox-group')?.trim() || '__legacy-default__';
+  }
+
+  function itemFor(opener) {
+    const src = opener.getAttribute('data-lightbox-src')?.trim();
+    if (!src) return null;
+    return {
+      opener,
+      mediaId: opener.getAttribute('data-media-id')?.trim() || null,
+      src,
+      alt: opener.getAttribute('data-lightbox-alt')?.trim() || '页面图',
+    };
+  }
+
+  function collectGroupItems(groupId) {
+    const openers = [];
+    if (root.matches?.('[data-lightbox-src]')) openers.push(root);
+    openers.push(...root.querySelectorAll('[data-lightbox-src]'));
+
+    const seenMediaIds = new Set();
+    const seenSources = new Set();
+    return openers.reduce((items, opener) => {
+      if (groupIdFor(opener) !== groupId) return items;
+      const item = itemFor(opener);
+      if (!item) return items;
+      if ((item.mediaId && seenMediaIds.has(item.mediaId)) || seenSources.has(item.src)) {
+        return items;
+      }
+      if (item.mediaId) seenMediaIds.add(item.mediaId);
+      seenSources.add(item.src);
+      items.push(item);
+      return items;
+    }, []);
+  }
+
+  function directDetailsSummary(opener) {
+    const details = opener?.closest?.('details');
+    if (!details) return null;
+    return [...details.children].find((child) => child.tagName === 'SUMMARY') || null;
+  }
+
+  function routeFocusFallback() {
+    const scopedHeading = root.querySelector?.('[data-route-heading]');
+    if (scopedHeading?.isConnected) return scopedHeading;
+    return document.querySelector('[data-route-heading]') || document.getElementById('main-content');
+  }
+
+  function focusWithoutScroll(element) {
+    if (!element?.isConnected || typeof element.focus !== 'function') return false;
+    try {
+      element.focus({ preventScroll: true });
+    } catch {
+      element.focus();
+    }
+    return true;
+  }
+
+  function resetRenderedMedia() {
+    imageRequestToken += 1;
+    if (image) {
+      image.removeAttribute('src');
+      image.alt = '';
+      image.hidden = true;
+    }
+    if (caption) caption.textContent = '';
+    if (previousButton) previousButton.disabled = true;
+    if (nextButton) nextButton.disabled = true;
+  }
+
   function show(index) {
-    if (!items.length || !image || !caption) return;
-    activeIndex = (index + items.length) % items.length;
-    const item = items[activeIndex];
-    image.src = item.src;
+    if (!activeItems.length || activeGroupId === null) return;
+    activeIndex = (index + activeItems.length) % activeItems.length;
+    const item = activeItems[activeIndex];
+    const position = `第 ${activeIndex + 1} 张，共 ${activeItems.length} 张`;
+    if (caption) caption.textContent = `${item.alt} · ${position}`;
+    const disableNavigation = activeItems.length < 2;
+    if (previousButton) previousButton.disabled = disableNavigation;
+    if (nextButton) nextButton.disabled = disableNavigation;
+    if (!image) return;
+
+    const requestToken = ++imageRequestToken;
+    image.hidden = true;
+    image.removeAttribute('src');
     image.alt = item.alt;
-    caption.textContent = item.alt;
-    previousButton.disabled = items.length < 2;
-    nextButton.disabled = items.length < 2;
+    image.setAttribute('src', item.src);
+
+    const reveal = () => {
+      if (requestToken !== imageRequestToken) return;
+      if (image.getAttribute('src') !== item.src) return;
+      image.hidden = false;
+    };
+
+    if (typeof image.decode !== 'function') {
+      reveal();
+      return;
+    }
+    try {
+      Promise.resolve(image.decode()).catch(() => undefined).then(reveal);
+    } catch {
+      reveal();
+    }
   }
 
   function close({ restoreFocus = true } = {}) {
-    if (dialog.hidden) return;
+    const wasOpen = !dialog.hidden;
     dialog.hidden = true;
-    document.body.classList.remove('lightbox-open');
-    document.body.style.overflow = savedBodyOverflow;
-    restoreBackground(backgroundStates);
-    backgroundStates = [];
-    window.scrollTo(savedScrollX, savedScrollY);
-    if (restoreFocus && activeOpener?.isConnected) {
-      activeOpener.focus({ preventScroll: true });
+    if (wasOpen) {
+      document.body.classList.remove('lightbox-open');
+      document.body.style.overflow = savedBodyOverflow;
+      window.scrollTo(savedScrollX, savedScrollY);
     }
+    if (backgroundStates.length) restoreBackground(backgroundStates);
+    backgroundStates = [];
+    resetRenderedMedia();
+    if (restoreFocus && wasOpen) {
+      if (activeOpener?.isConnected) {
+        try {
+          activeOpener.focus({ preventScroll: true });
+        } catch {
+          activeOpener.focus();
+        }
+      } else {
+        focusWithoutScroll(activeSummary) || focusWithoutScroll(activeFallback) || focusWithoutScroll(routeFocusFallback());
+      }
+    }
+    activeItems = [];
+    activeGroupId = null;
+    activeIndex = -1;
     activeOpener = null;
+    activeSummary = null;
+    activeFallback = null;
   }
 
-  function open(index, opener) {
+  function open(items, index, opener, groupId) {
+    if (!items.length || !dialog.hidden) return;
+    activeItems = items;
+    activeGroupId = groupId;
     activeOpener = opener;
+    activeSummary = directDetailsSummary(opener);
+    activeFallback = routeFocusFallback();
     savedBodyOverflow = document.body.style.overflow;
     savedScrollX = window.scrollX;
     savedScrollY = window.scrollY;
-    show(index);
     dialog.hidden = false;
+    show(index);
     document.body.classList.add('lightbox-open');
     document.body.style.overflow = 'hidden';
     backgroundStates = blockBackground(dialog);
     requestAnimationFrame(() => closeButton?.focus());
+  }
+
+  function onOpenerClick(event) {
+    const opener = event.target?.closest?.('[data-lightbox-src]');
+    if (!opener) return;
+    if (root !== document && opener !== root && !root.contains?.(opener)) return;
+
+    const groupId = groupIdFor(opener);
+    const items = collectGroupItems(groupId);
+    const clickedItem = itemFor(opener);
+    if (!clickedItem || !items.length) return;
+    const index = items.findIndex((item) => {
+      if (item.opener === opener) return true;
+      if (clickedItem.mediaId && item.mediaId === clickedItem.mediaId) return true;
+      return item.src === clickedItem.src;
+    });
+    open(items, Math.max(0, index), opener, groupId);
   }
 
   function onKeydown(event) {
@@ -144,9 +278,9 @@ export function wireImageLightbox(dialog, openers) {
     }
   }
 
-  openers.forEach((opener, index) => {
-    opener.addEventListener('click', () => open(index, opener), { signal });
-  });
+  dialog.hidden = true;
+  resetRenderedMedia();
+  root.addEventListener('click', onOpenerClick, { signal });
   dialog.querySelectorAll('[data-lightbox-close]').forEach((button) => {
     button.addEventListener('click', () => close(), { signal });
   });

@@ -1164,6 +1164,10 @@ summary {
   margin-top: 14px;
 }
 
+.media-group-mount:empty {
+  display: none;
+}
+
 .page-thumbnail {
   min-height: 0;
   padding: 0;
@@ -1188,6 +1192,11 @@ summary {
   aspect-ratio: 3 / 4;
   object-fit: cover;
   background: #ffffff;
+}
+
+.page-thumbnail.media-kind-explanation img {
+  aspect-ratio: 4 / 3;
+  object-fit: contain;
 }
 
 .page-thumbnail span {
@@ -1433,6 +1442,10 @@ summary {
   border-radius: 8px;
   background: #ffffff;
   box-shadow: 0 20px 44px rgba(0, 0, 0, 0.28);
+}
+
+.lightbox-panel img[hidden] {
+  display: none;
 }
 
 .lightbox-nav {
@@ -2250,6 +2263,10 @@ audio {
 
 .companion-view--carmela .audio-main-button {
   background: var(--color-carmela);
+}
+
+.companion-view--carmela .audio-panel[data-audio-phase="loading"] .audio-main-button {
+  cursor: wait;
 }
 
 .companion-view--carmela .audio-time,

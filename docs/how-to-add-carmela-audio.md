@@ -4,7 +4,7 @@
 
 ## Current Mapping
 
-前四本已经建立从原始音频到 GitHub Pages 发布路径的映射：
+12 本均已建立从原始音频到 GitHub Pages 发布路径的映射。以下保留前四项作为命名示例：
 
 | Book | Source file | Public file |
 | --- | --- | --- |
@@ -34,9 +34,9 @@
 
 `series.json` 中前四本的 `audio.path` 和 `audio.sourcePath` 应保持同样映射，方便首页和书籍页使用同一套路径。
 
-## 第 5-12 本
+## 新增或替换音频
 
-后续接入第 5-12 本时，按以下步骤处理：
+后续维护音频时，按以下步骤处理：
 
 1. 确认原始 MP3 已存在于 `source/不一样的卡梅拉`，不要改动原文件名。
 2. 复制一份到 `public/audio/carmela-s1/`。
@@ -44,7 +44,7 @@
 4. 在对应书籍的 `companion.json` 中添加或更新 `audio.path` 为 public 路径，并用 `audio.sourcePath` 记录原始 source 路径。
 5. 在 `public/books/不一样的卡梅拉/series.json` 对应书籍条目里写入同样的 `audio` 映射。
 6. 如果没有可靠时间点证据，保持 `markers: []`，不要编造 marker。
-7. 页面播放器必须继续使用 `preload="metadata"`，不要自动播放，也不要添加播放历史、录音、账号或统计功能。
+7. 页面播放器必须继续使用 `preload="none"`，初始不挂载 `src`；只在用户主动播放或操作原生控件后挂载 public 路径。不要自动播放，也不要添加播放历史、录音、账号或统计功能。
 8. 运行构建检查，确认静态 GitHub Pages 路径可用。
 
 ## Marker Rule
