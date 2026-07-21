@@ -32,7 +32,7 @@
 }
 ```
 
-`series.json` 中前四本的 `audio.path` 和 `audio.sourcePath` 应保持同样映射，方便首页和书籍页使用同一套路径。
+`series.json` 中 12 本对应条目的 `audio.path` 和 `audio.sourcePath` 应保持同样映射，方便首页和书籍页使用同一套路径。
 
 ## 新增或替换音频
 

@@ -353,24 +353,30 @@ function CarmelaMediaThumbnail(book, mediaId, group, index) {
   if (!media) return '';
   const total = group.mediaIds.length;
   const position = `第 ${index + 1} 张，共 ${total} 张`;
+  const contextLabel = media.kind === 'explanation'
+    ? `${group.label} · 第 ${index + 1} 张`
+    : media.label;
+  const contextAlt = media.kind === 'explanation'
+    ? `${book.identity?.title ?? book.title}：${contextLabel}`
+    : media.alt;
   const src = sitePath(media.absolutePath);
   return `
     <button
       class="page-thumbnail media-kind-${html(media.kind)}"
       type="button"
       data-lightbox-src="${html(src)}"
-      data-lightbox-alt="${html(media.alt)}"
+      data-lightbox-alt="${html(contextAlt)}"
       data-lightbox-group="${html(group.id)}"
       data-media-id="${html(media.id)}"
-      aria-label="放大查看${html(media.label)}，${html(position)}"
+      aria-label="放大查看${html(contextLabel)}，${html(position)}"
     >
       <img
         src="${html(src)}"
-        alt="${html(media.alt)}"
+        alt="${html(contextAlt)}"
         loading="lazy"
         decoding="async"
       >
-      <span>${html(media.label)}</span>
+      <span>${html(contextLabel)}</span>
     </button>
   `;
 }

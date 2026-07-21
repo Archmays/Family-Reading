@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-PORTFOLIO-P3B",
+  "capturedAt": "2026-07-21T04:49:55.257Z",
+  "initial": {
+    "book01MobileRequests": 0,
+    "book01DesktopRequests": 0,
+    "book11MobileRequests": 0,
+    "book11DesktopRequests": 0,
+    "preload": "none",
+    "srcAttribute": null,
+    "phase": "idle",
+    "totalLabel": "--:--",
+    "seekDisabled": true
+  },
+  "browserCases": [
+    {"book":1,"viewport":{"width":390,"height":844},"phases":["idle","loading","ready","playing","paused","playing","ended"],"totalLabel":"10:50","pausedSeekSeconds":30,"keyboardSeekSeconds":30.1,"endedButton":"重新播放","firstRequest":{"status":206,"range":"bytes=0-","contentRange":"bytes 0-5208121/5208122","resourceBytes":5208122,"mimeType":"audio/mpeg","cacheControl":"max-age=3600","expectedAbortOnNearEndSeek":true},"nearEndRequest":{"status":206,"range":"bytes=5177344-","contentRange":"bytes 5177344-5208121/5208122","resourceBytes":30778,"fromDiskCache":true}},
+    {"book":1,"viewport":{"width":1440,"height":900},"phases":["idle","loading","ready","playing","paused","playing","ended"],"totalLabel":"10:50","pausedSeekSeconds":30,"keyboardSeekSeconds":30.1,"endedButton":"重新播放","firstRequest":{"status":206,"range":"bytes=0-","contentRange":"bytes 0-5208121/5208122","resourceBytes":5208122,"mimeType":"audio/mpeg","cacheControl":"max-age=3600","expectedAbortOnNearEndSeek":true},"nearEndRequest":{"status":206,"range":"bytes=5177344-","contentRange":"bytes 5177344-5208121/5208122","resourceBytes":30778,"fromDiskCache":true}},
+    {"book":11,"viewport":{"width":390,"height":844},"phases":["idle","loading","ready","playing","paused","playing","ended"],"totalLabel":"18:39","pausedSeekSeconds":30,"keyboardSeekSeconds":30.1,"endedButton":"重新播放","firstRequest":{"status":206,"range":"bytes=0-","contentRange":"bytes 0-8957842/8957843","resourceBytes":8957843,"mimeType":"audio/mpeg","cacheControl":"max-age=3600","expectedAbortOnNearEndSeek":true},"nearEndRequest":{"status":206,"range":"bytes=8945664-","contentRange":"bytes 8945664-8957842/8957843","resourceBytes":12179,"transferBytes":12665,"fromDiskCache":false}},
+    {"book":11,"viewport":{"width":1440,"height":900},"phases":["idle","loading","ready","playing","paused","playing","ended"],"totalLabel":"18:39","pausedSeekSeconds":30,"keyboardSeekSeconds":30.1,"endedButton":"重新播放","firstRequest":{"status":206,"range":"bytes=0-","contentRange":"bytes 0-8957842/8957843","resourceBytes":8957843,"mimeType":"audio/mpeg","cacheControl":"max-age=3600","expectedAbortOnNearEndSeek":true},"nearEndRequest":{"status":206,"range":"bytes=8945664-","contentRange":"bytes 8945664-8957842/8957843","resourceBytes":12179,"transferBytes":12665,"fromDiskCache":false}}
+  ],
+  "httpRangeProbes": [
+    {"book":1,"requestedRange":"bytes=0-1023","status":206,"contentRange":"bytes 0-1023/5208122","contentLength":1024,"contentType":"audio/mpeg","acceptRanges":"bytes"},
+    {"book":1,"requestedRange":"bytes=5177344-","status":206,"contentRange":"bytes 5177344-5208121/5208122","contentLength":30778,"contentType":"audio/mpeg","acceptRanges":"bytes"},
+    {"book":11,"requestedRange":"bytes=0-1023","status":206,"contentRange":"bytes 0-1023/8957843","contentLength":1024,"contentType":"audio/mpeg","acceptRanges":"bytes"},
+    {"book":11,"requestedRange":"bytes=8945664-","status":206,"contentRange":"bytes 8945664-8957842/8957843","contentLength":12179,"contentType":"audio/mpeg","acceptRanges":"bytes"}
+  ],
+  "browserRequestEvidence": {
+    "capturedAt": "2026-07-21T04:49:55.257Z",
+    "tupleSchema": "[url,type,status,transferBytes,resourceBytes,initiator,startMs,finishMs,fromDiskCache,fromServiceWorker,range,contentRange]",
+    "cases": [
+      {
+        "case": "carmela-s1-01-mobile",
+        "requests": [
+          [
+            "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-01.mp3",
+            "Media",
+            206,
+            null,
+            5208122,
+            "other",
+            1691,
+            null,
+            false,
+            false,
+            "bytes=0-",
+            "bytes 0-5208121/5208122"
+          ],
+          [
+            "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-01.mp3",
+            "Media",
+            206,
+            0,
+            30778,
+            "other",
+            2030,
+            2031,
+            true,
+            false,
+            "bytes=5177344-",
+            "bytes 5177344-5208121/5208122"
+          ]
+        ],
+        "expectedFailures": [
+          {
+            "phase": "audio",
+            "url": "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-01.mp3",
+            "error": "net::ERR_ABORTED"
+          }
+        ],
+        "firstRequestCompletion": "SUPERSEDED_BY_NEAR_END_SEEK",
+        "note": "The first 206 response was playable, then Chromium cancelled the in-flight request when the test sought near the end; transferBytes and finishMs are intentionally null."
+      },
+      {
+        "case": "carmela-s1-01-desktop",
+        "requests": [
+          [
+            "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-01.mp3",
+            "Media",
+            206,
+            null,
+            5208122,
+            "other",
+            1576,
+            null,
+            false,
+            false,
+            "bytes=0-",
+            "bytes 0-5208121/5208122"
+          ],
+          [
+            "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-01.mp3",
+            "Media",
+            206,
+            0,
+            30778,
+            "other",
+            1830,
+            1831,
+            true,
+            false,
+            "bytes=5177344-",
+            "bytes 5177344-5208121/5208122"
+          ]
+        ],
+        "expectedFailures": [
+          {
+            "phase": "audio",
+            "url": "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-01.mp3",
+            "error": "net::ERR_ABORTED"
+          }
+        ],
+        "firstRequestCompletion": "SUPERSEDED_BY_NEAR_END_SEEK",
+        "note": "The first 206 response was playable, then Chromium cancelled the in-flight request when the test sought near the end; transferBytes and finishMs are intentionally null."
+      },
+      {
+        "case": "carmela-s1-11-mobile",
+        "requests": [
+          [
+            "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-11.mp3",
+            "Media",
+            206,
+            null,
+            8957843,
+            "other",
+            1656,
+            null,
+            false,
+            false,
+            "bytes=0-",
+            "bytes 0-8957842/8957843"
+          ],
+          [
+            "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-11.mp3",
+            "Media",
+            206,
+            12665,
+            12179,
+            "other",
+            1843,
+            1845,
+            false,
+            false,
+            "bytes=8945664-",
+            "bytes 8945664-8957842/8957843"
+          ]
+        ],
+        "expectedFailures": [
+          {
+            "phase": "audio",
+            "url": "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-11.mp3",
+            "error": "net::ERR_ABORTED"
+          }
+        ],
+        "firstRequestCompletion": "SUPERSEDED_BY_NEAR_END_SEEK",
+        "note": "The first 206 response was playable, then Chromium cancelled the in-flight request when the test sought near the end; transferBytes and finishMs are intentionally null."
+      },
+      {
+        "case": "carmela-s1-11-desktop",
+        "requests": [
+          [
+            "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-11.mp3",
+            "Media",
+            206,
+            null,
+            8957843,
+            "other",
+            1682,
+            null,
+            false,
+            false,
+            "bytes=0-",
+            "bytes 0-8957842/8957843"
+          ],
+          [
+            "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-11.mp3",
+            "Media",
+            206,
+            12665,
+            12179,
+            "other",
+            1871,
+            1873,
+            false,
+            false,
+            "bytes=8945664-",
+            "bytes 8945664-8957842/8957843"
+          ]
+        ],
+        "expectedFailures": [
+          {
+            "phase": "audio",
+            "url": "/Family-Reading-Codex/public/audio/carmela-s1/carmela-s1-11.mp3",
+            "error": "net::ERR_ABORTED"
+          }
+        ],
+        "firstRequestCompletion": "SUPERSEDED_BY_NEAR_END_SEEK",
+        "note": "The first 206 response was playable, then Chromium cancelled the in-flight request when the test sought near the end; transferBytes and finishMs are intentionally null."
+      }
+    ],
+    "unexpectedFailures": 0,
+    "status": "PASS"
+  },
+  "errorRecovery": {
+    "abortedRequestCount": 1,
+    "errorPhase": "error",
+    "errorButton": "重试音频",
+    "buttonDisabled": false,
+    "seekDisabled": true,
+    "retryPhase": "playing",
+    "retryButton": "暂停音频",
+    "nextBookPhase": "idle",
+    "nextBookSrc": null,
+    "nativeControlIntentPhase": "loading",
+    "nativeControlIntentAttachedSrc": true,
+    "status": "PASS"
+  },
+  "teardown": {
+    "paused": true,
+    "srcAttribute": null,
+    "elementConnected": false,
+    "backgroundPlayback": false,
+    "note": "Chromium retains the last selected URL in its read-only currentSrc diagnostic after detach; the authored src attribute is removed, load() is called, playback is paused, and no background request remains."
+  },
+  "persistence": {
+    "localStorage": false,
+    "sessionStorage": false,
+    "cookies": false,
+    "urlState": false,
+    "autoplay": false,
+    "nativeControls": true
+  },
+  "expectedDiagnostics": [
+    "Chromium reports net::ERR_ABORTED for the superseded first Range request when the test seeks near the end; the follow-up 206 request succeeds."
+  ],
+  "unexpectedConsoleErrors": 0,
+  "unexpectedRequestFailures": 0,
+  "status": "PASS"
+}

@@ -107,11 +107,9 @@ function createMediaCatalog(book = {}) {
       if (!mediaId) {
         mediaId = mediaIdForPath(bookSlug, path);
         const pageNumber = kind === 'page' ? pageNumberFromPath(path) : undefined;
-        const mediaLabel = pageNumber == null
-          ? `${label} · 第 ${index + 1} 张`
-          : `绘本第 ${pageNumber} 页`;
+        const mediaLabel = pageNumber == null ? '延伸图解' : `绘本第 ${pageNumber} 页`;
         const alt = pageNumber == null
-          ? `${bookTitle}：${mediaLabel}`
+          ? `${bookTitle}：延伸图解`
           : `${bookTitle}绘本第 ${pageNumber} 页`;
 
         mediaIdByPath.set(path, mediaId);

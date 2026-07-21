@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "runId": "fr-p3b-20260721T044955Z",
+  "phase": "FR-PORTFOLIO-P3B",
+  "repository": {
+    "nameWithOwner": "Archmays/Family-Reading",
+    "repositoryId": 1271691196,
+    "visibility": "PUBLIC_UNCHANGED",
+    "defaultBranch": "main"
+  },
+  "git": {
+    "startSha": "45347b2c8b3767da90a51cc8759d51c4878b1bca",
+    "implementationSha": "8eadb1b2b4fba566bee031b07db1420ce843b78c",
+    "workBranch": "codex/fr-p3b-carmela-media-audio",
+    "finalSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "historyRewrite": false,
+    "forcePush": false
+  },
+  "changeImpact": {
+    "classification": "PHASE_SCOPED_WITH_SHARED_UI_COMPATIBILITY",
+    "canonicalWriter": "createCarmelaCompanionViewModel",
+    "affected": [
+      "Carmela media adapter",
+      "Carmela detail renderer",
+      "shared lightbox controller",
+      "Carmela audio lifecycle",
+      "shared visual styles"
+    ],
+    "compatibilityClosure": [
+      "P2 shell tests",
+      "P3A content parity tests",
+      "Work Cells shared-lightbox browser smoke",
+      "static build and Pages"
+    ]
+  },
+  "changedFiles": [
+    "README.md",
+    "index.html",
+    "assets/a11y.js",
+    "assets/app.js",
+    "assets/carmela-companion.js",
+    "assets/styles.css",
+    "docs/how-to-add-carmela-audio.md",
+    "scripts/run-tests.mjs",
+    "tests/mvp.test.mjs",
+    "tests/fr-p2-ui.test.mjs",
+    "tests/fr-p3a-carmela.test.mjs",
+    "tests/fr-p3b-carmela-media.test.mjs",
+    "docs/portfolio/fr-p3b/FR-P3B-media-and-audio-design.md",
+    "docs/portfolio/fr-p3b/FR-P3B-network-performance-report.md",
+    "docs/portfolio/fr-p3b/FR-P3B-browser-accessibility-report.md",
+    "docs/portfolio/fr-p3b/FR-P3B-final-report.md",
+    "docs/portfolio/fr-p3b/screenshots/book-01-mobile-media-group.jpg",
+    "docs/portfolio/fr-p3b/screenshots/book-01-desktop-audio-ready.jpg",
+    "docs/portfolio/fr-p3b/screenshots/book-11-desktop-group-lightbox.jpg",
+    "reports/portfolio/fr-p3b/fr-p3b-media-reference-baseline-before.json",
+    "reports/portfolio/fr-p3b/fr-p3b-media-reference-baseline-after.json",
+    "reports/portfolio/fr-p3b/fr-p3b-route-network-baseline.json",
+    "reports/portfolio/fr-p3b/fr-p3b-audio-range-baseline.json",
+    "reports/portfolio/fr-p3b/fr-p3b-run-manifest.json"
+  ],
+  "tests": {
+    "baseline": {
+      "passed": 83,
+      "total": 83
+    },
+    "targeted": [
+      {
+        "scope": "new media registry and interaction contracts",
+        "command": "node --test tests/fr-p3b-carmela-media.test.mjs",
+        "passed": 7,
+        "total": 7,
+        "status": "PASS"
+      },
+      {
+        "scope": "legacy MVP expectation after audio documentation correction",
+        "command": "node --test tests/mvp.test.mjs",
+        "passed": 40,
+        "total": 40,
+        "status": "PASS"
+      },
+      {
+        "scope": "P2 shared-shell compatibility",
+        "command": "node --test tests/fr-p2-ui.test.mjs",
+        "passed": 11,
+        "total": 11,
+        "status": "PASS"
+      },
+      {
+        "scope": "P3A content parity plus final P3B audio wiring",
+        "command": "node --test tests/fr-p3a-carmela.test.mjs tests/fr-p3b-carmela-media.test.mjs",
+        "passed": 16,
+        "total": 16,
+        "status": "PASS"
+      }
+    ],
+    "developmentMismatch": {
+      "count": 1,
+      "cause": "one legacy documentation assertion expected metadata preload",
+      "resolution": "updated the documentation and affected assertion to the approved none-preload contract",
+      "thresholdsWeakened": false
+    },
+    "finalRelease": {
+      "command": "npx --yes node@22 scripts/verify-release.mjs",
+      "node": "v22.23.1",
+      "localInvocations": 1,
+      "passed": 90,
+      "total": 90,
+      "failed": 0,
+      "initialBuildStatus": "FAIL_PUBLIC_REPOSITORY_VALIDATOR",
+      "initialBuildFinding": "WINDOWS_ABSOLUTE_PATH in a test-only unsafe-path fixture",
+      "failedJobReruns": 1,
+      "fullSuiteRepeated": false,
+      "affectedTestRerun": {
+        "command": "npx --yes node@22 --test tests/fr-p3b-carmela-media.test.mjs",
+        "passed": 7,
+        "total": 7,
+        "status": "PASS"
+      },
+      "status": "PASS_AFTER_AFFECTED_VALIDATOR_RERUN"
+    }
+  },
+  "build": {
+    "targetedDevelopmentBuilds": 1,
+    "finalGateBuilds": 1,
+    "failedBuildAttempts": 1,
+    "affectedClosureBuilds": 1,
+    "status": "PASS",
+    "publicRepositoryValidator": "PASS",
+    "publicRepositoryFindings": 0,
+    "distAudit": "PASS",
+    "distFiles": 1536,
+    "distBytes": 838074288,
+    "p3aDistBytes": 838058575,
+    "deltaBytes": 15713
+  },
+  "mediaInventory": {
+    "before": "reports/portfolio/fr-p3b/fr-p3b-media-reference-baseline-before.json",
+    "after": "reports/portfolio/fr-p3b/fr-p3b-media-reference-baseline-after.json",
+    "bookCount": 12,
+    "uniquePagePaths": 297,
+    "uniqueExplanationPaths": 69,
+    "registryEntries": 366,
+    "mediaGroups": 333,
+    "useSites": 988,
+    "repeatedUseSitesPreserved": 622,
+    "crossGroupExplanationReuseCases": 7,
+    "missingMediaPaths": 0,
+    "status": "PASS"
+  },
+  "network": {
+    "inventory": "reports/portfolio/fr-p3b/fr-p3b-route-network-baseline.json",
+    "representativeColdCases": 4,
+    "initialPageMediaRequests": 0,
+    "initialAudioRequests": 0,
+    "initialCoverRequestsPerCase": 1,
+    "initialLightboxPlaceholderRequests": 0,
+    "book01FirstGroupRequests": 2,
+    "book11FirstGroupRequests": 5,
+    "reopenTransferBytes": 0,
+    "lightboxTransferBytes": 0,
+    "warmMediaNetworkEvents": 0,
+    "warmMediaTransferBytes": 0,
+    "warmMediaReuseMode": "MEMORY_CACHE_NO_NETWORK_EVENT",
+    "warmReturnFaviconEvents": 1,
+    "expectedMediaCancellationCases": 4,
+    "unexpectedFailures": 0,
+    "status": "PASS"
+  },
+  "audio": {
+    "inventory": "reports/portfolio/fr-p3b/fr-p3b-audio-range-baseline.json",
+    "phases": [
+      "idle",
+      "loading",
+      "ready",
+      "playing",
+      "paused",
+      "ended",
+      "error"
+    ],
+    "initialRequests": 0,
+    "rangeProbeCount": 4,
+    "range206Count": 4,
+    "customSeek": "PASS",
+    "keyboardSeek": "PASS",
+    "nearEndSeek": "PASS",
+    "errorRetry": "PASS",
+    "routeTeardown": "PASS",
+    "nativeControls": "PASS",
+    "autoplay": false,
+    "playbackPersistence": false,
+    "status": "PASS"
+  },
+  "browserQa": {
+    "representativeInteractionCases": 4,
+    "remainingBookViewportCases": 20,
+    "extraRepresentativeViewportCases": 8,
+    "requestedViewportSizesCovered": 6,
+    "book01DomBefore": 830,
+    "book01DomAfter": 624,
+    "book01ReductionPercent": 24.82,
+    "book11DomBefore": 936,
+    "book11DomAfter": 636,
+    "book11ReductionPercent": 32.05,
+    "representativeTabbables": 47,
+    "horizontalOverflowFindings": 0,
+    "brokenImageFindings": 0,
+    "duplicateIdFindings": 0,
+    "nestedControlFindings": 0,
+    "unexpectedConsoleErrors": 0,
+    "forcedColors": "PASS",
+    "reducedMotion": "PASS",
+    "workCellsSharedShell": "PASS",
+    "crossGroupExplanationContext": "PASS",
+    "printPages": 11,
+    "printMediaRequestsAdded": 0,
+    "status": "PASS"
+  },
+  "screenshots": {
+    "persistentCount": 3,
+    "persistentBytes": 238109,
+    "limitBytes": 2000000,
+    "distCopies": 0,
+    "status": "PASS"
+  },
+  "codeBudgets": {
+    "allJsRawBytes": 89466,
+    "allJsWarningBytes": 107520,
+    "allJsHardBytes": 128000,
+    "allCssRawBytes": 60140,
+    "allCssWarningBytes": 65536,
+    "allCssHardBytes": 71680,
+    "cssDeltaFromP3ABytes": 1263,
+    "newJsModules": 0,
+    "runtimeDependencies": 0,
+    "externalFontsOrScripts": 0,
+    "startupJsonRequestCountBefore": 28,
+    "startupJsonRequestCountAfter": 28,
+    "startupJsonRawBytesBefore": 2810496,
+    "startupJsonRawBytesAfter": 2810496,
+    "startupJsonSha256": "0d4cd84f6ade6a7cfab334820afef40084c2d73844bdbdb959b5c3bc97f265d2",
+    "status": "PASS"
+  },
+  "sourceIntegrity": {
+    "roots": [
+      "source",
+      "data-private",
+      "public/assets/cells-at-work/pages-by-volume",
+      "data/cells-at-work/source-assets",
+      "archived"
+    ],
+    "beforeFiles": 1278,
+    "afterFiles": 1278,
+    "beforeBytes": 7882956334,
+    "afterBytes": 7882956334,
+    "beforeCompactJsonSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "afterCompactJsonSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "trackedProtectedDiffs": 0,
+    "status": "VERIFIED_UNCHANGED"
+  },
+  "storageAndPrivacy": {
+    "rawHarFilesCommitted": 0,
+    "browserProfilesCommitted": 0,
+    "cookiesCommitted": 0,
+    "localAbsolutePathsCommitted": 0,
+    "temporaryPrintArtifactsCommitted": 0,
+    "status": "PASS"
+  },
+  "execution": {
+    "localFinalFullGateCount": 1,
+    "ciRunsBeforePush": 0,
+    "failedJobReruns": 1,
+    "deploymentCount": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "browserCacheReuse": "VERIFIED_GROUP_REMOUNT_FROM_MEMORY_WITH_ZERO_MEDIA_NETWORK_EVENT; FAVICON_RECORDED_SEPARATELY",
+    "storageCleanup": "RESOLVED_AT_CLOSEOUT"
+  },
+  "privacyValidator": {
+    "status": "PASS",
+    "findingCount": 0
+  },
+  "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+  "productBoundaryStatus": "PASS",
+  "pages": {
+    "finalRunId": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "finalSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "status": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF"
+  },
+  "limitations": [
+    "A tracked manifest cannot contain the SHA of the commit that contains itself; exact Git and Pages values are recorded in the final handoff.",
+    "Chromium can retain a former selected URL in currentSrc after teardown; the verified contract is an absent authored src attribute, paused detached element, no background playback and an idle next route."
+  ],
+  "qualityCompromises": 0,
+  "nextRecommendedPhase": "FR-P4 Science Topic and Route-Scoped Data Loading",
+  "status": "LOCAL_ACCEPTANCE_PASS_PENDING_POST_COMMIT_GIT_AND_PAGES_RESOLUTION"
+}

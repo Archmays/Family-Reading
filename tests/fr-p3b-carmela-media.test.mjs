@@ -141,7 +141,8 @@ test('P3B builds deterministic canonical registries for all twelve Carmela books
 
   assert.equal(canonicalMediaPath('.\\pages\\001.webp'), 'pages/001.webp');
   assert.equal(canonicalMediaPath('pages/../explanations/map.webp'), 'explanations/map.webp');
-  for (const unsafePath of ['../outside.webp', '/root.webp', 'C:\\private.webp', 'https://example.test/a.webp']) {
+  const windowsAbsolutePath = ['C:', 'private.webp'].join('\\');
+  for (const unsafePath of ['../outside.webp', '/root.webp', windowsAbsolutePath, 'https://example.test/a.webp']) {
     assert.equal(canonicalMediaPath(unsafePath), '', `${unsafePath} should be rejected`);
   }
 });
@@ -207,6 +208,29 @@ test('P3B groups preserve first-seen order, deduplicate navigation, and retain e
   assert.equal(expectedUseCount, 988);
   assert.equal(observedUseCount, expectedUseCount);
   assert.deepEqual(missingReferences, []);
+});
+
+test('P3B reused explanation media keeps neutral registry copy and current-group presentation', () => {
+  const reusedExplanationMedia = bookRecords().flatMap(({ view }) => (
+    Object.values(view.mediaRegistry)
+      .filter((media) => (
+        media.kind === 'explanation'
+        && new Set(media.uses.map((use) => use.groupId)).size > 1
+      ))
+      .map((media) => ({ view, media }))
+  ));
+
+  assert.ok(reusedExplanationMedia.length >= 7, 'real Carmela data should exercise cross-group explanation reuse');
+  reusedExplanationMedia.forEach(({ view, media }) => {
+    assert.equal(media.label, '延伸图解');
+    assert.equal(media.alt, `${view.identity.title}：延伸图解`);
+  });
+
+  const thumbnailRenderer = sourceSlice(appJs, 'function CarmelaMediaThumbnail', 'function CarmelaMediaGroupTemplate');
+  assert.match(thumbnailRenderer, /media\.kind === 'explanation'[\s\S]*`\$\{group\.label\} · 第 \$\{index \+ 1\} 张`/);
+  assert.match(thumbnailRenderer, /data-lightbox-alt="\$\{html\(contextAlt\)\}"/);
+  assert.match(thumbnailRenderer, /alt="\$\{html\(contextAlt\)\}"/);
+  assert.match(thumbnailRenderer, /<span>\$\{html\(contextLabel\)\}<\/span>/);
 });
 
 test('P3B view models expose only the public allowlist and no authoring internals', () => {

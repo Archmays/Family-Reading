@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-PORTFOLIO-P3B",
+  "snapshot": "after",
+  "capturedAt": "2026-07-21T04:49:55.257Z",
+  "sourceBaseline": "reports/portfolio/fr-p3b/fr-p3b-media-reference-baseline-before.json",
+  "protectedRoots": {
+    "roots": [
+      "source",
+      "data-private",
+      "public/assets/cells-at-work/pages-by-volume",
+      "data/cells-at-work/source-assets",
+      "archived"
+    ],
+    "files": 1278,
+    "bytes": 7882956334,
+    "compactPathBytesSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "matchesBefore": true
+  },
+  "totals": {
+    "books": 12,
+    "uniquePageMedia": 297,
+    "uniqueExplanationMedia": 69,
+    "registryEntries": 366,
+    "mediaGroups": 333,
+    "useSites": 988,
+    "duplicateUseSitesPreserved": 622,
+    "missingMediaPaths": 0
+  },
+  "parity": {
+    "bookCount": "12/12",
+    "content": "PASS",
+    "mediaReferences": "PASS",
+    "useSites": "PASS",
+    "groupFirstSeenOrder": "PASS",
+    "groupPathDedup": "PASS",
+    "crossGroupExplanationContext": "PASS",
+    "physicalMedia": "PASS"
+  },
+  "books": [
+    {"order":1,"slug":"carmela-s1-01","uniquePageMedia":23,"uniqueExplanationMedia":7,"registryEntries":30,"mediaGroups":29,"useSites":85,"duplicateUseSitesPreserved":55,"initial":{"domNodes":624,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":47,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":2,"slug":"carmela-s1-02","uniquePageMedia":23,"uniqueExplanationMedia":5,"registryEntries":28,"mediaGroups":29,"useSites":73,"duplicateUseSitesPreserved":45,"initial":{"domNodes":623,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":48,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":3,"slug":"carmela-s1-03","uniquePageMedia":23,"uniqueExplanationMedia":6,"registryEntries":29,"mediaGroups":31,"useSites":86,"duplicateUseSitesPreserved":57,"initial":{"domNodes":655,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":50,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":4,"slug":"carmela-s1-04","uniquePageMedia":23,"uniqueExplanationMedia":6,"registryEntries":29,"mediaGroups":27,"useSites":82,"duplicateUseSitesPreserved":53,"initial":{"domNodes":616,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":47,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":5,"slug":"carmela-s1-05","uniquePageMedia":23,"uniqueExplanationMedia":6,"registryEntries":29,"mediaGroups":27,"useSites":84,"duplicateUseSitesPreserved":55,"initial":{"domNodes":618,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":47,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":6,"slug":"carmela-s1-06","uniquePageMedia":23,"uniqueExplanationMedia":6,"registryEntries":29,"mediaGroups":27,"useSites":82,"duplicateUseSitesPreserved":53,"initial":{"domNodes":621,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":47,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":7,"slug":"carmela-s1-07","uniquePageMedia":23,"uniqueExplanationMedia":6,"registryEntries":29,"mediaGroups":27,"useSites":76,"duplicateUseSitesPreserved":47,"initial":{"domNodes":621,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":47,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":8,"slug":"carmela-s1-08","uniquePageMedia":23,"uniqueExplanationMedia":4,"registryEntries":27,"mediaGroups":27,"useSites":69,"duplicateUseSitesPreserved":42,"initial":{"domNodes":613,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":47,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":9,"slug":"carmela-s1-09","uniquePageMedia":23,"uniqueExplanationMedia":5,"registryEntries":28,"mediaGroups":27,"useSites":78,"duplicateUseSitesPreserved":50,"initial":{"domNodes":615,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":47,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":10,"slug":"carmela-s1-10","uniquePageMedia":24,"uniqueExplanationMedia":6,"registryEntries":30,"mediaGroups":27,"useSites":84,"duplicateUseSitesPreserved":54,"initial":{"domNodes":618,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":47,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":11,"slug":"carmela-s1-11","uniquePageMedia":43,"uniqueExplanationMedia":6,"registryEntries":49,"mediaGroups":28,"useSites":115,"duplicateUseSitesPreserved":66,"initial":{"domNodes":636,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":47,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}},
+    {"order":12,"slug":"carmela-s1-12","uniquePageMedia":23,"uniqueExplanationMedia":6,"registryEntries":29,"mediaGroups":27,"useSites":74,"duplicateUseSitesPreserved":45,"initial":{"domNodes":620,"imageElements":2,"mediaImages":0,"mediaOpeners":0,"tabbables":47,"audioPhase":"idle","audioSrc":null,"lightboxSrc":null}}
+  ],
+  "representativeDomGate": {
+    "book01": {"before":830,"after":624,"reductionPercent":24.82,"requiredPercent":15,"status":"PASS"},
+    "book11": {"before":936,"after":636,"reductionPercent":32.05,"requiredPercent":15,"status":"PASS"}
+  },
+  "notes": {
+    "imageElements": "Two idle elements are the eager cover and the src-less hidden lightbox image; mediaImages and mediaOpeners are both zero.",
+    "tabbableBudget": "The <=49 gate applies to Book 1 and Book 11; both measured 47.",
+    "sourceJsonChanged": false,
+    "mediaBytesChanged": false,
+    "crossGroupExplanationReuseCases": 7,
+    "crossGroupBrowserCheck": "Book 2 reused one explanation URL across background and encyclopedia groups with distinct current-group labels and alternative text."
+  },
+  "status": "PASS"
+}

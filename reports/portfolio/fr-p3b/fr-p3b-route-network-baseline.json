@@ -1,0 +1,1344 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-PORTFOLIO-P3B",
+  "capturedAt": "2026-07-21T04:49:55.257Z",
+  "method": {
+    "browser": "Chromium via Playwright",
+    "server": "http-server 14.1.1",
+    "projectBase": "http://127.0.0.1:4173/Family-Reading-Codex/",
+    "cacheControl": "max-age=3600",
+    "acceptRanges": true,
+    "serviceWorkers": "blocked",
+    "telemetry": "Chrome DevTools Protocol Network events; no HAR or browser profile persisted"
+  },
+  "classification": {
+    "cover": "The single eager Image response matching the rendered .cover-frame img currentSrc. Carmela covers are pages/001.png and are excluded from page-media counts.",
+    "pageMedia": "Images under pages/ or generated/ other than the eager cover.",
+    "lightboxPlaceholder": "An Image-initiated favicon.svg response; the normal document favicon has type Other and is not a lightbox request."
+  },
+  "cases": [
+    {"book":1,"slug":"carmela-s1-01","viewport":{"width":390,"height":844},"cold":{"startupJsonCount":28,"startupJsonTransferBytes":2822931,"pageMediaRequests":0,"audioRequests":0,"coverRequests":1,"lightboxPlaceholderRequests":0},"disclosure":{"groupId":"media-group-carmela-s1-01-scene-sea-01","expectedUnique":2,"requests":2,"all2xx":true},"reopen":{"requests":0},"lightbox":{"additionalMediaRequests":0,"groupOnly":true,"closeSrc":null},"warm":{"networkEvents":1,"transferBytes":0,"eventRole":"favicon","fromDiskCache":true,"remountedMedia":2,"completeMedia":2,"brokenMedia":0,"mediaNetworkEvents":0,"mediaTransferBytes":0,"reuseMode":"MEMORY_CACHE_NO_NETWORK_EVENT"},"dom":{"before":830,"after":624,"reductionPercent":24.82,"tabbables":47},"unexpectedErrors":0,"expectedAudioSeekAbort":1},
+    {"book":1,"slug":"carmela-s1-01","viewport":{"width":1440,"height":900},"cold":{"startupJsonCount":28,"startupJsonTransferBytes":2822931,"pageMediaRequests":0,"audioRequests":0,"coverRequests":1,"lightboxPlaceholderRequests":0},"disclosure":{"groupId":"media-group-carmela-s1-01-scene-sea-01","expectedUnique":2,"requests":2,"all2xx":true},"reopen":{"requests":0},"lightbox":{"additionalMediaRequests":0,"groupOnly":true,"closeSrc":null},"warm":{"networkEvents":1,"transferBytes":0,"eventRole":"favicon","fromDiskCache":true,"remountedMedia":2,"completeMedia":2,"brokenMedia":0,"mediaNetworkEvents":0,"mediaTransferBytes":0,"reuseMode":"MEMORY_CACHE_NO_NETWORK_EVENT"},"dom":{"before":830,"after":624,"reductionPercent":24.82,"tabbables":47},"unexpectedErrors":0,"expectedAudioSeekAbort":1},
+    {"book":11,"slug":"carmela-s1-11","viewport":{"width":390,"height":844},"cold":{"startupJsonCount":28,"startupJsonTransferBytes":2822931,"pageMediaRequests":0,"audioRequests":0,"coverRequests":1,"lightboxPlaceholderRequests":0},"disclosure":{"groupId":"media-group-carmela-s1-11-scene-coward-01","expectedUnique":5,"requests":5,"all2xx":true},"reopen":{"requests":0},"lightbox":{"additionalMediaRequests":0,"groupOnly":true,"closeSrc":null},"warm":{"networkEvents":1,"transferBytes":0,"eventRole":"favicon","fromDiskCache":true,"remountedMedia":5,"completeMedia":5,"brokenMedia":0,"mediaNetworkEvents":0,"mediaTransferBytes":0,"reuseMode":"MEMORY_CACHE_NO_NETWORK_EVENT"},"dom":{"before":936,"after":636,"reductionPercent":32.05,"tabbables":47},"unexpectedErrors":0,"expectedAudioSeekAbort":1},
+    {"book":11,"slug":"carmela-s1-11","viewport":{"width":1440,"height":900},"cold":{"startupJsonCount":28,"startupJsonTransferBytes":2822931,"pageMediaRequests":0,"audioRequests":0,"coverRequests":1,"lightboxPlaceholderRequests":0},"disclosure":{"groupId":"media-group-carmela-s1-11-scene-coward-01","expectedUnique":5,"requests":5,"all2xx":true},"reopen":{"requests":0},"lightbox":{"additionalMediaRequests":0,"groupOnly":true,"closeSrc":null},"warm":{"networkEvents":1,"transferBytes":0,"eventRole":"favicon","fromDiskCache":true,"remountedMedia":5,"completeMedia":5,"brokenMedia":0,"mediaNetworkEvents":0,"mediaTransferBytes":0,"reuseMode":"MEMORY_CACHE_NO_NETWORK_EVENT"},"dom":{"before":936,"after":636,"reductionPercent":32.05,"tabbables":47},"unexpectedErrors":0,"expectedAudioSeekAbort":1}
+  ],
+  "coldRequestDetails": [
+    {"case":"book01-mobile","phase":"initial","url":"/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/001.png","role":"cover","type":"Image","status":200,"transferBytes":647277,"resourceBytes":646851,"initiator":"other","startMs":124,"finishMs":128,"cacheControl":"max-age=3600","fromDiskCache":false},
+    {"case":"book01-mobile","phase":"disclosure","url":"/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/004.png","role":"group-media","type":"Image","status":200,"transferBytes":1923031,"resourceBytes":1922603,"initiator":"other","startMs":1158,"finishMs":1167,"cacheControl":"max-age=3600","fromDiskCache":false},
+    {"case":"book01-mobile","phase":"disclosure","url":"/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/005.png","role":"group-media","type":"Image","status":200,"transferBytes":1543516,"resourceBytes":1543088,"initiator":"other","startMs":1158,"finishMs":1166,"cacheControl":"max-age=3600","fromDiskCache":false},
+    {"case":"book01-desktop","phase":"initial","url":"/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/001.png","role":"cover","type":"Image","status":200,"transferBytes":647277,"resourceBytes":646851,"initiator":"other","startMs":110,"finishMs":114,"cacheControl":"max-age=3600","fromDiskCache":false},
+    {"case":"book01-desktop","phase":"disclosure","urls":["/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/004.png","/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/005.png"],"role":"group-media","type":"Image","statuses":[200,200],"transferBytes":[1923031,1543516],"resourceBytes":[1922603,1543088],"initiator":"other","startMs":1108,"finishMs":[1118,1117],"cacheControl":"max-age=3600","fromDiskCache":false},
+    {"case":"book11-mobile","phase":"initial","url":"/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/001.png","role":"cover","type":"Image","status":200,"transferBytes":405224,"resourceBytes":404799,"initiator":"other","startMs":112,"finishMs":115,"cacheControl":"max-age=3600","fromDiskCache":false},
+    {"case":"book11-mobile","phase":"disclosure","urls":["pages/005.png","pages/006.png","pages/007.png","pages/008.png","pages/009.png"],"role":"group-media","type":"Image","statuses":[200,200,200,200,200],"transferBytes":[1490472,1210512,1010304,1449485,1078323],"resourceBytes":[1490045,1210084,1009876,1449057,1077896],"initiator":"other","startMs":1138,"finishMs":[1153,1152,1150,1153,1152],"cacheControl":"max-age=3600","fromDiskCache":false},
+    {"case":"book11-desktop","phase":"initial","url":"/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/001.png","role":"cover","type":"Image","status":200,"transferBytes":405224,"resourceBytes":404799,"initiator":"other","startMs":113,"finishMs":117,"cacheControl":"max-age=3600","fromDiskCache":false},
+    {"case":"book11-desktop","phase":"disclosure","urls":["pages/005.png","pages/006.png","pages/007.png","pages/008.png","pages/009.png"],"role":"group-media","type":"Image","statuses":[200,200,200,200,200],"transferBytes":[1490472,1210512,1010304,1449485,1078323],"resourceBytes":[1490045,1210084,1009876,1449057,1077896],"initiator":"other","startMs":1132,"finishMs":[1151,1151,1148,1153,1150],"cacheControl":"max-age=3600","fromDiskCache":false}
+  ],
+  "requestEvidence": {
+    "capturedAt": "2026-07-21T05:11:18.051Z",
+    "tupleSchema": "[url,type,status,transferBytes,resourceBytes,initiator,startMs,finishMs,fromDiskCache,fromServiceWorker,range,contentRange]",
+    "startupJsonCanonicalCase": "carmela-s1-01-mobile",
+    "startupJsonCanonicalRequests": [
+      [
+        "/Family-Reading-Codex/public/books/index.json",
+        "Fetch",
+        200,
+        1283,
+        841,
+        "script",
+        46,
+        48,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/series.json",
+        "Fetch",
+        200,
+        6416,
+        5972,
+        "script",
+        48,
+        50,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/book-assets.json",
+        "Fetch",
+        200,
+        1389,
+        947,
+        "script",
+        52,
+        54,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/companion.json",
+        "Fetch",
+        200,
+        19511,
+        19065,
+        "script",
+        52,
+        55,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E6%9C%89%E9%A2%97%E6%98%9F%E6%98%9F/book-assets.json",
+        "Fetch",
+        200,
+        1418,
+        976,
+        "script",
+        52,
+        54,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E6%9C%89%E9%A2%97%E6%98%9F%E6%98%9F/companion.json",
+        "Fetch",
+        200,
+        18803,
+        18357,
+        "script",
+        52,
+        57,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E6%9C%89%E4%B8%AA%E5%BC%9F%E5%BC%9F/book-assets.json",
+        "Fetch",
+        200,
+        1352,
+        910,
+        "script",
+        52,
+        57,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E6%9C%89%E4%B8%AA%E5%BC%9F%E5%BC%9F/companion.json",
+        "Fetch",
+        200,
+        20238,
+        19792,
+        "script",
+        52,
+        56,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E5%8E%BB%E6%89%BE%E5%9B%9E%E5%A4%AA%E9%98%B3/book-assets.json",
+        "Fetch",
+        200,
+        1353,
+        911,
+        "script",
+        52,
+        57,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E5%8E%BB%E6%89%BE%E5%9B%9E%E5%A4%AA%E9%98%B3/companion.json",
+        "Fetch",
+        200,
+        21106,
+        20660,
+        "script",
+        52,
+        57,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E7%88%B1%E5%B0%8F%E9%BB%91%E7%8C%AB/book-assets.json",
+        "Fetch",
+        200,
+        1348,
+        906,
+        "script",
+        52,
+        59,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E7%88%B1%E5%B0%8F%E9%BB%91%E7%8C%AB/companion.json",
+        "Fetch",
+        200,
+        20886,
+        20440,
+        "script",
+        52,
+        61,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E8%83%BD%E6%89%93%E8%B4%A5%E6%80%AA%E5%85%BD/book-assets.json",
+        "Fetch",
+        200,
+        1353,
+        912,
+        "script",
+        52,
+        60,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E8%83%BD%E6%89%93%E8%B4%A5%E6%80%AA%E5%85%BD/companion.json",
+        "Fetch",
+        200,
+        20839,
+        20393,
+        "script",
+        52,
+        61,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E8%A6%81%E6%89%BE%E5%88%B0%E6%9C%97%E6%9C%97/book-assets.json",
+        "Fetch",
+        200,
+        1354,
+        912,
+        "script",
+        52,
+        61,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E8%A6%81%E6%89%BE%E5%88%B0%E6%9C%97%E6%9C%97/companion.json",
+        "Fetch",
+        200,
+        20700,
+        20254,
+        "script",
+        52,
+        62,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%90%83%E6%8E%89/book-assets.json",
+        "Fetch",
+        200,
+        1353,
+        912,
+        "script",
+        53,
+        63,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E8%A6%81%E8%A2%AB%E5%90%83%E6%8E%89/companion.json",
+        "Fetch",
+        200,
+        20144,
+        19698,
+        "script",
+        53,
+        64,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E5%A5%BD%E5%96%9C%E6%AC%A2%E5%A5%B9/book-assets.json",
+        "Fetch",
+        200,
+        1347,
+        906,
+        "script",
+        53,
+        64,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E5%A5%BD%E5%96%9C%E6%AC%A2%E5%A5%B9/companion.json",
+        "Fetch",
+        200,
+        20369,
+        19923,
+        "script",
+        53,
+        65,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E8%A6%81%E6%95%91%E5%87%BA%E8%B4%9D%E9%87%8C%E5%A5%A5/book-assets.json",
+        "Fetch",
+        200,
+        1426,
+        985,
+        "script",
+        53,
+        65,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E8%A6%81%E6%95%91%E5%87%BA%E8%B4%9D%E9%87%8C%E5%A5%A5/companion.json",
+        "Fetch",
+        200,
+        20892,
+        20446,
+        "script",
+        53,
+        65,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/book-assets.json",
+        "Fetch",
+        200,
+        1884,
+        1441,
+        "script",
+        53,
+        65,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/companion.json",
+        "Fetch",
+        200,
+        23182,
+        22736,
+        "script",
+        53,
+        66,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E7%88%B1%E5%B9%B3%E5%BA%95%E9%94%85/book-assets.json",
+        "Fetch",
+        200,
+        1348,
+        907,
+        "script",
+        53,
+        66,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E7%88%B1%E5%B9%B3%E5%BA%95%E9%94%85/companion.json",
+        "Fetch",
+        200,
+        20787,
+        20341,
+        "script",
+        53,
+        66,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/public/books/%E5%B7%A5%E4%BD%9C%E7%BB%86%E8%83%9E/draft-manifest.json",
+        "Fetch",
+        200,
+        2446215,
+        2445765,
+        "script",
+        68,
+        79,
+        false,
+        false,
+        null,
+        null
+      ],
+      [
+        "/Family-Reading-Codex/data/cells-at-work/page-map.json",
+        "Fetch",
+        200,
+        104635,
+        104188,
+        "script",
+        103,
+        105,
+        false,
+        false,
+        null,
+        null
+      ]
+    ],
+    "startupJsonCases": [
+      {
+        "case": "carmela-s1-01-mobile",
+        "count": 28,
+        "transferBytes": 2822931,
+        "resourceBytes": 2810496,
+        "all2xx": true,
+        "cachedRequests": 0,
+        "fieldsOtherThanTimingMatchCanonical": true,
+        "timingMs": [
+          [
+            46,
+            48
+          ],
+          [
+            48,
+            50
+          ],
+          [
+            52,
+            54
+          ],
+          [
+            52,
+            55
+          ],
+          [
+            52,
+            54
+          ],
+          [
+            52,
+            57
+          ],
+          [
+            52,
+            57
+          ],
+          [
+            52,
+            56
+          ],
+          [
+            52,
+            57
+          ],
+          [
+            52,
+            57
+          ],
+          [
+            52,
+            59
+          ],
+          [
+            52,
+            61
+          ],
+          [
+            52,
+            60
+          ],
+          [
+            52,
+            61
+          ],
+          [
+            52,
+            61
+          ],
+          [
+            52,
+            62
+          ],
+          [
+            53,
+            63
+          ],
+          [
+            53,
+            64
+          ],
+          [
+            53,
+            64
+          ],
+          [
+            53,
+            65
+          ],
+          [
+            53,
+            65
+          ],
+          [
+            53,
+            65
+          ],
+          [
+            53,
+            65
+          ],
+          [
+            53,
+            66
+          ],
+          [
+            53,
+            66
+          ],
+          [
+            53,
+            66
+          ],
+          [
+            68,
+            79
+          ],
+          [
+            103,
+            105
+          ]
+        ]
+      },
+      {
+        "case": "carmela-s1-01-desktop",
+        "count": 28,
+        "transferBytes": 2822931,
+        "resourceBytes": 2810496,
+        "all2xx": true,
+        "cachedRequests": 0,
+        "fieldsOtherThanTimingMatchCanonical": true,
+        "timingMs": [
+          [
+            44,
+            46
+          ],
+          [
+            47,
+            49
+          ],
+          [
+            51,
+            53
+          ],
+          [
+            51,
+            55
+          ],
+          [
+            51,
+            55
+          ],
+          [
+            51,
+            56
+          ],
+          [
+            51,
+            57
+          ],
+          [
+            51,
+            57
+          ],
+          [
+            51,
+            57
+          ],
+          [
+            52,
+            58
+          ],
+          [
+            52,
+            58
+          ],
+          [
+            52,
+            59
+          ],
+          [
+            52,
+            59
+          ],
+          [
+            52,
+            60
+          ],
+          [
+            52,
+            60
+          ],
+          [
+            52,
+            60
+          ],
+          [
+            52,
+            61
+          ],
+          [
+            52,
+            61
+          ],
+          [
+            53,
+            61
+          ],
+          [
+            53,
+            62
+          ],
+          [
+            53,
+            62
+          ],
+          [
+            53,
+            62
+          ],
+          [
+            53,
+            62
+          ],
+          [
+            53,
+            63
+          ],
+          [
+            53,
+            63
+          ],
+          [
+            53,
+            64
+          ],
+          [
+            73,
+            83
+          ],
+          [
+            106,
+            108
+          ]
+        ]
+      },
+      {
+        "case": "carmela-s1-11-mobile",
+        "count": 28,
+        "transferBytes": 2822931,
+        "resourceBytes": 2810496,
+        "all2xx": true,
+        "cachedRequests": 0,
+        "fieldsOtherThanTimingMatchCanonical": true,
+        "timingMs": [
+          [
+            39,
+            41
+          ],
+          [
+            42,
+            44
+          ],
+          [
+            46,
+            47
+          ],
+          [
+            46,
+            49
+          ],
+          [
+            46,
+            49
+          ],
+          [
+            46,
+            51
+          ],
+          [
+            46,
+            50
+          ],
+          [
+            46,
+            51
+          ],
+          [
+            46,
+            51
+          ],
+          [
+            46,
+            52
+          ],
+          [
+            46,
+            52
+          ],
+          [
+            46,
+            53
+          ],
+          [
+            46,
+            53
+          ],
+          [
+            46,
+            54
+          ],
+          [
+            46,
+            54
+          ],
+          [
+            46,
+            54
+          ],
+          [
+            47,
+            54
+          ],
+          [
+            47,
+            55
+          ],
+          [
+            47,
+            55
+          ],
+          [
+            47,
+            55
+          ],
+          [
+            47,
+            56
+          ],
+          [
+            47,
+            57
+          ],
+          [
+            47,
+            58
+          ],
+          [
+            47,
+            58
+          ],
+          [
+            47,
+            58
+          ],
+          [
+            47,
+            58
+          ],
+          [
+            64,
+            78
+          ],
+          [
+            99,
+            101
+          ]
+        ]
+      },
+      {
+        "case": "carmela-s1-11-desktop",
+        "count": 28,
+        "transferBytes": 2822931,
+        "resourceBytes": 2810496,
+        "all2xx": true,
+        "cachedRequests": 0,
+        "fieldsOtherThanTimingMatchCanonical": true,
+        "timingMs": [
+          [
+            41,
+            42
+          ],
+          [
+            45,
+            47
+          ],
+          [
+            48,
+            50
+          ],
+          [
+            48,
+            51
+          ],
+          [
+            48,
+            52
+          ],
+          [
+            49,
+            53
+          ],
+          [
+            49,
+            53
+          ],
+          [
+            49,
+            53
+          ],
+          [
+            49,
+            54
+          ],
+          [
+            49,
+            54
+          ],
+          [
+            49,
+            54
+          ],
+          [
+            49,
+            55
+          ],
+          [
+            49,
+            55
+          ],
+          [
+            49,
+            56
+          ],
+          [
+            49,
+            56
+          ],
+          [
+            49,
+            57
+          ],
+          [
+            49,
+            57
+          ],
+          [
+            49,
+            57
+          ],
+          [
+            49,
+            58
+          ],
+          [
+            49,
+            58
+          ],
+          [
+            50,
+            59
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            50,
+            60
+          ],
+          [
+            50,
+            61
+          ],
+          [
+            64,
+            79
+          ],
+          [
+            100,
+            102
+          ]
+        ]
+      }
+    ],
+    "coldMediaCases": [
+      {
+        "case": "carmela-s1-01-mobile",
+        "initialCover": [
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/001.png",
+            "Image",
+            200,
+            647277,
+            646851,
+            "other",
+            114,
+            117,
+            false,
+            false,
+            null,
+            null
+          ]
+        ],
+        "firstGroupId": "media-group-carmela-s1-01-scene-sea-01",
+        "firstGroup": [
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/004.png",
+            "Image",
+            200,
+            1923031,
+            1922603,
+            "other",
+            892,
+            902,
+            false,
+            false,
+            null,
+            null
+          ],
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/005.png",
+            "Image",
+            200,
+            1543516,
+            1543088,
+            "other",
+            892,
+            900,
+            false,
+            false,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "case": "carmela-s1-01-desktop",
+        "initialCover": [
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/001.png",
+            "Image",
+            200,
+            647277,
+            646851,
+            "other",
+            118,
+            122,
+            false,
+            false,
+            null,
+            null
+          ]
+        ],
+        "firstGroupId": "media-group-carmela-s1-01-scene-sea-01",
+        "firstGroup": [
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/004.png",
+            "Image",
+            200,
+            1923031,
+            1922603,
+            "other",
+            1016,
+            1027,
+            false,
+            false,
+            null,
+            null
+          ],
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E6%83%B3%E5%8E%BB%E7%9C%8B%E6%B5%B7/pages/005.png",
+            "Image",
+            200,
+            1543516,
+            1543088,
+            "other",
+            1016,
+            1026,
+            false,
+            false,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "case": "carmela-s1-11-mobile",
+        "initialCover": [
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/001.png",
+            "Image",
+            200,
+            405224,
+            404799,
+            "other",
+            109,
+            113,
+            false,
+            false,
+            null,
+            null
+          ]
+        ],
+        "firstGroupId": "media-group-carmela-s1-11-scene-coward-01",
+        "firstGroup": [
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/005.png",
+            "Image",
+            200,
+            1490472,
+            1490045,
+            "other",
+            1028,
+            1045,
+            false,
+            false,
+            null,
+            null
+          ],
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/006.png",
+            "Image",
+            200,
+            1210512,
+            1210084,
+            "other",
+            1028,
+            1044,
+            false,
+            false,
+            null,
+            null
+          ],
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/007.png",
+            "Image",
+            200,
+            1010304,
+            1009876,
+            "other",
+            1028,
+            1042,
+            false,
+            false,
+            null,
+            null
+          ],
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/008.png",
+            "Image",
+            200,
+            1449485,
+            1449057,
+            "other",
+            1028,
+            1046,
+            false,
+            false,
+            null,
+            null
+          ],
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/009.png",
+            "Image",
+            200,
+            1078323,
+            1077896,
+            "other",
+            1028,
+            1043,
+            false,
+            false,
+            null,
+            null
+          ]
+        ]
+      },
+      {
+        "case": "carmela-s1-11-desktop",
+        "initialCover": [
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/001.png",
+            "Image",
+            200,
+            405224,
+            404799,
+            "other",
+            110,
+            113,
+            false,
+            false,
+            null,
+            null
+          ]
+        ],
+        "firstGroupId": "media-group-carmela-s1-11-scene-coward-01",
+        "firstGroup": [
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/005.png",
+            "Image",
+            200,
+            1490472,
+            1490045,
+            "other",
+            1012,
+            1028,
+            false,
+            false,
+            null,
+            null
+          ],
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/006.png",
+            "Image",
+            200,
+            1210512,
+            1210084,
+            "other",
+            1012,
+            1026,
+            false,
+            false,
+            null,
+            null
+          ],
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/007.png",
+            "Image",
+            200,
+            1010304,
+            1009876,
+            "other",
+            1012,
+            1025,
+            false,
+            false,
+            null,
+            null
+          ],
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/008.png",
+            "Image",
+            200,
+            1449485,
+            1449057,
+            "other",
+            1012,
+            1029,
+            false,
+            false,
+            null,
+            null
+          ],
+          [
+            "/Family-Reading-Codex/public/books/%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E5%8D%A1%E6%A2%85%E6%8B%89/%E6%88%91%E4%B8%8D%E6%98%AF%E8%83%86%E5%B0%8F%E9%AC%BC/pages/009.png",
+            "Image",
+            200,
+            1078323,
+            1077896,
+            "other",
+            1012,
+            1027,
+            false,
+            false,
+            null,
+            null
+          ]
+        ]
+      }
+    ],
+    "warmMediaCases": [
+      {
+        "case": "carmela-s1-01-mobile",
+        "groupId": "media-group-carmela-s1-01-scene-sea-01",
+        "expectedMedia": 2,
+        "mountedImages": 2,
+        "mountedOpeners": 2,
+        "completeImages": 2,
+        "brokenImages": 0,
+        "mediaNetworkRequests": 0,
+        "mediaTransferBytes": 0,
+        "reuseMode": "MEMORY_CACHE_NO_NETWORK_EVENT",
+        "warmReturnOtherRequests": [
+          [
+            "/Family-Reading-Codex/assets/favicon.svg",
+            "Other",
+            200,
+            0,
+            400,
+            "other",
+            1289,
+            1289,
+            true,
+            false,
+            null,
+            null
+          ]
+        ],
+        "failures": 0,
+        "errors": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "carmela-s1-01-desktop",
+        "groupId": "media-group-carmela-s1-01-scene-sea-01",
+        "expectedMedia": 2,
+        "mountedImages": 2,
+        "mountedOpeners": 2,
+        "completeImages": 2,
+        "brokenImages": 0,
+        "mediaNetworkRequests": 0,
+        "mediaTransferBytes": 0,
+        "reuseMode": "MEMORY_CACHE_NO_NETWORK_EVENT",
+        "warmReturnOtherRequests": [
+          [
+            "/Family-Reading-Codex/assets/favicon.svg",
+            "Other",
+            200,
+            0,
+            400,
+            "other",
+            1404,
+            1404,
+            true,
+            false,
+            null,
+            null
+          ]
+        ],
+        "failures": 0,
+        "errors": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "carmela-s1-11-mobile",
+        "groupId": "media-group-carmela-s1-11-scene-coward-01",
+        "expectedMedia": 5,
+        "mountedImages": 5,
+        "mountedOpeners": 5,
+        "completeImages": 5,
+        "brokenImages": 0,
+        "mediaNetworkRequests": 0,
+        "mediaTransferBytes": 0,
+        "reuseMode": "MEMORY_CACHE_NO_NETWORK_EVENT",
+        "warmReturnOtherRequests": [
+          [
+            "/Family-Reading-Codex/assets/favicon.svg",
+            "Other",
+            200,
+            0,
+            400,
+            "other",
+            1428,
+            1428,
+            true,
+            false,
+            null,
+            null
+          ]
+        ],
+        "failures": 0,
+        "errors": 0,
+        "status": "PASS"
+      },
+      {
+        "case": "carmela-s1-11-desktop",
+        "groupId": "media-group-carmela-s1-11-scene-coward-01",
+        "expectedMedia": 5,
+        "mountedImages": 5,
+        "mountedOpeners": 5,
+        "completeImages": 5,
+        "brokenImages": 0,
+        "mediaNetworkRequests": 0,
+        "mediaTransferBytes": 0,
+        "reuseMode": "MEMORY_CACHE_NO_NETWORK_EVENT",
+        "warmReturnOtherRequests": [
+          [
+            "/Family-Reading-Codex/assets/favicon.svg",
+            "Other",
+            200,
+            0,
+            400,
+            "other",
+            1404,
+            1404,
+            true,
+            false,
+            null,
+            null
+          ]
+        ],
+        "failures": 0,
+        "errors": 0,
+        "status": "PASS"
+      }
+    ],
+    "note": "The sole warm-return network event is a 200 disk-cached favicon with zero transfer. It is not counted as media reuse. Re-mounted group images were complete with nonzero natural width and produced no media Network event, which is renderer memory-cache reuse.",
+    "status": "PASS"
+  },
+  "status": "PASS"
+}
