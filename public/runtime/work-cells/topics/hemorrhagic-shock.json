@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 16,
+  "topicId": "hemorrhagic-shock",
+  "slug": "hemorrhagic-shock",
+  "title": "出血性休克",
+  "displayTitle": "出血性休克",
+  "category": "急救与循环系统",
+  "source": {
+    "volume": 4,
+    "chapterLabel": "第17-18话",
+    "sourceLabel": "第4卷 第17-18话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "出血性休克主题由前后篇组成，但在项目里作为一个主题展示。它帮助孩子理解严重失血不只是“看到血”，还会影响血液循环、血压和氧气运输。共读时重点应放在严重外伤需要成人和专业救助，以及红血球、血小板、血管和输血支持之间的关系。",
+    "readingFocus": "“为什么大量失血会影响全身”：用失血、血压下降、氧气送不到、凝血和输血支持四个节点解释，不展示完整剧情或急救教程。",
+    "keyBiologyConcepts": [
+      "出血性休克",
+      "失血",
+      "血压下降",
+      "氧气运输",
+      "组织缺氧",
+      "红血球",
+      "血小板",
+      "凝血",
+      "输血",
+      "专业救助"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "为什么大量失血会影响全身供氧",
+      "红血球怎样把氧气送到身体各处",
+      "血小板在伤口修复中的作用",
+      "血压下降和休克的基本概念",
+      "输血为什么能帮助恢复运输能力",
+      "漫画里的“雪地/荒野”怎样比喻身体外部和低温危险"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "hemorrhagic-shock-blood-volume",
+      "topicId": "hemorrhagic-shock",
+      "title": "为什么大量失血会影响全身",
+      "coreQuestion": "血液少了，身体会遇到什么困难？",
+      "explanation": "大量失血会让血管里的血液总量下降，循环压力变弱，氧气和养分就更难被送到全身组织。",
+      "imageAsset": "public/assets/cells-at-work/science-station/hemorrhagic-shock/hemorrhagic-shock-v2-station-01.webp",
+      "imageAlt": "血管内血液量减少、运输路线变得吃力的儿童科普图。",
+      "relatedPageIds": [
+        "hemorrhagic-shock__v04_page-068",
+        "hemorrhagic-shock__v04_page-080"
+      ],
+      "biologyConcepts": [
+        "失血",
+        "血容量",
+        "血压下降"
+      ],
+      "encyclopediaTags": [
+        "失血",
+        "血压",
+        "循环"
+      ],
+      "parentNote": "强调这是严重情况，不和普通小伤口混为一谈。"
+    },
+    {
+      "stationId": "hemorrhagic-shock-oxygen-delivery-risk",
+      "topicId": "hemorrhagic-shock",
+      "title": "红血球送不到氧气会怎样",
+      "coreQuestion": "为什么红血球数量和路线都很重要？",
+      "explanation": "红血球负责运送氧气。大量失血时，能运送氧气的红血球变少，身体组织可能得不到足够氧气。",
+      "imageAsset": "public/assets/cells-at-work/science-station/hemorrhagic-shock/hemorrhagic-shock-v2-station-02.webp",
+      "imageAlt": "红血球减少后氧气难以送到组织细胞旁边的温和流程图。",
+      "relatedPageIds": [
+        "hemorrhagic-shock__v04_page-071",
+        "hemorrhagic-shock__v04_page-088"
+      ],
+      "biologyConcepts": [
+        "红血球",
+        "氧气运输",
+        "组织供氧不足"
+      ],
+      "encyclopediaTags": [
+        "红血球",
+        "氧气",
+        "组织缺氧"
+      ],
+      "parentNote": "把“供氧不足”讲成细胞拿不到需要的氧气，不渲染危险画面。"
+    },
+    {
+      "stationId": "hemorrhagic-shock-platelet-repair",
+      "topicId": "hemorrhagic-shock",
+      "title": "血小板为什么要帮助止血",
+      "coreQuestion": "身体怎样努力把破口堵住？",
+      "explanation": "血小板会在受伤血管附近集合，和凝血过程一起形成临时堵漏结构，帮助减少继续失血。",
+      "imageAsset": "public/assets/cells-at-work/science-station/hemorrhagic-shock/hemorrhagic-shock-v2-station-03.webp",
+      "imageAlt": "血小板和纤维蛋白在破损血管边缘形成堵漏结构的儿童科普图。",
+      "relatedPageIds": [
+        "hemorrhagic-shock__v04_page-104",
+        "hemorrhagic-shock__v04_page-106"
+      ],
+      "biologyConcepts": [
+        "血小板",
+        "凝血",
+        "血管破裂"
+      ],
+      "encyclopediaTags": [
+        "血小板",
+        "凝血",
+        "伤口修复"
+      ],
+      "parentNote": "说明身体会努力止血，但严重失血仍需要专业处理。"
+    },
+    {
+      "stationId": "hemorrhagic-shock-transfusion-support",
+      "topicId": "hemorrhagic-shock",
+      "title": "输血为什么能帮助恢复运输能力",
+      "coreQuestion": "为什么有时需要外来的血液帮助？",
+      "explanation": "在严重失血时，医学处理可能需要补充血液成分，让循环和氧气运输能力逐步恢复。孩子只需要理解这是专业人员处理的帮助方式。",
+      "imageAsset": "public/assets/cells-at-work/science-station/hemorrhagic-shock/hemorrhagic-shock-v2-station-04.webp",
+      "imageAlt": "专业医疗帮助下血液运输能力逐步恢复的温和儿童科普图。",
+      "relatedPageIds": [
+        "hemorrhagic-shock__v04_page-121",
+        "hemorrhagic-shock__v04_page-128"
+      ],
+      "biologyConcepts": [
+        "输血",
+        "循环支持",
+        "氧气运输恢复"
+      ],
+      "encyclopediaTags": [
+        "输血",
+        "医疗帮助",
+        "恢复供氧"
+      ],
+      "parentNote": "明确不让孩子自行处理，严重情况找成人和专业医护。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "hemorrhagic-shock-q01",
+      "topicId": "hemorrhagic-shock",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "哪里显示情况严重",
+      "question": "看相关页面时，哪些线索说明这不是普通小伤口？",
+      "answer": "可以看血液流失、细胞被冲散、环境变冷和运输变困难等线索。",
+      "relatedPageIds": [
+        "hemorrhagic-shock__v04_page-068",
+        "hemorrhagic-shock__v04_page-080"
+      ],
+      "parentHint": "先区分严重外伤和小擦伤。",
+      "biologyConcepts": [
+        "失血",
+        "严重外伤"
+      ]
+    },
+    {
+      "cardId": "hemorrhagic-shock-q02",
+      "topicId": "hemorrhagic-shock",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "红血球还在努力什么",
+      "question": "危机中红血球最重要的任务是什么？",
+      "answer": "仍然是把氧气送到身体需要的地方。",
+      "relatedPageIds": [
+        "hemorrhagic-shock__v04_page-071"
+      ],
+      "parentHint": "把焦点放回供氧任务。",
+      "biologyConcepts": [
+        "红血球",
+        "氧气运输"
+      ]
+    },
+    {
+      "cardId": "hemorrhagic-shock-q03",
+      "topicId": "hemorrhagic-shock",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么大量失血危险",
+      "question": "为什么大量失血会影响身体各处？",
+      "answer": "因为血液负责运输氧气和维持循环，少太多时全身组织都可能受影响。",
+      "relatedPageIds": [
+        "hemorrhagic-shock__v04_page-088"
+      ],
+      "parentHint": "不讲复杂急救步骤，只讲运输变困难。",
+      "biologyConcepts": [
+        "血液循环",
+        "组织供氧"
+      ]
+    },
+    {
+      "cardId": "hemorrhagic-shock-q04",
+      "topicId": "hemorrhagic-shock",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "血小板在帮什么忙",
+      "question": "血小板为什么要赶到破损血管附近？",
+      "answer": "它们会帮助止血和修补破口，减少继续流失。",
+      "relatedPageIds": [
+        "hemorrhagic-shock__v04_page-104"
+      ],
+      "parentHint": "和擦伤主题做温和连接。",
+      "biologyConcepts": [
+        "血小板",
+        "凝血"
+      ]
+    },
+    {
+      "cardId": "hemorrhagic-shock-q05",
+      "topicId": "hemorrhagic-shock",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "看到严重出血怎么办",
+      "question": "如果看到严重出血，孩子第一件事应该做什么？",
+      "answer": "马上找附近成人帮忙，并让成人联系专业救助。",
+      "relatedPageIds": [
+        "hemorrhagic-shock__v04_page-080"
+      ],
+      "parentHint": "这是安全边界，不让孩子自己处理。",
+      "biologyConcepts": [
+        "求助成人",
+        "专业救助"
+      ]
+    },
+    {
+      "cardId": "hemorrhagic-shock-q06",
+      "topicId": "hemorrhagic-shock",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "血压和供氧风险",
+      "question": "这里说的休克是什么意思？",
+      "answer": "可以简单理解为循环供血不足，身体组织得不到足够支持的危险状态。",
+      "relatedPageIds": [
+        "hemorrhagic-shock__v04_page-088"
+      ],
+      "parentHint": "保持概念层解释，不替代医学判断。",
+      "biologyConcepts": [
+        "休克",
+        "循环供血"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题比前几个更紧张，包含严重外伤和休克概念。共读时请先说明：普通小擦伤和大量出血完全不同；严重出血要立刻找成人并寻求专业帮助。页面内容只做科学理解，不替代急救训练或医学建议。",
+  "sensitiveContentGuidance": "本主题有外伤、出血性休克、细胞被冲出血管、强烈战斗、低温和濒危感等画面。家庭阅读时建议提前说明这是医学拟人化表达；重点放在“严重失血会影响全身供氧，需要及时救治”，不要让孩子把普通小伤口和严重创伤混为一谈。",
+  "sourceNotes": [
+    "漫画来源：第4卷 第17-18话，只保留页码线索，不展示漫画全文。",
+    "动画来源只记录主题级摘要和集数线索，不接入视频、字幕或对白。"
+  ],
+  "pageRefs": {
+    "hemorrhagic-shock__v04_page-068": {
+      "pageId": "hemorrhagic-shock__v04_page-068",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/hemorrhagic-shock__v04_page-068.webp",
+      "label": "漫画页 68"
+    },
+    "hemorrhagic-shock__v04_page-080": {
+      "pageId": "hemorrhagic-shock__v04_page-080",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/hemorrhagic-shock__v04_page-080.webp",
+      "label": "漫画页 80"
+    },
+    "hemorrhagic-shock__v04_page-071": {
+      "pageId": "hemorrhagic-shock__v04_page-071",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/hemorrhagic-shock__v04_page-071.webp",
+      "label": "漫画页 71"
+    },
+    "hemorrhagic-shock__v04_page-088": {
+      "pageId": "hemorrhagic-shock__v04_page-088",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/hemorrhagic-shock__v04_page-088.webp",
+      "label": "漫画页 88"
+    },
+    "hemorrhagic-shock__v04_page-104": {
+      "pageId": "hemorrhagic-shock__v04_page-104",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/hemorrhagic-shock__v04_page-104.webp",
+      "label": "漫画页 104"
+    },
+    "hemorrhagic-shock__v04_page-106": {
+      "pageId": "hemorrhagic-shock__v04_page-106",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/hemorrhagic-shock__v04_page-106.webp",
+      "label": "漫画页 106"
+    },
+    "hemorrhagic-shock__v04_page-121": {
+      "pageId": "hemorrhagic-shock__v04_page-121",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/hemorrhagic-shock__v04_page-121.webp",
+      "label": "漫画页 121"
+    },
+    "hemorrhagic-shock__v04_page-128": {
+      "pageId": "hemorrhagic-shock__v04_page-128",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/hemorrhagic-shock__v04_page-128.webp",
+      "label": "漫画页 128"
+    }
+  }
+}

@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 23,
+  "topicId": "bump-on-head",
+  "slug": "bump-on-head",
+  "title": "撞出肿包",
+  "displayTitle": "撞出肿包",
+  "category": "损伤与炎症",
+  "source": {
+    "volume": 6,
+    "chapterLabel": "第26话",
+    "sourceLabel": "第6卷 第26话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "撞出肿包主题把外部碰撞转成身体内部的血管损伤、血液外渗、血小板集合、凝血加固和肿胀吸收恢复。共读时重点是让孩子知道：肿包不是凭空长出来，而是身体在处理微小损伤。",
+    "readingFocus": "“撞到头后身体里发生什么”：用撞击、血管受损、血液外渗、血小板止血、纤维蛋白加固和恢复观察六个节点解释，同时保留头部外伤需成人判断的边界。",
+    "keyBiologyConcepts": [
+      "撞伤",
+      "肿包",
+      "血管损伤",
+      "血液外渗",
+      "血小板",
+      "凝血",
+      "纤维蛋白",
+      "血肿",
+      "炎症反应",
+      "组织修复"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "撞出肿包时身体里发生了什么",
+      "血小板为什么会集合",
+      "血肿、淤青和肿胀的区别",
+      "凝血和修复工程的步骤",
+      "何时需要家长或医生判断头部撞伤"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "bump-on-head-impact-to-tissue",
+      "topicId": "bump-on-head",
+      "title": "撞击会传到身体内部",
+      "coreQuestion": "外面只是撞一下，里面为什么会忙起来？",
+      "explanation": "撞击力会传到皮下组织和小血管。即使表面只看到鼓起来，内部也可能有小血管受损和局部组织反应。",
+      "imageAsset": "public/assets/cells-at-work/science-station/bump-on-head/bump-on-head-v2-station-01.webp",
+      "imageAlt": "头部皮下剖面中，外部撞击力传到小血管和组织的温和示意图。",
+      "relatedPageIds": [
+        "bump-on-head__v06_page-004",
+        "bump-on-head__v06_page-009"
+      ],
+      "biologyConcepts": [
+        "机械性损伤",
+        "组织损伤",
+        "血管损伤"
+      ],
+      "encyclopediaTags": [
+        "肿包",
+        "外伤",
+        "头部安全"
+      ],
+      "parentNote": "先解释机制，再提醒头部撞伤要让成人判断。"
+    },
+    {
+      "stationId": "bump-on-head-swelling-pocket",
+      "topicId": "bump-on-head",
+      "title": "肿包来自局部液体和血液聚集",
+      "coreQuestion": "为什么撞到的地方会鼓起来？",
+      "explanation": "小血管受损后，血液或组织液可能跑到周围组织里，形成局部肿胀或血肿，看起来就像鼓起一个包。",
+      "imageAsset": "public/assets/cells-at-work/science-station/bump-on-head/bump-on-head-v2-station-02.webp",
+      "imageAlt": "皮下小血管渗出，局部形成温和肿胀口袋的科普剖面图。",
+      "relatedPageIds": [
+        "bump-on-head__v06_page-015",
+        "bump-on-head__v06_page-018"
+      ],
+      "biologyConcepts": [
+        "血液外渗",
+        "血肿",
+        "肿胀"
+      ],
+      "encyclopediaTags": [
+        "血肿",
+        "淤青",
+        "组织液"
+      ],
+      "parentNote": "避免把画面讲得吓人，用“跑到不该去的地方”解释。"
+    },
+    {
+      "stationId": "bump-on-head-platelet-plug",
+      "topicId": "bump-on-head",
+      "title": "血小板先来堵住破口",
+      "coreQuestion": "身体怎样让受损小血管不再漏？",
+      "explanation": "血小板会在受损处聚集，像临时施工队一样先把破口堵住，帮助止血流程启动。",
+      "imageAsset": "public/assets/cells-at-work/science-station/bump-on-head/bump-on-head-v2-station-03.webp",
+      "imageAlt": "血小板在小血管破口处集合，形成临时封堵的儿童科普图。",
+      "relatedPageIds": [
+        "bump-on-head__v06_page-010",
+        "bump-on-head__v06_page-014"
+      ],
+      "biologyConcepts": [
+        "血小板黏附",
+        "止血",
+        "凝血启动"
+      ],
+      "encyclopediaTags": [
+        "血小板",
+        "止血",
+        "凝血"
+      ],
+      "parentNote": "可以说“施工队”，但不要加入进度或打卡。"
+    },
+    {
+      "stationId": "bump-on-head-fibrin-repair",
+      "topicId": "bump-on-head",
+      "title": "纤维蛋白让修补更牢",
+      "coreQuestion": "临时堵住以后还需要什么？",
+      "explanation": "凝血过程中会形成纤维蛋白网，让血小板塞子更稳。之后身体会慢慢清理多余液体，肿胀逐渐恢复。",
+      "imageAsset": "public/assets/cells-at-work/science-station/bump-on-head/bump-on-head-v2-station-04.webp",
+      "imageAlt": "纤维蛋白网加固血小板塞子，周围肿胀逐步恢复的流程图。",
+      "relatedPageIds": [
+        "bump-on-head__v06_page-020",
+        "bump-on-head__v06_page-030"
+      ],
+      "biologyConcepts": [
+        "纤维蛋白",
+        "凝血",
+        "组织修复"
+      ],
+      "encyclopediaTags": [
+        "纤维蛋白",
+        "恢复",
+        "血小板"
+      ],
+      "parentNote": "把恢复讲成逐步过程，同时保留观察和求助边界。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "bump-on-head-q01",
+      "topicId": "bump-on-head",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "撞击从哪里来",
+      "question": "看相关页面时，哪些线索说明这是外部撞击造成的内部反应？",
+      "answer": "可以找外部撞到头、冲击传入体内、细胞被影响和小血管受损的线索。",
+      "relatedPageIds": [
+        "bump-on-head__v06_page-004",
+        "bump-on-head__v06_page-009"
+      ],
+      "parentHint": "先把外部事件和内部变化连起来。",
+      "biologyConcepts": [
+        "外伤",
+        "组织损伤"
+      ]
+    },
+    {
+      "cardId": "bump-on-head-q02",
+      "topicId": "bump-on-head",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "谁像施工队",
+      "question": "画面里哪些角色或结构像是在修补现场？",
+      "answer": "血小板最像先到场的施工队，凝血和纤维蛋白会让修补更稳。",
+      "relatedPageIds": [
+        "bump-on-head__v06_page-010",
+        "bump-on-head__v06_page-014"
+      ],
+      "parentHint": "让孩子找角色功能，不讲完整剧情。",
+      "biologyConcepts": [
+        "血小板",
+        "凝血"
+      ]
+    },
+    {
+      "cardId": "bump-on-head-q03",
+      "topicId": "bump-on-head",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么会鼓起来",
+      "question": "为什么撞到后外面会鼓起一个包？",
+      "answer": "局部小血管和组织受影响后，血液或组织液聚在周围，就会形成肿胀。",
+      "relatedPageIds": [
+        "bump-on-head__v06_page-015",
+        "bump-on-head__v06_page-018"
+      ],
+      "parentHint": "用剖面概念解释，不制造恐惧。",
+      "biologyConcepts": [
+        "血肿",
+        "肿胀"
+      ]
+    },
+    {
+      "cardId": "bump-on-head-q04",
+      "topicId": "bump-on-head",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "止血和消肿一样吗",
+      "question": "血小板止血和肿包慢慢消退是不是同一件事？",
+      "answer": "不是。止血是先堵住破口，消肿是后面慢慢清理和恢复的过程。",
+      "relatedPageIds": [
+        "bump-on-head__v06_page-020",
+        "bump-on-head__v06_page-030"
+      ],
+      "parentHint": "帮助孩子分清先后。",
+      "biologyConcepts": [
+        "止血",
+        "组织修复"
+      ]
+    },
+    {
+      "cardId": "bump-on-head-q05",
+      "topicId": "bump-on-head",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "撞到头要告诉谁",
+      "question": "撞到头后为什么要告诉成人？",
+      "answer": "头部撞伤需要成人观察和判断，尤其是很痛、头晕、呕吐、嗜睡或情况异常时。",
+      "relatedPageIds": [
+        "bump-on-head__v06_page-004"
+      ],
+      "parentHint": "保留明确安全边界，不给急救教程。",
+      "biologyConcepts": [
+        "头部安全",
+        "成人判断"
+      ]
+    },
+    {
+      "cardId": "bump-on-head-q06",
+      "topicId": "bump-on-head",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "血肿是什么",
+      "question": "血肿和普通皮肤颜色变化有什么关系？",
+      "answer": "血肿是血液跑到血管外局部聚集，后来可能伴随颜色变化和逐步吸收。",
+      "relatedPageIds": [
+        "bump-on-head__v06_page-015"
+      ],
+      "parentHint": "讲概念，不让孩子自行诊断。",
+      "biologyConcepts": [
+        "血肿",
+        "淤青"
+      ]
+    }
+  ],
+  "parentReadingNote": "头部撞伤需要更谨慎。共读时可以解释肿包形成、血小板止血和恢复过程，但如果孩子真实撞到头，尤其出现头晕、呕吐、嗜睡、持续疼痛或异常表现，应由成人及时寻求专业帮助。",
+  "sensitiveContentGuidance": "本主题有头部撞击、血管破裂、细胞被冲散和肿胀画面。家庭阅读时建议强调：漫画是身体内部的夸张比喻；现实中如果头部撞击后出现呕吐、昏睡、剧烈头痛、意识异常等情况，应及时就医。",
+  "sourceNotes": [
+    "漫画来源：第6卷 第26话，只保留页码线索，不展示漫画全文。",
+    "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。"
+  ],
+  "pageRefs": {
+    "bump-on-head__v06_page-004": {
+      "pageId": "bump-on-head__v06_page-004",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/bump-on-head__v06_page-004.webp",
+      "label": "漫画页 4"
+    },
+    "bump-on-head__v06_page-009": {
+      "pageId": "bump-on-head__v06_page-009",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/bump-on-head__v06_page-009.webp",
+      "label": "漫画页 9"
+    },
+    "bump-on-head__v06_page-015": {
+      "pageId": "bump-on-head__v06_page-015",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/bump-on-head__v06_page-015.webp",
+      "label": "漫画页 15"
+    },
+    "bump-on-head__v06_page-018": {
+      "pageId": "bump-on-head__v06_page-018",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/bump-on-head__v06_page-018.webp",
+      "label": "漫画页 18"
+    },
+    "bump-on-head__v06_page-010": {
+      "pageId": "bump-on-head__v06_page-010",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/bump-on-head__v06_page-010.webp",
+      "label": "漫画页 10"
+    },
+    "bump-on-head__v06_page-014": {
+      "pageId": "bump-on-head__v06_page-014",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/bump-on-head__v06_page-014.webp",
+      "label": "漫画页 14"
+    },
+    "bump-on-head__v06_page-020": {
+      "pageId": "bump-on-head__v06_page-020",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/bump-on-head__v06_page-020.webp",
+      "label": "漫画页 20"
+    },
+    "bump-on-head__v06_page-030": {
+      "pageId": "bump-on-head__v06_page-030",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/bump-on-head__v06_page-030.webp",
+      "label": "漫画页 30"
+    }
+  }
+}

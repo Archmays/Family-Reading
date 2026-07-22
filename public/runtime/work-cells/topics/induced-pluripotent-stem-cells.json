@@ -1,0 +1,461 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 25,
+  "topicId": "ips-cells",
+  "slug": "induced-pluripotent-stem-cells",
+  "title": "iPS细胞",
+  "displayTitle": "iPS细胞",
+  "category": "再生医学",
+  "source": {
+    "volume": 6,
+    "chapterLabel": "第28话",
+    "sourceLabel": "第6卷 第28话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "iPS细胞是“诱导多能干细胞”的常用说法，指研究人员把已经分化的体细胞重新编程，让它们重新获得接近干细胞的多种发展可能性。这个主题适合孩子理解“细胞命运”“再生医学”和“前沿科学需要验证”。内容必须保持谨慎：iPS细胞有重要研究价值和医学前景，但不应被描述成已经能解决所有疾病，也不能承诺治疗效果。",
+    "readingFocus": "iPS细胞是“诱导多能干细胞”的常用说法，指研究人员把已经分化的体细胞重新编程，让它们重新获得接近干细胞的多种发展可能性。这个主题适合孩子理解“细胞命运”“再生医学”和“前沿科学需要验证”。内容必须保持谨慎：iPS细胞有重要研究价值和医学前景，但不应被描述成已经能解决所有疾病，也不能承诺治疗效果。",
+    "keyBiologyConcepts": [
+      "诱导多能干细胞",
+      "细胞重编程",
+      "细胞分化",
+      "细胞命运",
+      "多能性",
+      "干细胞",
+      "发育方向",
+      "再生医学",
+      "细胞培养",
+      "临床研究",
+      "医学应用",
+      "生物安全",
+      "科学验证",
+      "医学风险",
+      "长期研究"
+    ],
+    "recommendedBodyScienceStationFocus": "iPS细胞是“诱导多能干细胞”的常用说法，指研究人员把已经分化的体细胞重新编程，让它们重新获得接近干细胞的多种发展可能性。这个主题适合孩子理解“细胞命运”“再生医学”和“前沿科学需要验证”。内容必须保持谨慎：iPS细胞有重要研究价值和医学前景，但不应被描述成已经能解决所有疾病，也不能承诺治疗效果。"
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "ips-cells-cell-reprogramming",
+      "topicId": "ips-cells",
+      "title": "普通细胞为什么能被重新编程",
+      "coreQuestion": "已经长成某种细胞的细胞，为什么还能被科学家重新调整？",
+      "explanation": "身体里的细胞通常会分化成不同工作类型。iPS细胞研究说明，在特定实验条件下，一些成熟细胞可以被重新编程，回到更有发展可能性的状态。这里的“重新编程”是严格实验过程，不是身体里随便发生的变化。",
+      "imageAsset": "public/assets/cells-at-work/science-station/ips-cells/ips-cells-v2-station-01.webp",
+      "imageAlt": "儿童科普插图：一个普通细胞在安全实验环境中被温和表现为重新获得多种可能性。",
+      "relatedPageIds": [
+        "ips-cells__v06_page-065",
+        "ips-cells__v06_page-066",
+        "ips-cells__v06_page-067",
+        "ips-cells__v06_page-068",
+        "ips-cells__v06_page-069"
+      ],
+      "biologyConcepts": [
+        "诱导多能干细胞",
+        "细胞重编程",
+        "细胞分化",
+        "细胞命运"
+      ],
+      "encyclopediaTags": [
+        "iPS细胞",
+        "干细胞",
+        "细胞重编程"
+      ],
+      "parentNote": "强调这是实验室研究，不是孩子能在生活里操作的事情。"
+    },
+    {
+      "stationId": "ips-cells-pluripotency-differentiation",
+      "topicId": "ips-cells",
+      "title": "iPS细胞像“重新获得多种可能性”",
+      "coreQuestion": "“多能”是什么意思？",
+      "explanation": "多能性可以理解为细胞还有机会发展成多种不同类型的细胞。iPS细胞不是已经变成任何器官，而是处在一种更有可能性的起点；之后还需要在严格条件下被引导分化。",
+      "imageAsset": "public/assets/cells-at-work/science-station/ips-cells/ips-cells-v2-station-02.webp",
+      "imageAlt": "儿童科普插图：一个中心细胞连接到多种温和的未来细胞形态。",
+      "relatedPageIds": [
+        "ips-cells__v06_page-070",
+        "ips-cells__v06_page-071",
+        "ips-cells__v06_page-072",
+        "ips-cells__v06_page-073",
+        "ips-cells__v06_page-074"
+      ],
+      "biologyConcepts": [
+        "多能性",
+        "细胞分化",
+        "干细胞",
+        "发育方向"
+      ],
+      "encyclopediaTags": [
+        "多能性",
+        "细胞分化",
+        "再生医学"
+      ],
+      "parentNote": "可以用“岔路口”比喻多种可能，但不要画箭头或文字。"
+    },
+    {
+      "stationId": "ips-cells-rpe-application",
+      "topicId": "ips-cells",
+      "title": "再生医学为什么有前景",
+      "coreQuestion": "为什么科学家会关注 iPS细胞？",
+      "explanation": "如果能安全地把细胞引导成需要的类型，未来可能帮助研究疾病、测试药物或探索组织修复方法。再生医学的前景来自“理解细胞如何变成不同功能”，但真正应用需要大量验证。",
+      "imageAsset": "public/assets/cells-at-work/science-station/ips-cells/ips-cells-v2-station-03.webp",
+      "imageAlt": "儿童科普插图：研究人员在安全实验室观察细胞培养，远景表现温和的再生医学希望。",
+      "relatedPageIds": [
+        "ips-cells__v06_page-075",
+        "ips-cells__v06_page-076",
+        "ips-cells__v06_page-077",
+        "ips-cells__v06_page-078",
+        "ips-cells__v06_page-079",
+        "ips-cells__v06_page-080",
+        "ips-cells__v06_page-081",
+        "ips-cells__v06_page-082",
+        "ips-cells__v06_page-083",
+        "ips-cells__v06_page-084",
+        "ips-cells__v06_page-085",
+        "ips-cells__v06_page-086"
+      ],
+      "biologyConcepts": [
+        "再生医学",
+        "细胞培养",
+        "临床研究",
+        "医学应用"
+      ],
+      "encyclopediaTags": [
+        "再生医学",
+        "临床研究",
+        "细胞培养"
+      ],
+      "parentNote": "用“有希望但还要研究很久”替代“马上能治好”。"
+    },
+    {
+      "stationId": "ips-cells-safety-and-ethics",
+      "topicId": "ips-cells",
+      "title": "前沿科学为什么必须谨慎、安全、长期研究",
+      "coreQuestion": "为什么好像很厉害的科学发现也不能马上使用？",
+      "explanation": "前沿科学要确认是否有效，更要确认是否安全。iPS细胞相关研究需要防止错误分化、异常增殖、免疫排斥等风险。科学家必须反复验证、长期观察，并遵守伦理和监管要求。",
+      "imageAsset": "public/assets/cells-at-work/science-station/ips-cells/ips-cells-v2-station-04.webp",
+      "imageAlt": "儿童科普插图：科研安全检查、培养皿观察和长期记录被表现为谨慎研究流程。",
+      "relatedPageIds": [
+        "ips-cells__v06_page-087",
+        "ips-cells__v06_page-088",
+        "ips-cells__v06_page-089",
+        "ips-cells__v06_page-090",
+        "ips-cells__v06_page-091",
+        "ips-cells__v06_page-092",
+        "ips-cells__v06_page-099",
+        "ips-cells__v06_page-100",
+        "ips-cells__v06_page-101",
+        "ips-cells__v06_page-102",
+        "ips-cells__v06_page-103",
+        "ips-cells__v06_page-104",
+        "ips-cells__v06_page-105"
+      ],
+      "biologyConcepts": [
+        "生物安全",
+        "科学验证",
+        "医学风险",
+        "长期研究"
+      ],
+      "encyclopediaTags": [
+        "医学风险",
+        "科学验证",
+        "伦理审查"
+      ],
+      "parentNote": "这张卡要帮助孩子理解科学不是许愿，而是认真验证。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "ips-cells-q01",
+      "topicId": "ips-cells",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "研究所而不是战斗现场",
+      "question": "观察：画面里哪些地方像研究所，而不是普通战斗现场？",
+      "answer": "iPS细胞展示了细胞命运可以被科学方法重新调整。",
+      "relatedPageIds": [
+        "ips-cells__v06_page-065",
+        "ips-cells__v06_page-066"
+      ],
+      "parentHint": "强调这是实验室研究，不是孩子能在生活里操作的事情。",
+      "biologyConcepts": [
+        "诱导多能干细胞",
+        "细胞重编程"
+      ]
+    },
+    {
+      "cardId": "ips-cells-q02",
+      "topicId": "ips-cells",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "细胞的不同可能性",
+      "question": "观察：你能找到哪些表现“细胞有不同可能性”的画面线索？",
+      "answer": "iPS细胞的关键不是“已经完成”，而是“重新有了多种发展方向”。",
+      "relatedPageIds": [
+        "ips-cells__v06_page-070",
+        "ips-cells__v06_page-071"
+      ],
+      "parentHint": "可以用“岔路口”比喻多种可能，但不要画箭头或文字。",
+      "biologyConcepts": [
+        "多能性",
+        "细胞分化"
+      ]
+    },
+    {
+      "cardId": "ips-cells-q03",
+      "topicId": "ips-cells",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "重新编程不是随便变",
+      "question": "理解：为什么“重新编程”不等于随便变成任何东西？",
+      "answer": "再生医学有前景，因为它研究身体修复和细胞替换的可能方式。",
+      "relatedPageIds": [
+        "ips-cells__v06_page-075",
+        "ips-cells__v06_page-076"
+      ],
+      "parentHint": "用“有希望但还要研究很久”替代“马上能治好”。",
+      "biologyConcepts": [
+        "再生医学",
+        "细胞培养"
+      ]
+    },
+    {
+      "cardId": "ips-cells-q04",
+      "topicId": "ips-cells",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "科学研究先确认安全",
+      "question": "理解：为什么科学家要先反复确认安全？",
+      "answer": "越有潜力的医学技术，越需要谨慎验证和长期安全研究。",
+      "relatedPageIds": [
+        "ips-cells__v06_page-087",
+        "ips-cells__v06_page-088"
+      ],
+      "parentHint": "这张卡要帮助孩子理解科学不是许愿，而是认真验证。",
+      "biologyConcepts": [
+        "生物安全",
+        "科学验证"
+      ]
+    },
+    {
+      "cardId": "ips-cells-q05",
+      "topicId": "ips-cells",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "面对新医学发现的问题",
+      "question": "联系生活：听到很新的医学发现时，我们可以先问哪些问题？",
+      "answer": "越有潜力的医学技术，越需要谨慎验证和长期安全研究。",
+      "relatedPageIds": [
+        "ips-cells__v06_page-087"
+      ],
+      "parentHint": "这张卡要帮助孩子理解科学不是许愿，而是认真验证。",
+      "biologyConcepts": [
+        "生物安全",
+        "科学验证"
+      ]
+    },
+    {
+      "cardId": "ips-cells-q06",
+      "topicId": "ips-cells",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "细胞状态和潜能",
+      "question": "科学概念：“分化”和“多能性”有什么不一样？",
+      "answer": "越有潜力的医学技术，越需要谨慎验证和长期安全研究。",
+      "relatedPageIds": [
+        "ips-cells__v06_page-099"
+      ],
+      "parentHint": "这张卡要帮助孩子理解科学不是许愿，而是认真验证。",
+      "biologyConcepts": [
+        "生物安全",
+        "科学验证"
+      ]
+    }
+  ],
+  "parentReadingNote": "iPS细胞主题容易被孩子理解成“万能修复”。家长应把重点放在细胞命运、研究前景和安全验证上：它很有希望，但不等于已经能马上治疗所有疾病。",
+  "sensitiveContentGuidance": "本主题涉及失明、再生医学、实验风险和癌变风险等内容。家长可强调：iPS 细胞是重要前沿科学，但真实医学应用需要安全性、有效性和伦理审查，不能被理解成“万能修复”。",
+  "sourceNotes": [],
+  "pageRefs": {
+    "ips-cells__v06_page-065": {
+      "pageId": "ips-cells__v06_page-065",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-065.webp",
+      "label": "漫画页 65"
+    },
+    "ips-cells__v06_page-066": {
+      "pageId": "ips-cells__v06_page-066",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-066.webp",
+      "label": "漫画页 66"
+    },
+    "ips-cells__v06_page-067": {
+      "pageId": "ips-cells__v06_page-067",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-067.webp",
+      "label": "漫画页 67"
+    },
+    "ips-cells__v06_page-068": {
+      "pageId": "ips-cells__v06_page-068",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-068.webp",
+      "label": "漫画页 68"
+    },
+    "ips-cells__v06_page-069": {
+      "pageId": "ips-cells__v06_page-069",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-069.webp",
+      "label": "漫画页 69"
+    },
+    "ips-cells__v06_page-070": {
+      "pageId": "ips-cells__v06_page-070",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-070.webp",
+      "label": "漫画页 70"
+    },
+    "ips-cells__v06_page-071": {
+      "pageId": "ips-cells__v06_page-071",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-071.webp",
+      "label": "漫画页 71"
+    },
+    "ips-cells__v06_page-072": {
+      "pageId": "ips-cells__v06_page-072",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-072.webp",
+      "label": "漫画页 72"
+    },
+    "ips-cells__v06_page-073": {
+      "pageId": "ips-cells__v06_page-073",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-073.webp",
+      "label": "漫画页 73"
+    },
+    "ips-cells__v06_page-074": {
+      "pageId": "ips-cells__v06_page-074",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-074.webp",
+      "label": "漫画页 74"
+    },
+    "ips-cells__v06_page-075": {
+      "pageId": "ips-cells__v06_page-075",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-075.webp",
+      "label": "漫画页 75"
+    },
+    "ips-cells__v06_page-076": {
+      "pageId": "ips-cells__v06_page-076",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-076.webp",
+      "label": "漫画页 76"
+    },
+    "ips-cells__v06_page-077": {
+      "pageId": "ips-cells__v06_page-077",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-077.webp",
+      "label": "漫画页 77"
+    },
+    "ips-cells__v06_page-078": {
+      "pageId": "ips-cells__v06_page-078",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-078.webp",
+      "label": "漫画页 78"
+    },
+    "ips-cells__v06_page-079": {
+      "pageId": "ips-cells__v06_page-079",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-079.webp",
+      "label": "漫画页 79"
+    },
+    "ips-cells__v06_page-080": {
+      "pageId": "ips-cells__v06_page-080",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-080.webp",
+      "label": "漫画页 80"
+    },
+    "ips-cells__v06_page-081": {
+      "pageId": "ips-cells__v06_page-081",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-081.webp",
+      "label": "漫画页 81"
+    },
+    "ips-cells__v06_page-082": {
+      "pageId": "ips-cells__v06_page-082",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-082.webp",
+      "label": "漫画页 82"
+    },
+    "ips-cells__v06_page-083": {
+      "pageId": "ips-cells__v06_page-083",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-083.webp",
+      "label": "漫画页 83"
+    },
+    "ips-cells__v06_page-084": {
+      "pageId": "ips-cells__v06_page-084",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-084.webp",
+      "label": "漫画页 84"
+    },
+    "ips-cells__v06_page-085": {
+      "pageId": "ips-cells__v06_page-085",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-085.webp",
+      "label": "漫画页 85"
+    },
+    "ips-cells__v06_page-086": {
+      "pageId": "ips-cells__v06_page-086",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-086.webp",
+      "label": "漫画页 86"
+    },
+    "ips-cells__v06_page-087": {
+      "pageId": "ips-cells__v06_page-087",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-087.webp",
+      "label": "漫画页 87"
+    },
+    "ips-cells__v06_page-088": {
+      "pageId": "ips-cells__v06_page-088",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-088.webp",
+      "label": "漫画页 88"
+    },
+    "ips-cells__v06_page-089": {
+      "pageId": "ips-cells__v06_page-089",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-089.webp",
+      "label": "漫画页 89"
+    },
+    "ips-cells__v06_page-090": {
+      "pageId": "ips-cells__v06_page-090",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-090.webp",
+      "label": "漫画页 90"
+    },
+    "ips-cells__v06_page-091": {
+      "pageId": "ips-cells__v06_page-091",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-091.webp",
+      "label": "漫画页 91"
+    },
+    "ips-cells__v06_page-092": {
+      "pageId": "ips-cells__v06_page-092",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-092.webp",
+      "label": "漫画页 92"
+    },
+    "ips-cells__v06_page-099": {
+      "pageId": "ips-cells__v06_page-099",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-099.webp",
+      "label": "漫画页 99"
+    },
+    "ips-cells__v06_page-100": {
+      "pageId": "ips-cells__v06_page-100",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-100.webp",
+      "label": "漫画页 100"
+    },
+    "ips-cells__v06_page-101": {
+      "pageId": "ips-cells__v06_page-101",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-101.webp",
+      "label": "漫画页 101"
+    },
+    "ips-cells__v06_page-102": {
+      "pageId": "ips-cells__v06_page-102",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-102.webp",
+      "label": "漫画页 102"
+    },
+    "ips-cells__v06_page-103": {
+      "pageId": "ips-cells__v06_page-103",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-103.webp",
+      "label": "漫画页 103"
+    },
+    "ips-cells__v06_page-104": {
+      "pageId": "ips-cells__v06_page-104",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-104.webp",
+      "label": "漫画页 104"
+    },
+    "ips-cells__v06_page-105": {
+      "pageId": "ips-cells__v06_page-105",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/ips-cells__v06_page-105.webp",
+      "label": "漫画页 105"
+    }
+  }
+}

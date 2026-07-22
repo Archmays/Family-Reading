@@ -1,0 +1,352 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 24,
+  "topicId": "left-shift",
+  "slug": "left-shift-of-white-blood-cells",
+  "title": "白细胞左移",
+  "displayTitle": "白细胞左移",
+  "category": "血液检查与免疫反应",
+  "source": {
+    "volume": 6,
+    "chapterLabel": "第27话",
+    "sourceLabel": "第6卷 第27话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "白细胞左移可以理解为：当身体面对比较急的感染或炎症压力时，骨髓会加快派出中性粒细胞，有时连还比较年轻、尚未完全成熟的白细胞也会提前进入血液。它不是一个单独的“病名”，而是血液检查中可能出现的线索。这个主题适合帮助孩子理解身体如何临时调度免疫细胞，也要提醒家长：检验结果必须结合症状、病史和医生判断，不能只看一个数字自行下结论。",
+    "readingFocus": "白细胞左移可以理解为：当身体面对比较急的感染或炎症压力时，骨髓会加快派出中性粒细胞，有时连还比较年轻、尚未完全成熟的白细胞也会提前进入血液。它不是一个单独的“病名”，而是血液检查中可能出现的线索。这个主题适合帮助孩子理解身体如何临时调度免疫细胞，也要提醒家长：检验结果必须结合症状、病史和医生判断，不能只看一个数字自行下结论。",
+    "keyBiologyConcepts": [
+      "白细胞",
+      "中性粒细胞",
+      "血常规",
+      "免疫系统",
+      "骨髓造血",
+      "杆状核中性粒细胞",
+      "中性粒细胞动员",
+      "免疫动员",
+      "炎症应答",
+      "细胞迁移",
+      "吞噬作用",
+      "血液检查",
+      "临床线索",
+      "医学判断",
+      "健康素养"
+    ],
+    "recommendedBodyScienceStationFocus": "白细胞左移可以理解为：当身体面对比较急的感染或炎症压力时，骨髓会加快派出中性粒细胞，有时连还比较年轻、尚未完全成熟的白细胞也会提前进入血液。它不是一个单独的“病名”，而是血液检查中可能出现的线索。这个主题适合帮助孩子理解身体如何临时调度免疫细胞，也要提醒家长：检验结果必须结合症状、病史和医生判断，不能只看一个数字自行下结论。"
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "left-shift-young-neutrophils",
+      "topicId": "left-shift",
+      "title": "什么是白细胞数量变化",
+      "coreQuestion": "为什么检查里会看到白细胞数量变多或比例改变？",
+      "explanation": "白细胞是免疫系统的重要成员。身体遇到感染、炎症、压力或其他情况时，血液里的白细胞数量和不同类型的比例可能改变。白细胞左移重点不是“越多越好”，而是提示身体可能正在加快调动中性粒细胞。",
+      "imageAsset": "public/assets/cells-at-work/science-station/left-shift/left-shift-v2-station-01.webp",
+      "imageAlt": "儿童科普插图：血液通道中不同成熟阶段的白细胞被温和地表现为身体状态线索。",
+      "relatedPageIds": [
+        "left-shift__v06_page-039",
+        "left-shift__v06_page-040",
+        "left-shift__v06_page-041"
+      ],
+      "biologyConcepts": [
+        "白细胞",
+        "中性粒细胞",
+        "血常规",
+        "免疫系统"
+      ],
+      "encyclopediaTags": [
+        "白细胞左移",
+        "中性粒细胞",
+        "血常规"
+      ],
+      "parentNote": "可以告诉孩子，检查结果像线索卡，需要医生把很多线索放在一起看。"
+    },
+    {
+      "stationId": "left-shift-bone-marrow-dispatch",
+      "topicId": "left-shift",
+      "title": "为什么身体会加快派出未成熟白细胞",
+      "coreQuestion": "为什么还没完全成熟的白细胞也会被派出来？",
+      "explanation": "骨髓像身体的血细胞生产和储备基地。感染压力变大时，身体需要更多中性粒细胞参与防御，于是骨髓会加快释放细胞。血液中年轻形态的中性粒细胞增多，就可能被描述为“左移”。",
+      "imageAsset": "public/assets/cells-at-work/science-station/left-shift/left-shift-v2-station-02.webp",
+      "imageAlt": "儿童科普插图：骨髓空间中不同成熟阶段的白细胞准备进入血液。",
+      "relatedPageIds": [
+        "left-shift__v06_page-042",
+        "left-shift__v06_page-043",
+        "left-shift__v06_page-044"
+      ],
+      "biologyConcepts": [
+        "骨髓造血",
+        "杆状核中性粒细胞",
+        "中性粒细胞动员"
+      ],
+      "encyclopediaTags": [
+        "骨髓",
+        "杆状核中性粒细胞",
+        "炎症"
+      ],
+      "parentNote": "重点是“加急调度”，不是说年轻细胞做错了什么。"
+    },
+    {
+      "stationId": "left-shift-frontline-function",
+      "topicId": "left-shift",
+      "title": "骨髓和血液如何共同应对感染压力",
+      "coreQuestion": "身体怎样把免疫细胞送到需要帮助的地方？",
+      "explanation": "骨髓负责制造和补充血细胞，血液像运输道路，把免疫细胞带到身体各处。感染或炎症信号出现后，更多中性粒细胞会进入血液，前往需要防御的组织附近。",
+      "imageAsset": "public/assets/cells-at-work/science-station/left-shift/left-shift-v2-station-03.webp",
+      "imageAlt": "儿童科普插图：骨髓补给与血液运输共同帮助免疫细胞前往感染压力区域。",
+      "relatedPageIds": [
+        "left-shift__v06_page-045",
+        "left-shift__v06_page-046",
+        "left-shift__v06_page-047",
+        "left-shift__v06_page-048",
+        "left-shift__v06_page-049",
+        "left-shift__v06_page-050",
+        "left-shift__v06_page-051",
+        "left-shift__v06_page-052"
+      ],
+      "biologyConcepts": [
+        "免疫动员",
+        "炎症应答",
+        "细胞迁移",
+        "吞噬作用"
+      ],
+      "encyclopediaTags": [
+        "感染",
+        "炎症",
+        "吞噬作用"
+      ],
+      "parentNote": "可以把身体想成一个会调度资源的城市，但不要把免疫反应讲成真实战争。"
+    },
+    {
+      "stationId": "left-shift-blood-test-clue",
+      "topicId": "left-shift",
+      "title": "为什么检验结果要由医生判断",
+      "coreQuestion": "看到“白细胞左移”能不能自己判断病情？",
+      "explanation": "不能只凭一个检验词判断身体发生了什么。医生会结合体温、症状、体征、其他检查、年龄和既往情况来理解结果。白细胞左移有时提示感染或炎症压力，但具体意义需要专业判断。",
+      "imageAsset": "public/assets/cells-at-work/science-station/left-shift/left-shift-v2-station-04.webp",
+      "imageAlt": "儿童科普插图：医生把多张身体线索卡一起查看，温和解释血液检查。",
+      "relatedPageIds": [
+        "left-shift__v06_page-053",
+        "left-shift__v06_page-054",
+        "left-shift__v06_page-055"
+      ],
+      "biologyConcepts": [
+        "血液检查",
+        "临床线索",
+        "医学判断",
+        "健康素养"
+      ],
+      "encyclopediaTags": [
+        "血常规",
+        "白细胞分类",
+        "医生判断"
+      ],
+      "parentNote": "如果孩子问“是不是生病了”，回答应回到“要让医生综合判断”。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "left-shift-q01",
+      "topicId": "left-shift",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "身体加快调度人手",
+      "question": "观察：画面里哪些地方让你觉得身体正在加快调度人手？",
+      "answer": "白细胞变化是身体状态的线索，不是单独的诊断。",
+      "relatedPageIds": [
+        "left-shift__v06_page-039",
+        "left-shift__v06_page-040"
+      ],
+      "parentHint": "可以告诉孩子，检查结果像线索卡，需要医生把很多线索放在一起看。",
+      "biologyConcepts": [
+        "白细胞",
+        "中性粒细胞"
+      ]
+    },
+    {
+      "cardId": "left-shift-q02",
+      "topicId": "left-shift",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "年轻和成熟白细胞",
+      "question": "观察：年轻白细胞和成熟白细胞看起来承担的任务有什么不同？",
+      "answer": "左移常表示身体正在加急调动免疫人手。",
+      "relatedPageIds": [
+        "left-shift__v06_page-042",
+        "left-shift__v06_page-043"
+      ],
+      "parentHint": "重点是“加急调度”，不是说年轻细胞做错了什么。",
+      "biologyConcepts": [
+        "骨髓造血",
+        "杆状核中性粒细胞"
+      ]
+    },
+    {
+      "cardId": "left-shift-q03",
+      "topicId": "left-shift",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "压力下的白细胞调动",
+      "question": "理解：为什么身体遇到压力时，可能会让更多白细胞进入血液？",
+      "answer": "骨髓负责补给，血液负责运输，免疫细胞负责到现场参与防御。",
+      "relatedPageIds": [
+        "left-shift__v06_page-045",
+        "left-shift__v06_page-046"
+      ],
+      "parentHint": "可以把身体想成一个会调度资源的城市，但不要把免疫反应讲成真实战争。",
+      "biologyConcepts": [
+        "免疫动员",
+        "炎症应答"
+      ]
+    },
+    {
+      "cardId": "left-shift-q04",
+      "topicId": "left-shift",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "左移只是线索",
+      "question": "理解：为什么“左移”更像线索，而不是一个单独答案？",
+      "answer": "化验单提供线索，解释线索需要医生。",
+      "relatedPageIds": [
+        "left-shift__v06_page-053",
+        "left-shift__v06_page-054"
+      ],
+      "parentHint": "如果孩子问“是不是生病了”，回答应回到“要让医生综合判断”。",
+      "biologyConcepts": [
+        "血液检查",
+        "临床线索"
+      ]
+    },
+    {
+      "cardId": "left-shift-q05",
+      "topicId": "left-shift",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "看不懂化验词怎么办",
+      "question": "联系生活：如果看到化验单上有不懂的词，我们可以怎么做？",
+      "answer": "化验单提供线索，解释线索需要医生。",
+      "relatedPageIds": [
+        "left-shift__v06_page-053"
+      ],
+      "parentHint": "如果孩子问“是不是生病了”，回答应回到“要让医生综合判断”。",
+      "biologyConcepts": [
+        "血液检查",
+        "临床线索"
+      ]
+    },
+    {
+      "cardId": "left-shift-q06",
+      "topicId": "left-shift",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "骨髓和血液的分工",
+      "question": "科学概念：骨髓和血液在免疫防御里分别像什么角色？",
+      "answer": "化验单提供线索，解释线索需要医生。",
+      "relatedPageIds": [
+        "left-shift__v06_page-053"
+      ],
+      "parentHint": "如果孩子问“是不是生病了”，回答应回到“要让医生综合判断”。",
+      "biologyConcepts": [
+        "血液检查",
+        "临床线索"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题适合把漫画里的紧张调度转回真实身体过程：骨髓补给、血液运输、白细胞参与防御。家长不要引导孩子自行判断化验单，也不要把“左移”说成必然严重；健康问题应咨询专业医务人员。",
+  "sensitiveContentGuidance": "本主题有感染后战斗、细胞被派往前线和少量受伤画面。家长可把重点放在“血液检查是线索，不是单独诊断”，避免孩子把某个指标简单等同于严重疾病。",
+  "sourceNotes": [],
+  "pageRefs": {
+    "left-shift__v06_page-039": {
+      "pageId": "left-shift__v06_page-039",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-039.webp",
+      "label": "漫画页 39"
+    },
+    "left-shift__v06_page-040": {
+      "pageId": "left-shift__v06_page-040",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-040.webp",
+      "label": "漫画页 40"
+    },
+    "left-shift__v06_page-041": {
+      "pageId": "left-shift__v06_page-041",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-041.webp",
+      "label": "漫画页 41"
+    },
+    "left-shift__v06_page-042": {
+      "pageId": "left-shift__v06_page-042",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-042.webp",
+      "label": "漫画页 42"
+    },
+    "left-shift__v06_page-043": {
+      "pageId": "left-shift__v06_page-043",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-043.webp",
+      "label": "漫画页 43"
+    },
+    "left-shift__v06_page-044": {
+      "pageId": "left-shift__v06_page-044",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-044.webp",
+      "label": "漫画页 44"
+    },
+    "left-shift__v06_page-045": {
+      "pageId": "left-shift__v06_page-045",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-045.webp",
+      "label": "漫画页 45"
+    },
+    "left-shift__v06_page-046": {
+      "pageId": "left-shift__v06_page-046",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-046.webp",
+      "label": "漫画页 46"
+    },
+    "left-shift__v06_page-047": {
+      "pageId": "left-shift__v06_page-047",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-047.webp",
+      "label": "漫画页 47"
+    },
+    "left-shift__v06_page-048": {
+      "pageId": "left-shift__v06_page-048",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-048.webp",
+      "label": "漫画页 48"
+    },
+    "left-shift__v06_page-049": {
+      "pageId": "left-shift__v06_page-049",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-049.webp",
+      "label": "漫画页 49"
+    },
+    "left-shift__v06_page-050": {
+      "pageId": "left-shift__v06_page-050",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-050.webp",
+      "label": "漫画页 50"
+    },
+    "left-shift__v06_page-051": {
+      "pageId": "left-shift__v06_page-051",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-051.webp",
+      "label": "漫画页 51"
+    },
+    "left-shift__v06_page-052": {
+      "pageId": "left-shift__v06_page-052",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-052.webp",
+      "label": "漫画页 52"
+    },
+    "left-shift__v06_page-053": {
+      "pageId": "left-shift__v06_page-053",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-053.webp",
+      "label": "漫画页 53"
+    },
+    "left-shift__v06_page-054": {
+      "pageId": "left-shift__v06_page-054",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-054.webp",
+      "label": "漫画页 54"
+    },
+    "left-shift__v06_page-055": {
+      "pageId": "left-shift__v06_page-055",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/left-shift__v06_page-055.webp",
+      "label": "漫画页 55"
+    }
+  }
+}

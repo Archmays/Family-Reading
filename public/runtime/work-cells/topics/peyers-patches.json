@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 17,
+  "topicId": "peyers-patches",
+  "slug": "peyers-patches",
+  "title": "派尔斑",
+  "displayTitle": "派尔斑",
+  "category": "肠道免疫",
+  "source": {
+    "volume": 4,
+    "chapterLabel": "第19话",
+    "sourceLabel": "第4卷 第19话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "这一主题把场景放在小肠黏膜免疫系统中，重点展示派尔斑如何像“肠道边防站”一样收集肠腔里的信息、区分食物、益菌与可能的病原体。故事中可见M细胞、免疫细胞、乳酸菌/益菌和病原菌的互动，适合帮助孩子理解肠道并不只是消化食物，也有重要的免疫监视和防御功能。",
+    "readingFocus": "“肠道里的免疫观察站”：用小肠黏膜、M细胞采样、派尔斑免疫细胞、IgA抗体和益菌/病原菌区分来解释肠道免疫。",
+    "keyBiologyConcepts": [
+      "派尔斑",
+      "小肠",
+      "M细胞",
+      "肠道黏膜免疫",
+      "抗原采样",
+      "抗原呈递",
+      "免疫细胞",
+      "B细胞",
+      "浆细胞",
+      "IgA抗体",
+      "乳酸菌/益菌",
+      "肠道菌群",
+      "致病菌"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "派尔斑为什么像肠道里的免疫观察站",
+      "M细胞怎样把肠道里的信息递给免疫系统",
+      "肠道菌群中“益菌”和“致病菌”的区别",
+      "黏膜免疫为什么需要既警觉又不过度反应",
+      "抗体在肠道表面怎样帮助防御"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "peyers-patches-intestinal-lookout",
+      "topicId": "peyers-patches",
+      "title": "派尔斑为什么像肠道里的免疫观察站",
+      "coreQuestion": "这一页把肠道画成了什么样的空间？",
+      "explanation": "这个小站围绕小肠环境、黏膜免疫、小肠结构展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察派尔斑、小肠、M细胞，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/peyers-patches/peyers-patches-v2-station-01.webp",
+      "imageAlt": "派尔斑：派尔斑为什么像肠道里的免疫观察站的儿童科普解释图。",
+      "relatedPageIds": [
+        "peyers-patches__v04_page-139",
+        "peyers-patches__v04_page-140"
+      ],
+      "biologyConcepts": [
+        "小肠环境",
+        "黏膜免疫",
+        "小肠结构",
+        "肠道黏膜免疫",
+        "抗原采样"
+      ],
+      "encyclopediaTags": [
+        "派尔斑",
+        "小肠",
+        "M细胞",
+        "肠道菌群"
+      ],
+      "parentNote": "把“派尔斑为什么像肠道里的免疫观察站”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "peyers-patches-m-cell-sampling",
+      "topicId": "peyers-patches",
+      "title": "M细胞怎样把肠道里的信息递给免疫系统",
+      "coreQuestion": "免疫细胞为什么需要先观察，再决定是否攻击？",
+      "explanation": "这个小站围绕抗原采样、抗原呈递、IgA抗体展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察M细胞、抗原呈递、派尔斑，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/peyers-patches/peyers-patches-v2-station-02.webp",
+      "imageAlt": "派尔斑：M细胞怎样把肠道里的信息递给免疫系统的儿童科普解释图。",
+      "relatedPageIds": [
+        "peyers-patches__v04_page-160",
+        "peyers-patches__v04_page-162"
+      ],
+      "biologyConcepts": [
+        "抗原采样",
+        "抗原呈递",
+        "IgA抗体",
+        "肠道黏膜免疫",
+        "免疫监视"
+      ],
+      "encyclopediaTags": [
+        "M细胞",
+        "抗原呈递",
+        "派尔斑",
+        "IgA抗体",
+        "小肠"
+      ],
+      "parentNote": "把“M细胞怎样把肠道里的信息递给免疫系统”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "peyers-patches-friend-or-risk",
+      "topicId": "peyers-patches",
+      "title": "肠道菌群中“益菌”和“致病菌”的区别",
+      "coreQuestion": "这一页最适合做哪个身体科学小站：结构、功能、风险，还是救援？",
+      "explanation": "这个小站围绕肠道菌群、益菌与病原菌、免疫识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察乳酸菌、肠道菌群、派尔斑，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/peyers-patches/peyers-patches-v2-station-03.webp",
+      "imageAlt": "派尔斑：肠道菌群中“益菌”和“致病菌”的区别的儿童科普解释图。",
+      "relatedPageIds": [
+        "peyers-patches__v04_page-147",
+        "peyers-patches__v04_page-148"
+      ],
+      "biologyConcepts": [
+        "肠道菌群",
+        "益菌与病原菌",
+        "免疫识别",
+        "肠道黏膜免疫",
+        "抗原采样"
+      ],
+      "encyclopediaTags": [
+        "乳酸菌",
+        "肠道菌群",
+        "派尔斑",
+        "小肠",
+        "M细胞"
+      ],
+      "parentNote": "把“肠道菌群中“益菌”和“致病菌”的区别”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "peyers-patches-iga-surface-defense",
+      "topicId": "peyers-patches",
+      "title": "黏膜免疫为什么需要既警觉又不过度反应",
+      "coreQuestion": "这一页把肠道画成了什么样的空间？",
+      "explanation": "这个小站围绕抗原呈递、肠道免疫组织、抗原采样展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察派尔斑、抗原、M细胞，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/peyers-patches/peyers-patches-v2-station-04.webp",
+      "imageAlt": "派尔斑：黏膜免疫为什么需要既警觉又不过度反应的儿童科普解释图。",
+      "relatedPageIds": [
+        "peyers-patches__v04_page-164",
+        "peyers-patches__v04_page-166"
+      ],
+      "biologyConcepts": [
+        "抗原呈递",
+        "肠道免疫组织",
+        "抗原采样",
+        "IgA抗体",
+        "肠道黏膜免疫"
+      ],
+      "encyclopediaTags": [
+        "派尔斑",
+        "抗原",
+        "M细胞",
+        "IgA抗体",
+        "小肠"
+      ],
+      "parentNote": "把“黏膜免疫为什么需要既警觉又不过度反应”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "peyers-patches-q01",
+      "topicId": "peyers-patches",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "小肠的防御工作",
+      "question": "小肠除了消化吸收，还承担什么防御工作？",
+      "answer": "可以围绕小肠环境、黏膜免疫、小肠结构来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "peyers-patches__v04_page-139",
+        "peyers-patches__v04_page-140"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "小肠环境",
+        "黏膜免疫",
+        "小肠结构"
+      ]
+    },
+    {
+      "cardId": "peyers-patches-q02",
+      "topicId": "peyers-patches",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "不是所有细菌都要消灭",
+      "question": "派尔斑为什么不能把所有细菌都一概消灭？",
+      "answer": "可以围绕抗原采样、抗原呈递、IgA抗体来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "peyers-patches__v04_page-160",
+        "peyers-patches__v04_page-162"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "抗原采样",
+        "抗原呈递",
+        "IgA抗体"
+      ]
+    },
+    {
+      "cardId": "peyers-patches-q03",
+      "topicId": "peyers-patches",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "M细胞的传递角色",
+      "question": "M细胞像身体里的什么职业？",
+      "answer": "可以围绕肠道菌群、益菌与病原菌、免疫识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "peyers-patches__v04_page-147",
+        "peyers-patches__v04_page-148"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "肠道菌群",
+        "益菌与病原菌",
+        "免疫识别"
+      ]
+    },
+    {
+      "cardId": "peyers-patches-q04",
+      "topicId": "peyers-patches",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "检查员和传递员",
+      "question": "画面中哪些细胞像“检查员”或“传递员”？",
+      "answer": "可以围绕抗原呈递、肠道免疫组织、抗原采样来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "peyers-patches__v04_page-164",
+        "peyers-patches__v04_page-166"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "抗原呈递",
+        "肠道免疫组织",
+        "抗原采样"
+      ]
+    },
+    {
+      "cardId": "peyers-patches-q05",
+      "topicId": "peyers-patches",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "肠道里的防御空间",
+      "question": "这一页把肠道画成了什么样的空间？",
+      "answer": "可以围绕小肠环境、黏膜免疫、小肠结构来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "peyers-patches__v04_page-139",
+        "peyers-patches__v04_page-140"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "小肠环境",
+        "黏膜免疫",
+        "小肠结构"
+      ]
+    },
+    {
+      "cardId": "peyers-patches-q06",
+      "topicId": "peyers-patches",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "先观察再决定",
+      "question": "免疫细胞为什么需要先观察，再决定是否攻击？",
+      "answer": "可以围绕抗原采样、抗原呈递、IgA抗体来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "peyers-patches__v04_page-160",
+        "peyers-patches__v04_page-162"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "抗原采样",
+        "抗原呈递",
+        "IgA抗体"
+      ]
+    }
+  ],
+  "parentReadingNote": "本主题适合把肠道讲成既消化又防御的边界空间。动画线索来自 audio-fallback 且为 medium confidence，并与获得性免疫同集内容相邻，需保留人工复核提醒。",
+  "sensitiveContentGuidance": "本主题有拟人化肠道、病原菌追逐和战斗画面，但整体更适合转化为“肠道免疫观察站”的亲子讨论。提醒孩子：现实中的益菌、致病菌和免疫反应比漫画更复杂，不要把所有细菌都理解为敌人。",
+  "sourceNotes": [
+    "漫画来源：第4卷 第19话，只保留页码线索，不展示漫画全文。"
+  ],
+  "pageRefs": {
+    "peyers-patches__v04_page-139": {
+      "pageId": "peyers-patches__v04_page-139",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/peyers-patches__v04_page-139.webp",
+      "label": "漫画页 139"
+    },
+    "peyers-patches__v04_page-140": {
+      "pageId": "peyers-patches__v04_page-140",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/peyers-patches__v04_page-140.webp",
+      "label": "漫画页 140"
+    },
+    "peyers-patches__v04_page-160": {
+      "pageId": "peyers-patches__v04_page-160",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/peyers-patches__v04_page-160.webp",
+      "label": "漫画页 160"
+    },
+    "peyers-patches__v04_page-162": {
+      "pageId": "peyers-patches__v04_page-162",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/peyers-patches__v04_page-162.webp",
+      "label": "漫画页 162"
+    },
+    "peyers-patches__v04_page-147": {
+      "pageId": "peyers-patches__v04_page-147",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/peyers-patches__v04_page-147.webp",
+      "label": "漫画页 147"
+    },
+    "peyers-patches__v04_page-148": {
+      "pageId": "peyers-patches__v04_page-148",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/peyers-patches__v04_page-148.webp",
+      "label": "漫画页 148"
+    },
+    "peyers-patches__v04_page-164": {
+      "pageId": "peyers-patches__v04_page-164",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/peyers-patches__v04_page-164.webp",
+      "label": "漫画页 164"
+    },
+    "peyers-patches__v04_page-166": {
+      "pageId": "peyers-patches__v04_page-166",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/peyers-patches__v04_page-166.webp",
+      "label": "漫画页 166"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "siteTitle": "Book Companion / 家庭阅读助手",
+  "series": [
+    {
+      "seriesSlug": "carmela-season-1",
+      "seriesTitle": "不一样的卡梅拉",
+      "contentType": "picture-book-companion",
+      "navigationMode": "book",
+      "description": "从绘本书架选择书目，回顾故事、聊一聊问题，也可以听配套音频。",
+      "coverImage": "public/books/不一样的卡梅拉/我想去看海/pages/001.png",
+      "hasAudio": true,
+      "indexPath": "public/runtime/carmela/books.json"
+    },
+    {
+      "seriesSlug": "work-cells",
+      "seriesTitle": "工作细胞",
+      "contentType": "science-manga-companion",
+      "navigationMode": "science-topic",
+      "description": "从科学主题馆按类别找到导读、身体科学小站与亲子问题卡。",
+      "coverImage": "public/assets/cells-at-work/page-thumbnails/v01/pneumococcus__v01_page-006.webp",
+      "hasAudio": false,
+      "indexPath": "public/runtime/work-cells/topics.json",
+      "detailPathPattern": "public/runtime/work-cells/topics/{slug}.json",
+      "manifestStatus": "draft",
+      "verificationStatus": "from_user_reference_only"
+    }
+  ]
+}

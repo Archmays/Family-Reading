@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "generatorVersion": "fr-p4a-runtime-content/1",
+  "sources": [
+    {
+      "path": "data/cells-at-work/manual-topic-ranges.json",
+      "sha256": "74c530f9d2e7abf250b60a50f71cefecabad4349409c9e3feb6b1c77dbbd47bc",
+      "bytes": 8721
+    },
+    {
+      "path": "data/cells-at-work/page-map.json",
+      "sha256": "0646210b3dd2684e454d093e501a48439062bf8dccdab1981e10cd4ecd708e41",
+      "bytes": 104188
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我爱平底锅/book-assets.json",
+      "sha256": "53388283abe6b8e481e1b1f28fceb7a939035c57de9c487bffec333168d95309",
+      "bytes": 907
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我爱平底锅/companion.json",
+      "sha256": "006f9fe93e1bea7c6af3f12589a66ea984480d414d97cdd29f2ee10b9747676f",
+      "bytes": 20341
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我爱小黑猫/book-assets.json",
+      "sha256": "380060b0855b8d74e409802274afc1acdd6025eb08aadc59c59f8d731dca2ca0",
+      "bytes": 906
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我爱小黑猫/companion.json",
+      "sha256": "948b787e3f6768f282d89ead63ed130ad402a9658d072a5e27483c409e4db5d4",
+      "bytes": 20440
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我不是胆小鬼/book-assets.json",
+      "sha256": "196cb919c247f7f81a802341b28ca80ae82f523d13bfb62121dbff5bca3ec007",
+      "bytes": 1441
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我不是胆小鬼/companion.json",
+      "sha256": "96fb1749aaa6ad367a169e1ae027e1153aadc8673bd0a0ebe5b332f732b1cc45",
+      "bytes": 22736
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我不要被吃掉/book-assets.json",
+      "sha256": "101d515c2964b749cee5e5843e845e2f40691a0c467017e9c1f75fb6b877e87f",
+      "bytes": 912
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我不要被吃掉/companion.json",
+      "sha256": "8d7cea1d213e638c05ca1b3c7d21294e1474bd78c989482012a6b1bae1961f6f",
+      "bytes": 19698
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我好喜欢她/book-assets.json",
+      "sha256": "652ae94adf75677cb7b600bded3582515a4734533b200a9349786e8d26431a2b",
+      "bytes": 906
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我好喜欢她/companion.json",
+      "sha256": "71d394fa6206a20b2c06606e3cf7ba867d9e0cf7f6bb79155367888c258a0372",
+      "bytes": 19923
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我能打败怪兽/book-assets.json",
+      "sha256": "248a082ed58c457a40613fb689141bc71f162af2036061619add3d3d0b39a533",
+      "bytes": 912
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我能打败怪兽/companion.json",
+      "sha256": "82643067331c8acd8bd60c33c00cf649f909c1be9d41cf98cb607ef025ba24e9",
+      "bytes": 20393
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我去找回太阳/book-assets.json",
+      "sha256": "388d57ba9c039e6c01321cb825796fa9ec5d96d04a9f529ddf746bd4393233e7",
+      "bytes": 911
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我去找回太阳/companion.json",
+      "sha256": "44a9ca4fb04ab7b4159bb42462f9993b3d2a4f75120caff530e6f3072912ecf8",
+      "bytes": 20660
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我想去看海/book-assets.json",
+      "sha256": "24c4d6a56729176e1c7acffac7cab62cd34c01cc30344669d524e5cff7fa2883",
+      "bytes": 947
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我想去看海/companion.json",
+      "sha256": "ba47bb976f6bc15e703dabe3afe1287a54de8af4a42ec215189b43ec5f8173f9",
+      "bytes": 19065
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我想有个弟弟/book-assets.json",
+      "sha256": "28735c5a24905c373a98f7ae662bd8589d30c44dfdacae4a58e0c97baac66486",
+      "bytes": 910
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我想有个弟弟/companion.json",
+      "sha256": "6771938131b522b6bf330d1386ea89d7e9e55f91dd4356d3f2ac3c3c6b569690",
+      "bytes": 19792
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我想有颗星星/book-assets.json",
+      "sha256": "46bc6188e66fb25f7fcc1639e79b44dd0d66f298a0fcc7377ee935240312ba6e",
+      "bytes": 976
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我想有颗星星/companion.json",
+      "sha256": "80a246e1c5a514070dbf4479749161dd6dc8d0ab210058c33ed9f34418b8ec4f",
+      "bytes": 18357
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我要救出贝里奥/book-assets.json",
+      "sha256": "e6858a5858115693ac21c628c593d76bba76f355f884cb88234c099c236f04e8",
+      "bytes": 985
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我要救出贝里奥/companion.json",
+      "sha256": "d1b798dbf6096e3fbec7231abe2819a67899253ac661bfe3bf8ab675eada3872",
+      "bytes": 20446
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我要找到朗朗/book-assets.json",
+      "sha256": "24b7eec492219e788b81d4ed5cf31ed7e766922fa1217174a5b05b28b17cb2ac",
+      "bytes": 912
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我要找到朗朗/companion.json",
+      "sha256": "3cd8e6bdb2577c6cd57e3fe78486cff473e25d52b7da98d30d49eddd87391101",
+      "bytes": 20254
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/series.json",
+      "sha256": "62cf05b05dcee91bdb76455de3ec01e4387c169d31b3b8b994acbfb0547aca44",
+      "bytes": 5972
+    },
+    {
+      "path": "public/books/工作细胞/draft-manifest.json",
+      "sha256": "86f6d9d339596085d3cb8cda39ac20b5558afb50be422c3c0d8e42527c088640",
+      "bytes": 2445765
+    },
+    {
+      "path": "public/books/index.json",
+      "sha256": "87979b820558a5ce0113970e56a7fcc87b604a4ff794a03b29b6cb6fde7fe4ea",
+      "bytes": 841
+    }
+  ],
+  "outputs": [
+    {
+      "path": "public/runtime/carmela/books.json",
+      "sha256": "83e5322d8f474ac159c2b87f3258154dd36c2b69e23dbe88c58f041d2ac7d60e",
+      "bytes": 5706
+    },
+    {
+      "path": "public/runtime/index.json",
+      "sha256": "c53654343e6fb4128a4a77aecef5055146146d0ea78430cc7a49a8da7d996742",
+      "bytes": 1187
+    },
+    {
+      "path": "public/runtime/work-cells/topics.json",
+      "sha256": "2b30e2d7ee8099ac6b7adcfbbf0485d790a4b5042c741fe25c89d94e9b3ffa4e",
+      "bytes": 14727
+    },
+    {
+      "path": "public/runtime/work-cells/topics/abrasion.json",
+      "sha256": "7db319aa63e3dbe69c3ed3399ab76c485cdaf22113bc6c2d4cc711c44435b755",
+      "bytes": 11040
+    },
+    {
+      "path": "public/runtime/work-cells/topics/acne.json",
+      "sha256": "937145f9d54062aa3964ba60a6da95af5e3240cb1d7e394b0c6b42ed999bbaba",
+      "bytes": 13326
+    },
+    {
+      "path": "public/runtime/work-cells/topics/adaptive-immunity.json",
+      "sha256": "ab0076fed0f42872f4a03385f5f851c74725fce70270970bf42fbe37343e1696",
+      "bytes": 12382
+    },
+    {
+      "path": "public/runtime/work-cells/topics/antigenic-variation.json",
+      "sha256": "3afe2c0fe18d54d9fd5d89b67758c9ff536611e7eb6ea8286335dba953d95fc1",
+      "bytes": 14717
+    },
+    {
+      "path": "public/runtime/work-cells/topics/blood-circulation.json",
+      "sha256": "0506d5e90b089605fbbfe1d30d2e1ba17970bca7bf6d04edff59379c09febdf2",
+      "bytes": 11562
+    },
+    {
+      "path": "public/runtime/work-cells/topics/bump-on-head.json",
+      "sha256": "dd2fdb6e48cd60d20fd2c2548e84bcac6979840950d821a505ed18d4e4125581",
+      "bytes": 11747
+    },
+    {
+      "path": "public/runtime/work-cells/topics/cancer-cell-ii.json",
+      "sha256": "fdcfc845673922aa297d0943044a6f66906344631bd8fe2fff8e22de7a1f94ea",
+      "bytes": 14797
+    },
+    {
+      "path": "public/runtime/work-cells/topics/cancer-cell.json",
+      "sha256": "8db20c6bc555999e424672c0d4677bd01ac81ed78c90a79af55cca1c1b9820a1",
+      "bytes": 13014
+    },
+    {
+      "path": "public/runtime/work-cells/topics/cedar-pollen-allergy.json",
+      "sha256": "57d18f6df18c4b5ae2d849103c06a3d3d03d1c641ad66692cb57b23f91bdc82d",
+      "bytes": 12180
+    },
+    {
+      "path": "public/runtime/work-cells/topics/common-cold-syndrome.json",
+      "sha256": "820e040d2c8a7e388311ce7188fe73377eae56467e21ecb9e7ec0e81c91d505c",
+      "bytes": 12303
+    },
+    {
+      "path": "public/runtime/work-cells/topics/cytokines.json",
+      "sha256": "c2c5f2712a4837fbf2091dd1813a9a7c62c1b9cf6d08d94fac34765802d38eec",
+      "bytes": 14114
+    },
+    {
+      "path": "public/runtime/work-cells/topics/dengue-fever.json",
+      "sha256": "f594bd4526ded3826619163c0c85c669651a13b8466c659024948119212a95b3",
+      "bytes": 11930
+    },
+    {
+      "path": "public/runtime/work-cells/topics/erythroblast-and-myelocyte.json",
+      "sha256": "f90222aba7651b8fef1e785f62851e64e70d54318e5935bc35f750a8195e9968",
+      "bytes": 13339
+    },
+    {
+      "path": "public/runtime/work-cells/topics/food-poisoning.json",
+      "sha256": "5a39327fd47515741dcbebdf5089ccd417f8e66a70e83fd29a237e650e34b5ab",
+      "bytes": 12539
+    },
+    {
+      "path": "public/runtime/work-cells/topics/gut-microbiota.json",
+      "sha256": "f86cffd660e778d212b0480bf0925813d4178d10355c349126ae20072b040ea7",
+      "bytes": 11741
+    },
+    {
+      "path": "public/runtime/work-cells/topics/heatstroke.json",
+      "sha256": "7765a44814aecb719eee9ad41272568eed1718fa472fabcb72af1f689dfc0282",
+      "bytes": 10944
+    },
+    {
+      "path": "public/runtime/work-cells/topics/helicobacter-pylori.json",
+      "sha256": "52cc965b35fff5294eff645ff28faf85a38125beecba59a86a147c973a3dd7cf",
+      "bytes": 14948
+    },
+    {
+      "path": "public/runtime/work-cells/topics/hemorrhagic-shock.json",
+      "sha256": "387fffef8a0f1b5f1624b689f3cfffa71c664f24f74f933c13e463d46a9715b5",
+      "bytes": 12262
+    },
+    {
+      "path": "public/runtime/work-cells/topics/induced-pluripotent-stem-cells.json",
+      "sha256": "816a8ab4b5c9df91b57032dfe4d14b7ea8cdb1ce2826c67048c8d50735380b77",
+      "bytes": 19882
+    },
+    {
+      "path": "public/runtime/work-cells/topics/influenza.json",
+      "sha256": "74ca672d47231285c6f293c0c455d320cee5977abdbb5aaf79b9ec6402cee296",
+      "bytes": 11525
+    },
+    {
+      "path": "public/runtime/work-cells/topics/left-shift-of-white-blood-cells.json",
+      "sha256": "f09a75b785505061d1827714f95fc2e6b846a1b9340bf90942952729db39e6b9",
+      "bytes": 15822
+    },
+    {
+      "path": "public/runtime/work-cells/topics/novel-coronavirus.json",
+      "sha256": "aaf6eccdcccbcc8e32dc586a0c771a5f3429e9dc2833bc3c40395733fa756b32",
+      "bytes": 19116
+    },
+    {
+      "path": "public/runtime/work-cells/topics/peyers-patches.json",
+      "sha256": "cb98ef0ba9f163f66fc34dc7f88a586e5a00151d7238b45dde2107240f0e196d",
+      "bytes": 14382
+    },
+    {
+      "path": "public/runtime/work-cells/topics/psoriasis.json",
+      "sha256": "8869d4464d467938a3257676af8382b865bc227ad2b91dc6cd9748682ea9a481",
+      "bytes": 14316
+    },
+    {
+      "path": "public/runtime/work-cells/topics/staphylococcus-aureus.json",
+      "sha256": "4460f937890efca829d94849e28734b1e2bd74199b51ebb0af6caf182204b8f0",
+      "bytes": 12011
+    },
+    {
+      "path": "public/runtime/work-cells/topics/streptococcus-pneumoniae.json",
+      "sha256": "e724754c3f75afb1b9b1ebca1e96ec0d115c07ffd1a37b700763f8fbe48f0ab0",
+      "bytes": 11701
+    },
+    {
+      "path": "public/runtime/work-cells/topics/thymocyte.json",
+      "sha256": "398dda979f60dc33e08dea75d6bcd911878a1bc60526bc1f4578624d929d8964",
+      "bytes": 11607
+    }
+  ],
+  "recordCounts": {
+    "carmelaBooks": 12,
+    "workCellsTopics": 27,
+    "workCellsCategories": 24,
+    "workCellsStations": 108,
+    "workCellsQuestions": 162,
+    "workCellsPageRefs": 286
+  },
+  "parity": {
+    "carmelaBooks": {
+      "expected": 12,
+      "actual": 12
+    },
+    "workCellsTopics": {
+      "expected": 27,
+      "actual": 27
+    },
+    "workCellsCategories": {
+      "expected": 24,
+      "actual": 24
+    },
+    "workCellsStations": {
+      "expected": 108,
+      "actual": 108
+    },
+    "workCellsQuestions": {
+      "expected": 162,
+      "actual": 162
+    },
+    "workCellsPageRefs": {
+      "expected": 286,
+      "actual": 286
+    }
+  },
+  "outputFileCount": 31,
+  "contentBytes": 380867,
+  "manifestBytes": 12254,
+  "totalBytes": 393121
+}

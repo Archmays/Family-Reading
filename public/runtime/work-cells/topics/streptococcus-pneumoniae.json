@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 1,
+  "topicId": "pneumococcus",
+  "slug": "streptococcus-pneumoniae",
+  "title": "肺炎链球菌",
+  "displayTitle": "肺炎链球菌",
+  "category": "病原体与免疫",
+  "source": {
+    "volume": 1,
+    "chapterLabel": "第1话",
+    "sourceLabel": "第1卷 第1话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "肺炎链球菌主题把“病原体入侵”和“身体防御”放在同一个入门故事里：红血球负责运输，白血球识别并清除细菌，气道和喷嚏也参与把外来物排出。共读时可以把战斗画面转回身体真实机制：细胞各司其职，免疫反应是在保护身体。",
+    "readingFocus": "“病原体进入后身体怎样处理”：用红血球运输、白血球清除、黏膜纤毛和喷嚏排出四个节点说明身体防御，不展示漫画全文或动画对白。",
+    "keyBiologyConcepts": [
+      "肺炎链球菌",
+      "红血球",
+      "白血球/中性粒细胞",
+      "病原体入侵",
+      "吞噬与清除",
+      "肺泡气体交换",
+      "黏膜防御",
+      "喷嚏反射"
+    ],
+    "recommendedBodyScienceStationFocus": "“肺泡气体交换 + 喷嚏排出异物”：用简图说明红血球把氧气带到身体各处、把二氧化碳带回肺部，以及鼻腔/气道如何用黏液、纤毛和喷嚏帮助排出病原。"
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "pneumococcus-pathogen-entry",
+      "topicId": "pneumococcus",
+      "title": "肺炎链球菌是什么",
+      "coreQuestion": "为什么外来的细菌会让身体紧张起来？",
+      "explanation": "肺炎链球菌是一类可能进入呼吸道的细菌。身体会把它识别为外来病原体，并启动免疫细胞进行清理。",
+      "imageAsset": "public/assets/cells-at-work/science-station/pneumococcus/pneumococcus-v2-station-01.webp",
+      "imageAlt": "外来细菌靠近呼吸道黏膜，周围防线发出温和提醒的儿童科普图。",
+      "relatedPageIds": [
+        "pneumococcus__v01_page-008",
+        "pneumococcus__v01_page-010"
+      ],
+      "biologyConcepts": [
+        "肺炎链球菌",
+        "病原体",
+        "呼吸道黏膜"
+      ],
+      "encyclopediaTags": [
+        "肺炎链球菌",
+        "病原体",
+        "黏膜防御"
+      ],
+      "parentNote": "把细菌讲成“外来访客”，避免把画面讲成恐怖怪物。"
+    },
+    {
+      "stationId": "pneumococcus-white-cell-cleanup",
+      "topicId": "pneumococcus",
+      "title": "白血球为什么会追踪细菌",
+      "coreQuestion": "白血球在身体里像什么样的工作人员？",
+      "explanation": "白血球会巡逻并识别外来病原体，必要时把细菌包围和吞噬，帮助身体降低感染风险。",
+      "imageAsset": "public/assets/cells-at-work/science-station/pneumococcus/pneumococcus-v2-station-02.webp",
+      "imageAlt": "白血球在身体通道中巡逻并包围外来小颗粒的温和科普图。",
+      "relatedPageIds": [
+        "pneumococcus__v01_page-016",
+        "pneumococcus__v01_page-020"
+      ],
+      "biologyConcepts": [
+        "白血球",
+        "中性粒细胞",
+        "吞噬作用"
+      ],
+      "encyclopediaTags": [
+        "白血球",
+        "免疫防御",
+        "吞噬"
+      ],
+      "parentNote": "把“战斗”转成“清理和保护”，不复述漫画动作细节。"
+    },
+    {
+      "stationId": "pneumococcus-red-cell-gas-transport",
+      "topicId": "pneumococcus",
+      "title": "红血球为什么运送氧气和二氧化碳",
+      "coreQuestion": "红血球平时在身体里运什么？",
+      "explanation": "红血球把氧气从肺部带到身体各处，也把二氧化碳带回肺部。病原体入侵时，这些日常运输工作仍然很重要。",
+      "imageAsset": "public/assets/cells-at-work/science-station/pneumococcus/pneumococcus-v2-station-03.webp",
+      "imageAlt": "红血球沿血管路线运送氧气并带回二氧化碳的清楚示意图。",
+      "relatedPageIds": [
+        "pneumococcus__v01_page-013",
+        "pneumococcus__v01_page-014"
+      ],
+      "biologyConcepts": [
+        "红血球",
+        "氧气运输",
+        "二氧化碳运输"
+      ],
+      "encyclopediaTags": [
+        "红血球",
+        "氧气",
+        "二氧化碳"
+      ],
+      "parentNote": "用“配送员”类比红血球，不加入阅读进度或任务系统。"
+    },
+    {
+      "stationId": "pneumococcus-sneeze-defense",
+      "topicId": "pneumococcus",
+      "title": "喷嚏怎样帮身体排出异物",
+      "coreQuestion": "为什么身体有时会打喷嚏？",
+      "explanation": "鼻腔和气道里的黏液、纤毛和喷嚏反射，可以帮助把灰尘、病原体等外来物往外排。",
+      "imageAsset": "public/assets/cells-at-work/science-station/pneumococcus/pneumococcus-v2-station-04.webp",
+      "imageAlt": "黏液、纤毛和喷嚏气流协助排出外来小颗粒的儿童科普图。",
+      "relatedPageIds": [
+        "pneumococcus__v01_page-054",
+        "pneumococcus__v01_page-060"
+      ],
+      "biologyConcepts": [
+        "黏膜防御",
+        "纤毛",
+        "喷嚏反射"
+      ],
+      "encyclopediaTags": [
+        "黏液",
+        "纤毛",
+        "喷嚏"
+      ],
+      "parentNote": "提醒孩子喷嚏要遮挡口鼻、洗手，保持生活化。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "pneumococcus-q01",
+      "topicId": "pneumococcus",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "谁在做什么",
+      "question": "看相关页面时，红血球和白血球分别在做什么工作？",
+      "answer": "红血球负责运输，白血球负责识别和清理外来病原体。",
+      "relatedPageIds": [
+        "pneumococcus__v01_page-013",
+        "pneumococcus__v01_page-016"
+      ],
+      "parentHint": "让孩子先观察角色工作，不复述对白。",
+      "biologyConcepts": [
+        "红血球",
+        "白血球"
+      ]
+    },
+    {
+      "cardId": "pneumococcus-q02",
+      "topicId": "pneumococcus",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "细菌在哪里",
+      "question": "哪些画面线索说明有外来细菌进入身体？",
+      "answer": "可以看细菌形象、身体防线反应和免疫细胞靠近的位置。",
+      "relatedPageIds": [
+        "pneumococcus__v01_page-008"
+      ],
+      "parentHint": "把细菌说成需要被清理的外来物。",
+      "biologyConcepts": [
+        "病原体",
+        "免疫防御"
+      ]
+    },
+    {
+      "cardId": "pneumococcus-q03",
+      "topicId": "pneumococcus",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么白血球要清理细菌",
+      "question": "白血球为什么要追踪和清除肺炎链球菌？",
+      "answer": "因为外来细菌可能干扰身体工作，白血球清理它们是在保护身体。",
+      "relatedPageIds": [
+        "pneumococcus__v01_page-020"
+      ],
+      "parentHint": "避免把免疫过程讲成单纯打斗。",
+      "biologyConcepts": [
+        "白血球",
+        "肺炎链球菌"
+      ]
+    },
+    {
+      "cardId": "pneumococcus-q04",
+      "topicId": "pneumococcus",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "红血球为什么忙",
+      "question": "病原体出现时，红血球的运输任务还重要吗？",
+      "answer": "重要。身体各处仍然需要氧气，二氧化碳也需要被带回肺部。",
+      "relatedPageIds": [
+        "pneumococcus__v01_page-014"
+      ],
+      "parentHint": "联系“身体城市仍要运转”的类比。",
+      "biologyConcepts": [
+        "红血球",
+        "气体运输"
+      ]
+    },
+    {
+      "cardId": "pneumococcus-q05",
+      "topicId": "pneumococcus",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "喷嚏和卫生",
+      "question": "打喷嚏时为什么要遮挡口鼻、之后洗手？",
+      "answer": "这样可以减少飞出的飞沫和外来物传播给别人。",
+      "relatedPageIds": [
+        "pneumococcus__v01_page-060"
+      ],
+      "parentHint": "保持生活习惯提醒，不制造恐慌。",
+      "biologyConcepts": [
+        "喷嚏",
+        "卫生习惯"
+      ]
+    },
+    {
+      "cardId": "pneumococcus-q06",
+      "topicId": "pneumococcus",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "病原体的含义",
+      "question": "病原体这个词是什么意思？",
+      "answer": "它指可能让身体不舒服、需要被防御系统处理的外来微生物。",
+      "relatedPageIds": [
+        "pneumococcus__v01_page-008"
+      ],
+      "parentHint": "用“可能带来麻烦的外来微生物”解释即可。",
+      "biologyConcepts": [
+        "病原体"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题有追逐和战斗画面。共读时可以先告诉孩子：漫画把免疫细胞画得很戏剧化，真实身体里是细胞识别、包围和清除病原体；如果出现健康问题，应由成人联系专业医务人员。",
+  "sensitiveContentGuidance": "有细菌怪物、追逐、刀具动作和夸张血迹。用于低龄家庭阅读时，建议先说明这是拟人化漫画：白血球“战斗”代表免疫细胞识别、吞噬和清除病原，不等于真实身体里有人挥刀。",
+  "sourceNotes": [
+    "漫画来源：第1卷 第1话，只保留页码线索，不展示漫画全文。",
+    "动画来源只记录主题级摘要和集数线索，不接入视频、字幕或对白。"
+  ],
+  "pageRefs": {
+    "pneumococcus__v01_page-008": {
+      "pageId": "pneumococcus__v01_page-008",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/pneumococcus__v01_page-008.webp",
+      "label": "漫画页 8"
+    },
+    "pneumococcus__v01_page-010": {
+      "pageId": "pneumococcus__v01_page-010",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/pneumococcus__v01_page-010.webp",
+      "label": "漫画页 10"
+    },
+    "pneumococcus__v01_page-016": {
+      "pageId": "pneumococcus__v01_page-016",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/pneumococcus__v01_page-016.webp",
+      "label": "漫画页 16"
+    },
+    "pneumococcus__v01_page-020": {
+      "pageId": "pneumococcus__v01_page-020",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/pneumococcus__v01_page-020.webp",
+      "label": "漫画页 20"
+    },
+    "pneumococcus__v01_page-013": {
+      "pageId": "pneumococcus__v01_page-013",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/pneumococcus__v01_page-013.webp",
+      "label": "漫画页 13"
+    },
+    "pneumococcus__v01_page-014": {
+      "pageId": "pneumococcus__v01_page-014",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/pneumococcus__v01_page-014.webp",
+      "label": "漫画页 14"
+    },
+    "pneumococcus__v01_page-054": {
+      "pageId": "pneumococcus__v01_page-054",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/pneumococcus__v01_page-054.webp",
+      "label": "漫画页 54"
+    },
+    "pneumococcus__v01_page-060": {
+      "pageId": "pneumococcus__v01_page-060",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/pneumococcus__v01_page-060.webp",
+      "label": "漫画页 60"
+    }
+  }
+}

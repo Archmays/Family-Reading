@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 7,
+  "topicId": "erythroblast-and-bone-marrow-cell",
+  "slug": "erythroblast-and-myelocyte",
+  "title": "红血球母细胞与骨髓细胞",
+  "displayTitle": "红血球母细胞与骨髓细胞",
+  "category": "血细胞发育",
+  "source": {
+    "volume": 2,
+    "chapterLabel": "第7话",
+    "sourceLabel": "第2卷 第7话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "红血球母细胞与骨髓细胞主题把“血细胞从哪里来”讲成红骨髓中的成长故事。共读时可以把学校和训练的拟人化画面转回真实机制：红骨髓持续制造血细胞，未成熟细胞经过分化和成熟，最后承担运输氧气或免疫防护等不同任务。",
+    "readingFocus": "“血细胞在哪里出生”：用红骨髓造血、红血球母细胞成熟、白血球前体分化和成熟后进入循环四个节点说明，不展示漫画全文或动画对白。",
+    "keyBiologyConcepts": [
+      "红骨髓",
+      "造血",
+      "造血干细胞",
+      "红血球母细胞",
+      "骨髓细胞/白血球前体",
+      "细胞分化",
+      "细胞成熟",
+      "红血球进入循环"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "红骨髓为什么像身体里的造血工厂",
+      "红血球母细胞怎样逐步成熟",
+      "骨髓细胞/白血球前体为什么要分化",
+      "成熟血细胞怎样离开骨髓去工作"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "erythroblast-and-bone-marrow-cell-bone-marrow-factory",
+      "topicId": "erythroblast-and-bone-marrow-cell",
+      "title": "红骨髓是造血工厂",
+      "coreQuestion": "身体里的新血细胞从哪里来？",
+      "explanation": "红骨髓是重要的造血场所。许多未成熟细胞会在这里增殖、分化，逐渐准备承担运输、免疫等不同工作。",
+      "imageAsset": "public/assets/cells-at-work/science-station/erythroblast-and-bone-marrow-cell/erythroblast-and-bone-marrow-cell-v2-station-01.webp",
+      "imageAlt": "红骨髓剖面中，未成熟血细胞在安全环境里逐步生成的儿童科普图。",
+      "relatedPageIds": [
+        "erythroblast-and-bone-marrow-cell__v02_page-065",
+        "erythroblast-and-bone-marrow-cell__v02_page-066"
+      ],
+      "biologyConcepts": [
+        "红骨髓",
+        "造血",
+        "造血环境"
+      ],
+      "encyclopediaTags": [
+        "红骨髓",
+        "造血",
+        "血细胞"
+      ],
+      "parentNote": "可以把“工厂”或“学校”当成比喻，再说明真实过程是细胞增殖和分化。"
+    },
+    {
+      "stationId": "erythroblast-and-bone-marrow-cell-erythroblast-maturation",
+      "topicId": "erythroblast-and-bone-marrow-cell",
+      "title": "红血球母细胞会逐步成熟",
+      "coreQuestion": "幼年的红血球和成熟红血球有什么不同？",
+      "explanation": "红血球母细胞还在发育阶段。成熟过程中，它会逐渐变成更适合携带氧气、通过血管运行的红血球。",
+      "imageAsset": "public/assets/cells-at-work/science-station/erythroblast-and-bone-marrow-cell/erythroblast-and-bone-marrow-cell-v2-station-02.webp",
+      "imageAlt": "红血球母细胞经过几个阶段逐步成熟为红血球的流程示意图。",
+      "relatedPageIds": [
+        "erythroblast-and-bone-marrow-cell__v02_page-068",
+        "erythroblast-and-bone-marrow-cell__v02_page-070"
+      ],
+      "biologyConcepts": [
+        "红血球母细胞",
+        "红血球成熟",
+        "氧气运输"
+      ],
+      "encyclopediaTags": [
+        "红血球",
+        "细胞成熟",
+        "氧气运输"
+      ],
+      "parentNote": "帮助孩子理解“长大后会做不同工作”，不要把成熟过程讲成考试排名。"
+    },
+    {
+      "stationId": "erythroblast-and-bone-marrow-cell-myeloid-cell-path",
+      "topicId": "erythroblast-and-bone-marrow-cell",
+      "title": "骨髓细胞也会走向免疫工作",
+      "coreQuestion": "为什么骨髓里不只培养红血球？",
+      "explanation": "骨髓里还会产生走向免疫任务的细胞前体。不同细胞根据身体需要分化，未来负责运输、巡逻或清理风险。",
+      "imageAsset": "public/assets/cells-at-work/science-station/erythroblast-and-bone-marrow-cell/erythroblast-and-bone-marrow-cell-v2-station-03.webp",
+      "imageAlt": "骨髓环境中不同未成熟细胞走向红血球和免疫细胞分支的示意图。",
+      "relatedPageIds": [
+        "erythroblast-and-bone-marrow-cell__v02_page-073",
+        "erythroblast-and-bone-marrow-cell__v02_page-081"
+      ],
+      "biologyConcepts": [
+        "骨髓细胞",
+        "白血球前体",
+        "细胞分化"
+      ],
+      "encyclopediaTags": [
+        "骨髓细胞",
+        "白血球",
+        "免疫细胞"
+      ],
+      "parentNote": "强调这是分工，不是哪个细胞更重要。"
+    },
+    {
+      "stationId": "erythroblast-and-bone-marrow-cell-entering-circulation",
+      "topicId": "erythroblast-and-bone-marrow-cell",
+      "title": "成熟后进入循环去工作",
+      "coreQuestion": "血细胞成熟后会去哪里？",
+      "explanation": "成熟血细胞会离开骨髓，进入血液循环。红血球把氧气送到各处，免疫细胞则帮助身体识别和处理风险。",
+      "imageAsset": "public/assets/cells-at-work/science-station/erythroblast-and-bone-marrow-cell/erythroblast-and-bone-marrow-cell-v2-station-04.webp",
+      "imageAlt": "成熟红血球和免疫细胞从骨髓进入血管并开始工作的温和路线图。",
+      "relatedPageIds": [
+        "erythroblast-and-bone-marrow-cell__v02_page-089",
+        "erythroblast-and-bone-marrow-cell__v02_page-090"
+      ],
+      "biologyConcepts": [
+        "血液循环",
+        "红血球",
+        "免疫细胞分工"
+      ],
+      "encyclopediaTags": [
+        "循环系统",
+        "红血球",
+        "免疫防御"
+      ],
+      "parentNote": "把成长线收束到“身体一直在补充能工作的细胞”。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "erythroblast-and-bone-marrow-cell-q01",
+      "topicId": "erythroblast-and-bone-marrow-cell",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "骨髓像什么地方",
+      "question": "看相关页面时，红骨髓被画得更像普通房间、学校，还是运输道路？",
+      "answer": "更像学校或训练环境，用来帮助理解未成熟细胞在这里成长。",
+      "relatedPageIds": [
+        "erythroblast-and-bone-marrow-cell__v02_page-065"
+      ],
+      "parentHint": "先观察画面比喻，再回到“造血场所”。",
+      "biologyConcepts": [
+        "红骨髓",
+        "造血环境"
+      ]
+    },
+    {
+      "cardId": "erythroblast-and-bone-marrow-cell-q02",
+      "topicId": "erythroblast-and-bone-marrow-cell",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "谁还没成熟",
+      "question": "哪些画面线索说明红血球母细胞还在学习和成长？",
+      "answer": "可以看训练、老师、同伴和未来任务的提示。",
+      "relatedPageIds": [
+        "erythroblast-and-bone-marrow-cell__v02_page-068",
+        "erythroblast-and-bone-marrow-cell__v02_page-070"
+      ],
+      "parentHint": "不复述对白，只看成长线索。",
+      "biologyConcepts": [
+        "红血球母细胞",
+        "细胞成熟"
+      ]
+    },
+    {
+      "cardId": "erythroblast-and-bone-marrow-cell-q03",
+      "topicId": "erythroblast-and-bone-marrow-cell",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么要造血",
+      "question": "身体为什么需要不断制造新的血细胞？",
+      "answer": "血细胞有自己的寿命和任务，身体需要持续补充能工作的细胞。",
+      "relatedPageIds": [
+        "erythroblast-and-bone-marrow-cell__v02_page-066"
+      ],
+      "parentHint": "可以类比“工作队伍需要补充新成员”。",
+      "biologyConcepts": [
+        "造血",
+        "血细胞更新"
+      ]
+    },
+    {
+      "cardId": "erythroblast-and-bone-marrow-cell-q04",
+      "topicId": "erythroblast-and-bone-marrow-cell",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "分化是什么意思",
+      "question": "同在骨髓里的未成熟细胞，为什么后来会有不同工作？",
+      "answer": "因为细胞会分化，逐渐走向不同功能，例如运输氧气或参与免疫。",
+      "relatedPageIds": [
+        "erythroblast-and-bone-marrow-cell__v02_page-073",
+        "erythroblast-and-bone-marrow-cell__v02_page-081"
+      ],
+      "parentHint": "把分化讲成“逐渐变得适合某种工作”。",
+      "biologyConcepts": [
+        "细胞分化",
+        "免疫细胞"
+      ]
+    },
+    {
+      "cardId": "erythroblast-and-bone-marrow-cell-q05",
+      "topicId": "erythroblast-and-bone-marrow-cell",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "血液为什么重要",
+      "question": "如果把红血球的工作和日常生活联系起来，它像在帮身体送什么？",
+      "answer": "它像在帮身体运送氧气，让各处组织有需要的供应。",
+      "relatedPageIds": [
+        "erythroblast-and-bone-marrow-cell__v02_page-090"
+      ],
+      "parentHint": "避免记录阅读进度，只做短讨论。",
+      "biologyConcepts": [
+        "红血球",
+        "氧气运输"
+      ]
+    },
+    {
+      "cardId": "erythroblast-and-bone-marrow-cell-q06",
+      "topicId": "erythroblast-and-bone-marrow-cell",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "红骨髓不是普通骨头",
+      "question": "为什么红骨髓在这个主题里很关键？",
+      "answer": "因为红骨髓是造血组织，许多血细胞从这里发育成熟。",
+      "relatedPageIds": [
+        "erythroblast-and-bone-marrow-cell__v02_page-065",
+        "erythroblast-and-bone-marrow-cell__v02_page-066"
+      ],
+      "parentHint": "把“骨头里面也有活跃组织”说清楚。",
+      "biologyConcepts": [
+        "红骨髓",
+        "造血"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题有幼年细胞遇险和战斗回忆。共读时请把重点放在造血、成长和分工，不把“害怕”讲成孩子需要独自变强；真实健康问题应咨询专业医务人员。",
+  "sensitiveContentGuidance": "有幼年细胞受到细菌怪物威胁、害怕和战斗画面。家长可先说明这是回忆剧情，重点是“血细胞会从未成熟状态逐渐成长为有功能的细胞”。",
+  "sourceNotes": [
+    "漫画来源：第2卷 第7话，只保留页码线索，不展示漫画全文。"
+  ],
+  "pageRefs": {
+    "erythroblast-and-bone-marrow-cell__v02_page-065": {
+      "pageId": "erythroblast-and-bone-marrow-cell__v02_page-065",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/erythroblast-and-bone-marrow-cell__v02_page-065.webp",
+      "label": "漫画页 65"
+    },
+    "erythroblast-and-bone-marrow-cell__v02_page-066": {
+      "pageId": "erythroblast-and-bone-marrow-cell__v02_page-066",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/erythroblast-and-bone-marrow-cell__v02_page-066.webp",
+      "label": "漫画页 66"
+    },
+    "erythroblast-and-bone-marrow-cell__v02_page-068": {
+      "pageId": "erythroblast-and-bone-marrow-cell__v02_page-068",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/erythroblast-and-bone-marrow-cell__v02_page-068.webp",
+      "label": "漫画页 68"
+    },
+    "erythroblast-and-bone-marrow-cell__v02_page-070": {
+      "pageId": "erythroblast-and-bone-marrow-cell__v02_page-070",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/erythroblast-and-bone-marrow-cell__v02_page-070.webp",
+      "label": "漫画页 70"
+    },
+    "erythroblast-and-bone-marrow-cell__v02_page-073": {
+      "pageId": "erythroblast-and-bone-marrow-cell__v02_page-073",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/erythroblast-and-bone-marrow-cell__v02_page-073.webp",
+      "label": "漫画页 73"
+    },
+    "erythroblast-and-bone-marrow-cell__v02_page-081": {
+      "pageId": "erythroblast-and-bone-marrow-cell__v02_page-081",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/erythroblast-and-bone-marrow-cell__v02_page-081.webp",
+      "label": "漫画页 81"
+    },
+    "erythroblast-and-bone-marrow-cell__v02_page-089": {
+      "pageId": "erythroblast-and-bone-marrow-cell__v02_page-089",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/erythroblast-and-bone-marrow-cell__v02_page-089.webp",
+      "label": "漫画页 89"
+    },
+    "erythroblast-and-bone-marrow-cell__v02_page-090": {
+      "pageId": "erythroblast-and-bone-marrow-cell__v02_page-090",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/erythroblast-and-bone-marrow-cell__v02_page-090.webp",
+      "label": "漫画页 90"
+    }
+  }
+}

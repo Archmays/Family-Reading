@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 4,
+  "topicId": "abrasion",
+  "slug": "abrasion",
+  "title": "擦伤",
+  "displayTitle": "擦伤",
+  "category": "伤口修复",
+  "source": {
+    "volume": 1,
+    "chapterLabel": "第4话",
+    "sourceLabel": "第1卷 第4话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "皮肤屏障被擦破后，外界细菌进入伤口，白血球负责清除病原，血小板负责聚集并用纤维蛋白形成血栓/痂，最终帮助伤口隔离与修复。这个主题非常适合把“伤口为什么会出血、结痂、需要保持清洁”讲给孩子。",
+    "readingFocus": "“从出血到结痂”：做一张四步图：皮肤破损、血小板集合、纤维蛋白拉网、形成痂保护伤口；再补充保持清洁、避免抠痂的生活提醒。",
+    "keyBiologyConcepts": [
+      "皮肤屏障",
+      "擦伤与开放伤口",
+      "细菌入侵",
+      "白血球/中性粒细胞",
+      "血小板聚集",
+      "纤维蛋白网",
+      "凝血与血栓",
+      "结痂和组织修复"
+    ],
+    "recommendedBodyScienceStationFocus": "“从出血到结痂”：做一张四步图：皮肤破损、血小板集合、纤维蛋白拉网、形成痂保护伤口；再补充保持清洁、避免抠痂的生活提醒。"
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "abrasion-skin-wall",
+      "topicId": "abrasion",
+      "title": "皮肤为什么像身体的城墙",
+      "coreQuestion": "为什么小小的擦伤也要认真清洁？",
+      "explanation": "皮肤把身体内部和外界隔开，像一道柔软的保护墙。擦伤时这道保护墙出现小缺口，灰尘和细菌就更容易靠近。",
+      "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-v2-station-01.webp",
+      "imageAlt": "皮肤表面像柔软城墙一样保护身体，外界小颗粒被挡在外面的儿童科普图。",
+      "relatedPageIds": [
+        "abrasion__v01_page-142"
+      ],
+      "biologyConcepts": [
+        "皮肤屏障",
+        "开放伤口",
+        "感染入口"
+      ],
+      "encyclopediaTags": [
+        "皮肤",
+        "屏障",
+        "擦伤"
+      ],
+      "parentNote": "可以把皮肤说成“会自我修补的保护层”，避免恐怖化伤口。"
+    },
+    {
+      "stationId": "abrasion-why-bleeding",
+      "topicId": "abrasion",
+      "title": "擦伤后为什么会流血",
+      "coreQuestion": "为什么皮肤破了以后会看到血？",
+      "explanation": "皮肤下面有很多细小血管。擦伤如果碰到这些血管，血液就会从小缺口流出来；这也是身体发现受伤并开始修复的信号。",
+      "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-v2-station-02.webp",
+      "imageAlt": "皮肤浅层小血管被擦到，少量血液从小缺口流出的温和非血腥示意图。",
+      "relatedPageIds": [
+        "abrasion__v01_page-142",
+        "abrasion__v01_page-145"
+      ],
+      "biologyConcepts": [
+        "毛细血管",
+        "出血",
+        "伤口信号"
+      ],
+      "encyclopediaTags": [
+        "血管",
+        "血液",
+        "伤口"
+      ],
+      "parentNote": "用“红色信号”解释少量出血，不渲染疼痛。"
+    },
+    {
+      "stationId": "abrasion-platelet-clot",
+      "topicId": "abrasion",
+      "title": "血小板和凝血如何帮助止血",
+      "coreQuestion": "身体怎样把伤口的小洞堵住？",
+      "explanation": "血小板会在伤口附近集合，和纤维蛋白一起形成网，像临时补丁一样帮助止血，并保护伤口慢慢结痂。",
+      "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-v2-station-03.webp",
+      "imageAlt": "血小板小圆片聚集，纤维蛋白像细网一样温和封住浅表伤口的科普图。",
+      "relatedPageIds": [
+        "abrasion__v01_page-164",
+        "abrasion__v01_page-167"
+      ],
+      "biologyConcepts": [
+        "血小板",
+        "纤维蛋白",
+        "凝血"
+      ],
+      "encyclopediaTags": [
+        "血小板",
+        "凝血",
+        "结痂"
+      ],
+      "parentNote": "提醒孩子不要抠痂，因为那是身体正在修补的保护层。"
+    },
+    {
+      "stationId": "abrasion-white-cells-arrive",
+      "topicId": "abrasion",
+      "title": "白细胞为什么来到伤口附近",
+      "coreQuestion": "伤口附近为什么会有白细胞赶来？",
+      "explanation": "擦伤让外界细菌有机会靠近，白细胞会到伤口附近巡逻和清理，帮助降低感染风险，让修复环境更安全。",
+      "imageAsset": "public/assets/cells-at-work/science-station/abrasion/abrasion-v2-station-04.webp",
+      "imageAlt": "白细胞在浅表伤口附近温和巡逻，清理少量外来小颗粒的儿童科普图。",
+      "relatedPageIds": [
+        "abrasion__v01_page-146",
+        "abrasion__v01_page-154"
+      ],
+      "biologyConcepts": [
+        "白细胞",
+        "细菌清理",
+        "炎症反应"
+      ],
+      "encyclopediaTags": [
+        "白细胞",
+        "细菌",
+        "伤口护理"
+      ],
+      "parentNote": "把白细胞讲成清理队，不把细菌画成恐怖怪物。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "abrasion-q01",
+      "topicId": "abrasion",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "皮肤哪里破了",
+      "question": "看相关页面时，哪些线索说明皮肤这道保护层出现了缺口？",
+      "answer": "可以观察伤口边缘、血液和细胞聚集的位置。",
+      "relatedPageIds": [
+        "abrasion__v01_page-142"
+      ],
+      "parentHint": "提醒孩子只看线索，不需要害怕伤口。",
+      "biologyConcepts": [
+        "皮肤屏障",
+        "擦伤"
+      ]
+    },
+    {
+      "cardId": "abrasion-q03",
+      "topicId": "abrasion",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么会流血",
+      "question": "擦伤后为什么有时会看到血？",
+      "answer": "因为皮肤下的小血管被碰到，血液从小缺口流出来。",
+      "relatedPageIds": [
+        "abrasion__v01_page-145"
+      ],
+      "parentHint": "用浅表小血管解释，不强化血腥画面。",
+      "biologyConcepts": [
+        "毛细血管",
+        "出血"
+      ]
+    },
+    {
+      "cardId": "abrasion-q04",
+      "topicId": "abrasion",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "血小板怎么堵洞",
+      "question": "血小板怎样帮助伤口不再一直流血？",
+      "answer": "它们会聚在一起，并和纤维蛋白形成临时补丁，帮助止血。",
+      "relatedPageIds": [
+        "abrasion__v01_page-164"
+      ],
+      "parentHint": "可以用“临时小补丁”作类比。",
+      "biologyConcepts": [
+        "血小板",
+        "凝血"
+      ]
+    },
+    {
+      "cardId": "abrasion-q05",
+      "topicId": "abrasion",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "为什么要清洁伤口",
+      "question": "擦伤后为什么要让成人帮忙清洁伤口？",
+      "answer": "清洁能减少灰尘和细菌，让身体修复更顺利。",
+      "relatedPageIds": [
+        "abrasion__v01_page-146"
+      ],
+      "parentHint": "保持为生活照护建议，不替代医疗处理。",
+      "biologyConcepts": [
+        "伤口护理",
+        "细菌"
+      ]
+    },
+    {
+      "cardId": "abrasion-q06",
+      "topicId": "abrasion",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "为什么不要抠痂",
+      "question": "伤口结痂后，为什么最好不要一直抠？",
+      "answer": "痂像身体做出的保护盖，抠掉可能让伤口重新打开。",
+      "relatedPageIds": [
+        "abrasion__v01_page-168"
+      ],
+      "parentHint": "如果孩子有经历，可以聊“痒也要忍一忍”。",
+      "biologyConcepts": [
+        "结痂",
+        "组织修复"
+      ]
+    },
+    {
+      "cardId": "abrasion-q08",
+      "topicId": "abrasion",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "白细胞清理队",
+      "question": "白细胞来到伤口附近，主要想解决什么问题？",
+      "answer": "它们会帮助清理外来细菌和杂物，降低感染风险。",
+      "relatedPageIds": [
+        "abrasion__v01_page-154"
+      ],
+      "parentHint": "把免疫反应说成合作清理，不讲成吓人的战斗。",
+      "biologyConcepts": [
+        "白细胞",
+        "感染风险"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题会涉及伤口和止血画面。共读时可以把重点放在皮肤如何保护身体、血小板如何帮忙止血，以及受伤后找成人清洁和照护。",
+  "sensitiveContentGuidance": "有受伤、出血、细菌怪物、战斗和“血栓/结痂”场景。建议家长将画面转化为护理提醒：清洁伤口、必要时消毒和包扎，出现严重出血或感染迹象要找成人和医生。",
+  "sourceNotes": [
+    "漫画来源：第1卷 第4话，只保留页码线索，不展示漫画全文。",
+    "动画来源只记录主题级摘要和集数线索，不接入视频、字幕或对白。"
+  ],
+  "pageRefs": {
+    "abrasion__v01_page-142": {
+      "pageId": "abrasion__v01_page-142",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/abrasion__v01_page-142.webp",
+      "label": "漫画页 142"
+    },
+    "abrasion__v01_page-145": {
+      "pageId": "abrasion__v01_page-145",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/abrasion__v01_page-145.webp",
+      "label": "漫画页 145"
+    },
+    "abrasion__v01_page-164": {
+      "pageId": "abrasion__v01_page-164",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/abrasion__v01_page-164.webp",
+      "label": "漫画页 164"
+    },
+    "abrasion__v01_page-167": {
+      "pageId": "abrasion__v01_page-167",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/abrasion__v01_page-167.webp",
+      "label": "漫画页 167"
+    },
+    "abrasion__v01_page-146": {
+      "pageId": "abrasion__v01_page-146",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/abrasion__v01_page-146.webp",
+      "label": "漫画页 146"
+    },
+    "abrasion__v01_page-154": {
+      "pageId": "abrasion__v01_page-154",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/abrasion__v01_page-154.webp",
+      "label": "漫画页 154"
+    },
+    "abrasion__v01_page-168": {
+      "pageId": "abrasion__v01_page-168",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/abrasion__v01_page-168.webp",
+      "label": "漫画页 168"
+    }
+  }
+}

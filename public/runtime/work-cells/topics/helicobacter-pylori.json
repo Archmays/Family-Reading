@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 18,
+  "topicId": "helicobacter-pylori",
+  "slug": "helicobacter-pylori",
+  "title": "幽门螺杆菌",
+  "displayTitle": "幽门螺杆菌",
+  "category": "消化道与病原体",
+  "source": {
+    "volume": 5,
+    "chapterLabel": "第20话",
+    "sourceLabel": "第5卷 第20话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "这一主题将场景放在胃部，围绕幽门螺杆菌、胃酸、胃黏膜和益菌展开。故事从胃部细胞的日常生活开始，出现可爱的益菌/乳酸菌角色，随后幽门螺杆菌以螺旋形态和强破坏力登场，引发胃黏膜受损、胃痛和炎症危机。后半段通过益菌的帮助与免疫细胞的应对，适合帮助孩子理解：胃里虽然有强酸环境，但仍可能有特殊细菌生存；胃黏膜保护和菌群平衡对健康很重要。",
+    "readingFocus": "“胃里为什么也可能有细菌”：用胃酸、胃黏膜保护、幽门螺杆菌适应、益菌差异和医学边界说明胃部防御。",
+    "keyBiologyConcepts": [
+      "幽门螺杆菌",
+      "胃",
+      "胃酸",
+      "胃黏膜",
+      "胃壁细胞",
+      "胃炎",
+      "胃溃疡",
+      "乳酸菌",
+      "益菌",
+      "胃部菌群",
+      "免疫反应",
+      "黏膜保护",
+      "抗体/免疫识别"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "幽门螺杆菌为什么能在胃里生活",
+      "胃酸有什么作用，为什么胃自己不会被胃酸伤害",
+      "胃黏膜像身体里的什么保护层",
+      "乳酸菌/益菌与病原菌有什么不同",
+      "胃痛和胃炎为什么不能只靠漫画判断"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "helicobacter-pylori-stomach-acid-environment",
+      "topicId": "helicobacter-pylori",
+      "title": "幽门螺杆菌为什么能在胃里生活",
+      "coreQuestion": "这一页里，胃部环境被画成了什么样？",
+      "explanation": "这个小站围绕幽门螺杆菌感染、胃部免疫、胃部环境展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察幽门螺杆菌、胃、胃酸，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-01.webp",
+      "imageAlt": "幽门螺杆菌：幽门螺杆菌为什么能在胃里生活的儿童科普解释图。",
+      "relatedPageIds": [
+        "helicobacter-pylori__v05_page-005",
+        "helicobacter-pylori__v05_page-007"
+      ],
+      "biologyConcepts": [
+        "幽门螺杆菌感染",
+        "胃部免疫",
+        "胃部环境",
+        "消化系统",
+        "胃部防御"
+      ],
+      "encyclopediaTags": [
+        "幽门螺杆菌",
+        "胃",
+        "胃酸",
+        "胃黏膜",
+        "乳酸菌"
+      ],
+      "parentNote": "把“幽门螺杆菌为什么能在胃里生活”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "helicobacter-pylori-spiral-bacterium",
+      "topicId": "helicobacter-pylori",
+      "title": "胃酸有什么作用，为什么胃自己不会被胃酸伤害",
+      "coreQuestion": "怎样区分故事里的益菌和病原菌？",
+      "explanation": "这个小站围绕细菌形态、螺旋运动、幽门螺杆菌感染展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察幽门螺杆菌、细菌形态、胃炎，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-02.webp",
+      "imageAlt": "幽门螺杆菌：胃酸有什么作用，为什么胃自己不会被胃酸伤害的儿童科普解释图。",
+      "relatedPageIds": [
+        "helicobacter-pylori__v05_page-019",
+        "helicobacter-pylori__v05_page-020"
+      ],
+      "biologyConcepts": [
+        "细菌形态",
+        "螺旋运动",
+        "幽门螺杆菌感染",
+        "胃黏膜损伤",
+        "炎症反应"
+      ],
+      "encyclopediaTags": [
+        "幽门螺杆菌",
+        "细菌形态",
+        "胃炎",
+        "胃酸",
+        "胃黏膜"
+      ],
+      "parentNote": "把“胃酸有什么作用，为什么胃自己不会被胃酸伤害”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "helicobacter-pylori-mucosa-inflammation",
+      "topicId": "helicobacter-pylori",
+      "title": "胃黏膜像身体里的什么保护层",
+      "coreQuestion": "这一页最适合做哪个身体科学小站：结构、功能、风险，还是救援？",
+      "explanation": "这个小站围绕胃黏膜损伤、胃酸刺激、幽门螺杆菌感染展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察胃酸、胃黏膜、幽门螺杆菌，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-03.webp",
+      "imageAlt": "幽门螺杆菌：胃黏膜像身体里的什么保护层的儿童科普解释图。",
+      "relatedPageIds": [
+        "helicobacter-pylori__v05_page-022",
+        "helicobacter-pylori__v05_page-024"
+      ],
+      "biologyConcepts": [
+        "胃黏膜损伤",
+        "胃酸刺激",
+        "幽门螺杆菌感染",
+        "炎症反应",
+        "胃部防御"
+      ],
+      "encyclopediaTags": [
+        "胃酸",
+        "胃黏膜",
+        "幽门螺杆菌",
+        "胃炎",
+        "乳酸菌"
+      ],
+      "parentNote": "把“胃黏膜像身体里的什么保护层”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "helicobacter-pylori-beneficial-bacteria-boundary",
+      "topicId": "helicobacter-pylori",
+      "title": "乳酸菌/益菌与病原菌有什么不同",
+      "coreQuestion": "这一页里，胃部环境被画成了什么样？",
+      "explanation": "这个小站围绕益菌、菌群识别、免疫警戒展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察乳酸菌、益菌、白血球，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-04.webp",
+      "imageAlt": "幽门螺杆菌：乳酸菌/益菌与病原菌有什么不同的儿童科普解释图。",
+      "relatedPageIds": [
+        "helicobacter-pylori__v05_page-009",
+        "helicobacter-pylori__v05_page-011"
+      ],
+      "biologyConcepts": [
+        "益菌",
+        "菌群识别",
+        "免疫警戒",
+        "胃部防御",
+        "黏膜保护"
+      ],
+      "encyclopediaTags": [
+        "乳酸菌",
+        "益菌",
+        "白血球",
+        "幽门螺杆菌",
+        "胃酸"
+      ],
+      "parentNote": "把“乳酸菌/益菌与病原菌有什么不同”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "helicobacter-pylori-q01",
+      "topicId": "helicobacter-pylori",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "胃里的细菌生存",
+      "question": "胃酸很强，为什么胃里还可能有细菌？",
+      "answer": "可以围绕幽门螺杆菌感染、胃部免疫、胃部环境来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "helicobacter-pylori__v05_page-005",
+        "helicobacter-pylori__v05_page-007"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "幽门螺杆菌感染",
+        "胃部免疫",
+        "胃部环境"
+      ]
+    },
+    {
+      "cardId": "helicobacter-pylori-q02",
+      "topicId": "helicobacter-pylori",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "胃黏膜受损线索",
+      "question": "画面里哪些地方表现了胃黏膜受损？",
+      "answer": "可以围绕细菌形态、螺旋运动、幽门螺杆菌感染来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "helicobacter-pylori__v05_page-019",
+        "helicobacter-pylori__v05_page-020"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "细菌形态",
+        "螺旋运动",
+        "幽门螺杆菌感染"
+      ]
+    },
+    {
+      "cardId": "helicobacter-pylori-q03",
+      "topicId": "helicobacter-pylori",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "两类细菌的差别",
+      "question": "益菌和幽门螺杆菌在故事里有什么不同？",
+      "answer": "可以围绕胃黏膜损伤、胃酸刺激、幽门螺杆菌感染来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "helicobacter-pylori__v05_page-022",
+        "helicobacter-pylori__v05_page-024"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "胃黏膜损伤",
+        "胃酸刺激",
+        "幽门螺杆菌感染"
+      ]
+    },
+    {
+      "cardId": "helicobacter-pylori-q04",
+      "topicId": "helicobacter-pylori",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "胃不舒服要找医生",
+      "question": "如果胃不舒服，为什么应该找医生而不是自己猜原因？",
+      "answer": "可以围绕益菌、菌群识别、免疫警戒来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "helicobacter-pylori__v05_page-009",
+        "helicobacter-pylori__v05_page-011"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "益菌",
+        "菌群识别",
+        "免疫警戒"
+      ]
+    },
+    {
+      "cardId": "helicobacter-pylori-q05",
+      "topicId": "helicobacter-pylori",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "胃部环境观察",
+      "question": "这一页里，胃部环境被画成了什么样？",
+      "answer": "可以围绕幽门螺杆菌感染、胃部免疫、胃部环境来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "helicobacter-pylori__v05_page-005",
+        "helicobacter-pylori__v05_page-007"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "幽门螺杆菌感染",
+        "胃部免疫",
+        "胃部环境"
+      ]
+    },
+    {
+      "cardId": "helicobacter-pylori-q06",
+      "topicId": "helicobacter-pylori",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "益菌和病原菌",
+      "question": "怎样区分故事里的益菌和病原菌？",
+      "answer": "可以围绕细菌形态、螺旋运动、幽门螺杆菌感染来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "helicobacter-pylori__v05_page-019",
+        "helicobacter-pylori__v05_page-020"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "细菌形态",
+        "螺旋运动",
+        "幽门螺杆菌感染"
+      ]
+    }
+  ],
+  "parentReadingNote": "本主题涉及胃痛、胃黏膜损伤和幽门螺杆菌。共读只做科普，不做感染判断、治疗建议或用药建议；动画线索来自 audio-fallback，需保留人工复核提醒。",
+  "sensitiveContentGuidance": "本主题有胃痛、胃黏膜损伤、病菌攻击和细胞受伤画面。家庭阅读时建议强调：漫画是拟人化解释，不能用来判断孩子是否感染幽门螺杆菌；如果现实中有长期胃痛、呕吐或消化不适，应交给医生评估。",
+  "sourceNotes": [
+    "漫画来源：第5卷 第20话，只保留页码线索，不展示漫画全文。"
+  ],
+  "pageRefs": {
+    "helicobacter-pylori__v05_page-005": {
+      "pageId": "helicobacter-pylori__v05_page-005",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-005.webp",
+      "label": "漫画页 5"
+    },
+    "helicobacter-pylori__v05_page-007": {
+      "pageId": "helicobacter-pylori__v05_page-007",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-007.webp",
+      "label": "漫画页 7"
+    },
+    "helicobacter-pylori__v05_page-019": {
+      "pageId": "helicobacter-pylori__v05_page-019",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-019.webp",
+      "label": "漫画页 19"
+    },
+    "helicobacter-pylori__v05_page-020": {
+      "pageId": "helicobacter-pylori__v05_page-020",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-020.webp",
+      "label": "漫画页 20"
+    },
+    "helicobacter-pylori__v05_page-022": {
+      "pageId": "helicobacter-pylori__v05_page-022",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-022.webp",
+      "label": "漫画页 22"
+    },
+    "helicobacter-pylori__v05_page-024": {
+      "pageId": "helicobacter-pylori__v05_page-024",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-024.webp",
+      "label": "漫画页 24"
+    },
+    "helicobacter-pylori__v05_page-009": {
+      "pageId": "helicobacter-pylori__v05_page-009",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-009.webp",
+      "label": "漫画页 9"
+    },
+    "helicobacter-pylori__v05_page-011": {
+      "pageId": "helicobacter-pylori__v05_page-011",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-011.webp",
+      "label": "漫画页 11"
+    }
+  }
+}

@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 15,
+  "topicId": "dengue-fever",
+  "slug": "dengue-fever",
+  "title": "登革热",
+  "displayTitle": "登革热",
+  "category": "病毒感染与公共卫生",
+  "source": {
+    "volume": 4,
+    "chapterLabel": "第16话",
+    "sourceLabel": "第4卷 第16话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "登革热主题适合解释蚊媒传播、皮肤入口、局部免疫信号、病毒感染和血小板风险。共读时应把蚊子叮咬和激烈战斗画面转成“病毒通常通过蚊媒进入身体”的科学线索，同时保留 audio-fallback 与人工复核提醒。",
+    "readingFocus": "“登革热怎样和蚊媒传播有关”：用蚊子叮咬入口、皮肤局部反应、登革病毒入侵和血小板风险四个节点说明；不提供症状自查、诊断或治疗建议。",
+    "keyBiologyConcepts": [
+      "登革热",
+      "登革病毒",
+      "蚊媒传播",
+      "皮肤屏障",
+      "局部炎症",
+      "免疫信号",
+      "血小板减少风险",
+      "防蚊边界"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "登革热为什么和蚊媒传播有关",
+      "皮肤入口和局部免疫信号",
+      "病毒进入后免疫系统怎样响应",
+      "为什么血小板风险需要专业医学边界"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "dengue-fever-mosquito-borne-entry",
+      "topicId": "dengue-fever",
+      "title": "登革热通常通过蚊媒进入身体",
+      "coreQuestion": "为什么预防蚊子叮咬能帮助预防登革热？",
+      "explanation": "登革病毒主要通过带病毒的蚊子叮咬传播。皮肤被叮咬的位置是病毒进入身体的入口线索。",
+      "imageAsset": "public/assets/cells-at-work/science-station/dengue-fever/dengue-fever-v2-station-01.webp",
+      "imageAlt": "皮肤剖面和蚊媒传播入口的温和儿童科普示意图。",
+      "relatedPageIds": [
+        "dengue-fever__v04_page-035",
+        "dengue-fever__v04_page-042"
+      ],
+      "biologyConcepts": [
+        "蚊媒传播",
+        "登革病毒",
+        "皮肤入口"
+      ],
+      "encyclopediaTags": [
+        "登革热",
+        "蚊媒传播",
+        "防蚊"
+      ],
+      "parentNote": "把重点放在传播方式，不制造恐惧画面。"
+    },
+    {
+      "stationId": "dengue-fever-local-skin-signal",
+      "topicId": "dengue-fever",
+      "title": "皮肤局部会发出免疫信号",
+      "coreQuestion": "身体怎样知道入口附近出问题了？",
+      "explanation": "皮肤和局部组织会通过炎症信号提醒免疫细胞靠近。红肿、痒和局部反应是身体防线被调动的线索。",
+      "imageAsset": "public/assets/cells-at-work/science-station/dengue-fever/dengue-fever-v2-station-02.webp",
+      "imageAlt": "皮肤局部释放温和信号波，免疫细胞收到提醒的流程图。",
+      "relatedPageIds": [
+        "dengue-fever__v04_page-036",
+        "dengue-fever__v04_page-038"
+      ],
+      "biologyConcepts": [
+        "皮肤屏障",
+        "局部炎症",
+        "免疫信号"
+      ],
+      "encyclopediaTags": [
+        "皮肤",
+        "炎症",
+        "免疫信号"
+      ],
+      "parentNote": "不把局部反应等同于诊断，只讲防线启动。"
+    },
+    {
+      "stationId": "dengue-fever-virus-and-immune-response",
+      "topicId": "dengue-fever",
+      "title": "病毒进入后免疫系统会响应",
+      "coreQuestion": "登革热为什么不只是普通蚊子包？",
+      "explanation": "登革热涉及病毒感染。免疫系统需要识别病毒相关线索并调动防御，过程比普通叮咬反应更复杂。",
+      "imageAsset": "public/assets/cells-at-work/science-station/dengue-fever/dengue-fever-v2-station-03.webp",
+      "imageAlt": "登革病毒进入组织后，免疫细胞根据病毒线索响应的非恐怖示意图。",
+      "relatedPageIds": [
+        "dengue-fever__v04_page-037",
+        "dengue-fever__v04_page-046"
+      ],
+      "biologyConcepts": [
+        "登革病毒",
+        "病毒感染",
+        "免疫反应"
+      ],
+      "encyclopediaTags": [
+        "病毒",
+        "登革热",
+        "免疫系统"
+      ],
+      "parentNote": "帮助孩子区分普通蚊子包和蚊媒疾病风险。"
+    },
+    {
+      "stationId": "dengue-fever-platelet-risk-boundary",
+      "topicId": "dengue-fever",
+      "title": "血小板风险需要医学边界",
+      "coreQuestion": "为什么登革热会让家长更谨慎？",
+      "explanation": "登革热可能涉及血小板减少等医学风险。伴读材料只解释概念，真实发热、出血点或不适必须由成人联系专业医务人员。",
+      "imageAsset": "public/assets/cells-at-work/science-station/dengue-fever/dengue-fever-v2-station-04.webp",
+      "imageAlt": "血小板数量风险用安全仪表盘和医生边界提示表达的儿童科普图。",
+      "relatedPageIds": [
+        "dengue-fever__v04_page-044",
+        "dengue-fever__v04_page-061"
+      ],
+      "biologyConcepts": [
+        "血小板",
+        "医学边界",
+        "登革热风险"
+      ],
+      "encyclopediaTags": [
+        "血小板",
+        "医学边界",
+        "登革热"
+      ],
+      "parentNote": "明确不做症状自查或治疗建议。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "dengue-fever-q01",
+      "topicId": "dengue-fever",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "入口在哪里",
+      "question": "看相关页面时，哪些线索说明登革热和蚊子叮咬有关？",
+      "answer": "可以找蚊子、皮肤入口、叮咬路线和病毒进入的提示。",
+      "relatedPageIds": [
+        "dengue-fever__v04_page-035",
+        "dengue-fever__v04_page-042"
+      ],
+      "parentHint": "先看传播入口，不复述战斗。",
+      "biologyConcepts": [
+        "蚊媒传播",
+        "皮肤入口"
+      ]
+    },
+    {
+      "cardId": "dengue-fever-q02",
+      "topicId": "dengue-fever",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "局部有什么反应",
+      "question": "皮肤附近哪些画面说明局部防线被调动了？",
+      "answer": "红肿、痒、组织反应和免疫细胞靠近都可以作为线索。",
+      "relatedPageIds": [
+        "dengue-fever__v04_page-036",
+        "dengue-fever__v04_page-038"
+      ],
+      "parentHint": "不把局部反应当成诊断。",
+      "biologyConcepts": [
+        "局部炎症",
+        "免疫信号"
+      ]
+    },
+    {
+      "cardId": "dengue-fever-q03",
+      "topicId": "dengue-fever",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么和普通蚊子包不同",
+      "question": "登革热为什么不能只理解成一个普通蚊子包？",
+      "answer": "因为它涉及登革病毒通过蚊媒进入身体，并引发更复杂的免疫反应。",
+      "relatedPageIds": [
+        "dengue-fever__v04_page-037",
+        "dengue-fever__v04_page-046"
+      ],
+      "parentHint": "用“传播病毒的入口”解释差别。",
+      "biologyConcepts": [
+        "登革病毒",
+        "蚊媒传播"
+      ]
+    },
+    {
+      "cardId": "dengue-fever-q04",
+      "topicId": "dengue-fever",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "血小板为什么被提到",
+      "question": "为什么登革热主题里会提到血小板风险？",
+      "answer": "登革热可能影响血小板相关指标，所以伴读时要保留医学边界。",
+      "relatedPageIds": [
+        "dengue-fever__v04_page-044",
+        "dengue-fever__v04_page-061"
+      ],
+      "parentHint": "只讲风险概念，健康问题找医生。",
+      "biologyConcepts": [
+        "血小板",
+        "医学边界"
+      ]
+    },
+    {
+      "cardId": "dengue-fever-q05",
+      "topicId": "dengue-fever",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "怎样讲防蚊",
+      "question": "家长可以怎样把这个主题联系到生活中的防蚊？",
+      "answer": "可以说减少蚊子叮咬能减少蚊媒传播风险，但具体健康问题要问专业人士。",
+      "relatedPageIds": [
+        "dengue-fever__v04_page-064"
+      ],
+      "parentHint": "讲生活防护，不做治疗建议。",
+      "biologyConcepts": [
+        "防蚊",
+        "蚊媒传播"
+      ]
+    },
+    {
+      "cardId": "dengue-fever-q06",
+      "topicId": "dengue-fever",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "蚊媒传播是什么",
+      "question": "“蚊媒传播”这四个字是什么意思？",
+      "answer": "意思是蚊子在叮咬过程中可能把病原体从一个宿主带到另一个宿主。",
+      "relatedPageIds": [
+        "dengue-fever__v04_page-042"
+      ],
+      "parentHint": "用“蚊子像传播路径的一环”解释。",
+      "biologyConcepts": [
+        "蚊媒传播",
+        "病原体"
+      ]
+    }
+  ],
+  "parentReadingNote": "本主题涉及登革热、病毒、血小板风险和现实防蚊。请只做科普伴读，不提供症状自查、诊断或治疗建议；动画摘要来自 audio-fallback，且同一 MP4 后半段转入痤疮内容，必须保留人工复核和主题边界提醒。",
+  "sensitiveContentGuidance": "有蚊子叮咬、感染、血液/黑色飞溅和病人不适画面。建议配家长提醒：出现高热、出血倾向或严重不适应就医，家庭阅读不替代医疗建议。",
+  "sourceNotes": [
+    "漫画来源：第4卷 第16话，只保留页码线索，不展示漫画全文。"
+  ],
+  "pageRefs": {
+    "dengue-fever__v04_page-035": {
+      "pageId": "dengue-fever__v04_page-035",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/dengue-fever__v04_page-035.webp",
+      "label": "漫画页 35"
+    },
+    "dengue-fever__v04_page-042": {
+      "pageId": "dengue-fever__v04_page-042",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/dengue-fever__v04_page-042.webp",
+      "label": "漫画页 42"
+    },
+    "dengue-fever__v04_page-036": {
+      "pageId": "dengue-fever__v04_page-036",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/dengue-fever__v04_page-036.webp",
+      "label": "漫画页 36"
+    },
+    "dengue-fever__v04_page-038": {
+      "pageId": "dengue-fever__v04_page-038",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/dengue-fever__v04_page-038.webp",
+      "label": "漫画页 38"
+    },
+    "dengue-fever__v04_page-037": {
+      "pageId": "dengue-fever__v04_page-037",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/dengue-fever__v04_page-037.webp",
+      "label": "漫画页 37"
+    },
+    "dengue-fever__v04_page-046": {
+      "pageId": "dengue-fever__v04_page-046",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/dengue-fever__v04_page-046.webp",
+      "label": "漫画页 46"
+    },
+    "dengue-fever__v04_page-044": {
+      "pageId": "dengue-fever__v04_page-044",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/dengue-fever__v04_page-044.webp",
+      "label": "漫画页 44"
+    },
+    "dengue-fever__v04_page-061": {
+      "pageId": "dengue-fever__v04_page-061",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/dengue-fever__v04_page-061.webp",
+      "label": "漫画页 61"
+    },
+    "dengue-fever__v04_page-064": {
+      "pageId": "dengue-fever__v04_page-064",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/dengue-fever__v04_page-064.webp",
+      "label": "漫画页 64"
+    }
+  }
+}

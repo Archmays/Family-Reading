@@ -1,0 +1,450 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 27,
+  "topicId": "covid-19",
+  "slug": "novel-coronavirus",
+  "title": "新型冠状病毒",
+  "displayTitle": "新型冠状病毒",
+  "category": "病毒感染与公共卫生",
+  "source": {
+    "volume": 6,
+    "chapterLabel": "第29话",
+    "sourceLabel": "第6卷 第29话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "新型冠状病毒主题必须标记为 第6卷 第29话。本主题适合帮助孩子理解：病毒进入呼吸道、感染细胞后被身体识别、发热咳嗽疲劳等信号为什么要告诉成人，以及公共卫生习惯为什么保护自己也保护别人。内容不替代医学建议，不给诊断、用药或隔离细则；如出现不适，应告诉成人并按当地医疗与公共卫生建议处理。",
+    "readingFocus": "新型冠状病毒主题必须标记为 第6卷 第29话。本主题适合帮助孩子理解：病毒进入呼吸道、感染细胞后被身体识别、发热咳嗽疲劳等信号为什么要告诉成人，以及公共卫生习惯为什么保护自己也保护别人。内容不替代医学建议，不给诊断、用药或隔离细则；如出现不适，应告诉成人并按当地医疗与公共卫生建议处理。",
+    "keyBiologyConcepts": [
+      "病毒感染",
+      "呼吸道",
+      "上皮细胞",
+      "ACE2受体",
+      "感染细胞清除",
+      "炎症反应",
+      "杀手T细胞",
+      "免疫防御",
+      "发热",
+      "咳嗽",
+      "疲劳",
+      "症状信号",
+      "公共卫生",
+      "传播途径",
+      "手卫生",
+      "呼吸道健康"
+    ],
+    "recommendedBodyScienceStationFocus": "新型冠状病毒主题必须标记为 第6卷 第29话。本主题适合帮助孩子理解：病毒进入呼吸道、感染细胞后被身体识别、发热咳嗽疲劳等信号为什么要告诉成人，以及公共卫生习惯为什么保护自己也保护别人。内容不替代医学建议，不给诊断、用药或隔离细则；如出现不适，应告诉成人并按当地医疗与公共卫生建议处理。"
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "covid-19-virus-enters-cells",
+      "topicId": "covid-19",
+      "title": "病毒如何进入呼吸道",
+      "coreQuestion": "呼吸道为什么是病毒容易遇到身体细胞的地方？",
+      "explanation": "呼吸道和外界空气相连，空气中的飞沫或气溶胶可能把病毒带到鼻腔、咽喉或气道附近。病毒不是完整细胞，必须进入合适的宿主细胞，才可能利用细胞里的材料复制自己。",
+      "imageAsset": "public/assets/cells-at-work/science-station/covid-19/covid-19-v2-station-01.webp",
+      "imageAlt": "儿童科普插图：病毒颗粒靠近呼吸道上皮细胞，画面温和不恐怖。",
+      "relatedPageIds": [
+        "covid-19__v06_page-126",
+        "covid-19__v06_page-127",
+        "covid-19__v06_page-128",
+        "covid-19__v06_page-129",
+        "covid-19__v06_page-130",
+        "covid-19__v06_page-131",
+        "covid-19__v06_page-132"
+      ],
+      "biologyConcepts": [
+        "病毒感染",
+        "呼吸道",
+        "上皮细胞",
+        "ACE2受体"
+      ],
+      "encyclopediaTags": [
+        "新型冠状病毒",
+        "病毒",
+        "呼吸道"
+      ],
+      "parentNote": "避免讲成“空气一定危险”，重点是理解入口和防护习惯。"
+    },
+    {
+      "stationId": "covid-19-transmission-protection",
+      "topicId": "covid-19",
+      "title": "细胞被感染后身体如何识别",
+      "coreQuestion": "身体怎样发现有细胞被病毒影响了？",
+      "explanation": "当细胞被病毒感染后，身体可能通过异常信号、炎症反应和免疫细胞巡查发现问题。免疫系统会尝试限制病毒复制，并清除被感染的细胞。这个过程可能伴随不舒服的身体信号。",
+      "imageAsset": "public/assets/cells-at-work/science-station/covid-19/covid-19-v2-station-02.webp",
+      "imageAlt": "儿童科普插图：免疫细胞温和观察异常呼吸道细胞信号。",
+      "relatedPageIds": [
+        "covid-19__v06_page-138",
+        "covid-19__v06_page-139",
+        "covid-19__v06_page-140",
+        "covid-19__v06_page-141",
+        "covid-19__v06_page-142",
+        "covid-19__v06_page-143"
+      ],
+      "biologyConcepts": [
+        "感染细胞清除",
+        "炎症反应",
+        "杀手T细胞",
+        "免疫防御"
+      ],
+      "encyclopediaTags": [
+        "感染细胞",
+        "免疫系统",
+        "炎症"
+      ],
+      "parentNote": "用“识别异常和保护身体”替代“猛烈攻击”。"
+    },
+    {
+      "stationId": "covid-19-immune-clearance",
+      "topicId": "covid-19",
+      "title": "发热、咳嗽、疲劳等信号为什么要重视",
+      "coreQuestion": "身体不舒服时，为什么要告诉成人？",
+      "explanation": "发热、咳嗽、疲劳等可能是身体正在应对感染或其他问题的信号。孩子不需要自己判断是什么病，但应该及时告诉成人。成人可以观察症状变化，并在需要时寻求专业医疗帮助。",
+      "imageAsset": "public/assets/cells-at-work/science-station/covid-19/covid-19-v2-station-03.webp",
+      "imageAlt": "儿童科普插图：孩子温和告诉成人自己发热、咳嗽或疲劳，成人关心陪伴。",
+      "relatedPageIds": [
+        "covid-19__v06_page-150",
+        "covid-19__v06_page-151",
+        "covid-19__v06_page-152",
+        "covid-19__v06_page-153",
+        "covid-19__v06_page-154",
+        "covid-19__v06_page-155"
+      ],
+      "biologyConcepts": [
+        "发热",
+        "咳嗽",
+        "疲劳",
+        "症状信号"
+      ],
+      "encyclopediaTags": [
+        "发热",
+        "呼吸道感染",
+        "健康观察"
+      ],
+      "parentNote": "不列具体诊断标准，只强调告诉成人和必要时就医。"
+    },
+    {
+      "stationId": "covid-19-public-health-and-emotions",
+      "topicId": "covid-19",
+      "title": "公共卫生习惯、告诉成人和就医边界",
+      "coreQuestion": "好习惯为什么能保护自己和别人？",
+      "explanation": "洗手、通风、咳嗽礼仪、身体不适时告诉成人，都是公共卫生习惯的一部分。它们不能保证永远不生病，但能减少传播机会，并帮助大人及时照顾孩子。是否检测、就医或采取进一步措施，应由成人根据当地建议和医生意见决定。",
+      "imageAsset": "public/assets/cells-at-work/science-station/covid-19/covid-19-v2-station-04.webp",
+      "imageAlt": "儿童科普插图：家庭场景中洗手、通风、咳嗽礼仪和告诉成人被温和表现。",
+      "relatedPageIds": [
+        "covid-19__v06_page-133",
+        "covid-19__v06_page-134",
+        "covid-19__v06_page-135",
+        "covid-19__v06_page-136",
+        "covid-19__v06_page-137",
+        "covid-19__v06_page-144",
+        "covid-19__v06_page-145",
+        "covid-19__v06_page-146",
+        "covid-19__v06_page-147",
+        "covid-19__v06_page-148",
+        "covid-19__v06_page-149",
+        "covid-19__v06_page-161",
+        "covid-19__v06_page-162",
+        "covid-19__v06_page-163"
+      ],
+      "biologyConcepts": [
+        "公共卫生",
+        "传播途径",
+        "手卫生",
+        "呼吸道健康"
+      ],
+      "encyclopediaTags": [
+        "公共卫生",
+        "手卫生",
+        "通风"
+      ],
+      "parentNote": "避免过时或地区化细则，保留“遵循当地建议和医生意见”。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "covid-19-q01",
+      "topicId": "covid-19",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "呼吸道相关主题",
+      "question": "观察：画面里哪些地方提醒你这是呼吸道相关主题？",
+      "answer": "病毒需要进入合适的细胞，才可能继续复制。",
+      "relatedPageIds": [
+        "covid-19__v06_page-126",
+        "covid-19__v06_page-127"
+      ],
+      "parentHint": "避免讲成“空气一定危险”，重点是理解入口和防护习惯。",
+      "biologyConcepts": [
+        "病毒感染",
+        "呼吸道"
+      ]
+    },
+    {
+      "cardId": "covid-19-q02",
+      "topicId": "covid-19",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "身体发现异常",
+      "question": "观察：哪些画面线索说明身体正在发现异常？",
+      "answer": "免疫系统会识别异常信号，努力限制感染扩散。",
+      "relatedPageIds": [
+        "covid-19__v06_page-138",
+        "covid-19__v06_page-139"
+      ],
+      "parentHint": "用“识别异常和保护身体”替代“猛烈攻击”。",
+      "biologyConcepts": [
+        "感染细胞清除",
+        "炎症反应"
+      ]
+    },
+    {
+      "cardId": "covid-19-q03",
+      "topicId": "covid-19",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "病毒进入细胞后复制",
+      "question": "理解：为什么病毒需要进入细胞后才可能复制？",
+      "answer": "身体信号不是用来吓人，而是提醒我们需要照顾和判断。",
+      "relatedPageIds": [
+        "covid-19__v06_page-150",
+        "covid-19__v06_page-151"
+      ],
+      "parentHint": "不列具体诊断标准，只强调告诉成人和必要时就医。",
+      "biologyConcepts": [
+        "发热",
+        "咳嗽"
+      ]
+    },
+    {
+      "cardId": "covid-19-q04",
+      "topicId": "covid-19",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "不舒服信号要告诉成人",
+      "question": "理解：为什么发热、咳嗽、疲劳这些信号要告诉成人？",
+      "answer": "公共卫生习惯是照顾自己，也是在照顾身边的人。",
+      "relatedPageIds": [
+        "covid-19__v06_page-133",
+        "covid-19__v06_page-134"
+      ],
+      "parentHint": "避免过时或地区化细则，保留“遵循当地建议和医生意见”。",
+      "biologyConcepts": [
+        "公共卫生",
+        "传播途径"
+      ]
+    },
+    {
+      "cardId": "covid-19-q05",
+      "topicId": "covid-19",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "照顾自己也照顾别人",
+      "question": "联系生活：咳嗽或不舒服时，哪些做法能照顾自己也照顾别人？",
+      "answer": "公共卫生习惯是照顾自己，也是在照顾身边的人。",
+      "relatedPageIds": [
+        "covid-19__v06_page-144"
+      ],
+      "parentHint": "避免过时或地区化细则，保留“遵循当地建议和医生意见”。",
+      "biologyConcepts": [
+        "公共卫生",
+        "传播途径"
+      ]
+    },
+    {
+      "cardId": "covid-19-q06",
+      "topicId": "covid-19",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "病毒与细胞差别",
+      "question": "科学概念：病毒和身体细胞有什么不同？",
+      "answer": "公共卫生习惯是照顾自己，也是在照顾身边的人。",
+      "relatedPageIds": [
+        "covid-19__v06_page-150"
+      ],
+      "parentHint": "避免过时或地区化细则，保留“遵循当地建议和医生意见”。",
+      "biologyConcepts": [
+        "公共卫生",
+        "传播途径"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题容易让孩子联想到真实疫情经历。家长应使用温和语气，把重点放在身体识别、告诉成人、公共卫生习惯和专业帮助边界上。不要让孩子承担“大人式判断”，也不要把内容变成医学建议。",
+  "sensitiveContentGuidance": "本主题涉及新冠疫情、感染、恐慌表情、免疫战斗和公共卫生压力。家庭阅读时建议家长先说明：这是医学拟人漫画，不是疫情新闻；重点放在病毒传播、免疫应对和保护他人的日常方法。",
+  "sourceNotes": [],
+  "pageRefs": {
+    "covid-19__v06_page-126": {
+      "pageId": "covid-19__v06_page-126",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-126.webp",
+      "label": "漫画页 126"
+    },
+    "covid-19__v06_page-127": {
+      "pageId": "covid-19__v06_page-127",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-127.webp",
+      "label": "漫画页 127"
+    },
+    "covid-19__v06_page-128": {
+      "pageId": "covid-19__v06_page-128",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-128.webp",
+      "label": "漫画页 128"
+    },
+    "covid-19__v06_page-129": {
+      "pageId": "covid-19__v06_page-129",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-129.webp",
+      "label": "漫画页 129"
+    },
+    "covid-19__v06_page-130": {
+      "pageId": "covid-19__v06_page-130",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-130.webp",
+      "label": "漫画页 130"
+    },
+    "covid-19__v06_page-131": {
+      "pageId": "covid-19__v06_page-131",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-131.webp",
+      "label": "漫画页 131"
+    },
+    "covid-19__v06_page-132": {
+      "pageId": "covid-19__v06_page-132",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-132.webp",
+      "label": "漫画页 132"
+    },
+    "covid-19__v06_page-138": {
+      "pageId": "covid-19__v06_page-138",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-138.webp",
+      "label": "漫画页 138"
+    },
+    "covid-19__v06_page-139": {
+      "pageId": "covid-19__v06_page-139",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-139.webp",
+      "label": "漫画页 139"
+    },
+    "covid-19__v06_page-140": {
+      "pageId": "covid-19__v06_page-140",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-140.webp",
+      "label": "漫画页 140"
+    },
+    "covid-19__v06_page-141": {
+      "pageId": "covid-19__v06_page-141",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-141.webp",
+      "label": "漫画页 141"
+    },
+    "covid-19__v06_page-142": {
+      "pageId": "covid-19__v06_page-142",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-142.webp",
+      "label": "漫画页 142"
+    },
+    "covid-19__v06_page-143": {
+      "pageId": "covid-19__v06_page-143",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-143.webp",
+      "label": "漫画页 143"
+    },
+    "covid-19__v06_page-150": {
+      "pageId": "covid-19__v06_page-150",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-150.webp",
+      "label": "漫画页 150"
+    },
+    "covid-19__v06_page-151": {
+      "pageId": "covid-19__v06_page-151",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-151.webp",
+      "label": "漫画页 151"
+    },
+    "covid-19__v06_page-152": {
+      "pageId": "covid-19__v06_page-152",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-152.webp",
+      "label": "漫画页 152"
+    },
+    "covid-19__v06_page-153": {
+      "pageId": "covid-19__v06_page-153",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-153.webp",
+      "label": "漫画页 153"
+    },
+    "covid-19__v06_page-154": {
+      "pageId": "covid-19__v06_page-154",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-154.webp",
+      "label": "漫画页 154"
+    },
+    "covid-19__v06_page-155": {
+      "pageId": "covid-19__v06_page-155",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-155.webp",
+      "label": "漫画页 155"
+    },
+    "covid-19__v06_page-133": {
+      "pageId": "covid-19__v06_page-133",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-133.webp",
+      "label": "漫画页 133"
+    },
+    "covid-19__v06_page-134": {
+      "pageId": "covid-19__v06_page-134",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-134.webp",
+      "label": "漫画页 134"
+    },
+    "covid-19__v06_page-135": {
+      "pageId": "covid-19__v06_page-135",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-135.webp",
+      "label": "漫画页 135"
+    },
+    "covid-19__v06_page-136": {
+      "pageId": "covid-19__v06_page-136",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-136.webp",
+      "label": "漫画页 136"
+    },
+    "covid-19__v06_page-137": {
+      "pageId": "covid-19__v06_page-137",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-137.webp",
+      "label": "漫画页 137"
+    },
+    "covid-19__v06_page-144": {
+      "pageId": "covid-19__v06_page-144",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-144.webp",
+      "label": "漫画页 144"
+    },
+    "covid-19__v06_page-145": {
+      "pageId": "covid-19__v06_page-145",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-145.webp",
+      "label": "漫画页 145"
+    },
+    "covid-19__v06_page-146": {
+      "pageId": "covid-19__v06_page-146",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-146.webp",
+      "label": "漫画页 146"
+    },
+    "covid-19__v06_page-147": {
+      "pageId": "covid-19__v06_page-147",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-147.webp",
+      "label": "漫画页 147"
+    },
+    "covid-19__v06_page-148": {
+      "pageId": "covid-19__v06_page-148",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-148.webp",
+      "label": "漫画页 148"
+    },
+    "covid-19__v06_page-149": {
+      "pageId": "covid-19__v06_page-149",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-149.webp",
+      "label": "漫画页 149"
+    },
+    "covid-19__v06_page-161": {
+      "pageId": "covid-19__v06_page-161",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-161.webp",
+      "label": "漫画页 161"
+    },
+    "covid-19__v06_page-162": {
+      "pageId": "covid-19__v06_page-162",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-162.webp",
+      "label": "漫画页 162"
+    },
+    "covid-19__v06_page-163": {
+      "pageId": "covid-19__v06_page-163",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/covid-19__v06_page-163.webp",
+      "label": "漫画页 163"
+    }
+  }
+}

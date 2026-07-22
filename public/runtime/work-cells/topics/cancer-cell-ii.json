@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 22,
+  "topicId": "cancer-cell-ii",
+  "slug": "cancer-cell-ii",
+  "title": "癌细胞Ⅱ",
+  "displayTitle": "癌细胞Ⅱ",
+  "category": "细胞异常与免疫监视",
+  "source": {
+    "volume": 5,
+    "chapterLabel": "第24-25话",
+    "sourceLabel": "第5卷 第24-25话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "这一主题是“癌细胞Ⅱ”，由第5卷第24-25话合并组成，但必须作为独立主题呈现，不能与前面的“癌细胞”合并。故事围绕癌细胞再次出现、免疫系统追击、正常细胞与乳酸菌的牵连以及后篇决战展开。画面通过白血球、NK细胞、记忆细胞、T细胞等角色的协作，呈现免疫监视、异常细胞识别、癌细胞逃逸与清除等概念，同时也保留了癌细胞作为“身体自身异常细胞”的复杂性。",
+    "readingFocus": "“异常细胞为什么难处理”：用身体自身细胞异常、免疫监视、NK细胞和杀手T细胞分工、免疫逃逸、细胞凋亡和医学边界说明；必须与 cancer-cell 独立。",
+    "keyBiologyConcepts": [
+      "癌细胞",
+      "癌细胞Ⅱ",
+      "细胞突变",
+      "异常增殖",
+      "免疫监视",
+      "免疫逃逸",
+      "NK细胞",
+      "白血球/中性粒细胞",
+      "杀手T细胞",
+      "记忆细胞",
+      "调节性T细胞",
+      "乳酸菌",
+      "细胞凋亡",
+      "肿瘤微环境"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "癌细胞为什么来自身体自己的细胞",
+      "免疫系统怎样识别异常细胞",
+      "NK细胞与杀手T细胞的角色差异",
+      "癌细胞逃避免疫监视的漫画化表现",
+      "乳酸菌剧情与肠道免疫的连接",
+      "为什么不能把“癌症”简单讲成普通坏人"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "cancer-cell-ii-separate-topic",
+      "topicId": "cancer-cell-ii",
+      "title": "癌细胞为什么来自身体自己的细胞",
+      "coreQuestion": "这一页里，免疫细胞是怎样判断“异常”的？",
+      "explanation": "这个小站围绕癌细胞、免疫监视、异常细胞识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察癌细胞、免疫系统、NK细胞，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell-ii/cancer-cell-ii-v2-station-01.webp",
+      "imageAlt": "癌细胞Ⅱ：癌细胞为什么来自身体自己的细胞的儿童科普解释图。",
+      "relatedPageIds": [
+        "cancer-cell-ii__v05_page-143",
+        "cancer-cell-ii__v05_page-144"
+      ],
+      "biologyConcepts": [
+        "癌细胞",
+        "免疫监视",
+        "异常细胞识别",
+        "剧情回顾",
+        "癌细胞复现"
+      ],
+      "encyclopediaTags": [
+        "癌细胞",
+        "免疫系统",
+        "NK细胞",
+        "免疫监视"
+      ],
+      "parentNote": "把“癌细胞为什么来自身体自己的细胞”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "cancer-cell-ii-self-cell-abnormal",
+      "topicId": "cancer-cell-ii",
+      "title": "免疫系统怎样识别异常细胞",
+      "coreQuestion": "画面里哪些线索说明情况比普通感染更复杂？",
+      "explanation": "这个小站围绕癌细胞、免疫监视、异常细胞识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察癌细胞、免疫系统、NK细胞，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell-ii/cancer-cell-ii-v2-station-02.webp",
+      "imageAlt": "癌细胞Ⅱ：免疫系统怎样识别异常细胞的儿童科普解释图。",
+      "relatedPageIds": [
+        "cancer-cell-ii__v05_page-145",
+        "cancer-cell-ii__v05_page-150"
+      ],
+      "biologyConcepts": [
+        "癌细胞",
+        "免疫监视",
+        "异常细胞识别",
+        "异常细胞清除",
+        "先天免疫"
+      ],
+      "encyclopediaTags": [
+        "癌细胞",
+        "免疫系统",
+        "NK细胞",
+        "白血球"
+      ],
+      "parentNote": "把“免疫系统怎样识别异常细胞”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "cancer-cell-ii-immune-surveillance",
+      "topicId": "cancer-cell-ii",
+      "title": "NK细胞与杀手T细胞的角色差异",
+      "coreQuestion": "漫画怎样表现“细胞不按规则生长”？",
+      "explanation": "这个小站围绕癌细胞、免疫监视、异常细胞识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察癌细胞、免疫系统、NK细胞，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell-ii/cancer-cell-ii-v2-station-03.webp",
+      "imageAlt": "癌细胞Ⅱ：NK细胞与杀手T细胞的角色差异的儿童科普解释图。",
+      "relatedPageIds": [
+        "cancer-cell-ii__v05_page-166",
+        "cancer-cell-ii__v05_page-176"
+      ],
+      "biologyConcepts": [
+        "癌细胞",
+        "免疫监视",
+        "异常细胞识别",
+        "异常增殖",
+        "免疫逃逸"
+      ],
+      "encyclopediaTags": [
+        "癌细胞",
+        "免疫系统",
+        "NK细胞",
+        "肿瘤",
+        "异常增殖"
+      ],
+      "parentNote": "把“NK细胞与杀手T细胞的角色差异”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "cancer-cell-ii-escape-and-boundary",
+      "topicId": "cancer-cell-ii",
+      "title": "癌细胞逃避免疫监视的漫画化表现",
+      "coreQuestion": "免疫细胞为什么不能只靠一个角色完成任务？",
+      "explanation": "这个小站围绕癌细胞、免疫监视、异常细胞识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察癌细胞、免疫系统、NK细胞，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell-ii/cancer-cell-ii-v2-station-04.webp",
+      "imageAlt": "癌细胞Ⅱ：癌细胞逃避免疫监视的漫画化表现的儿童科普解释图。",
+      "relatedPageIds": [
+        "cancer-cell-ii__v05_page-190",
+        "cancer-cell-ii__v05_page-204"
+      ],
+      "biologyConcepts": [
+        "癌细胞",
+        "免疫监视",
+        "异常细胞识别",
+        "肠道免疫",
+        "菌群影响"
+      ],
+      "encyclopediaTags": [
+        "癌细胞",
+        "免疫系统",
+        "NK细胞",
+        "乳酸菌",
+        "肠道菌群"
+      ],
+      "parentNote": "把“癌细胞逃避免疫监视的漫画化表现”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "cancer-cell-ii-q01",
+      "topicId": "cancer-cell-ii",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "自身异常细胞的识别",
+      "question": "癌细胞为什么比普通病菌更难判断？",
+      "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cancer-cell-ii__v05_page-143",
+        "cancer-cell-ii__v05_page-144"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "癌细胞",
+        "免疫监视",
+        "异常细胞识别"
+      ]
+    },
+    {
+      "cardId": "cancer-cell-ii-q02",
+      "topicId": "cancer-cell-ii",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "侦查和攻击分工",
+      "question": "画面里哪些角色在做“侦查”，哪些角色在做“攻击”？",
+      "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cancer-cell-ii__v05_page-145",
+        "cancer-cell-ii__v05_page-150"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "癌细胞",
+        "免疫监视",
+        "异常细胞识别"
+      ]
+    },
+    {
+      "cardId": "cancer-cell-ii-q03",
+      "topicId": "cancer-cell-ii",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "漫画剧情和真实医学",
+      "question": "为什么这类主题要区分漫画剧情和真实医学？",
+      "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cancer-cell-ii__v05_page-166",
+        "cancer-cell-ii__v05_page-176"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "癌细胞",
+        "免疫监视",
+        "异常细胞识别"
+      ]
+    },
+    {
+      "cardId": "cancer-cell-ii-q04",
+      "topicId": "cancer-cell-ii",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "免疫识别自身异常的难题",
+      "question": "如果异常细胞来自身体自己，免疫系统会遇到什么难题？",
+      "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cancer-cell-ii__v05_page-190",
+        "cancer-cell-ii__v05_page-204"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "癌细胞",
+        "免疫监视",
+        "异常细胞识别"
+      ]
+    },
+    {
+      "cardId": "cancer-cell-ii-q05",
+      "topicId": "cancer-cell-ii",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "判断异常的线索",
+      "question": "这一页里，免疫细胞是怎样判断“异常”的？",
+      "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cancer-cell-ii__v05_page-143",
+        "cancer-cell-ii__v05_page-144"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "癌细胞",
+        "免疫监视",
+        "异常细胞识别"
+      ]
+    },
+    {
+      "cardId": "cancer-cell-ii-q06",
+      "topicId": "cancer-cell-ii",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "比普通感染更复杂",
+      "question": "画面里哪些线索说明情况比普通感染更复杂？",
+      "answer": "可以围绕癌细胞、免疫监视、异常细胞识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cancer-cell-ii__v05_page-145",
+        "cancer-cell-ii__v05_page-150"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "癌细胞",
+        "免疫监视",
+        "异常细胞识别"
+      ]
+    }
+  ],
+  "parentReadingNote": "本主题含癌症联想、强烈战斗和角色危机场面。共读时请强调癌细胞是身体自身细胞异常变化，不把疾病或患者道德化；cancer-cell-ii 必须与 cancer-cell 保持独立。动画线索来自两集 audio-fallback，需人工复核。",
+  "sensitiveContentGuidance": "本主题含癌症、异常细胞、强烈战斗、角色濒危、身体破坏和较多惊吓表情。家庭阅读时建议家长先说明：癌症是真实医学问题，漫画用拟人战斗帮助理解免疫监视，不能把患者或疾病简单道德化。",
+  "sourceNotes": [
+    "漫画来源：第5卷 第24-25话，只保留页码线索，不展示漫画全文。",
+    "cancer-cell-ii 保持独立，不与 cancer-cell / 癌细胞合并。"
+  ],
+  "pageRefs": {
+    "cancer-cell-ii__v05_page-143": {
+      "pageId": "cancer-cell-ii__v05_page-143",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cancer-cell-ii__v05_page-143.webp",
+      "label": "漫画页 143"
+    },
+    "cancer-cell-ii__v05_page-144": {
+      "pageId": "cancer-cell-ii__v05_page-144",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cancer-cell-ii__v05_page-144.webp",
+      "label": "漫画页 144"
+    },
+    "cancer-cell-ii__v05_page-145": {
+      "pageId": "cancer-cell-ii__v05_page-145",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cancer-cell-ii__v05_page-145.webp",
+      "label": "漫画页 145"
+    },
+    "cancer-cell-ii__v05_page-150": {
+      "pageId": "cancer-cell-ii__v05_page-150",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cancer-cell-ii__v05_page-150.webp",
+      "label": "漫画页 150"
+    },
+    "cancer-cell-ii__v05_page-166": {
+      "pageId": "cancer-cell-ii__v05_page-166",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cancer-cell-ii__v05_page-166.webp",
+      "label": "漫画页 166"
+    },
+    "cancer-cell-ii__v05_page-176": {
+      "pageId": "cancer-cell-ii__v05_page-176",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cancer-cell-ii__v05_page-176.webp",
+      "label": "漫画页 176"
+    },
+    "cancer-cell-ii__v05_page-190": {
+      "pageId": "cancer-cell-ii__v05_page-190",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cancer-cell-ii__v05_page-190.webp",
+      "label": "漫画页 190"
+    },
+    "cancer-cell-ii__v05_page-204": {
+      "pageId": "cancer-cell-ii__v05_page-204",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cancer-cell-ii__v05_page-204.webp",
+      "label": "漫画页 204"
+    }
+  }
+}

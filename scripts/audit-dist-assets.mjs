@@ -1,4 +1,5 @@
-import { readdir, stat } from 'node:fs/promises';
+import { createHash } from 'node:crypto';
+import { readFile, readdir, stat } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -13,6 +14,26 @@ const forbiddenArchivePattern = /\.(zip|7z|tar|gz)$/i;
 const forbiddenVideoPattern = new RegExp(`(${forbiddenVideoExtensions.map((extension) => extension.replace('.', '\\.')).join('|')})$`, 'i');
 const forbiddenSubtitlePattern = new RegExp(`(${forbiddenSubtitleExtensions.map((extension) => extension.replace('.', '\\.')).join('|')})$`, 'i');
 const forbiddenWorkCellsAudioPattern = /(^|\/)(cells-at-work|work-cells|工作细胞)(\/.*)?\.(mp3|wav|m4a|aac|flac|ogg)$/i;
+const runtimeAuthoringKeyDenylist = new Set([
+  'imagePrompt',
+  'imagePromptId',
+  'promptRequiredPrefix',
+  'notesForCodex',
+  'zipPath',
+  'privateFullEpubInputDirectory',
+  'authoring',
+  'reviewOnly',
+  'transcript',
+  'dialogue',
+  'subtitle',
+  'sourcePath',
+  'pageAnnotations',
+  'pageImagePaths',
+  'publicAssets',
+  'topicMergeRules',
+  'bodyScienceStationPolicy',
+  'assetPolicy',
+]);
 const forbiddenReleasePatterns = [
   { code: 'RAW_SOURCE', pattern: /(^|\/)(?:source|source-private)(\/|$)/i, message: 'Remove raw source roots from dist.' },
   { code: 'PRIVATE_ROOT', pattern: /(^|\/)(?:private|data-private)(\/|$)/i, message: 'Remove explicitly private roots from dist.' },
@@ -122,6 +143,117 @@ export function findForbiddenReleaseItems(relativePaths) {
   return items;
 }
 
+function collectDeniedRuntimeKeys(value, currentPath = '$', findings = []) {
+  if (Array.isArray(value)) {
+    value.forEach((item, index) => collectDeniedRuntimeKeys(item, `${currentPath}[${index}]`, findings));
+    return findings;
+  }
+  if (!value || typeof value !== 'object') return findings;
+
+  for (const [key, child] of Object.entries(value)) {
+    const childPath = `${currentPath}.${key}`;
+    if (runtimeAuthoringKeyDenylist.has(key)) findings.push(childPath);
+    collectDeniedRuntimeKeys(child, childPath, findings);
+  }
+  return findings;
+}
+
+async function findRuntimeDistributionFindings(files) {
+  const findings = [];
+  const fileByPath = new Map(files.map((file) => [relativePath(file.path), file]));
+  const forbiddenAuthoringPaths = [
+    'dist/public/books/工作细胞/draft-manifest.json',
+    'dist/data/cells-at-work/page-map.json',
+  ];
+  const publishedAuthoringPaths = forbiddenAuthoringPaths.filter((filePath) => fileByPath.has(filePath));
+  if (publishedAuthoringPaths.length > 0) {
+    findings.push({
+      code: 'WORK_CELLS_AUTHORING_JSON',
+      message: 'Remove Work Cells authoring manifest and page map from dist.',
+      matches: publishedAuthoringPaths,
+    });
+  }
+
+  const manifestPath = 'dist/public/runtime/runtime-manifest.json';
+  const manifestFile = fileByPath.get(manifestPath);
+  if (!manifestFile) {
+    findings.push({
+      code: 'RUNTIME_MANIFEST_MISSING',
+      message: 'Publish the validated runtime manifest.',
+      matches: [manifestPath],
+    });
+    return findings;
+  }
+
+  let manifest;
+  try {
+    manifest = JSON.parse(await readFile(manifestFile.path, 'utf8'));
+  } catch {
+    findings.push({
+      code: 'RUNTIME_MANIFEST_INVALID',
+      message: 'Runtime manifest must be valid JSON.',
+      matches: [manifestPath],
+    });
+    return findings;
+  }
+
+  const declaredOutputs = Array.isArray(manifest.outputs)
+    ? manifest.outputs
+    : Array.isArray(manifest.outputFiles)
+      ? manifest.outputFiles
+      : [];
+  const declaredPaths = new Set([manifestPath]);
+  const mismatches = [];
+
+  for (const output of declaredOutputs) {
+    const repositoryPath = String(output.path ?? '').replaceAll('\\', '/');
+    const distPath = `dist/${repositoryPath}`;
+    declaredPaths.add(distPath);
+    const published = fileByPath.get(distPath);
+    if (!published) {
+      mismatches.push(`${distPath} (missing)`);
+      continue;
+    }
+    const bytes = await readFile(published.path);
+    const sha256 = createHash('sha256').update(bytes).digest('hex');
+    if (published.size !== output.bytes || sha256 !== output.sha256) {
+      mismatches.push(`${distPath} (hash-or-size)`);
+    }
+  }
+
+  const runtimeJsonPaths = files
+    .map((file) => relativePath(file.path))
+    .filter((filePath) => filePath.startsWith('dist/public/runtime/') && filePath.endsWith('.json'));
+  const undeclaredPaths = runtimeJsonPaths.filter((filePath) => !declaredPaths.has(filePath));
+  mismatches.push(...undeclaredPaths.map((filePath) => `${filePath} (undeclared)`));
+  if (declaredOutputs.length === 0 || mismatches.length > 0) {
+    findings.push({
+      code: 'RUNTIME_MANIFEST_MISMATCH',
+      message: 'Runtime files must exactly match the manifest hashes and file list.',
+      matches: declaredOutputs.length === 0 ? [manifestPath] : mismatches,
+    });
+  }
+
+  const deniedKeys = [];
+  for (const filePath of runtimeJsonPaths.filter((item) => /\/work-cells\/topics\/[^/]+\.json$/i.test(item))) {
+    try {
+      const data = JSON.parse(await readFile(fileByPath.get(filePath).path, 'utf8'));
+      deniedKeys.push(...collectDeniedRuntimeKeys(data).map((keyPath) => `${filePath}:${keyPath}`));
+    } catch {
+      deniedKeys.push(`${filePath}:invalid-json`);
+    }
+  }
+  if (deniedKeys.length > 0) {
+    findings.push({
+      code: 'RUNTIME_AUTHORING_FIELD',
+      message: 'Runtime topic payloads must not expose authoring-only fields.',
+      matches: deniedKeys,
+    });
+  }
+
+  return findings;
+}
+
 export async function runDistAudit() {
   if (!existsSync(distDir)) {
     console.error('dist does not exist. Run node scripts/build.mjs first.');
@@ -135,7 +267,10 @@ export async function runDistAudit() {
     .slice(0, topLimit)
     .map((file) => ({ path: relativePath(file.path), size: file.size }));
   const allPaths = files.map((file) => relativePath(file.path));
-  const forbiddenItems = findForbiddenReleaseItems(allPaths);
+  const forbiddenItems = [
+    ...findForbiddenReleaseItems(allPaths),
+    ...await findRuntimeDistributionFindings(files),
+  ];
 
   console.log(`dist total size: ${formatSize(totalBytes)} (${totalBytes} bytes)`);
   console.log(`warning limit: ${formatSize(warningLimitBytes)} (${warningLimitBytes} bytes)`);

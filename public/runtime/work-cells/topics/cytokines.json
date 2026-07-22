@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 20,
+  "topicId": "cytokines",
+  "slug": "cytokines",
+  "title": "细胞因子",
+  "displayTitle": "细胞因子",
+  "category": "免疫信号",
+  "source": {
+    "volume": 5,
+    "chapterLabel": "第22话",
+    "sourceLabel": "第5卷 第22话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "这一主题围绕细胞因子（漫画中常以“细胞激素”呈现）展开，表现免疫细胞之间怎样通过信号互相通知、激活和协作。故事中可见NK细胞、乳酸菌/益菌、免疫细胞被激活、IL-12等信号线索，以及因免疫反应增强而出现的剧烈战斗和炎症化场面。适合帮助孩子理解：免疫系统不是单个细胞各自战斗，而是通过化学信号形成团队协作；信号过强或失控也可能带来问题。",
+    "readingFocus": "“免疫细胞怎样互相发消息”：用细胞因子、IL-12、细胞活化、信号放大、炎症调节和过强反应的边界说明免疫协作。",
+    "keyBiologyConcepts": [
+      "细胞因子",
+      "细胞激素",
+      "IL-12",
+      "免疫信号",
+      "细胞活化",
+      "NK细胞",
+      "白血球/中性粒细胞",
+      "巨噬细胞/树突状细胞",
+      "炎症反应",
+      "免疫调节",
+      "免疫协作",
+      "乳酸菌/益菌"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "细胞因子是什么：细胞之间的化学信息",
+      "IL-12怎样帮助激活免疫细胞",
+      "免疫细胞为什么需要互相通知",
+      "炎症反应为什么既有保护作用也可能造成不适",
+      "漫画里的爆炸式反应和真实细胞因子风暴的区别"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "cytokines-chemical-messages",
+      "topicId": "cytokines",
+      "title": "细胞因子是什么：细胞之间的化学信息",
+      "coreQuestion": "这一页里，哪个画面像“细胞在互相发消息”？",
+      "explanation": "这个小站围绕免疫信号、细胞活化、炎症反应展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察细胞因子、免疫信号、IL-12，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cytokines/cytokines-v2-station-01.webp",
+      "imageAlt": "细胞因子：细胞因子是什么：细胞之间的化学信息的儿童科普解释图。",
+      "relatedPageIds": [
+        "cytokines__v05_page-077",
+        "cytokines__v05_page-080"
+      ],
+      "biologyConcepts": [
+        "免疫信号",
+        "细胞活化",
+        "炎症反应",
+        "免疫协作",
+        "细胞因子作用"
+      ],
+      "encyclopediaTags": [
+        "细胞因子",
+        "免疫信号",
+        "IL-12",
+        "NK细胞",
+        "炎症反应"
+      ],
+      "parentNote": "把“细胞因子是什么：细胞之间的化学信息”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "cytokines-il12-activation",
+      "topicId": "cytokines",
+      "title": "IL-12怎样帮助激活免疫细胞",
+      "coreQuestion": "免疫反应为什么需要被调节，而不是无限增强？",
+      "explanation": "这个小站围绕细胞活化、免疫信号、IL-12展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察细胞活化、细胞因子、IL-12，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cytokines/cytokines-v2-station-02.webp",
+      "imageAlt": "细胞因子：IL-12怎样帮助激活免疫细胞的儿童科普解释图。",
+      "relatedPageIds": [
+        "cytokines__v05_page-090",
+        "cytokines__v05_page-093"
+      ],
+      "biologyConcepts": [
+        "细胞活化",
+        "免疫信号",
+        "IL-12",
+        "免疫协作",
+        "炎症反应"
+      ],
+      "encyclopediaTags": [
+        "细胞活化",
+        "细胞因子",
+        "IL-12",
+        "NK细胞",
+        "炎症反应"
+      ],
+      "parentNote": "把“IL-12怎样帮助激活免疫细胞”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "cytokines-team-coordination",
+      "topicId": "cytokines",
+      "title": "免疫细胞为什么需要互相通知",
+      "coreQuestion": "这一页最适合做哪个身体科学小站：结构、功能、风险，还是救援？",
+      "explanation": "这个小站围绕NK细胞活化、信号传递、免疫判断展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察NK细胞、细胞因子、乳酸菌，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cytokines/cytokines-v2-station-03.webp",
+      "imageAlt": "细胞因子：免疫细胞为什么需要互相通知的儿童科普解释图。",
+      "relatedPageIds": [
+        "cytokines__v05_page-084",
+        "cytokines__v05_page-094"
+      ],
+      "biologyConcepts": [
+        "NK细胞活化",
+        "信号传递",
+        "免疫判断",
+        "免疫信号",
+        "细胞活化"
+      ],
+      "encyclopediaTags": [
+        "NK细胞",
+        "细胞因子",
+        "乳酸菌",
+        "IL-12",
+        "炎症反应"
+      ],
+      "parentNote": "把“免疫细胞为什么需要互相通知”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "cytokines-too-strong-signals",
+      "topicId": "cytokines",
+      "title": "炎症反应为什么既有保护作用也可能造成不适",
+      "coreQuestion": "这一页里，哪个画面像“细胞在互相发消息”？",
+      "explanation": "这个小站围绕信号扩散、免疫协作、IL-12展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察细胞活化、免疫协作、IL-12，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cytokines/cytokines-v2-station-04.webp",
+      "imageAlt": "细胞因子：炎症反应为什么既有保护作用也可能造成不适的儿童科普解释图。",
+      "relatedPageIds": [
+        "cytokines__v05_page-095",
+        "cytokines__v05_page-099"
+      ],
+      "biologyConcepts": [
+        "信号扩散",
+        "免疫协作",
+        "IL-12",
+        "细胞活化",
+        "免疫信号"
+      ],
+      "encyclopediaTags": [
+        "细胞活化",
+        "免疫协作",
+        "IL-12",
+        "细胞因子",
+        "NK细胞"
+      ],
+      "parentNote": "把“炎症反应为什么既有保护作用也可能造成不适”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "cytokines-q01",
+      "topicId": "cytokines",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "细胞互相传信",
+      "question": "如果免疫细胞不能互相传信，会发生什么？",
+      "answer": "可以围绕免疫信号、细胞活化、炎症反应来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cytokines__v05_page-077",
+        "cytokines__v05_page-080"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "免疫信号",
+        "细胞活化",
+        "炎症反应"
+      ]
+    },
+    {
+      "cardId": "cytokines-q02",
+      "topicId": "cytokines",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "细胞因子的通信方式",
+      "question": "细胞因子像生活中的什么通信方式？",
+      "answer": "可以围绕细胞活化、免疫信号、IL-12来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cytokines__v05_page-090",
+        "cytokines__v05_page-093"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "细胞活化",
+        "免疫信号",
+        "IL-12"
+      ]
+    },
+    {
+      "cardId": "cytokines-q03",
+      "topicId": "cytokines",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "免疫反应不能越强越好",
+      "question": "为什么免疫反应越强不一定越好？",
+      "answer": "可以围绕NK细胞活化、信号传递、免疫判断来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cytokines__v05_page-084",
+        "cytokines__v05_page-094"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "NK细胞活化",
+        "信号传递",
+        "免疫判断"
+      ]
+    },
+    {
+      "cardId": "cytokines-q04",
+      "topicId": "cytokines",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "信号被放大的画面",
+      "question": "画面里哪些地方表现了“信号被放大”？",
+      "answer": "可以围绕信号扩散、免疫协作、IL-12来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cytokines__v05_page-095",
+        "cytokines__v05_page-099"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "信号扩散",
+        "免疫协作",
+        "IL-12"
+      ]
+    },
+    {
+      "cardId": "cytokines-q05",
+      "topicId": "cytokines",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "细胞在互相发消息",
+      "question": "这一页里，哪个画面像“细胞在互相发消息”？",
+      "answer": "可以围绕免疫信号、细胞活化、炎症反应来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cytokines__v05_page-077",
+        "cytokines__v05_page-080"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "免疫信号",
+        "细胞活化",
+        "炎症反应"
+      ]
+    },
+    {
+      "cardId": "cytokines-q06",
+      "topicId": "cytokines",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "免疫反应需要调节",
+      "question": "免疫反应为什么需要被调节，而不是无限增强？",
+      "answer": "可以围绕细胞活化、免疫信号、IL-12来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "cytokines__v05_page-090",
+        "cytokines__v05_page-093"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "细胞活化",
+        "免疫信号",
+        "IL-12"
+      ]
+    }
+  ],
+  "parentReadingNote": "本主题涉及免疫信号、强烈战斗和“细胞因子风暴”等延伸词。共读时请强调漫画夸张不等于现实重症判断；动画线索来自 audio-fallback，需保留人工复核提醒。",
+  "sensitiveContentGuidance": "本主题有强烈战斗、爆炸、免疫细胞受伤和病原体压迫画面。涉及“细胞因子风暴”时应谨慎：可以作为百科延伸词，但不要把漫画中的夸张战斗直接等同现实重症；现实免疫失调需要医学专业判断。",
+  "sourceNotes": [
+    "漫画来源：第5卷 第22话，只保留页码线索，不展示漫画全文。"
+  ],
+  "pageRefs": {
+    "cytokines__v05_page-077": {
+      "pageId": "cytokines__v05_page-077",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cytokines__v05_page-077.webp",
+      "label": "漫画页 77"
+    },
+    "cytokines__v05_page-080": {
+      "pageId": "cytokines__v05_page-080",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cytokines__v05_page-080.webp",
+      "label": "漫画页 80"
+    },
+    "cytokines__v05_page-090": {
+      "pageId": "cytokines__v05_page-090",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cytokines__v05_page-090.webp",
+      "label": "漫画页 90"
+    },
+    "cytokines__v05_page-093": {
+      "pageId": "cytokines__v05_page-093",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cytokines__v05_page-093.webp",
+      "label": "漫画页 93"
+    },
+    "cytokines__v05_page-084": {
+      "pageId": "cytokines__v05_page-084",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cytokines__v05_page-084.webp",
+      "label": "漫画页 84"
+    },
+    "cytokines__v05_page-094": {
+      "pageId": "cytokines__v05_page-094",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cytokines__v05_page-094.webp",
+      "label": "漫画页 94"
+    },
+    "cytokines__v05_page-095": {
+      "pageId": "cytokines__v05_page-095",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cytokines__v05_page-095.webp",
+      "label": "漫画页 95"
+    },
+    "cytokines__v05_page-099": {
+      "pageId": "cytokines__v05_page-099",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cytokines__v05_page-099.webp",
+      "label": "漫画页 99"
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 11,
+  "topicId": "thymocyte",
+  "slug": "thymocyte",
+  "title": "胸腺细胞",
+  "displayTitle": "胸腺细胞",
+  "category": "免疫细胞发育",
+  "source": {
+    "volume": 3,
+    "chapterLabel": "第12话",
+    "sourceLabel": "第3卷 第12话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "胸腺细胞主题把T细胞成熟过程画成训练与筛选。共读时可以把考核画面转回真实机制：T细胞需要在胸腺中学习识别目标，经过选择过程，减少无效反应和误伤自身的风险，最后成为能参与免疫工作的成熟T细胞。",
+    "readingFocus": "“T细胞为什么要训练”：用胸腺环境、抗原识别、阳性/阴性选择和成熟后分工四个节点说明，不展示漫画全文或动画对白。",
+    "keyBiologyConcepts": [
+      "胸腺",
+      "胸腺细胞",
+      "T细胞成熟",
+      "阳性选择",
+      "阴性选择",
+      "自我/非我识别",
+      "抗原识别",
+      "免疫耐受"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "胸腺是T细胞成熟的重要场所",
+      "T细胞需要学会识别抗原",
+      "筛选机制帮助减少误伤",
+      "成熟T细胞再参与免疫任务"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "thymocyte-thymus-training-place",
+      "topicId": "thymocyte",
+      "title": "胸腺像T细胞训练场",
+      "coreQuestion": "T细胞为什么不是一出生就直接上岗？",
+      "explanation": "T细胞在胸腺中经历成熟和筛选。这个过程帮助它们具备识别目标、参与免疫反应的能力。",
+      "imageAsset": "public/assets/cells-at-work/science-station/thymocyte/thymocyte-v2-station-01.webp",
+      "imageAlt": "胸腺剖面中未成熟T细胞经过训练检查点的科普示意图。",
+      "relatedPageIds": [
+        "thymocyte__v03_page-061",
+        "thymocyte__v03_page-067"
+      ],
+      "biologyConcepts": [
+        "胸腺",
+        "胸腺细胞",
+        "T细胞成熟"
+      ],
+      "encyclopediaTags": [
+        "胸腺",
+        "T细胞",
+        "免疫成熟"
+      ],
+      "parentNote": "把训练场作为比喻，避免讲成排名或输赢。"
+    },
+    {
+      "stationId": "thymocyte-antigen-recognition",
+      "topicId": "thymocyte",
+      "title": "T细胞要学会识别抗原",
+      "coreQuestion": "免疫细胞为什么要认得目标？",
+      "explanation": "抗原像免疫系统识别目标的线索。T细胞需要能读懂这些线索，才可能在需要时参与反应。",
+      "imageAsset": "public/assets/cells-at-work/science-station/thymocyte/thymocyte-v2-station-02.webp",
+      "imageAlt": "T细胞面对不同抗原线索并学习识别目标的原创流程图。",
+      "relatedPageIds": [
+        "thymocyte__v03_page-083",
+        "thymocyte__v03_page-085"
+      ],
+      "biologyConcepts": [
+        "抗原识别",
+        "T细胞受体",
+        "目标识别"
+      ],
+      "encyclopediaTags": [
+        "抗原",
+        "T细胞",
+        "免疫识别"
+      ],
+      "parentNote": "可以用“看线索”解释抗原，不把抗原画成敌人名字牌。"
+    },
+    {
+      "stationId": "thymocyte-selection-reduces-mistakes",
+      "topicId": "thymocyte",
+      "title": "筛选帮助减少误伤",
+      "coreQuestion": "为什么免疫系统不能随便攻击？",
+      "explanation": "胸腺选择会帮助筛掉不合适的T细胞，让免疫系统更可能攻击真正风险，而不是伤到身体自己。",
+      "imageAsset": "public/assets/cells-at-work/science-station/thymocyte/thymocyte-v2-station-03.webp",
+      "imageAlt": "胸腺选择检查点把合适和不合适T细胞分开的温和示意图。",
+      "relatedPageIds": [
+        "thymocyte__v03_page-080",
+        "thymocyte__v03_page-084"
+      ],
+      "biologyConcepts": [
+        "阳性选择",
+        "阴性选择",
+        "免疫耐受"
+      ],
+      "encyclopediaTags": [
+        "胸腺选择",
+        "自我识别",
+        "免疫耐受"
+      ],
+      "parentNote": "强调“少误伤”比“谁最强”更重要。"
+    },
+    {
+      "stationId": "thymocyte-mature-t-cell-work",
+      "topicId": "thymocyte",
+      "title": "成熟T细胞再去参与免疫任务",
+      "coreQuestion": "通过筛选后，T细胞会做什么？",
+      "explanation": "成熟T细胞会离开胸腺，在身体里承担辅助、识别或清除相关任务。不同T细胞分工不同。",
+      "imageAsset": "public/assets/cells-at-work/science-station/thymocyte/thymocyte-v2-station-04.webp",
+      "imageAlt": "成熟T细胞从胸腺出发，分成不同免疫任务路线的儿童科普图。",
+      "relatedPageIds": [
+        "thymocyte__v03_page-089",
+        "thymocyte__v03_page-094"
+      ],
+      "biologyConcepts": [
+        "成熟T细胞",
+        "辅助T细胞",
+        "杀手T细胞"
+      ],
+      "encyclopediaTags": [
+        "T细胞分工",
+        "免疫系统",
+        "细胞成熟"
+      ],
+      "parentNote": "把结尾落在“合适的细胞做合适的工作”。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "thymocyte-q01",
+      "topicId": "thymocyte",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "训练在哪里发生",
+      "question": "看相关页面时，哪些线索说明这是T细胞训练和筛选的地方？",
+      "answer": "可以找胸腺环境、训练规则、考核队列和筛选关卡。",
+      "relatedPageIds": [
+        "thymocyte__v03_page-061",
+        "thymocyte__v03_page-067"
+      ],
+      "parentHint": "先观察环境，不复述冲突。",
+      "biologyConcepts": [
+        "胸腺",
+        "T细胞成熟"
+      ]
+    },
+    {
+      "cardId": "thymocyte-q02",
+      "topicId": "thymocyte",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "检查点像什么",
+      "question": "哪些页面让你感觉T细胞正在经过检查点？",
+      "answer": "考核、队列、选择机制和通过/出局对照都像检查点。",
+      "relatedPageIds": [
+        "thymocyte__v03_page-080",
+        "thymocyte__v03_page-084"
+      ],
+      "parentHint": "把检查点讲成身体保护机制。",
+      "biologyConcepts": [
+        "胸腺选择",
+        "筛选"
+      ]
+    },
+    {
+      "cardId": "thymocyte-q03",
+      "topicId": "thymocyte",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么要识别抗原",
+      "question": "T细胞为什么要学会识别抗原，而不是看到东西就攻击？",
+      "answer": "因为免疫反应需要目标线索，随便攻击可能造成误伤。",
+      "relatedPageIds": [
+        "thymocyte__v03_page-083"
+      ],
+      "parentHint": "用“先认线索再行动”解释。",
+      "biologyConcepts": [
+        "抗原识别",
+        "免疫耐受"
+      ]
+    },
+    {
+      "cardId": "thymocyte-q04",
+      "topicId": "thymocyte",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么要减少误伤",
+      "question": "如果T细胞分不清自己和外来风险，会发生什么问题？",
+      "answer": "它可能攻击身体自己的组织，所以胸腺筛选很重要。",
+      "relatedPageIds": [
+        "thymocyte__v03_page-085"
+      ],
+      "parentHint": "保持概念层面，不展开疾病诊断。",
+      "biologyConcepts": [
+        "自我/非我识别",
+        "免疫耐受"
+      ]
+    },
+    {
+      "cardId": "thymocyte-q05",
+      "topicId": "thymocyte",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "训练不是比赛",
+      "question": "家长怎样把漫画里的训练讲成身体机制，而不是排名比赛？",
+      "answer": "可以说身体在挑选“适合做免疫工作的细胞”，不是评谁最厉害。",
+      "relatedPageIds": [
+        "thymocyte__v03_page-079",
+        "thymocyte__v03_page-087"
+      ],
+      "parentHint": "避免把失败讲成羞辱。",
+      "biologyConcepts": [
+        "细胞成熟",
+        "筛选机制"
+      ]
+    },
+    {
+      "cardId": "thymocyte-q06",
+      "topicId": "thymocyte",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "胸腺有什么用",
+      "question": "胸腺在免疫系统里最适合被理解成什么？",
+      "answer": "它是T细胞成熟和筛选的重要场所。",
+      "relatedPageIds": [
+        "thymocyte__v03_page-061",
+        "thymocyte__v03_page-067"
+      ],
+      "parentHint": "用一句话收束概念。",
+      "biologyConcepts": [
+        "胸腺",
+        "T细胞成熟"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题有竞争、淘汰和训练失败的拟人化画面。共读时请把重点放在胸腺筛选如何减少误伤，不把筛选讲成孩子之间的强弱比较。",
+  "sensitiveContentGuidance": "有较多训练、打斗、淘汰和同伴冲突画面。建议家长把“失败/淘汰”解释为细胞成熟过程中的筛选机制，不要引导成对孩子个人价值的评价。",
+  "sourceNotes": [
+    "漫画来源：第3卷 第12话，只保留页码线索，不展示漫画全文。"
+  ],
+  "pageRefs": {
+    "thymocyte__v03_page-061": {
+      "pageId": "thymocyte__v03_page-061",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/thymocyte__v03_page-061.webp",
+      "label": "漫画页 61"
+    },
+    "thymocyte__v03_page-067": {
+      "pageId": "thymocyte__v03_page-067",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/thymocyte__v03_page-067.webp",
+      "label": "漫画页 67"
+    },
+    "thymocyte__v03_page-083": {
+      "pageId": "thymocyte__v03_page-083",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/thymocyte__v03_page-083.webp",
+      "label": "漫画页 83"
+    },
+    "thymocyte__v03_page-085": {
+      "pageId": "thymocyte__v03_page-085",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/thymocyte__v03_page-085.webp",
+      "label": "漫画页 85"
+    },
+    "thymocyte__v03_page-080": {
+      "pageId": "thymocyte__v03_page-080",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/thymocyte__v03_page-080.webp",
+      "label": "漫画页 80"
+    },
+    "thymocyte__v03_page-084": {
+      "pageId": "thymocyte__v03_page-084",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/thymocyte__v03_page-084.webp",
+      "label": "漫画页 84"
+    },
+    "thymocyte__v03_page-089": {
+      "pageId": "thymocyte__v03_page-089",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/thymocyte__v03_page-089.webp",
+      "label": "漫画页 89"
+    },
+    "thymocyte__v03_page-094": {
+      "pageId": "thymocyte__v03_page-094",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/thymocyte__v03_page-094.webp",
+      "label": "漫画页 94"
+    },
+    "thymocyte__v03_page-079": {
+      "pageId": "thymocyte__v03_page-079",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/thymocyte__v03_page-079.webp",
+      "label": "漫画页 79"
+    },
+    "thymocyte__v03_page-087": {
+      "pageId": "thymocyte__v03_page-087",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/thymocyte__v03_page-087.webp",
+      "label": "漫画页 87"
+    }
+  }
+}

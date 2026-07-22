@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 6,
+  "topicId": "heatstroke",
+  "slug": "heatstroke",
+  "title": "中暑",
+  "displayTitle": "中暑",
+  "category": "健康教育",
+  "source": {
+    "volume": 2,
+    "chapterLabel": "第6话",
+    "sourceLabel": "第2卷 第6话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "高温环境下，身体水分减少、体温上升、血液循环变得吃力，细胞和免疫系统逐渐失去工作能力。外部补水、降温和输液等支持让身体恢复。主题适合转化为家庭安全教育：热天补水、避暑、休息和识别中暑信号。",
+    "readingFocus": "“热天身体怎么散热”：用汗腺、血流和补水三个图示说明人体如何散热；把“口渴、头晕、脸红、无力”做成孩子能识别的中暑信号卡。",
+    "keyBiologyConcepts": [
+      "中暑",
+      "体温调节",
+      "出汗散热",
+      "脱水",
+      "血容量减少",
+      "电解质与水分平衡",
+      "循环负担",
+      "补水和降温",
+      "输液支持"
+    ],
+    "recommendedBodyScienceStationFocus": "“热天身体怎么散热”：用汗腺、血流和补水三个图示说明人体如何散热；把“口渴、头晕、脸红、无力”做成孩子能识别的中暑信号卡。"
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "heatstroke-temperature-balance",
+      "topicId": "heatstroke",
+      "title": "身体为什么需要保持体温稳定",
+      "coreQuestion": "为什么身体不能一直变得很热？",
+      "explanation": "身体里的细胞适合在比较稳定的温度下工作。环境太热、身体散热不够时，细胞会变得吃力，人也可能头晕、无力。",
+      "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-v2-station-01.webp",
+      "imageAlt": "身体像温和的平衡系统一样保持体温稳定，外界太阳和体内细胞用清楚结构表现。",
+      "relatedPageIds": [
+        "heatstroke__v02_page-033"
+      ],
+      "biologyConcepts": [
+        "体温调节",
+        "高温环境",
+        "细胞稳态"
+      ],
+      "encyclopediaTags": [
+        "体温",
+        "稳态",
+        "中暑"
+      ],
+      "parentNote": "用“身体喜欢稳定温度”解释，不把中暑画成可怕事件。"
+    },
+    {
+      "stationId": "heatstroke-sweat-cooling",
+      "topicId": "heatstroke",
+      "title": "出汗为什么可以帮助散热",
+      "coreQuestion": "汗水怎么帮身体变凉？",
+      "explanation": "出汗后，汗水从皮肤表面蒸发，会带走一部分热量。这个过程需要身体有足够水分，所以热天补水很重要。",
+      "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-v2-station-02.webp",
+      "imageAlt": "皮肤表面汗滴蒸发带走热量，旁边有清凉气流和水分补充图标的儿童科普图。",
+      "relatedPageIds": [
+        "heatstroke__v02_page-036"
+      ],
+      "biologyConcepts": [
+        "出汗散热",
+        "蒸发",
+        "水分平衡"
+      ],
+      "encyclopediaTags": [
+        "汗腺",
+        "出汗",
+        "散热"
+      ],
+      "parentNote": "可以让孩子想象洗手后风吹会凉，但强调热天仍要休息补水。"
+    },
+    {
+      "stationId": "heatstroke-water-salt-loss",
+      "topicId": "heatstroke",
+      "title": "缺水和盐分流失为什么会危险",
+      "coreQuestion": "只要喝一点水，就一定没事了吗？",
+      "explanation": "大量出汗会让身体失去水分，也会带走一些盐分。缺水会让血液循环更吃力，严重时需要成人及时处理。",
+      "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-v2-station-03.webp",
+      "imageAlt": "水滴和盐分小颗粒从身体散热系统流失，循环管道变得吃力的温和示意图。",
+      "relatedPageIds": [
+        "heatstroke__v02_page-040",
+        "heatstroke__v02_page-050"
+      ],
+      "biologyConcepts": [
+        "脱水",
+        "电解质",
+        "血液循环负担"
+      ],
+      "encyclopediaTags": [
+        "水分",
+        "盐分",
+        "脱水"
+      ],
+      "parentNote": "不让孩子自行判断严重程度，强调不舒服要告诉成人。"
+    },
+    {
+      "stationId": "heatstroke-cool-rest-help",
+      "topicId": "heatstroke",
+      "title": "中暑时为什么要降温、补水、休息并求助",
+      "coreQuestion": "觉得很热很晕时，身体最需要什么帮助？",
+      "explanation": "中暑风险出现时，应尽快离开高温环境，到阴凉处休息，降温和补水，并及时让成人知道；严重不适要寻求专业帮助。",
+      "imageAsset": "public/assets/cells-at-work/science-station/heatstroke/heatstroke-v2-station-04.webp",
+      "imageAlt": "孩子在阴凉处休息、补水、用凉毛巾降温，成人在旁边帮助的温和安全科普图。",
+      "relatedPageIds": [
+        "heatstroke__v02_page-056",
+        "heatstroke__v02_page-062"
+      ],
+      "biologyConcepts": [
+        "降温",
+        "补水",
+        "成人求助"
+      ],
+      "encyclopediaTags": [
+        "阴凉处",
+        "休息",
+        "求助成人"
+      ],
+      "parentNote": "把它作为安全行动清单：停下来、去阴凉处、喝水、找成人。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "heatstroke-q01",
+      "topicId": "heatstroke",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "哪里很热",
+      "question": "看相关页面时，哪些线索让你觉得环境太热了？",
+      "answer": "可以看太阳、高温、细胞无力和水分减少的线索。",
+      "relatedPageIds": [
+        "heatstroke__v02_page-033"
+      ],
+      "parentHint": "把观察转成安全提醒。",
+      "biologyConcepts": [
+        "高温环境",
+        "中暑"
+      ]
+    },
+    {
+      "cardId": "heatstroke-q03",
+      "topicId": "heatstroke",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么要稳定体温",
+      "question": "为什么身体要努力保持合适的温度？",
+      "answer": "因为细胞在稳定温度下更容易正常工作。",
+      "relatedPageIds": [
+        "heatstroke__v02_page-033"
+      ],
+      "parentHint": "用“机器太热会不好工作”作简单类比。",
+      "biologyConcepts": [
+        "体温调节",
+        "稳态"
+      ]
+    },
+    {
+      "cardId": "heatstroke-q04",
+      "topicId": "heatstroke",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "汗水怎样散热",
+      "question": "出汗为什么能让身体凉一点？",
+      "answer": "汗水蒸发时会带走热量，帮助皮肤表面降温。",
+      "relatedPageIds": [
+        "heatstroke__v02_page-036"
+      ],
+      "parentHint": "可以联系洗手后风吹变凉的体验。",
+      "biologyConcepts": [
+        "出汗",
+        "蒸发散热"
+      ]
+    },
+    {
+      "cardId": "heatstroke-q05",
+      "topicId": "heatstroke",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "热天怎么预防",
+      "question": "大热天外出前，可以做哪些准备保护身体？",
+      "answer": "带水、戴帽子、避开暴晒、安排休息，并听成人安排。",
+      "relatedPageIds": [
+        "heatstroke__v02_page-056"
+      ],
+      "parentHint": "强调预防，不制造恐慌。",
+      "biologyConcepts": [
+        "补水",
+        "避暑"
+      ]
+    },
+    {
+      "cardId": "heatstroke-q06",
+      "topicId": "heatstroke",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "什么时候找成人",
+      "question": "如果你觉得头晕、很热、没力气，应该怎么办？",
+      "answer": "马上告诉成人，去阴凉处休息、降温、补水；严重不适要及时求助。",
+      "relatedPageIds": [
+        "heatstroke__v02_page-062"
+      ],
+      "parentHint": "这是安全边界，孩子不需要自己硬撑。",
+      "biologyConcepts": [
+        "求助成人",
+        "安全行动"
+      ]
+    },
+    {
+      "cardId": "heatstroke-q08",
+      "topicId": "heatstroke",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "降温和补水",
+      "question": "中暑风险出现时，为什么要同时降温和补水？",
+      "answer": "降温帮助身体减轻热负担，补水帮助恢复流失的水分。",
+      "relatedPageIds": [
+        "heatstroke__v02_page-056"
+      ],
+      "parentHint": "强调行动顺序：停下、阴凉、降温、补水、找成人。",
+      "biologyConcepts": [
+        "降温",
+        "补水"
+      ]
+    }
+  ],
+  "parentReadingNote": "中暑可能危险，但共读时不必制造紧张感。请把重点放在预防、休息、降温、补水，以及头晕、无力、很热时及时求助成人。",
+  "sensitiveContentGuidance": "有细胞虚弱、倒下、危机和医疗介入画面。家长应把它作为安全提醒，不制造恐慌：移到阴凉处、补水、降温，严重症状需立即求助成人和医生。",
+  "sourceNotes": [
+    "漫画来源：第2卷 第6话，只保留页码线索，不展示漫画全文。",
+    "动画来源只记录主题级摘要和集数线索，不接入视频、字幕或对白。"
+  ],
+  "pageRefs": {
+    "heatstroke__v02_page-033": {
+      "pageId": "heatstroke__v02_page-033",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/heatstroke__v02_page-033.webp",
+      "label": "漫画页 33"
+    },
+    "heatstroke__v02_page-036": {
+      "pageId": "heatstroke__v02_page-036",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/heatstroke__v02_page-036.webp",
+      "label": "漫画页 36"
+    },
+    "heatstroke__v02_page-040": {
+      "pageId": "heatstroke__v02_page-040",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/heatstroke__v02_page-040.webp",
+      "label": "漫画页 40"
+    },
+    "heatstroke__v02_page-050": {
+      "pageId": "heatstroke__v02_page-050",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/heatstroke__v02_page-050.webp",
+      "label": "漫画页 50"
+    },
+    "heatstroke__v02_page-056": {
+      "pageId": "heatstroke__v02_page-056",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/heatstroke__v02_page-056.webp",
+      "label": "漫画页 56"
+    },
+    "heatstroke__v02_page-062": {
+      "pageId": "heatstroke__v02_page-062",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/heatstroke__v02_page-062.webp",
+      "label": "漫画页 62"
+    }
+  }
+}

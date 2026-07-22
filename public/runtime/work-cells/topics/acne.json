@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 13,
+  "topicId": "acne",
+  "slug": "acne",
+  "title": "痤疮",
+  "displayTitle": "痤疮",
+  "category": "皮肤健康",
+  "source": {
+    "volume": 3,
+    "chapterLabel": "第14话",
+    "sourceLabel": "第3卷 第14话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "主题把皮肤毛孔、皮脂、毛囊和痤疮相关细菌拟人化。毛孔被皮脂和角质堵塞后，局部环境变得适合细菌繁殖，白血球进入后引发炎症反应，形成脓液和痘痘。故事也通过毛母细胞和皮肤细胞的互动，适合向孩子解释：痘痘不是“脏”或“羞耻”，而是皮肤结构、皮脂和免疫反应共同造成的。",
+    "readingFocus": "“痘痘怎样形成”：用毛孔堵塞、皮脂增多、痤疮相关细菌繁殖和白血球炎症反应四个节点说明；同时避免把痘痘说成羞耻或单纯不干净。",
+    "keyBiologyConcepts": [
+      "痤疮",
+      "皮肤",
+      "毛孔",
+      "毛囊",
+      "皮脂腺",
+      "皮脂",
+      "角质堵塞",
+      "痤疮丙酸杆菌",
+      "炎症",
+      "脓液"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "痘痘形成的四个因素：毛孔、皮脂、细菌、炎症",
+      "毛囊和皮脂腺在皮肤里的位置",
+      "为什么不能乱挤痘痘",
+      "脓液是免疫细胞战斗后的结果之一",
+      "青春期皮脂变化的温和说明"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "acne-pore-blockage",
+      "topicId": "acne",
+      "title": "痘痘形成的四个因素：毛孔、皮脂、细菌、炎症",
+      "coreQuestion": "这一页能看到毛孔、皮脂或细菌的哪个线索？",
+      "explanation": "这个小站围绕毛孔堵塞、皮脂分泌、细菌繁殖展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察痤疮、皮肤、毛孔，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/acne/acne-v2-station-01.webp",
+      "imageAlt": "痤疮：痘痘形成的四个因素：毛孔、皮脂、细菌、炎症的儿童科普解释图。",
+      "relatedPageIds": [
+        "acne__v03_page-133",
+        "acne__v03_page-138"
+      ],
+      "biologyConcepts": [
+        "毛孔堵塞",
+        "皮脂分泌",
+        "细菌繁殖",
+        "炎症反应",
+        "脓液形成"
+      ],
+      "encyclopediaTags": [
+        "痤疮",
+        "皮肤",
+        "毛孔",
+        "皮脂腺",
+        "痤疮丙酸杆菌"
+      ],
+      "parentNote": "把“痘痘形成的四个因素：毛孔、皮脂、细菌、炎症”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "acne-sebum-and-bacteria",
+      "topicId": "acne",
+      "title": "毛囊和皮脂腺在皮肤里的位置",
+      "coreQuestion": "为什么痘痘不是简单的“脏”造成的？",
+      "explanation": "这个小站围绕毛孔堵塞、皮脂分泌、细菌繁殖展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察痤疮、皮肤、毛孔，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/acne/acne-v2-station-02.webp",
+      "imageAlt": "痤疮：毛囊和皮脂腺在皮肤里的位置的儿童科普解释图。",
+      "relatedPageIds": [
+        "acne__v03_page-136",
+        "acne__v03_page-139"
+      ],
+      "biologyConcepts": [
+        "毛孔堵塞",
+        "皮脂分泌",
+        "细菌繁殖",
+        "炎症反应",
+        "脓液形成"
+      ],
+      "encyclopediaTags": [
+        "痤疮",
+        "皮肤",
+        "毛孔",
+        "皮脂腺",
+        "痤疮丙酸杆菌"
+      ],
+      "parentNote": "把“毛囊和皮脂腺在皮肤里的位置”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "acne-inflammation-and-pus",
+      "topicId": "acne",
+      "title": "为什么不能乱挤痘痘",
+      "coreQuestion": "这一页能看到毛孔、皮脂或细菌的哪个线索？",
+      "explanation": "这个小站围绕毛孔堵塞、皮脂分泌、细菌繁殖展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察痤疮、皮肤、毛孔，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/acne/acne-v2-station-03.webp",
+      "imageAlt": "痤疮：为什么不能乱挤痘痘的儿童科普解释图。",
+      "relatedPageIds": [
+        "acne__v03_page-147",
+        "acne__v03_page-152"
+      ],
+      "biologyConcepts": [
+        "毛孔堵塞",
+        "皮脂分泌",
+        "细菌繁殖",
+        "炎症反应",
+        "脓液形成"
+      ],
+      "encyclopediaTags": [
+        "痤疮",
+        "皮肤",
+        "毛孔",
+        "皮脂腺",
+        "痤疮丙酸杆菌"
+      ],
+      "parentNote": "把“为什么不能乱挤痘痘”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "acne-gentle-skin-care-boundary",
+      "topicId": "acne",
+      "title": "脓液是免疫细胞战斗后的结果之一",
+      "coreQuestion": "为什么痘痘不是简单的“脏”造成的？",
+      "explanation": "这个小站围绕毛孔堵塞、皮脂分泌、细菌繁殖展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察痤疮、皮肤、毛孔，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/acne/acne-v2-station-04.webp",
+      "imageAlt": "痤疮：脓液是免疫细胞战斗后的结果之一的儿童科普解释图。",
+      "relatedPageIds": [
+        "acne__v03_page-153",
+        "acne__v03_page-154"
+      ],
+      "biologyConcepts": [
+        "毛孔堵塞",
+        "皮脂分泌",
+        "细菌繁殖",
+        "炎症反应",
+        "脓液形成"
+      ],
+      "encyclopediaTags": [
+        "痤疮",
+        "皮肤",
+        "毛孔",
+        "皮脂腺",
+        "痤疮丙酸杆菌"
+      ],
+      "parentNote": "把“脓液是免疫细胞战斗后的结果之一”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "acne-q01",
+      "topicId": "acne",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "痘痘的多重原因",
+      "question": "痘痘是因为一个原因造成的吗？",
+      "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "acne__v03_page-133",
+        "acne__v03_page-138"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "毛孔堵塞",
+        "皮脂分泌",
+        "细菌繁殖"
+      ]
+    },
+    {
+      "cardId": "acne-q02",
+      "topicId": "acne",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "毛孔堵塞的线索",
+      "question": "画面里哪里显示毛孔被堵住？",
+      "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "acne__v03_page-136",
+        "acne__v03_page-139"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "毛孔堵塞",
+        "皮脂分泌",
+        "细菌繁殖"
+      ]
+    },
+    {
+      "cardId": "acne-q03",
+      "topicId": "acne",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "白血球的清理工作",
+      "question": "白血球在痘痘里做了什么工作？",
+      "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "acne__v03_page-147",
+        "acne__v03_page-152"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "毛孔堵塞",
+        "皮脂分泌",
+        "细菌繁殖"
+      ]
+    },
+    {
+      "cardId": "acne-q04",
+      "topicId": "acne",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "不嘲笑皮肤问题",
+      "question": "为什么看到痘痘不应该嘲笑别人？",
+      "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "acne__v03_page-153",
+        "acne__v03_page-154"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "毛孔堵塞",
+        "皮脂分泌",
+        "细菌繁殖"
+      ]
+    },
+    {
+      "cardId": "acne-q05",
+      "topicId": "acne",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "毛孔皮脂和细菌线索",
+      "question": "这一页能看到毛孔、皮脂或细菌的哪个线索？",
+      "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "acne__v03_page-133",
+        "acne__v03_page-138"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "毛孔堵塞",
+        "皮脂分泌",
+        "细菌繁殖"
+      ]
+    },
+    {
+      "cardId": "acne-q06",
+      "topicId": "acne",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "痘痘不是脏造成的",
+      "question": "为什么痘痘不是简单的“脏”造成的？",
+      "answer": "可以围绕毛孔堵塞、皮脂分泌、细菌繁殖来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "acne__v03_page-136",
+        "acne__v03_page-139"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "毛孔堵塞",
+        "皮脂分泌",
+        "细菌繁殖"
+      ]
+    }
+  ],
+  "parentReadingNote": "本主题涉及脓液、皮肤红肿和外貌话题。共读时请使用非羞辱语言，强调痤疮是皮肤结构、皮脂、细菌和免疫反应共同造成的；动画线索来自 audio-fallback 且为 medium confidence，需要保留人工复核提醒。",
+  "sensitiveContentGuidance": "有脓液、皮肤肿胀、细菌怪物和战斗画面，也涉及外貌和皮肤问题。家庭阅读时建议用非羞辱语言，避免把痘痘和个人卫生简单等同。",
+  "sourceNotes": [
+    "漫画来源：第3卷 第14话，只保留页码线索，不展示漫画全文。"
+  ],
+  "pageRefs": {
+    "acne__v03_page-133": {
+      "pageId": "acne__v03_page-133",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/acne__v03_page-133.webp",
+      "label": "漫画页 133"
+    },
+    "acne__v03_page-138": {
+      "pageId": "acne__v03_page-138",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/acne__v03_page-138.webp",
+      "label": "漫画页 138"
+    },
+    "acne__v03_page-136": {
+      "pageId": "acne__v03_page-136",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/acne__v03_page-136.webp",
+      "label": "漫画页 136"
+    },
+    "acne__v03_page-139": {
+      "pageId": "acne__v03_page-139",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/acne__v03_page-139.webp",
+      "label": "漫画页 139"
+    },
+    "acne__v03_page-147": {
+      "pageId": "acne__v03_page-147",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/acne__v03_page-147.webp",
+      "label": "漫画页 147"
+    },
+    "acne__v03_page-152": {
+      "pageId": "acne__v03_page-152",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/acne__v03_page-152.webp",
+      "label": "漫画页 152"
+    },
+    "acne__v03_page-153": {
+      "pageId": "acne__v03_page-153",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/acne__v03_page-153.webp",
+      "label": "漫画页 153"
+    },
+    "acne__v03_page-154": {
+      "pageId": "acne__v03_page-154",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/acne__v03_page-154.webp",
+      "label": "漫画页 154"
+    }
+  }
+}

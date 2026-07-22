@@ -1,7 +1,10 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "test": "node scripts/run-tests.mjs",
+    "generate:runtime": "node scripts/generate-runtime-content.mjs --write",
+    "validate:runtime": "node scripts/generate-runtime-content.mjs --check",
     "validate:public-repo": "node scripts/validate-public-repository.mjs",
     "validate:work-cells-annotations": "node scripts/validate-work-cells-visual-annotations.mjs",
     "audit:dist": "node scripts/audit-dist-assets.mjs",

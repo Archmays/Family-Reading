@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 14,
+  "topicId": "staphylococcus-aureus",
+  "slug": "staphylococcus-aureus",
+  "title": "金黄色葡萄球菌",
+  "displayTitle": "金黄色葡萄球菌",
+  "category": "细菌感染与免疫",
+  "source": {
+    "volume": 4,
+    "chapterLabel": "第15话",
+    "sourceLabel": "第4卷 第15话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "金黄色葡萄球菌主题适合解释皮肤屏障、伤口感染、细菌成团聚集、毒素和化脓性炎症。共读时可以把敌人画面转成真实身体机制：皮肤破口让细菌有机会进入，白血球聚集清理，炎症是防御的一部分。",
+    "readingFocus": "“皮肤屏障为什么重要”：用屏障破损、葡萄球菌聚集、趋化信号、白血球吞噬和红肿热痛五个节点说明，不展示完整漫画或动画对白。",
+    "keyBiologyConcepts": [
+      "金黄色葡萄球菌",
+      "皮肤屏障",
+      "伤口感染",
+      "细菌聚集",
+      "毒素",
+      "白血球/中性粒细胞",
+      "吞噬",
+      "化脓性炎症"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "金黄色葡萄球菌为什么常和皮肤/伤口感染相关",
+      "细菌成团聚集的画面与葡萄球菌名称",
+      "化脓与白血球战斗后的关系",
+      "皮肤屏障破损后的风险",
+      "为什么伤口清洁很重要"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "staphylococcus-aureus-skin-barrier",
+      "topicId": "staphylococcus-aureus",
+      "title": "皮肤屏障挡住外来细菌",
+      "coreQuestion": "为什么皮肤破口会增加感染风险？",
+      "explanation": "完整皮肤像一层保护墙。破损后，金黄色葡萄球菌等细菌更容易靠近内部组织，免疫系统也会更忙。",
+      "imageAsset": "public/assets/cells-at-work/science-station/staphylococcus-aureus/staphylococcus-aureus-v2-station-01.webp",
+      "imageAlt": "皮肤剖面中，完整屏障和小破口旁的球状细菌形成对比。",
+      "relatedPageIds": [
+        "staphylococcus-aureus__v04_page-004",
+        "staphylococcus-aureus__v04_page-008"
+      ],
+      "biologyConcepts": [
+        "皮肤屏障",
+        "伤口感染",
+        "细菌入口"
+      ],
+      "encyclopediaTags": [
+        "皮肤",
+        "金黄色葡萄球菌",
+        "感染入口"
+      ],
+      "parentNote": "把伤口清洁讲成保护屏障，不渲染恐怖。"
+    },
+    {
+      "stationId": "staphylococcus-aureus-cluster-shape",
+      "topicId": "staphylococcus-aureus",
+      "title": "为什么叫“葡萄球菌”",
+      "coreQuestion": "这些细菌为什么常被画成一团一团？",
+      "explanation": "葡萄球菌在显微概念上常呈成簇排列，名字里的“葡萄”就来自这种聚集形态。科普图可以用小球成簇帮助孩子理解名称。",
+      "imageAsset": "public/assets/cells-at-work/science-station/staphylococcus-aureus/staphylococcus-aureus-v2-station-02.webp",
+      "imageAlt": "放大视角下，成簇小球状细菌像一串葡萄旁边有免疫警报。",
+      "relatedPageIds": [
+        "staphylococcus-aureus__v04_page-008",
+        "staphylococcus-aureus__v04_page-015"
+      ],
+      "biologyConcepts": [
+        "葡萄球菌",
+        "细菌形态",
+        "聚集"
+      ],
+      "encyclopediaTags": [
+        "金黄色葡萄球菌",
+        "细菌形态"
+      ],
+      "parentNote": "只讲名称和形态，不让孩子自行辨认真实感染。"
+    },
+    {
+      "stationId": "staphylococcus-aureus-white-cell-cleanup",
+      "topicId": "staphylococcus-aureus",
+      "title": "白血球会被信号叫来",
+      "coreQuestion": "免疫细胞怎么知道哪里出问题？",
+      "explanation": "组织受刺激时会释放信号，吸引白血球靠近。白血球到达后会包围、吞噬并清理细菌。",
+      "imageAsset": "public/assets/cells-at-work/science-station/staphylococcus-aureus/staphylococcus-aureus-v2-station-03.webp",
+      "imageAlt": "白血球沿着化学信号箭头靠近皮肤破口附近细菌的科普图。",
+      "relatedPageIds": [
+        "staphylococcus-aureus__v04_page-009",
+        "staphylococcus-aureus__v04_page-023"
+      ],
+      "biologyConcepts": [
+        "趋化",
+        "白血球",
+        "吞噬"
+      ],
+      "encyclopediaTags": [
+        "中性粒细胞",
+        "免疫清理"
+      ],
+      "parentNote": "把追击画面转成“信号把细胞叫来”。"
+    },
+    {
+      "stationId": "staphylococcus-aureus-pus-and-inflammation",
+      "topicId": "staphylococcus-aureus",
+      "title": "化脓是免疫战场的痕迹",
+      "coreQuestion": "红肿和脓为什么和免疫反应有关？",
+      "explanation": "化脓常和细菌、死亡细胞和白血球清理后的残留有关。红肿热痛也可能来自局部炎症反应，是身体防御的一部分。",
+      "imageAsset": "public/assets/cells-at-work/science-station/staphylococcus-aureus/staphylococcus-aureus-v2-station-04.webp",
+      "imageAlt": "局部炎症剖面中，白血球清理细菌并形成温和的红肿示意。",
+      "relatedPageIds": [
+        "staphylococcus-aureus__v04_page-031",
+        "staphylococcus-aureus__v04_page-032"
+      ],
+      "biologyConcepts": [
+        "化脓",
+        "炎症",
+        "组织修复"
+      ],
+      "encyclopediaTags": [
+        "化脓性炎症",
+        "红肿热痛"
+      ],
+      "parentNote": "提醒孩子有伤口问题要找成人，不自行挤压或处理。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "staphylococcus-aureus-q01",
+      "topicId": "staphylococcus-aureus",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "入口在哪里",
+      "question": "看相关页面时，哪些线索说明细菌可能从皮肤或伤口附近进入？",
+      "answer": "可以找皮肤表层、破损环境、细菌靠近和白血球反应的线索。",
+      "relatedPageIds": [
+        "staphylococcus-aureus__v04_page-004",
+        "staphylococcus-aureus__v04_page-008"
+      ],
+      "parentHint": "先看入口，不复述战斗。",
+      "biologyConcepts": [
+        "皮肤屏障",
+        "感染入口"
+      ]
+    },
+    {
+      "cardId": "staphylococcus-aureus-q02",
+      "topicId": "staphylococcus-aureus",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "细菌像什么形状",
+      "question": "金黄色葡萄球菌相关画面里，细菌是单个出现还是成团出现？",
+      "answer": "常可观察到成团聚集，这能帮助理解“葡萄球菌”的名称。",
+      "relatedPageIds": [
+        "staphylococcus-aureus__v04_page-015"
+      ],
+      "parentHint": "把形状观察连接到名字。",
+      "biologyConcepts": [
+        "细菌形态",
+        "葡萄球菌"
+      ]
+    },
+    {
+      "cardId": "staphylococcus-aureus-q03",
+      "topicId": "staphylococcus-aureus",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么会红肿",
+      "question": "伤口附近红肿是不是完全没有用？",
+      "answer": "红肿可能来自炎症反应，说明血流和免疫细胞正在参与防御，但严重或异常要找成人判断。",
+      "relatedPageIds": [
+        "staphylococcus-aureus__v04_page-023",
+        "staphylococcus-aureus__v04_page-031"
+      ],
+      "parentHint": "解释机制，同时保留求助边界。",
+      "biologyConcepts": [
+        "炎症",
+        "免疫反应"
+      ]
+    },
+    {
+      "cardId": "staphylococcus-aureus-q04",
+      "topicId": "staphylococcus-aureus",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "白血球做什么",
+      "question": "白血球在细菌感染里主要做什么？",
+      "answer": "它们会被信号吸引到局部，识别、吞噬并清理细菌。",
+      "relatedPageIds": [
+        "staphylococcus-aureus__v04_page-009",
+        "staphylococcus-aureus__v04_page-023"
+      ],
+      "parentHint": "用“清理队”解释。",
+      "biologyConcepts": [
+        "白血球",
+        "吞噬"
+      ]
+    },
+    {
+      "cardId": "staphylococcus-aureus-q05",
+      "topicId": "staphylococcus-aureus",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "伤口为什么要清洁",
+      "question": "小伤口为什么要告诉成人并清洁？",
+      "answer": "清洁和保护伤口能减少细菌进入机会，也保护皮肤屏障继续修复。",
+      "relatedPageIds": [
+        "staphylococcus-aureus__v04_page-004"
+      ],
+      "parentHint": "联系生活，不制造焦虑。",
+      "biologyConcepts": [
+        "伤口护理",
+        "皮肤屏障"
+      ]
+    },
+    {
+      "cardId": "staphylococcus-aureus-q06",
+      "topicId": "staphylococcus-aureus",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "化脓是什么线索",
+      "question": "脓和免疫细胞有什么关系？",
+      "answer": "脓可能包含死亡的白血球、细菌和组织残留，是局部免疫反应后的痕迹之一。",
+      "relatedPageIds": [
+        "staphylococcus-aureus__v04_page-031"
+      ],
+      "parentHint": "讲概念，不指导处理。",
+      "biologyConcepts": [
+        "化脓",
+        "白血球"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题有细菌入侵和化脓相关画面。共读时请把重点放在皮肤屏障、伤口清洁和免疫清理；如果孩子联想到真实伤口，提醒找成人处理并在需要时咨询专业医务人员。",
+  "sensitiveContentGuidance": "有明显战斗、体液/脓液飞溅和拟人化诱惑/伪装场面。建议面向孩子时强调伤口护理和免疫防御，不夸大恐惧。",
+  "sourceNotes": [
+    "漫画来源：第4卷 第15话，只保留页码线索，不展示漫画全文。",
+    "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。"
+  ],
+  "pageRefs": {
+    "staphylococcus-aureus__v04_page-004": {
+      "pageId": "staphylococcus-aureus__v04_page-004",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/staphylococcus-aureus__v04_page-004.webp",
+      "label": "漫画页 4"
+    },
+    "staphylococcus-aureus__v04_page-008": {
+      "pageId": "staphylococcus-aureus__v04_page-008",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/staphylococcus-aureus__v04_page-008.webp",
+      "label": "漫画页 8"
+    },
+    "staphylococcus-aureus__v04_page-015": {
+      "pageId": "staphylococcus-aureus__v04_page-015",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/staphylococcus-aureus__v04_page-015.webp",
+      "label": "漫画页 15"
+    },
+    "staphylococcus-aureus__v04_page-009": {
+      "pageId": "staphylococcus-aureus__v04_page-009",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/staphylococcus-aureus__v04_page-009.webp",
+      "label": "漫画页 9"
+    },
+    "staphylococcus-aureus__v04_page-023": {
+      "pageId": "staphylococcus-aureus__v04_page-023",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/staphylococcus-aureus__v04_page-023.webp",
+      "label": "漫画页 23"
+    },
+    "staphylococcus-aureus__v04_page-031": {
+      "pageId": "staphylococcus-aureus__v04_page-031",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/staphylococcus-aureus__v04_page-031.webp",
+      "label": "漫画页 31"
+    },
+    "staphylococcus-aureus__v04_page-032": {
+      "pageId": "staphylococcus-aureus__v04_page-032",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v04/staphylococcus-aureus__v04_page-032.webp",
+      "label": "漫画页 32"
+    }
+  }
+}

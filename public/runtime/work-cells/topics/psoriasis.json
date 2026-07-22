@@ -1,0 +1,346 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 26,
+  "topicId": "psoriasis",
+  "slug": "psoriasis",
+  "title": "银屑病",
+  "displayTitle": "银屑病（干癣）",
+  "category": "皮肤免疫",
+  "source": {
+    "volume": 6,
+    "chapterLabel": "特别篇",
+    "sourceLabel": "第6卷 特别篇"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "银屑病是一种与免疫反应和皮肤更新节奏有关的慢性炎症性皮肤问题。它不是“不干净”，也不是简单因为没有洗澡。这个主题要帮助孩子理解皮肤屏障、表皮更新、免疫反应过强和去污名化照护，同时提醒家长：皮肤症状需要温和照护，必要时咨询皮肤科医生。",
+    "readingFocus": "银屑病是一种与免疫反应和皮肤更新节奏有关的慢性炎症性皮肤问题。它不是“不干净”，也不是简单因为没有洗澡。这个主题要帮助孩子理解皮肤屏障、表皮更新、免疫反应过强和去污名化照护，同时提醒家长：皮肤症状需要温和照护，必要时咨询皮肤科医生。",
+    "keyBiologyConcepts": [
+      "皮肤屏障",
+      "表皮",
+      "角质形成细胞",
+      "皮肤更新",
+      "免疫炎症",
+      "T细胞",
+      "树突状细胞",
+      "细胞因子",
+      "鳞屑形成",
+      "红斑",
+      "慢性炎症",
+      "慢性病管理",
+      "皮肤科",
+      "健康照护",
+      "心理支持"
+    ],
+    "recommendedBodyScienceStationFocus": "银屑病是一种与免疫反应和皮肤更新节奏有关的慢性炎症性皮肤问题。它不是“不干净”，也不是简单因为没有洗澡。这个主题要帮助孩子理解皮肤屏障、表皮更新、免疫反应过强和去污名化照护，同时提醒家长：皮肤症状需要温和照护，必要时咨询皮肤科医生。"
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "psoriasis-skin-is-organ",
+      "topicId": "psoriasis",
+      "title": "皮肤更新为什么需要节奏",
+      "coreQuestion": "皮肤为什么不能更新得太快？",
+      "explanation": "皮肤表皮会不断更新，旧的角质细胞逐渐脱落，新的细胞慢慢补上。这个过程需要节奏。若更新过快，细胞还没来得及成熟和有序脱落，就容易堆积成鳞屑。",
+      "imageAsset": "public/assets/cells-at-work/science-station/psoriasis/psoriasis-v2-station-01.webp",
+      "imageAlt": "儿童科普插图：温和展示皮肤表皮细胞有节奏更新。",
+      "relatedPageIds": [
+        "psoriasis__v06_page-109",
+        "psoriasis__v06_page-110",
+        "psoriasis__v06_page-111",
+        "psoriasis__v06_page-112",
+        "psoriasis__v06_page-113"
+      ],
+      "biologyConcepts": [
+        "皮肤屏障",
+        "表皮",
+        "角质形成细胞",
+        "皮肤更新"
+      ],
+      "encyclopediaTags": [
+        "皮肤",
+        "表皮",
+        "角质形成细胞"
+      ],
+      "parentNote": "避免说“皮肤脏了”，要说“皮肤更新节奏乱了”。"
+    },
+    {
+      "stationId": "psoriasis-immune-overactivity",
+      "topicId": "psoriasis",
+      "title": "免疫反应过强如何影响皮肤",
+      "coreQuestion": "免疫系统为什么会让皮肤不舒服？",
+      "explanation": "免疫系统本来负责保护身体，但如果反应过强或信号持续活跃，就可能让皮肤处在炎症状态。银屑病中，免疫信号会影响角质形成细胞，让表皮更新变快，出现红斑、鳞屑等表现。",
+      "imageAsset": "public/assets/cells-at-work/science-station/psoriasis/psoriasis-v2-station-02.webp",
+      "imageAlt": "儿童科普插图：免疫信号过度活跃影响皮肤表层节奏。",
+      "relatedPageIds": [
+        "psoriasis__v06_page-114",
+        "psoriasis__v06_page-115",
+        "psoriasis__v06_page-116",
+        "psoriasis__v06_page-117",
+        "psoriasis__v06_page-118"
+      ],
+      "biologyConcepts": [
+        "免疫炎症",
+        "T细胞",
+        "树突状细胞",
+        "细胞因子"
+      ],
+      "encyclopediaTags": [
+        "炎症",
+        "免疫系统",
+        "细胞因子"
+      ],
+      "parentNote": "重点是“信号太活跃”，不是身体故意攻击自己。"
+    },
+    {
+      "stationId": "psoriasis-fast-epidermis-renewal",
+      "topicId": "psoriasis",
+      "title": "鳞屑和红斑不是“不干净”",
+      "coreQuestion": "为什么不能嘲笑或误会皮肤症状？",
+      "explanation": "银屑病的鳞屑和红斑来自皮肤更新和免疫炎症的改变，不是因为这个人不爱干净。看到皮肤问题时，最重要的是理解和尊重，不用奇怪的眼神看别人，也不要随便评论。",
+      "imageAsset": "public/assets/cells-at-work/science-station/psoriasis/psoriasis-v2-station-03.webp",
+      "imageAlt": "儿童科普插图：皮肤屏障出现红斑和轻微鳞屑，被温和、尊重地表现。",
+      "relatedPageIds": [
+        "psoriasis__v06_page-119",
+        "psoriasis__v06_page-120",
+        "psoriasis__v06_page-121",
+        "psoriasis__v06_page-122",
+        "psoriasis__v06_page-123"
+      ],
+      "biologyConcepts": [
+        "鳞屑形成",
+        "红斑",
+        "慢性炎症",
+        "皮肤屏障"
+      ],
+      "encyclopediaTags": [
+        "银屑病",
+        "鳞屑",
+        "慢性炎症"
+      ],
+      "parentNote": "这是去污名化重点卡，措辞必须温和。"
+    },
+    {
+      "stationId": "psoriasis-respect-and-management",
+      "topicId": "psoriasis",
+      "title": "慢性皮肤问题需要理解、照护和医生帮助",
+      "coreQuestion": "皮肤长期不舒服时，家人可以怎么帮忙？",
+      "explanation": "慢性皮肤问题可能反复出现，需要耐心照护。保持温和清洁、避免抓挠刺激、关注情绪和生活影响都很重要。如果皮肤症状明显、反复或影响生活，应由皮肤科医生评估。",
+      "imageAsset": "public/assets/cells-at-work/science-station/psoriasis/psoriasis-v2-station-04.webp",
+      "imageAlt": "儿童科普插图：家庭和医生以温和方式支持慢性皮肤照护。",
+      "relatedPageIds": [
+        "psoriasis__v06_page-124"
+      ],
+      "biologyConcepts": [
+        "慢性病管理",
+        "皮肤科",
+        "健康照护",
+        "心理支持"
+      ],
+      "encyclopediaTags": [
+        "皮肤科",
+        "慢性病管理",
+        "健康照护"
+      ],
+      "parentNote": "避免给具体用药建议，只提醒专业评估。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "psoriasis-q01",
+      "topicId": "psoriasis",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "皮肤不舒服的画面",
+      "question": "观察：画面里哪些地方表现皮肤正在不舒服？",
+      "answer": "健康皮肤需要有节奏地更新。",
+      "relatedPageIds": [
+        "psoriasis__v06_page-109",
+        "psoriasis__v06_page-110"
+      ],
+      "parentHint": "避免说“皮肤脏了”，要说“皮肤更新节奏乱了”。",
+      "biologyConcepts": [
+        "皮肤屏障",
+        "表皮"
+      ]
+    },
+    {
+      "cardId": "psoriasis-q02",
+      "topicId": "psoriasis",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "皮肤保护屏障",
+      "question": "观察：你能看到皮肤像一层保护屏障的线索吗？",
+      "answer": "免疫反应过强可能让皮肤进入长期炎症状态。",
+      "relatedPageIds": [
+        "psoriasis__v06_page-114",
+        "psoriasis__v06_page-115"
+      ],
+      "parentHint": "重点是“信号太活跃”，不是身体故意攻击自己。",
+      "biologyConcepts": [
+        "免疫炎症",
+        "T细胞"
+      ]
+    },
+    {
+      "cardId": "psoriasis-q03",
+      "topicId": "psoriasis",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "皮肤更新太快的麻烦",
+      "question": "理解：为什么皮肤更新太快反而会造成麻烦？",
+      "answer": "皮肤症状不是品行问题，也不是“不干净”的证明。",
+      "relatedPageIds": [
+        "psoriasis__v06_page-119",
+        "psoriasis__v06_page-120"
+      ],
+      "parentHint": "这是去污名化重点卡，措辞必须温和。",
+      "biologyConcepts": [
+        "鳞屑形成",
+        "红斑"
+      ]
+    },
+    {
+      "cardId": "psoriasis-q04",
+      "topicId": "psoriasis",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "银屑病不是不干净",
+      "question": "理解：为什么银屑病不能简单说成“不干净”？",
+      "answer": "慢性皮肤问题需要理解、日常照护和专业帮助。",
+      "relatedPageIds": [
+        "psoriasis__v06_page-124"
+      ],
+      "parentHint": "避免给具体用药建议，只提醒专业评估。",
+      "biologyConcepts": [
+        "慢性病管理",
+        "皮肤科"
+      ]
+    },
+    {
+      "cardId": "psoriasis-q05",
+      "topicId": "psoriasis",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "友好谈论皮肤问题",
+      "question": "联系生活：如果看到别人皮肤有红斑或鳞屑，我们怎样说话更友好？",
+      "answer": "慢性皮肤问题需要理解、日常照护和专业帮助。",
+      "relatedPageIds": [
+        "psoriasis__v06_page-124"
+      ],
+      "parentHint": "避免给具体用药建议，只提醒专业评估。",
+      "biologyConcepts": [
+        "慢性病管理",
+        "皮肤科"
+      ]
+    },
+    {
+      "cardId": "psoriasis-q06",
+      "topicId": "psoriasis",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "炎症和免疫线索",
+      "question": "科学概念：免疫反应和炎症有什么关系？",
+      "answer": "慢性皮肤问题需要理解、日常照护和专业帮助。",
+      "relatedPageIds": [
+        "psoriasis__v06_page-124"
+      ],
+      "parentHint": "避免给具体用药建议，只提醒专业评估。",
+      "biologyConcepts": [
+        "慢性病管理",
+        "皮肤科"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题的核心是理解和去污名化。家长可以把漫画里的夸张表现转成真实解释：皮肤更新节奏和免疫信号出了问题。不要让孩子把皮肤病和“不卫生”“可怕”“会被嘲笑”联系起来。",
+  "sensitiveContentGuidance": "本主题涉及慢性皮肤病、瘙痒、鳞屑和外观变化。家长应避免把银屑病讲成“脏”或“可怕传染病”，重点放在免疫相关炎症、长期管理和尊重他人。",
+  "sourceNotes": [],
+  "pageRefs": {
+    "psoriasis__v06_page-109": {
+      "pageId": "psoriasis__v06_page-109",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-109.webp",
+      "label": "漫画页 109"
+    },
+    "psoriasis__v06_page-110": {
+      "pageId": "psoriasis__v06_page-110",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-110.webp",
+      "label": "漫画页 110"
+    },
+    "psoriasis__v06_page-111": {
+      "pageId": "psoriasis__v06_page-111",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-111.webp",
+      "label": "漫画页 111"
+    },
+    "psoriasis__v06_page-112": {
+      "pageId": "psoriasis__v06_page-112",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-112.webp",
+      "label": "漫画页 112"
+    },
+    "psoriasis__v06_page-113": {
+      "pageId": "psoriasis__v06_page-113",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-113.webp",
+      "label": "漫画页 113"
+    },
+    "psoriasis__v06_page-114": {
+      "pageId": "psoriasis__v06_page-114",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-114.webp",
+      "label": "漫画页 114"
+    },
+    "psoriasis__v06_page-115": {
+      "pageId": "psoriasis__v06_page-115",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-115.webp",
+      "label": "漫画页 115"
+    },
+    "psoriasis__v06_page-116": {
+      "pageId": "psoriasis__v06_page-116",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-116.webp",
+      "label": "漫画页 116"
+    },
+    "psoriasis__v06_page-117": {
+      "pageId": "psoriasis__v06_page-117",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-117.webp",
+      "label": "漫画页 117"
+    },
+    "psoriasis__v06_page-118": {
+      "pageId": "psoriasis__v06_page-118",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-118.webp",
+      "label": "漫画页 118"
+    },
+    "psoriasis__v06_page-119": {
+      "pageId": "psoriasis__v06_page-119",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-119.webp",
+      "label": "漫画页 119"
+    },
+    "psoriasis__v06_page-120": {
+      "pageId": "psoriasis__v06_page-120",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-120.webp",
+      "label": "漫画页 120"
+    },
+    "psoriasis__v06_page-121": {
+      "pageId": "psoriasis__v06_page-121",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-121.webp",
+      "label": "漫画页 121"
+    },
+    "psoriasis__v06_page-122": {
+      "pageId": "psoriasis__v06_page-122",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-122.webp",
+      "label": "漫画页 122"
+    },
+    "psoriasis__v06_page-123": {
+      "pageId": "psoriasis__v06_page-123",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-123.webp",
+      "label": "漫画页 123"
+    },
+    "psoriasis__v06_page-124": {
+      "pageId": "psoriasis__v06_page-124",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v06/psoriasis__v06_page-124.webp",
+      "label": "漫画页 124"
+    }
+  }
+}

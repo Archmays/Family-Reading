@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 8,
+  "topicId": "cancer-cell",
+  "slug": "cancer-cell",
+  "title": "癌细胞",
+  "displayTitle": "癌细胞",
+  "category": "细胞异常与免疫监视",
+  "source": {
+    "volume": 2,
+    "chapterLabel": "第8-9话",
+    "sourceLabel": "第2卷 第8-9话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "癌细胞主题适合解释“异常来自身体内部”：癌细胞不是外来细菌或病毒，而是身体自身细胞在调控失常后异常增殖。共读时应把战斗画面转成免疫监视、异常识别、细胞分裂规则和多种免疫细胞协作。",
+    "readingFocus": "“身体怎样发现异常细胞”：用自身细胞异常变化、免疫监视、NK细胞快速反应、杀手T细胞协同清除四个节点说明；cancer-cell 保持独立，不与 cancer-cell-ii 合并。",
+    "keyBiologyConcepts": [
+      "癌细胞",
+      "自身细胞异常",
+      "细胞突变",
+      "异常增殖",
+      "免疫监视",
+      "NK细胞",
+      "杀手T细胞",
+      "抗原识别",
+      "免疫清除"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "癌细胞为什么不是外来病原体",
+      "细胞分裂为什么需要规则",
+      "NK细胞和T细胞怎样参与免疫监视",
+      "为什么不能把癌症讲成简单的坏人故事"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "cancer-cell-self-cell-abnormality",
+      "topicId": "cancer-cell",
+      "title": "癌细胞来自自身细胞异常变化",
+      "coreQuestion": "癌细胞和细菌、病毒最大的不同是什么？",
+      "explanation": "细菌和病毒多是外来风险，而癌细胞来自身体自己的细胞。它们因为调控出问题，可能失去正常分裂和停止的规则。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell/cancer-cell-v2-station-01.webp",
+      "imageAlt": "正常细胞和异常增殖细胞并列对比，显示癌细胞来自自身细胞变化的科普图。",
+      "relatedPageIds": [
+        "cancer-cell__v02_page-097",
+        "cancer-cell__v02_page-120"
+      ],
+      "biologyConcepts": [
+        "癌细胞",
+        "自身细胞异常",
+        "细胞突变"
+      ],
+      "encyclopediaTags": [
+        "癌细胞",
+        "细胞突变",
+        "自身细胞"
+      ],
+      "parentNote": "避免把癌细胞讲成外来的怪物，改说“身体细胞失去规则”。"
+    },
+    {
+      "stationId": "cancer-cell-division-rules",
+      "topicId": "cancer-cell",
+      "title": "细胞分裂需要按规则进行",
+      "coreQuestion": "为什么细胞不能想分裂多少就分裂多少？",
+      "explanation": "正常细胞分裂受到身体调控。异常增殖会挤占空间和资源，也会让周围组织难以维持稳定。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell/cancer-cell-v2-station-02.webp",
+      "imageAlt": "正常细胞有序分裂与异常细胞过度增殖的温和对照图。",
+      "relatedPageIds": [
+        "cancer-cell__v02_page-127",
+        "cancer-cell__v02_page-128"
+      ],
+      "biologyConcepts": [
+        "细胞分裂",
+        "异常增殖",
+        "身体稳态"
+      ],
+      "encyclopediaTags": [
+        "细胞分裂",
+        "异常增殖",
+        "稳态"
+      ],
+      "parentNote": "把“规则”讲成身体维持秩序，不做现实癌症诊断解释。"
+    },
+    {
+      "stationId": "cancer-cell-immune-surveillance",
+      "topicId": "cancer-cell",
+      "title": "免疫系统会监视异常信号",
+      "coreQuestion": "如果异常细胞像自己的细胞，身体怎么发现它？",
+      "explanation": "免疫系统会寻找异常分子信号和不正常行为。NK细胞、T细胞等会参与判断和清除风险。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell/cancer-cell-v2-station-03.webp",
+      "imageAlt": "免疫细胞在组织中巡逻并识别异常细胞信号的儿童科普图。",
+      "relatedPageIds": [
+        "cancer-cell__v02_page-102",
+        "cancer-cell__v02_page-123"
+      ],
+      "biologyConcepts": [
+        "免疫监视",
+        "NK细胞",
+        "杀手T细胞"
+      ],
+      "encyclopediaTags": [
+        "免疫系统",
+        "NK细胞",
+        "T细胞"
+      ],
+      "parentNote": "强调免疫监视是保护机制，不把免疫反应讲成万能。"
+    },
+    {
+      "stationId": "cancer-cell-cooperation-boundary",
+      "topicId": "cancer-cell",
+      "title": "清除异常细胞需要多层协作",
+      "coreQuestion": "为什么不是一个细胞单独解决全部问题？",
+      "explanation": "异常细胞识别和清除常需要多种免疫细胞协作。漫画会把过程画得激烈，真实身体机制更复杂，也不能替代医学判断。",
+      "imageAsset": "public/assets/cells-at-work/science-station/cancer-cell/cancer-cell-v2-station-04.webp",
+      "imageAlt": "不同免疫细胞围绕异常细胞协作判断和清除风险的非战斗式示意图。",
+      "relatedPageIds": [
+        "cancer-cell__v02_page-126",
+        "cancer-cell__v02_page-134"
+      ],
+      "biologyConcepts": [
+        "免疫协作",
+        "异常细胞清除",
+        "医学边界"
+      ],
+      "encyclopediaTags": [
+        "免疫协作",
+        "癌细胞",
+        "医学边界"
+      ],
+      "parentNote": "保留边界：这只是科普伴读，不讨论治疗方案。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "cancer-cell-q01",
+      "topicId": "cancer-cell",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "它是外来的吗",
+      "question": "看相关页面时，哪些线索说明癌细胞不像普通细菌那样从外面进入？",
+      "answer": "它更像身体内部细胞发生异常变化后被免疫系统发现。",
+      "relatedPageIds": [
+        "cancer-cell__v02_page-097",
+        "cancer-cell__v02_page-120"
+      ],
+      "parentHint": "先区分“外来病原体”和“自身异常细胞”。",
+      "biologyConcepts": [
+        "癌细胞",
+        "自身细胞异常"
+      ]
+    },
+    {
+      "cardId": "cancer-cell-q02",
+      "topicId": "cancer-cell",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "谁在判断",
+      "question": "哪些免疫细胞在观察、追踪或判断异常细胞？",
+      "answer": "可以看到NK细胞、白血球和杀手T细胞等免疫角色参与。",
+      "relatedPageIds": [
+        "cancer-cell__v02_page-100",
+        "cancer-cell__v02_page-102"
+      ],
+      "parentHint": "观察分工，不复述战斗对白。",
+      "biologyConcepts": [
+        "NK细胞",
+        "杀手T细胞"
+      ]
+    },
+    {
+      "cardId": "cancer-cell-q03",
+      "topicId": "cancer-cell",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么不能乱分裂",
+      "question": "细胞分裂如果失去规则，会给身体带来什么麻烦？",
+      "answer": "异常增殖可能挤占空间和资源，让组织稳定受到影响。",
+      "relatedPageIds": [
+        "cancer-cell__v02_page-127",
+        "cancer-cell__v02_page-128"
+      ],
+      "parentHint": "用“空间和资源被挤占”来温和解释。",
+      "biologyConcepts": [
+        "细胞分裂",
+        "异常增殖"
+      ]
+    },
+    {
+      "cardId": "cancer-cell-q04",
+      "topicId": "cancer-cell",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "免疫监视是什么",
+      "question": "免疫系统为什么要监视身体内部，而不只是对付外来细菌？",
+      "answer": "因为身体内部也可能出现异常细胞，免疫系统需要识别这些风险。",
+      "relatedPageIds": [
+        "cancer-cell__v02_page-123",
+        "cancer-cell__v02_page-144"
+      ],
+      "parentHint": "不要让孩子把真实疾病道德化。",
+      "biologyConcepts": [
+        "免疫监视",
+        "异常识别"
+      ]
+    },
+    {
+      "cardId": "cancer-cell-q05",
+      "topicId": "cancer-cell",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "听到癌症怎么办",
+      "question": "如果孩子把漫画里的癌细胞和现实疾病联系起来，家长可以怎样回应？",
+      "answer": "可以说这是帮助理解机制的科普故事，现实健康问题需要医生判断。",
+      "relatedPageIds": [
+        "cancer-cell__v02_page-120"
+      ],
+      "parentHint": "保持平静，不做诊断或治疗讨论。",
+      "biologyConcepts": [
+        "医学边界",
+        "健康科普"
+      ]
+    },
+    {
+      "cardId": "cancer-cell-q06",
+      "topicId": "cancer-cell",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "为什么要分开两个主题",
+      "question": "为什么这个 cancer-cell 主题不能和 cancer-cell-ii 合并？",
+      "answer": "它们来自不同卷和不同话次，项目里必须作为两个独立主题维护。",
+      "relatedPageIds": [
+        "cancer-cell__v02_page-098",
+        "cancer-cell-ii__v05_page-143"
+      ],
+      "parentHint": "这是项目分类边界，不把两个故事混讲。",
+      "biologyConcepts": [
+        "主题边界",
+        "癌细胞"
+      ]
+    }
+  ],
+  "parentReadingNote": "本主题含“癌症”相关联想、强烈战斗和身体损伤画面。共读时请强调这是医学拟人化科普，癌细胞不是简单坏人，现实癌症问题必须由专业医务人员判断；本主题不得与癌细胞Ⅱ合并。",
+  "sensitiveContentGuidance": "本主题有较多战斗、血液/体液飞溅、身体损伤和“癌症”相关联想。家庭阅读时建议强调这是医学拟人化漫画，不等同真实诊断；不要把癌细胞简单说成“坏人”，可改说“失去正常规则的异常细胞”。",
+  "sourceNotes": [
+    "漫画来源：第2卷 第8-9话，只保留页码线索，不展示漫画全文。",
+    "cancer-cell 保持独立，不与 cancer-cell-ii / 癌细胞Ⅱ 合并。"
+  ],
+  "pageRefs": {
+    "cancer-cell__v02_page-097": {
+      "pageId": "cancer-cell__v02_page-097",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-097.webp",
+      "label": "漫画页 97"
+    },
+    "cancer-cell__v02_page-120": {
+      "pageId": "cancer-cell__v02_page-120",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-120.webp",
+      "label": "漫画页 120"
+    },
+    "cancer-cell__v02_page-127": {
+      "pageId": "cancer-cell__v02_page-127",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-127.webp",
+      "label": "漫画页 127"
+    },
+    "cancer-cell__v02_page-128": {
+      "pageId": "cancer-cell__v02_page-128",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-128.webp",
+      "label": "漫画页 128"
+    },
+    "cancer-cell__v02_page-102": {
+      "pageId": "cancer-cell__v02_page-102",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-102.webp",
+      "label": "漫画页 102"
+    },
+    "cancer-cell__v02_page-123": {
+      "pageId": "cancer-cell__v02_page-123",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-123.webp",
+      "label": "漫画页 123"
+    },
+    "cancer-cell__v02_page-126": {
+      "pageId": "cancer-cell__v02_page-126",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-126.webp",
+      "label": "漫画页 126"
+    },
+    "cancer-cell__v02_page-134": {
+      "pageId": "cancer-cell__v02_page-134",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-134.webp",
+      "label": "漫画页 134"
+    },
+    "cancer-cell__v02_page-100": {
+      "pageId": "cancer-cell__v02_page-100",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-100.webp",
+      "label": "漫画页 100"
+    },
+    "cancer-cell__v02_page-144": {
+      "pageId": "cancer-cell__v02_page-144",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-144.webp",
+      "label": "漫画页 144"
+    },
+    "cancer-cell__v02_page-098": {
+      "pageId": "cancer-cell__v02_page-098",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/cancer-cell__v02_page-098.webp",
+      "label": "漫画页 98"
+    },
+    "cancer-cell-ii__v05_page-143": {
+      "pageId": "cancer-cell-ii__v05_page-143",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/cancer-cell-ii__v05_page-143.webp",
+      "label": "漫画页 143"
+    }
+  }
+}

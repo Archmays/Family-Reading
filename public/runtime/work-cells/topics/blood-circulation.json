@@ -1,0 +1,296 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 9,
+  "topicId": "blood-circulation",
+  "slug": "blood-circulation",
+  "title": "血液循环",
+  "displayTitle": "血液循环",
+  "category": "血液循环",
+  "source": {
+    "volume": 3,
+    "chapterLabel": "第10话",
+    "sourceLabel": "第3卷 第10话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "血液循环主题把红血球的路线变成一次“配送任务”：血液从心脏出发，经过肺部交换气体，再把氧气送到身体各处并带回二氧化碳。它适合作为循环系统入口，帮助孩子理解心脏、血管、肺循环和体循环如何协作。",
+    "readingFocus": "“一圈循环路线”：用心脏、肺部、全身组织、静脉回流四个节点说明血液怎么流动，避免把主题做成漫画全文路线浏览。",
+    "keyBiologyConcepts": [
+      "血液循环",
+      "心脏",
+      "肺循环",
+      "体循环",
+      "动脉",
+      "静脉",
+      "毛细血管",
+      "氧气运输",
+      "二氧化碳运输",
+      "红血球"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "红血球为什么搬运O2和CO2",
+      "心脏四腔与血流方向",
+      "肺循环和体循环的路线",
+      "动脉、静脉、毛细血管的差别",
+      "为什么循环系统像交通网络"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "blood-circulation-route-map",
+      "topicId": "blood-circulation",
+      "title": "血液循环像一张身体交通图",
+      "coreQuestion": "红血球为什么要沿着路线走？",
+      "explanation": "血液循环有固定方向，帮助红血球把氧气送到需要的地方，再把二氧化碳带回肺部。",
+      "imageAsset": "public/assets/cells-at-work/science-station/blood-circulation/blood-circulation-v2-station-01.webp",
+      "imageAlt": "心脏、肺部和全身组织之间形成清楚循环路线的儿童科普图。",
+      "relatedPageIds": [
+        "blood-circulation__v03_page-004",
+        "blood-circulation__v03_page-009"
+      ],
+      "biologyConcepts": [
+        "血液循环",
+        "循环路线",
+        "红血球运输"
+      ],
+      "encyclopediaTags": [
+        "血液循环",
+        "红血球",
+        "路线图"
+      ],
+      "parentNote": "可以让孩子用手指沿图走一圈，但不记录进度。"
+    },
+    {
+      "stationId": "blood-circulation-heart-pump",
+      "topicId": "blood-circulation",
+      "title": "心脏为什么像泵",
+      "coreQuestion": "血液为什么能不断往前流？",
+      "explanation": "心脏有节律地收缩和舒张，把血液推向肺部和全身，是循环路线的动力来源。",
+      "imageAsset": "public/assets/cells-at-work/science-station/blood-circulation/blood-circulation-v2-station-02.webp",
+      "imageAlt": "心脏像泵站一样推动血液沿管道前进的温和示意图。",
+      "relatedPageIds": [
+        "blood-circulation__v03_page-013",
+        "blood-circulation__v03_page-014"
+      ],
+      "biologyConcepts": [
+        "心脏",
+        "泵血",
+        "血流方向"
+      ],
+      "encyclopediaTags": [
+        "心脏",
+        "泵",
+        "血流"
+      ],
+      "parentNote": "强调心脏很重要，但不讲复杂病理。"
+    },
+    {
+      "stationId": "blood-circulation-lung-exchange",
+      "topicId": "blood-circulation",
+      "title": "肺部为什么是换气站",
+      "coreQuestion": "红血球到肺部时会交换什么？",
+      "explanation": "在肺部，红血球装上氧气，同时把二氧化碳交出去，之后再把氧气送往身体各处。",
+      "imageAsset": "public/assets/cells-at-work/science-station/blood-circulation/blood-circulation-v2-station-03.webp",
+      "imageAlt": "红血球在肺泡旁交换氧气和二氧化碳的清楚儿童科普图。",
+      "relatedPageIds": [
+        "blood-circulation__v03_page-017",
+        "blood-circulation__v03_page-019"
+      ],
+      "biologyConcepts": [
+        "肺泡",
+        "氧气",
+        "二氧化碳"
+      ],
+      "encyclopediaTags": [
+        "肺部",
+        "气体交换",
+        "肺循环"
+      ],
+      "parentNote": "用“换货站”解释气体交换，避免过度术语化。"
+    },
+    {
+      "stationId": "blood-circulation-capillary-delivery",
+      "topicId": "blood-circulation",
+      "title": "毛细血管怎样把氧气送到细胞旁边",
+      "coreQuestion": "为什么血管要分得很细？",
+      "explanation": "毛细血管很细，能让血液靠近组织细胞，方便氧气送达、二氧化碳被带走。",
+      "imageAsset": "public/assets/cells-at-work/science-station/blood-circulation/blood-circulation-v2-station-04.webp",
+      "imageAlt": "毛细血管网络靠近组织细胞并完成氧气递送的温和示意图。",
+      "relatedPageIds": [
+        "blood-circulation__v03_page-021",
+        "blood-circulation__v03_page-024"
+      ],
+      "biologyConcepts": [
+        "毛细血管",
+        "组织供氧",
+        "二氧化碳回收"
+      ],
+      "encyclopediaTags": [
+        "毛细血管",
+        "组织细胞",
+        "氧气"
+      ],
+      "parentNote": "可以把毛细血管比作细小小路，帮助配送更接近目的地。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "blood-circulation-q01",
+      "topicId": "blood-circulation",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "路线从哪里开始",
+      "question": "看相关页面时，红血球从哪些地方经过？",
+      "answer": "可以找心脏、肺部、血管通道和身体组织这些路线线索。",
+      "relatedPageIds": [
+        "blood-circulation__v03_page-004",
+        "blood-circulation__v03_page-009"
+      ],
+      "parentHint": "把答案放在路线观察上，不要求背完整路径。",
+      "biologyConcepts": [
+        "循环路线",
+        "红血球"
+      ]
+    },
+    {
+      "cardId": "blood-circulation-q02",
+      "topicId": "blood-circulation",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "O2和CO2在哪里",
+      "question": "画面里哪些符号提示氧气或二氧化碳正在被运输？",
+      "answer": "可以观察O2、CO2标记和红血球搬运的位置。",
+      "relatedPageIds": [
+        "blood-circulation__v03_page-017"
+      ],
+      "parentHint": "让孩子先找符号，再说意思。",
+      "biologyConcepts": [
+        "氧气",
+        "二氧化碳"
+      ]
+    },
+    {
+      "cardId": "blood-circulation-q03",
+      "topicId": "blood-circulation",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么需要心脏",
+      "question": "如果没有心脏推动，血液循环会遇到什么困难？",
+      "answer": "血液就不容易持续流向肺部和全身，氧气运输也会受影响。",
+      "relatedPageIds": [
+        "blood-circulation__v03_page-013"
+      ],
+      "parentHint": "用泵或水流作温和类比。",
+      "biologyConcepts": [
+        "心脏",
+        "泵血"
+      ]
+    },
+    {
+      "cardId": "blood-circulation-q04",
+      "topicId": "blood-circulation",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么要去肺部",
+      "question": "红血球为什么要经过肺部？",
+      "answer": "因为肺部能让红血球装上氧气，并把二氧化碳交出去。",
+      "relatedPageIds": [
+        "blood-circulation__v03_page-017"
+      ],
+      "parentHint": "把肺部说成换气站。",
+      "biologyConcepts": [
+        "肺循环",
+        "气体交换"
+      ]
+    },
+    {
+      "cardId": "blood-circulation-q05",
+      "topicId": "blood-circulation",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "运动后为什么喘",
+      "question": "跑跳后为什么会呼吸变快、心跳变快？",
+      "answer": "身体需要更多氧气，心脏和肺会更忙地帮助运输和换气。",
+      "relatedPageIds": [
+        "blood-circulation__v03_page-019"
+      ],
+      "parentHint": "联系生活体验即可，不做健康判断。",
+      "biologyConcepts": [
+        "运动",
+        "氧气需求"
+      ]
+    },
+    {
+      "cardId": "blood-circulation-q06",
+      "topicId": "blood-circulation",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "两种循环路线",
+      "question": "体循环和肺循环有什么简单区别？",
+      "answer": "肺循环主要去肺部换气，体循环主要把氧气送到身体各处。",
+      "relatedPageIds": [
+        "blood-circulation__v03_page-004"
+      ],
+      "parentHint": "保持一句话区分，不要求画复杂图。",
+      "biologyConcepts": [
+        "肺循环",
+        "体循环"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题适合拿来画路线图。共读时可以问“红血球现在在去哪里”，再把答案拉回心脏泵血、肺部换气和全身供氧；不要把它变成背诵路线或进度打卡。",
+  "sensitiveContentGuidance": "整体较适合亲子共读，只有少量突发战斗和病原袭击场面。重点可放在路线图和运输逻辑上。",
+  "sourceNotes": [
+    "漫画来源：第3卷 第10话，只保留页码线索，不展示漫画全文。",
+    "动画来源只记录主题级摘要和集数线索，不接入视频、字幕或对白。"
+  ],
+  "pageRefs": {
+    "blood-circulation__v03_page-004": {
+      "pageId": "blood-circulation__v03_page-004",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/blood-circulation__v03_page-004.webp",
+      "label": "漫画页 4"
+    },
+    "blood-circulation__v03_page-009": {
+      "pageId": "blood-circulation__v03_page-009",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/blood-circulation__v03_page-009.webp",
+      "label": "漫画页 9"
+    },
+    "blood-circulation__v03_page-013": {
+      "pageId": "blood-circulation__v03_page-013",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/blood-circulation__v03_page-013.webp",
+      "label": "漫画页 13"
+    },
+    "blood-circulation__v03_page-014": {
+      "pageId": "blood-circulation__v03_page-014",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/blood-circulation__v03_page-014.webp",
+      "label": "漫画页 14"
+    },
+    "blood-circulation__v03_page-017": {
+      "pageId": "blood-circulation__v03_page-017",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/blood-circulation__v03_page-017.webp",
+      "label": "漫画页 17"
+    },
+    "blood-circulation__v03_page-019": {
+      "pageId": "blood-circulation__v03_page-019",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/blood-circulation__v03_page-019.webp",
+      "label": "漫画页 19"
+    },
+    "blood-circulation__v03_page-021": {
+      "pageId": "blood-circulation__v03_page-021",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/blood-circulation__v03_page-021.webp",
+      "label": "漫画页 21"
+    },
+    "blood-circulation__v03_page-024": {
+      "pageId": "blood-circulation__v03_page-024",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/blood-circulation__v03_page-024.webp",
+      "label": "漫画页 24"
+    }
+  }
+}

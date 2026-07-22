@@ -5,6 +5,10 @@ import path from 'node:path';
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const steps = [
   {
+    label: 'tracked runtime content staleness check',
+    args: ['scripts/generate-runtime-content.mjs', '--check'],
+  },
+  {
     label: 'full test suite',
     args: ['scripts/run-tests.mjs'],
   },

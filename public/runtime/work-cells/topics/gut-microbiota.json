@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 21,
+  "topicId": "gut-microbiota",
+  "slug": "gut-microbiota",
+  "title": "肠道菌群",
+  "displayTitle": "肠道菌群",
+  "category": "肠道健康",
+  "source": {
+    "volume": 5,
+    "chapterLabel": "第23话",
+    "sourceLabel": "第5卷 第23话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "肠道菌群主题强调“身体里也有微小伙伴”：肠道里有有益菌、机会菌和有害菌，它们与食物、黏膜屏障和免疫系统共同组成生态。共读时应避免把所有细菌都讲成敌人。",
+    "readingFocus": "“菌群平衡是什么意思”：用肠道生态、有益菌占位、黏膜屏障、饮食影响和免疫协作五个节点解释；动画主题已由用户确认为完全匹配，可作为摘要线索使用。",
+    "keyBiologyConcepts": [
+      "肠道菌群",
+      "微生物生态",
+      "益菌",
+      "害菌",
+      "机会菌",
+      "乳酸菌",
+      "肠道屏障",
+      "肠道免疫",
+      "菌群平衡"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "肠道菌群为什么像一个生态系统",
+      "益菌、害菌和机会菌的区别",
+      "为什么肠道环境会影响免疫反应",
+      "乳酸菌和“有益菌”在科普中如何谨慎表达",
+      "肠道屏障与免疫细胞的协作"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "gut-microbiota-ecosystem",
+      "topicId": "gut-microbiota",
+      "title": "肠道菌群像生态系统",
+      "coreQuestion": "肠道里的细菌都是坏的吗？",
+      "explanation": "不是。肠道里生活着很多微生物，有些帮助维持环境，有些在条件变化时可能带来麻烦。它们共同构成菌群生态。",
+      "imageAsset": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-01.webp",
+      "imageAlt": "肠道剖面中多种温和微生物共同生活，形成生态系统的儿童科普图。",
+      "relatedPageIds": [
+        "gut-microbiota__v05_page-109",
+        "gut-microbiota__v05_page-112"
+      ],
+      "biologyConcepts": [
+        "肠道菌群",
+        "微生物生态",
+        "大肠"
+      ],
+      "encyclopediaTags": [
+        "肠道菌群",
+        "益菌",
+        "机会菌"
+      ],
+      "parentNote": "先强调“不是所有细菌都是敌人”。"
+    },
+    {
+      "stationId": "gut-microbiota-balance",
+      "topicId": "gut-microbiota",
+      "title": "益菌、有害菌和机会菌的平衡",
+      "coreQuestion": "菌群平衡是不是只有一种好细菌？",
+      "explanation": "菌群平衡更像多种微生物保持合适比例。益菌可以占住位置，有害菌过多时环境就可能变得不稳定。",
+      "imageAsset": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-02.webp",
+      "imageAlt": "天平和肠道生态结合，表现益菌、有害菌和机会菌比例变化。",
+      "relatedPageIds": [
+        "gut-microbiota__v05_page-113",
+        "gut-microbiota__v05_page-117"
+      ],
+      "biologyConcepts": [
+        "益菌",
+        "害菌",
+        "机会菌",
+        "菌群平衡"
+      ],
+      "encyclopediaTags": [
+        "乳酸菌",
+        "微生物生态"
+      ],
+      "parentNote": "避免把单一产品或单一菌种讲成万能答案。"
+    },
+    {
+      "stationId": "gut-microbiota-mucosal-barrier",
+      "topicId": "gut-microbiota",
+      "title": "肠道屏障和免疫细胞协作",
+      "coreQuestion": "肠道为什么既要接纳菌群又要防御？",
+      "explanation": "肠道屏障要吸收营养，也要防止有害因素穿过。免疫细胞会判断哪些信号需要处理，维持边界稳定。",
+      "imageAsset": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-03.webp",
+      "imageAlt": "肠道黏膜、黏液层、菌群和免疫细胞分层协作的科普图。",
+      "relatedPageIds": [
+        "gut-microbiota__v05_page-113",
+        "gut-microbiota__v05_page-124"
+      ],
+      "biologyConcepts": [
+        "肠道屏障",
+        "肠道免疫",
+        "免疫识别"
+      ],
+      "encyclopediaTags": [
+        "黏膜防御",
+        "NK细胞",
+        "白血球"
+      ],
+      "parentNote": "把“接纳”和“防御”同时讲清楚。"
+    },
+    {
+      "stationId": "gut-microbiota-food-influence",
+      "topicId": "gut-microbiota",
+      "title": "食物会影响肠道环境",
+      "coreQuestion": "我们吃的东西会影响菌群吗？",
+      "explanation": "饮食会改变肠道里的营养和环境，进而影响不同微生物的生长机会。稳定、多样的饮食习惯通常更有利于肠道生态。",
+      "imageAsset": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-04.webp",
+      "imageAlt": "食物纤维、肠道菌群和稳定环境用箭头连接的儿童科普图。",
+      "relatedPageIds": [
+        "gut-microbiota__v05_page-125",
+        "gut-microbiota__v05_page-126"
+      ],
+      "biologyConcepts": [
+        "饮食影响",
+        "菌群生态",
+        "恢复稳定"
+      ],
+      "encyclopediaTags": [
+        "膳食纤维",
+        "肠道健康"
+      ],
+      "parentNote": "保持常识层面，不宣传具体产品。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "gut-microbiota-q01",
+      "topicId": "gut-microbiota",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "细菌都是敌人吗",
+      "question": "看相关页面时，细菌被画成敌人、伙伴，还是两者之间？",
+      "answer": "可以观察到不同类型的菌，有些像伙伴，有些可能带来风险。",
+      "relatedPageIds": [
+        "gut-microbiota__v05_page-109",
+        "gut-microbiota__v05_page-112"
+      ],
+      "parentHint": "帮助孩子打破“细菌全是坏的”的想法。",
+      "biologyConcepts": [
+        "肠道菌群",
+        "益菌"
+      ]
+    },
+    {
+      "cardId": "gut-microbiota-q02",
+      "topicId": "gut-microbiota",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "哪里像肠道环境",
+      "question": "哪些画面线索说明故事发生在肠道里？",
+      "answer": "可以找管道、大肠环境、菌群说明和免疫细胞判断等线索。",
+      "relatedPageIds": [
+        "gut-microbiota__v05_page-109",
+        "gut-microbiota__v05_page-113"
+      ],
+      "parentHint": "先看环境，再谈生态。",
+      "biologyConcepts": [
+        "大肠",
+        "肠道环境"
+      ]
+    },
+    {
+      "cardId": "gut-microbiota-q03",
+      "topicId": "gut-microbiota",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么要平衡",
+      "question": "为什么肠道菌群不是越少越好？",
+      "answer": "因为肠道需要多种微生物共同维持环境，全部清掉并不等于健康。",
+      "relatedPageIds": [
+        "gut-microbiota__v05_page-113",
+        "gut-microbiota__v05_page-117"
+      ],
+      "parentHint": "强调生态概念。",
+      "biologyConcepts": [
+        "菌群平衡",
+        "微生物生态"
+      ]
+    },
+    {
+      "cardId": "gut-microbiota-q04",
+      "topicId": "gut-microbiota",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "身体怎么判断",
+      "question": "身体怎样判断一个微生物是不是需要攻击？",
+      "answer": "免疫系统会结合位置、数量、信号和屏障状态来判断，不是只看“是不是细菌”。",
+      "relatedPageIds": [
+        "gut-microbiota__v05_page-113",
+        "gut-microbiota__v05_page-124"
+      ],
+      "parentHint": "可以用“看情况做决定”解释。",
+      "biologyConcepts": [
+        "免疫识别",
+        "肠道屏障"
+      ]
+    },
+    {
+      "cardId": "gut-microbiota-q05",
+      "topicId": "gut-microbiota",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "吃什么会影响环境",
+      "question": "日常饮食为什么可能影响肠道菌群？",
+      "answer": "食物给不同微生物提供不同营养，也会影响肠道环境是否稳定。",
+      "relatedPageIds": [
+        "gut-microbiota__v05_page-125"
+      ],
+      "parentHint": "不推荐具体产品，只谈均衡饮食。",
+      "biologyConcepts": [
+        "饮食影响",
+        "肠道生态"
+      ]
+    },
+    {
+      "cardId": "gut-microbiota-q06",
+      "topicId": "gut-microbiota",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "生态系统是什么意思",
+      "question": "为什么说肠道菌群像生态系统？",
+      "answer": "因为里面有多种微生物、营养、空间和身体屏障，它们互相影响。",
+      "relatedPageIds": [
+        "gut-microbiota__v05_page-109",
+        "gut-microbiota__v05_page-126"
+      ],
+      "parentHint": "把生态系统讲成“很多成员一起影响环境”。",
+      "biologyConcepts": [
+        "生态系统",
+        "菌群"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题适合温和地讲“不是所有细菌都是敌人”。请避免把乳酸菌或任何单一食物讲成治疗方案；若涉及健康问题，应咨询专业医务人员。动画主题已由用户确认为完全匹配。",
+  "sensitiveContentGuidance": "本主题整体适合亲子共读，但后段出现免疫战斗、怪物化细菌、癌细胞伏笔和追击画面。家长可提醒孩子：漫画把微生物拟人化了，真实肠道菌群既有有益成员，也可能在失衡时造成问题。",
+  "sourceNotes": [
+    "漫画来源：第5卷 第23话，只保留页码线索，不展示漫画全文。",
+    "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。"
+  ],
+  "pageRefs": {
+    "gut-microbiota__v05_page-109": {
+      "pageId": "gut-microbiota__v05_page-109",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-109.webp",
+      "label": "漫画页 109"
+    },
+    "gut-microbiota__v05_page-112": {
+      "pageId": "gut-microbiota__v05_page-112",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-112.webp",
+      "label": "漫画页 112"
+    },
+    "gut-microbiota__v05_page-113": {
+      "pageId": "gut-microbiota__v05_page-113",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-113.webp",
+      "label": "漫画页 113"
+    },
+    "gut-microbiota__v05_page-117": {
+      "pageId": "gut-microbiota__v05_page-117",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-117.webp",
+      "label": "漫画页 117"
+    },
+    "gut-microbiota__v05_page-124": {
+      "pageId": "gut-microbiota__v05_page-124",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-124.webp",
+      "label": "漫画页 124"
+    },
+    "gut-microbiota__v05_page-125": {
+      "pageId": "gut-microbiota__v05_page-125",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-125.webp",
+      "label": "漫画页 125"
+    },
+    "gut-microbiota__v05_page-126": {
+      "pageId": "gut-microbiota__v05_page-126",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-126.webp",
+      "label": "漫画页 126"
+    }
+  }
+}

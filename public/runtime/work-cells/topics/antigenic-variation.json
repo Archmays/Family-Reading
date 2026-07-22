@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 19,
+  "topicId": "antigenic-variation",
+  "slug": "antigenic-variation",
+  "title": "抗原变异",
+  "displayTitle": "抗原变异",
+  "category": "免疫逃逸",
+  "source": {
+    "volume": 5,
+    "chapterLabel": "第21话",
+    "sourceLabel": "第5卷 第21话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "这一主题围绕“抗原变异”展开：病原体通过改变表面特征，让免疫系统难以沿用过去的识别经验。故事继续使用乳酸菌/益菌、免疫细胞和可变形病原体的互动，展示免疫系统为什么需要不断识别、学习和更新判断。适合帮助孩子理解疫苗、免疫记忆、病毒变异和“为什么同一种病原可能反复出现”之间的基础关系。",
+    "readingFocus": "“病原体改变外表后，免疫为什么要重新识别”：用抗原、免疫记忆、识别延迟、免疫逃逸和变异边界解释。",
+    "keyBiologyConcepts": [
+      "抗原",
+      "抗原变异",
+      "免疫逃逸",
+      "免疫记忆",
+      "抗体",
+      "NK细胞",
+      "白血球/中性粒细胞",
+      "乳酸菌/益菌",
+      "病原体变异",
+      "病毒类型差异",
+      "免疫识别更新"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "什么是抗原：免疫系统识别的“标志”",
+      "抗原变异为什么会让免疫系统认错或认慢",
+      "免疫记忆不是万能的原因",
+      "病毒变异和“类型不同”可以怎样用儿童语言解释",
+      "益菌角色如何帮助故事推进但不能等同真实治疗"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "antigenic-variation-antigen-name-tag",
+      "topicId": "antigenic-variation",
+      "title": "什么是抗原：免疫系统识别的“标志”",
+      "coreQuestion": "这一页里，病原体有什么“变得不一样”的线索？",
+      "explanation": "这个小站围绕抗原变异、免疫识别、抗原识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察抗原变异、抗原、免疫记忆，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/antigenic-variation/antigenic-variation-v2-station-01.webp",
+      "imageAlt": "抗原变异：什么是抗原：免疫系统识别的“标志”的儿童科普解释图。",
+      "relatedPageIds": [
+        "antigenic-variation__v05_page-047",
+        "antigenic-variation__v05_page-049"
+      ],
+      "biologyConcepts": [
+        "抗原变异",
+        "免疫识别",
+        "抗原识别",
+        "免疫逃逸",
+        "免疫记忆更新"
+      ],
+      "encyclopediaTags": [
+        "抗原变异",
+        "抗原",
+        "免疫记忆",
+        "病毒变异",
+        "免疫逃逸"
+      ],
+      "parentNote": "把“什么是抗原：免疫系统识别的“标志””讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "antigenic-variation-variation-and-recognition",
+      "topicId": "antigenic-variation",
+      "title": "抗原变异为什么会让免疫系统认错或认慢",
+      "coreQuestion": "免疫系统为什么不能只记住一次经验？",
+      "explanation": "这个小站围绕免疫识别、识别延迟、抗原识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察免疫细胞、抗原、抗原变异，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/antigenic-variation/antigenic-variation-v2-station-02.webp",
+      "imageAlt": "抗原变异：抗原变异为什么会让免疫系统认错或认慢的儿童科普解释图。",
+      "relatedPageIds": [
+        "antigenic-variation__v05_page-050",
+        "antigenic-variation__v05_page-061"
+      ],
+      "biologyConcepts": [
+        "免疫识别",
+        "识别延迟",
+        "抗原识别",
+        "免疫逃逸",
+        "免疫记忆更新"
+      ],
+      "encyclopediaTags": [
+        "免疫细胞",
+        "抗原",
+        "抗原变异",
+        "免疫记忆",
+        "病毒变异"
+      ],
+      "parentNote": "把“抗原变异为什么会让免疫系统认错或认慢”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "antigenic-variation-immune-escape",
+      "topicId": "antigenic-variation",
+      "title": "免疫记忆不是万能的原因",
+      "coreQuestion": "这一页最适合做哪个身体科学小站：结构、功能、风险，还是救援？",
+      "explanation": "这个小站围绕抗原改变、免疫逃逸、抗原识别展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察抗原、免疫逃逸、抗原变异，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/antigenic-variation/antigenic-variation-v2-station-03.webp",
+      "imageAlt": "抗原变异：免疫记忆不是万能的原因的儿童科普解释图。",
+      "relatedPageIds": [
+        "antigenic-variation__v05_page-049",
+        "antigenic-variation__v05_page-057"
+      ],
+      "biologyConcepts": [
+        "抗原改变",
+        "免疫逃逸",
+        "抗原识别",
+        "免疫记忆更新",
+        "病原体变异"
+      ],
+      "encyclopediaTags": [
+        "抗原",
+        "免疫逃逸",
+        "抗原变异",
+        "免疫记忆",
+        "病毒变异"
+      ],
+      "parentNote": "把“免疫记忆不是万能的原因”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    },
+    {
+      "stationId": "antigenic-variation-update-memory",
+      "topicId": "antigenic-variation",
+      "title": "病毒变异和“类型不同”可以怎样用儿童语言解释",
+      "coreQuestion": "这一页里，病原体有什么“变得不一样”的线索？",
+      "explanation": "这个小站围绕免疫判断、抗原识别、NK细胞展开，把漫画里的夸张表现转成身体里的真实过程。共读时重点观察免疫系统、抗原、NK细胞，只保留页码和概念线索，不展示漫画全文。",
+      "imageAsset": "public/assets/cells-at-work/science-station/antigenic-variation/antigenic-variation-v2-station-04.webp",
+      "imageAlt": "抗原变异：病毒变异和“类型不同”可以怎样用儿童语言解释的儿童科普解释图。",
+      "relatedPageIds": [
+        "antigenic-variation__v05_page-059",
+        "antigenic-variation__v05_page-060"
+      ],
+      "biologyConcepts": [
+        "免疫判断",
+        "抗原识别",
+        "NK细胞",
+        "免疫记忆",
+        "抗原变化"
+      ],
+      "encyclopediaTags": [
+        "免疫系统",
+        "抗原",
+        "NK细胞",
+        "免疫记忆",
+        "抗原变异"
+      ],
+      "parentNote": "把“病毒变异和“类型不同”可以怎样用儿童语言解释”讲成身体过程，不复述漫画对白，也不提供诊断或治疗建议。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "antigenic-variation-q01",
+      "topicId": "antigenic-variation",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "换外表后的识别难题",
+      "question": "如果病原体换了外表，免疫系统为什么会更难认出来？",
+      "answer": "可以围绕抗原变异、免疫识别、抗原识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "antigenic-variation__v05_page-047",
+        "antigenic-variation__v05_page-049"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "抗原变异",
+        "免疫识别",
+        "抗原识别"
+      ]
+    },
+    {
+      "cardId": "antigenic-variation-q02",
+      "topicId": "antigenic-variation",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "抗原是识别信息",
+      "question": "抗原像身体安全系统里的什么信息？",
+      "answer": "可以围绕免疫识别、识别延迟、抗原识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "antigenic-variation__v05_page-050",
+        "antigenic-variation__v05_page-061"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "免疫识别",
+        "识别延迟",
+        "抗原识别"
+      ]
+    },
+    {
+      "cardId": "antigenic-variation-q03",
+      "topicId": "antigenic-variation",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "旧经验不一定够用",
+      "question": "为什么以前见过一种病原，不代表一定能立刻打败新的变体？",
+      "answer": "可以围绕抗原改变、免疫逃逸、抗原识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "antigenic-variation__v05_page-049",
+        "antigenic-variation__v05_page-057"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "抗原改变",
+        "免疫逃逸",
+        "抗原识别"
+      ]
+    },
+    {
+      "cardId": "antigenic-variation-q04",
+      "topicId": "antigenic-variation",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "变得不一样的线索",
+      "question": "画面里哪些地方表现了“它变得不一样了”？",
+      "answer": "可以围绕免疫判断、抗原识别、NK细胞来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "antigenic-variation__v05_page-059",
+        "antigenic-variation__v05_page-060"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "免疫判断",
+        "抗原识别",
+        "NK细胞"
+      ]
+    },
+    {
+      "cardId": "antigenic-variation-q05",
+      "topicId": "antigenic-variation",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "变体线索观察",
+      "question": "这一页里，病原体有什么“变得不一样”的线索？",
+      "answer": "可以围绕抗原变异、免疫识别、抗原识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "antigenic-variation__v05_page-047",
+        "antigenic-variation__v05_page-049"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "抗原变异",
+        "免疫识别",
+        "抗原识别"
+      ]
+    },
+    {
+      "cardId": "antigenic-variation-q06",
+      "topicId": "antigenic-variation",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "免疫记忆也要更新",
+      "question": "免疫系统为什么不能只记住一次经验？",
+      "answer": "可以围绕免疫识别、识别延迟、抗原识别来回答。重点是把画面里的夸张表现转成身体结构、细胞分工或免疫信号，不复述对白。",
+      "relatedPageIds": [
+        "antigenic-variation__v05_page-050",
+        "antigenic-variation__v05_page-061"
+      ],
+      "parentHint": "先让孩子找画面线索，再用一两句话回到科学概念和健康边界。",
+      "biologyConcepts": [
+        "免疫识别",
+        "识别延迟",
+        "抗原识别"
+      ]
+    }
+  ],
+  "parentReadingNote": "本主题概念抽象，适合用“识别标记改变”解释抗原变异。动画线索来自 audio-fallback，且为 medium confidence，并可能与同一集幽门螺杆菌/后续细胞因子边界相邻，需保留人工复核提醒。",
+  "sensitiveContentGuidance": "本主题有病原体变形、惊悚表情、攻击和战斗画面。家庭阅读时可以把“变异”解释成外表标志变化，不建议延伸到现实疫情焦虑；如果提到病毒变异，要强调现实医学需要检测和专业判断。",
+  "sourceNotes": [
+    "漫画来源：第5卷 第21话，只保留页码线索，不展示漫画全文。"
+  ],
+  "pageRefs": {
+    "antigenic-variation__v05_page-047": {
+      "pageId": "antigenic-variation__v05_page-047",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/antigenic-variation__v05_page-047.webp",
+      "label": "漫画页 47"
+    },
+    "antigenic-variation__v05_page-049": {
+      "pageId": "antigenic-variation__v05_page-049",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/antigenic-variation__v05_page-049.webp",
+      "label": "漫画页 49"
+    },
+    "antigenic-variation__v05_page-050": {
+      "pageId": "antigenic-variation__v05_page-050",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/antigenic-variation__v05_page-050.webp",
+      "label": "漫画页 50"
+    },
+    "antigenic-variation__v05_page-061": {
+      "pageId": "antigenic-variation__v05_page-061",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/antigenic-variation__v05_page-061.webp",
+      "label": "漫画页 61"
+    },
+    "antigenic-variation__v05_page-057": {
+      "pageId": "antigenic-variation__v05_page-057",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/antigenic-variation__v05_page-057.webp",
+      "label": "漫画页 57"
+    },
+    "antigenic-variation__v05_page-059": {
+      "pageId": "antigenic-variation__v05_page-059",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/antigenic-variation__v05_page-059.webp",
+      "label": "漫画页 59"
+    },
+    "antigenic-variation__v05_page-060": {
+      "pageId": "antigenic-variation__v05_page-060",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v05/antigenic-variation__v05_page-060.webp",
+      "label": "漫画页 60"
+    }
+  }
+}

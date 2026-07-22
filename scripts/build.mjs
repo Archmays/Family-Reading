@@ -81,10 +81,7 @@ const excludedFileNames = new Set([
   'volume-page-index.json',
 ]);
 const seriesIndexPath = path.join(rootDir, 'public', 'books', '不一样的卡梅拉', 'series.json');
-const publicBooksIndexPath = path.join(rootDir, 'public', 'books', 'index.json');
-const contentTypesPath = path.join(rootDir, 'public', 'books', 'content-types.json');
-const workCellsDraftDir = path.join(rootDir, 'public', 'books', '工作细胞');
-const workCellsPageMapPath = path.join(rootDir, 'data', 'cells-at-work', 'page-map.json');
+const runtimeContentDir = path.join(rootDir, 'public', 'runtime');
 
 function assertInsideRoot(targetPath) {
   const relative = path.relative(rootDir, targetPath);
@@ -180,14 +177,7 @@ async function copyPublishablePublic() {
       await copyTree(sourceDir, path.join(outputDir, ...assetDir.split('/')));
     }
   }
-  await mkdir(path.join(outputDir, 'public', 'books'), { recursive: true });
-  await copyFile(publicBooksIndexPath, path.join(outputDir, 'public', 'books', 'index.json'));
-  await copyFile(contentTypesPath, path.join(outputDir, 'public', 'books', 'content-types.json'));
-  await mkdir(path.join(outputDir, 'public', 'books', '不一样的卡梅拉'), { recursive: true });
-  await copyFile(
-    seriesIndexPath,
-    path.join(outputDir, 'public', 'books', '不一样的卡梅拉', 'series.json'),
-  );
+  await copyTree(runtimeContentDir, path.join(outputDir, 'public', 'runtime'));
 
   const series = JSON.parse(await readFile(seriesIndexPath, 'utf8'));
   for (const book of series.books.slice(0, publishedBookCount)) {
@@ -201,18 +191,10 @@ async function copyPublishablePublic() {
       bookPaths.targetPath,
     );
   }
-
-  await copyTree(workCellsDraftDir, path.join(outputDir, 'public', 'books', '工作细胞'));
 }
 
-async function copyPublishableData() {
-  const targetPath = path.join(outputDir, 'data', 'cells-at-work', 'page-map.json');
-  await mkdir(path.dirname(targetPath), { recursive: true });
-  await copyFile(workCellsPageMapPath, targetPath);
-}
-
-function runNodeGate(scriptPath) {
-  const result = spawnSync(process.execPath, [scriptPath], {
+function runNodeGate(scriptPath, args = []) {
+  const result = spawnSync(process.execPath, [scriptPath, ...args], {
     cwd: rootDir,
     stdio: 'inherit',
     shell: false,
@@ -225,6 +207,7 @@ function runNodeGate(scriptPath) {
 
 assertSafeOutputDirectory();
 runNodeGate('scripts/validate-public-repository.mjs');
+runNodeGate('scripts/generate-runtime-content.mjs', ['--check']);
 
 await rm(outputDir, { recursive: true, force: true });
 await mkdir(outputDir, { recursive: true });
@@ -232,7 +215,6 @@ await mkdir(outputDir, { recursive: true });
 await copyFile(path.join(rootDir, 'index.html'), path.join(outputDir, 'index.html'));
 await copyTree(path.join(rootDir, 'assets'), path.join(outputDir, 'assets'));
 await copyPublishablePublic();
-await copyPublishableData();
 await writeFile(path.join(outputDir, '.nojekyll'), '', 'utf8');
 
 console.log('Static GitHub Pages build written to dist.');

@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 3,
+  "topicId": "influenza",
+  "slug": "influenza",
+  "title": "流行性感冒",
+  "displayTitle": "流行性感冒",
+  "category": "病毒感染与免疫",
+  "source": {
+    "volume": 1,
+    "chapterLabel": "第3话",
+    "sourceLabel": "第1卷 第3话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "流感病毒让普通细胞变成被感染细胞，初始T细胞起初胆怯无力，在树突细胞等免疫信号帮助下被激活并大量增殖。主题重点不是单纯“打怪”，而是适合展示病毒感染、抗原呈递、T细胞活化、克隆增殖和免疫团队协作。",
+    "readingFocus": "“从初始T细胞到活化T细胞”：用流程图说明病毒进入细胞、感染细胞被识别、树突细胞呈递抗原、T细胞活化并增殖，最后多种免疫细胞协同清除感染。",
+    "keyBiologyConcepts": [
+      "病毒感染细胞",
+      "流感病毒",
+      "初始T细胞",
+      "杀手T细胞",
+      "树突细胞与抗原呈递",
+      "T细胞活化",
+      "克隆增殖",
+      "B细胞与抗体",
+      "免疫记忆"
+    ],
+    "recommendedBodyScienceStationFocus": "“从初始T细胞到活化T细胞”：用流程图说明病毒进入细胞、感染细胞被识别、树突细胞呈递抗原、T细胞活化并增殖，最后多种免疫细胞协同清除感染。"
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "influenza-virus-entry",
+      "topicId": "influenza",
+      "title": "病毒进入身体后发生了什么",
+      "coreQuestion": "流感病毒进来后，会马上让人很难受吗？",
+      "explanation": "流感病毒通常先接触呼吸道，再进入一些细胞里复制自己。被感染的细胞会发出异常信号，提醒免疫系统：这里需要帮助。",
+      "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-v2-station-01.webp",
+      "imageAlt": "流感病毒接近呼吸道黏膜，少量细胞发出求助信号的温和儿童科普图。",
+      "relatedPageIds": [
+        "influenza__v01_page-105"
+      ],
+      "biologyConcepts": [
+        "流感病毒",
+        "呼吸道黏膜",
+        "细胞感染"
+      ],
+      "encyclopediaTags": [
+        "病毒",
+        "呼吸道",
+        "被感染细胞"
+      ],
+      "parentNote": "可以用“病毒借用细胞机器复制”来解释，避免把病毒说成会思考的坏人。"
+    },
+    {
+      "stationId": "influenza-infected-cell-recognition",
+      "topicId": "influenza",
+      "title": "免疫细胞为什么要识别感染细胞",
+      "coreQuestion": "为什么身体不是只找病毒，也要找被感染的细胞？",
+      "explanation": "有些病毒躲进细胞里复制。免疫系统需要识别哪些细胞已经被感染，才能减少病毒继续扩散，这也是T细胞等免疫细胞的重要工作。",
+      "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-v2-station-02.webp",
+      "imageAlt": "免疫细胞通过信号识别被感染细胞，周围健康细胞保持安全距离的解释图。",
+      "relatedPageIds": [
+        "influenza__v01_page-116",
+        "influenza__v01_page-123"
+      ],
+      "biologyConcepts": [
+        "被感染细胞",
+        "抗原呈递",
+        "T细胞识别"
+      ],
+      "encyclopediaTags": [
+        "T细胞",
+        "抗原",
+        "免疫识别"
+      ],
+      "parentNote": "强调“识别”是为了保护更多细胞，不需要把清除过程讲得激烈。"
+    },
+    {
+      "stationId": "influenza-symptom-response",
+      "topicId": "influenza",
+      "title": "症状和免疫反应的关系",
+      "coreQuestion": "发烧、疲劳、流鼻涕一定都是病毒直接造成的吗？",
+      "explanation": "很多不舒服来自身体的防御反应。发烧像把环境调得不适合病毒，疲劳提醒身体休息，鼻涕和咳嗽帮助把外来物带出去。",
+      "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-v2-station-03.webp",
+      "imageAlt": "发热、休息、鼻腔黏液和免疫信号用温和图标连接起来的儿童科普图。",
+      "relatedPageIds": [
+        "influenza__v01_page-127",
+        "influenza__v01_page-134"
+      ],
+      "biologyConcepts": [
+        "发热",
+        "炎症信号",
+        "休息恢复"
+      ],
+      "encyclopediaTags": [
+        "发烧",
+        "鼻涕",
+        "免疫反应"
+      ],
+      "parentNote": "说明症状是身体在努力工作；同时提醒真实生病时要听成人安排。"
+    },
+    {
+      "stationId": "influenza-flu-vs-cold",
+      "topicId": "influenza",
+      "title": "流感和普通感冒不完全一样",
+      "coreQuestion": "流感是不是普通感冒的另一个名字？",
+      "explanation": "流感由流感病毒引起，常常来得更急，可能更容易让人发热、酸痛和疲劳。普通感冒可能由很多不同病毒引起，通常较轻，但都需要休息和照护。",
+      "imageAsset": "public/assets/cells-at-work/science-station/influenza/influenza-v2-station-04.webp",
+      "imageAlt": "两条并排的温和科普路径对比流感和普通感冒，使用抽象病毒和休息图标。",
+      "relatedPageIds": [
+        "influenza__v01_page-134",
+        "influenza__v01_page-136"
+      ],
+      "biologyConcepts": [
+        "流感病毒",
+        "普通感冒",
+        "症状差异"
+      ],
+      "encyclopediaTags": [
+        "流感",
+        "普通感冒",
+        "休息"
+      ],
+      "parentNote": "避免让孩子紧张，用“名字相近但不完全一样”帮助区分。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "influenza-q01",
+      "topicId": "influenza",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "哪里像入口",
+      "question": "看相关页面时，哪些画面线索让你想到病毒进入了身体？",
+      "answer": "可以找呼吸道、细胞变化和免疫细胞开始忙起来的线索。",
+      "relatedPageIds": [
+        "influenza__v01_page-105"
+      ],
+      "parentHint": "只观察画面现象，不要求复述对白。",
+      "biologyConcepts": [
+        "病毒进入",
+        "呼吸道"
+      ]
+    },
+    {
+      "cardId": "influenza-q02",
+      "topicId": "influenza",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "身体忙起来",
+      "question": "画面里有哪些地方表现出身体正在防御？",
+      "answer": "免疫细胞聚集、信号传递和被感染细胞被关注，都说明身体在防御。",
+      "relatedPageIds": [
+        "influenza__v01_page-116"
+      ],
+      "parentHint": "把“打斗”转成“身体在处理问题”。",
+      "biologyConcepts": [
+        "免疫防御",
+        "感染细胞"
+      ]
+    },
+    {
+      "cardId": "influenza-q03",
+      "topicId": "influenza",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么要找感染细胞",
+      "question": "病毒如果躲进细胞里，免疫系统为什么还要识别那个细胞？",
+      "answer": "因为被感染细胞可能继续制造病毒，识别它能帮助减少扩散。",
+      "relatedPageIds": [
+        "influenza__v01_page-123"
+      ],
+      "parentHint": "用“找出正在冒烟的房间”作温和类比。",
+      "biologyConcepts": [
+        "T细胞识别",
+        "抗原呈递"
+      ]
+    },
+    {
+      "cardId": "influenza-q04",
+      "topicId": "influenza",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "发烧像什么",
+      "question": "发烧一定是坏事吗？身体为什么会升高温度？",
+      "answer": "发烧可能是防御反应的一部分，但温度太高或不舒服时要让成人处理。",
+      "relatedPageIds": [
+        "influenza__v01_page-127"
+      ],
+      "parentHint": "科普不替代照护；强调需要成人判断。",
+      "biologyConcepts": [
+        "发热",
+        "免疫反应"
+      ]
+    },
+    {
+      "cardId": "influenza-q05",
+      "topicId": "influenza",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "生病时为什么要休息",
+      "question": "流感或感冒时，为什么大人常说要多休息？",
+      "answer": "休息能让身体把能量更多用在恢复和免疫工作上。",
+      "relatedPageIds": [
+        "influenza__v01_page-134"
+      ],
+      "parentHint": "联系孩子熟悉的“充电”经验。",
+      "biologyConcepts": [
+        "能量分配",
+        "恢复"
+      ]
+    },
+    {
+      "cardId": "influenza-q06",
+      "topicId": "influenza",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "怎样减少传播",
+      "question": "如果身边有人咳嗽流鼻涕，哪些做法可以保护大家？",
+      "answer": "洗手、通风、咳嗽时遮挡、身体不舒服时休息，都能减少传播。",
+      "relatedPageIds": [
+        "influenza__v01_page-136"
+      ],
+      "parentHint": "保持温和，不责备生病的人。",
+      "biologyConcepts": [
+        "呼吸道传播",
+        "生活防护"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题有病毒感染和免疫细胞战斗画面。共读时可以把重点放在“免疫系统如何识别被感染细胞并协作处理”，不要把发热或用药讲成固定处置；真实健康问题应由成人咨询专业医务人员。",
+  "sensitiveContentGuidance": "被感染细胞被画成僵尸/怪物，有恐怖感、战斗和少量血迹。建议家长把重点放在“被感染细胞需要被识别和清除”，不要让孩子理解成真实人体里有僵尸。",
+  "sourceNotes": [
+    "漫画来源：第1卷 第3话，只保留与流感病毒和免疫协作相关的页码线索，不展示漫画全文。",
+    "动画来源只记录流行性感冒主题级摘要，不接入视频、字幕或对白。"
+  ],
+  "pageRefs": {
+    "influenza__v01_page-105": {
+      "pageId": "influenza__v01_page-105",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/influenza__v01_page-105.webp",
+      "label": "漫画页 105"
+    },
+    "influenza__v01_page-116": {
+      "pageId": "influenza__v01_page-116",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/influenza__v01_page-116.webp",
+      "label": "漫画页 116"
+    },
+    "influenza__v01_page-123": {
+      "pageId": "influenza__v01_page-123",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/influenza__v01_page-123.webp",
+      "label": "漫画页 123"
+    },
+    "influenza__v01_page-127": {
+      "pageId": "influenza__v01_page-127",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/influenza__v01_page-127.webp",
+      "label": "漫画页 127"
+    },
+    "influenza__v01_page-134": {
+      "pageId": "influenza__v01_page-134",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/influenza__v01_page-134.webp",
+      "label": "漫画页 134"
+    },
+    "influenza__v01_page-136": {
+      "pageId": "influenza__v01_page-136",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v01/influenza__v01_page-136.webp",
+      "label": "漫画页 136"
+    }
+  }
+}

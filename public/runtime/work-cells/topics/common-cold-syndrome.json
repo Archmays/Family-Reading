@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 10,
+  "topicId": "common-cold-syndrome",
+  "slug": "common-cold-syndrome",
+  "title": "感冒症候群",
+  "displayTitle": "感冒症候群",
+  "category": "呼吸道感染",
+  "source": {
+    "volume": 3,
+    "chapterLabel": "第11话",
+    "sourceLabel": "第3卷 第11话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "感冒症候群主题把普通细胞、病毒感染、黏膜防御和喷嚏鼻涕咳嗽等症状放在同一条线索里。共读时可帮助孩子理解：感冒不是一个单一动作，而是一组由呼吸道和免疫系统共同参与的反应。",
+    "readingFocus": "“喷嚏、鼻涕、咳嗽是在做什么”：用病毒进入、细胞被利用、黏膜清理、症状组合和休息恢复五个节点解释，避免做成动画剧情复述。",
+    "keyBiologyConcepts": [
+      "感冒症候群",
+      "病毒感染",
+      "普通细胞",
+      "被感染细胞",
+      "呼吸道黏膜",
+      "鼻涕/喷嚏/咳嗽",
+      "白血球巡逻",
+      "感染传播"
+    ],
+    "recommendedBodyScienceStationFocus": [
+      "普通感冒通常和病毒有关",
+      "病毒为什么需要进入细胞",
+      "感染初期为什么不容易被发现",
+      "鼻腔和呼吸道黏膜的防御",
+      "喷嚏和洗手在防传播中的作用"
+    ]
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "common-cold-syndrome-virus-entry",
+      "topicId": "common-cold-syndrome",
+      "title": "感冒常从呼吸道入口开始",
+      "coreQuestion": "病毒通常从哪里进入身体？",
+      "explanation": "许多普通感冒和呼吸道病毒有关。病毒先接触鼻腔、咽喉等黏膜表面，再寻找能进入的细胞。",
+      "imageAsset": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-01.webp",
+      "imageAlt": "鼻腔和咽喉黏膜入口处，有抽象病毒颗粒靠近但未恐怖化的儿童科普图。",
+      "relatedPageIds": [
+        "common-cold-syndrome__v03_page-031",
+        "common-cold-syndrome__v03_page-032"
+      ],
+      "biologyConcepts": [
+        "病毒感染",
+        "呼吸道黏膜",
+        "感染入口"
+      ],
+      "encyclopediaTags": [
+        "普通感冒",
+        "鼻病毒",
+        "黏膜"
+      ],
+      "parentNote": "把病毒讲成需要借用细胞复制的微小颗粒。"
+    },
+    {
+      "stationId": "common-cold-syndrome-cell-hijack",
+      "topicId": "common-cold-syndrome",
+      "title": "病毒为什么要进入细胞",
+      "coreQuestion": "为什么病毒不只是在外面待着？",
+      "explanation": "病毒自己不能像细胞那样完整工作，它需要进入细胞并借用细胞里的机器复制自己。被感染细胞会成为免疫系统要识别的线索。",
+      "imageAsset": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-02.webp",
+      "imageAlt": "一个普通细胞旁边有病毒进入和异常信号的温和流程示意。",
+      "relatedPageIds": [
+        "common-cold-syndrome__v03_page-041",
+        "common-cold-syndrome__v03_page-052"
+      ],
+      "biologyConcepts": [
+        "被感染细胞",
+        "病毒复制",
+        "免疫识别"
+      ],
+      "encyclopediaTags": [
+        "病毒",
+        "普通细胞",
+        "被感染细胞"
+      ],
+      "parentNote": "避免把病毒拟人化成会策划的坏人。"
+    },
+    {
+      "stationId": "common-cold-syndrome-symptom-map",
+      "topicId": "common-cold-syndrome",
+      "title": "鼻涕、喷嚏、咳嗽是防御动作",
+      "coreQuestion": "这些症状为什么常常一起出现？",
+      "explanation": "鼻涕能黏住外来物，喷嚏和咳嗽能把刺激物排出，喉咙不舒服则提示局部正在应对刺激。它们共同组成感冒症候群。",
+      "imageAsset": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-03.webp",
+      "imageAlt": "上呼吸道症状地图，鼻涕、喷嚏、咳嗽用清楚图标和箭头表现。",
+      "relatedPageIds": [
+        "common-cold-syndrome__v03_page-052",
+        "common-cold-syndrome__v03_page-053"
+      ],
+      "biologyConcepts": [
+        "喷嚏",
+        "鼻涕",
+        "咳嗽",
+        "黏膜清理"
+      ],
+      "encyclopediaTags": [
+        "感冒症状",
+        "呼吸道防御"
+      ],
+      "parentNote": "把不舒服的症状解释成身体在忙，但不提供治疗建议。"
+    },
+    {
+      "stationId": "common-cold-syndrome-rest-and-recovery",
+      "topicId": "common-cold-syndrome",
+      "title": "休息让免疫系统有余力",
+      "coreQuestion": "为什么感冒时身体会觉得累？",
+      "explanation": "免疫系统处理感染需要能量。休息、喝水和减少传播风险能帮助身体把工作重点放回恢复上。",
+      "imageAsset": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-04.webp",
+      "imageAlt": "免疫细胞、呼吸道黏膜和休息补水图标共同组成恢复支持图。",
+      "relatedPageIds": [
+        "common-cold-syndrome__v03_page-053",
+        "common-cold-syndrome__v03_page-056"
+      ],
+      "biologyConcepts": [
+        "免疫工作量",
+        "恢复",
+        "减少传播"
+      ],
+      "encyclopediaTags": [
+        "休息",
+        "补水",
+        "传播防护"
+      ],
+      "parentNote": "只做生活常识提醒；病情判断交给成人和医生。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "common-cold-syndrome-q01",
+      "topicId": "common-cold-syndrome",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "哪里像入口",
+      "question": "看相关页面时，哪些画面线索像是感染源进入身体？",
+      "answer": "可以找黑色飞行物、呼吸道环境、普通细胞变化和免疫细胞开始追查的线索。",
+      "relatedPageIds": [
+        "common-cold-syndrome__v03_page-031",
+        "common-cold-syndrome__v03_page-032"
+      ],
+      "parentHint": "先观察入口和变化。",
+      "biologyConcepts": [
+        "病毒进入",
+        "呼吸道"
+      ]
+    },
+    {
+      "cardId": "common-cold-syndrome-q02",
+      "topicId": "common-cold-syndrome",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "谁被利用了",
+      "question": "普通细胞有没有马上发现异常？",
+      "answer": "不一定。故事里的线索适合说明病毒感染初期可能不容易被发现。",
+      "relatedPageIds": [
+        "common-cold-syndrome__v03_page-034",
+        "common-cold-syndrome__v03_page-041"
+      ],
+      "parentHint": "把判断力线索连接到科学概念。",
+      "biologyConcepts": [
+        "普通细胞",
+        "被感染细胞"
+      ]
+    },
+    {
+      "cardId": "common-cold-syndrome-q03",
+      "topicId": "common-cold-syndrome",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么会有症状",
+      "question": "鼻涕、喷嚏和咳嗽都只是在捣乱吗？",
+      "answer": "不是。它们常常和黏膜清理、排出刺激物、提醒身体休息有关。",
+      "relatedPageIds": [
+        "common-cold-syndrome__v03_page-052",
+        "common-cold-syndrome__v03_page-053"
+      ],
+      "parentHint": "让孩子把不舒服和防御联系起来。",
+      "biologyConcepts": [
+        "感冒症状",
+        "黏膜防御"
+      ]
+    },
+    {
+      "cardId": "common-cold-syndrome-q04",
+      "topicId": "common-cold-syndrome",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "免疫为什么要巡逻",
+      "question": "白血球为什么要追查异常细胞？",
+      "answer": "因为被感染细胞可能帮助病毒复制，免疫系统需要识别并处理异常。",
+      "relatedPageIds": [
+        "common-cold-syndrome__v03_page-036",
+        "common-cold-syndrome__v03_page-041"
+      ],
+      "parentHint": "不要复述战斗对白。",
+      "biologyConcepts": [
+        "白血球",
+        "免疫识别"
+      ]
+    },
+    {
+      "cardId": "common-cold-syndrome-q05",
+      "topicId": "common-cold-syndrome",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "感冒时怎么照顾别人",
+      "question": "感冒时为什么要遮住咳嗽、洗手、少靠近别人？",
+      "answer": "这些做法能减少飞沫和接触传播风险，也是在照顾家人和同学。",
+      "relatedPageIds": [
+        "common-cold-syndrome__v03_page-052"
+      ],
+      "parentHint": "引到生活习惯，不做责备。",
+      "biologyConcepts": [
+        "感染传播",
+        "卫生习惯"
+      ]
+    },
+    {
+      "cardId": "common-cold-syndrome-q06",
+      "topicId": "common-cold-syndrome",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "症候群是什么意思",
+      "question": "为什么叫“感冒症候群”，而不只说一个症状？",
+      "answer": "因为它通常是一组表现，比如鼻涕、喷嚏、咳嗽、喉咙不舒服和疲劳。",
+      "relatedPageIds": [
+        "common-cold-syndrome__v03_page-053"
+      ],
+      "parentHint": "强调“一组现象”。",
+      "biologyConcepts": [
+        "症候群",
+        "感冒症状"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题有恶作剧和追逐感。共读时可以把轻松剧情转成“病毒进入细胞、黏膜和免疫系统一起应对”的科学线索；不要把感冒处理讲成固定用药或诊断。",
+  "sensitiveContentGuidance": "有恶作剧、追逐、感染细胞被清除等漫画化战斗，整体强度中等。家庭阅读时可把重点放在“判断朋友行为是否安全”和“感冒防传播”。",
+  "sourceNotes": [
+    "漫画来源：第3卷 第11话，只保留页码线索，不展示漫画全文。",
+    "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。"
+  ],
+  "pageRefs": {
+    "common-cold-syndrome__v03_page-031": {
+      "pageId": "common-cold-syndrome__v03_page-031",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-031.webp",
+      "label": "漫画页 31"
+    },
+    "common-cold-syndrome__v03_page-032": {
+      "pageId": "common-cold-syndrome__v03_page-032",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-032.webp",
+      "label": "漫画页 32"
+    },
+    "common-cold-syndrome__v03_page-041": {
+      "pageId": "common-cold-syndrome__v03_page-041",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-041.webp",
+      "label": "漫画页 41"
+    },
+    "common-cold-syndrome__v03_page-052": {
+      "pageId": "common-cold-syndrome__v03_page-052",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-052.webp",
+      "label": "漫画页 52"
+    },
+    "common-cold-syndrome__v03_page-053": {
+      "pageId": "common-cold-syndrome__v03_page-053",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-053.webp",
+      "label": "漫画页 53"
+    },
+    "common-cold-syndrome__v03_page-056": {
+      "pageId": "common-cold-syndrome__v03_page-056",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-056.webp",
+      "label": "漫画页 56"
+    },
+    "common-cold-syndrome__v03_page-034": {
+      "pageId": "common-cold-syndrome__v03_page-034",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-034.webp",
+      "label": "漫画页 34"
+    },
+    "common-cold-syndrome__v03_page-036": {
+      "pageId": "common-cold-syndrome__v03_page-036",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-036.webp",
+      "label": "漫画页 36"
+    }
+  }
+}

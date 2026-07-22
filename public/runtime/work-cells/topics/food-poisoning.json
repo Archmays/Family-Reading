@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "seriesSlug": "work-cells",
+  "contentType": "science-manga-companion",
+  "order": 5,
+  "topicId": "food-poisoning",
+  "slug": "food-poisoning",
+  "title": "食物中毒",
+  "displayTitle": "食物中毒",
+  "category": "消化道与病原体",
+  "source": {
+    "volume": 2,
+    "chapterLabel": "第5话",
+    "sourceLabel": "第2卷 第5话"
+  },
+  "publication": {
+    "manifestStatus": "draft",
+    "verificationStatus": "from_user_reference_only",
+    "contentVersion": "work-cells-v2"
+  },
+  "hasAudio": false,
+  "overview": {
+    "summary": "食物中毒主题把消化道屏障、食源性细菌或毒素、排出反应、免疫清理和恢复放在一起。共读时可以把夸张的身体内部危机转成四个科学节点：发现异常、减少停留、免疫清理、恢复稳定。",
+    "readingFocus": "“身体为什么想把有害物排出去”：用消化道屏障、细菌/毒素、呕吐腹泻等排出机制、白血球清理和补水休息五个节点解释，不提供诊断或治疗建议。",
+    "keyBiologyConcepts": [
+      "食物中毒",
+      "消化道黏膜",
+      "食源性细菌",
+      "毒素刺激",
+      "排出反应",
+      "白血球/中性粒细胞",
+      "嗜酸性粒细胞",
+      "身体稳态"
+    ],
+    "recommendedBodyScienceStationFocus": "“为什么不同免疫细胞有不同专长”：用对比表说明白血球清除细菌、嗜酸性粒细胞更擅长对付寄生虫；配合食品安全提示，如熟食、洗手和注意海鲜处理。"
+  },
+  "bodyScienceStations": [
+    {
+      "stationId": "food-poisoning-gut-barrier",
+      "topicId": "food-poisoning",
+      "title": "消化道也是防线",
+      "coreQuestion": "吃进去的东西为什么要经过层层检查？",
+      "explanation": "消化道负责消化和吸收，也要把有害微生物挡在身体外。黏膜、胃酸、肠道运动和免疫细胞一起形成第一道防线。",
+      "imageAsset": "public/assets/cells-at-work/science-station/food-poisoning/food-poisoning-v2-station-01.webp",
+      "imageAlt": "消化道剖面中，黏膜屏障、胃酸和免疫细胞一起守住入口的儿童科普图。",
+      "relatedPageIds": [
+        "food-poisoning__v02_page-004",
+        "food-poisoning__v02_page-005"
+      ],
+      "biologyConcepts": [
+        "消化道黏膜",
+        "胃酸",
+        "屏障防御"
+      ],
+      "encyclopediaTags": [
+        "消化道",
+        "食物中毒",
+        "黏膜防御"
+      ],
+      "parentNote": "先把消化道讲成“边吸收边守门”的通道。"
+    },
+    {
+      "stationId": "food-poisoning-microbe-or-toxin",
+      "topicId": "food-poisoning",
+      "title": "问题常来自细菌或毒素",
+      "coreQuestion": "食物中毒是不是食物自己在攻击身体？",
+      "explanation": "很多食物中毒和看不见的细菌、病毒或毒素有关。重点不是害怕食物，而是理解清洁、熟食和保存为什么重要。",
+      "imageAsset": "public/assets/cells-at-work/science-station/food-poisoning/food-poisoning-v2-station-02.webp",
+      "imageAlt": "放大镜下的食物表面有抽象细菌和毒素图标，旁边有温和的安全提示元素。",
+      "relatedPageIds": [
+        "food-poisoning__v02_page-006",
+        "food-poisoning__v02_page-012"
+      ],
+      "biologyConcepts": [
+        "食源性细菌",
+        "毒素",
+        "食品安全"
+      ],
+      "encyclopediaTags": [
+        "食物中毒",
+        "细菌",
+        "毒素"
+      ],
+      "parentNote": "避免吓孩子，把重点放在“看不见所以要讲卫生”。"
+    },
+    {
+      "stationId": "food-poisoning-expel-response",
+      "topicId": "food-poisoning",
+      "title": "排出反应是在减少停留",
+      "coreQuestion": "为什么身体有时会想把不合适的东西排出去？",
+      "explanation": "呕吐、腹泻等反应可能是身体试图减少有害物质停留的方式。它们会让人不舒服，也可能带来脱水风险，所以需要成人照护。",
+      "imageAsset": "public/assets/cells-at-work/science-station/food-poisoning/food-poisoning-v2-station-03.webp",
+      "imageAlt": "肠道受到刺激后用清楚箭头表示排出反应和水分流失风险的安全科普图。",
+      "relatedPageIds": [
+        "food-poisoning__v02_page-013",
+        "food-poisoning__v02_page-018"
+      ],
+      "biologyConcepts": [
+        "排出机制",
+        "脱水风险",
+        "身体稳态"
+      ],
+      "encyclopediaTags": [
+        "腹泻",
+        "呕吐",
+        "补水"
+      ],
+      "parentNote": "只解释机制，不给处理方案；严重或持续不适要找成人和医生。"
+    },
+    {
+      "stationId": "food-poisoning-recovery-steps",
+      "topicId": "food-poisoning",
+      "title": "发现、排出、清理、恢复",
+      "coreQuestion": "身体处理食物中毒时会经历哪些步骤？",
+      "explanation": "身体不是只靠一个细胞解决问题。消化道反应、免疫清理、休息和水分补充一起帮助身体慢慢恢复稳定。",
+      "imageAsset": "public/assets/cells-at-work/science-station/food-poisoning/food-poisoning-v2-station-04.webp",
+      "imageAlt": "四步流程图表现发现异常、排出刺激、免疫清理和恢复稳定。",
+      "relatedPageIds": [
+        "food-poisoning__v02_page-021",
+        "food-poisoning__v02_page-028"
+      ],
+      "biologyConcepts": [
+        "免疫协作",
+        "恢复稳态",
+        "水分平衡"
+      ],
+      "encyclopediaTags": [
+        "白血球",
+        "消化道",
+        "身体稳态"
+      ],
+      "parentNote": "把故事收束成流程，不展开完整剧情。"
+    }
+  ],
+  "parentQuestionCards": [
+    {
+      "cardId": "food-poisoning-q01",
+      "topicId": "food-poisoning",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "故事发生在哪里",
+      "question": "看相关页面时，哪些线索说明这里是消化道环境？",
+      "answer": "可以找管道、胃肠背景、食物进入和防御细胞巡逻等线索。",
+      "relatedPageIds": [
+        "food-poisoning__v02_page-004",
+        "food-poisoning__v02_page-005"
+      ],
+      "parentHint": "先让孩子说画面线索，不要求复述对白。",
+      "biologyConcepts": [
+        "消化道",
+        "胃肠环境"
+      ]
+    },
+    {
+      "cardId": "food-poisoning-q02",
+      "topicId": "food-poisoning",
+      "type": "observation",
+      "category": "观察问题",
+      "title": "谁来处理异常",
+      "question": "画面里哪些细胞像是在处理外来威胁？",
+      "answer": "白血球等免疫细胞会靠近异常来源，嗜酸性粒细胞也有自己的专长。",
+      "relatedPageIds": [
+        "food-poisoning__v02_page-006",
+        "food-poisoning__v02_page-014"
+      ],
+      "parentHint": "把“战斗”翻译成识别和清理。",
+      "biologyConcepts": [
+        "白血球",
+        "嗜酸性粒细胞"
+      ]
+    },
+    {
+      "cardId": "food-poisoning-q03",
+      "topicId": "food-poisoning",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "为什么要排出去",
+      "question": "身体为什么有时会想把有害东西尽快排出去？",
+      "answer": "因为减少有害物质停留，可能帮助身体降低刺激和风险。",
+      "relatedPageIds": [
+        "food-poisoning__v02_page-013",
+        "food-poisoning__v02_page-018"
+      ],
+      "parentHint": "说明这是机制，不是让孩子自行判断病情。",
+      "biologyConcepts": [
+        "排出机制",
+        "毒素刺激"
+      ]
+    },
+    {
+      "cardId": "food-poisoning-q04",
+      "topicId": "food-poisoning",
+      "type": "understanding",
+      "category": "理解问题",
+      "title": "不同细胞不同专长",
+      "question": "为什么不是每一种免疫细胞都做同一件事？",
+      "answer": "免疫细胞有分工，有的更擅长处理细菌，有的更适合寄生虫等不同对象。",
+      "relatedPageIds": [
+        "food-poisoning__v02_page-012",
+        "food-poisoning__v02_page-020"
+      ],
+      "parentHint": "用“工具不同、任务不同”解释。",
+      "biologyConcepts": [
+        "免疫分工",
+        "嗜酸性粒细胞"
+      ]
+    },
+    {
+      "cardId": "food-poisoning-q05",
+      "topicId": "food-poisoning",
+      "type": "life-connection",
+      "category": "联系生活问题",
+      "title": "吃东西前后",
+      "question": "为了减少食物中毒风险，生活里可以注意什么？",
+      "answer": "洗手、熟食、分开生熟、注意保存和不吃明显变质食物，都是常识层面的防线。",
+      "relatedPageIds": [
+        "food-poisoning__v02_page-004"
+      ],
+      "parentHint": "只做常识提醒，不替代食品安全或医疗判断。",
+      "biologyConcepts": [
+        "食品安全",
+        "生活防护"
+      ]
+    },
+    {
+      "cardId": "food-poisoning-q06",
+      "topicId": "food-poisoning",
+      "type": "science-concept",
+      "category": "科学概念问题",
+      "title": "稳态是什么意思",
+      "question": "恢复稳定和“打赢敌人”有什么不同？",
+      "answer": "恢复稳定表示身体的水分、屏障、免疫清理和日常工作都慢慢回到可工作的状态。",
+      "relatedPageIds": [
+        "food-poisoning__v02_page-028"
+      ],
+      "parentHint": "把结尾引向身体平衡。",
+      "biologyConcepts": [
+        "身体稳态",
+        "恢复"
+      ]
+    }
+  ],
+  "parentReadingNote": "这个主题可能让孩子联想到呕吐、腹泻或肚子痛。共读时请把重点放在消化道防线和免疫协作，不提供诊断、用药或处置建议；真实不适应由成人联系专业医务人员。",
+  "sensitiveContentGuidance": "有寄生虫怪物、消化道威胁、战斗和少量惊吓表情。讲给孩子时可强调食品卫生和免疫分工，不需要渲染寄生虫恐惧。",
+  "sourceNotes": [
+    "漫画来源：第2卷 第5话，只保留页码线索，不展示漫画全文。",
+    "动画来源只记录主题级摘要和时间窗线索，不接入视频、字幕、对白或播放器。"
+  ],
+  "pageRefs": {
+    "food-poisoning__v02_page-004": {
+      "pageId": "food-poisoning__v02_page-004",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-004.webp",
+      "label": "漫画页 4"
+    },
+    "food-poisoning__v02_page-005": {
+      "pageId": "food-poisoning__v02_page-005",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-005.webp",
+      "label": "漫画页 5"
+    },
+    "food-poisoning__v02_page-006": {
+      "pageId": "food-poisoning__v02_page-006",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-006.webp",
+      "label": "漫画页 6"
+    },
+    "food-poisoning__v02_page-012": {
+      "pageId": "food-poisoning__v02_page-012",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-012.webp",
+      "label": "漫画页 12"
+    },
+    "food-poisoning__v02_page-013": {
+      "pageId": "food-poisoning__v02_page-013",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-013.webp",
+      "label": "漫画页 13"
+    },
+    "food-poisoning__v02_page-018": {
+      "pageId": "food-poisoning__v02_page-018",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-018.webp",
+      "label": "漫画页 18"
+    },
+    "food-poisoning__v02_page-021": {
+      "pageId": "food-poisoning__v02_page-021",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-021.webp",
+      "label": "漫画页 21"
+    },
+    "food-poisoning__v02_page-028": {
+      "pageId": "food-poisoning__v02_page-028",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-028.webp",
+      "label": "漫画页 28"
+    },
+    "food-poisoning__v02_page-014": {
+      "pageId": "food-poisoning__v02_page-014",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-014.webp",
+      "label": "漫画页 14"
+    },
+    "food-poisoning__v02_page-020": {
+      "pageId": "food-poisoning__v02_page-020",
+      "imagePath": "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-020.webp",
+      "label": "漫画页 20"
+    }
+  }
+}
