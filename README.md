@@ -10,7 +10,14 @@
 npm run verify:release
 ```
 
-该命令只运行一次完整测试，然后在复制前检查公开 Git current tree，在生成 `dist` 后执行发布目录审计。当前构建会复制 `index.html`、`assets/`、12 册卡梅拉运行时内容与音频，以及工作细胞主题运行时 manifest、缩略图、科学小站图片和 page map；同时排除 `source/`、PDF、EPUB、完整工作细胞页面目录、动画素材和 `ocr/` OCR 中间文件。发布规则和当前风险基线见 `docs/portfolio/fr-p0/`。
+该命令先对 tracked runtime content 执行确定性与时效检查，再运行一次完整测试；复制前检查公开 Git current tree，生成 `dist` 后执行发布目录审计。当前构建会复制 `index.html`、`assets/`、`public/runtime/`、12 册卡梅拉所需的详情与音频，以及工作细胞已引用的媒体；不发布工作细胞 authoring manifest、page map 或 OCR 处理输出。发布规则和当前风险基线见 `docs/portfolio/fr-p0/` 与 `docs/portfolio/fr-p4a/`。
+
+当 authoring JSON 合法变更后，先更新并验证跟踪的运行时投影：
+
+```bash
+npm run generate:runtime
+npm run validate:runtime
+```
 
 ## GitHub Pages 部署
 

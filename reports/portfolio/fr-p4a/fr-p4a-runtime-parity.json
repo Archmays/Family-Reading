@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-PORTFOLIO-P4A",
+  "generatorVersion": "fr-p4a-runtime-content/1",
+  "runtimeManifest": "public/runtime/runtime-manifest.json",
+  "counts": {
+    "carmelaBooks": {
+      "expected": 12,
+      "actual": 12
+    },
+    "workCellsTopics": {
+      "expected": 27,
+      "actual": 27
+    },
+    "workCellsCategories": {
+      "expected": 24,
+      "actual": 24
+    },
+    "workCellsStations": {
+      "expected": 108,
+      "actual": 108
+    },
+    "workCellsQuestions": {
+      "expected": 162,
+      "actual": 162
+    },
+    "workCellsPageRefs": {
+      "expected": 286,
+      "actual": 286,
+      "globallyUnique": 285
+    }
+  },
+  "carmelaReferences": {
+    "coverExisting": "12/12",
+    "assetDetailExisting": "12/12",
+    "companionDetailExisting": "12/12",
+    "orderTitleSlugParity": "PASS",
+    "audioAvailabilityParity": "PASS"
+  },
+  "workCellsReferences": {
+    "imageOccurrences": 421,
+    "uniqueImages": 400,
+    "existingUniqueImages": "400/400",
+    "unresolvedPageRefs": 0,
+    "duplicateTopicIds": 0,
+    "duplicateTopicSlugs": 0,
+    "hasAudio": false
+  },
+  "identity": {
+    "cancerCellAndCancerCellIISeparate": true,
+    "hemorrhagicShockExistingRulePreserved": true,
+    "authoringOrderPreserved": true,
+    "categoryOrderDeterministic": true
+  },
+  "publication": {
+    "manifestStatusPreserved": "draft",
+    "verificationStatesUpgraded": false,
+    "workCellsAudioAdded": false
+  },
+  "exposure": {
+    "authoringOnlyKeys": 0,
+    "fullPageArrays": 0,
+    "promptFields": 0,
+    "privateOrLocalPaths": 0
+  },
+  "status": "PASS"
+}

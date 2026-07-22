@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-PORTFOLIO-P4A",
+  "source": {
+    "path": "public/books/工作细胞/draft-manifest.json",
+    "sha256": "86f6d9d339596085d3cb8cda39ac20b5558afb50be422c3c0d8e42527c088640",
+    "bytes": 2445765,
+    "lines": 52213
+  },
+  "aggregateShape": {
+    "recursiveObjects": 1482,
+    "recursiveArrays": 5339,
+    "fieldOccurrences": 18520,
+    "leafValues": 38602,
+    "uniqueFieldNames": 133,
+    "uniqueNormalizedFieldPaths": 161
+  },
+  "authoringCounts": {
+    "topics": 27,
+    "categories": 24,
+    "stations": 108,
+    "questions": 162,
+    "pageAnnotations": 991,
+    "pageImagePaths": 991,
+    "stationRelatedPageIdOccurrences": 277,
+    "questionRelatedPageIdOccurrences": 257,
+    "perTopicUniquePageRefSum": 286,
+    "globalUniqueRelatedPageIds": 285,
+    "sourceNotes": 96
+  },
+  "sourceNoteProjection": {
+    "runtimeVisibleKept": 37,
+    "authoringMachineOrPathNotesRemoved": 59,
+    "familyVisibleStationQuestionGuidanceLoss": 0
+  },
+  "authoringOnlyInventory": {
+    "distinctDenylistKeysPresent": 24,
+    "occurrences": 3543,
+    "byKey": {
+      "assetPolicy": 1,
+      "bodyScienceStationCandidatePageIds": 27,
+      "bodyScienceStationPolicy": 1,
+      "codexImportNotes": 27,
+      "imagePrompt": 108,
+      "imagePromptId": 108,
+      "mergeGroup": 27,
+      "mergedFrom": 6,
+      "mustNotMergeWith": 4,
+      "notesForCodex": 1006,
+      "originalTitleReferences": 27,
+      "pageAnnotations": 27,
+      "pageImagePaths": 27,
+      "privateFullEpubInputDirectory": 1,
+      "promptRequiredPrefix": 1,
+      "publicAssets": 27,
+      "qualityFlags": 27,
+      "recommendedEncyclopediaEntries": 27,
+      "recommendedParentQuestions": 27,
+      "relatedAnimationScenes": 27,
+      "relatedComicPages": 27,
+      "sourcePath": 991,
+      "topicMergeRules": 1,
+      "zipPath": 991
+    }
+  },
+  "runtimeExposure": {
+    "authoringOnlyKeyOccurrences": 0,
+    "absolutePaths": 0,
+    "timestamps": 0,
+    "status": "NONE"
+  },
+  "rawAuthoringContentCopiedIntoReport": false
+}

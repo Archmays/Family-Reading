@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-PORTFOLIO-P4A",
+  "measurement": "Chromium Playwright CLI request events plus deterministic UTF-8 file bytes",
+  "coldRoutes": [
+    {
+      "case": "home",
+      "jsonRequests": 1,
+      "rawJsonBytes": 1187,
+      "unrelatedDomainRequests": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "carmela-series",
+      "jsonRequests": 2,
+      "rawJsonBytes": 6893,
+      "unrelatedDomainRequests": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "carmela-book-01",
+      "jsonRequests": 4,
+      "rawJsonBytes": 26905,
+      "unrelatedDomainRequests": 0,
+      "otherBookDetailRequests": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "carmela-book-11",
+      "jsonRequests": 4,
+      "rawJsonBytes": 31070,
+      "unrelatedDomainRequests": 0,
+      "otherBookDetailRequests": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "work-cells-series",
+      "jsonRequests": 2,
+      "rawJsonBytes": 15914,
+      "unrelatedDomainRequests": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "streptococcus-pneumoniae",
+      "jsonRequests": 3,
+      "rawJsonBytes": 27615,
+      "unrelatedDomainRequests": 0,
+      "otherTopicDetailRequests": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "induced-pluripotent-stem-cells",
+      "jsonRequests": 3,
+      "rawJsonBytes": 35796,
+      "unrelatedDomainRequests": 0,
+      "otherTopicDetailRequests": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "cancer-cell-ii",
+      "jsonRequests": 3,
+      "rawJsonBytes": 30711,
+      "unrelatedDomainRequests": 0,
+      "otherTopicDetailRequests": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "novel-coronavirus",
+      "jsonRequests": 3,
+      "rawJsonBytes": 35030,
+      "unrelatedDomainRequests": 0,
+      "otherTopicDetailRequests": 0,
+      "status": "PASS"
+    },
+    {
+      "case": "missing-carmela-slug",
+      "jsonRequests": 2,
+      "unrelatedDomainRequests": 0,
+      "detailRequests": 0,
+      "status": "PASS"
+    }
+  ],
+  "forbiddenRequests": {
+    "oldWorkCellsManifest": 0,
+    "workCellsPageMap": 0,
+    "unrelatedDomainJson": 0
+  },
+  "warmJourneys": {
+    "homeCarmelaBookSectionBackUniqueJson": 4,
+    "homeWorkCellsTopicSectionBackUniqueJson": 3,
+    "backForwardCacheReuse": "PASS",
+    "sectionReuse": "PASS"
+  },
+  "raceAndFailure": {
+    "delayedCarmelaThenScienceFinalRoute": "streptococcus-pneumoniae",
+    "staleRenderFindings": 0,
+    "injectedFailure": "selected Work Cells detail HTTP 503",
+    "familyCopyTechnicalPaths": 0,
+    "retryRequestsOnlyFailedDetailAgain": true,
+    "retryRecovered": true,
+    "status": "PASS"
+  },
+  "media": {
+    "carmelaInitialPageMediaRequests": 0,
+    "carmelaInitialAudioRequests": 0,
+    "book01FirstDisclosureImages": 2,
+    "lightbox": "PASS",
+    "audioIntentRequestStatus": 206,
+    "audioReadyState": 4,
+    "status": "PASS"
+  },
+  "browserQa": {
+    "viewports": [
+      "390x844",
+      "768x1024",
+      "1280x720",
+      "1440x900",
+      "1024x400"
+    ],
+    "horizontalOverflowFindings": 0,
+    "successfulRouteConsoleErrors": 0,
+    "unexpectedAssetFailures": 0,
+    "forcedColors": "PASS",
+    "reducedMotion": "PASS",
+    "printSmoke": "PASS",
+    "focusTitleBreadcrumb": "PASS"
+  },
+  "persistentRawHar": false,
+  "persistentBrowserProfile": false,
+  "status": "PASS"
+}

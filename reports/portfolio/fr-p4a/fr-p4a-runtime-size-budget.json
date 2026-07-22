@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-PORTFOLIO-P4A",
+  "runtime": {
+    "files": 31,
+    "contentFiles": 30,
+    "totalBytes": 393121,
+    "contentBytes": 380867,
+    "manifestBytes": 12254,
+    "hardBytes": 2097152,
+    "status": "PASS"
+  },
+  "indexes": {
+    "home": {
+      "bytes": 1187,
+      "hardBytes": 20480,
+      "status": "PASS"
+    },
+    "carmelaBooks": {
+      "bytes": 5706,
+      "warningBytes": 25600,
+      "hardBytes": 51200,
+      "status": "PASS"
+    },
+    "workCellsTopics": {
+      "bytes": 14727,
+      "warningBytes": 51200,
+      "hardBytes": 102400,
+      "status": "PASS"
+    }
+  },
+  "topicDetails": {
+    "files": 27,
+    "totalBytes": 359247,
+    "warningBytes": 1310720,
+    "hardBytes": 1835008,
+    "largest": {
+      "slug": "induced-pluripotent-stem-cells",
+      "bytes": 19882,
+      "individualWarningBytes": 81920,
+      "individualHardBytes": 153600
+    },
+    "status": "PASS"
+  },
+  "code": {
+    "javascriptFiles": 4,
+    "javascriptBytes": 100696,
+    "javascriptPreferredBytes": 122880,
+    "cssFiles": 1,
+    "cssBytes": 60166,
+    "p3bCssBytes": 60140,
+    "cssDeltaBytes": 26,
+    "runtimeDependencies": 0,
+    "status": "PASS"
+  },
+  "dist": {
+    "files": 1563,
+    "bytes": 835920908,
+    "p3bBytes": 838074288,
+    "deltaBytes": -2153380,
+    "runtimeFiles": 31,
+    "runtimeBytes": 393121,
+    "draftManifestPresent": false,
+    "pageMapPresent": false,
+    "mediaDeletedForBudget": false,
+    "status": "PASS"
+  }
+}

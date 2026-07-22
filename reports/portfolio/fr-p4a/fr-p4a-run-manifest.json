@@ -1,0 +1,155 @@
+{
+  "schemaVersion": 1,
+  "runId": "fr-p4a-20260722",
+  "phase": "FR-PORTFOLIO-P4A",
+  "repository": {
+    "nameWithOwner": "Archmays/Family-Reading",
+    "repositoryId": 1271691196,
+    "visibility": "PUBLIC_UNCHANGED",
+    "defaultBranch": "main"
+  },
+  "git": {
+    "startSha": "58be1b52710ee4631c591e834f52ae4dd88d4631",
+    "p3bImplementationSha": "8eadb1b2b4fba566bee031b07db1420ce843b78c",
+    "workBranch": "codex/fr-p4a-route-scoped-runtime-data",
+    "finalSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "historyRewrite": false,
+    "forcePush": false
+  },
+  "changeImpact": {
+    "classification": "PHASE_SCOPED_WITH_SHARED_LOADER_BUILD_UI_CLOSURE",
+    "canonicalRuntimeWriter": "scripts/generate-runtime-content.mjs",
+    "affected": [
+      "tracked runtime projection",
+      "static build and dist audit",
+      "shared route data loading",
+      "current Carmela and Work Cells data adapters",
+      "GitHub Pages action runtimes"
+    ],
+    "explicitlyExcluded": [
+      "FR-P4B Work Cells redesign",
+      "FR-P5 media processing",
+      "source and authoring mutations",
+      "runtime framework or backend"
+    ]
+  },
+  "runtime": {
+    "manifest": "public/runtime/runtime-manifest.json",
+    "files": 31,
+    "bytes": 393121,
+    "generatorStatus": "PASS",
+    "determinismStatus": "PASS",
+    "stalenessStatus": "PASS",
+    "parityReport": "reports/portfolio/fr-p4a/fr-p4a-runtime-parity.json",
+    "fieldInventory": "reports/portfolio/fr-p4a/fr-p4a-authoring-field-inventory.json"
+  },
+  "tests": {
+    "baselinePassed": 90,
+    "baselineTotal": 90,
+    "targeted": [
+      {
+        "scope": "runtime generator and parity",
+        "passed": 13,
+        "total": 13,
+        "status": "PASS"
+      },
+      {
+        "scope": "content loader cache abort retry and route contracts",
+        "passed": 14,
+        "total": 14,
+        "status": "PASS"
+      },
+      {
+        "scope": "combined affected legacy and P4A closure before correction",
+        "passed": 90,
+        "total": 94,
+        "status": "FOUR_LEGACY_EXPECTATIONS_CORRECTED"
+      },
+      {
+        "scope": "affected four-test closure after correction",
+        "passed": 4,
+        "total": 4,
+        "status": "PASS"
+      }
+    ],
+    "finalRelease": {
+      "command": "npm run verify:release",
+      "localInvocations": 1,
+      "node": "v24.16.0",
+      "initialPassed": 116,
+      "initialTotal": 117,
+      "initialFailed": 1,
+      "initialFinding": "README build-boundary edit omitted the retained OCR publishing exclusion",
+      "affectedRerun": {
+        "command": "npx --yes node@22 --test --test-name-pattern=GitHub Pages deployment files and publishing rules are configured tests/mvp.test.mjs",
+        "node": "v22",
+        "passed": 1,
+        "total": 1,
+        "status": "PASS"
+      },
+      "effectivePassed": 117,
+      "effectiveTotal": 117,
+      "effectiveFailed": 0,
+      "downstreamNode22BuildClosure": "PASS",
+      "fullSuiteRepeated": false,
+      "status": "PASS_AFTER_AFFECTED_RERUN"
+    },
+    "thresholdsWeakened": false,
+    "assertionsRemoved": false
+  },
+  "browser": {
+    "networkReport": "reports/portfolio/fr-p4a/fr-p4a-route-network-baseline.json",
+    "coldRouteCases": 10,
+    "warmJourneys": 2,
+    "raceProtection": "PASS",
+    "failureRetry": "PASS",
+    "currentUiNonRegression": "PASS",
+    "rawHarSaved": false,
+    "browserProfileSaved": false
+  },
+  "build": {
+    "status": "PASS",
+    "publicRepositoryValidator": "PASS",
+    "publicRepositoryFindings": 0,
+    "distAudit": "PASS",
+    "distFiles": 1563,
+    "distBytes": 835920908,
+    "draftManifestPresent": false,
+    "pageMapPresent": false
+  },
+  "actionsWarning": {
+    "baselineRunId": 29803791008,
+    "baselineSha": "58be1b52710ee4631c591e834f52ae4dd88d4631",
+    "affectedRefsBefore": [
+      "actions/checkout@v4",
+      "actions/setup-node@v4",
+      "actions/configure-pages@v5",
+      "actions/upload-pages-artifact@v3 -> actions/upload-artifact@v4",
+      "actions/deploy-pages@v4"
+    ],
+    "refsAfter": [
+      "actions/checkout@v5",
+      "actions/setup-node@v5",
+      "actions/configure-pages@v6",
+      "actions/upload-pages-artifact@v5",
+      "actions/deploy-pages@v5"
+    ],
+    "applicationNodeVersion": 22,
+    "expectedActionRuntime": 24,
+    "status": "RESOLVED_AFTER_EXACT_SHA_RUN"
+  },
+  "sourceIntegrity": {
+    "beforeFiles": 1278,
+    "afterFiles": 1278,
+    "beforeBytes": 7882956334,
+    "afterBytes": 7882956334,
+    "beforeCompactJsonSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "afterCompactJsonSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "trackedProtectedDiffs": 0,
+    "status": "VERIFIED_UNCHANGED"
+  },
+  "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+  "privacyStatus": "PASS",
+  "qualityCompromises": 0,
+  "nextRecommendedTask": "FR-P4B Work Cells Topic Experience and Route-Scoped Interaction"
+}
