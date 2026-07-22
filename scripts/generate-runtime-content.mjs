@@ -88,6 +88,11 @@ export function compareStablePaths(left, right) {
   return left < right ? -1 : left > right ? 1 : 0;
 }
 
+export function canonicalizeJsonSourceBytes(bytes) {
+  const normalizedText = Buffer.from(bytes).toString('utf8').replace(/\r\n?/g, '\n');
+  return Buffer.from(normalizedText, 'utf8');
+}
+
 function sha256(buffer) {
   return createHash('sha256').update(buffer).digest('hex');
 }
@@ -186,7 +191,7 @@ async function readJsonSource(rootDir, relativePath, sourceRecords) {
   assert(!containsTraversal(normalizedPath), `Source path must not traverse: ${normalizedPath}`);
   const absolutePath = path.join(rootDir, ...normalizedPath.split('/'));
   assert(isInside(rootDir, absolutePath), `Source path escapes the repository: ${normalizedPath}`);
-  const bytes = await readFile(absolutePath);
+  const bytes = canonicalizeJsonSourceBytes(await readFile(absolutePath));
   sourceRecords.set(normalizedPath, {
     path: normalizedPath,
     sha256: sha256(bytes),

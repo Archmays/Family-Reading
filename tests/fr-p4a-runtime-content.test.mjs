@@ -7,6 +7,7 @@ import test, { after, before } from 'node:test';
 
 import {
   AUTHORING_ONLY_KEYS_FOR_TESTS,
+  canonicalizeJsonSourceBytes,
   compareStablePaths,
   PROJECT_ROOT,
   PRODUCTION_RUNTIME_DIR,
@@ -21,7 +22,7 @@ import {
   writeArtifactsToDirectory,
 } from '../scripts/generate-runtime-content.mjs';
 
-test('runtime paths use locale-independent ordinal ordering', () => {
+test('runtime manifests normalize host ordering and JSON line endings', async () => {
   const paths = [
     'public/books/工作细胞',
     'public/books/不一样的卡梅拉',
@@ -36,10 +37,18 @@ test('runtime paths use locale-independent ordinal ordering', () => {
     'public/books/不一样的卡梅拉',
     'public/books/工作细胞',
   ]);
+
+  const lf = Buffer.from('{\n  "title": "阅读"\n}\n', 'utf8');
+  const crlf = Buffer.from('{\r\n  "title": "阅读"\r\n}\r\n', 'utf8');
+  assert.equal(canonicalizeJsonSourceBytes(lf).equals(lf), true);
+  assert.equal(canonicalizeJsonSourceBytes(crlf).equals(lf), true);
+  const attributes = await readFile(path.join(PROJECT_ROOT, '.gitattributes'), 'utf8');
+  assert.match(attributes, /^public\/runtime\/\*\* text eol=lf$/m);
 });
 
 let generated;
 let tempRoot;
+let authoringSourceSnapshots;
 
 function hash(bytes) {
   return createHash('sha256').update(bytes).digest('hex');
@@ -59,6 +68,11 @@ function recursiveKeys(value, keys = []) {
 
 before(async () => {
   generated = await generateRuntimeArtifacts();
+  authoringSourceSnapshots = new Map();
+  for (const record of generated.sourceRecords) {
+    const bytes = await readFile(path.join(PROJECT_ROOT, ...record.path.split('/')));
+    authoringSourceSnapshots.set(record.path, { bytes: bytes.length, sha256: hash(bytes) });
+  }
   tempRoot = await mkdtemp(path.join(os.tmpdir(), 'fr-p4a-runtime-tests-'));
 });
 
@@ -244,7 +258,7 @@ test('runtime source notes remove paths and authoring-processing notes without r
   assert.deepEqual(projectSourceNotes(notes), [notes[0], notes[1], notes[4]]);
 });
 
-test('manifest hashes all consumed sources and every non-self output without timestamps or absolute paths', () => {
+test('manifest hashes all consumed sources and every non-self output without timestamps or absolute paths', async () => {
   const manifestBytes = generated.artifacts.get('runtime-manifest.json');
   const manifestText = manifestBytes.toString('utf8');
   const manifest = JSON.parse(manifestText);
@@ -259,6 +273,14 @@ test('manifest hashes all consumed sources and every non-self output without tim
   const outputPaths = manifest.outputs.map((output) => output.path);
   assert.deepEqual(sourcePaths, [...sourcePaths].sort(compareStablePaths));
   assert.deepEqual(outputPaths, [...outputPaths].sort(compareStablePaths));
+
+  for (const source of manifest.sources) {
+    const sourceBytes = canonicalizeJsonSourceBytes(
+      await readFile(path.join(PROJECT_ROOT, ...source.path.split('/'))),
+    );
+    assert.equal(source.bytes, sourceBytes.length);
+    assert.equal(source.sha256, hash(sourceBytes));
+  }
 
   for (const output of manifest.outputs) {
     const relativePath = output.path.replace(/^public\/runtime\//, '');
@@ -340,9 +362,9 @@ test('output guards distinguish production writes from safe external temp output
 });
 
 test('authoring source bytes remain unchanged after external generation and replacement tests', async () => {
-  for (const record of generated.sourceRecords) {
-    const bytes = await readFile(path.join(PROJECT_ROOT, ...record.path.split('/')));
-    assert.equal(bytes.length, record.bytes, record.path);
-    assert.equal(hash(bytes), record.sha256, record.path);
+  for (const [relativePath, snapshot] of authoringSourceSnapshots) {
+    const bytes = await readFile(path.join(PROJECT_ROOT, ...relativePath.split('/')));
+    assert.equal(bytes.length, snapshot.bytes, relativePath);
+    assert.equal(hash(bytes), snapshot.sha256, relativePath);
   }
 });

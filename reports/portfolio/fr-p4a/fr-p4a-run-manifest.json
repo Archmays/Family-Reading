@@ -48,7 +48,7 @@
     "baselineTotal": 90,
     "targeted": [
       {
-        "scope": "runtime generator parity and ordinal-order regression",
+        "scope": "runtime generator parity, ordinal-order and line-ending regression",
         "passed": 14,
         "total": 14,
         "status": "PASS"
@@ -125,6 +125,14 @@
         "conclusion": "FAILURE",
         "failedJob": "build",
         "cause": "host-locale-dependent runtime-manifest source ordering",
+        "deploymentCount": 0
+      },
+      {
+        "runId": 29928799138,
+        "sha": "f04115a329739c301a51ea351a727090500bc54e",
+        "conclusion": "FAILURE",
+        "failedJob": "build",
+        "cause": "checkout-line-ending-dependent source hashes and byte counts",
         "deploymentCount": 0
       }
     ],

@@ -32,6 +32,8 @@ Exactly one final local `npm run verify:release` invocation was executed. It rea
 
 The first exact-SHA Pages run `29927839086` at `0ceeb0419780b215ffe0f3081daf5a3464c037d0` stopped in the build job because Linux/Node 22 serialized the runtime-manifest source list in a different host-locale order. Runtime content and parity were unchanged. The fix uses explicit ordinal path ordering and adds a cross-platform regression test; locally, only the affected generator suite, staleness check, and downstream build closure were rerun. The affected closure passed the public validator (2,868 tracked files, 183 scanned text files, zero findings), runtime check, build and dist audit. The successful exact-SHA rerun and CI total are recorded in the final handoff.
 
+The second exact-SHA Pages run `29928799138` at `f04115a329739c301a51ea351a727090500bc54e` exposed the other checkout-dependent manifest input: 25 of 29 consumed JSON files were CRLF in the Windows worktree but LF in the Git blob and Linux checkout, so raw source hashes and byte counts differed while all 30 runtime content outputs remained identical. Source hashing now canonicalizes JSON to UTF-8/LF, and a scoped `.gitattributes` rule keeps tracked runtime output at LF on every checkout. The existing cross-platform regression test covers ordering, CRLF/LF equivalence and the scoped output rule; source immutability still compares raw before/after bytes. The final affected closure passed the public validator (2,869 tracked files, 184 scanned text files, zero findings), generator suite 14/14, runtime check, build and dist audit.
+
 ## Runtime and performance
 
 | Metric | Value | Gate | Status |
@@ -79,7 +81,7 @@ P3B run `29803791008` named checkout v4, setup-node v4, configure-pages v5, nest
 | 22 | Runtime dependency/framework added? | NO |
 | 23 | Raw HAR/profile/token saved? | NO |
 | 24 | Actions blindly upgraded? | NO; official release/runtime evidence recorded |
-| 25 | Final full test repeated? | NO; one invocation, then only the affected README assertion, ordinal generator suite and downstream build closures |
+| 25 | Final full test repeated? | NO; one invocation, then only the affected README assertion, cross-platform generator suite and downstream build closures |
 | 26 | Main/remote/Pages same SHA? | RESOLVED POST-COMMIT |
 | 27 | Workspace clean? | RESOLVED POST-COMMIT |
 | 28 | Quality compromises? | 0 |

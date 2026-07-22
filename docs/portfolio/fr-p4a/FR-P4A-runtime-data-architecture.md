@@ -52,7 +52,7 @@ Authoring-only prompts, review notes, source/archive paths, repeated full page a
 - `--check`: regenerate in memory and fail on missing, extra or stale tracked output without modifying the workspace;
 - `--output <safe-temp-dir>`: write only to a validated directory outside the repository for focused tests.
 
-Paths containing traversal, repository-internal temporary output, filesystem roots and unauthorized production writes fail closed. JSON is UTF-8, two-space formatted, final-newline terminated, stable in key/order, and free of timestamps. Generated and source path lists use a locale-independent ordinal comparator; host-default locale ordering is not used for manifest serialization.
+Paths containing traversal, repository-internal temporary output, filesystem roots and unauthorized production writes fail closed. JSON is UTF-8, two-space formatted, final-newline terminated, stable in key/order, and free of timestamps. Generated and source path lists use a locale-independent ordinal comparator; host-default locale ordering is not used for manifest serialization. Consumed JSON is parsed and source-hashed in canonical UTF-8/LF form, while `.gitattributes` fixes only `public/runtime/**` to LF so fresh Windows and Linux checkouts retain byte-identical tracked output.
 
 ## Build boundary
 

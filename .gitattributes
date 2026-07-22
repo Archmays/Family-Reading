@@ -1,0 +1,2 @@
+# Generated runtime JSON must stay byte-identical on Windows and Linux.
+public/runtime/** text eol=lf
