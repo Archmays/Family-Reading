@@ -52,7 +52,7 @@ Authoring-only prompts, review notes, source/archive paths, repeated full page a
 - `--check`: regenerate in memory and fail on missing, extra or stale tracked output without modifying the workspace;
 - `--output <safe-temp-dir>`: write only to a validated directory outside the repository for focused tests.
 
-Paths containing traversal, repository-internal temporary output, filesystem roots and unauthorized production writes fail closed. JSON is UTF-8, two-space formatted, final-newline terminated, stable in key/order, and free of timestamps.
+Paths containing traversal, repository-internal temporary output, filesystem roots and unauthorized production writes fail closed. JSON is UTF-8, two-space formatted, final-newline terminated, stable in key/order, and free of timestamps. Generated and source path lists use a locale-independent ordinal comparator; host-default locale ordering is not used for manifest serialization.
 
 ## Build boundary
 
@@ -74,7 +74,7 @@ The dist audit verifies the runtime manifest file list, bytes and SHA-256 values
 
 P3B Pages run `29803791008` reported that checkout v4, setup-node v4, configure-pages v5, nested upload-artifact v4, and deploy-pages v4 still targeted the deprecated Node 20 action runtime. The workflow changes only those five direct refs: checkout/setup-node to their stable Node-24 v5 lines, configure-pages to v6, upload-pages-artifact to v5 (which pins Node-24 upload-artifact v7), and deploy-pages to v5. The application build remains `node-version: 22`.
 
-The choice is grounded in the official [GitHub Node 20 deprecation notice](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/), [checkout v5 release](https://github.com/actions/checkout/releases/tag/v5.0.0), [setup-node v5 release](https://github.com/actions/setup-node/releases/tag/v5.0.0), [configure-pages v6 release](https://github.com/actions/configure-pages/releases/tag/v6.0.0), [upload-pages-artifact v5 release](https://github.com/actions/upload-pages-artifact/releases/tag/v5.0.0), and [deploy-pages v5 release](https://github.com/actions/deploy-pages/releases/tag/v5.0.0). Checkout/setup-node v5 are supported stable Node-24 lines, deliberately selected as the minimum warning-remediation majors; their newer majors were not required for this phase. Exact-SHA Pages will prove the warning is absent after merge.
+The choice is grounded in the official [GitHub Node 20 deprecation notice](https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/), [checkout v5 release](https://github.com/actions/checkout/releases/tag/v5.0.0), [setup-node v5 release](https://github.com/actions/setup-node/releases/tag/v5.0.0), [configure-pages v6 release](https://github.com/actions/configure-pages/releases/tag/v6.0.0), [upload-pages-artifact v5 release](https://github.com/actions/upload-pages-artifact/releases/tag/v5.0.0), and [deploy-pages v5 release](https://github.com/actions/deploy-pages/releases/tag/v5.0.0). Checkout/setup-node v5 are supported stable Node-24 lines, deliberately selected as the minimum warning-remediation majors; their newer majors were not required for this phase. A successful exact-SHA Pages rerun will prove the warning is absent after merge.
 
 ## Rollback
 

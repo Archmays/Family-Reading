@@ -48,9 +48,9 @@
     "baselineTotal": 90,
     "targeted": [
       {
-        "scope": "runtime generator and parity",
-        "passed": 13,
-        "total": 13,
+        "scope": "runtime generator parity and ordinal-order regression",
+        "passed": 14,
+        "total": 14,
         "status": "PASS"
       },
       {
@@ -113,9 +113,23 @@
     "publicRepositoryFindings": 0,
     "distAudit": "PASS",
     "distFiles": 1563,
-    "distBytes": 835920908,
+    "distBytes": 835921437,
     "draftManifestPresent": false,
     "pageMapPresent": false
+  },
+  "ci": {
+    "failedExactShaRuns": [
+      {
+        "runId": 29927839086,
+        "sha": "0ceeb0419780b215ffe0f3081daf5a3464c037d0",
+        "conclusion": "FAILURE",
+        "failedJob": "build",
+        "cause": "host-locale-dependent runtime-manifest source ordering",
+        "deploymentCount": 0
+      }
+    ],
+    "failedJobReruns": 0,
+    "successfulExactShaRun": "RESOLVED_IN_FINAL_HANDOFF"
   },
   "actionsWarning": {
     "baselineRunId": 29803791008,
@@ -136,7 +150,7 @@
     ],
     "applicationNodeVersion": 22,
     "expectedActionRuntime": 24,
-    "status": "RESOLVED_AFTER_EXACT_SHA_RUN"
+    "status": "PENDING_SUCCESSFUL_EXACT_SHA_RERUN"
   },
   "sourceIntegrity": {
     "beforeFiles": 1278,

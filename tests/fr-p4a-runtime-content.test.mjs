@@ -7,6 +7,7 @@ import test, { after, before } from 'node:test';
 
 import {
   AUTHORING_ONLY_KEYS_FOR_TESTS,
+  compareStablePaths,
   PROJECT_ROOT,
   PRODUCTION_RUNTIME_DIR,
   assertSafeOutputPath,
@@ -19,6 +20,23 @@ import {
   validateRuntimeData,
   writeArtifactsToDirectory,
 } from '../scripts/generate-runtime-content.mjs';
+
+test('runtime paths use locale-independent ordinal ordering', () => {
+  const paths = [
+    'public/books/工作细胞',
+    'public/books/不一样的卡梅拉',
+    'public/books/éclair',
+    'public/books/a-book',
+    'public/books/Z-book',
+  ];
+  assert.deepEqual(paths.sort(compareStablePaths), [
+    'public/books/Z-book',
+    'public/books/a-book',
+    'public/books/éclair',
+    'public/books/不一样的卡梅拉',
+    'public/books/工作细胞',
+  ]);
+});
 
 let generated;
 let tempRoot;
@@ -237,6 +255,10 @@ test('manifest hashes all consumed sources and every non-self output without tim
   assert.equal(manifestText.includes(PROJECT_ROOT), false);
   assert.equal(manifest.totalBytes, [...generated.artifacts.values()].reduce((sum, bytes) => sum + bytes.length, 0));
   assert.equal(manifest.manifestBytes, manifestBytes.length);
+  const sourcePaths = manifest.sources.map((source) => source.path);
+  const outputPaths = manifest.outputs.map((output) => output.path);
+  assert.deepEqual(sourcePaths, [...sourcePaths].sort(compareStablePaths));
+  assert.deepEqual(outputPaths, [...outputPaths].sort(compareStablePaths));
 
   for (const output of manifest.outputs) {
     const relativePath = output.path.replace(/^public\/runtime\//, '');

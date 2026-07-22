@@ -13,24 +13,14 @@
       "bytes": 104188
     },
     {
-      "path": "public/books/不一样的卡梅拉/我爱平底锅/book-assets.json",
-      "sha256": "53388283abe6b8e481e1b1f28fceb7a939035c57de9c487bffec333168d95309",
-      "bytes": 907
+      "path": "public/books/index.json",
+      "sha256": "87979b820558a5ce0113970e56a7fcc87b604a4ff794a03b29b6cb6fde7fe4ea",
+      "bytes": 841
     },
     {
-      "path": "public/books/不一样的卡梅拉/我爱平底锅/companion.json",
-      "sha256": "006f9fe93e1bea7c6af3f12589a66ea984480d414d97cdd29f2ee10b9747676f",
-      "bytes": 20341
-    },
-    {
-      "path": "public/books/不一样的卡梅拉/我爱小黑猫/book-assets.json",
-      "sha256": "380060b0855b8d74e409802274afc1acdd6025eb08aadc59c59f8d731dca2ca0",
-      "bytes": 906
-    },
-    {
-      "path": "public/books/不一样的卡梅拉/我爱小黑猫/companion.json",
-      "sha256": "948b787e3f6768f282d89ead63ed130ad402a9658d072a5e27483c409e4db5d4",
-      "bytes": 20440
+      "path": "public/books/不一样的卡梅拉/series.json",
+      "sha256": "62cf05b05dcee91bdb76455de3ec01e4387c169d31b3b8b994acbfb0547aca44",
+      "bytes": 5972
     },
     {
       "path": "public/books/不一样的卡梅拉/我不是胆小鬼/book-assets.json",
@@ -53,26 +43,6 @@
       "bytes": 19698
     },
     {
-      "path": "public/books/不一样的卡梅拉/我好喜欢她/book-assets.json",
-      "sha256": "652ae94adf75677cb7b600bded3582515a4734533b200a9349786e8d26431a2b",
-      "bytes": 906
-    },
-    {
-      "path": "public/books/不一样的卡梅拉/我好喜欢她/companion.json",
-      "sha256": "71d394fa6206a20b2c06606e3cf7ba867d9e0cf7f6bb79155367888c258a0372",
-      "bytes": 19923
-    },
-    {
-      "path": "public/books/不一样的卡梅拉/我能打败怪兽/book-assets.json",
-      "sha256": "248a082ed58c457a40613fb689141bc71f162af2036061619add3d3d0b39a533",
-      "bytes": 912
-    },
-    {
-      "path": "public/books/不一样的卡梅拉/我能打败怪兽/companion.json",
-      "sha256": "82643067331c8acd8bd60c33c00cf649f909c1be9d41cf98cb607ef025ba24e9",
-      "bytes": 20393
-    },
-    {
       "path": "public/books/不一样的卡梅拉/我去找回太阳/book-assets.json",
       "sha256": "388d57ba9c039e6c01321cb825796fa9ec5d96d04a9f529ddf746bd4393233e7",
       "bytes": 911
@@ -81,6 +51,16 @@
       "path": "public/books/不一样的卡梅拉/我去找回太阳/companion.json",
       "sha256": "44a9ca4fb04ab7b4159bb42462f9993b3d2a4f75120caff530e6f3072912ecf8",
       "bytes": 20660
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我好喜欢她/book-assets.json",
+      "sha256": "652ae94adf75677cb7b600bded3582515a4734533b200a9349786e8d26431a2b",
+      "bytes": 906
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我好喜欢她/companion.json",
+      "sha256": "71d394fa6206a20b2c06606e3cf7ba867d9e0cf7f6bb79155367888c258a0372",
+      "bytes": 19923
     },
     {
       "path": "public/books/不一样的卡梅拉/我想去看海/book-assets.json",
@@ -113,14 +93,34 @@
       "bytes": 18357
     },
     {
-      "path": "public/books/不一样的卡梅拉/我要救出贝里奥/book-assets.json",
-      "sha256": "e6858a5858115693ac21c628c593d76bba76f355f884cb88234c099c236f04e8",
-      "bytes": 985
+      "path": "public/books/不一样的卡梅拉/我爱小黑猫/book-assets.json",
+      "sha256": "380060b0855b8d74e409802274afc1acdd6025eb08aadc59c59f8d731dca2ca0",
+      "bytes": 906
     },
     {
-      "path": "public/books/不一样的卡梅拉/我要救出贝里奥/companion.json",
-      "sha256": "d1b798dbf6096e3fbec7231abe2819a67899253ac661bfe3bf8ab675eada3872",
-      "bytes": 20446
+      "path": "public/books/不一样的卡梅拉/我爱小黑猫/companion.json",
+      "sha256": "948b787e3f6768f282d89ead63ed130ad402a9658d072a5e27483c409e4db5d4",
+      "bytes": 20440
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我爱平底锅/book-assets.json",
+      "sha256": "53388283abe6b8e481e1b1f28fceb7a939035c57de9c487bffec333168d95309",
+      "bytes": 907
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我爱平底锅/companion.json",
+      "sha256": "006f9fe93e1bea7c6af3f12589a66ea984480d414d97cdd29f2ee10b9747676f",
+      "bytes": 20341
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我能打败怪兽/book-assets.json",
+      "sha256": "248a082ed58c457a40613fb689141bc71f162af2036061619add3d3d0b39a533",
+      "bytes": 912
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我能打败怪兽/companion.json",
+      "sha256": "82643067331c8acd8bd60c33c00cf649f909c1be9d41cf98cb607ef025ba24e9",
+      "bytes": 20393
     },
     {
       "path": "public/books/不一样的卡梅拉/我要找到朗朗/book-assets.json",
@@ -133,19 +133,19 @@
       "bytes": 20254
     },
     {
-      "path": "public/books/不一样的卡梅拉/series.json",
-      "sha256": "62cf05b05dcee91bdb76455de3ec01e4387c169d31b3b8b994acbfb0547aca44",
-      "bytes": 5972
+      "path": "public/books/不一样的卡梅拉/我要救出贝里奥/book-assets.json",
+      "sha256": "e6858a5858115693ac21c628c593d76bba76f355f884cb88234c099c236f04e8",
+      "bytes": 985
+    },
+    {
+      "path": "public/books/不一样的卡梅拉/我要救出贝里奥/companion.json",
+      "sha256": "d1b798dbf6096e3fbec7231abe2819a67899253ac661bfe3bf8ab675eada3872",
+      "bytes": 20446
     },
     {
       "path": "public/books/工作细胞/draft-manifest.json",
       "sha256": "86f6d9d339596085d3cb8cda39ac20b5558afb50be422c3c0d8e42527c088640",
       "bytes": 2445765
-    },
-    {
-      "path": "public/books/index.json",
-      "sha256": "87979b820558a5ce0113970e56a7fcc87b604a4ff794a03b29b6cb6fde7fe4ea",
-      "bytes": 841
     }
   ],
   "outputs": [

@@ -53,7 +53,7 @@ No raw HAR, cookie, browser profile or persistent screenshot was stored. Playwri
 | Raw JavaScript | 89,466 B | 100,696 B | below 120 KiB preference |
 | Raw CSS | 60,140 B | 60,166 B | +26 B; data-phase design unchanged |
 | Runtime dependencies | 0 | 0 | PASS |
-| Dist | 838,074,288 B | 835,920,908 B | -2,153,380 B |
+| Dist | 838,074,288 B | 835,921,437 B | -2,152,851 B |
 
 The dist reduction comes from removing the draft manifest and page map from publication while adding the 393,121-byte runtime tree. No media or family-visible content was deleted to obtain the reduction.
 

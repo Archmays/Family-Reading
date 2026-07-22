@@ -19,16 +19,18 @@ No FR-P4B topic-page redesign or FR-P5 media work is included.
 | Cache/race/errors | coalescing, abort, stale-response guard, isolation, retry and back/forward reuse | PASS |
 | Current UI | P2/P3A/P3B and current Work Cells render compatibility | PASS |
 | Media/audio | closed media 0, group disclosure/lightbox, audio intent and 206 | PASS |
-| Build/dist | runtime hashes match; draft manifest/page map absent; dist -2,153,380 B | PASS |
-| Actions warning | five affected stable Node-24 action lines selected from official evidence | PENDING EXACT-RUN PROOF |
+| Build/dist | runtime hashes match; draft manifest/page map absent; dist -2,152,851 B | PASS |
+| Actions warning | five affected stable Node-24 action lines selected from official evidence | PENDING SUCCESSFUL EXACT-SHA RERUN |
 | Tests/release | one local full invocation: 116/117; affected README assertion 1/1; effective 117/117; Node 22 build closure | PASS AFTER AFFECTED RERUN |
-| Pages | exact-SHA run and live request smoke follow the report commit | PENDING POST-COMMIT |
+| Pages | successful exact-SHA rerun and live request smoke follow the correction commit | PENDING SUCCESSFUL EXACT-SHA RERUN |
 
 ## Development and verification discipline
 
-Focused generator and loader suites passed 13/13 and 14/14. The first combined affected closure passed 90/94; four failures were legacy expectations for module count/cache-buster/error copy and the former Work Cells content-version expression. Only those expectations/wiring were corrected, and the four-test affected closure passed 4/4. Browser checks then covered ten cold route cases, two warm journeys, delayed-response race protection, isolated failure/retry, media/audio and alternate modes. No gate or assertion was weakened.
+Focused generator and loader suites passed 14/14 and 14/14; the generator total includes the later ordinal-order regression. The first combined affected closure passed 90/94; four failures were legacy expectations for module count/cache-buster/error copy and the former Work Cells content-version expression. Only those expectations/wiring were corrected, and the four-test affected closure passed 4/4. Browser checks then covered ten cold route cases, two warm journeys, delayed-response race protection, isolated failure/retry, media/audio and alternate modes. No gate or assertion was weakened.
 
 Exactly one final local `npm run verify:release` invocation was executed. It reached 116/117 tests; the sole failure was the README's missing retained OCR-publishing exclusion after its P4A build-description edit. The sentence was restored, the one named assertion passed 1/1 under Node 22, and only the not-yet-run Node 22 build closure followed. That closure passed the public validator (2,824 tracked files, 139 scanned text files, zero findings), runtime staleness check, static build and dist audit. The full suite was not repeated.
+
+The first exact-SHA Pages run `29927839086` at `0ceeb0419780b215ffe0f3081daf5a3464c037d0` stopped in the build job because Linux/Node 22 serialized the runtime-manifest source list in a different host-locale order. Runtime content and parity were unchanged. The fix uses explicit ordinal path ordering and adds a cross-platform regression test; locally, only the affected generator suite, staleness check, and downstream build closure were rerun. The affected closure passed the public validator (2,868 tracked files, 183 scanned text files, zero findings), runtime check, build and dist audit. The successful exact-SHA rerun and CI total are recorded in the final handoff.
 
 ## Runtime and performance
 
@@ -43,11 +45,11 @@ Exactly one final local `npm run verify:release` invocation was executed. It rea
 | JavaScript | 100,696 B | preferred at most 120 KiB | PASS |
 | CSS | 60,166 B | no material data-phase growth | PASS |
 | Runtime dependencies | 0 | 0 | PASS |
-| Dist | 835,920,908 B | explain and preserve content | PASS; -2,153,380 B |
+| Dist | 835,921,437 B | explain and preserve content | PASS; -2,152,851 B |
 
 ## GitHub Actions warning disposition
 
-P3B run `29803791008` named checkout v4, setup-node v4, configure-pages v5, nested upload-artifact v4 and deploy-pages v4 in Node 20 deprecation annotations. Each affected direct action was moved to a stable Node-24 line, while the application remains on Node 22. Upload Pages artifact required v5 because v4 still nested the Node-20 upload-artifact line. Exact-run warning absence is a release acceptance condition, not assumed from YAML alone.
+P3B run `29803791008` named checkout v4, setup-node v4, configure-pages v5, nested upload-artifact v4 and deploy-pages v4 in Node 20 deprecation annotations. Each affected direct action was moved to a stable Node-24 line, while the application remains on Node 22. Upload Pages artifact required v5 because v4 still nested the Node-20 upload-artifact line. The first exact-SHA run stopped at the build gate before deployment and therefore did not close warning or Pages acceptance. Successful-rerun warning absence is a release acceptance condition, not assumed from YAML alone.
 
 ## Final reflection
 
@@ -77,7 +79,7 @@ P3B run `29803791008` named checkout v4, setup-node v4, configure-pages v5, nest
 | 22 | Runtime dependency/framework added? | NO |
 | 23 | Raw HAR/profile/token saved? | NO |
 | 24 | Actions blindly upgraded? | NO; official release/runtime evidence recorded |
-| 25 | Final full test repeated? | NO; one invocation, then only the affected 1-test and downstream build closure |
+| 25 | Final full test repeated? | NO; one invocation, then only the affected README assertion, ordinal generator suite and downstream build closures |
 | 26 | Main/remote/Pages same SHA? | RESOLVED POST-COMMIT |
 | 27 | Workspace clean? | RESOLVED POST-COMMIT |
 | 28 | Quality compromises? | 0 |
@@ -99,7 +101,7 @@ P3B run `29803791008` named checkout v4, setup-node v4, configure-pages v5, nest
 ## Tracked-report closeout state
 
 ```text
-FR_PORTFOLIO_P4A_STATUS: LOCAL_ACCEPTANCE_PASS_PENDING_POST_COMMIT_PAGES
+FR_PORTFOLIO_P4A_STATUS: LOCAL_ACCEPTANCE_PASS_PENDING_SUCCESSFUL_EXACT_SHA_RERUN
 RIGHTS_STATUS: PASS_BY_USER_AUTHORIZATION
 PRIVACY_STATUS: PASS
 SOURCE_PROTECTED_ROOTS_UNCHANGED: VERIFIED
@@ -108,12 +110,12 @@ RUNTIME_CONTENT_PARITY: PASS
 RUNTIME_AUTHORING_FIELD_EXPOSURE: NONE
 ROUTE_REQUEST_CONTRACTS: PASS
 TEST_STATUS: PASS_AFTER_AFFECTED_RERUN
-FINAL_TEST_COUNT: 117/117
+FINAL_TEST_COUNT: 117/117_LOCAL_EFFECTIVE
 BUILD_STATUS: PASS
 PUBLIC_REPOSITORY_VALIDATOR: PASS
 DIST_AUDIT_STATUS: PASS
-ACTIONS_NODE_RUNTIME_WARNING: RESOLVED_AFTER_EXACT_RUN
-PAGES_STATUS: RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF
+ACTIONS_NODE_RUNTIME_WARNING: PENDING_SUCCESSFUL_EXACT_SHA_RERUN
+PAGES_STATUS: PENDING_SUCCESSFUL_EXACT_SHA_RERUN
 FINAL_MAIN_SHA: RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF
 QUALITY_COMPROMISES: 0
 NEXT_RECOMMENDED_TASK: FR-P4B Work Cells Topic Experience and Route-Scoped Interaction

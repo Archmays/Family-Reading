@@ -55,9 +55,9 @@
   },
   "dist": {
     "files": 1563,
-    "bytes": 835920908,
+    "bytes": 835921437,
     "p3bBytes": 838074288,
-    "deltaBytes": -2153380,
+    "deltaBytes": -2152851,
     "runtimeFiles": 31,
     "runtimeBytes": 393121,
     "draftManifestPresent": false,

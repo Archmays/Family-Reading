@@ -84,6 +84,10 @@ function toRepositoryPath(value) {
   return String(value).replaceAll('\\', '/');
 }
 
+export function compareStablePaths(left, right) {
+  return left < right ? -1 : left > right ? 1 : 0;
+}
+
 function sha256(buffer) {
   return createHash('sha256').update(buffer).digest('hex');
 }
@@ -618,7 +622,7 @@ export async function generateRuntimeArtifacts({ rootDir = PROJECT_ROOT } = {}) 
   }
 
   const outputRecords = [...artifacts]
-    .sort(([left], [right]) => left.localeCompare(right))
+    .sort(([left], [right]) => compareStablePaths(left, right))
     .map(([relativePath, bytes]) => ({
       path: `public/runtime/${relativePath}`,
       sha256: sha256(bytes),
@@ -628,7 +632,7 @@ export async function generateRuntimeArtifacts({ rootDir = PROJECT_ROOT } = {}) 
   const manifest = {
     schemaVersion: RUNTIME_SCHEMA_VERSION,
     generatorVersion: GENERATOR_VERSION,
-    sources: [...sourceRecords.values()].sort((left, right) => left.path.localeCompare(right.path)),
+    sources: [...sourceRecords.values()].sort((left, right) => compareStablePaths(left.path, right.path)),
     outputs: outputRecords,
     recordCounts: counts,
     parity: {
@@ -678,12 +682,12 @@ async function listFiles(rootDir, currentDir = rootDir) {
     if (entry.isDirectory()) files.push(...await listFiles(rootDir, absolutePath));
     else if (entry.isFile()) files.push(toRepositoryPath(path.relative(rootDir, absolutePath)));
   }
-  return files.sort();
+  return files.sort(compareStablePaths);
 }
 
 export async function writeArtifactsToDirectory(artifacts, outputDir) {
   await mkdir(outputDir, { recursive: true });
-  for (const [relativePath, bytes] of [...artifacts].sort(([left], [right]) => left.localeCompare(right))) {
+  for (const [relativePath, bytes] of [...artifacts].sort(([left], [right]) => compareStablePaths(left, right))) {
     const targetPath = path.join(outputDir, ...relativePath.split('/'));
     assert(isInside(outputDir, targetPath), `Artifact escapes output: ${relativePath}`);
     await mkdir(path.dirname(targetPath), { recursive: true });
@@ -692,7 +696,7 @@ export async function writeArtifactsToDirectory(artifacts, outputDir) {
 }
 
 export async function compareArtifactTree(artifacts, outputDir) {
-  const expected = [...artifacts.keys()].sort();
+  const expected = [...artifacts.keys()].sort(compareStablePaths);
   const actual = await listFiles(outputDir);
   const expectedSet = new Set(expected);
   const actualSet = new Set(actual);
