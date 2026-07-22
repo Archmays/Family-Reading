@@ -501,11 +501,11 @@ test('P3A styles cover responsive, forced-color, print, and code budget gates', 
   const cssBytes = statSync(path.join(rootDir, 'assets', 'styles.css')).size;
   assert.ok(jsBytes <= 110 * 1024, `all JS is ${jsBytes} bytes`);
   assert.ok(cssBytes <= 70 * 1024, `CSS is ${cssBytes} bytes`);
-  assert.ok(assetScripts.length <= 3, `assets should contain at most 3 JavaScript files, found ${assetScripts.length}`);
+  assert.ok(assetScripts.length <= 4, `P4A should contain at most 4 JavaScript files, found ${assetScripts.length}`);
   assert.equal(Object.keys(packageJson.dependencies ?? {}).length, 0);
   assert.equal(/@import|https?:\/\/.+\.(?:js|css|woff2?)/i.test(`${indexHtml}\n${styles}`), false);
   assert.match(indexHtml, /assets\/styles\.css\?v=fr-p3b(?:-\d{8})?/);
-  assert.match(indexHtml, /assets\/app\.js\?v=fr-p3b(?:-\d{8})?/);
+  assert.match(indexHtml, /assets\/app\.js\?v=fr-p4a(?:-\d{8})?/);
 });
 
 test('P3A keeps the startup JSON closure at the P2 baseline', () => {

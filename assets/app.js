@@ -1,18 +1,25 @@
 import { wireImageLightbox } from './a11y.js';
 import { createCarmelaCompanionViewModel } from './carmela-companion.js';
+import { createContentLoader } from './content-loader.js';
 
-const BOOK_INDEX = 'public/books/index.json';
 const CARMELA_SERIES_SLUG = 'carmela-season-1';
 const WORK_CELLS_SERIES_SLUG = 'work-cells';
-const FIRST_BATCH = 12;
 const app = document.querySelector('#app');
 const main = document.querySelector('#main-content');
 const breadcrumb = document.querySelector('#breadcrumb');
 const routeAnnouncer = document.querySelector('#route-announcer');
 const skipLink = document.querySelector('.skip-link');
-let model = null;
+let model = {
+  runtimeIndex: null,
+  books: [],
+  scienceSeries: null,
+};
 let currentPageKey = '';
+let currentDataKey = '';
 let cleanupView = () => {};
+let navigationController = null;
+let navigationGeneration = 0;
+const routeModelCache = new Map();
 
 const sectionNav = [
   ['overview', '快速了解'],
@@ -44,84 +51,27 @@ function html(value) {
     .replaceAll("'", '&#039;');
 }
 
-async function fetchJson(resourcePath) {
-  const response = await fetch(sitePath(resourcePath));
+async function fetchJson(resourcePath, { signal } = {}) {
+  const response = await fetch(sitePath(resourcePath), { signal });
   if (!response.ok) {
     throw new Error(`Cannot load ${resourcePath}`);
   }
   return response.json();
 }
 
-async function loadModel() {
-  const index = await fetchJson(BOOK_INDEX);
-  const carmelaEntry = index.series.find((item) => item.seriesSlug === CARMELA_SERIES_SLUG);
-  const workCellsEntry = index.series.find((item) => item.seriesSlug === WORK_CELLS_SERIES_SLUG);
-  const series = await fetchJson(carmelaEntry.manifestPath);
-  const books = await Promise.all(
-    series.books.slice(0, FIRST_BATCH).map(async (book) => {
-      const [assets, companion] = await Promise.all([
-        fetchJson(`${book.folder}/${book.assetFile}`),
-        fetchJson(`${book.folder}/${book.companionFile}`),
-      ]);
+const contentLoader = createContentLoader({ fetchJson });
 
-      return {
-        ...book,
-        seriesTitle: series.seriesTitle,
-        assets,
-        companion,
-        cover: `${book.folder}/${assets.pageImages[0]}`,
-        previewPages: assets.pageImages.slice(0, 4).map((page) => `${book.folder}/${page}`),
-      };
-    }),
-  );
-
-  let scienceSeries = null;
-  if (workCellsEntry) {
-    const manifest = await fetchJson(workCellsEntry.manifestPath);
-    const pageMap = manifest.pageMapPath ? await fetchJson(manifest.pageMapPath) : null;
-    scienceSeries = {
-      ...workCellsEntry,
-      manifest: mergeScienceManifest(manifest, pageMap),
-    };
-  }
-
-  model = { series, books, scienceSeries };
+function runtimeSeries(seriesSlug) {
+  return model.runtimeIndex?.series?.find((item) => item.seriesSlug === seriesSlug) ?? null;
 }
 
-function mediaStatusFor(topic) {
-  return Array.isArray(topic?.pageImagePaths) && topic.pageImagePaths.length > 0 && topic.thumbnailPath
-    ? 'available'
-    : 'missing';
-}
-
-function mergeScienceManifest(manifest, pageMap) {
-  const pageMapByOrder = new Map((pageMap?.topics ?? []).map((topic) => [topic.order, topic]));
-  return {
-    ...manifest,
-    topics: manifest.topics.map((topic) => {
-      const pageMapTopic = pageMapByOrder.get(topic.order);
-      const pageImagePaths = topic.pageImagePaths ?? pageMapTopic?.pageImagePaths ?? [];
-      const thumbnailPath = topic.thumbnailPath ?? pageMapTopic?.thumbnailPath ?? null;
-      return {
-        ...topic,
-        topicId: topic.topicId ?? pageMapTopic?.topicId,
-        displayTitle: topic.displayTitle ?? topic.title,
-        source: {
-          ...topic.source,
-          sourceLabel: pageMapTopic?.sourceLabel ?? topic.source?.sourceLabel,
-        },
-        imageCount: topic.imageCount ?? pageMapTopic?.imageCount,
-        pageImagePaths,
-        thumbnailPath,
-        mediaStatus: topic.mediaStatus ?? mediaStatusFor({ pageImagePaths, thumbnailPath }),
-      };
-    }),
-  };
+function scienceSourceLabel(topic) {
+  return topic?.source?.sourceLabel ?? topic?.sourceLabel ?? '来源信息暂缺';
 }
 
 function bookCard(book, compact = false) {
   const orderLabel = String(book.order ?? '').padStart(2, '0');
-  const audioAvailable = Boolean(book.audio?.path);
+  const audioAvailable = Boolean(book.hasAudio ?? book.audio?.path);
   const returnSection = `book-${book.order}`;
   const returnAttributes = `data-return-series="${CARMELA_SERIES_SLUG}" data-return-section="${returnSection}"`;
   const cardActions = compact
@@ -180,8 +130,8 @@ function seriesEntryCard({ title, description, href, typeLabel, coverImage, acti
 }
 
 function homePage() {
-  const carmelaCover = model.books[0]?.cover ?? '';
-  const workCellsCover = model.scienceSeries?.manifest?.topics?.[0]?.thumbnailPath ?? '';
+  const carmelaSeries = runtimeSeries(CARMELA_SERIES_SLUG);
+  const workCellsSeries = runtimeSeries(WORK_CELLS_SERIES_SLUG);
   return `
     <section class="series-entry-section" aria-labelledby="home-title">
       <div class="section-heading section-heading--home">
@@ -193,20 +143,20 @@ function homePage() {
       </div>
       <div class="series-entry-grid">
         ${seriesEntryCard({
-          title: '不一样的卡梅拉',
-          description: '从绘本书架选择书目，回顾故事、聊一聊问题，也可以听配套音频。',
+          title: carmelaSeries?.seriesTitle ?? '不一样的卡梅拉',
+          description: carmelaSeries?.description ?? '从绘本书架选择书目，回顾故事、聊一聊问题，也可以听配套音频。',
           href: `#/series/${CARMELA_SERIES_SLUG}`,
           typeLabel: '绘本伴读',
-          coverImage: carmelaCover,
+          coverImage: carmelaSeries?.coverImage ?? '',
           actionLabel: '走进绘本书架',
           domain: 'carmela',
         })}
         ${seriesEntryCard({
-          title: model.scienceSeries?.manifest?.seriesTitle ?? '工作细胞',
-          description: '从科学主题馆按类别找到导读、身体科学小站与亲子问题卡。',
+          title: workCellsSeries?.seriesTitle ?? '工作细胞',
+          description: workCellsSeries?.description ?? '从科学主题馆按类别找到导读、身体科学小站与亲子问题卡。',
           href: `#/series/${WORK_CELLS_SERIES_SLUG}`,
           typeLabel: '科学主题伴读',
-          coverImage: workCellsCover,
+          coverImage: workCellsSeries?.coverImage ?? '',
           actionLabel: '走进科学主题馆',
           domain: 'science',
         })}
@@ -314,7 +264,7 @@ function scienceSeriesSection(scienceSeries) {
 }
 
 function scienceTopicCard(scienceSeries, topic, returnSection = '') {
-  const sourceLabel = topic.source?.sourceLabel ?? '来源信息暂缺';
+  const sourceLabel = scienceSourceLabel(topic);
   const thumbnail = topic.thumbnailPath;
   const returnAttributes = returnSection
     ? `data-return-series="${scienceSeries.seriesSlug}" data-return-section="${returnSection}"`
@@ -455,6 +405,7 @@ function SciencePageThumbnail(topic, imagePath, index = 0) {
 }
 
 function sciencePageImagePath(topic, page) {
+  if (page?.imagePath) return page.imagePath;
   if (page?.sourcePath) return page.sourcePath;
   return (topic.pageImagePaths ?? []).find((imagePath) => imagePath.includes(page?.pageId)) ?? null;
 }
@@ -573,7 +524,11 @@ function ScienceAnnotationThumbnails(topic, pages) {
 }
 
 function sciencePagesById(topic, pageIds) {
-  const pageById = new Map((topic.pageAnnotations ?? []).map((page) => [page.pageId, page]));
+  const runtimePageRefs = Object.values(topic.pageRefs ?? {});
+  const pageById = new Map(
+    (runtimePageRefs.length > 0 ? runtimePageRefs : (topic.pageAnnotations ?? []))
+      .map((page) => [page.pageId, page]),
+  );
   return (pageIds ?? []).map((pageId) => pageById.get(pageId)).filter(Boolean);
 }
 
@@ -621,7 +576,8 @@ function ScienceStationIllustration(station) {
 }
 
 function isWorkCellsV2Topic(topic) {
-  return topic?.contentVersion === 'work-cells-v2';
+  return topic?.contentVersion === 'work-cells-v2'
+    || topic?.publication?.contentVersion === 'work-cells-v2';
 }
 
 function scienceV2InProgressSection(sectionId, title) {
@@ -1181,7 +1137,7 @@ function scienceTopicSummaryCard(topic) {
       <div>
         <p class="topic-category-label">${html(topic.category || '科学主题')}</p>
         <p class="card-title">${html(topic.displayTitle)}</p>
-        <p class="topic-source">来源：${html(topic.source?.sourceLabel ?? '来源信息暂缺')}</p>
+        <p class="topic-source">来源：${html(scienceSourceLabel(topic))}</p>
       </div>
     </article>
   `;
@@ -1210,7 +1166,7 @@ function scienceTopicPage(scienceSeries, topic) {
         ${scienceParentGuidanceSection(topic)}
         <section id="source" class="content-section" aria-labelledby="source-title">
           <h2 id="source-title">来源备注</h2>
-          <p>来源：${html(topic.source?.sourceLabel ?? '来源信息暂缺')}</p>
+          <p>来源：${html(scienceSourceLabel(topic))}</p>
           ${plainList(topic.sourceNotes)}
         </section>
       </div>
@@ -1251,6 +1207,147 @@ function currentRoute() {
     };
   }
   return { view: 'invalid' };
+}
+
+function emptyRuntimeModel() {
+  return {
+    runtimeIndex: null,
+    books: [],
+    scienceSeries: null,
+  };
+}
+
+function carmelaRuntimeModel(context) {
+  const seriesTitle = context.catalog?.seriesTitle ?? context.series?.seriesTitle ?? '不一样的卡梅拉';
+  const selectedBook = context.book
+    ? {
+        ...context.book,
+        seriesTitle,
+        cover: context.book.cover ?? context.summary?.cover ?? '',
+      }
+    : null;
+  const books = context.books.map((book) => {
+    if (selectedBook?.slug === book.slug) return selectedBook;
+    return { ...book, seriesTitle };
+  });
+
+  return {
+    runtimeIndex: context.index,
+    series: context.catalog,
+    books,
+    scienceSeries: null,
+  };
+}
+
+function workCellsRuntimeModel(context) {
+  const selectedTopic = context.topic
+    ? {
+        ...context.topic,
+        topicOverview: context.topic.topicOverview ?? context.topic.overview,
+        recommendedBodyScienceStationFocus:
+          context.topic.recommendedBodyScienceStationFocus
+          ?? context.topic.overview?.recommendedBodyScienceStationFocus,
+      }
+    : null;
+  const topics = context.topics.map((topic) => (
+    selectedTopic?.slug === topic.slug ? { ...topic, ...selectedTopic } : topic
+  ));
+  return {
+    runtimeIndex: context.index,
+    books: [],
+    scienceSeries: {
+      ...context.series,
+      seriesSlug: context.series.seriesSlug,
+      manifest: {
+        ...context.catalog,
+        seriesTitle: context.catalog?.seriesTitle ?? context.series.seriesTitle,
+        topics,
+      },
+    },
+  };
+}
+
+function routeLoadPlan(route) {
+  const noContent = {
+    key: `invalid:${location.hash}`,
+    load: async () => emptyRuntimeModel(),
+  };
+
+  if (route.view === 'home') {
+    return {
+      key: 'home',
+      load: async (options) => {
+        const context = await contentLoader.loadHome(options);
+        return { ...emptyRuntimeModel(), runtimeIndex: context.index };
+      },
+    };
+  }
+
+  if (route.view === 'series') {
+    if (!route.seriesSlug || route.extra.length) return noContent;
+    if (route.seriesSlug === CARMELA_SERIES_SLUG) {
+      return {
+        key: `series:${CARMELA_SERIES_SLUG}`,
+        load: async (options) => carmelaRuntimeModel(
+          await contentLoader.loadCarmelaSeries(options),
+        ),
+      };
+    }
+    if (route.seriesSlug === WORK_CELLS_SERIES_SLUG) {
+      return {
+        key: `series:${WORK_CELLS_SERIES_SLUG}`,
+        load: async (options) => workCellsRuntimeModel(
+          await contentLoader.loadWorkCellsSeries(options),
+        ),
+      };
+    }
+    return noContent;
+  }
+
+  if (route.view === 'book') {
+    if (!route.slug || route.extra.length) return noContent;
+    const sectionIsInvalid = route.target && !sectionNav.some(([id]) => id === route.target);
+    if (sectionIsInvalid) {
+      return {
+        key: `series:${CARMELA_SERIES_SLUG}`,
+        load: async (options) => carmelaRuntimeModel(
+          await contentLoader.loadCarmelaSeries(options),
+        ),
+      };
+    }
+    return {
+      key: `book:${route.slug}`,
+      load: async (options) => carmelaRuntimeModel(
+        await contentLoader.loadCarmelaBook(route.slug, options),
+      ),
+    };
+  }
+
+  if (route.view === 'science') {
+    if (
+      !route.seriesSlug
+      || route.seriesSlug !== WORK_CELLS_SERIES_SLUG
+      || !route.slug
+      || route.extra.length
+    ) return noContent;
+    const sectionIsInvalid = route.target && !scienceSectionNav.some(([id]) => id === route.target);
+    if (sectionIsInvalid) {
+      return {
+        key: `series:${WORK_CELLS_SERIES_SLUG}`,
+        load: async (options) => workCellsRuntimeModel(
+          await contentLoader.loadWorkCellsSeries(options),
+        ),
+      };
+    }
+    return {
+      key: `science:${WORK_CELLS_SERIES_SLUG}:${route.slug}`,
+      load: async (options) => workCellsRuntimeModel(
+        await contentLoader.loadWorkCellsTopic(route.slug, options),
+      ),
+    };
+  }
+
+  return noContent;
 }
 
 function wireCoverFallbacks(signal) {
@@ -1789,8 +1886,8 @@ function focusRoute(route) {
   });
 }
 
-function render() {
-  const route = resolveRoute(currentRoute());
+function renderRoute(routeInput = currentRoute()) {
+  const route = resolveRoute(routeInput);
   document.title = `${route.title} | 温暖伴读图册`;
   updateBreadcrumb(route.breadcrumbs);
 
@@ -1819,42 +1916,108 @@ function render() {
 
 let routerStarted = false;
 
-function showLoadError() {
+function showRouteLoading(route) {
   cleanupView();
   cleanupView = () => {};
-  currentPageKey = 'load-error';
+  currentPageKey = `loading:${location.hash}`;
+  updateBreadcrumb([]);
+  main.dataset.view = 'loading';
+  delete main.dataset.domain;
+  app.setAttribute('aria-busy', 'true');
+  app.innerHTML = `
+    <section class="loading-state" aria-labelledby="route-loading-title" role="status" aria-live="polite">
+      <span class="loading-mark" aria-hidden="true"></span>
+      <h1 id="route-loading-title">正在准备这页伴读资料</h1>
+      <p>${route.view === 'book' || route.view === 'science' ? '正在打开选中的内容。' : '正在打开书架和主题入口。'}</p>
+    </section>
+  `;
+  routeAnnouncer.textContent = '正在准备伴读资料';
+}
+
+function showLoadError(route, error) {
+  cleanupView();
+  cleanupView = () => {};
+  currentPageKey = `load-error:${location.hash}`;
   document.title = '资料载入失败 | 温暖伴读图册';
   updateBreadcrumb([{ label: '首页', href: '#/' }, { label: '资料载入失败' }]);
   main.dataset.view = 'error';
   delete main.dataset.domain;
   app.setAttribute('aria-busy', 'false');
+  const isDetail = route.view === 'book' || route.view === 'science';
+  const heading = route.view === 'book'
+    ? '这本书的伴读资料暂时没有打开'
+    : route.view === 'science'
+      ? '这个科学主题暂时没有打开'
+      : route.view === 'series'
+        ? '这个伴读入口暂时没有打开'
+        : '伴读资料载入失败';
   app.innerHTML = `
     <section class="error-state" aria-labelledby="load-error-title">
-      <p class="state-kicker">书架暂时没有准备好</p>
-      <h1 id="load-error-title" data-route-heading tabindex="-1">伴读资料载入失败</h1>
-      <p>请检查网络连接后重试。页面不会显示内部文件位置。</p>
+      <p class="state-kicker">${isDetail ? '当前内容暂时没有准备好' : '书架暂时没有准备好'}</p>
+      <h1 id="load-error-title" data-route-heading tabindex="-1">${heading}</h1>
+      <p>请检查网络连接后重试；其他系列和主题仍可单独打开。页面不会显示内部文件位置。</p>
       <div class="state-actions">
         <button class="action-button" type="button" data-retry>重新载入</button>
         <a class="ghost-button" href="#/">返回首页</a>
       </div>
     </section>
   `;
-  document.querySelector('[data-retry]')?.addEventListener('click', () => start());
-  focusRoute({ title: '伴读资料载入失败' });
+  const retry = document.querySelector('[data-retry]');
+  const handleRetry = () => navigate();
+  retry?.addEventListener('click', handleRetry);
+  cleanupView = () => retry?.removeEventListener('click', handleRetry);
+  console.error('Route content load failed.', {
+    view: route.view,
+    seriesSlug: route.seriesSlug,
+    slug: route.slug,
+    message: error?.message ?? 'Unknown load failure',
+  });
+  focusRoute({ title: heading });
 }
 
-async function start() {
-  app.setAttribute('aria-busy', 'true');
-  try {
-    await loadModel();
-    if (!routerStarted) {
-      window.addEventListener('hashchange', render);
-      routerStarted = true;
-    }
-    render();
-  } catch {
-    showLoadError();
+async function navigate() {
+  const generation = ++navigationGeneration;
+  navigationController?.abort();
+  navigationController = null;
+  const route = currentRoute();
+  const plan = routeLoadPlan(route);
+
+  if (plan.key === currentDataKey) {
+    renderRoute(route);
+    return;
   }
+
+  if (routeModelCache.has(plan.key)) {
+    model = routeModelCache.get(plan.key);
+    currentDataKey = plan.key;
+    renderRoute(route);
+    return;
+  }
+
+  const controller = new AbortController();
+  navigationController = controller;
+  showRouteLoading(route);
+  try {
+    const nextModel = await plan.load({ signal: controller.signal });
+    if (controller.signal.aborted || generation !== navigationGeneration) return;
+    routeModelCache.set(plan.key, nextModel);
+    model = nextModel;
+    currentDataKey = plan.key;
+    navigationController = null;
+    renderRoute(route);
+  } catch (error) {
+    if (error?.name === 'AbortError' || generation !== navigationGeneration) return;
+    navigationController = null;
+    showLoadError(route, error);
+  }
+}
+
+function start() {
+  if (!routerStarted) {
+    window.addEventListener('hashchange', () => navigate());
+    routerStarted = true;
+  }
+  navigate();
 }
 
 if ('scrollRestoration' in history) {

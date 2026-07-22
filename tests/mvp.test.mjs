@@ -1073,6 +1073,16 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
 
   assert.equal(packageJson.scripts?.build, 'node scripts/build.mjs', 'build command should be configured');
   assert.equal(
+    packageJson.scripts?.['generate:runtime'],
+    'node scripts/generate-runtime-content.mjs --write',
+    'runtime content should have one explicit tracked-output writer',
+  );
+  assert.equal(
+    packageJson.scripts?.['validate:runtime'],
+    'node scripts/generate-runtime-content.mjs --check',
+    'runtime staleness validation should never rewrite tracked output',
+  );
+  assert.equal(
     packageJson.scripts?.test,
     'node scripts/run-tests.mjs',
     'package and Pages verification should share one full-test entrypoint',
@@ -1099,11 +1109,17 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
     /resolveCarmelaBookPaths\(\{[\s\S]*folder:\s*book\.folder/,
     'build should contain every manifest-selected Carmela folder before reading or writing',
   );
-  assert.match(buildScript, /data[\s\S]*cells-at-work[\s\S]*page-map\.json/, 'build script should publish the Work Cells page map');
+  assert.match(buildScript, /runtimeContentDir/, 'build script should publish generated runtime content');
+  assert.doesNotMatch(buildScript, /workCellsDraftDir|workCellsPageMapPath|copyPublishableData/, 'build should not publish Work Cells authoring JSON');
   assert.equal(
     buildScript.indexOf("runNodeGate('scripts/validate-public-repository.mjs')") < buildScript.indexOf('await rm(outputDir'),
     true,
     'public repository validation should fail before build copying starts',
+  );
+  assert.equal(
+    buildScript.indexOf("runNodeGate('scripts/generate-runtime-content.mjs', ['--check'])") < buildScript.indexOf('await rm(outputDir'),
+    true,
+    'runtime staleness validation should fail before build copying starts',
   );
   assert.equal(
     buildScript.indexOf("runNodeGate('scripts/audit-dist-assets.mjs')") > buildScript.indexOf("writeFile(path.join(outputDir, '.nojekyll')"),
@@ -1125,6 +1141,11 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
     1,
     'release verification should not duplicate the full test suite',
   );
+  assert.match(
+    releaseVerification,
+    /scripts\/generate-runtime-content\.mjs['"],\s*['"]--check/,
+    'release verification should fail closed on stale generated runtime content',
+  );
   assert.doesNotMatch(
     releaseVerification,
     /tests\/.+\.test\.mjs/,
@@ -1141,6 +1162,15 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
     'path: dist',
   ]) {
     assert.match(workflow, new RegExp(phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `workflow should include ${phrase}`);
+  }
+  for (const action of [
+    'actions/checkout@v5',
+    'actions/setup-node@v5',
+    'actions/configure-pages@v6',
+    'actions/upload-pages-artifact@v5',
+    'actions/deploy-pages@v5',
+  ]) {
+    assert.match(workflow, new RegExp(action.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `workflow should use ${action}`);
   }
   assert.equal(
     workflow.indexOf('npm run verify:release') < workflow.indexOf('actions/upload-pages-artifact'),

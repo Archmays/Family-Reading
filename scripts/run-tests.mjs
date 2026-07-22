@@ -8,6 +8,8 @@ export const testFiles = [
   'tests/fr-p2-ui.test.mjs',
   'tests/fr-p3a-carmela.test.mjs',
   'tests/fr-p3b-carmela-media.test.mjs',
+  'tests/fr-p4a-runtime-content.test.mjs',
+  'tests/fr-p4a-content-loader.test.mjs',
   'tests/public-repository-validator.test.mjs',
   'tests/release-gates.test.mjs',
 ];
