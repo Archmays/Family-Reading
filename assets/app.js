@@ -298,11 +298,6 @@ function scienceSeriesPage(scienceSeries) {
   `;
 }
 
-function pageLabel(imageRef, prefix = '页面') {
-  const pageNumber = String(imageRef).match(/(?:page-)?(\d{3})\.(?:png|webp)$/)?.[1]?.replace(/^0+/, '') || '';
-  return pageNumber ? `${prefix} ${pageNumber}` : prefix;
-}
-
 function CarmelaMediaThumbnail(book, mediaId, group, index) {
   const media = book.mediaRegistry?.[mediaId];
   if (!media) return '';
@@ -971,7 +966,6 @@ function wireCoverFallbacks(signal) {
     '.topic-thumbnail img',
     '.thumb-row img',
     '.page-thumbnail img',
-    '.science-station-image img',
   ].join(',');
 
   const showFallback = (image) => {
@@ -980,7 +974,6 @@ function wireCoverFallbacks(signal) {
     image.closest('.cover-frame')?.classList.add('cover-missing');
     image.closest('.topic-thumbnail')?.classList.add('thumbnail-missing');
     image.closest('.page-thumbnail')?.classList.add('thumbnail-missing');
-    image.closest('.science-station-image')?.classList.add('thumbnail-missing');
   };
 
   document.addEventListener('error', (event) => {

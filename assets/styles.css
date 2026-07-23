@@ -1238,152 +1238,6 @@ summary {
   background: #f7fcfb;
 }
 
-.annotation-grid,
-.annotation-list {
-  display: grid;
-  gap: 12px;
-  margin-top: 14px;
-}
-
-.annotation-grid {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  align-items: start;
-}
-
-.compact-grid {
-  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
-}
-
-.annotation-card {
-  border: 1px solid var(--line);
-  border-radius: 8px;
-  background: #fffdf8;
-  padding: 14px;
-}
-
-.annotation-card h3 {
-  color: var(--teal);
-}
-
-.science-station-card {
-  display: grid;
-  gap: 10px;
-}
-
-.core-question {
-  margin: 0;
-  color: var(--ink);
-  font-weight: 800;
-}
-
-.science-station-image {
-  width: 100%;
-  border: 0;
-  border-radius: 8px;
-  background: #f7fcfb;
-  padding: 0;
-  overflow: hidden;
-  cursor: zoom-in;
-  aspect-ratio: 4 / 3;
-}
-
-.science-station-image img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-}
-
-.science-station-image.thumbnail-missing {
-  border: 1px dashed rgba(24, 140, 140, 0.38);
-  cursor: default;
-}
-
-.science-illustration-placeholder {
-  min-height: 128px;
-  margin: 12px 0;
-  border: 1px dashed rgba(24, 140, 140, 0.38);
-  border-radius: 8px;
-  background: #f7fcfb;
-  display: grid;
-  place-items: center;
-  padding: 18px;
-  text-align: center;
-}
-
-.science-illustration-placeholder p {
-  margin: 0;
-  color: var(--teal);
-  font-weight: 800;
-}
-
-.science-illustration-placeholder small {
-  color: var(--muted);
-  overflow-wrap: anywhere;
-}
-
-.question-answer-list section {
-  padding: 10px 0;
-  border-top: 1px solid rgba(108, 155, 94, 0.18);
-}
-
-.question-answer-list section:first-child {
-  border-top: 0;
-}
-
-.question-answer-list h4,
-.related-pages h4 {
-  margin: 0 0 6px;
-  color: var(--teal);
-  font-size: 0.94rem;
-}
-
-.question-answer-list p {
-  margin: 0 0 8px;
-}
-
-.related-pages {
-  margin-top: 12px;
-}
-
-.parent-guidance-section {
-  border-color: rgba(194, 121, 46, 0.24);
-  background: #fffaf1;
-}
-
-.annotation-detail summary {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  cursor: pointer;
-  color: var(--teal);
-  font-weight: 800;
-}
-
-.annotation-detail small,
-.annotation-note {
-  color: var(--muted);
-}
-
-.annotation-thumb {
-  max-width: 150px;
-  margin-bottom: 10px;
-}
-
-.annotation-thumb .page-thumbnail {
-  grid-template-rows: 150px auto;
-}
-
-.annotation-thumb-list {
-  grid-template-columns: repeat(auto-fill, minmax(76px, 96px));
-  align-items: start;
-  margin: 0 0 12px;
-}
-
-.annotation-thumb-list .page-thumbnail {
-  grid-template-rows: 112px auto;
-}
-
 .image-lightbox[hidden] {
   display: none;
 }
@@ -2870,8 +2724,7 @@ audio {
   .cover-frame,
   .topic-thumbnail,
   .book-title-block,
-  .answer,
-  .science-illustration-placeholder {
+  .answer {
     background: Canvas;
   }
 
@@ -2941,9 +2794,7 @@ audio {
   .evidence-disclosure,
   .explanation-images,
   .visual-group,
-  .thumb-row,
-  .science-station-image,
-  .science-illustration-placeholder {
+  .thumb-row {
     display: none !important;
   }
 
@@ -3042,9 +2893,7 @@ audio {
   .mini-card,
   .story-trail-item,
   .question-card,
-  .discovery-entry,
-  .annotation-card,
-  .question-answer-list section {
+  .discovery-entry {
     break-inside: avoid;
     page-break-inside: avoid;
   }
