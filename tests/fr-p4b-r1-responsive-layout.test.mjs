@@ -16,6 +16,14 @@ function rule(css, selector) {
   return match[1];
 }
 
+function between(value, startMarker, endMarker) {
+  const start = value.indexOf(startMarker);
+  assert.notEqual(start, -1, `Missing marker: ${startMarker}`);
+  const end = value.indexOf(endMarker, start + startMarker.length);
+  assert.notEqual(end, -1, `Missing marker: ${endMarker}`);
+  return value.slice(start, end);
+}
+
 test('P4B-R1 constrains the science hero grid and media intrinsic size', async () => {
   const css = await read('assets/science-companion.css');
   const hero = rule(css, '.science-atlas-hero');
@@ -39,10 +47,9 @@ test('P4B-R1 constrains the science hero grid and media intrinsic size', async (
 
 test('P4B-R1 switches to one column before the former collision interval', async () => {
   const css = await read('assets/science-companion.css');
-  const compact = css.match(/@media\s*\(max-width:\s*68rem\)\s*\{([\s\S]*?)\n\}/m);
-  assert.ok(compact, 'Missing 68rem responsive boundary');
-  assert.match(compact[1], /\.science-atlas-hero[\s\S]*grid-template-columns:\s*1fr/);
-  assert.match(compact[1], /\.science-atlas-hero-media[\s\S]*justify-self:\s*center/);
+  const compact = between(css, '@media (max-width: 68rem) {', '@media (max-width: 680px) {');
+  assert.match(compact, /\.science-atlas-hero[\s\S]*grid-template-columns:\s*1fr/);
+  assert.match(compact, /\.science-atlas-hero-media[\s\S]*justify-self:\s*center/);
 
   assert.doesNotMatch(css, /@media\s*\(max-height:\s*480px\)\s*,/);
   assert.match(css, /@media\s*\(min-width:\s*68\.0625rem\)\s+and\s+\(max-height:\s*480px\)/);
