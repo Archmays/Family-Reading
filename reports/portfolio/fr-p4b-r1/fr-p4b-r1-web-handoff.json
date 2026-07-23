@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "task": "FR-P4B-R1 Work Cells responsive layout repair",
+  "repository": "Archmays/Family-Reading-Codex",
+  "baseMainSha": "0a4932e117632983359fef507c61aa770792f3e4",
+  "branch": "codex/fr-p4b-r1-responsive-layout-repair",
+  "webImplementationTipBeforeHandoff": "5d2675c79e37f6589de739b12ccadc5021b7b0e6",
+  "reportedScreenshot": {
+    "subject": "food-poisoning Work Cells topic hero",
+    "finding": "bordered media panel overlaps adjacent hero copy",
+    "rootCauseClass": "grid intrinsic sizing and responsive-rule interaction"
+  },
+  "webChanges": [
+    "constrain hero grid tracks to zero minimum with a capped media track",
+    "remove media min-height-derived intrinsic width",
+    "neutralize generic thumbnail padding and image max-height inside the hero",
+    "add long-copy, tag and action containment",
+    "switch to one-column layout at 68rem",
+    "gate compact short-height two-column layout behind 68.0625rem",
+    "refresh the science stylesheet cache identity",
+    "add static R1 responsive-layout tests",
+    "add the repair and local-acceptance specification"
+  ],
+  "changedProductionFiles": [
+    "assets/science-companion.css",
+    "index.html"
+  ],
+  "newEvidenceFiles": [
+    "tests/fr-p4b-r1-responsive-layout.test.mjs",
+    "docs/portfolio/fr-p4b-r1/FR-P4B-R1-responsive-layout-repair.md",
+    "reports/portfolio/fr-p4b-r1/fr-p4b-r1-web-handoff.json"
+  ],
+  "explicitlyUnchanged": [
+    "assets/science-companion.js",
+    "assets/app.js",
+    "assets/a11y.js",
+    "public/runtime/**",
+    "scripts/generate-runtime-content.mjs",
+    "Carmela data and media",
+    "Work Cells data and media bytes",
+    "protected source roots"
+  ],
+  "webStaticReview": {
+    "cssCollisionCauseAddressed": true,
+    "stylesheetCacheIdentityUpdated": true,
+    "runtimeOrMediaMutation": false,
+    "frP5Started": false
+  },
+  "notClaimedByWeb": [
+    "Node test execution",
+    "continuous browser geometry",
+    "zoom sweep",
+    "physical-device validation",
+    "build or dist audit",
+    "exact-SHA Pages deployment",
+    "live-site acceptance"
+  ],
+  "requiredCodexGates": {
+    "targetedTest": "node --test tests/fr-p4b-r1-responsive-layout.test.mjs plus affected P2-P4 suites",
+    "runtimeStaleness": "PASS and byte-identical",
+    "widthSweep": "320-1440 CSS px; step <=32; 680-1120 step <=16",
+    "zoomSweep": [80, 90, 100, 110, 125, 150, 175, 200],
+    "requiredReportedSize": "773x709 or the measured equivalent CSS viewport/zoom combination",
+    "topicCoverage": "27/27 at mobile and desktop endpoints; representative deep cases across the continuous sweep",
+    "geometry": [
+      "media.right + gap <= copy.left",
+      "media.left >= hero.left",
+      "copy.right <= hero.right",
+      "hero.scrollWidth <= hero.clientWidth"
+    ],
+    "network": {
+      "workCellsDetailJson": 3,
+      "initialHeroImages": 1,
+      "initialStationImages": 0,
+      "initialMangaImages": 0,
+      "oldManifest": 0,
+      "pageMap": 0,
+      "unrelatedDomain": 0
+    },
+    "nonRegression": [
+      "Work Cells series",
+      "answer disclosures",
+      "media disclosures and grouped lightbox",
+      "print",
+      "Carmela P3B media/audio",
+      "P4A loader/cache/race"
+    ],
+    "release": "exactly one final npm run verify:release after affected closure passes",
+    "closeout": "fast-forward main, exact-SHA Pages, delete task branch, stop servers, clean scratch/workspace"
+  },
+  "nextPhaseAfterPass": "FR-P5A Responsive Media Pipeline"
+}
