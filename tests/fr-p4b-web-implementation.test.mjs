@@ -369,7 +369,7 @@ test('P4B shared media and answer lifecycles remain the only active wiring path'
 test('P4B styles cover responsive, short-landscape, forced-color, reduced-motion and print gates', async () => {
   const css = await readFile(path.join(root, 'assets', 'science-companion.css'), 'utf8');
   assert.match(css, /@media \(max-width: 680px\)/);
-  assert.match(css, /@media \(max-height: 480px\), \(orientation: landscape\) and \(max-height: 430px\)/);
+  assert.match(css, /@media \(min-width: 68\.0625rem\) and \(max-height: 480px\)/);
   assert.match(css, /@media \(prefers-reduced-motion: reduce\)/);
   assert.match(css, /@media \(forced-colors: active\)/);
   assert.match(css, /@media print/);
@@ -392,4 +392,5 @@ test('P4B styles cover responsive, short-landscape, forced-color, reduced-motion
 test('P4B is part of the canonical full test suite', async () => {
   const runner = await readFile(path.join(root, 'scripts', 'run-tests.mjs'), 'utf8');
   assert.match(runner, /'tests\/fr-p4b-web-implementation\.test\.mjs'/);
+  assert.match(runner, /'tests\/fr-p4b-r1-responsive-layout\.test\.mjs'/);
 });

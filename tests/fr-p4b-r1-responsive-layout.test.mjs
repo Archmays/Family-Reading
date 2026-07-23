@@ -16,12 +16,27 @@ function rule(css, selector) {
   return match[1];
 }
 
-function between(value, startMarker, endMarker) {
-  const start = value.indexOf(startMarker);
-  assert.notEqual(start, -1, `Missing marker: ${startMarker}`);
-  const end = value.indexOf(endMarker, start + startMarker.length);
-  assert.notEqual(end, -1, `Missing marker: ${endMarker}`);
-  return value.slice(start, end);
+function selectorListRule(css, selector) {
+  const escaped = selector.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const match = css.match(new RegExp(`^\\s*${escaped}\\s*(?:,\\s*[^,{]+)*\\{([^{}]*)\\}`, 'm'));
+  assert.ok(match, `Missing CSS selector-list rule: ${selector}`);
+  return match[1];
+}
+
+function atRuleBlock(css, marker) {
+  const start = css.indexOf(marker);
+  assert.notEqual(start, -1, `Missing at-rule: ${marker}`);
+  const open = css.indexOf('{', start + marker.length);
+  assert.notEqual(open, -1, `Missing opening brace for: ${marker}`);
+
+  let depth = 1;
+  for (let index = open + 1; index < css.length; index += 1) {
+    if (css[index] === '{') depth += 1;
+    if (css[index] === '}') depth -= 1;
+    if (depth === 0) return css.slice(open + 1, index);
+  }
+
+  assert.fail(`Missing closing brace for: ${marker}`);
 }
 
 test('P4B-R1 constrains the science hero grid and media intrinsic size', async () => {
@@ -47,20 +62,23 @@ test('P4B-R1 constrains the science hero grid and media intrinsic size', async (
 
 test('P4B-R1 switches to one column before the former collision interval', async () => {
   const css = await read('assets/science-companion.css');
-  const compact = between(css, '@media (max-width: 68rem) {', '@media (max-width: 680px) {');
-  assert.match(compact, /\.science-atlas-hero[\s\S]*grid-template-columns:\s*1fr/);
-  assert.match(compact, /\.science-atlas-hero-media[\s\S]*justify-self:\s*center/);
+  const compact = atRuleBlock(css, '@media (max-width: 68rem)');
+  const compactHero = selectorListRule(compact, '.science-atlas-hero');
+  const compactMedia = selectorListRule(compact, '.science-atlas-hero-media');
+  assert.match(compactHero, /grid-template-columns:\s*1fr/);
+  assert.match(compactMedia, /justify-self:\s*center/);
 
   assert.doesNotMatch(css, /@media\s*\(max-height:\s*480px\)\s*,/);
-  assert.match(css, /@media\s*\(min-width:\s*68\.0625rem\)\s+and\s+\(max-height:\s*480px\)/);
+  const shortLandscape = atRuleBlock(css, '@media (min-width: 68.0625rem) and (max-height: 480px)');
+  assert.match(selectorListRule(shortLandscape, '.science-atlas-hero'), /grid-template-columns:\s*minmax\(0,\s*15rem\)\s+minmax\(0,\s*1fr\)/);
 });
 
 test('P4B-R1 protects long science copy, tags and actions from widening the grid', async () => {
   const css = await read('assets/science-companion.css');
-  assert.match(css, /\.science-atlas-hero-copy\s*>\s*\*[\s\S]*overflow-wrap:\s*anywhere/);
-  assert.match(css, /\.science-atlas-actions\s*>\s*\*[\s\S]*max-width:\s*100%/);
-  assert.match(css, /\.science-atlas-tags\s+li[\s\S]*max-width:\s*100%/);
-  assert.match(css, /\.science-atlas-hero-media\.thumbnail-missing\s+\.cover-fallback/);
+  assert.match(selectorListRule(css, '.science-atlas-hero-copy > *'), /overflow-wrap:\s*anywhere/);
+  assert.match(selectorListRule(css, '.science-atlas-actions > *'), /max-width:\s*100%/);
+  assert.match(selectorListRule(css, '.science-atlas-tags li'), /max-width:\s*100%/);
+  assert.match(rule(css, '.science-atlas-hero-media.thumbnail-missing .cover-fallback'), /display:\s*block/);
 });
 
 test('P4B-R1 publishes a new stylesheet cache identity', async () => {

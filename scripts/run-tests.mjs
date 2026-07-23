@@ -11,6 +11,7 @@ export const testFiles = [
   'tests/fr-p4a-runtime-content.test.mjs',
   'tests/fr-p4a-content-loader.test.mjs',
   'tests/fr-p4b-web-implementation.test.mjs',
+  'tests/fr-p4b-r1-responsive-layout.test.mjs',
   'tests/public-repository-validator.test.mjs',
   'tests/release-gates.test.mjs',
 ];
