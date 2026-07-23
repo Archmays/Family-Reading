@@ -153,7 +153,7 @@ The full 27-topic test suite was authored but not executed in the web environmen
 - Carmela P3B browser/request smoke: PASS.
 - Responsive, short-landscape, keyboard, forced-colors, reduced-motion, text-spacing and print: PASS.
 - Runtime staleness and public-repository validator: PASS.
-- Final build/dist, in-place repository rename and exact-SHA Pages results are recorded only after those closeout actions complete.
+- In-place repository rename and canonical local `origin`: COMPLETE; final build/dist and exact-SHA Pages results are recorded only after those remaining closeout actions complete.
 
 ## Out of scope
 

@@ -3,6 +3,7 @@
   "task": "FR-P4B Work Cells Topic Experience and Repository Rename",
   "repositoryBefore": "Archmays/Family-Reading",
   "repositoryTarget": "Archmays/Family-Reading-Codex",
+  "repositoryCurrent": "Archmays/Family-Reading-Codex",
   "repositoryId": 1271691196,
   "baseMainSha": "24fd0787bce84d45e5f71591e6da7201176c4c21",
   "branch": "codex/fr-p4b-work-cells-topic-experience",
@@ -42,7 +43,7 @@
     "buildAndDistAudit": "NOT_RUN_WEB_ENVIRONMENT"
   },
   "localCodexCloseout": {
-    "status": "LOCAL_ACCEPTANCE_PASS_PENDING_RENAME_AND_RELEASE",
+    "status": "LOCAL_ACCEPTANCE_PASS_PENDING_SINGLE_RELEASE_GATE",
     "directIntegrationSha": "191b2586e609fbe0aeab15c1bb02b1a9f7f721d7",
     "appJsDirectImport": true,
     "temporaryEnhancerRemoved": true,
@@ -63,7 +64,12 @@
     "coldContextCount": 6,
     "browserNetworkAccessibility": "PASS",
     "finalReleaseGate": "NOT_RUN_UNTIL_POST_RENAME",
-    "repositoryRename": "PENDING"
+    "repositoryRename": "COMPLETE",
+    "repositoryIdUnchanged": true,
+    "repositoryVisibility": "PUBLIC_UNCHANGED",
+    "localOrigin": "https://github.com/Archmays/Family-Reading-Codex.git",
+    "oldNameCurrentReferences": 0,
+    "historicalReferences": "PRESERVED_WITH_CONTEXT"
   },
   "implementedContracts": {
     "scienceTopicViewModel": true,
@@ -99,7 +105,7 @@
     "Fast-forward merge to main, push, verify exact-SHA Pages and clean all task-owned scratch and branches."
   ],
   "rename": {
-    "targetAvailability": "PRELIMINARY_SEARCH_CLEAR_RECHECK_AT_RENAME",
+    "targetAvailability": "AVAILABLE_AT_RENAME",
     "renameViaWebConnector": false,
     "renameViaLocalAuthenticatedGh": true,
     "currentReferencesUpdated": [
@@ -107,7 +113,9 @@
       "docs/github-pages-deployment.md"
     ],
     "historicalReportsBulkRewritten": false,
-    "fullTreeScan": "REQUIRED_LOCAL",
+    "fullTreeScan": "PASS_ZERO_CURRENT_REFERENCES",
+    "status": "COMPLETE_IN_PLACE",
+    "repositoryIdUnchanged": true,
     "targetPagesUrl": "https://archmays.github.io/Family-Reading-Codex/",
     "doNotRecreateOldRepositoryName": true
   },

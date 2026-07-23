@@ -10,7 +10,7 @@
 - GitHub Pages：`https://archmays.github.io/Family-Reading-Codex/`
 - 本地项目目录名：`Family-Reading-Codex`
 
-旧名称 `Archmays/Family-Reading` 只作为重命名前的历史身份保留。不要重新创建同名旧仓库，否则 GitHub 对旧仓库地址的自动重定向可能失效。仓库重命名、本地 `origin` 更新和新 Pages 地址的最终验证由同一 FR-P4B 本地 closeout 完成。
+旧名称 `Archmays/Family-Reading` 只作为重命名前的历史身份保留。不要重新创建同名旧仓库，否则 GitHub 对旧仓库地址的自动重定向可能失效。FR-P4B 已完成原位重命名并将本地 `origin` 更新到 canonical URL；发布验收只以新 Pages 地址的 exact-SHA 结果为准。
 
 ## 本地构建
 

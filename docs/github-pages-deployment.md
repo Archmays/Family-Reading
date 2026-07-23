@@ -9,7 +9,7 @@
 - GitHub：`Archmays/Family-Reading-Codex`
 - Pages：`https://archmays.github.io/Family-Reading-Codex/`
 
-旧名称 `Archmays/Family-Reading` 只保留为历史身份，不得重新创建同名仓库。仓库重命名后必须更新本地 `origin` 并对新项目 Pages URL 做 exact-SHA 验证。
+旧名称 `Archmays/Family-Reading` 只保留为历史身份，不得重新创建同名仓库。FR-P4B 已完成原位重命名并更新本地 `origin`；后续发布仍必须对新项目 Pages URL 做 exact-SHA 验证。
 
 ## 发布验证与构建方式
 

@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "runId": "fr-p4b-20260723",
+  "phase": "FR-PORTFOLIO-P4B",
+  "status": "LOCAL_ACCEPTANCE_PASS_PENDING_SINGLE_RELEASE_GATE_AND_EXACT_SHA_PAGES",
+  "repository": {
+    "before": "Archmays/Family-Reading",
+    "after": "Archmays/Family-Reading-Codex",
+    "repositoryIdBefore": 1271691196,
+    "repositoryIdAfter": 1271691196,
+    "renameStatus": "COMPLETE_IN_PLACE",
+    "visibility": "PUBLIC_UNCHANGED",
+    "defaultBranch": "main",
+    "origin": "https://github.com/Archmays/Family-Reading-Codex.git",
+    "oldNameCurrentReferences": 0,
+    "historicalReferences": "PRESERVED_WITH_CONTEXT"
+  },
+  "git": {
+    "p4aMainSha": "24fd0787bce84d45e5f71591e6da7201176c4c21",
+    "webBranchTip": "0b516ec5892b018719eccc883b949742a66458e7",
+    "directIntegrationSha": "191b2586e609fbe0aeab15c1bb02b1a9f7f721d7",
+    "browserEvidenceSha": "f5952e7e31aaf3c750205a9c496c9a783fabea66",
+    "workBranch": "codex/fr-p4b-work-cells-topic-experience",
+    "finalSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "fastForwardRequired": true,
+    "historyRewrite": false,
+    "forcePush": false
+  },
+  "changeImpact": {
+    "classification": "PHASE_SCOPED_UI_WITH_SHARED_ROUTER_MEDIA_AND_RELEASE_CLOSURE",
+    "canonicalRouteOwner": "assets/app.js",
+    "canonicalScienceRenderer": "assets/science-companion.js",
+    "affected": [
+      "Work Cells topic UI and canonical science routes",
+      "shared disclosure, answer and lightbox lifecycle",
+      "static styles and print behavior",
+      "repository identity, origin and Pages URL"
+    ],
+    "explicitlyExcluded": [
+      "source or authoring content mutation",
+      "runtime schema or generator change",
+      "medical fact or verification-state change",
+      "Work Cells audio",
+      "FR-P5 responsive media processing",
+      "backend, database, login or runtime dependency"
+    ]
+  },
+  "integration": {
+    "appJsDirectImport": true,
+    "rendererUsesAlreadyLoadedTopic": true,
+    "additionalTopicFetches": 0,
+    "temporaryFetchCaptureRemoved": true,
+    "innerHtmlInterceptorRemoved": true,
+    "temporaryParentJumpRemoved": true,
+    "autoInstallSideEffectRemoved": true,
+    "sharedDisclosureLifecycle": true,
+    "sharedAnswerLifecycle": true,
+    "sharedLightboxLifecycle": true,
+    "canonicalRoutes": [
+      "science-overview",
+      "science-station",
+      "science-questions",
+      "science-parent-guidance",
+      "source"
+    ]
+  },
+  "contentParity": {
+    "topics": 27,
+    "categories": 24,
+    "stations": 108,
+    "questions": 162,
+    "pageRefs": 286,
+    "runtimeImageOccurrences": 421,
+    "runtimeImagesExistingUnique": 400,
+    "mediaGroups": 378,
+    "mediaGroupUseSites": 642,
+    "workCellsAudio": false,
+    "status": "PASS"
+  },
+  "mediaRegistry": {
+    "topicLocalEntries": 394,
+    "globalUniquePaths": 393,
+    "heroes": 27,
+    "heroRegistryOverlap": 20,
+    "combinedUniqueImages": 400,
+    "groups": 378,
+    "groupUseSites": 642,
+    "closedGroupsUseTemplates": true,
+    "duplicateMountsOnReopen": 0,
+    "status": "PASS"
+  },
+  "runtime": {
+    "files": 31,
+    "bytes": 393121,
+    "manifestSha256": "4fda8a75bc8118ff0fec2d7ac04f73d832f082522cab78a4d248de5bf5e06c50",
+    "workCellsIndexSha256": "2b30e2d7ee8099ac6b7adcfbbf0485d790a4b5042c741fe25c89d94e9b3ffa4e",
+    "runtimeIndexSha256": "c53654343e6fb4128a4a77aecef5055146146d0ea78430cc7a49a8da7d996742",
+    "modified": false,
+    "stalenessStatus": "PASS"
+  },
+  "tests": {
+    "targeted": [
+      {
+        "scope": "focused FR-P4B implementation",
+        "passed": 15,
+        "total": 15,
+        "status": "PASS"
+      },
+      {
+        "scope": "affected closure before JavaScript budget expectation correction",
+        "passed": 108,
+        "total": 110,
+        "status": "TWO_STALE_BUDGET_EXPECTATIONS_CORRECTED"
+      },
+      {
+        "scope": "affected budget expectation closure",
+        "passed": 20,
+        "total": 20,
+        "status": "PASS"
+      },
+      {
+        "scope": "affected direct-integration closure",
+        "passed": 82,
+        "total": 82,
+        "status": "PASS"
+      },
+      {
+        "scope": "affected closure after superseded style removal",
+        "passed": 82,
+        "total": 82,
+        "status": "PASS"
+      }
+    ],
+    "finalRelease": {
+      "command": "npm run verify:release",
+      "localInvocations": 0,
+      "passed": null,
+      "total": null,
+      "failed": null,
+      "status": "PENDING_SINGLE_POST_RENAME_INVOCATION"
+    },
+    "thresholdsWeakened": false,
+    "assertionsRemoved": false,
+    "fullSuiteRepeated": false
+  },
+  "browser": {
+    "evidence": [
+      "reports/portfolio/fr-p4b/fr-p4b-route-network-baseline.json",
+      "reports/portfolio/fr-p4b/fr-p4b-ui-baseline.json"
+    ],
+    "allTopicViewportCases": {
+      "passed": 54,
+      "total": 54
+    },
+    "deepTopicViewportCases": {
+      "passed": 54,
+      "total": 54
+    },
+    "deepTopicCount": 6,
+    "deepViewportCount": 9,
+    "coldContexts": 6,
+    "directRouteHistoryAndFocus": "PASS",
+    "disclosureAndLightbox": "PASS",
+    "failureRetry": "PASS",
+    "keyboardAndAccessibility": "PASS",
+    "forcedColors": "PASS",
+    "reducedMotion": "PASS",
+    "textSpacingAndReflow": "PASS",
+    "shortLandscape": "PASS",
+    "print": "PASS",
+    "unexpectedConsoleErrors": 0,
+    "failedRequiredRequests": 0,
+    "brokenImages": 0,
+    "rawHarSaved": false,
+    "browserProfileSaved": false,
+    "cookieOrTokenSaved": false
+    ,
+    "accessibilityLimitation": "Physical iOS/Android devices and an external screen-reader session were unavailable and are not reported as passed; Chromium viewport, semantic, focus, keyboard and accessible-name checks are the bounded substitutes."
+  },
+  "network": {
+    "homeJsonRequests": 1,
+    "carmelaSeriesJsonRequests": 2,
+    "carmelaDetailJsonRequests": 4,
+    "workCellsSeriesJsonRequests": 2,
+    "workCellsDetailJsonRequests": 3,
+    "initialHeroImages": 1,
+    "initialStationImages": 0,
+    "initialMangaImages": 0,
+    "initialLightboxImages": 0,
+    "workCellsAudioRequests": 0,
+    "otherTopicDetails": 0,
+    "unrelatedDomainRequests": 0,
+    "oldManifestRequests": 0,
+    "pageMapRequests": 0,
+    "sameTopicFiveSectionJsonRequests": 3,
+    "status": "PASS"
+  },
+  "performance": {
+    "javascriptBytes": 104987,
+    "javascriptHardLimitBytes": 158720,
+    "cssBytes": 69166,
+    "cssHardLimitBytes": 81920,
+    "newJavascriptModules": 1,
+    "runtimeDependencies": 0,
+    "distDeltaLimitBytes": 5242880,
+    "status": "PASS_PENDING_FINAL_DIST_MEASUREMENT"
+  },
+  "build": {
+    "status": "PENDING_SINGLE_FINAL_RELEASE_INVOCATION",
+    "publicRepositoryValidator": "PASS_PRE_GATE",
+    "publicRepositoryTrackedFiles": null,
+    "publicRepositoryTextFiles": null,
+    "publicRepositoryFindings": 0,
+    "distAudit": "PENDING_SINGLE_FINAL_RELEASE_INVOCATION",
+    "distFiles": null,
+    "distBytes": null
+  },
+  "repositoryRename": {
+    "status": "COMPLETE_IN_PLACE",
+    "sameRepositoryObject": true,
+    "repositoryIdUnchanged": true,
+    "visibilityUnchanged": true,
+    "defaultBranchUnchanged": true,
+    "branchHistoryIntact": true,
+    "replacementRepositoryCreated": false,
+    "historyRewrite": false,
+    "forcePush": false,
+    "originUpdated": true,
+    "currentOldNameReferences": 0,
+    "historicalReferences": "PRESERVED_WITH_CONTEXT"
+  },
+  "sourceIntegrity": {
+    "beforeFiles": 1278,
+    "afterFiles": 1278,
+    "beforeBytes": 7882956334,
+    "afterBytes": 7882956334,
+    "beforeCompactJsonSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "afterCompactJsonSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "trackedProtectedDiffs": 0,
+    "status": "VERIFIED_UNCHANGED"
+  },
+  "release": {
+    "singleLocalFullGate": "PENDING",
+    "targetPagesUrl": "https://archmays.github.io/Family-Reading-Codex/",
+    "exactShaPages": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "oldPagesUrlAccepted": false,
+    "mainCurrentTruth": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "taskBranchCleanup": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "taskScratchCleanup": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF"
+  },
+  "pages": {
+    "url": "https://archmays.github.io/Family-Reading-Codex/",
+    "exactSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "workflowRun": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "annotations": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "liveSmoke": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "oldUrlAccepted": false
+  },
+  "ciGovernance": {
+    "targetedDevelopmentRuns": 5,
+    "localFullReleaseGateInvocations": 0,
+    "failedJobReruns": 0,
+    "deploymentCount": 0,
+    "runtimeCacheReuse": "UNCHANGED_RUNTIME_REUSED",
+    "historicalReleaseRebuilds": 0
+  },
+  "storageCleanup": {
+    "rawHarRetained": false,
+    "browserProfileRetained": false,
+    "cookieOrTokenRetained": false,
+    "playwrightScratch": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "taskScratch": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "testServer": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF"
+  },
+  "artifacts": [
+    "docs/portfolio/fr-p4b/FR-P4B-content-and-media-parity-report.md",
+    "docs/portfolio/fr-p4b/FR-P4B-browser-network-accessibility-report.md",
+    "docs/portfolio/fr-p4b/FR-P4B-final-report.md",
+    "reports/portfolio/fr-p4b/fr-p4b-run-manifest.json",
+    "reports/portfolio/fr-p4b/fr-p4b-topic-content-inventory-before.json",
+    "reports/portfolio/fr-p4b/fr-p4b-topic-content-inventory-after.json",
+    "reports/portfolio/fr-p4b/fr-p4b-media-reference-baseline.json",
+    "reports/portfolio/fr-p4b/fr-p4b-route-network-baseline.json",
+    "reports/portfolio/fr-p4b/fr-p4b-ui-baseline.json"
+  ],
+  "finalScreenshots": [
+    {
+      "path": "docs/portfolio/fr-p4b/screenshots/work-cells-heavy-desktop.webp",
+      "bytes": 67624,
+      "sha256": "f35e3a9126b2f7ca914c054d9ab751cbf5023d68bffde421152248a9dc1d65e7"
+    },
+    {
+      "path": "docs/portfolio/fr-p4b/screenshots/work-cells-cancer-ii-mobile.webp",
+      "bytes": 36476,
+      "sha256": "3bd3c50bbc3c69d83a1b17935749a9316abe4d79ed4d2de8082e62023022f718"
+    },
+    {
+      "path": "docs/portfolio/fr-p4b/screenshots/work-cells-short-landscape.webp",
+      "bytes": 23038,
+      "sha256": "910f1658562e2b75b1ebe2ad61d30fb7920683f0ca53b10c47d412757754063a"
+    }
+  ],
+  "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+  "privacyStatus": "PASS",
+  "productBoundaryStatus": "PASS",
+  "qualityCompromises": 0,
+  "nextRecommendedPhase": "FR-P5A Responsive Media Pipeline"
+}

@@ -2,14 +2,14 @@
 
 ## Decision
 
-The repository is to be renamed during the local FR-P4B closeout:
+The repository was renamed in place during the local FR-P4B closeout:
 
 ```text
 Archmays/Family-Reading
 → Archmays/Family-Reading-Codex
 ```
 
-The repository must be renamed in place. Do not create a second repository and copy content into it. Repository id `1271691196`, public visibility, default branch `main`, commit history, Actions settings and Pages configuration must remain associated with the same repository object.
+No second repository was created and no content was copied to a replacement. Repository id `1271691196`, public visibility, default branch `main`, commit history, Actions settings and Pages configuration remain associated with the same repository object.
 
 ## Web-side evidence boundary
 
@@ -84,7 +84,7 @@ Classify every match as:
 
 The final public-repository validator must not reject intentionally preserved historical evidence merely because it contains the old repository name.
 
-The local tracked-tree scan completed with zero current active old-name references. Matches were classified as historical evidence, explicit rename-transition context, the scan command itself, or validator fixtures. No external `uses: Archmays/Family-Reading@...` consumer exists. The only active old identity before the GitHub operation is the local `origin`; it must change immediately after the in-place rename.
+The local tracked-tree scan completed with zero current active old-name references. Matches were classified as historical evidence, explicit rename-transition context, the scan command itself, or validator fixtures. No external `uses: Archmays/Family-Reading@...` consumer exists. The local `origin` was updated immediately after the in-place rename and no longer relies on GitHub's old-name redirect.
 
 ## Rename preconditions
 
@@ -110,6 +110,22 @@ Use authenticated GitHub CLI/API to rename the existing repository. Do not:
 - force-push.
 
 Immediately update the local remote to the new clone URL and verify repository id, permissions, branches and commit identities.
+
+## Rename outcome
+
+The authenticated in-place rename completed successfully:
+
+- canonical repository: `Archmays/Family-Reading-Codex`;
+- repository id: `1271691196` before and after;
+- visibility: public before and after;
+- default branch: `main`;
+- local `origin`: `https://github.com/Archmays/Family-Reading-Codex.git`;
+- `main` and the FR-P4B task branch retained their exact commit identities;
+- current active old-name references: 0;
+- historical references: preserved with context;
+- new Pages URL: resolved by the exact-final-SHA deployment after the tracked closeout commit.
+
+No replacement repository, transfer, archive, visibility change, history rewrite or force-push was used.
 
 ## Pages impact
 
