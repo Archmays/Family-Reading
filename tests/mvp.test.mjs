@@ -319,6 +319,7 @@ function appText() {
     'index.html',
     path.join('assets', 'app.js'),
     path.join('assets', 'carmela-companion.js'),
+    path.join('assets', 'science-companion.js'),
     path.join('assets', 'styles.css'),
   ]
     .map((file) => readFileSync(path.join(rootDir, file), 'utf8'))
@@ -765,24 +766,20 @@ test('Work Cells parent guidance remains limited to selected topics', () => {
   }
 });
 
-test('Work Cells front end renders only V2 formal body science and parent guidance modules', () => {
+test('Work Cells front end renders the runtime science atlas and canonical parent-guidance route', () => {
   const appJs = readFileSync(path.join(rootDir, 'assets', 'app.js'), 'utf8');
-  const stationBody = appJs.match(/function scienceStationSection\(topic\) \{[\s\S]*?\r?\n\}\r?\n\r?\nfunction scienceParentQuestionsSection/)?.[0] ?? '';
-  const questionBody = appJs.match(/function scienceParentQuestionsSection\(topic\) \{[\s\S]*?\r?\n\}\r?\n\r?\nfunction companionSectionHeading/)?.[0] ?? '';
-  const topicPageBody = appJs.match(/function scienceTopicPage\(scienceSeries, topic\) \{[\s\S]*?function errorPage/)?.[0] ?? '';
+  const scienceJs = readFileSync(path.join(rootDir, 'assets', 'science-companion.js'), 'utf8');
 
-  assert.match(appJs, /function isWorkCellsV2Topic/, 'front end should define a V2 content gate');
-  assert.match(appJs, /contentVersion === 'work-cells-v2'/, 'front end should gate formal modules by V2 contentVersion');
-  assert.match(appJs, /V2 内容制作中/, 'front end should show an in-progress state for non-V2 topics');
-  assert.match(stationBody, /topic\.bodyScienceStations/, 'science station should prefer formal bodyScienceStations data');
-  assert.match(stationBody, /!isWorkCellsV2Topic\(topic\)/, 'science station should not render legacy or V1 station cards as formal V2 content');
-  assert.match(appJs, /imageAsset/, 'science station should render generated image assets when present');
-  assert.match(appJs, /解释图占位区/, 'science station should keep a placeholder for missing images');
-  assert.match(questionBody, /topic\.parentQuestionCards/, 'parent questions should prefer refined parentQuestionCards data');
-  assert.match(questionBody, /!isWorkCellsV2Topic\(topic\)/, 'parent questions should not render legacy question cards as formal V2 content');
-  assert.match(appJs, /家长共读提示/, 'topic detail page should include gentle parent guidance copy');
-  assert.match(appJs, /scienceParentGuidanceSection\(topic\)/, 'topic detail page should render parent guidance without a separate route');
-  assert.equal(topicPageBody.includes('/science-parent-guidance'), false, 'parent guidance should not add a separate route');
+  assert.match(appJs, /from '\.\/science-companion\.js'/);
+  assert.match(appJs, /createScienceTopicViewModel\(topic\)/);
+  assert.match(appJs, /renderScienceTopicAtlas\(viewModel/);
+  assert.match(appJs, /\['science-parent-guidance', '家长共读'\]/);
+  assert.match(scienceJs, /topic\.bodyScienceStations/);
+  assert.match(scienceJs, /topic\.parentQuestionCards/);
+  assert.match(scienceJs, /path: station\.imageAsset/);
+  assert.match(scienceJs, /<template data-media-template>/);
+  assert.match(scienceJs, /science-parent-guidance/);
+  assert.doesNotMatch(scienceJs, /topic\.pageAnnotations|contentVersion|V2 内容制作中/);
 });
 
 test('Work Cells V2 standard and image workflow are frozen in docs', () => {

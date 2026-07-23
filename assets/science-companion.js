@@ -1,5 +1,4 @@
 const WORK_CELLS_SERIES_SLUG = 'work-cells';
-const topicCache = new Map();
 
 const QUESTION_GROUPS = [
   ['observation', '观察画面', '先从漫画里的角色、位置和变化找线索。'],
@@ -257,7 +256,7 @@ function navigation(model) {
           <a href="${prefix}science-overview" data-companion-nav-link="science-overview">先认识这个主题</a>
           <a href="${prefix}science-station" data-companion-nav-link="science-station">身体科学小站</a>
           <a href="${prefix}science-questions" data-companion-nav-link="science-questions">一起聊一聊</a>
-          <button type="button" data-science-jump="science-parent-guidance">家长共读</button>
+          <a href="${prefix}science-parent-guidance" data-companion-nav-link="science-parent-guidance">家长共读</a>
           <a href="${prefix}source" data-companion-nav-link="source">来源线索</a>
         </div></details>
       </nav>
@@ -339,7 +338,7 @@ function questions(model) {
   return `
     <section id="science-questions" class="science-atlas-section science-atlas-questions" aria-labelledby="science-questions-title">
       ${heading('先观察，再理解，最后联系生活', '一起聊一聊', 'science-questions-title')}
-      <p class="section-intro">答案是亲子共读参考，不用于评分、判定对错或记录完成状态。</p>${groups}
+      <p class="section-intro">答案是亲子共读参考，只用于打开讨论，不用于评分或判定对错。</p>${groups}
     </section>`;
 }
 
@@ -390,107 +389,3 @@ export function renderScienceTopicAtlas(model, { thumbnailPath = '' } = {}) {
       </div>
     </div>${lightbox()}`;
 }
-
-function topicSlugFromHash(hash = globalThis.location?.hash ?? '') {
-  const parts = String(hash).replace(/^#\/?/, '').split('/').filter(Boolean);
-  return parts[0] === 'science' && parts[1] === WORK_CELLS_SERIES_SLUG ? parts[2] ?? '' : '';
-}
-
-function runtimeTopicSlug(urlLike) {
-  try {
-    const url = new URL(String(urlLike), globalThis.location?.href ?? 'https://example.invalid/');
-    const match = url.pathname.match(/\/public\/runtime\/work-cells\/topics\/([^/]+)\.json$/);
-    return match ? decodeURIComponent(match[1]) : '';
-  } catch {
-    return '';
-  }
-}
-
-function installFetchCapture() {
-  if (typeof globalThis.fetch !== 'function' || globalThis.__frScienceFetchCaptureInstalled) return;
-  const originalFetch = globalThis.fetch.bind(globalThis);
-  globalThis.fetch = async (...args) => {
-    const response = await originalFetch(...args);
-    const slug = runtimeTopicSlug(args[0]?.url ?? args[0]);
-    if (!slug || !response.ok || typeof response.json !== 'function') return response;
-    const originalJson = response.json.bind(response);
-    try {
-      Object.defineProperty(response, 'json', {
-        configurable: true,
-        value: async () => {
-          const data = await originalJson();
-          topicCache.set(text(data?.slug) || slug, data);
-          return data;
-        },
-      });
-    } catch {
-      response.clone().json().then((data) => topicCache.set(text(data?.slug) || slug, data)).catch(() => undefined);
-    }
-    return response;
-  };
-  globalThis.__frScienceFetchCaptureInstalled = true;
-}
-
-function innerHtmlDescriptor() {
-  let prototype = Element.prototype;
-  while (prototype) {
-    const descriptor = Object.getOwnPropertyDescriptor(prototype, 'innerHTML');
-    if (descriptor?.get && descriptor?.set) return descriptor;
-    prototype = Object.getPrototypeOf(prototype);
-  }
-  return null;
-}
-
-function thumbnailFromMarkup(markup) {
-  const template = document.createElement('template');
-  template.innerHTML = String(markup);
-  return template.content.querySelector('.topic-summary-card .topic-thumbnail img')?.getAttribute('src') || '';
-}
-
-function installMarkupInterceptor() {
-  const app = document.getElementById('app');
-  const descriptor = innerHtmlDescriptor();
-  if (!app || !descriptor || app.__frScienceMarkupInterceptorInstalled) return;
-  Object.defineProperty(app, 'innerHTML', {
-    configurable: true,
-    get() { return descriptor.get.call(this); },
-    set(markup) {
-      const sourceMarkup = String(markup ?? '');
-      const topic = topicCache.get(topicSlugFromHash());
-      if (topic && sourceMarkup.includes('companion-view--science')) {
-        descriptor.set.call(this, renderScienceTopicAtlas(createScienceTopicViewModel(topic), {
-          thumbnailPath: thumbnailFromMarkup(sourceMarkup),
-        }));
-      } else {
-        descriptor.set.call(this, sourceMarkup);
-      }
-    },
-  });
-  app.__frScienceMarkupInterceptorInstalled = true;
-}
-
-function installJumpNavigation() {
-  if (globalThis.__frScienceJumpNavigationInstalled) return;
-  document.addEventListener('click', (event) => {
-    const button = event.target?.closest?.('[data-science-jump]');
-    if (!button) return;
-    const target = document.getElementById(button.getAttribute('data-science-jump'));
-    if (!target) return;
-    document.querySelectorAll('[data-companion-nav-link], [data-science-jump]').forEach((item) => item.removeAttribute('aria-current'));
-    button.setAttribute('aria-current', 'location');
-    if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1');
-    target.focus({ preventScroll: true });
-    target.scrollIntoView({ block: 'start', behavior: 'instant' });
-    const announcer = document.getElementById('route-announcer');
-    if (announcer) announcer.textContent = '已到达：家长共读';
-  });
-  globalThis.__frScienceJumpNavigationInstalled = true;
-}
-
-export function installScienceCompanionEnhancer() {
-  installFetchCapture();
-  installMarkupInterceptor();
-  installJumpNavigation();
-}
-
-if (typeof window !== 'undefined' && typeof document !== 'undefined') installScienceCompanionEnhancer();

@@ -301,7 +301,7 @@ test('P3B view models expose only the public allowlist and no authoring internal
 
 test('P3B disclosures keep media inert until an opened non-print group is mounted', () => {
   const disclosureMarkup = sourceSlice(appJs, 'function EvidenceDisclosure', 'function ExplanationImages');
-  const lightboxMarkup = sourceSlice(appJs, 'function ImageLightbox', 'function SciencePageThumbnail');
+  const lightboxMarkup = sourceSlice(appJs, 'function ImageLightbox', 'function companionSectionHeading');
   const disclosureWiring = sourceSlice(appJs, 'function wireEvidenceDisclosures', 'function wireAnswers');
 
   assert.match(disclosureMarkup, /<details class="evidence-disclosure" data-media-disclosure/);

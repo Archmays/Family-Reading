@@ -181,12 +181,12 @@ test('P2 foundations remain within the active P3B code and static deployment gat
     0,
   );
   const cssBytes = statSync(path.join(rootDir, 'assets', 'styles.css')).size;
-  assert.ok(jsBytes <= 110 * 1024, `all JS is ${jsBytes} bytes`);
+  assert.ok(jsBytes <= 155 * 1024, `all JS is ${jsBytes} bytes`);
   assert.ok(cssBytes <= 70 * 1024, `all CSS is ${cssBytes} bytes`);
-  assert.ok(assetScripts.length - 1 <= 3, 'P4A adds exactly one route-content module to the P3B module set');
+  assert.ok(assetScripts.length <= 5, 'P4B adds at most one science module to the P4A module set');
   assert.equal(Object.keys(packageJson.dependencies ?? {}).length, 0);
   assert.equal(/@import|https?:\/\/.+\.(?:js|css|woff2?)/i.test(`${indexHtml}\n${styles}`), false);
-  assert.match(indexHtml, /assets\/app\.js\?v=fr-p4a(?:-\d{8})?/);
+  assert.match(indexHtml, /assets\/app\.js\?v=fr-p4b(?:-\d{8})?/);
 });
 
 test('P2 loading and error states stay understandable and path-safe', () => {

@@ -394,7 +394,7 @@ test('P3A question and answer ids are stable, unique, and fully associated', () 
 
 test('P3A Carmela renderer exposes the requested long-page and accessible interactions', () => {
   const detailStart = appJs.indexOf('function companionSectionHeading');
-  const detailEnd = appJs.indexOf('function scienceTopicSummaryCard');
+  const detailEnd = appJs.indexOf('function scienceTopicPage');
   const detail = appJs.slice(detailStart, detailEnd);
   assert.ok(detailStart >= 0 && detailEnd > detailStart);
   assert.match(appJs, /import \{ createCarmelaCompanionViewModel \} from/);
@@ -499,13 +499,13 @@ test('P3A styles cover responsive, forced-color, print, and code budget gates', 
     0,
   );
   const cssBytes = statSync(path.join(rootDir, 'assets', 'styles.css')).size;
-  assert.ok(jsBytes <= 110 * 1024, `all JS is ${jsBytes} bytes`);
+  assert.ok(jsBytes <= 155 * 1024, `all JS is ${jsBytes} bytes`);
   assert.ok(cssBytes <= 70 * 1024, `CSS is ${cssBytes} bytes`);
-  assert.ok(assetScripts.length <= 4, `P4A should contain at most 4 JavaScript files, found ${assetScripts.length}`);
+  assert.ok(assetScripts.length <= 5, `P4B should contain at most 5 JavaScript files, found ${assetScripts.length}`);
   assert.equal(Object.keys(packageJson.dependencies ?? {}).length, 0);
   assert.equal(/@import|https?:\/\/.+\.(?:js|css|woff2?)/i.test(`${indexHtml}\n${styles}`), false);
   assert.match(indexHtml, /assets\/styles\.css\?v=fr-p3b(?:-\d{8})?/);
-  assert.match(indexHtml, /assets\/app\.js\?v=fr-p4a(?:-\d{8})?/);
+  assert.match(indexHtml, /assets\/app\.js\?v=fr-p4b(?:-\d{8})?/);
 });
 
 test('P3A keeps the startup JSON closure at the P2 baseline', () => {

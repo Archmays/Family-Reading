@@ -177,20 +177,20 @@ test('imported Work Cells visual annotations are complete for imported batches',
   assert.deepEqual(validation.errors, []);
 });
 
-test('Work Cells topic page surfaces imported companion annotation sections', () => {
+test('Work Cells topic page projects imported annotations through the runtime science atlas', () => {
   const appText = readFileSync(path.join(rootDir, 'assets', 'app.js'), 'utf8');
+  const scienceText = readFileSync(path.join(rootDir, 'assets', 'science-companion.js'), 'utf8');
   for (const phrase of [
     '身体科学小站',
-    '亲子问题卡',
-    'groupSciencePagesByRole',
-    'ScienceAnnotationThumbnails',
-    'scienceStationExplanation',
-    'answerForScienceQuestion',
-    'science-illustration-placeholder',
-    'annotation-thumb-list',
-    'pageAnnotations',
+    '一起聊一聊',
+    'createScienceTopicViewModel',
+    'bodyScienceStations',
+    'parentQuestionCards',
+    'pageRefs',
+    'data-media-template',
+    'data-lightbox-group',
   ]) {
-    assert.match(appText, new RegExp(phrase), `app should include ${phrase}`);
+    assert.match(`${appText}\n${scienceText}`, new RegExp(phrase), `app should include ${phrase}`);
   }
 
   for (const blockedPhrase of [
@@ -204,8 +204,11 @@ test('Work Cells topic page surfaces imported companion annotation sections', ()
     'function SciencePageThumbnails',
     'function scienceEncyclopediaSection',
     'function scienceSensitiveSection',
+    'topic.pageAnnotations',
+    'data-science-jump',
+    'installScienceCompanionEnhancer',
   ]) {
-    assert.equal(appText.includes(blockedPhrase), false, `app should not expose ${blockedPhrase}`);
+    assert.equal(`${appText}\n${scienceText}`.includes(blockedPhrase), false, `app should not expose ${blockedPhrase}`);
   }
 });
 

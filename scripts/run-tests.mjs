@@ -10,6 +10,7 @@ export const testFiles = [
   'tests/fr-p3b-carmela-media.test.mjs',
   'tests/fr-p4a-runtime-content.test.mjs',
   'tests/fr-p4a-content-loader.test.mjs',
+  'tests/fr-p4b-web-implementation.test.mjs',
   'tests/public-repository-validator.test.mjs',
   'tests/release-gates.test.mjs',
 ];

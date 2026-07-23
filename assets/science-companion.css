@@ -46,8 +46,8 @@
 
 .science-atlas-body { display: grid; grid-template-columns: minmax(14rem, 18rem) minmax(0, 1fr); gap: var(--space-6); align-items: start; margin-top: var(--space-7); }
 .science-route-rail { position: sticky; top: calc(var(--sticky-offset) + var(--space-4)); }
-.science-atlas-nav button { display: flex; align-items: center; width: 100%; min-height: var(--touch-target); padding: 0.55rem 0.75rem; border: 0; border-radius: var(--radius-sm); background: transparent; color: var(--color-science); font: inherit; font-weight: 800; text-align: left; cursor: pointer; }
-.science-atlas-nav button:hover, .science-atlas-nav button[aria-current="location"] { background: var(--color-science-soft); }
+.science-atlas-nav summary::after, .science-atlas-nav a { color: var(--color-science); }
+.science-atlas-nav a:hover, .science-atlas-nav a[aria-current="location"] { border-color: var(--color-science); background: var(--color-science-soft); color: var(--color-science-hover); }
 .science-atlas-reading { display: grid; gap: var(--space-6); min-width: 0; }
 
 .science-atlas-section { scroll-margin-top: calc(var(--sticky-offset) + var(--space-4)); padding: clamp(1.25rem, 4vw, 2rem); border: 1px solid var(--color-border); border-radius: var(--radius-lg); background: rgba(255,253,249,0.94); }
@@ -102,6 +102,7 @@
   .science-atlas-hero, .science-atlas-body, .science-overview-grid { grid-template-columns: 1fr; }
   .science-atlas-hero-media { min-height: 0; max-width: 28rem; }
   .science-route-rail { position: static; }
+  .science-atlas-nav details > div { grid-template-columns: repeat(5, minmax(0, 1fr)); }
   .science-question-list { grid-template-columns: 1fr; }
 }
 
@@ -111,6 +112,7 @@
   .science-atlas-hero-media { max-height: 15rem; }
   .science-atlas-actions { display: grid; }
   .science-atlas-actions > * { width: 100%; }
+  .science-atlas-nav details > div { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .science-station-route-item { grid-template-columns: 2.5rem minmax(0, 1fr); gap: var(--space-3); }
   .science-station-number { width: 2.5rem; height: 2.5rem; }
   .science-station-route-item:not(:last-child)::before { top: 2.5rem; left: 1.2rem; }
