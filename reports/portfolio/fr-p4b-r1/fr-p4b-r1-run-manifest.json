@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "runId": "fr-p4b-r1-20260723",
+  "phase": "FR-P4B-R1",
+  "status": "LOCAL_RELEASE_ACCEPTANCE_PASS_PENDING_EXACT_SHA_PAGES",
+  "timestamps": {
+    "geometryStartedAt": "2026-07-23T08:04:52.100Z",
+    "geometryCompletedAt": "2026-07-23T08:05:19.892Z",
+    "modesCompletedAt": "2026-07-23T11:23:02.413Z"
+  },
+  "repository": {
+    "name": "Archmays/Family-Reading-Codex",
+    "repositoryId": 1271691196,
+    "visibility": "public",
+    "defaultBranch": "main",
+    "origin": "https://github.com/Archmays/Family-Reading-Codex.git"
+  },
+  "git": {
+    "baseMainSha": "0a4932e117632983359fef507c61aa770792f3e4",
+    "candidateProductionTip": "4675b5467209fd87a5da71430118298c1ffee47c",
+    "workBranch": "codex/fr-p4b-r1-responsive-layout-repair",
+    "finalSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "fastForwardRequired": true,
+    "historyRewrite": false,
+    "forcePush": false
+  },
+  "changeImpact": {
+    "classification": "PHASE_SCOPED_RESPONSIVE_UI_AND_RELEASE_CLOSURE",
+    "productionPaths": [
+      "assets/science-companion.css",
+      "index.html"
+    ],
+    "testPaths": [
+      "tests/fr-p4b-r1-responsive-layout.test.mjs",
+      "tests/fr-p4b-web-implementation.test.mjs",
+      "scripts/run-tests.mjs"
+    ],
+    "explicitlyExcluded": [
+      "application JavaScript behavior",
+      "runtime content or generator",
+      "Work Cells or Carmela product media",
+      "protected source roots",
+      "dependencies",
+      "FR-P5 responsive media pipeline"
+    ]
+  },
+  "geometry": {
+    "artifact": "reports/portfolio/fr-p4b-r1/fr-p4b-r1-geometry-baseline.json",
+    "route": "#/science/work-cells/food-poisoning",
+    "topic": "食物中毒",
+    "browser": "Chromium 150.0.7871.181 via @playwright/cli",
+    "measurementBoundary": {
+      "cssViewportPixels": true,
+      "devicePixelRatio": 1,
+      "nativeBrowserZoomChanged": false,
+      "deviceScaleFactorChanged": false,
+      "zoomMethod": "Playwright CSS viewport equivalent",
+      "reportedScreenshotCssViewportAndZoomKnown": false
+    },
+    "summary": {
+      "samples": 545,
+      "continuousWidthSamples": 469,
+      "namedViewportSamples": 14,
+      "topicEndpointSamples": 54,
+      "zoomEquivalentSamples": 8,
+      "singleColumnSamples": 409,
+      "dualColumnSamples": 136,
+      "overlapFindings": 0,
+      "horizontalOverflowFindings": 0,
+      "brokenHeroFindings": 0,
+      "clippedTextFindings": 0,
+      "undersizedControlSamples": 0,
+      "unexpectedConsoleErrors": 0,
+      "requestFailures": 0,
+      "status": "PASS"
+    },
+    "dangerousBoundary": {
+      "single": {
+        "viewportCss": [
+          1088,
+          400
+        ],
+        "actualGapPx": 43.515,
+        "status": "PASS"
+      },
+      "dual": {
+        "viewportCss": [
+          1089,
+          400
+        ],
+        "actualGapPx": 43.547,
+        "status": "PASS"
+      }
+    }
+  },
+  "browser": {
+    "network": {
+      "workCellsDetailJson": 3,
+      "initialHeroImages": 1,
+      "initialStationImages": 0,
+      "initialMangaImages": 0,
+      "initialAudio": 0,
+      "otherTopicDetails": 0,
+      "carmelaDetails": 0,
+      "oldDraftManifest": 0,
+      "pageMap": 0,
+      "unrelatedOrigins": 0,
+      "failures": 0,
+      "status": "PASS"
+    },
+    "interactions": {
+      "stationIllustrationDisclosure": "PASS",
+      "stationMangaDisclosure": "PASS",
+      "questionAnswerDisclosure": "PASS",
+      "questionMangaDisclosure": "PASS",
+      "groupedLightboxNavigation": "PASS",
+      "escapeCloseAndFocusRestore": "PASS",
+      "routeCleanup": "PASS",
+      "sameTopicDetailReloads": 0,
+      "backForward": "PASS",
+      "retryIsolation": "PASS",
+      "directSectionFocus": "PASS",
+      "status": "PASS"
+    },
+    "carmela": {
+      "seriesBooks": 12,
+      "book1": "PASS",
+      "book11": "PASS",
+      "initialAudioRequests": 0,
+      "initialOnDemandMediaRequests": 0,
+      "onDemandMedia": "PASS",
+      "lightboxFocusRestore": "PASS",
+      "userTriggeredAudioRequests": 1,
+      "userTriggeredAudioStatus": 206,
+      "rangeStatus": 206,
+      "rangeContent": "bytes 0-1023/5208122",
+      "status": "PASS"
+    },
+    "accessibilityAndModes": {
+      "keyboardSkipLink": "PASS",
+      "homeRouteFocus": "PASS",
+      "detailRouteFocus": "PASS",
+      "directSectionFocus": "PASS",
+      "scopedAriaCurrent": "PASS",
+      "forcedColors": "PASS",
+      "reducedMotion": "PASS",
+      "textSpacingDesktopAndMobile": "PASS",
+      "zoom200CssViewportEquivalent": "PASS",
+      "shortLandscape": "PASS",
+      "a4Print": "PASS",
+      "unexpectedConsoleErrors": 0,
+      "pageErrors": 0,
+      "requestFailures": 0,
+      "temporaryModesEvidenceSha256": "1af897e07cfb3fcc889f24b3905bbd1881c3e5cadcfa94f906210585de90e0c5",
+      "status": "PASS_WITH_DOCUMENTED_ENVIRONMENT_LIMITATIONS"
+    },
+    "limitations": [
+      "Native browser zoom was not programmatically changed; the scale checks use explicit CSS viewport equivalents.",
+      "No physical iOS/Android device or external screen reader was available; these environments are not reported as passed."
+    ]
+  },
+  "runtime": {
+    "files": 31,
+    "bytes": 393121,
+    "manifestOutputs": 30,
+    "manifestOutputMismatches": 0,
+    "manifestSha256": "4fda8a75bc8118ff0fec2d7ac04f73d832f082522cab78a4d248de5bf5e06c50",
+    "runtimeIndexSha256": "c53654343e6fb4128a4a77aecef5055146146d0ea78430cc7a49a8da7d996742",
+    "workCellsIndexSha256": "2b30e2d7ee8099ac6b7adcfbbf0485d790a4b5042c741fe25c89d94e9b3ffa4e",
+    "byteIdenticalToBase": true,
+    "stalenessStatus": "PASS"
+  },
+  "sourceIntegrity": {
+    "roots": [
+      "source",
+      "data-private",
+      "public/assets/cells-at-work/pages-by-volume",
+      "data/cells-at-work/source-assets",
+      "archived"
+    ],
+    "files": 1278,
+    "bytes": 7882956334,
+    "compactPathBytesSha256": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "sourcePrivateExists": false,
+    "protectedDiffPaths": 0,
+    "productMediaDiffPaths": 0,
+    "status": "VERIFIED_UNCHANGED"
+  },
+  "budgets": {
+    "lineEndingAccounting": "Filesystem raw bytes are reported for thresholds; base/current Git blob bytes are used for stable content-growth deltas.",
+    "javascript": {
+      "filesystemRawBytes": 105024,
+      "baseCanonicalBlobBytes": 102158,
+      "currentCanonicalBlobBytes": 102158,
+      "canonicalDeltaBytes": 0,
+      "status": "PASS"
+    },
+    "css": {
+      "filesystemRawBytes": 69991,
+      "baseCanonicalBlobBytes": 66107,
+      "currentCanonicalBlobBytes": 66852,
+      "canonicalDeltaBytes": 745,
+      "warningBytes": 73728,
+      "hardBytes": 81920,
+      "status": "PASS"
+    },
+    "runtimeJsonBytes": 393121,
+    "runtimeDependencies": 0,
+    "newProductMedia": 0,
+    "dist": {
+      "baselineBytes": 835934281,
+      "finalBytes": 835935148,
+      "deltaBytes": 867,
+      "maximumDeltaBytes": 1048576,
+      "status": "PASS"
+    }
+  },
+  "tests": {
+    "targeted": [
+      {
+        "scope": "R1 static responsive contract",
+        "passed": 4,
+        "total": 4,
+        "status": "PASS"
+      },
+      {
+        "scope": "initial affected closure",
+        "passed": 116,
+        "total": 117,
+        "status": "ONE_OBSOLETE_P4B_SHORT_LANDSCAPE_LITERAL_CORRECTED"
+      },
+      {
+        "scope": "corrected P4B plus R1 affected files",
+        "passed": 19,
+        "total": 19,
+        "status": "PASS"
+      },
+      {
+        "scope": "tightened R1 helper rerun",
+        "passed": 19,
+        "total": 19,
+        "status": "PASS"
+      },
+      {
+        "scope": "focused affected P2/P4B/R1/router/build/validator/release closure",
+        "passed": 107,
+        "total": 107,
+        "status": "PASS"
+      }
+    ],
+    "finalRelease": {
+      "command": "npm run verify:release",
+      "localInvocations": 1,
+      "passed": 137,
+      "total": 137,
+      "failed": 0,
+      "status": "PASS"
+    },
+    "thresholdsWeakened": false,
+    "assertionsRemoved": false,
+    "fullSuiteRepeated": false
+  },
+  "build": {
+    "status": "PASS",
+    "publicRepositoryValidator": {
+      "status": "PASS",
+      "trackedFiles": 2897,
+      "textFiles": 206,
+      "findings": 0
+    },
+    "distAudit": {
+      "status": "PASS",
+      "files": 1565,
+      "bytes": 835935148,
+      "deltaFromBaselineBytes": 867,
+      "maximumDeltaBytes": 1048576
+    }
+  },
+  "release": {
+    "singleLocalFullGate": "PASS_137_OF_137",
+    "targetPagesUrl": "https://archmays.github.io/Family-Reading-Codex/",
+    "finalMainSha": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "mainCurrentTruth": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "exactShaActions": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "exactShaPagesDeployment": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "liveIndexBlob": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "liveCssBlob": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "liveStylesheetCacheIdentity": "fr-p4b-r1-20260723",
+    "taskBranchCleanup": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF"
+  },
+  "ciGovernance": {
+    "classification": "PHASE_SCOPED_UI",
+    "targetedDevelopmentInvocations": 5,
+    "localFullReleaseGateInvocations": 1,
+    "failedJobReruns": 0,
+    "deploymentCountBeforeFinalPush": 0,
+    "runtimeCacheReuse": "UNCHANGED_RUNTIME_REUSED",
+    "historicalReleaseRebuilds": 0
+  },
+  "storageCleanup": {
+    "rawHarRetained": false,
+    "browserProfileRetained": false,
+    "cookieOrTokenRetained": false,
+    "traceRetained": false,
+    "temporaryPrintPdfRetained": false,
+    "temporaryBrowserScripts": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "candidatePngScreenshots": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "taskScratch": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "testServer": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF"
+  },
+  "knownEvidenceLimitations": [
+    {
+      "id": "reported-screenshot-measurement-boundary",
+      "disposition": "DOCUMENTED_EQUIVALENT",
+      "impact": "Original image pixels do not reveal CSS viewport, zoom or DPR; explicit 773x709 CSS/DPR1 plus 80%-200% equivalents passed."
+    },
+    {
+      "id": "physical-device-and-screen-reader",
+      "disposition": "DOCUMENTED_NOT_AVAILABLE",
+      "impact": "No physical iOS/Android device or external screen reader was available; Chromium semantic, focus, keyboard and viewport checks are the bounded substitutes."
+    },
+    {
+      "id": "legacy-fr-p4b-topic-inventory",
+      "declaredTopics": 27,
+      "arrayEntries": 26,
+      "missingOrder": 16,
+      "missingSlug": "hemorrhagic-shock",
+      "runtimeImpact": false,
+      "r1Impact": false,
+      "disposition": "DOCUMENTED_PRE_EXISTING_EVIDENCE_DEFECT_NOT_REPAIRED_OUT_OF_SCOPE"
+    }
+  ],
+  "screenshots": [
+    {
+      "path": "docs/portfolio/fr-p4b-r1/screenshots/food-poisoning-773x709.webp",
+      "bytes": 43586,
+      "sha256": "f90c647a8300f43934ffdc67b5b0228948cf9fbb4b77a1a7ed8f6e7f43b7cbce"
+    },
+    {
+      "path": "docs/portfolio/fr-p4b-r1/screenshots/food-poisoning-dangerous-dual-1089x400.webp",
+      "bytes": 33202,
+      "sha256": "7840a3805224c2a97f10eb27296c0f8d7e5d878edf35958fd2d8ba308c8bc8e6"
+    },
+    {
+      "path": "docs/portfolio/fr-p4b-r1/screenshots/food-poisoning-mobile-390x844.webp",
+      "bytes": 54476,
+      "sha256": "07e0d2af0e0b47f627e5fa4b9a18446d6de29dd45418764ef5f37b9135364469"
+    }
+  ],
+  "artifacts": [
+    "docs/portfolio/fr-p4b-r1/FR-P4B-R1-responsive-layout-repair.md",
+    "docs/portfolio/fr-p4b-r1/FR-P4B-R1-browser-geometry-report.md",
+    "docs/portfolio/fr-p4b-r1/FR-P4B-R1-final-report.md",
+    "reports/portfolio/fr-p4b-r1/fr-p4b-r1-web-handoff.json",
+    "reports/portfolio/fr-p4b-r1/fr-p4b-r1-geometry-baseline.json",
+    "reports/portfolio/fr-p4b-r1/fr-p4b-r1-run-manifest.json"
+  ],
+  "rightsStatus": "PASS_BY_USER_AUTHORIZATION",
+  "privacyStatus": "PASS",
+  "productBoundaryStatus": "PASS",
+  "qualityCompromises": 0,
+  "nextRecommendedPhase": "FR-P5A Responsive Media Pipeline"
+}
