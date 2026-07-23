@@ -1,6 +1,6 @@
 # Book Companion / 家庭阅读助手
 
-面向家庭纸质阅读的伴读入口。首页只用于选择系列；当前提供 `不一样的卡梅拉` 12 册故事伴读，以及 `工作细胞` 27 个科学主题伴读。站点提供内容回顾、问题卡片、背景补充、剧情百科、科学小站、页面线索和音频，不是电子书、进度或打卡产品。
+面向家庭纸质阅读的伴读入口。首页只用于选择系列；当前提供 `不一样的卡梅拉` 12 册故事伴读，以及 `工作细胞` 27 个科学主题伴读。站点提供内容回顾、问答卡片、背景补充、剧情百科、科学小站、页面线索和音频，不是电子书、进度或打卡产品。
 
 ## Repository identity
 
@@ -8,7 +8,7 @@
 
 - GitHub：`Archmays/Family-Reading-Codex`
 - GitHub Pages：`https://archmays.github.io/Family-Reading-Codex/`
-- 本地项目：`D:\ChatGPT-Codex-Projects\Family-Reading-Codex`
+- 本地项目目录名：`Family-Reading-Codex`
 
 旧名称 `Archmays/Family-Reading` 只作为重命名前的历史身份保留。不要重新创建同名旧仓库，否则 GitHub 对旧仓库地址的自动重定向可能失效。仓库重命名、本地 `origin` 更新和新 Pages 地址的最终验证由同一 FR-P4B 本地 closeout 完成。
 
