@@ -43,7 +43,7 @@
     "buildAndDistAudit": "NOT_RUN_WEB_ENVIRONMENT"
   },
   "localCodexCloseout": {
-    "status": "LOCAL_ACCEPTANCE_PASS_PENDING_SINGLE_RELEASE_GATE",
+    "status": "LOCAL_RELEASE_ACCEPTANCE_PASS_PENDING_EXACT_SHA_PAGES",
     "directIntegrationSha": "191b2586e609fbe0aeab15c1bb02b1a9f7f721d7",
     "appJsDirectImport": true,
     "temporaryEnhancerRemoved": true,
@@ -63,7 +63,7 @@
     "browserDeepViewportCases": 54,
     "coldContextCount": 6,
     "browserNetworkAccessibility": "PASS",
-    "finalReleaseGate": "NOT_RUN_UNTIL_POST_RENAME",
+    "finalReleaseGate": "PASS_133_OF_133_SINGLE_INVOCATION",
     "repositoryRename": "COMPLETE",
     "repositoryIdUnchanged": true,
     "repositoryVisibility": "PUBLIC_UNCHANGED",

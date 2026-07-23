@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "runId": "fr-p4b-20260723",
   "phase": "FR-PORTFOLIO-P4B",
-  "status": "LOCAL_ACCEPTANCE_PASS_PENDING_SINGLE_RELEASE_GATE_AND_EXACT_SHA_PAGES",
+  "status": "LOCAL_RELEASE_ACCEPTANCE_PASS_PENDING_EXACT_SHA_PAGES",
   "repository": {
     "before": "Archmays/Family-Reading",
     "after": "Archmays/Family-Reading-Codex",
@@ -133,11 +133,12 @@
     ],
     "finalRelease": {
       "command": "npm run verify:release",
-      "localInvocations": 0,
-      "passed": null,
-      "total": null,
-      "failed": null,
-      "status": "PENDING_SINGLE_POST_RENAME_INVOCATION"
+      "localInvocations": 1,
+      "node": "v24.16.0",
+      "passed": 133,
+      "total": 133,
+      "failed": 0,
+      "status": "PASS"
     },
     "thresholdsWeakened": false,
     "assertionsRemoved": false,
@@ -203,17 +204,22 @@
     "newJavascriptModules": 1,
     "runtimeDependencies": 0,
     "distDeltaLimitBytes": 5242880,
-    "status": "PASS_PENDING_FINAL_DIST_MEASUREMENT"
+    "distFiles": 1565,
+    "distBytes": 835934281,
+    "distDeltaFromP4aBytes": 12844,
+    "status": "PASS"
   },
   "build": {
-    "status": "PENDING_SINGLE_FINAL_RELEASE_INVOCATION",
-    "publicRepositoryValidator": "PASS_PRE_GATE",
-    "publicRepositoryTrackedFiles": null,
-    "publicRepositoryTextFiles": null,
+    "status": "PASS",
+    "publicRepositoryValidator": "PASS",
+    "publicRepositoryTrackedFiles": 2887,
+    "publicRepositoryTextFiles": 199,
     "publicRepositoryFindings": 0,
-    "distAudit": "PENDING_SINGLE_FINAL_RELEASE_INVOCATION",
-    "distFiles": null,
-    "distBytes": null
+    "distAudit": "PASS",
+    "distFiles": 1565,
+    "distBytes": 835934281,
+    "distDeltaFromP4aBytes": 12844,
+    "distDeltaLimitBytes": 5242880
   },
   "repositoryRename": {
     "status": "COMPLETE_IN_PLACE",
@@ -240,7 +246,7 @@
     "status": "VERIFIED_UNCHANGED"
   },
   "release": {
-    "singleLocalFullGate": "PENDING",
+    "singleLocalFullGate": "PASS_133_OF_133",
     "targetPagesUrl": "https://archmays.github.io/Family-Reading-Codex/",
     "exactShaPages": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
     "oldPagesUrlAccepted": false,
@@ -258,7 +264,7 @@
   },
   "ciGovernance": {
     "targetedDevelopmentRuns": 5,
-    "localFullReleaseGateInvocations": 0,
+    "localFullReleaseGateInvocations": 1,
     "failedJobReruns": 0,
     "deploymentCount": 0,
     "runtimeCacheReuse": "UNCHANGED_RUNTIME_REUSED",

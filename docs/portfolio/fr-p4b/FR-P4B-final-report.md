@@ -24,7 +24,7 @@ The exact final commit, GitHub Actions run, Pages deployment and final task-owne
 | Runtime | 31 files / 393,121 B; runtime manifest and Work Cells projection unchanged and current | PASS |
 | Source/privacy/rights | protected roots identical; public validator clean; user authorization applies | PASS |
 | Repository rename | same repository id 1271691196, public visibility and `main`; canonical local `origin` updated | PASS |
-| Final release gate | exactly one post-rename `npm run verify:release` invocation | PENDING SINGLE INVOCATION |
+| Final release gate | exactly one post-rename `npm run verify:release` invocation; 133/133 tests; build/dist pass | PASS |
 | Pages | new project URL must deploy and serve the exact final `main` SHA | RESOLVED POST-COMMIT |
 
 ## Direct application integration
@@ -91,7 +91,11 @@ Targeted work preceded the final gate:
 - runtime staleness: 31 files / 393,121 B, PASS;
 - public current-tree validator: zero findings.
 
-No assertion, threshold or product boundary was weakened. The two initial failures were obsolete byte-budget expectations after the intended module addition, and only the affected closure was rerun. The single full release invocation is recorded after it runs; it is not repeated for reporting.
+No assertion, threshold or product boundary was weakened. The two initial failures were obsolete byte-budget expectations after the intended module addition, and only the affected closure was rerun.
+
+Exactly one post-rename `npm run verify:release` invocation then passed 133/133 tests. It passed both runtime staleness checks, the staged-current-tree public validator at 2,887 tracked files / 199 scanned text files / 0 findings, the static build and the dist audit. The full suite was not repeated.
+
+CI-governance accounting at the tracked-report boundary is: five targeted development invocations, one local full release-gate invocation, zero failed-job reruns, zero deployments before the final push, unchanged runtime projection reused, and zero historical releases rebuilt. Final exact-SHA deployment and task-owned storage cleanup are recorded in the post-commit handoff.
 
 ## Code and performance budgets
 
@@ -106,7 +110,7 @@ No assertion, threshold or product boundary was weakened. The two initial failur
 | Initial station media | 0 | exactly 0 | PASS |
 | Initial manga media | 0 | exactly 0 | PASS |
 | Work Cells detail JSON | 3 | exactly 3 | PASS |
-| Dist | resolved by final release gate | delta at most 5 MiB | PENDING SINGLE INVOCATION |
+| Dist | 1,565 files / 835,934,281 B; +12,844 B | delta at most 5 MiB | PASS |
 
 No WebP/AVIF generation, `srcset` pipeline, media re-encoding or Pages artifact optimization was started.
 
@@ -214,7 +218,7 @@ LOCAL_ORIGIN_STATUS: UPDATED
 OLD_NAME_CURRENT_REFERENCES: 0
 HISTORICAL_REFERENCES: PRESERVED_WITH_CONTEXT
 NEW_PAGES_URL_STATUS: RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF
-FR_PORTFOLIO_P4B_STATUS: LOCAL_ACCEPTANCE_PASS_PENDING_SINGLE_RELEASE_GATE_AND_EXACT_SHA_PAGES
+FR_PORTFOLIO_P4B_STATUS: LOCAL_RELEASE_ACCEPTANCE_PASS_PENDING_EXACT_SHA_PAGES
 GITHUB_REPOSITORY_IDENTITY: VERIFIED_ARCHMAYS_FAMILY_READING_CODEX
 GITHUB_VISIBILITY: PUBLIC_UNCHANGED
 RIGHTS_STATUS: PASS_BY_USER_AUTHORIZATION
@@ -258,11 +262,11 @@ OLD_WORK_CELLS_MANIFEST_REQUESTS: 0
 PAGE_MAP_REQUESTS: 0
 CARMELA_P3B_NON_REGRESSION: PASS
 PERFORMANCE_STATUS: PASS
-TEST_STATUS: PENDING_SINGLE_FINAL_RELEASE_INVOCATION
-FINAL_TEST_COUNT: PENDING_SINGLE_FINAL_RELEASE_INVOCATION
-BUILD_STATUS: PENDING_SINGLE_FINAL_RELEASE_INVOCATION
+TEST_STATUS: PASS
+FINAL_TEST_COUNT: 133/133
+BUILD_STATUS: PASS
 PUBLIC_REPOSITORY_VALIDATOR: PASS
-DIST_AUDIT_STATUS: PENDING_SINGLE_FINAL_RELEASE_INVOCATION
+DIST_AUDIT_STATUS: PASS
 PAGES_STATUS: RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF
 FINAL_MAIN_SHA: RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF
 MAIN_CURRENT_TRUTH: RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF
