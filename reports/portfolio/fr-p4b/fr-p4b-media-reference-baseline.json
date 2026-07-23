@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-P4B",
+  "status": "PASS",
+  "basis": {
+    "runtimeManifestSha256": "4fda8a75bc8118ff0fec2d7ac04f73d832f082522cab78a4d248de5bf5e06c50",
+    "topicIndexSha256": "2b30e2d7ee8099ac6b7adcfbbf0485d790a4b5042c741fe25c89d94e9b3ffa4e",
+    "gitSha": "191b2586e609fbe0aeab15c1bb02b1a9f7f721d7"
+  },
+  "runtimeImages": {
+    "occurrences": 421,
+    "unique": 400,
+    "existing": 400,
+    "missing": [],
+    "heroOccurrences": 27,
+    "stationIllustrationOccurrences": 108,
+    "pageReferenceOccurrences": 286
+  },
+  "registry": {
+    "entriesAcrossTopics": 394,
+    "globalRegistryPaths": 393,
+    "heroPaths": 27,
+    "heroRegistryOverlap": 20,
+    "combinedUniquePaths": 400,
+    "entriesByKind": {
+      "station-illustration": 108,
+      "manga-page": 286
+    },
+    "groupsAcrossTopics": 378,
+    "groupsByKind": {
+      "station-illustration": 108,
+      "manga-page": 270
+    },
+    "groupMemberReferences": 642,
+    "useSites": 642,
+    "duplicateMediaWithinGroup": 0,
+    "unresolvedMediaIds": 0
+  },
+  "lifecycleContract": {
+    "initialHeroImages": 1,
+    "initialStationImages": 0,
+    "initialMangaImages": 0,
+    "idleLightboxImages": 0,
+    "closedGroupsUseInertTemplates": true,
+    "reopenDuplicates": 0,
+    "printMounts": 0,
+    "workCellsAudio": false
+  },
+  "perTopic": [
+    {
+      "slug": "streptococcus-pneumoniae",
+      "imageOccurrences": 13,
+      "uniqueImages": 13,
+      "existingImages": 13,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 19
+    },
+    {
+      "slug": "cedar-pollen-allergy",
+      "imageOccurrences": 11,
+      "uniqueImages": 11,
+      "existingImages": 11,
+      "mediaRegistryEntries": 10,
+      "mediaGroups": 14,
+      "mediaUseSites": 16
+    },
+    {
+      "slug": "influenza",
+      "imageOccurrences": 11,
+      "uniqueImages": 10,
+      "existingImages": 10,
+      "mediaRegistryEntries": 10,
+      "mediaGroups": 14,
+      "mediaUseSites": 17
+    },
+    {
+      "slug": "abrasion",
+      "imageOccurrences": 12,
+      "uniqueImages": 12,
+      "existingImages": 12,
+      "mediaRegistryEntries": 11,
+      "mediaGroups": 14,
+      "mediaUseSites": 17
+    },
+    {
+      "slug": "food-poisoning",
+      "imageOccurrences": 15,
+      "uniqueImages": 14,
+      "existingImages": 14,
+      "mediaRegistryEntries": 14,
+      "mediaGroups": 14,
+      "mediaUseSites": 22
+    },
+    {
+      "slug": "heatstroke",
+      "imageOccurrences": 11,
+      "uniqueImages": 10,
+      "existingImages": 10,
+      "mediaRegistryEntries": 10,
+      "mediaGroups": 14,
+      "mediaUseSites": 16
+    },
+    {
+      "slug": "erythroblast-and-myelocyte",
+      "imageOccurrences": 13,
+      "uniqueImages": 12,
+      "existingImages": 12,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 21
+    },
+    {
+      "slug": "cancer-cell",
+      "imageOccurrences": 17,
+      "uniqueImages": 16,
+      "existingImages": 16,
+      "mediaRegistryEntries": 16,
+      "mediaGroups": 14,
+      "mediaUseSites": 23
+    },
+    {
+      "slug": "blood-circulation",
+      "imageOccurrences": 13,
+      "uniqueImages": 12,
+      "existingImages": 12,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 19
+    },
+    {
+      "slug": "common-cold-syndrome",
+      "imageOccurrences": 13,
+      "uniqueImages": 12,
+      "existingImages": 12,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 22
+    },
+    {
+      "slug": "thymocyte",
+      "imageOccurrences": 15,
+      "uniqueImages": 14,
+      "existingImages": 14,
+      "mediaRegistryEntries": 14,
+      "mediaGroups": 14,
+      "mediaUseSites": 22
+    },
+    {
+      "slug": "adaptive-immunity",
+      "imageOccurrences": 15,
+      "uniqueImages": 15,
+      "existingImages": 15,
+      "mediaRegistryEntries": 14,
+      "mediaGroups": 14,
+      "mediaUseSites": 21
+    },
+    {
+      "slug": "acne",
+      "imageOccurrences": 13,
+      "uniqueImages": 13,
+      "existingImages": 13,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 24
+    },
+    {
+      "slug": "staphylococcus-aureus",
+      "imageOccurrences": 12,
+      "uniqueImages": 11,
+      "existingImages": 11,
+      "mediaRegistryEntries": 11,
+      "mediaGroups": 14,
+      "mediaUseSites": 21
+    },
+    {
+      "slug": "dengue-fever",
+      "imageOccurrences": 14,
+      "uniqueImages": 13,
+      "existingImages": 13,
+      "mediaRegistryEntries": 13,
+      "mediaGroups": 14,
+      "mediaUseSites": 22
+    },
+    {
+      "slug": "hemorrhagic-shock",
+      "imageOccurrences": 13,
+      "uniqueImages": 13,
+      "existingImages": 13,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 19
+    },
+    {
+      "slug": "peyers-patches",
+      "imageOccurrences": 13,
+      "uniqueImages": 12,
+      "existingImages": 12,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 24
+    },
+    {
+      "slug": "helicobacter-pylori",
+      "imageOccurrences": 13,
+      "uniqueImages": 12,
+      "existingImages": 12,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 24
+    },
+    {
+      "slug": "antigenic-variation",
+      "imageOccurrences": 12,
+      "uniqueImages": 11,
+      "existingImages": 11,
+      "mediaRegistryEntries": 11,
+      "mediaGroups": 14,
+      "mediaUseSites": 24
+    },
+    {
+      "slug": "cytokines",
+      "imageOccurrences": 13,
+      "uniqueImages": 12,
+      "existingImages": 12,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 24
+    },
+    {
+      "slug": "gut-microbiota",
+      "imageOccurrences": 12,
+      "uniqueImages": 11,
+      "existingImages": 11,
+      "mediaRegistryEntries": 11,
+      "mediaGroups": 14,
+      "mediaUseSites": 23
+    },
+    {
+      "slug": "cancer-cell-ii",
+      "imageOccurrences": 13,
+      "uniqueImages": 12,
+      "existingImages": 12,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 24
+    },
+    {
+      "slug": "bump-on-head",
+      "imageOccurrences": 13,
+      "uniqueImages": 12,
+      "existingImages": 12,
+      "mediaRegistryEntries": 12,
+      "mediaGroups": 14,
+      "mediaUseSites": 22
+    },
+    {
+      "slug": "left-shift-of-white-blood-cells",
+      "imageOccurrences": 22,
+      "uniqueImages": 21,
+      "existingImages": 21,
+      "mediaRegistryEntries": 21,
+      "mediaGroups": 14,
+      "mediaUseSites": 31
+    },
+    {
+      "slug": "induced-pluripotent-stem-cells",
+      "imageOccurrences": 40,
+      "uniqueImages": 40,
+      "existingImages": 40,
+      "mediaRegistryEntries": 39,
+      "mediaGroups": 14,
+      "mediaUseSites": 49
+    },
+    {
+      "slug": "psoriasis",
+      "imageOccurrences": 21,
+      "uniqueImages": 20,
+      "existingImages": 20,
+      "mediaRegistryEntries": 20,
+      "mediaGroups": 14,
+      "mediaUseSites": 29
+    },
+    {
+      "slug": "novel-coronavirus",
+      "imageOccurrences": 38,
+      "uniqueImages": 37,
+      "existingImages": 37,
+      "mediaRegistryEntries": 37,
+      "mediaGroups": 14,
+      "mediaUseSites": 47
+    }
+  ],
+  "inventoryReferences": [
+    "reports/portfolio/fr-p4b/fr-p4b-topic-content-inventory-before.json",
+    "reports/portfolio/fr-p4b/fr-p4b-topic-content-inventory-after.json"
+  ],
+  "initialRequestContract": {
+    "json": {
+      "expected": 3,
+      "actual": 3,
+      "status": "PASS"
+    },
+    "hero": {
+      "expected": 1,
+      "actual": 1,
+      "status": "PASS"
+    },
+    "station": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "manga": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "lightbox": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    },
+    "audio": {
+      "expected": 0,
+      "actual": 0,
+      "status": "PASS"
+    }
+  },
+  "interactionCases": [
+    {
+      "id": "station-illustration",
+      "expectedMounts": 1,
+      "actualMounts": 1,
+      "otherGroupRequests": 0,
+      "reopenTransfers": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "station-manga",
+      "expectedMounts": 2,
+      "actualMounts": 2,
+      "otherGroupRequests": 0,
+      "reopenTransfers": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "question-manga",
+      "expectedMounts": 2,
+      "actualMounts": 2,
+      "otherGroupRequests": 0,
+      "reopenTransfers": 0,
+      "status": "PASS"
+    }
+  ],
+  "lightbox": {
+    "activeGroupOnly": true,
+    "keyboardArrows": "PASS",
+    "escapeCleanup": "PASS",
+    "focusRestore": "PASS",
+    "routeCleanup": "PASS"
+  },
+  "cacheReuse": {
+    "reopenTransfers": 0,
+    "status": "PASS"
+  },
+  "print": {
+    "mountedImages": 0,
+    "triggeredImageRequests": 0,
+    "status": "PASS"
+  },
+  "missingPaths": []
+}

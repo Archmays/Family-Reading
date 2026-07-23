@@ -7,7 +7,7 @@
   "baseMainSha": "24fd0787bce84d45e5f71591e6da7201176c4c21",
   "branch": "codex/fr-p4b-work-cells-topic-experience",
   "webBranchTipBeforeHandoff": "3a7453c39204e899daa0b5a80a3e497878b2eeb9",
-  "webBranchFinalSha": "RESOLVED_AFTER_HANDOFF_COMMIT",
+  "webBranchFinalSha": "0b516ec5892b018719eccc883b949742a66458e7",
   "webImplementation": {
     "status": "STATIC_IMPLEMENTATION_COMPLETE_PENDING_LOCAL_ACCEPTANCE",
     "filesChanged": [
@@ -40,6 +40,30 @@
     "fullRepositoryTests": "NOT_RUN_WEB_ENVIRONMENT",
     "browserQa": "NOT_RUN_WEB_ENVIRONMENT",
     "buildAndDistAudit": "NOT_RUN_WEB_ENVIRONMENT"
+  },
+  "localCodexCloseout": {
+    "status": "LOCAL_ACCEPTANCE_PASS_PENDING_RENAME_AND_RELEASE",
+    "directIntegrationSha": "191b2586e609fbe0aeab15c1bb02b1a9f7f721d7",
+    "appJsDirectImport": true,
+    "temporaryEnhancerRemoved": true,
+    "canonicalParentGuidanceRoute": true,
+    "targetedAffectedClosure": {
+      "passed": 82,
+      "total": 82,
+      "status": "PASS"
+    },
+    "focusedP4B": {
+      "passed": 15,
+      "total": 15,
+      "status": "PASS"
+    },
+    "runtimeStaleness": "PASS",
+    "browserTopicSweepCases": 54,
+    "browserDeepViewportCases": 54,
+    "coldContextCount": 6,
+    "browserNetworkAccessibility": "PASS",
+    "finalReleaseGate": "NOT_RUN_UNTIL_POST_RENAME",
+    "repositoryRename": "PENDING"
   },
   "implementedContracts": {
     "scienceTopicViewModel": true,
@@ -88,7 +112,7 @@
     "doNotRecreateOldRepositoryName": true
   },
   "acceptanceBaselines": {
-    "tests": "118/118",
+    "webCheckpointTests": "NOT_RUN_WEB_ENVIRONMENT",
     "topics": "27/27",
     "categories": "24/24",
     "stations": "108/108",

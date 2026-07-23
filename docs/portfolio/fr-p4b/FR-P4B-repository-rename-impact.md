@@ -23,7 +23,7 @@ The connected GitHub repository reports `is_code_search_indexed: false`. Reposit
 - `assets/app.js` — inspected for route and project-subpath behavior; paths are relative
 - `public/runtime/index.json` and Work Cells runtime paths — inspected; paths are relative
 
-A full local text scan remains a mandatory Codex gate because the web connector cannot enumerate and search every tracked text blob in this repository.
+A full local text scan remained a mandatory Codex gate because the web connector could not enumerate and search every tracked text blob in this repository.
 
 ## Current references updated on the shared branch
 
@@ -48,7 +48,7 @@ The active deployment guide now:
 
 ### Entry document
 
-`index.html` continues to use relative assets and therefore does not require a hard-coded project base path. It loads the P4B science enhancer before the existing application module.
+`index.html` continues to use relative assets and therefore does not require a hard-coded project base path. It loads only the application module; `app.js` imports the pure P4B science module directly.
 
 ## References that must remain historical
 
@@ -83,6 +83,8 @@ Classify every match as:
 4. false positive or unrelated text — document and leave unchanged.
 
 The final public-repository validator must not reject intentionally preserved historical evidence merely because it contains the old repository name.
+
+The local tracked-tree scan completed with zero current active old-name references. Matches were classified as historical evidence, explicit rename-transition context, the scan command itself, or validator fixtures. No external `uses: Archmays/Family-Reading@...` consumer exists. The only active old identity before the GitHub operation is the local `origin`; it must change immediately after the in-place rename.
 
 ## Rename preconditions
 

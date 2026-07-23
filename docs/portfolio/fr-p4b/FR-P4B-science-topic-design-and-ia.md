@@ -2,7 +2,7 @@
 
 ## Status
 
-This document records the ChatGPT web implementation checkpoint for `FR-P4B Work Cells Topic Experience and Route-Scoped Interaction`. It does not claim local browser, full test, build, dist, Pages or repository-rename acceptance. Those gates remain assigned to the local Codex closeout.
+This document began as the ChatGPT web implementation checkpoint for `FR-P4B Work Cells Topic Experience and Route-Scoped Interaction`. The local Codex closeout has since replaced the temporary enhancer with direct `app.js` integration and completed targeted/runtime/browser acceptance. Final release, rename and Pages results are owned by the FR-P4B final report and run manifest.
 
 ## Starting truth
 
@@ -49,7 +49,7 @@ Existing route section ids are retained:
 - `science-parent-guidance`
 - `source`
 
-The current `app.js` allowlist does not yet include `science-parent-guidance`. The web checkpoint provides a keyboard-accessible in-page jump control. Local Codex must add the fifth route id to the app router and replace the temporary jump with a canonical hash link after browser verification.
+The final local implementation includes all five ids in the `app.js` allowlist. `science-parent-guidance` is a canonical hash route and passed direct load, reload, title, focus, announcement, `aria-current` and history checks.
 
 ## View model
 
@@ -57,7 +57,6 @@ The current `app.js` allowlist does not yet include `science-parent-guidance`. T
 
 - `createScienceTopicViewModel(topic)`
 - `renderScienceTopicAtlas(viewModel, options)`
-- `installScienceCompanionEnhancer()`
 
 The view model derives UI-only structure from the current P4A runtime topic without modifying generated JSON:
 
@@ -103,19 +102,17 @@ Initial science-detail target:
 - idle lightbox image requests: 0
 - audio requests: 0
 
-## Pre-app integration
+## Local direct integration
 
-The web checkpoint loads `science-companion.js` before `app.js`.
+The local closeout supersedes the web checkpoint's temporary pre-app enhancer:
 
-The enhancer:
+1. `app.js` imports the two pure science functions directly;
+2. the existing loader remains the only runtime JSON writer and fetch path;
+3. `scienceTopicPage()` adapts the selected runtime topic once and calls the Atlas renderer;
+4. `index.html` loads only `app.js`; the science module has no browser-side installer or global side effect;
+5. the temporary fetch wrapper, `innerHTML` interception and parent jump were removed.
 
-1. wraps the existing global fetch before P4A starts;
-2. captures the already-requested selected topic JSON without making another request;
-3. intercepts the `#app` markup assignment;
-4. replaces only the science-topic markup before it enters the active DOM;
-5. leaves home, series, Carmela and error views unchanged.
-
-This preserves the P4A Work Cells detail target of three JSON requests. Local browser evidence must confirm that the Response `json` wrapper and per-element `innerHTML` interceptor behave consistently in the project Chromium environment. If they do not, Codex should integrate the same pure view model directly into `app.js`, not add a fourth JSON request.
+This keeps Work Cells detail at three JSON requests while preserving the existing home, series, Carmela, error, disclosure, answer and lightbox lifecycles.
 
 ## Styling
 
@@ -146,20 +143,17 @@ It inherits existing P2 tokens and does not establish a second site-wide design 
 
 The full 27-topic test suite was authored but not executed in the web environment because the connected GitHub surface does not provide a runnable checkout.
 
-## Local Codex acceptance required
+## Local Codex acceptance results
 
-Codex must still verify:
-
-- 27/27 direct routes;
-- 108/108 stations and 162/162 questions;
-- fifth canonical section route;
-- no dual `aria-current` state after switching from the parent jump to another route;
-- cold-route JSON contract remains 3;
-- initial media requests remain `1 / 0 / 0` for hero / station / manga;
-- disclosure request isolation and cache reuse;
-- Carmela P3B non-regression;
-- browser, accessibility, print, runtime staleness, public validator, build, dist and Pages;
-- repository rename and new Pages URL.
+- 27/27 direct routes: PASS.
+- 24 categories, 108/108 stations, 162/162 questions, 286/286 page refs and 400/400 images: PASS.
+- Five canonical routes and single `aria-current`: PASS.
+- Cold Work Cells detail: 3 JSON, `1 / 0 / 0` hero / station / manga: PASS in six fresh contexts.
+- Disclosure request isolation, reopen reuse, grouped lightbox and route cleanup: PASS.
+- Carmela P3B browser/request smoke: PASS.
+- Responsive, short-landscape, keyboard, forced-colors, reduced-motion, text-spacing and print: PASS.
+- Runtime staleness and public-repository validator: PASS.
+- Final build/dist, in-place repository rename and exact-SHA Pages results are recorded only after those closeout actions complete.
 
 ## Out of scope
 

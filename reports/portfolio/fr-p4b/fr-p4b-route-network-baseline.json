@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-P4B",
+  "measurement": {
+    "date": "2026-07-23",
+    "environment": "local static project-subpath server",
+    "projectSubpath": "/Family-Reading-Codex/",
+    "browser": "Chromium 150 on Windows via Playwright CLI",
+    "serviceWorkers": "blocked for cold measurements",
+    "rawHarSaved": false,
+    "browserProfileSaved": false
+  },
+  "server": {
+    "htmlStatus": 200,
+    "htmlContentType": "text/html; charset=UTF-8",
+    "javascriptStatus": 200,
+    "javascriptContentType": "application/javascript; charset=UTF-8",
+    "cacheControl": "max-age=3600",
+    "rangeStatus": 206,
+    "contentRange": "bytes 0-31/5208122",
+    "status": "PASS"
+  },
+  "representativeSlugs": [
+    "streptococcus-pneumoniae",
+    "cancer-cell-ii",
+    "novel-coronavirus",
+    "hemorrhagic-shock",
+    "induced-pluripotent-stem-cells",
+    "cedar-pollen-allergy"
+  ],
+  "coldContexts": [
+    {
+      "slug": "streptococcus-pneumoniae",
+      "json": 3,
+      "hero": 1,
+      "station": 0,
+      "manga": 0,
+      "lightbox": 0,
+      "audio": 0,
+      "otherTopic": 0,
+      "carmela": 0,
+      "oldManifest": 0,
+      "pageMap": 0,
+      "unrelatedOrigin": 0,
+      "failedRequests": 0,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "jsonPaths": [
+        "public/runtime/index.json",
+        "public/runtime/work-cells/topics.json",
+        "public/runtime/work-cells/topics/streptococcus-pneumoniae.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "slug": "cancer-cell-ii",
+      "json": 3,
+      "hero": 1,
+      "station": 0,
+      "manga": 0,
+      "lightbox": 0,
+      "audio": 0,
+      "otherTopic": 0,
+      "carmela": 0,
+      "oldManifest": 0,
+      "pageMap": 0,
+      "unrelatedOrigin": 0,
+      "failedRequests": 0,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "jsonPaths": [
+        "public/runtime/index.json",
+        "public/runtime/work-cells/topics.json",
+        "public/runtime/work-cells/topics/cancer-cell-ii.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "slug": "novel-coronavirus",
+      "json": 3,
+      "hero": 1,
+      "station": 0,
+      "manga": 0,
+      "lightbox": 0,
+      "audio": 0,
+      "otherTopic": 0,
+      "carmela": 0,
+      "oldManifest": 0,
+      "pageMap": 0,
+      "unrelatedOrigin": 0,
+      "failedRequests": 0,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "jsonPaths": [
+        "public/runtime/index.json",
+        "public/runtime/work-cells/topics.json",
+        "public/runtime/work-cells/topics/novel-coronavirus.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "slug": "hemorrhagic-shock",
+      "json": 3,
+      "hero": 1,
+      "station": 0,
+      "manga": 0,
+      "lightbox": 0,
+      "audio": 0,
+      "otherTopic": 0,
+      "carmela": 0,
+      "oldManifest": 0,
+      "pageMap": 0,
+      "unrelatedOrigin": 0,
+      "failedRequests": 0,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "jsonPaths": [
+        "public/runtime/index.json",
+        "public/runtime/work-cells/topics.json",
+        "public/runtime/work-cells/topics/hemorrhagic-shock.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "slug": "induced-pluripotent-stem-cells",
+      "json": 3,
+      "hero": 1,
+      "station": 0,
+      "manga": 0,
+      "lightbox": 0,
+      "audio": 0,
+      "otherTopic": 0,
+      "carmela": 0,
+      "oldManifest": 0,
+      "pageMap": 0,
+      "unrelatedOrigin": 0,
+      "failedRequests": 0,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "jsonPaths": [
+        "public/runtime/index.json",
+        "public/runtime/work-cells/topics.json",
+        "public/runtime/work-cells/topics/induced-pluripotent-stem-cells.json"
+      ],
+      "status": "PASS"
+    },
+    {
+      "slug": "cedar-pollen-allergy",
+      "json": 3,
+      "hero": 1,
+      "station": 0,
+      "manga": 0,
+      "lightbox": 0,
+      "audio": 0,
+      "otherTopic": 0,
+      "carmela": 0,
+      "oldManifest": 0,
+      "pageMap": 0,
+      "unrelatedOrigin": 0,
+      "failedRequests": 0,
+      "consoleErrors": 0,
+      "pageErrors": 0,
+      "jsonPaths": [
+        "public/runtime/index.json",
+        "public/runtime/work-cells/topics.json",
+        "public/runtime/work-cells/topics/cedar-pollen-allergy.json"
+      ],
+      "status": "PASS"
+    }
+  ],
+  "alternateRoutes": {
+    "home": {
+      "json": 1,
+      "paths": [
+        "public/runtime/index.json"
+      ],
+      "status": "PASS"
+    },
+    "carmelaSeries": {
+      "json": 2,
+      "paths": [
+        "public/runtime/index.json",
+        "public/runtime/carmela/books.json"
+      ],
+      "status": "PASS"
+    },
+    "workCellsSeries": {
+      "json": 2,
+      "paths": [
+        "public/runtime/index.json",
+        "public/runtime/work-cells/topics.json"
+      ],
+      "status": "PASS"
+    },
+    "carmelaDetail": {
+      "json": 4,
+      "cover": 1,
+      "initialMp3": 0,
+      "initialMountedMedia": 0,
+      "audioPhase": "idle",
+      "firstDisclosureExpected": 2,
+      "firstDisclosureActual": 2,
+      "status": "PASS"
+    }
+  },
+  "warmNavigation": {
+    "initialJson": 3,
+    "afterFiveSectionRoutes": 3,
+    "sectionAdditionalJson": 0,
+    "afterBackForward": 3,
+    "historyAdditionalJson": 0,
+    "status": "PASS"
+  },
+  "disclosures": [
+    {
+      "id": "station-illustration",
+      "expectedMounts": 1,
+      "actualMounts": 1,
+      "reopenTransfers": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "station-manga",
+      "expectedMounts": 2,
+      "actualMounts": 2,
+      "reopenTransfers": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "question-manga",
+      "expectedMounts": 2,
+      "actualMounts": 2,
+      "reopenTransfers": 0,
+      "status": "PASS"
+    }
+  ],
+  "range": {
+    "assetType": "Carmela MP3",
+    "request": "bytes=0-31",
+    "statusCode": 206,
+    "contentRange": "bytes 0-31/5208122",
+    "status": "PASS"
+  },
+  "retry": {
+    "injectedFailures": 1,
+    "detailRequests": 2,
+    "expectedRouteErrors": 1,
+    "expectedBrowserResourceErrors": 1,
+    "unexpectedDiagnostics": 0,
+    "recovered": true,
+    "status": "PASS"
+  },
+  "forbiddenRequests": {
+    "otherTopic": 0,
+    "carmelaFromWorkCellsDetail": 0,
+    "oldWorkCellsManifest": 0,
+    "pageMap": 0,
+    "unrelatedOrigin": 0,
+    "workCellsAudio": 0,
+    "status": "PASS"
+  },
+  "diagnostics": {
+    "unexpectedConsoleErrors": 0,
+    "unexpectedPageErrors": 0,
+    "unexpectedRequestFailures": 0,
+    "unexpectedHttpErrors": 0,
+    "status": "PASS"
+  },
+  "rawHarSaved": false,
+  "browserProfileSaved": false,
+  "status": "PASS"
+}

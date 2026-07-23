@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "phase": "FR-P4B",
+  "basis": {
+    "gitSha": "191b2586e609fbe0aeab15c1bb02b1a9f7f721d7",
+    "browser": "Chromium 150 on Windows via Playwright CLI",
+    "inAppBrowser": "Codex in-app Browser"
+  },
+  "topicSweep": {
+    "topics": 27,
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 1280,
+        "height": 720
+      }
+    ],
+    "cases": 54,
+    "failures": 0,
+    "status": "PASS"
+  },
+  "deepViewportMatrix": {
+    "slugs": [
+      "streptococcus-pneumoniae",
+      "cancer-cell-ii",
+      "novel-coronavirus",
+      "hemorrhagic-shock",
+      "induced-pluripotent-stem-cells",
+      "cedar-pollen-allergy"
+    ],
+    "viewports": [
+      {
+        "width": 390,
+        "height": 844
+      },
+      {
+        "width": 430,
+        "height": 932
+      },
+      {
+        "width": 768,
+        "height": 1024
+      },
+      {
+        "width": 1024,
+        "height": 768
+      },
+      {
+        "width": 1280,
+        "height": 720
+      },
+      {
+        "width": 1440,
+        "height": 900
+      },
+      {
+        "width": 1024,
+        "height": 400
+      },
+      {
+        "width": 844,
+        "height": 390
+      },
+      {
+        "width": 667,
+        "height": 375
+      }
+    ],
+    "cases": 54,
+    "failures": 0,
+    "status": "PASS"
+  },
+  "sectionRoutes": {
+    "canonical": [
+      "science-overview",
+      "science-station",
+      "science-questions",
+      "science-parent-guidance",
+      "source"
+    ],
+    "directLoad": "PASS",
+    "reload": "PASS",
+    "backForward": "PASS",
+    "singleAriaCurrent": "PASS",
+    "sectionHeadingFocus": "PASS",
+    "routeAnnouncement": "PASS",
+    "documentTitle": "PASS"
+  },
+  "navigation": {
+    "mobileDetailsKeyboardClose": "PASS",
+    "mobileDetailsKeyboardReopen": "PASS",
+    "skipLinkFocus": "PASS",
+    "skipTargetFocus": "PASS",
+    "rapidRouteFinalTopic": "hemorrhagic-shock",
+    "staleRouteCount": 0,
+    "dualAriaCurrentCount": 0,
+    "status": "PASS"
+  },
+  "answers": {
+    "initiallyHidden": 6,
+    "ariaExpandedSync": "PASS",
+    "labelSync": "PASS",
+    "parentHintVisibility": "PASS",
+    "focusRetained": "PASS",
+    "collapseRestored": "PASS",
+    "scoreOrCorrectnessSemantics": 0,
+    "status": "PASS"
+  },
+  "mediaInteractions": [
+    {
+      "id": "station-illustration",
+      "expectedMounts": 1,
+      "actualMounts": 1,
+      "reopenDuplicates": 0,
+      "reopenTransfers": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "station-manga",
+      "expectedMounts": 2,
+      "actualMounts": 2,
+      "reopenDuplicates": 0,
+      "reopenTransfers": 0,
+      "status": "PASS"
+    },
+    {
+      "id": "question-manga",
+      "expectedMounts": 2,
+      "actualMounts": 2,
+      "reopenDuplicates": 0,
+      "reopenTransfers": 0,
+      "status": "PASS"
+    }
+  ],
+  "lightbox": {
+    "activeGroupOnly": "PASS",
+    "arrowNavigation": "PASS",
+    "captionPosition": "PASS",
+    "escapeClose": "PASS",
+    "imageSourceCleanup": "PASS",
+    "bodyLockCleanup": "PASS",
+    "focusRestore": "PASS",
+    "routeCleanup": "PASS",
+    "status": "PASS"
+  },
+  "responsive": {
+    "horizontalOverflowFindings": 0,
+    "headingClippingFindings": 0,
+    "controlOverlapFindings": 0,
+    "visibleControlsBelow44Px": 0,
+    "duplicateIds": 0,
+    "nestedControls": 0,
+    "brokenImages": 0,
+    "headingOrderJumps": 0,
+    "shortLandscape": "PASS",
+    "status": "PASS"
+  },
+  "alternateModes": {
+    "reducedMotion": {
+      "mediaQuery": true,
+      "animationDuration": "0s",
+      "transitionDuration": "0s",
+      "status": "PASS"
+    },
+    "forcedColors": {
+      "mediaQuery": true,
+      "routeLinks": 5,
+      "horizontalOverflow": 0,
+      "status": "PASS"
+    },
+    "textSpacing": {
+      "horizontalOverflow": 0,
+      "clippedHeadings": 0,
+      "status": "PASS"
+    },
+    "twoHundredPercentEquivalentReflow": {
+      "cssViewportWidth": 640,
+      "horizontalOverflow": 0,
+      "status": "PASS"
+    }
+  },
+  "print": {
+    "title": 1,
+    "overview": 1,
+    "stations": 4,
+    "stationParentNotes": 4,
+    "questions": 6,
+    "answers": 6,
+    "parentHints": 6,
+    "parentGuidance": 1,
+    "sourceSection": 1,
+    "visibleRouteRails": 0,
+    "visibleButtons": 0,
+    "visibleMediaDisclosures": 0,
+    "visibleHeroMedia": 0,
+    "visibleLightboxes": 0,
+    "mountedImages": 0,
+    "triggeredImageRequests": 0,
+    "horizontalOverflow": 0,
+    "status": "PASS"
+  },
+  "screenshots": [
+    {
+      "path": "docs/portfolio/fr-p4b/screenshots/work-cells-cancer-ii-mobile.webp",
+      "slug": "cancer-cell-ii",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "bytes": 36476,
+      "sha256": "3bd3c50bbc3c69d83a1b17935749a9316abe4d79ed4d2de8082e62023022f718"
+    },
+    {
+      "path": "docs/portfolio/fr-p4b/screenshots/work-cells-heavy-desktop.webp",
+      "slug": "induced-pluripotent-stem-cells",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "bytes": 67624,
+      "sha256": "f35e3a9126b2f7ca914c054d9ab751cbf5023d68bffde421152248a9dc1d65e7"
+    },
+    {
+      "path": "docs/portfolio/fr-p4b/screenshots/work-cells-short-landscape.webp",
+      "slug": "hemorrhagic-shock",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "bytes": 23038,
+      "sha256": "910f1658562e2b75b1ebe2ad61d30fb7920683f0ca53b10c47d412757754063a"
+    }
+  ],
+  "diagnostics": {
+    "unexpectedConsoleErrors": 0,
+    "unexpectedPageErrors": 0,
+    "unexpectedRequestFailures": 0,
+    "unexpectedHttpErrors": 0,
+    "brokenImages": 0,
+    "status": "PASS"
+  },
+  "unavailableChecks": [
+    {
+      "check": "physical iOS and Android devices",
+      "status": "NOT_AVAILABLE",
+      "substitute": "nine Chromium viewport sizes including short landscape"
+    },
+    {
+      "check": "external screen-reader session",
+      "status": "NOT_AVAILABLE",
+      "substitute": "semantic, focus, keyboard and accessible-name browser checks"
+    }
+  ],
+  "status": "PASS"
+}
