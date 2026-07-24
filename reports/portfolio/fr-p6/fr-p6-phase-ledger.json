@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "repository": "Archmays/Family-Reading-Codex",
+  "repositoryId": 1271691196,
+  "currentPagesUrl": "https://archmays.github.io/Family-Reading-Codex/",
+  "currentTruth": {
+    "baseMainSha": "f55859186f69e98a1cae689f77d7162f1bf565e0",
+    "lastCompletedPhase": "FR-P5",
+    "portfolioStatus": "FR_P6_IN_PROGRESS",
+    "projectMode": "ACTIVE_DEVELOPMENT"
+  },
+  "phases": [
+    {
+      "id": "FR-P0/P0R1",
+      "status": "COMPLETE_WITH_DOCUMENTED_LIMITATIONS",
+      "finalSha": "RESOLVED_IN_HISTORICAL_HANDOFF",
+      "reportPath": "docs/portfolio/fr-p0/FR-P0-final-report.md",
+      "repositoryAtTime": "Archmays/Family-Reading",
+      "testCount": 63,
+      "currentTruth": "VALID_HISTORICAL_BASELINE_SUPERSEDED_BY_LATER_PHASES",
+      "limitations": [
+        "The tracked report cannot self-record its own final SHA or the Pages run triggered after commit.",
+        "Initial rights and privacy coupling was superseded by P0R1 user-authorization handling."
+      ],
+      "corrections": [
+        "P0R1 established RIGHTS_STATUS: PASS_BY_USER_AUTHORIZATION.",
+        "Later phases reduced protected-root inventory to the stable 1,278-file current signature without modifying Source content."
+      ]
+    },
+    {
+      "id": "FR-P2",
+      "status": "COMPLETE",
+      "finalSha": "7397effccb417e7fa990490713b0f244fbb5c512",
+      "reportPath": "docs/portfolio/fr-p2/FR-P2-final-report.md",
+      "repositoryAtTime": "Archmays/Family-Reading",
+      "testCount": null,
+      "currentTruth": "VALID_FOUNDATION_CURRENTLY_IN_USE",
+      "limitations": [],
+      "corrections": []
+    },
+    {
+      "id": "FR-P3A",
+      "status": "COMPLETE_WITH_DOCUMENTED_LIMITATIONS",
+      "finalSha": "45347b2c8b3767da90a51cc8759d51c4878b1bca",
+      "reportPath": "docs/portfolio/fr-p3a/FR-P3A-final-report.md",
+      "repositoryAtTime": "Archmays/Family-Reading",
+      "testCount": 83,
+      "currentTruth": "VALID_CARMELA_DETAIL_ARCHITECTURE",
+      "limitations": [
+        "Post-commit SHA and exact-SHA Pages evidence were recorded outside the self-referential report."
+      ],
+      "corrections": []
+    },
+    {
+      "id": "FR-P3B",
+      "status": "COMPLETE_WITH_DOCUMENTED_LIMITATIONS",
+      "finalSha": "58be1b52710ee4631c591e834f52ae4dd88d4631",
+      "reportPath": "docs/portfolio/fr-p3b/FR-P3B-final-report.md",
+      "repositoryAtTime": "Archmays/Family-Reading",
+      "testCount": 90,
+      "currentTruth": "VALID_CARMELA_MEDIA_AUDIO_FOUNDATION",
+      "limitations": [
+        "Post-commit SHA and exact-SHA Pages evidence were recorded outside the self-referential report."
+      ],
+      "corrections": []
+    },
+    {
+      "id": "FR-P4A",
+      "status": "COMPLETE_WITH_DOCUMENTED_LIMITATIONS",
+      "finalSha": "24fd0787bce84d45e5f71591e6da7201176c4c21",
+      "reportPath": "docs/portfolio/fr-p4a/FR-P4A-final-report.md",
+      "repositoryAtTime": "Archmays/Family-Reading",
+      "testCount": 118,
+      "currentTruth": "VALID_RUNTIME_AND_ROUTE_LOADING_FOUNDATION",
+      "limitations": [
+        "The tracked report records pre-rerun status for two Linux cross-platform findings."
+      ],
+      "corrections": [
+        "Ordinal path ordering and canonical UTF-8/LF source hashing resolved the exact-SHA Linux runs.",
+        "Current runtime remains 31 files and 393,121 bytes."
+      ]
+    },
+    {
+      "id": "FR-P4B",
+      "status": "COMPLETE_WITH_DOCUMENTED_LIMITATIONS",
+      "finalSha": "0a4932e117632983359fef507c61aa770792f3e4",
+      "reportPath": "docs/portfolio/fr-p4b/FR-P4B-final-report.md",
+      "repositoryAtTime": "Archmays/Family-Reading-Codex",
+      "testCount": 133,
+      "currentTruth": "VALID_WORK_CELLS_TOPIC_EXPERIENCE",
+      "limitations": [
+        "Physical iOS/Android and an external screen reader were unavailable."
+      ],
+      "corrections": [
+        "Repository was renamed in place while preserving repository id 1271691196.",
+        "Two historical P4B inventory files contained 26 rows despite declaring 27 topics; P5 corrected inventory supersedes them as machine truth."
+      ]
+    },
+    {
+      "id": "FR-P4B-R1",
+      "status": "COMPLETE_WITH_DOCUMENTED_LIMITATIONS",
+      "finalSha": "33d07f6e1b29935945d4f7ce13465517c3a6363c",
+      "reportPath": "docs/portfolio/fr-p4b-r1/FR-P4B-R1-final-report.md",
+      "repositoryAtTime": "Archmays/Family-Reading-Codex",
+      "testCount": 137,
+      "currentTruth": "VALID_RESPONSIVE_GEOMETRY_FOUNDATION",
+      "limitations": [
+        "Original screenshot pixels could not determine native browser zoom or DPR.",
+        "Physical devices and an external screen reader were unavailable."
+      ],
+      "corrections": [
+        "545 browser geometry cases established zero Hero overlap and zero horizontal overflow."
+      ]
+    },
+    {
+      "id": "FR-P5",
+      "status": "COMPLETE_WITH_DOCUMENTED_LIMITATIONS",
+      "finalSha": "f55859186f69e98a1cae689f77d7162f1bf565e0",
+      "reportPath": "docs/portfolio/fr-p5/FR-P5-final-report.md",
+      "repositoryAtTime": "Archmays/Family-Reading-Codex",
+      "testCount": 201,
+      "currentTruth": "CURRENT_MEDIA_BUILD_AND_PAGES_TRUTH",
+      "limitations": [
+        "Native browser zoom, physical-device sessions and an external screen reader were unavailable.",
+        "Lighthouse completed reports before a Windows temporary-directory cleanup EPERM.",
+        "Observed CDN evidence came from one Singapore POP; global POP coverage is not claimed.",
+        "Pages exposed max-age=600 for mutable responses and audio/mp3 for MP3 files."
+      ],
+      "corrections": [
+        "P5 corrected the historical Work Cells inventory to 27 topics including hemorrhagic-shock.",
+        "A three-line .gitattributes fix stabilized Carmela release hashes across Linux and Windows CI.",
+        "Final Pages exact SHA is f55859186f69e98a1cae689f77d7162f1bf565e0."
+      ]
+    },
+    {
+      "id": "FR-P6",
+      "status": "IN_PROGRESS",
+      "finalSha": null,
+      "reportPath": "docs/portfolio/fr-p6/FR-P6-final-acceptance-report.md",
+      "repositoryAtTime": "Archmays/Family-Reading-Codex",
+      "testCount": null,
+      "currentTruth": "CANDIDATE_FINAL_TRUTH_PENDING_CODEX_ACCEPTANCE",
+      "limitations": [],
+      "corrections": []
+    }
+  ]
+}
