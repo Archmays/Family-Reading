@@ -7,6 +7,9 @@ assets/**/*.js text eol=lf
 assets/**/*.css text eol=lf
 assets/**/*.svg text eol=lf
 
+# Legacy Carmela companion JSON is release-hashed in its authored CRLF form.
+public/books/不一样的卡梅拉/**/*.json text eol=crlf
+
 # FR-P5 generated manifests and shards are hash-addressed release evidence.
 public/media/**/*.json text eol=lf
 public/media/derived/** binary
