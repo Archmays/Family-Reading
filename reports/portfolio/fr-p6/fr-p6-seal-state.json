@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "sealState": "PROVISIONAL",
+  "portfolioStatus": "FR_P6_IN_PROGRESS",
+  "projectMode": "ACTIVE_DEVELOPMENT",
+  "repository": "Archmays/Family-Reading-Codex",
+  "repositoryId": 1271691196,
+  "visibility": "public",
+  "pagesUrl": "https://archmays.github.io/Family-Reading-Codex/",
+  "baseMainSha": "f55859186f69e98a1cae689f77d7162f1bf565e0",
+  "lastCompletedPhase": "FR-P5",
+  "finalMainSha": null,
+  "pagesStatus": "PENDING_CODEX_FINAL_ACCEPTANCE",
+  "workspaceStatus": "PENDING_CODEX_FINAL_ACCEPTANCE",
+  "finalTestCount": null,
+  "qualityCompromises": null,
+  "nextRecommendedPhase": "FR-P6 Final Acceptance and Project Seal",
+  "phaseLedgerPath": "reports/portfolio/fr-p6/fr-p6-phase-ledger.json",
+  "requiredFinalArtifacts": [
+    "docs/portfolio/fr-p6/FR-P6-final-acceptance-report.md",
+    "docs/portfolio/fr-p6/FR-P6-live-pages-report.md",
+    "docs/portfolio/fr-p6/FR-P6-known-limitations.md",
+    "reports/portfolio/fr-p6/fr-p6-content-route-baseline.json",
+    "reports/portfolio/fr-p6/fr-p6-media-network-baseline.json",
+    "reports/portfolio/fr-p6/fr-p6-live-pages-baseline.json",
+    "reports/portfolio/fr-p6/fr-p6-run-manifest.json"
+  ],
+  "environmentLimitationsToProbe": [
+    "native browser zoom",
+    "physical iOS and Android devices",
+    "external screen reader",
+    "multi-POP CDN observation",
+    "Lighthouse Windows temporary-directory cleanup"
+  ]
+}
