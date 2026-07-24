@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "task": "FR-P6 final acceptance, project seal and maintenance transition",
+  "repository": "Archmays/Family-Reading-Codex",
+  "repositoryId": 1271691196,
+  "baseMainSha": "f55859186f69e98a1cae689f77d7162f1bf565e0",
+  "branch": "codex/fr-p6-final-acceptance-project-seal",
+  "webImplementationTipBeforeHandoff": "45f55aad47b5add24f33eab878862b3bfc2456ed",
+  "webChanges": [
+    "create a P0-to-P6 phase ledger with historical, correction and current-truth layers",
+    "create a provisional-to-sealed portfolio state machine",
+    "add a fail-closed portfolio seal validator that reads current runtime and media truth",
+    "add FR-P6 seal tests to the canonical test runner",
+    "add portfolio seal validation to the single release-gate pipeline",
+    "add provisional final-status documentation",
+    "add phase reconciliation and final-acceptance plans",
+    "add the sealed-project maintenance protocol",
+    "update README with an explicit provisional FR-P6 status"
+  ],
+  "productionBehaviorChanged": false,
+  "runtimeChanged": false,
+  "mediaChanged": false,
+  "sourceChanged": false,
+  "buildOutputExpectedChange": "application documentation and validation scripts only; product runtime/media classes remain unchanged",
+  "sealState": {
+    "current": "PROVISIONAL",
+    "requiredFinal": "SEALED",
+    "selfReferenceSentinel": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF"
+  },
+  "currentTruthCheckedByValidator": {
+    "carmelaBooks": 12,
+    "carmelaAudio": 12,
+    "workCellsTopics": 27,
+    "workCellsCategories": 24,
+    "workCellsStations": 108,
+    "workCellsQuestions": 162,
+    "workCellsPageRefs": 286,
+    "requiredWorkCellsSlugs": [
+      "hemorrhagic-shock",
+      "cancer-cell",
+      "cancer-cell-ii"
+    ],
+    "mediaSources": 778,
+    "mediaVariants": 2735,
+    "mediaDerivativeBytes": 612770984
+  },
+  "requiredCodexWork": [
+    "sync and verify the exact web branch tip",
+    "run the FR-P6 targeted seal tests and harden any cross-platform issues",
+    "rebuild and independently validate Git, Source, runtime, media, release-plan and dist truth",
+    "execute at least 108 direct Carmela route checks and 135 direct Work Cells section checks",
+    "rerun the accepted 15 responsive-image cases and 545 geometry cases",
+    "verify all 12 Carmela audio files with HTTP Range 206",
+    "rerun the nine cold/warm route budgets, cache, shard and global-manifest invariants",
+    "rerun mobile and desktop Lighthouse with bounded Windows cleanup handling",
+    "probe native zoom, physical-device and external-screen-reader availability without fabricating passes",
+    "create all required final narrative and machine-readable artifacts",
+    "update the ledger, seal state, final status and README from provisional to sealed",
+    "run the complete npm run verify:release exactly once after targeted acceptance passes",
+    "fast-forward main, verify exact-SHA Actions and live Pages, and resolve the post-commit handoff fields",
+    "delete the task branch, stop servers, clean scratch and finish with a clean single main worktree"
+  ],
+  "requiredFinalArtifacts": [
+    "docs/portfolio/fr-p6/FR-P6-final-acceptance-report.md",
+    "docs/portfolio/fr-p6/FR-P6-live-pages-report.md",
+    "docs/portfolio/fr-p6/FR-P6-known-limitations.md",
+    "reports/portfolio/fr-p6/fr-p6-content-route-baseline.json",
+    "reports/portfolio/fr-p6/fr-p6-media-network-baseline.json",
+    "reports/portfolio/fr-p6/fr-p6-live-pages-baseline.json",
+    "reports/portfolio/fr-p6/fr-p6-run-manifest.json"
+  ],
+  "finalStateRequirements": {
+    "portfolioStatus": "SEALED",
+    "projectMode": "MAINTENANCE",
+    "lastCompletedPhase": "FR-P6",
+    "nextRecommendedPhase": "NONE",
+    "qualityCompromises": 0,
+    "finalMainShaTrackedValue": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "pagesStatusTrackedValue": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF",
+    "workspaceStatusTrackedValue": "RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF"
+  },
+  "environmentBoundariesToProbe": [
+    "native browser zoom",
+    "physical iOS and Android devices",
+    "external screen reader",
+    "Lighthouse Windows temporary-directory cleanup",
+    "CDN observation beyond one POP",
+    "platform-controlled mutable cache and MP3 MIME headers"
+  ],
+  "notClaimedByWeb": [
+    "Node test execution",
+    "local Source or media revalidation",
+    "direct-route browser matrix",
+    "responsive-image and geometry rerun",
+    "audio range rerun",
+    "Lighthouse rerun",
+    "final release gate",
+    "exact-SHA Pages deployment",
+    "branch or workspace closeout",
+    "sealed portfolio status"
+  ],
+  "nextRecommendedPhaseAfterSuccess": "NONE"
+}
