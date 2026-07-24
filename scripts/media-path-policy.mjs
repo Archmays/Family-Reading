@@ -23,11 +23,10 @@ export const MEDIA_ROLES = Object.freeze({
 });
 
 export function stableCompare(left, right) {
-  return String(left).localeCompare(String(right), 'en', {
-    numeric: false,
-    sensitivity: 'variant',
-    usage: 'sort',
-  });
+  const a = String(left);
+  const b = String(right);
+  if (a === b) return 0;
+  return a < b ? -1 : 1;
 }
 
 export function normalizeRepositoryPath(value, {
