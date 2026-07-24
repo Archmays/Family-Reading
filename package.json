@@ -11,6 +11,7 @@
     "generate:media-shards": "node scripts/generate-media-shards.mjs --write",
     "validate:media-shards": "node scripts/generate-media-shards.mjs --check",
     "validate:fr-p5-evidence": "node scripts/validate-fr-p5-final-evidence.mjs",
+    "validate:portfolio-seal": "node scripts/validate-portfolio-seal.mjs",
     "plan:media-release": "node scripts/media-release-plan.mjs",
     "validate:public-repo": "node scripts/validate-public-repository.mjs",
     "validate:work-cells-annotations": "node scripts/validate-work-cells-visual-annotations.mjs",
