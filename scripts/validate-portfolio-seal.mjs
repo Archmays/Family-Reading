@@ -9,7 +9,7 @@ import {
 } from './media-manifest-policy.mjs';
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const HASH40 = /^[a-f0-9]{40}$/;
+const POST_COMMIT_SENTINEL = 'RESOLVED_POST_COMMIT_IN_FINAL_HANDOFF';
 const EXPECTED_PHASE_IDS = [
   'FR-P0/P0R1',
   'FR-P2',
@@ -154,11 +154,11 @@ export function validateSealStateData(state) {
     if (state.nextRecommendedPhase !== 'NONE') {
       findings.push(finding('SEAL_FINAL_NEXT', 'Sealed state must set nextRecommendedPhase NONE.'));
     }
-    if (!HASH40.test(String(state.finalMainSha ?? ''))) {
-      findings.push(finding('SEAL_FINAL_SHA', 'Sealed state requires a 40-character finalMainSha.'));
+    if (state.finalMainSha !== POST_COMMIT_SENTINEL) {
+      findings.push(finding('SEAL_FINAL_SHA', 'Tracked sealed state must defer the self-referential final SHA to the post-commit handoff.'));
     }
-    if (state.pagesStatus !== 'VERIFIED' || state.workspaceStatus !== 'CLEAN') {
-      findings.push(finding('SEAL_FINAL_CLOSEOUT', 'Sealed state requires verified Pages and a clean workspace.'));
+    if (state.pagesStatus !== POST_COMMIT_SENTINEL || state.workspaceStatus !== POST_COMMIT_SENTINEL) {
+      findings.push(finding('SEAL_FINAL_CLOSEOUT', 'Tracked sealed state must defer exact-SHA Pages and workspace closeout to the post-commit handoff.'));
     }
     if (state.qualityCompromises !== 0) {
       findings.push(finding('SEAL_FINAL_QUALITY', 'Sealed state requires qualityCompromises 0.'));
