@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate_template_not_accepted",
+  "encoder": {
+    "name": "Pillow",
+    "version": "REPLACE_WITH_VERIFIED_LOCAL_VERSION"
+  },
+  "profiles": [
+    {
+      "id": "carmela-cover-320-webp",
+      "format": "webp",
+      "width": 320,
+      "quality": 90,
+      "lossless": false,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ]
+    },
+    {
+      "id": "carmela-cover-640-webp",
+      "format": "webp",
+      "width": 640,
+      "quality": 92,
+      "lossless": false,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-book-cover"
+      ]
+    },
+    {
+      "id": "carmela-explanation-960-webp",
+      "format": "webp",
+      "width": 960,
+      "quality": 92,
+      "lossless": false,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-explanation-preview"
+      ]
+    },
+    {
+      "id": "carmela-lightbox-1600-webp",
+      "format": "webp",
+      "width": 1600,
+      "quality": 94,
+      "lossless": false,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-lightbox"
+      ]
+    },
+    {
+      "id": "carmela-page-640-webp",
+      "format": "webp",
+      "width": 640,
+      "quality": 92,
+      "lossless": false,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-page-preview"
+      ]
+    },
+    {
+      "id": "work-cells-hero-960-webp",
+      "format": "webp",
+      "width": 960,
+      "quality": 92,
+      "lossless": false,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-topic-hero"
+      ]
+    },
+    {
+      "id": "work-cells-lightbox-1600-webp",
+      "format": "webp",
+      "width": 1600,
+      "quality": 94,
+      "lossless": false,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-lightbox"
+      ]
+    },
+    {
+      "id": "work-cells-manga-640-webp",
+      "format": "webp",
+      "width": 640,
+      "quality": 92,
+      "lossless": false,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-manga-preview"
+      ]
+    },
+    {
+      "id": "work-cells-station-960-webp",
+      "format": "webp",
+      "width": 960,
+      "quality": 92,
+      "lossless": false,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-station-preview"
+      ]
+    },
+    {
+      "id": "work-cells-thumbnail-320-webp",
+      "format": "webp",
+      "width": 320,
+      "quality": 90,
+      "lossless": false,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-series-thumbnail"
+      ]
+    }
+  ],
+  "visualAcceptance": {
+    "sampleMediaIds": [
+      "REPLACE_WITH_REAL_INVENTORY_MEDIA_IDS"
+    ],
+    "status": "pending_local_visual_experiment"
+  },
+  "budgets": {
+    "status": "pending_post_experiment_freeze",
+    "distBytes": null,
+    "pagesArtifactBytes": null,
+    "routeTransferBytes": {}
+  },
+  "instructions": [
+    "Do not copy this template to the accepted policy unchanged.",
+    "Replace the encoder version with the exact verified local Pillow version.",
+    "Run representative visual experiments before accepting widths, formats or quality.",
+    "Add or change profiles when alpha, text readability or source-size distribution requires it.",
+    "Freeze budgets from measured accepted candidates before full production generation."
+  ]
+}
