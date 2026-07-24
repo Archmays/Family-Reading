@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "task": "FR-P5 Unified Media Production, Runtime Integration, Pages Package and Performance",
+  "repository": "Archmays/Family-Reading-Codex",
+  "repositoryId": 1271691196,
+  "baseMainSha": "33d07f6e1b29935945d4f7ce13465517c3a6363c",
+  "branch": "codex/fr-p5-unified-media-pages-performance",
+  "webImplementationTipBeforeHandoff": "5cbc0b33096c0707a0e5905ba8a4b68cfbaf29af",
+  "branchStateAtStaticReview": {
+    "ahead": 19,
+    "behind": 0,
+    "changedFiles": 17
+  },
+  "executionPolicy": {
+    "timeLimit": "none",
+    "instruction": "Do not stop at an internal milestone merely because the task is long. Continue through inventory, experiments, generation, integration, build cutover, browser/Pages acceptance and closeout unless a genuine quality or safety blocker is found.",
+    "qualityCompromisesAllowed": 0
+  },
+  "webCompleted": [
+    "created the single FR-P5 shared branch from the accepted FR-P4B-R1 main",
+    "defined ordinal and repository-safe media path policy",
+    "implemented canonical Carmela and Work Cells media-reference inventory generation",
+    "implemented corrected 27-topic Work Cells evidence generation without rewriting historical FR-P4B files",
+    "implemented deterministic media-manifest and quality-policy validators",
+    "implemented a pure browser picture/srcset resolver with original fallback",
+    "implemented a Pillow derivative generator candidate with write/check/dry-run/sample/role/output modes",
+    "implemented fail-closed responsive-media validation candidate",
+    "implemented manifest-derived exact release-plan generation",
+    "implemented exact release-plan copying and missing/extra output audit",
+    "registered explicit npm media workflow commands",
+    "added FR-P5 foundation and release-plan tests to the canonical test runner",
+    "documented unified media architecture, quality experiments, legacy evidence correction and build/Pages cutover strategy",
+    "added a clearly non-accepted candidate quality-policy template"
+  ],
+  "changedProductionBehavior": false,
+  "productionState": {
+    "rendererUsesMediaManifest": false,
+    "buildUsesMediaReleasePlan": false,
+    "responsiveDerivativesGenerated": false,
+    "mediaManifestGenerated": false,
+    "currentPagesBehaviorChanged": false,
+    "frP6Started": false
+  },
+  "webFiles": {
+    "browser": [
+      "assets/media-resolver.js"
+    ],
+    "scripts": [
+      "scripts/media-path-policy.mjs",
+      "scripts/inventory-runtime-media.mjs",
+      "scripts/media-manifest-policy.mjs",
+      "scripts/generate-responsive-media.py",
+      "scripts/validate-responsive-media.mjs",
+      "scripts/media-release-plan.mjs",
+      "scripts/copy-media-release-plan.mjs"
+    ],
+    "tests": [
+      "tests/fr-p5-media-foundation.test.mjs",
+      "tests/fr-p5-media-release-plan.test.mjs"
+    ],
+    "docs": [
+      "docs/portfolio/fr-p5/FR-P5-legacy-evidence-correction.md",
+      "docs/portfolio/fr-p5/FR-P5-media-architecture.md",
+      "docs/portfolio/fr-p5/FR-P5-quality-policy-experiment.md",
+      "docs/portfolio/fr-p5/FR-P5-build-pages-performance-strategy.md",
+      "docs/portfolio/fr-p5/fr-p5-media-quality-policy.template.json"
+    ],
+    "modified": [
+      "package.json",
+      "scripts/run-tests.mjs"
+    ]
+  },
+  "explicitlyUnchanged": [
+    "source/**",
+    "source-private/**",
+    "public/runtime/**",
+    "scripts/generate-runtime-content.mjs",
+    "scripts/build.mjs",
+    "scripts/audit-dist-assets.mjs",
+    "scripts/verify-release.mjs",
+    "assets/app.js",
+    "assets/carmela-companion.js",
+    "assets/science-companion.js",
+    "assets/a11y.js",
+    "all Carmela and Work Cells product media bytes",
+    "current Pages runtime and request contracts"
+  ],
+  "requiredLocalHardeningBeforeGeneration": [
+    "run Node syntax and targeted tests for every web-added module",
+    "run Python py_compile and execute the generator only in safe scratch/sample mode first",
+    "force TemporaryDirectory under task-scratch/fr-p5 rather than repository root",
+    "harden derivative/manifest atomic installation with rollback on failure",
+    "select a derivative fallback that avoids publishing originals when accepted role variants exist",
+    "make Python and Node canonical policy-hash calculations byte-identical and verify manifest.policyHash",
+    "confirm Pillow encoder options are supported by the exact accepted local version",
+    "confirm manifest source-format coverage for every actual referenced image",
+    "review release-plan contents for all currently fetched Carmela content JSON and any generated manifest shards",
+    "do not activate build or renderer cutover until real derivatives, manifest, policy and release plan all validate"
+  ],
+  "requiredLocalExecution": [
+    "generate and track the media-reference inventory and corrected Work Cells inventory",
+    "enrich every referenced image with Pillow dimensions, mode, alpha, orientation, decode and duplicate evidence",
+    "verify missing/corrupt referenced media equals zero",
+    "select representative media from every role and run real multi-format/multi-size visual experiments",
+    "freeze the accepted Pillow version, quality profiles and measured dist/route budgets",
+    "write reports/portfolio/fr-p5/fr-p5-media-quality-policy.json",
+    "generate all accepted derivatives and public/media/media-manifest.json",
+    "repeat generation and prove byte-identical outputs",
+    "validate source/variant hashes, role coverage and zero stale/missing/orphan derivatives",
+    "measure the actual manifest size and choose global lazy, owner-shard or build-projection loading with evidence",
+    "directly integrate assets/media-resolver.js into Carmela and Work Cells renderers without monkey patches",
+    "preserve on-demand media, grouped lightbox, answer, focus, route cleanup and Carmela audio behavior",
+    "generate and track the exact media release plan",
+    "switch scripts/build.mjs from recursive product-media copying to the exact release-plan copier",
+    "extend dist audit and verify-release to media inventory, manifest, derivatives and release-plan gates",
+    "run 12/12 Carmela and 27/27 Work Cells visual/network/DPR/srcset acceptance",
+    "repeat the relevant FR-P4B-R1 continuous geometry contract after picture integration",
+    "verify audio Range 206, Pages MIME/cache/ETag/project-subpath and exact Git blob equality",
+    "run exactly one final full npm run verify:release after all affected closures pass",
+    "fast-forward main, push, verify exact-SHA Pages, delete the task branch, stop servers and clean scratch/workspace"
+  ],
+  "legacyEvidenceCorrection": {
+    "historicalFilesRewritten": false,
+    "canonicalSource": "public/runtime/work-cells/topics.json",
+    "requiredCorrectedOutput": "reports/portfolio/fr-p5/fr-p5-corrected-work-cells-inventory.json",
+    "acceptedCounts": {
+      "topics": 27,
+      "categories": 24,
+      "stations": 108,
+      "questions": 162,
+      "pageRefs": 286,
+      "hemorrhagicShockPresent": true
+    }
+  },
+  "baseline": {
+    "distFiles": 1565,
+    "distBytes": 835935148,
+    "tests": "137/137",
+    "protectedFiles": 1278,
+    "protectedBytes": 7882956334,
+    "protectedSignature": "ec186a6688129e95d34471930cd7bb6cb9d484aa745c6d5ba505b8abb4577cae",
+    "runtimeManifestSha256": "4fda8a75bc8118ff0fec2d7ac04f73d832f082522cab78a4d248de5bf5e06c50"
+  },
+  "notClaimedByWeb": [
+    "Node or Python execution",
+    "real image dimensions or bytes beyond existing tracked metadata",
+    "Pillow decode or corruption status",
+    "encoder availability or deterministic output",
+    "accepted quality profiles",
+    "responsive derivatives",
+    "manifest validity against real files",
+    "renderer or build integration",
+    "dist reduction",
+    "route transfer or Lighthouse results",
+    "browser visual quality",
+    "Actions or Pages deployment"
+  ],
+  "finalRequiredStatus": {
+    "FR_PORTFOLIO_P5_STATUS": "COMPLETE | COMPLETE_WITH_DOCUMENTED_LIMITATIONS | BLOCKED",
+    "QUALITY_COMPROMISES": 0,
+    "NEXT_RECOMMENDED_PHASE": "FR-P6 Final Acceptance and Project Seal"
+  }
+}
