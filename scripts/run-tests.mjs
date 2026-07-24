@@ -19,6 +19,7 @@ export const testFiles = [
   'tests/fr-p5-media-release-plan.test.mjs',
   'tests/fr-p5-release-gates.test.mjs',
   'tests/fr-p5-final-evidence.test.mjs',
+  'tests/fr-p6-portfolio-seal.test.mjs',
   'tests/public-repository-validator.test.mjs',
   'tests/release-gates.test.mjs',
 ];
