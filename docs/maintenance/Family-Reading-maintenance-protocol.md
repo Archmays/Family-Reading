@@ -1,0 +1,184 @@
+# Family Reading maintenance protocol
+
+## Status boundary
+
+This protocol becomes active only after FR-P6 changes the portfolio state to:
+
+```text
+PORTFOLIO_STATUS: SEALED
+PROJECT_MODE: MAINTENANCE
+```
+
+Until then, FR-P6 remains the active development phase.
+
+## Canonical truth
+
+After sealing:
+
+- `main` is the only current truth;
+- the canonical repository is `Archmays/Family-Reading-Codex`;
+- the canonical site is `https://archmays.github.io/Family-Reading-Codex/`;
+- P0–P6 reports remain historical evidence and are not reopened or rewritten;
+- corrections are added as new records rather than inserted into old acceptance blocks.
+
+## Maintenance task types
+
+### Bug repair
+
+Use an identifier such as:
+
+```text
+FR-MAINT-R1
+FR-MAINT-R2
+```
+
+A bug repair must:
+
+1. identify the exact regression and affected routes;
+2. reuse the sealed baseline;
+3. run targeted tests during development;
+4. preserve Source, runtime, content and media parity unless the repair explicitly changes them;
+5. run the final release gate once after affected acceptance passes;
+6. deploy and verify the exact final SHA;
+7. delete the task branch and clean the workspace.
+
+### New book, topic or series
+
+New content is not a maintenance repair. Create a new extension phase with its own:
+
+- content inventory;
+- source and runtime projection;
+- media roles and derivatives;
+- route and print design;
+- browser, network and Pages acceptance.
+
+Do not append new content to the sealed P0–P6 ledger as though it existed at seal time.
+
+### Existing content correction
+
+A factual or wording correction must:
+
+- preserve the original historical report;
+- create a correction record;
+- regenerate runtime if authoring data changed;
+- regenerate media only when a referenced media source or role changed;
+- verify content, route and print parity;
+- update the current ledger without rewriting historical evidence.
+
+### Media change
+
+Any product image change requires the complete relevant closure:
+
+```text
+inventory
+quality-policy applicability
+responsive generation
+manifest
+owner shards
+release plan
+renderer currentSrc
+visual review
+route network
+build/dist
+Pages exact SHA
+```
+
+Do not hand-edit derived files or the media manifest.
+
+### Audio change
+
+Any Carmela audio change requires:
+
+- source identity and public copy validation;
+- duration and metadata check;
+- user-triggered loading;
+- initial request zero;
+- HTTP Range 206;
+- play, pause, seek and route cleanup;
+- release-plan and Pages verification.
+
+Work Cells audio remains outside the product unless a future explicit extension phase changes that boundary.
+
+### Runtime or schema change
+
+Any runtime change requires:
+
+- authoring-to-runtime parity;
+- deterministic generation;
+- Windows/Linux byte stability;
+- route request isolation;
+- cache/race/error behavior;
+- media owner-shard alignment;
+- build and Pages verification.
+
+## Permanent boundaries
+
+### Source
+
+Protected Source is permanently read-only. Do not delete, move, rename, compress, overwrite or re-encode protected roots as part of maintenance.
+
+### Rights
+
+User-provided or user-designated resources retain:
+
+`RIGHTS_STATUS: PASS_BY_USER_AUTHORIZATION`
+
+Do not restart copyright or licensing review unless the user explicitly requests it. Privacy, Source immutability and release engineering remain independent safeguards.
+
+### Product
+
+Do not add through a maintenance repair:
+
+- progress, last-read or completion state;
+- streak, check-in, score, ranking or badges;
+- accounts, login or administration;
+- an ebook-style primary reading body;
+- child-facing OCR full text;
+- analytics or a runtime backend;
+- persisted audio or media state.
+
+Such changes require a separately approved product phase.
+
+## Evidence hygiene
+
+Retain:
+
+- final reports;
+- compact machine baselines;
+- accepted screenshot evidence;
+- source/runtime/media hashes;
+- release and Pages identities.
+
+Do not retain:
+
+- raw HAR;
+- browser profiles;
+- cookies;
+- traces;
+- duplicate screenshots;
+- temporary contact sheets;
+- generated candidates;
+- task scratch.
+
+## Branch and Git policy
+
+- use one task branch when a branch is needed;
+- do not create a PR unless explicitly requested;
+- do not force-push;
+- do not rewrite sealed history;
+- fast-forward `main` after all gates pass;
+- delete only the task-owned local and remote branch;
+- do not delete unknown or long-lived branches;
+- finish with one worktree, unchanged or empty stash and a clean workspace.
+
+## Final acceptance for every maintenance release
+
+Every published maintenance change must prove:
+
+```text
+LOCAL_MAIN = ORIGIN_MAIN = GITHUB_MAIN = PAGES_DEPLOYED_SHA
+WORKSPACE_STATUS = CLEAN
+QUALITY_COMPROMISES = 0
+```
+
+Unavailable physical devices or external assistive technologies must be documented honestly and must not be reported as passed by emulation alone.
