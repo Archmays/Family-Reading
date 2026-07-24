@@ -29,6 +29,10 @@ const steps = [
     args: ['scripts/validate-fr-p5-final-evidence.mjs'],
   },
   {
+    label: 'portfolio phase ledger and seal validation',
+    args: ['scripts/validate-portfolio-seal.mjs'],
+  },
+  {
     label: 'full test suite',
     args: ['scripts/run-tests.mjs'],
   },
