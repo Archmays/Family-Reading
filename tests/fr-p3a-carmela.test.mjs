@@ -432,7 +432,15 @@ test('P3A Carmela renderer exposes the requested long-page and accessible intera
   assert.match(appJs, /<div class="media-group-mount" data-media-mount[^>]*><\/div>[\s\S]*<template data-media-template>/);
   assert.match(appJs, /template\.content\.cloneNode\(true\)/);
   assert.match(appJs, /disclosure\.addEventListener\('toggle'/);
-  assert.match(appJs, /<img[\s\S]*?src="\$\{html\(src\)\}"[\s\S]*?loading="lazy"/);
+  assert.match(
+    appJs,
+    /mediaResolver\.picture\(media\.absolutePath,[\s\S]*?role:\s*previewRole,[\s\S]*?loading:\s*'lazy'/,
+  );
+  assert.match(
+    appJs,
+    /mediaResolver\.picture\(media\.absolutePath,[\s\S]*?alt:\s*contextAlt,[\s\S]*?decoding:\s*'async'/,
+  );
+  assert.doesNotMatch(appJs, /\bpreviewSrc\b|src="\$\{html\(media\.absolutePath\)\}"/);
   assert.match(detail, /role="status" aria-live="polite" aria-atomic="true"/);
   assert.match(detail, /aria-label="调整音频播放位置"/);
   assert.match(detail, /preload="none"[\s\S]*data-audio-src="\$\{html\(source\)\}"/);
@@ -501,11 +509,14 @@ test('P3A styles cover responsive, forced-color, print, and code budget gates', 
   const cssBytes = statSync(path.join(rootDir, 'assets', 'styles.css')).size;
   assert.ok(jsBytes <= 155 * 1024, `all JS is ${jsBytes} bytes`);
   assert.ok(cssBytes <= 70 * 1024, `CSS is ${cssBytes} bytes`);
-  assert.ok(assetScripts.length <= 5, `P4B should contain at most 5 JavaScript files, found ${assetScripts.length}`);
+  assert.ok(
+    assetScripts.length <= 6,
+    `FR-P5 should contain at most 6 JavaScript files, found ${assetScripts.length}`,
+  );
   assert.equal(Object.keys(packageJson.dependencies ?? {}).length, 0);
   assert.equal(/@import|https?:\/\/.+\.(?:js|css|woff2?)/i.test(`${indexHtml}\n${styles}`), false);
-  assert.match(indexHtml, /assets\/styles\.css\?v=fr-p3b(?:-\d{8})?/);
-  assert.match(indexHtml, /assets\/app\.js\?v=fr-p4b(?:-\d{8})?/);
+  assert.match(indexHtml, /assets\/styles\.css\?v=fr-p5-20260724/);
+  assert.match(indexHtml, /assets\/app\.js\?v=fr-p5-20260724/);
 });
 
 test('P3A keeps the startup JSON closure at the P2 baseline', () => {

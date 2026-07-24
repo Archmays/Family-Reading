@@ -2,12 +2,15 @@ import path from 'node:path';
 
 export const MEDIA_MANIFEST_PATH = 'public/media/media-manifest.json';
 export const MEDIA_DERIVATIVE_ROOT = 'public/media/derived';
+export const DERIVATIVE_POLICY_HASH_HEX_LENGTH = 32;
 export const MEDIA_REFERENCE_REPORT_PATH = 'reports/portfolio/fr-p5/fr-p5-media-reference-inventory.json';
 export const CORRECTED_WORK_CELLS_INVENTORY_PATH = 'reports/portfolio/fr-p5/fr-p5-corrected-work-cells-inventory.json';
 export const MEDIA_POLICY_PATH = 'reports/portfolio/fr-p5/fr-p5-media-quality-policy.json';
 
 export const IMAGE_EXTENSIONS = new Set(['.avif', '.gif', '.jpeg', '.jpg', '.png', '.webp']);
 export const AUDIO_EXTENSIONS = new Set(['.aac', '.flac', '.m4a', '.mp3', '.ogg', '.wav']);
+const WINDOWS_RESERVED_NAME = /^(?:con|prn|aux|nul|com[1-9]|lpt[1-9])(?:\.|$)/i;
+const UNSAFE_PATH_CHARACTER = /[\u0000-\u001f\u007f<>"|?*#]/;
 
 export const MEDIA_ROLES = Object.freeze({
   'carmela-series-cover': { family: 'cover', defaultSizes: '(max-width: 680px) 44vw, 176px' },
@@ -45,7 +48,16 @@ export function normalizeRepositoryPath(value, {
   }
 
   const parts = raw.split('/');
-  if (parts.some((part) => !part || part === '.' || part === '..')) {
+  if (parts.some((part) => (
+    !part
+    || part === '.'
+    || part === '..'
+    || part.endsWith('.')
+    || part.endsWith(' ')
+    || part.includes(':')
+    || UNSAFE_PATH_CHARACTER.test(part)
+    || WINDOWS_RESERVED_NAME.test(part)
+  ))) {
     throw new Error(`${label} contains an unsafe path segment: ${raw}`);
   }
   if (requirePublic && parts[0] !== 'public') {
@@ -90,11 +102,17 @@ export function assertAllowedOutput(rootDir, outputPath, allowedRepositoryRoots 
 ]) {
   const root = path.resolve(rootDir);
   const target = path.resolve(outputPath);
+  const normalizedAllowedRoots = allowedRepositoryRoots.map((repositoryRoot) => (
+    normalizeRepositoryPath(repositoryRoot, {
+      label: 'Allowed output root',
+      requirePublic: false,
+    })
+  ));
   const relative = path.relative(root, target).split(path.sep).join('/');
   if (!relative || relative.startsWith('../') || path.isAbsolute(relative)) {
     throw new Error(`Output must stay inside the project root: ${target}`);
   }
-  const allowed = allowedRepositoryRoots.some((prefix) => (
+  const allowed = normalizedAllowedRoots.some((prefix) => (
     relative === prefix || relative.startsWith(`${prefix}/`)
   ));
   if (!allowed) {
@@ -112,17 +130,27 @@ function safeStem(repositoryPath) {
     .toLowerCase() || 'media';
 }
 
-export function derivativeRepositoryPath({ sourcePath, sourceHash, profileId, extension }) {
+export function derivativeRepositoryPath({
+  sourcePath,
+  sourceHash,
+  policyHash,
+  profileId,
+  extension,
+}) {
   const normalizedSource = normalizeImagePath(sourcePath, { label: 'Derivative source path' });
-  const hash = String(sourceHash ?? '').toLowerCase();
+  const sourceDigest = String(sourceHash ?? '').toLowerCase();
+  const policyDigest = String(policyHash ?? '').toLowerCase();
   const profile = String(profileId ?? '').trim().toLowerCase();
   const ext = String(extension ?? '').trim().toLowerCase().replace(/^\./, '');
-  if (!/^[a-f0-9]{64}$/.test(hash)) throw new Error(`Invalid source SHA-256: ${sourceHash}`);
+  if (!/^[a-f0-9]{64}$/.test(sourceDigest)) throw new Error(`Invalid source SHA-256: ${sourceHash}`);
+  if (!/^[a-f0-9]{64}$/.test(policyDigest)) throw new Error(`Invalid policy SHA-256: ${policyHash}`);
   if (!/^[a-z0-9][a-z0-9_-]*$/.test(profile)) throw new Error(`Invalid derivative profile id: ${profileId}`);
   if (!['avif', 'jpeg', 'jpg', 'png', 'webp'].includes(ext)) {
     throw new Error(`Unsupported derivative extension: ${extension}`);
   }
-  return `${MEDIA_DERIVATIVE_ROOT}/${hash.slice(0, 2)}/${hash.slice(2, 14)}/${safeStem(normalizedSource)}-${profile}.${ext}`;
+  const suffix = ext === 'jpeg' ? 'jpg' : ext;
+  const policyPathIdentity = policyDigest.slice(0, DERIVATIVE_POLICY_HASH_HEX_LENGTH);
+  return `${MEDIA_DERIVATIVE_ROOT}/${policyPathIdentity}/${sourceDigest.slice(0, 2)}/${sourceDigest.slice(2, 14)}/${safeStem(normalizedSource)}-${profile}.${suffix}`;
 }
 
 export function roleDefinition(role) {

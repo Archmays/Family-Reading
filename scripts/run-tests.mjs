@@ -13,7 +13,12 @@ export const testFiles = [
   'tests/fr-p4b-web-implementation.test.mjs',
   'tests/fr-p4b-r1-responsive-layout.test.mjs',
   'tests/fr-p5-media-foundation.test.mjs',
+  'tests/fr-p5-generator-transaction.test.mjs',
+  'tests/fr-p5-runtime-media.test.mjs',
+  'tests/fr-p5-media-shards.test.mjs',
   'tests/fr-p5-media-release-plan.test.mjs',
+  'tests/fr-p5-release-gates.test.mjs',
+  'tests/fr-p5-final-evidence.test.mjs',
   'tests/public-repository-validator.test.mjs',
   'tests/release-gates.test.mjs',
 ];

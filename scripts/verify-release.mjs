@@ -9,12 +9,36 @@ const steps = [
     args: ['scripts/generate-runtime-content.mjs', '--check'],
   },
   {
+    label: 'tracked media inventory staleness check',
+    args: ['scripts/inventory-runtime-media.mjs', '--check'],
+  },
+  {
+    label: 'responsive media manifest, derivative and reference validation',
+    args: ['scripts/validate-responsive-media.mjs'],
+  },
+  {
+    label: 'deterministic route media shard validation',
+    args: ['scripts/generate-media-shards.mjs', '--check'],
+  },
+  {
+    label: 'exact media release plan staleness check',
+    args: ['scripts/media-release-plan.mjs', '--check'],
+  },
+  {
+    label: 'final route, visual and Pages performance evidence validation',
+    args: ['scripts/validate-fr-p5-final-evidence.mjs'],
+  },
+  {
     label: 'full test suite',
     args: ['scripts/run-tests.mjs'],
   },
   {
+    label: 'public repository publishing boundary validation',
+    args: ['scripts/validate-public-repository.mjs'],
+  },
+  {
     label: 'validated static build and dist audit',
-    args: ['scripts/build.mjs'],
+    args: ['scripts/build.mjs', '--validated-inputs'],
   },
 ];
 

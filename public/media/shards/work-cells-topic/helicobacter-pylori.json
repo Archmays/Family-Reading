@@ -1,0 +1,1448 @@
+{
+  "schemaVersion": 1,
+  "generatorVersion": "fr-p5-media-shards/1",
+  "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+  "canonicalManifestPath": "public/media/media-manifest.json",
+  "canonicalManifest": {
+    "path": "public/media/media-manifest.json",
+    "bytes": 3767069,
+    "sha256": "b292f10e698f30e51ae0f4e27935a8d0c551f286b3b3d5f0a4b1d74ec5c763d8",
+    "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+    "sources": 778,
+    "variants": 2735
+  },
+  "route": {
+    "id": "work-cells-topic/helicobacter-pylori",
+    "kind": "work-cells-topic",
+    "ownerId": "helicobacter-pylori"
+  },
+  "media": [
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-005.webp",
+      "referenceHash": "f133a3041d99c056806589b36925d4ba699cb99ee4e25c727bd59814700afb4d",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 41508,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/helicobacter-pylori__v05_page-005.webp",
+      "sourceHash": "0fdb850c83633406e70c797447b6391703b49bae66de991a2d9730e7256d755f",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 683866,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview",
+        "work-cells-series-thumbnail",
+        "work-cells-topic-hero"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-page-640-webp.webp",
+        "work-cells-series-thumbnail": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-page-360-webp.webp",
+        "work-cells-topic-hero": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 768480,
+          "sha256": "b7ee18626d19da7faee87809e65573eeb9e838098421bac2e3447c83ed1cb22b",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "0fdb850c83633406e70c797447b6391703b49bae66de991a2d9730e7256d755f",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 78420,
+          "sha256": "801c687e445e985851ac29d003208981d27f22e72f27ed24a0322337b622b356",
+          "roles": [
+            "work-cells-manga-preview",
+            "work-cells-series-thumbnail",
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "0fdb850c83633406e70c797447b6391703b49bae66de991a2d9730e7256d755f",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 230012,
+          "sha256": "745d4542fb9444d5e348378a394407be95023e81905255c3dfe7f9c3fcceddab",
+          "roles": [
+            "work-cells-manga-preview",
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "0fdb850c83633406e70c797447b6391703b49bae66de991a2d9730e7256d755f",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-page-240-webp.webp",
+          "width": 240,
+          "height": 341,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 34330,
+          "sha256": "acb18580f91cfcef36d162a6d3e3a6fa14ae04ab26bc46592faf7d60a567a91a",
+          "roles": [
+            "work-cells-series-thumbnail"
+          ],
+          "sourceHash": "0fdb850c83633406e70c797447b6391703b49bae66de991a2d9730e7256d755f",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "work-cells-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-page-960-webp.webp",
+          "width": 960,
+          "height": 1364,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 516760,
+          "sha256": "dea1366bac40b389e07c2e524886e8778a226df99018df3ffad79b1e5ef32bf2",
+          "roles": [
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "0fdb850c83633406e70c797447b6391703b49bae66de991a2d9730e7256d755f",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-007.webp",
+      "referenceHash": "e011683cbfa9a9076391a45c2f5a3c839b4996430df91d3218bdc78c80a6c47a",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 23246,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/helicobacter-pylori__v05_page-007.webp",
+      "sourceHash": "b3ee613128ed87d7ff8b63a89ddbecf63128611c8b99cb548305d8b920624fa9",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 466428,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/b3/ee613128ed87/helicobacter-pylori__v05_page-007-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/b3/ee613128ed87/helicobacter-pylori__v05_page-007-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/b3/ee613128ed87/helicobacter-pylori__v05_page-007-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/b3/ee613128ed87/helicobacter-pylori__v05_page-007-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 528472,
+          "sha256": "54ff6bfa5793a91116b8edd3616577e757d5c357d468626eb46c09a7b9981b69",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "b3ee613128ed87d7ff8b63a89ddbecf63128611c8b99cb548305d8b920624fa9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/b3/ee613128ed87/helicobacter-pylori__v05_page-007-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 50542,
+          "sha256": "90ea170fd7967a7c8ac1e24badf4bd8d0c129d1d9c257cefe80f469ffe771fd4",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "b3ee613128ed87d7ff8b63a89ddbecf63128611c8b99cb548305d8b920624fa9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/b3/ee613128ed87/helicobacter-pylori__v05_page-007-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 149904,
+          "sha256": "28e6d6b570e44e405715a6d9bbf602f997fdb459f4cabf49207559483c4d0238",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "b3ee613128ed87d7ff8b63a89ddbecf63128611c8b99cb548305d8b920624fa9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-009.webp",
+      "referenceHash": "2845d6bb7c1da111dd4d185f9ed927f2f49dd5dbb4ff3310c477afe4101bf199",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 29712,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/helicobacter-pylori__v05_page-009.webp",
+      "sourceHash": "6f3605a909b844bfa7001e6cdfb444ebedb88db66a5cdf5965914ef63ab558ec",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 688198,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/3605a909b844/helicobacter-pylori__v05_page-009-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/3605a909b844/helicobacter-pylori__v05_page-009-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/3605a909b844/helicobacter-pylori__v05_page-009-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/3605a909b844/helicobacter-pylori__v05_page-009-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 775578,
+          "sha256": "0d69eb83acd467e875d8aa2eec6fcf8a974c7dee3733698bc52b6ac6b02e41cc",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "6f3605a909b844bfa7001e6cdfb444ebedb88db66a5cdf5965914ef63ab558ec",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/3605a909b844/helicobacter-pylori__v05_page-009-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 66156,
+          "sha256": "150c2beb9197159c2f327113b1f32a92eab43fbeb08a41f39f5853d019b47547",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "6f3605a909b844bfa7001e6cdfb444ebedb88db66a5cdf5965914ef63ab558ec",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/3605a909b844/helicobacter-pylori__v05_page-009-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 199364,
+          "sha256": "9d1aae3682631246d55de07f6fb091f3df0adde7c4782cdf748dc896ecb757ec",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "6f3605a909b844bfa7001e6cdfb444ebedb88db66a5cdf5965914ef63ab558ec",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-011.webp",
+      "referenceHash": "28c5f349a7f9ddff142ce32d2860aa96d973f2349421f0a0951baddf58095a09",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 26128,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/helicobacter-pylori__v05_page-011.webp",
+      "sourceHash": "5bbe2edd7c18dda9c8e84ee2c580976fa74bfb29bc02b08a08bef8bcc4ddbd55",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 392828,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/be2edd7c18dd/helicobacter-pylori__v05_page-011-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/be2edd7c18dd/helicobacter-pylori__v05_page-011-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/be2edd7c18dd/helicobacter-pylori__v05_page-011-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/be2edd7c18dd/helicobacter-pylori__v05_page-011-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 442580,
+          "sha256": "19c7d0e33373d470d7dbcc488ea67c60834c2eb293b022131f9a9e5d544a6d5f",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "5bbe2edd7c18dda9c8e84ee2c580976fa74bfb29bc02b08a08bef8bcc4ddbd55",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/be2edd7c18dd/helicobacter-pylori__v05_page-011-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 52480,
+          "sha256": "31e276c44a649128eb0c432aaa27e36a2d701a573b74abe9019c275d2587c987",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "5bbe2edd7c18dda9c8e84ee2c580976fa74bfb29bc02b08a08bef8bcc4ddbd55",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/be2edd7c18dd/helicobacter-pylori__v05_page-011-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 141278,
+          "sha256": "cf6800d7aab4883158b47a0e557abda80cfe7af22573c28dde29d066e5ad7f9a",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "5bbe2edd7c18dda9c8e84ee2c580976fa74bfb29bc02b08a08bef8bcc4ddbd55",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-019.webp",
+      "referenceHash": "e8c2d96fffdc70f6520a7d3835d72861af2716107cdb1b11f5ebe7a7a0e82ec0",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 46332,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/helicobacter-pylori__v05_page-019.webp",
+      "sourceHash": "65c28429ba646fb4f7c6c80aad78367d2ce3382221b100f005276e732df74d6c",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 607266,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/c28429ba646f/helicobacter-pylori__v05_page-019-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/c28429ba646f/helicobacter-pylori__v05_page-019-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/c28429ba646f/helicobacter-pylori__v05_page-019-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/c28429ba646f/helicobacter-pylori__v05_page-019-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 683600,
+          "sha256": "efa06e8e72bd30747f7a76676e34d321d3b06da7ff933b74d72bc9f0aa5350b3",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "65c28429ba646fb4f7c6c80aad78367d2ce3382221b100f005276e732df74d6c",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/c28429ba646f/helicobacter-pylori__v05_page-019-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 82618,
+          "sha256": "96cd6b27f6ed68f7f7b5b5c83f7d2fffafeef35b0de4e66412970020552dfe46",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "65c28429ba646fb4f7c6c80aad78367d2ce3382221b100f005276e732df74d6c",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/c28429ba646f/helicobacter-pylori__v05_page-019-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 226974,
+          "sha256": "b1b8c4eebc5fb144bb5fb694e4f4056e028e3a02a5f08a26da683ce9e78e5ae9",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "65c28429ba646fb4f7c6c80aad78367d2ce3382221b100f005276e732df74d6c",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-020.webp",
+      "referenceHash": "8c115a054a4f2c18045eea1c5487502bdb9ada164697d052aefee45cedbfbd78",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 40828,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/helicobacter-pylori__v05_page-020.webp",
+      "sourceHash": "b56472e223f2f79990a081121ada224a79c54b8591fe7b5ddd56184b7b460588",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 455878,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/6472e223f2f7/helicobacter-pylori__v05_page-020-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/6472e223f2f7/helicobacter-pylori__v05_page-020-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/6472e223f2f7/helicobacter-pylori__v05_page-020-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/6472e223f2f7/helicobacter-pylori__v05_page-020-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 511526,
+          "sha256": "540bf7f0cb2ade68b0274b5dbf2428f71e21f542b35be39d7cad1a66a360e965",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "b56472e223f2f79990a081121ada224a79c54b8591fe7b5ddd56184b7b460588",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/6472e223f2f7/helicobacter-pylori__v05_page-020-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 71626,
+          "sha256": "c2d2c45b6f8f373824573df342edca3b17ef834fb3bc8936e7ba100c4b41454f",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "b56472e223f2f79990a081121ada224a79c54b8591fe7b5ddd56184b7b460588",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/6472e223f2f7/helicobacter-pylori__v05_page-020-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 184436,
+          "sha256": "8f089e55c27aa61004280594fc394111528815a6168d4287b1d054e9f138dad5",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "b56472e223f2f79990a081121ada224a79c54b8591fe7b5ddd56184b7b460588",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-022.webp",
+      "referenceHash": "f02c99e1bf843e42ced5f6a6f0fed8393b9d38551e1c68b4a4932768e5745a24",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 48744,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/helicobacter-pylori__v05_page-022.webp",
+      "sourceHash": "e331c0b8ed2b38149fdc298cf67d58c685cbc2daf5b19c8ee12e73d91e4db6d2",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 694900,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/31c0b8ed2b38/helicobacter-pylori__v05_page-022-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/31c0b8ed2b38/helicobacter-pylori__v05_page-022-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/31c0b8ed2b38/helicobacter-pylori__v05_page-022-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/31c0b8ed2b38/helicobacter-pylori__v05_page-022-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 779478,
+          "sha256": "e921af0504e00389c7f0774d9087805615a290304322699958154d6171dfe67b",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "e331c0b8ed2b38149fdc298cf67d58c685cbc2daf5b19c8ee12e73d91e4db6d2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/31c0b8ed2b38/helicobacter-pylori__v05_page-022-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 86918,
+          "sha256": "2bbe72f97882dfa19503fc98de9515819c019a69c4aec98f5f562e1122c0b18b",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "e331c0b8ed2b38149fdc298cf67d58c685cbc2daf5b19c8ee12e73d91e4db6d2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/31c0b8ed2b38/helicobacter-pylori__v05_page-022-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 250040,
+          "sha256": "c0617ee3a7409f560d7bd113a5aa7a31eef0381427426cf59616151fba9ea149",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "e331c0b8ed2b38149fdc298cf67d58c685cbc2daf5b19c8ee12e73d91e4db6d2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/helicobacter-pylori__v05_page-024.webp",
+      "referenceHash": "19d4aff03f13efb5fd2383bb0888d1bfa46e7cb9460e51b82ec2571b4f663e3d",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 48184,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/helicobacter-pylori__v05_page-024.webp",
+      "sourceHash": "4600a98b1504100684fb11126b7e692e9e7ec0b91c998880d1886a2f5bd2a873",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 594150,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/46/00a98b150410/helicobacter-pylori__v05_page-024-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/46/00a98b150410/helicobacter-pylori__v05_page-024-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/46/00a98b150410/helicobacter-pylori__v05_page-024-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/46/00a98b150410/helicobacter-pylori__v05_page-024-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 675996,
+          "sha256": "f8033aeab347ffe5ddee6120320439e503a54e64dce26feb814b5441cad9e99f",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "4600a98b1504100684fb11126b7e692e9e7ec0b91c998880d1886a2f5bd2a873",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/46/00a98b150410/helicobacter-pylori__v05_page-024-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 86004,
+          "sha256": "d46575512f4145e864ffa3f6f8de27207acc50058695fe16f3cbe41ae94b25bc",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "4600a98b1504100684fb11126b7e692e9e7ec0b91c998880d1886a2f5bd2a873",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/46/00a98b150410/helicobacter-pylori__v05_page-024-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 236046,
+          "sha256": "e5814344ae5e3d91e452b5506c72cfe79098421551ca26134f056f4046fc8189",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "4600a98b1504100684fb11126b7e692e9e7ec0b91c998880d1886a2f5bd2a873",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-01.webp",
+      "referenceHash": "dc0719a267beb3a32276e69a4b7ed2231b4a57016f970bac247660ce4dd67ce1",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 156098,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-01.webp",
+      "sourceHash": "dc0719a267beb3a32276e69a4b7ed2231b4a57016f970bac247660ce4dd67ce1",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 156098,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/dc/0719a267beb3/helicobacter-pylori-v2-station-01-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/dc/0719a267beb3/helicobacter-pylori-v2-station-01-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/dc/0719a267beb3/helicobacter-pylori-v2-station-01-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/dc/0719a267beb3/helicobacter-pylori-v2-station-01-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 239054,
+          "sha256": "fdd3c9e5d9fc8352b6acf4f3e2a54517ad80dff1a5e0b4ebe72b9c7009b7e81d",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "dc0719a267beb3a32276e69a4b7ed2231b4a57016f970bac247660ce4dd67ce1",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/dc/0719a267beb3/helicobacter-pylori-v2-station-01-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 62698,
+          "sha256": "ad6cea5ebdc14049bd2a3ac2a84a91ff82f77a0284853e534f0f900eab1098ac",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "dc0719a267beb3a32276e69a4b7ed2231b4a57016f970bac247660ce4dd67ce1",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/dc/0719a267beb3/helicobacter-pylori-v2-station-01-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 110782,
+          "sha256": "e2549d7a6874a4b5bfa78b32b5ad610ea86331f6f8844b4576791a5be42d0b28",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "dc0719a267beb3a32276e69a4b7ed2231b4a57016f970bac247660ce4dd67ce1",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-02.webp",
+      "referenceHash": "e167b4aed401af29c513da6090887d567e2b0bb1b6747efeece95000d787eec3",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 257994,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-02.webp",
+      "sourceHash": "e167b4aed401af29c513da6090887d567e2b0bb1b6747efeece95000d787eec3",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 257994,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/e1/67b4aed401af/helicobacter-pylori-v2-station-02-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/e1/67b4aed401af/helicobacter-pylori-v2-station-02-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/e1/67b4aed401af/helicobacter-pylori-v2-station-02-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e1/67b4aed401af/helicobacter-pylori-v2-station-02-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 379506,
+          "sha256": "c321ff7bfe499b4ba883c39c95886a74a7f5a40f9d4ea60a514bbc59ba9eceee",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "e167b4aed401af29c513da6090887d567e2b0bb1b6747efeece95000d787eec3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e1/67b4aed401af/helicobacter-pylori-v2-station-02-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 100630,
+          "sha256": "1885ca4e9a05b10d8c06474f7f767f068889f6c9cc8810b97fd7afb2f161c8f5",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "e167b4aed401af29c513da6090887d567e2b0bb1b6747efeece95000d787eec3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e1/67b4aed401af/helicobacter-pylori-v2-station-02-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 187836,
+          "sha256": "941d287c0dfe3140c190254aa14420f02f3253b14d9a2c2d14c7c5e0718d08fe",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "e167b4aed401af29c513da6090887d567e2b0bb1b6747efeece95000d787eec3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-03.webp",
+      "referenceHash": "5f18d3ad49b430e3c950692fe2c83621125165f5ec0dbc0269a70172effe23e9",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 175720,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-03.webp",
+      "sourceHash": "5f18d3ad49b430e3c950692fe2c83621125165f5ec0dbc0269a70172effe23e9",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 175720,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/18d3ad49b430/helicobacter-pylori-v2-station-03-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/18d3ad49b430/helicobacter-pylori-v2-station-03-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/18d3ad49b430/helicobacter-pylori-v2-station-03-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/18d3ad49b430/helicobacter-pylori-v2-station-03-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 285050,
+          "sha256": "8763988d483176b548129d1e0bc33ef095c17fbdae848907632f3faa720b885d",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "5f18d3ad49b430e3c950692fe2c83621125165f5ec0dbc0269a70172effe23e9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/18d3ad49b430/helicobacter-pylori-v2-station-03-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 79384,
+          "sha256": "70423118d562d5c1cb974ae53931535f998bd19e005ea028ba1c1bbce92d9b49",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "5f18d3ad49b430e3c950692fe2c83621125165f5ec0dbc0269a70172effe23e9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/18d3ad49b430/helicobacter-pylori-v2-station-03-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 139018,
+          "sha256": "4baf0943ee47a98406d1c522b8e83376a0f7753dcff8d36d7ffa0f8e429dc1b9",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "5f18d3ad49b430e3c950692fe2c83621125165f5ec0dbc0269a70172effe23e9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-04.webp",
+      "referenceHash": "e3d358c0f7dc49e8cd900763cd07c0cccb855c1ffc51c26c79d409d3fe66d919",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 251160,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/helicobacter-pylori/helicobacter-pylori-v2-station-04.webp",
+      "sourceHash": "e3d358c0f7dc49e8cd900763cd07c0cccb855c1ffc51c26c79d409d3fe66d919",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 251160,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/d358c0f7dc49/helicobacter-pylori-v2-station-04-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/d358c0f7dc49/helicobacter-pylori-v2-station-04-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/d358c0f7dc49/helicobacter-pylori-v2-station-04-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/d358c0f7dc49/helicobacter-pylori-v2-station-04-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 393062,
+          "sha256": "c7f3328d3e87fe0630fe706d9afe9cbfe98676c8928e4462ea0b71dc48570cfc",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "e3d358c0f7dc49e8cd900763cd07c0cccb855c1ffc51c26c79d409d3fe66d919",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/d358c0f7dc49/helicobacter-pylori-v2-station-04-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 98038,
+          "sha256": "c3e6f370a07a85807766efd8baaadd546bfe0c9f35de6f0deea12623f630ca0e",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "e3d358c0f7dc49e8cd900763cd07c0cccb855c1ffc51c26c79d409d3fe66d919",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e3/d358c0f7dc49/helicobacter-pylori-v2-station-04-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 191896,
+          "sha256": "9185e8686841c8f0c3ca09d64fec9e0d866a9b41712519e0bf6675417ace983a",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "e3d358c0f7dc49e8cd900763cd07c0cccb855c1ffc51c26c79d409d3fe66d919",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "sources": 12,
+    "variants": 38
+  }
+}

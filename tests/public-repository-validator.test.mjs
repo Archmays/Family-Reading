@@ -448,6 +448,9 @@ test('Pages upload remains structurally downstream of the fail-closed release co
 
   assert.notEqual(releaseGateIndex, -1, 'Pages workflow should invoke verify:release');
   assert.notEqual(uploadIndex, -1, 'Pages workflow should declare the Pages artifact upload');
+  assert.match(workflow, /uses:\s*actions\/setup-python@v6/);
+  assert.match(workflow, /python-version:\s*['"]3\.12\.7['"]/);
+  assert.match(workflow, /Pillow==10\.4\.0/);
   assert.ok(
     releaseGateIndex < uploadIndex,
     'verify:release must complete successfully before artifact upload',

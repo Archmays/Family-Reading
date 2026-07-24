@@ -13,6 +13,25 @@ function focusableElements(root) {
   });
 }
 
+function matchingNodes(root, selector) {
+  if (!root) return [];
+  const nodes = root.matches?.(selector) ? [root] : [];
+  return [...nodes, ...(root.querySelectorAll?.(selector) ?? [])];
+}
+
+export function clearResponsiveImageCandidates(root) {
+  for (const source of matchingNodes(root, 'source')) {
+    source.removeAttribute('src');
+    source.removeAttribute('srcset');
+    source.removeAttribute('sizes');
+  }
+  for (const image of matchingNodes(root, 'img')) {
+    image.removeAttribute('src');
+    image.removeAttribute('srcset');
+    image.removeAttribute('sizes');
+  }
+}
+
 function blockBackground(dialog) {
   return [...document.body.children]
     .filter((element) => element !== dialog && element.tagName !== 'SCRIPT')
@@ -53,7 +72,9 @@ export function wireImageLightbox(dialog, openerRoot = document) {
   const root = openerRoot?.querySelectorAll && openerRoot?.addEventListener
     ? openerRoot
     : document;
+  const picture = dialog.querySelector('[data-lightbox-picture]');
   const image = dialog.querySelector('[data-lightbox-image]');
+  const pictureSources = [...(picture?.querySelectorAll('[data-lightbox-source]') ?? [])];
   const caption = dialog.querySelector('[data-lightbox-caption]');
   const closeButton = dialog.querySelector('[data-lightbox-close-button]');
   const previousButton = dialog.querySelector('[data-lightbox-prev]');
@@ -70,6 +91,7 @@ export function wireImageLightbox(dialog, openerRoot = document) {
   let savedScrollX = 0;
   let savedScrollY = 0;
   let imageRequestToken = 0;
+  let imageLoadController = null;
 
   document.body.append(dialog);
 
@@ -80,10 +102,26 @@ export function wireImageLightbox(dialog, openerRoot = document) {
   function itemFor(opener) {
     const src = opener.getAttribute('data-lightbox-src')?.trim();
     if (!src) return null;
+    const integerAttribute = (name) => {
+      const value = Number.parseInt(opener.getAttribute(name) ?? '', 10);
+      return Number.isSafeInteger(value) && value > 0 ? value : null;
+    };
+    const srcsets = Object.fromEntries(pictureSources
+      .map((source) => source.getAttribute('data-lightbox-source')?.trim())
+      .filter(Boolean)
+      .map((format) => [
+        format,
+        opener.getAttribute(`data-lightbox-srcset-${format}`)?.trim() || '',
+      ]));
     return {
       opener,
       mediaId: opener.getAttribute('data-media-id')?.trim() || null,
       src,
+      srcsets,
+      sizes: opener.getAttribute('data-lightbox-sizes')?.trim() || '',
+      fallbackFormat: opener.getAttribute('data-lightbox-fallback-format')?.trim() || '',
+      width: integerAttribute('data-lightbox-width'),
+      height: integerAttribute('data-lightbox-height'),
       alt: opener.getAttribute('data-lightbox-alt')?.trim() || '页面图',
     };
   }
@@ -133,11 +171,19 @@ export function wireImageLightbox(dialog, openerRoot = document) {
 
   function resetRenderedMedia() {
     imageRequestToken += 1;
+    imageLoadController?.abort();
+    imageLoadController = null;
+    clearResponsiveImageCandidates(picture ?? image);
     if (image) {
-      image.removeAttribute('src');
+      image.removeAttribute('width');
+      image.removeAttribute('height');
+      image.removeAttribute('data-load-state');
       image.alt = '';
       image.hidden = true;
     }
+    if (picture) picture.hidden = true;
+    picture?.style.removeProperty('max-width');
+    dialog.setAttribute('aria-busy', 'false');
     if (caption) caption.textContent = '';
     if (previousButton) previousButton.disabled = true;
     if (nextButton) nextButton.disabled = true;
@@ -148,33 +194,88 @@ export function wireImageLightbox(dialog, openerRoot = document) {
     activeIndex = (index + activeItems.length) % activeItems.length;
     const item = activeItems[activeIndex];
     const position = `第 ${activeIndex + 1} 张，共 ${activeItems.length} 张`;
-    if (caption) caption.textContent = `${item.alt} · ${position}`;
     const disableNavigation = activeItems.length < 2;
     if (previousButton) previousButton.disabled = disableNavigation;
     if (nextButton) nextButton.disabled = disableNavigation;
     if (!image) return;
 
     const requestToken = ++imageRequestToken;
+    imageLoadController?.abort();
+    const loadController = new AbortController();
+    imageLoadController = loadController;
+    if (picture) picture.hidden = true;
+    picture?.style.removeProperty('max-width');
     image.hidden = true;
-    image.removeAttribute('src');
+    dialog.setAttribute('aria-busy', 'true');
+    if (caption) caption.textContent = `正在载入：${item.alt} · ${position}`;
+
+    clearResponsiveImageCandidates(picture ?? image);
+    image.removeAttribute('width');
+    image.removeAttribute('height');
     image.alt = item.alt;
-    image.setAttribute('src', item.src);
+    image.setAttribute('data-load-state', 'loading');
+    if (item.width) image.setAttribute('width', String(item.width));
+    if (item.height) image.setAttribute('height', String(item.height));
 
-    const reveal = () => {
-      if (requestToken !== imageRequestToken) return;
-      if (image.getAttribute('src') !== item.src) return;
-      image.hidden = false;
+    const isCurrentRequest = () => (
+      requestToken === imageRequestToken
+      && imageLoadController === loadController
+      && image.getAttribute('src') === item.src
+    );
+    const finishRequest = () => {
+      if (imageLoadController !== loadController) return;
+      loadController.abort();
+      imageLoadController = null;
     };
+    const reveal = () => {
+      if (!isCurrentRequest()) return;
+      const pixelRatio = Math.max(1, window.devicePixelRatio || 1);
+      const nativeCssWidth = Math.max(1, Math.floor(image.naturalWidth / pixelRatio));
+      if (picture) picture.style.maxWidth = `${nativeCssWidth}px`;
+      image.hidden = false;
+      if (picture) picture.hidden = false;
+      image.setAttribute('data-load-state', 'ready');
+      dialog.setAttribute('aria-busy', 'false');
+      if (caption) caption.textContent = `${item.alt} · ${position}`;
+      finishRequest();
+    };
+    const onLoad = () => {
+      if (!isCurrentRequest()) return;
+      if (typeof image.decode !== 'function') {
+        reveal();
+        return;
+      }
+      try {
+        Promise.resolve(image.decode()).catch(() => undefined).then(reveal);
+      } catch {
+        reveal();
+      }
+    };
+    const onError = () => {
+      if (!isCurrentRequest()) return;
+      clearResponsiveImageCandidates(picture ?? image);
+      image.hidden = true;
+      if (picture) picture.hidden = true;
+      image.setAttribute('data-load-state', 'error');
+      dialog.setAttribute('aria-busy', 'false');
+      if (caption) caption.textContent = `图片暂时无法显示：${item.alt} · ${position}`;
+      finishRequest();
+    };
+    image.addEventListener('load', onLoad, { once: true, signal: loadController.signal });
+    image.addEventListener('error', onError, { once: true, signal: loadController.signal });
 
-    if (typeof image.decode !== 'function') {
-      reveal();
-      return;
+    for (const source of pictureSources) {
+      const format = source.getAttribute('data-lightbox-source')?.trim();
+      const srcset = format ? item.srcsets[format] : '';
+      if (srcset) {
+        source.setAttribute('srcset', srcset);
+        if (item.sizes) source.setAttribute('sizes', item.sizes);
+      }
     }
-    try {
-      Promise.resolve(image.decode()).catch(() => undefined).then(reveal);
-    } catch {
-      reveal();
-    }
+    const fallbackSrcset = item.srcsets[item.fallbackFormat] || '';
+    if (fallbackSrcset) image.setAttribute('srcset', fallbackSrcset);
+    if (item.sizes) image.setAttribute('sizes', item.sizes);
+    image.setAttribute('src', item.src);
   }
 
   function close({ restoreFocus = true } = {}) {

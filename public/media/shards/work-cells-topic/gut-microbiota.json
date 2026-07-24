@@ -1,0 +1,1334 @@
+{
+  "schemaVersion": 1,
+  "generatorVersion": "fr-p5-media-shards/1",
+  "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+  "canonicalManifestPath": "public/media/media-manifest.json",
+  "canonicalManifest": {
+    "path": "public/media/media-manifest.json",
+    "bytes": 3767069,
+    "sha256": "b292f10e698f30e51ae0f4e27935a8d0c551f286b3b3d5f0a4b1d74ec5c763d8",
+    "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+    "sources": 778,
+    "variants": 2735
+  },
+  "route": {
+    "id": "work-cells-topic/gut-microbiota",
+    "kind": "work-cells-topic",
+    "ownerId": "gut-microbiota"
+  },
+  "media": [
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-109.webp",
+      "referenceHash": "77e04baa3629501adb418579e0c04ce9e43b5ca0a3793be797a5f426beba723d",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 31856,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/gut-microbiota__v05_page-109.webp",
+      "sourceHash": "a631d209813d860f9e59f1830faebd5bff75d3d7fa1a5b0127541e1bdd600820",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 501148,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview",
+        "work-cells-series-thumbnail",
+        "work-cells-topic-hero"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/31d209813d86/gut-microbiota__v05_page-109-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/31d209813d86/gut-microbiota__v05_page-109-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/31d209813d86/gut-microbiota__v05_page-109-work-cells-page-640-webp.webp",
+        "work-cells-series-thumbnail": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/31d209813d86/gut-microbiota__v05_page-109-work-cells-page-360-webp.webp",
+        "work-cells-topic-hero": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/31d209813d86/gut-microbiota__v05_page-109-work-cells-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/31d209813d86/gut-microbiota__v05_page-109-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 568078,
+          "sha256": "aa941605781a0fcce1b09bd1cc2731004a7d01cf8ada058e1823dc49d7e83bcf",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "a631d209813d860f9e59f1830faebd5bff75d3d7fa1a5b0127541e1bdd600820",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/31d209813d86/gut-microbiota__v05_page-109-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 62352,
+          "sha256": "283ad2295d6c5cc62591322c482bae8469832ee9bd93f44aa1ffabf95ea4e412",
+          "roles": [
+            "work-cells-manga-preview",
+            "work-cells-series-thumbnail",
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "a631d209813d860f9e59f1830faebd5bff75d3d7fa1a5b0127541e1bdd600820",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/31d209813d86/gut-microbiota__v05_page-109-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 179690,
+          "sha256": "12c659c06ea6e7e8c83c39e493134b7bf1896992d5dc613e15b584618b92e0d3",
+          "roles": [
+            "work-cells-manga-preview",
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "a631d209813d860f9e59f1830faebd5bff75d3d7fa1a5b0127541e1bdd600820",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/31d209813d86/gut-microbiota__v05_page-109-work-cells-page-240-webp.webp",
+          "width": 240,
+          "height": 341,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 27482,
+          "sha256": "53bd9d6950bcd3a9a4d276dc563e89e2e457231a87909fefa1d0586c7f243013",
+          "roles": [
+            "work-cells-series-thumbnail"
+          ],
+          "sourceHash": "a631d209813d860f9e59f1830faebd5bff75d3d7fa1a5b0127541e1bdd600820",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "work-cells-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/31d209813d86/gut-microbiota__v05_page-109-work-cells-page-960-webp.webp",
+          "width": 960,
+          "height": 1364,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 391994,
+          "sha256": "16740a68f5d275e57d42d6892d0833746244cc45d77de408b61203a39f0e3115",
+          "roles": [
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "a631d209813d860f9e59f1830faebd5bff75d3d7fa1a5b0127541e1bdd600820",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-112.webp",
+      "referenceHash": "85adbb4c2c54dc38510a8a54a6050c0a08c965ce95be3d603383dc9f41e15200",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 38634,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/gut-microbiota__v05_page-112.webp",
+      "sourceHash": "2e4667f6fb185d7ea08d8bc13f51a3b3335243df87859a59115456374733fb31",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 599824,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/2e/4667f6fb185d/gut-microbiota__v05_page-112-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/2e/4667f6fb185d/gut-microbiota__v05_page-112-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/2e/4667f6fb185d/gut-microbiota__v05_page-112-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/2e/4667f6fb185d/gut-microbiota__v05_page-112-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 685512,
+          "sha256": "66a5711f5e7fde5888b718c11cae167aed32e0706d690cad7bec6554d51ecbba",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "2e4667f6fb185d7ea08d8bc13f51a3b3335243df87859a59115456374733fb31",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/2e/4667f6fb185d/gut-microbiota__v05_page-112-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 73248,
+          "sha256": "b5aad80e25017e3de0853f08263ade39216e93862e8a6c7639fd0bed40473277",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "2e4667f6fb185d7ea08d8bc13f51a3b3335243df87859a59115456374733fb31",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/2e/4667f6fb185d/gut-microbiota__v05_page-112-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 214458,
+          "sha256": "d9bac03665b0643d4bf67c6fddf7c32573a9afdfa1a2938a03b0a8840f8e3e89",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "2e4667f6fb185d7ea08d8bc13f51a3b3335243df87859a59115456374733fb31",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-113.webp",
+      "referenceHash": "89329b65dc481f2776549665ae6472e642270e6a0da0185c81d9264e35367498",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 34178,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/gut-microbiota__v05_page-113.webp",
+      "sourceHash": "9e008cb311752223d12abdc74e8e0da5a0b1ed00afda8df004274cb4b38de75f",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 520168,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/9e/008cb3117522/gut-microbiota__v05_page-113-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/9e/008cb3117522/gut-microbiota__v05_page-113-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/9e/008cb3117522/gut-microbiota__v05_page-113-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/9e/008cb3117522/gut-microbiota__v05_page-113-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 587692,
+          "sha256": "0eceffc34ba893ab690b18eaa012fa40ac5b7d1a27be4c9552e99ea3b7fd5b2e",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "9e008cb311752223d12abdc74e8e0da5a0b1ed00afda8df004274cb4b38de75f",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/9e/008cb3117522/gut-microbiota__v05_page-113-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 65938,
+          "sha256": "a9332cc4f02a6cfc11ee3cfc8e76519d7a789fff03f8ead3459b252cee9e5dee",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "9e008cb311752223d12abdc74e8e0da5a0b1ed00afda8df004274cb4b38de75f",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/9e/008cb3117522/gut-microbiota__v05_page-113-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 184092,
+          "sha256": "0ac73214f85f35fbcad0577561fa1fc81defadaa4f20219eb731fda808a661f5",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "9e008cb311752223d12abdc74e8e0da5a0b1ed00afda8df004274cb4b38de75f",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-117.webp",
+      "referenceHash": "7145e88e54363726dd73e3842f6e3af58c46b597c7dc32c0c921ebe381793121",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 39764,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/gut-microbiota__v05_page-117.webp",
+      "sourceHash": "19c2a85ebe82ea57d2511d5acbc68c9144c6b217e4ae6fdea5008efb65b69521",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 513656,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/19/c2a85ebe82ea/gut-microbiota__v05_page-117-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/19/c2a85ebe82ea/gut-microbiota__v05_page-117-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/19/c2a85ebe82ea/gut-microbiota__v05_page-117-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/19/c2a85ebe82ea/gut-microbiota__v05_page-117-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 578472,
+          "sha256": "715f7b0ceb2518e54ef763dbc5e68ce11e876916985f924569c5d430884932e9",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "19c2a85ebe82ea57d2511d5acbc68c9144c6b217e4ae6fdea5008efb65b69521",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/19/c2a85ebe82ea/gut-microbiota__v05_page-117-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 72238,
+          "sha256": "d523572719833b9ee1c0b3dbd25b90adb3e822fe9a50e4beb5fc909b67e2caa8",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "19c2a85ebe82ea57d2511d5acbc68c9144c6b217e4ae6fdea5008efb65b69521",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/19/c2a85ebe82ea/gut-microbiota__v05_page-117-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 196254,
+          "sha256": "a309d60c80b6677f5cbaa5415adf1e8d21d68dc72b22d9d82a633b1aca265e08",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "19c2a85ebe82ea57d2511d5acbc68c9144c6b217e4ae6fdea5008efb65b69521",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-124.webp",
+      "referenceHash": "796575ec5d9166f94f1301495a7aa7bec42a053cd3793ccf0e4d982789724834",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 33928,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/gut-microbiota__v05_page-124.webp",
+      "sourceHash": "cba16b290e924a1e77be8108e1817f6d40da0112cb76f55aaa71ec77ce435668",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 482812,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/a16b290e924a/gut-microbiota__v05_page-124-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/a16b290e924a/gut-microbiota__v05_page-124-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/a16b290e924a/gut-microbiota__v05_page-124-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/a16b290e924a/gut-microbiota__v05_page-124-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 543680,
+          "sha256": "e4eadf85f1a7b0128926124199343b10916985339810f17618df687275201303",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "cba16b290e924a1e77be8108e1817f6d40da0112cb76f55aaa71ec77ce435668",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/a16b290e924a/gut-microbiota__v05_page-124-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 63084,
+          "sha256": "290d9002954f7e69fca9694ad3891aa49a9b2b41d7f6de73512c6f0ec3f14653",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "cba16b290e924a1e77be8108e1817f6d40da0112cb76f55aaa71ec77ce435668",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/a16b290e924a/gut-microbiota__v05_page-124-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 174832,
+          "sha256": "40afe2769029f19e817d67ee371400df04306813a5e8c411c687399ce5d6a023",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "cba16b290e924a1e77be8108e1817f6d40da0112cb76f55aaa71ec77ce435668",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-125.webp",
+      "referenceHash": "1f8c4b4b8d17dfc2964088e16f68efb435cf517cef488b831f455f41a7810269",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 50508,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/gut-microbiota__v05_page-125.webp",
+      "sourceHash": "ef31f60cbdb141bfffba52768dc27ad37b60ee0d2d5abb6c90a4b81a2d370303",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 711144,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/ef/31f60cbdb141/gut-microbiota__v05_page-125-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/ef/31f60cbdb141/gut-microbiota__v05_page-125-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/ef/31f60cbdb141/gut-microbiota__v05_page-125-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/ef/31f60cbdb141/gut-microbiota__v05_page-125-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 800194,
+          "sha256": "1b73a49d0d6f25a8e6a8d9a758c13877f1804dfeb25cf513feefe0dec36b94f3",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "ef31f60cbdb141bfffba52768dc27ad37b60ee0d2d5abb6c90a4b81a2d370303",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/ef/31f60cbdb141/gut-microbiota__v05_page-125-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 89464,
+          "sha256": "e6b53e97e5c7b04a7688064953e1ed18131b057a6e866eea7cd6b440bfc633de",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "ef31f60cbdb141bfffba52768dc27ad37b60ee0d2d5abb6c90a4b81a2d370303",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/ef/31f60cbdb141/gut-microbiota__v05_page-125-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 263618,
+          "sha256": "488a0ba677273d77fc82d9e43796a5ec0d7b6656bcbaf4538e4c98ac4bc13620",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "ef31f60cbdb141bfffba52768dc27ad37b60ee0d2d5abb6c90a4b81a2d370303",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v05/gut-microbiota__v05_page-126.webp",
+      "referenceHash": "65e5862ed7ed758463400ef79470cdf23b8930a601ad62479390013a50853d42",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 38730,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v05/gut-microbiota__v05_page-126.webp",
+      "sourceHash": "92c1e9b532d769eff2983355bb00a559581bc0dd9814675197416a796960bd93",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 672518,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/92/c1e9b532d769/gut-microbiota__v05_page-126-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/92/c1e9b532d769/gut-microbiota__v05_page-126-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/92/c1e9b532d769/gut-microbiota__v05_page-126-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/92/c1e9b532d769/gut-microbiota__v05_page-126-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 758200,
+          "sha256": "b30d62f7b8d54c2c0ded1de83847a191def6239e63b267cc827532f13e63df70",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "92c1e9b532d769eff2983355bb00a559581bc0dd9814675197416a796960bd93",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/92/c1e9b532d769/gut-microbiota__v05_page-126-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 76846,
+          "sha256": "82e88a8a8cbb8c361e3bd1412b4d8a704f8c6b4678e66a33343a2f06f839920e",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "92c1e9b532d769eff2983355bb00a559581bc0dd9814675197416a796960bd93",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/92/c1e9b532d769/gut-microbiota__v05_page-126-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 228834,
+          "sha256": "81b28726a69449766986969802da4748e3204460491f03da79b0fc0fecbf0dfd",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "92c1e9b532d769eff2983355bb00a559581bc0dd9814675197416a796960bd93",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-01.webp",
+      "referenceHash": "4f1b157280d1c9218693b7353cd4b4fa4fa163723d28003116edaa9d0c7c8409",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 208828,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-01.webp",
+      "sourceHash": "4f1b157280d1c9218693b7353cd4b4fa4fa163723d28003116edaa9d0c7c8409",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 208828,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/4f/1b157280d1c9/gut-microbiota-v2-station-01-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/4f/1b157280d1c9/gut-microbiota-v2-station-01-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/4f/1b157280d1c9/gut-microbiota-v2-station-01-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/4f/1b157280d1c9/gut-microbiota-v2-station-01-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 276454,
+          "sha256": "35c25916bc4196965eb57af0f26287ddfc9e25489b0d6bdc96f4a5a1930253b3",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "4f1b157280d1c9218693b7353cd4b4fa4fa163723d28003116edaa9d0c7c8409",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/4f/1b157280d1c9/gut-microbiota-v2-station-01-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 78924,
+          "sha256": "5ec4b01d4bdcf1b379cc62c0e37432ca627bea333c68e783e1ba3fafe1f3ee89",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "4f1b157280d1c9218693b7353cd4b4fa4fa163723d28003116edaa9d0c7c8409",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/4f/1b157280d1c9/gut-microbiota-v2-station-01-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 139910,
+          "sha256": "d3d45ecd8f9cc7e60f9b78e19df98c809ade8fdc3266e1f19ad6f1a57b05d778",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "4f1b157280d1c9218693b7353cd4b4fa4fa163723d28003116edaa9d0c7c8409",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-02.webp",
+      "referenceHash": "b5b25263341968153aaeccd0b77401112b1797ddcce03c4202034fb45ce0b2c5",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 226068,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-02.webp",
+      "sourceHash": "b5b25263341968153aaeccd0b77401112b1797ddcce03c4202034fb45ce0b2c5",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 226068,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/b25263341968/gut-microbiota-v2-station-02-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/b25263341968/gut-microbiota-v2-station-02-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/b25263341968/gut-microbiota-v2-station-02-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/b25263341968/gut-microbiota-v2-station-02-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 306066,
+          "sha256": "d09d01510b2dee90c59185802a7fdb5a8c9c269c40356c11a81440d26ef56c64",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "b5b25263341968153aaeccd0b77401112b1797ddcce03c4202034fb45ce0b2c5",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/b25263341968/gut-microbiota-v2-station-02-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 91448,
+          "sha256": "f6373f36c0611d59116e0574e031d3b6cc2d025076574d7de9fbb35958eaffb1",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "b5b25263341968153aaeccd0b77401112b1797ddcce03c4202034fb45ce0b2c5",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/b5/b25263341968/gut-microbiota-v2-station-02-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 152702,
+          "sha256": "5b85356bce6f9150d4e35a6e4f7c2bb0cd0951681e19ed172b7bdd9345e8044a",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "b5b25263341968153aaeccd0b77401112b1797ddcce03c4202034fb45ce0b2c5",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-03.webp",
+      "referenceHash": "2a32e3cf211637d724d16b1542527e97eb55c4646e99302746bbefe71c11c808",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 301464,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-03.webp",
+      "sourceHash": "2a32e3cf211637d724d16b1542527e97eb55c4646e99302746bbefe71c11c808",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 301464,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/2a/32e3cf211637/gut-microbiota-v2-station-03-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/2a/32e3cf211637/gut-microbiota-v2-station-03-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/2a/32e3cf211637/gut-microbiota-v2-station-03-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/2a/32e3cf211637/gut-microbiota-v2-station-03-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 367188,
+          "sha256": "3696405b11cd7db83744593eb00e6a2d79259e9001968b49ac36a0fbefafdd31",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "2a32e3cf211637d724d16b1542527e97eb55c4646e99302746bbefe71c11c808",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/2a/32e3cf211637/gut-microbiota-v2-station-03-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 98378,
+          "sha256": "7ad061c3a2f233488e3ac3dfe110b7e336ae8f48a506059a694e64a2b5370279",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "2a32e3cf211637d724d16b1542527e97eb55c4646e99302746bbefe71c11c808",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/2a/32e3cf211637/gut-microbiota-v2-station-03-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 189334,
+          "sha256": "e17ae184d3b9442d83d0282c5bf9b9370504311d2021722493aef130768edb99",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "2a32e3cf211637d724d16b1542527e97eb55c4646e99302746bbefe71c11c808",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-04.webp",
+      "referenceHash": "535b87d0d56807d8b2d8c428637eeb1af7e0eaf3a72f01ae29df792dc60171fe",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 350650,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/gut-microbiota/gut-microbiota-v2-station-04.webp",
+      "sourceHash": "535b87d0d56807d8b2d8c428637eeb1af7e0eaf3a72f01ae29df792dc60171fe",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 350650,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/5b87d0d56807/gut-microbiota-v2-station-04-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/5b87d0d56807/gut-microbiota-v2-station-04-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/5b87d0d56807/gut-microbiota-v2-station-04-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/5b87d0d56807/gut-microbiota-v2-station-04-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 449246,
+          "sha256": "f64d5447a3cb00882deb5913bab082d683363334dc82054aab463001b5c31e29",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "535b87d0d56807d8b2d8c428637eeb1af7e0eaf3a72f01ae29df792dc60171fe",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/5b87d0d56807/gut-microbiota-v2-station-04-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 112920,
+          "sha256": "670c9a2e4439a81732e30741db81c3b43aa67d64e1a74b11f994e666cb2b9cd0",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "535b87d0d56807d8b2d8c428637eeb1af7e0eaf3a72f01ae29df792dc60171fe",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/5b87d0d56807/gut-microbiota-v2-station-04-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 214502,
+          "sha256": "24d64cb6e4355c01e2d91dcf38e484a3662f2d3ac30d3c4841ac9c50fe5d0aae",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "535b87d0d56807d8b2d8c428637eeb1af7e0eaf3a72f01ae29df792dc60171fe",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "sources": 11,
+    "variants": 35
+  }
+}

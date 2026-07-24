@@ -1,0 +1,1154 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+  "routes": [
+    {
+      "route": "#/",
+      "status": "PASS",
+      "cold": {
+        "status": "PASS",
+        "requests": 15,
+        "jsonBytes": 23208,
+        "imageBytes": 54721,
+        "audioBytes": 0,
+        "otherBytes": 219033,
+        "totalTransferBytes": 296962,
+        "lcp": {
+          "path": "/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-240-webp.webp",
+          "bytes": 36674,
+          "kind": "RESOURCE",
+          "elementTag": "IMG"
+        },
+        "cls": 0.06064966837565104,
+        "duplicateDownloads": 0,
+        "cacheHits": 0,
+        "shardIndexRequests": 1,
+        "ownerShardRequests": 1,
+        "selectedCurrentSrc": [
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "warm": {
+        "status": "PASS",
+        "requests": 1,
+        "jsonBytes": 0,
+        "imageBytes": 395,
+        "audioBytes": 0,
+        "otherBytes": 0,
+        "totalTransferBytes": 395,
+        "lcp": {
+          "path": "NO_NEW_LCP_ENTRY_SAME_DOCUMENT_ROUTE_ACTIVATION",
+          "bytes": 0,
+          "kind": "NO_NEW_LCP_ENTRY"
+        },
+        "cls": 0.03931423611111111,
+        "duplicateDownloads": 0,
+        "cacheHits": 1,
+        "shardIndexRequests": 0,
+        "ownerShardRequests": 0,
+        "selectedCurrentSrc": [
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "integrity": {
+        "index": {
+          "status": "PASS",
+          "canonicalManifestShaMatch": true
+        },
+        "ownerShard": {
+          "status": "PASS",
+          "bodyHashMatch": true
+        }
+      }
+    },
+    {
+      "route": "#/book/carmela-s1-01",
+      "status": "PASS",
+      "cold": {
+        "status": "PASS",
+        "requests": 17,
+        "jsonBytes": 197013,
+        "imageBytes": 18047,
+        "audioBytes": 0,
+        "otherBytes": 219033,
+        "totalTransferBytes": 434093,
+        "lcp": {
+          "path": "/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-240-webp.webp",
+          "bytes": 17652,
+          "kind": "RESOURCE",
+          "elementTag": "IMG"
+        },
+        "cls": 0.009400126139322916,
+        "duplicateDownloads": 0,
+        "cacheHits": 0,
+        "shardIndexRequests": 1,
+        "ownerShardRequests": 1,
+        "selectedCurrentSrc": [
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "warm": {
+        "status": "PASS",
+        "requests": 1,
+        "jsonBytes": 0,
+        "imageBytes": 395,
+        "audioBytes": 0,
+        "otherBytes": 0,
+        "totalTransferBytes": 395,
+        "lcp": {
+          "path": "NO_NEW_LCP_ENTRY_SAME_DOCUMENT_ROUTE_ACTIVATION",
+          "bytes": 0,
+          "kind": "NO_NEW_LCP_ENTRY"
+        },
+        "cls": 0.050546875000000005,
+        "duplicateDownloads": 0,
+        "cacheHits": 1,
+        "shardIndexRequests": 0,
+        "ownerShardRequests": 0,
+        "selectedCurrentSrc": [
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "integrity": {
+        "index": {
+          "status": "PASS",
+          "canonicalManifestShaMatch": true
+        },
+        "ownerShard": {
+          "status": "PASS",
+          "bodyHashMatch": true
+        }
+      }
+    },
+    {
+      "route": "#/book/carmela-s1-11",
+      "status": "PASS",
+      "cold": {
+        "status": "PASS",
+        "requests": 17,
+        "jsonBytes": 298296,
+        "imageBytes": 8429,
+        "audioBytes": 0,
+        "otherBytes": 219033,
+        "totalTransferBytes": 525758,
+        "lcp": {
+          "path": "/Family-Reading-Codex/#/book/carmela-s1-11",
+          "bytes": 2165,
+          "kind": "TEXT_ELEMENT_IN_DOCUMENT",
+          "elementTag": "P"
+        },
+        "cls": 0.009400126139322916,
+        "duplicateDownloads": 0,
+        "cacheHits": 0,
+        "shardIndexRequests": 1,
+        "ownerShardRequests": 1,
+        "selectedCurrentSrc": [
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/fa/cf1d660ab18b/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "warm": {
+        "status": "PASS",
+        "requests": 1,
+        "jsonBytes": 0,
+        "imageBytes": 395,
+        "audioBytes": 0,
+        "otherBytes": 0,
+        "totalTransferBytes": 395,
+        "lcp": {
+          "path": "NO_NEW_LCP_ENTRY_SAME_DOCUMENT_ROUTE_ACTIVATION",
+          "bytes": 0,
+          "kind": "NO_NEW_LCP_ENTRY"
+        },
+        "cls": 0.050546875000000005,
+        "duplicateDownloads": 0,
+        "cacheHits": 1,
+        "shardIndexRequests": 0,
+        "ownerShardRequests": 0,
+        "selectedCurrentSrc": [
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/fa/cf1d660ab18b/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "integrity": {
+        "index": {
+          "status": "PASS",
+          "canonicalManifestShaMatch": true
+        },
+        "ownerShard": {
+          "status": "PASS",
+          "bodyHashMatch": true
+        }
+      }
+    },
+    {
+      "route": "#/science/work-cells/cancer-cell-ii",
+      "status": "PASS",
+      "cold": {
+        "status": "PASS",
+        "requests": 16,
+        "jsonBytes": 100320,
+        "imageBytes": 70935,
+        "audioBytes": 0,
+        "otherBytes": 219033,
+        "totalTransferBytes": 390288,
+        "lcp": {
+          "path": "/Family-Reading-Codex/#/science/work-cells/cancer-cell-ii",
+          "bytes": 2165,
+          "kind": "TEXT_ELEMENT_IN_DOCUMENT",
+          "elementTag": "P"
+        },
+        "cls": 0.020313178168402776,
+        "duplicateDownloads": 0,
+        "cacheHits": 0,
+        "shardIndexRequests": 1,
+        "ownerShardRequests": 1,
+        "selectedCurrentSrc": [
+          {
+            "role": "work-cells-manga-preview",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/57/972a2fdb67e4/cancer-cell-ii__v05_page-143-work-cells-page-360-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "warm": {
+        "status": "PASS",
+        "requests": 1,
+        "jsonBytes": 0,
+        "imageBytes": 395,
+        "audioBytes": 0,
+        "otherBytes": 0,
+        "totalTransferBytes": 395,
+        "lcp": {
+          "path": "NO_NEW_LCP_ENTRY_SAME_DOCUMENT_ROUTE_ACTIVATION",
+          "bytes": 0,
+          "kind": "NO_NEW_LCP_ENTRY"
+        },
+        "cls": 0.03931423611111111,
+        "duplicateDownloads": 0,
+        "cacheHits": 1,
+        "shardIndexRequests": 0,
+        "ownerShardRequests": 0,
+        "selectedCurrentSrc": [
+          {
+            "role": "work-cells-manga-preview",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/57/972a2fdb67e4/cancer-cell-ii__v05_page-143-work-cells-page-360-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "integrity": {
+        "index": {
+          "status": "PASS",
+          "canonicalManifestShaMatch": true
+        },
+        "ownerShard": {
+          "status": "PASS",
+          "bodyHashMatch": true
+        }
+      }
+    },
+    {
+      "route": "#/science/work-cells/food-poisoning",
+      "status": "PASS",
+      "cold": {
+        "status": "PASS",
+        "requests": 16,
+        "jsonBytes": 107071,
+        "imageBytes": 90765,
+        "audioBytes": 0,
+        "otherBytes": 219033,
+        "totalTransferBytes": 416869,
+        "lcp": {
+          "path": "/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-360-webp.webp",
+          "bytes": 90370,
+          "kind": "RESOURCE",
+          "elementTag": "IMG"
+        },
+        "cls": 0.020313178168402776,
+        "duplicateDownloads": 0,
+        "cacheHits": 0,
+        "shardIndexRequests": 1,
+        "ownerShardRequests": 1,
+        "selectedCurrentSrc": [
+          {
+            "role": "work-cells-manga-preview",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-360-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "warm": {
+        "status": "PASS",
+        "requests": 1,
+        "jsonBytes": 0,
+        "imageBytes": 395,
+        "audioBytes": 0,
+        "otherBytes": 0,
+        "totalTransferBytes": 395,
+        "lcp": {
+          "path": "NO_NEW_LCP_ENTRY_SAME_DOCUMENT_ROUTE_ACTIVATION",
+          "bytes": 0,
+          "kind": "NO_NEW_LCP_ENTRY"
+        },
+        "cls": 0.03931423611111111,
+        "duplicateDownloads": 0,
+        "cacheHits": 1,
+        "shardIndexRequests": 0,
+        "ownerShardRequests": 0,
+        "selectedCurrentSrc": [
+          {
+            "role": "work-cells-manga-preview",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-360-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "integrity": {
+        "index": {
+          "status": "PASS",
+          "canonicalManifestShaMatch": true
+        },
+        "ownerShard": {
+          "status": "PASS",
+          "bodyHashMatch": true
+        }
+      }
+    },
+    {
+      "route": "#/science/work-cells/induced-pluripotent-stem-cells",
+      "status": "PASS",
+      "cold": {
+        "status": "PASS",
+        "requests": 16,
+        "jsonBytes": 228486,
+        "imageBytes": 56193,
+        "audioBytes": 0,
+        "otherBytes": 219033,
+        "totalTransferBytes": 503712,
+        "lcp": {
+          "path": "/Family-Reading-Codex/#/science/work-cells/induced-pluripotent-stem-cells",
+          "bytes": 2165,
+          "kind": "TEXT_ELEMENT_IN_DOCUMENT",
+          "elementTag": "P"
+        },
+        "cls": 0.020313178168402776,
+        "duplicateDownloads": 0,
+        "cacheHits": 0,
+        "shardIndexRequests": 1,
+        "ownerShardRequests": 1,
+        "selectedCurrentSrc": [
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/79/ef88b9d9b567/ips-cells__v06_page-057-work-cells-page-360-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "warm": {
+        "status": "PASS",
+        "requests": 1,
+        "jsonBytes": 0,
+        "imageBytes": 395,
+        "audioBytes": 0,
+        "otherBytes": 0,
+        "totalTransferBytes": 395,
+        "lcp": {
+          "path": "NO_NEW_LCP_ENTRY_SAME_DOCUMENT_ROUTE_ACTIVATION",
+          "bytes": 0,
+          "kind": "NO_NEW_LCP_ENTRY"
+        },
+        "cls": 0.03931423611111111,
+        "duplicateDownloads": 0,
+        "cacheHits": 1,
+        "shardIndexRequests": 0,
+        "ownerShardRequests": 0,
+        "selectedCurrentSrc": [
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/79/ef88b9d9b567/ips-cells__v06_page-057-work-cells-page-360-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "integrity": {
+        "index": {
+          "status": "PASS",
+          "canonicalManifestShaMatch": true
+        },
+        "ownerShard": {
+          "status": "PASS",
+          "bodyHashMatch": true
+        }
+      }
+    },
+    {
+      "route": "#/science/work-cells/novel-coronavirus",
+      "status": "PASS",
+      "cold": {
+        "status": "PASS",
+        "requests": 16,
+        "jsonBytes": 215352,
+        "imageBytes": 38237,
+        "audioBytes": 0,
+        "otherBytes": 219033,
+        "totalTransferBytes": 472622,
+        "lcp": {
+          "path": "/Family-Reading-Codex/#/science/work-cells/novel-coronavirus",
+          "bytes": 2165,
+          "kind": "TEXT_ELEMENT_IN_DOCUMENT",
+          "elementTag": "P"
+        },
+        "cls": 0.020313178168402776,
+        "duplicateDownloads": 0,
+        "cacheHits": 0,
+        "shardIndexRequests": 1,
+        "ownerShardRequests": 1,
+        "selectedCurrentSrc": [
+          {
+            "role": "work-cells-manga-preview",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/67/3ecaa381937a/covid-19__v06_page-126-work-cells-page-360-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "warm": {
+        "status": "PASS",
+        "requests": 1,
+        "jsonBytes": 0,
+        "imageBytes": 395,
+        "audioBytes": 0,
+        "otherBytes": 0,
+        "totalTransferBytes": 395,
+        "lcp": {
+          "path": "NO_NEW_LCP_ENTRY_SAME_DOCUMENT_ROUTE_ACTIVATION",
+          "bytes": 0,
+          "kind": "NO_NEW_LCP_ENTRY"
+        },
+        "cls": 0.03931423611111111,
+        "duplicateDownloads": 0,
+        "cacheHits": 1,
+        "shardIndexRequests": 0,
+        "ownerShardRequests": 0,
+        "selectedCurrentSrc": [
+          {
+            "role": "work-cells-manga-preview",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/67/3ecaa381937a/covid-19__v06_page-126-work-cells-page-360-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "integrity": {
+        "index": {
+          "status": "PASS",
+          "canonicalManifestShaMatch": true
+        },
+        "ownerShard": {
+          "status": "PASS",
+          "bodyHashMatch": true
+        }
+      }
+    },
+    {
+      "route": "#/series/carmela-season-1",
+      "status": "PASS",
+      "cold": {
+        "status": "PASS",
+        "requests": 26,
+        "jsonBytes": 61613,
+        "imageBytes": 239129,
+        "audioBytes": 0,
+        "otherBytes": 219033,
+        "totalTransferBytes": 519775,
+        "lcp": {
+          "path": "/Family-Reading-Codex/#/series/carmela-season-1",
+          "bytes": 2165,
+          "kind": "TEXT_ELEMENT_IN_DOCUMENT",
+          "elementTag": "H1"
+        },
+        "cls": 0.019851515028211805,
+        "duplicateDownloads": 0,
+        "cacheHits": 0,
+        "shardIndexRequests": 1,
+        "ownerShardRequests": 1,
+        "selectedCurrentSrc": [
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/0f/ae2543be6a8d/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/72/91d2467d3ae8/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/e4/1c7b81ec39f2/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/f1/22f1a6af0a3b/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/bc/37d77438cb73/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/91/0873712397ff/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/f9/c0857d8ff983/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/8c/a47fc167000c/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/fa/cf1d660ab18b/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/ec1bf4ae6c8e/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "warm": {
+        "status": "PASS",
+        "requests": 1,
+        "jsonBytes": 0,
+        "imageBytes": 395,
+        "audioBytes": 0,
+        "otherBytes": 0,
+        "totalTransferBytes": 395,
+        "lcp": {
+          "path": "NO_NEW_LCP_ENTRY_SAME_DOCUMENT_ROUTE_ACTIVATION",
+          "bytes": 0,
+          "kind": "NO_NEW_LCP_ENTRY"
+        },
+        "cls": 0.03931423611111111,
+        "duplicateDownloads": 0,
+        "cacheHits": 1,
+        "shardIndexRequests": 0,
+        "ownerShardRequests": 0,
+        "selectedCurrentSrc": [
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/0f/ae2543be6a8d/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/72/91d2467d3ae8/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/e4/1c7b81ec39f2/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/f1/22f1a6af0a3b/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/bc/37d77438cb73/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/91/0873712397ff/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/f9/c0857d8ff983/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/8c/a47fc167000c/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/fa/cf1d660ab18b/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "carmela-book-cover",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/ec1bf4ae6c8e/001-carmela-cover-240-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "integrity": {
+        "index": {
+          "status": "PASS",
+          "canonicalManifestShaMatch": true
+        },
+        "ownerShard": {
+          "status": "PASS",
+          "bodyHashMatch": true
+        }
+      }
+    },
+    {
+      "route": "#/series/work-cells",
+      "status": "PASS",
+      "cold": {
+        "status": "PASS",
+        "requests": 21,
+        "jsonBytes": 202367,
+        "imageBytes": 243965,
+        "audioBytes": 0,
+        "otherBytes": 219033,
+        "totalTransferBytes": 665365,
+        "lcp": {
+          "path": "/Family-Reading-Codex/#/series/work-cells",
+          "bytes": 2165,
+          "kind": "TEXT_ELEMENT_IN_DOCUMENT",
+          "elementTag": "H1"
+        },
+        "cls": 0.019851515028211805,
+        "duplicateDownloads": 0,
+        "cacheHits": 0,
+        "shardIndexRequests": 1,
+        "ownerShardRequests": 1,
+        "selectedCurrentSrc": [
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/a5/68cb28f97e36/cedar-pollen-allergy__v01_page-063-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/e1/7d98cafd83a1/influenza__v01_page-105-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/42/26b3b6f21aae/abrasion__v01_page-139-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/64/5afe06dfc98e/heatstroke__v02_page-033-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "warm": {
+        "status": "PASS",
+        "requests": 1,
+        "jsonBytes": 0,
+        "imageBytes": 395,
+        "audioBytes": 0,
+        "otherBytes": 0,
+        "totalTransferBytes": 395,
+        "lcp": {
+          "path": "NO_NEW_LCP_ENTRY_SAME_DOCUMENT_ROUTE_ACTIVATION",
+          "bytes": 0,
+          "kind": "NO_NEW_LCP_ENTRY"
+        },
+        "cls": 0.03931423611111111,
+        "duplicateDownloads": 0,
+        "cacheHits": 1,
+        "shardIndexRequests": 0,
+        "ownerShardRequests": 0,
+        "selectedCurrentSrc": [
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/a5/68cb28f97e36/cedar-pollen-allergy__v01_page-063-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/e1/7d98cafd83a1/influenza__v01_page-105-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/42/26b3b6f21aae/abrasion__v01_page-139-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/0f/db850c836334/helicobacter-pylori__v05_page-005-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          },
+          {
+            "role": "work-cells-series-thumbnail",
+            "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/64/5afe06dfc98e/heatstroke__v02_page-033-work-cells-page-240-webp.webp",
+            "status": "PASS"
+          }
+        ]
+      },
+      "integrity": {
+        "index": {
+          "status": "PASS",
+          "canonicalManifestShaMatch": true
+        },
+        "ownerShard": {
+          "status": "PASS",
+          "bodyHashMatch": true
+        }
+      }
+    }
+  ],
+  "srcsetMatrix": [
+    {
+      "viewportWidth": 390,
+      "dpr": 1,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-360-webp.webp",
+      "selectedProfileId": "work-cells-page-360-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-360-webp.webp",
+      "selectedVariantWidth": 360,
+      "selectedVariantHeight": 512,
+      "transferBytes": 90670,
+      "resourceBytes": 90370,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 360,
+      "naturalHeight": 512,
+      "renderedWidth": 321.881,
+      "renderedHeight": 457.953,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 321.881,
+      "upscalingRatio": 0.8941138888888888,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 390,
+      "dpr": 2,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-960-webp.webp",
+      "selectedProfileId": "work-cells-page-960-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-960-webp.webp",
+      "selectedVariantWidth": 960,
+      "selectedVariantHeight": 1364,
+      "transferBytes": 501448,
+      "resourceBytes": 501148,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 960,
+      "naturalHeight": 1364,
+      "renderedWidth": 322,
+      "renderedHeight": 457.184,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 644,
+      "upscalingRatio": 0.6708333333333333,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 430,
+      "dpr": 1,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedProfileId": "work-cells-page-640-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedVariantWidth": 640,
+      "selectedVariantHeight": 909,
+      "transferBytes": 252506,
+      "resourceBytes": 252206,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 640,
+      "naturalHeight": 909,
+      "renderedWidth": 361.909,
+      "renderedHeight": 514.141,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 361.909,
+      "upscalingRatio": 0.5654828125,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 430,
+      "dpr": 2,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-960-webp.webp",
+      "selectedProfileId": "work-cells-page-960-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-960-webp.webp",
+      "selectedVariantWidth": 960,
+      "selectedVariantHeight": 1364,
+      "transferBytes": 501448,
+      "resourceBytes": 501148,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 960,
+      "naturalHeight": 1364,
+      "renderedWidth": 362,
+      "renderedHeight": 514.27,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 724,
+      "upscalingRatio": 0.7541666666666667,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 768,
+      "dpr": 1,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedProfileId": "work-cells-page-640-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedVariantWidth": 640,
+      "selectedVariantHeight": 909,
+      "transferBytes": 252506,
+      "resourceBytes": 252206,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 640,
+      "naturalHeight": 909,
+      "renderedWidth": 446,
+      "renderedHeight": 633.161,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 446,
+      "upscalingRatio": 0.696875,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 768,
+      "dpr": 2,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-960-webp.webp",
+      "selectedProfileId": "work-cells-page-960-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-960-webp.webp",
+      "selectedVariantWidth": 960,
+      "selectedVariantHeight": 1364,
+      "transferBytes": 501448,
+      "resourceBytes": 501148,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 960,
+      "naturalHeight": 1364,
+      "renderedWidth": 446,
+      "renderedHeight": 633.161,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 892,
+      "upscalingRatio": 0.9291666666666667,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 1024,
+      "dpr": 1,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedProfileId": "work-cells-page-640-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedVariantWidth": 640,
+      "selectedVariantHeight": 909,
+      "transferBytes": 252506,
+      "resourceBytes": 252206,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 640,
+      "naturalHeight": 909,
+      "renderedWidth": 446,
+      "renderedHeight": 633.161,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 446,
+      "upscalingRatio": 0.696875,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 1024,
+      "dpr": 2,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-960-webp.webp",
+      "selectedProfileId": "work-cells-page-960-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-960-webp.webp",
+      "selectedVariantWidth": 960,
+      "selectedVariantHeight": 1364,
+      "transferBytes": 501448,
+      "resourceBytes": 501148,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 960,
+      "naturalHeight": 1364,
+      "renderedWidth": 446,
+      "renderedHeight": 633.161,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 892,
+      "upscalingRatio": 0.9291666666666667,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 1280,
+      "dpr": 1,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-360-webp.webp",
+      "selectedProfileId": "work-cells-page-360-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-360-webp.webp",
+      "selectedVariantWidth": 360,
+      "selectedVariantHeight": 512,
+      "transferBytes": 90670,
+      "resourceBytes": 90370,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 360,
+      "naturalHeight": 512,
+      "renderedWidth": 318,
+      "renderedHeight": 452.156,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 318,
+      "upscalingRatio": 0.8833333333333333,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 1280,
+      "dpr": 1.5,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedProfileId": "work-cells-page-640-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedVariantWidth": 640,
+      "selectedVariantHeight": 909,
+      "transferBytes": 252506,
+      "resourceBytes": 252206,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 640,
+      "naturalHeight": 909,
+      "renderedWidth": 318,
+      "renderedHeight": 451.162,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 477,
+      "upscalingRatio": 0.7453125,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 1280,
+      "dpr": 2,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedProfileId": "work-cells-page-640-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedVariantWidth": 640,
+      "selectedVariantHeight": 909,
+      "transferBytes": 252506,
+      "resourceBytes": 252206,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 640,
+      "naturalHeight": 909,
+      "renderedWidth": 318,
+      "renderedHeight": 451.162,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 636,
+      "upscalingRatio": 0.99375,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 1440,
+      "dpr": 1,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-360-webp.webp",
+      "selectedProfileId": "work-cells-page-360-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-360-webp.webp",
+      "selectedVariantWidth": 360,
+      "selectedVariantHeight": 512,
+      "transferBytes": 90670,
+      "resourceBytes": 90370,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 360,
+      "naturalHeight": 512,
+      "renderedWidth": 318,
+      "renderedHeight": 452.156,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 318,
+      "upscalingRatio": 0.8833333333333333,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 1440,
+      "dpr": 2,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedProfileId": "work-cells-page-640-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedVariantWidth": 640,
+      "selectedVariantHeight": 909,
+      "transferBytes": 252506,
+      "resourceBytes": 252206,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 640,
+      "naturalHeight": 909,
+      "renderedWidth": 318,
+      "renderedHeight": 451.162,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 636,
+      "upscalingRatio": 0.99375,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 1088,
+      "dpr": 2,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-960-webp.webp",
+      "selectedProfileId": "work-cells-page-960-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-960-webp.webp",
+      "selectedVariantWidth": 960,
+      "selectedVariantHeight": 1364,
+      "transferBytes": 501448,
+      "resourceBytes": 501148,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 960,
+      "naturalHeight": 1364,
+      "renderedWidth": 446,
+      "renderedHeight": 633.161,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 892,
+      "upscalingRatio": 0.9291666666666667,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    },
+    {
+      "viewportWidth": 1089,
+      "dpr": 2,
+      "currentSrc": "http://127.0.0.1:4175/Family-Reading-Codex/public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedProfileId": "work-cells-page-640-webp",
+      "selectedPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/bd020737a455/food-poisoning__v02_page-004-work-cells-page-640-webp.webp",
+      "selectedVariantWidth": 640,
+      "selectedVariantHeight": 909,
+      "transferBytes": 252506,
+      "resourceBytes": 252206,
+      "cacheState": "NETWORK_MISS",
+      "naturalWidth": 640,
+      "naturalHeight": 909,
+      "renderedWidth": 238,
+      "renderedHeight": 337.662,
+      "renderedBox": "OBJECT_FIT_CONTENT_BOX",
+      "requiredPixelWidth": 476,
+      "upscalingRatio": 0.74375,
+      "transferredCandidates": 1,
+      "dimensionsTruthful": true,
+      "status": "PASS"
+    }
+  ],
+  "invariants": {
+    "originalSelections": 0,
+    "globalManifestRequests": 0,
+    "unexpectedShardIndexRequests": 0,
+    "unexpectedUpscaling": 0,
+    "requestFailures": 0,
+    "consoleErrors": 0,
+    "horizontalOverflow": 0
+  },
+  "lighthouse": {
+    "status": "PASS",
+    "runs": [
+      {
+        "status": "PASS",
+        "formFactor": "mobile",
+        "route": "#/science/work-cells/food-poisoning",
+        "performance": 82,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      {
+        "status": "PASS",
+        "formFactor": "desktop",
+        "route": "#/science/work-cells/food-poisoning",
+        "performance": 100,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      }
+    ]
+  }
+}

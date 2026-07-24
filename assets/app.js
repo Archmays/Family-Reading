@@ -1,10 +1,17 @@
-import { wireImageLightbox } from './a11y.js';
-import { createCarmelaCompanionViewModel } from './carmela-companion.js';
-import { createContentLoader } from './content-loader.js';
+import {
+  clearResponsiveImageCandidates,
+  wireImageLightbox,
+} from './a11y.js?v=fr-p5-20260724';
+import { createCarmelaCompanionViewModel } from './carmela-companion.js?v=fr-p5-20260724';
+import { createContentLoader } from './content-loader.js?v=fr-p5-20260724';
+import {
+  createMediaResolver,
+  mediaSizes,
+} from './media-resolver.js?v=fr-p5-20260724';
 import {
   createScienceTopicViewModel,
   renderScienceTopicAtlas,
-} from './science-companion.js';
+} from './science-companion.js?v=fr-p5-20260724';
 
 const CARMELA_SERIES_SLUG = 'carmela-season-1';
 const WORK_CELLS_SERIES_SLUG = 'work-cells';
@@ -13,6 +20,10 @@ const main = document.querySelector('#main-content');
 const breadcrumb = document.querySelector('#breadcrumb');
 const routeAnnouncer = document.querySelector('#route-announcer');
 const skipLink = document.querySelector('.skip-link');
+const expectedCanonicalManifestSha256 = document
+  .querySelector('meta[name="fr-p5-media-manifest-sha256"]')
+  ?.content
+  ?.trim() ?? '';
 let model = {
   runtimeIndex: null,
   books: [],
@@ -24,6 +35,7 @@ let cleanupView = () => {};
 let navigationController = null;
 let navigationGeneration = 0;
 const routeModelCache = new Map();
+let mediaResolver = createMediaResolver(null, { sitePath });
 
 const sectionNav = [
   ['overview', '快速了解'],
@@ -44,7 +56,15 @@ const scienceSectionNav = [
 ];
 
 function sitePath(resourcePath) {
-  return encodeURI(resourcePath.replace(/^\.?\//, ''));
+  const normalized = resourcePath.replace(/^\.?\//, '');
+  const queryOffset = normalized.indexOf('?');
+  const pathname = queryOffset === -1 ? normalized : normalized.slice(0, queryOffset);
+  const query = queryOffset === -1 ? '' : normalized.slice(queryOffset + 1);
+  const encodedPathname = pathname
+    .split('/')
+    .map((segment) => encodeURIComponent(segment))
+    .join('/');
+  return query ? `${encodedPathname}?${query}` : encodedPathname;
 }
 
 function html(value) {
@@ -56,15 +76,53 @@ function html(value) {
     .replaceAll("'", '&#039;');
 }
 
-async function fetchJson(resourcePath, { signal } = {}) {
-  const response = await fetch(sitePath(resourcePath), { signal });
+function lightboxDataAttributes(sourcePath, role) {
+  const media = mediaResolver.presentation(sourcePath, { role });
+  if (!media.available) return '';
+  const attributes = [
+    ['data-lightbox-src', media.fallback.src],
+    ['data-lightbox-sizes', media.sizes],
+    ['data-lightbox-width', media.fallback.width],
+    ['data-lightbox-height', media.fallback.height],
+    ['data-lightbox-fallback-format', media.fallback.format],
+    ...media.sources
+      .filter((source) => /^[a-z0-9]+$/.test(source.format))
+      .map((source) => [`data-lightbox-srcset-${source.format}`, source.srcset]),
+  ];
+  return attributes
+    .filter(([, value]) => value !== null && value !== undefined && value !== '')
+    .map(([name, value]) => `${name}="${html(value)}"`)
+    .join(' ');
+}
+
+function responseError(resourcePath, response) {
+  const error = new Error(`Cannot load ${resourcePath}`);
+  error.status = response.status;
+  if (response.status === 404 || response.status === 410) error.code = 'RESOURCE_NOT_FOUND';
+  return error;
+}
+
+async function fetchJson(resourcePath, { signal, cache = 'default' } = {}) {
+  const response = await fetch(sitePath(resourcePath), { signal, cache });
   if (!response.ok) {
-    throw new Error(`Cannot load ${resourcePath}`);
+    throw responseError(resourcePath, response);
   }
   return response.json();
 }
 
-const contentLoader = createContentLoader({ fetchJson });
+async function fetchBytes(resourcePath, { signal, cache = 'default' } = {}) {
+  const response = await fetch(sitePath(resourcePath), { signal, cache });
+  if (!response.ok) {
+    throw responseError(resourcePath, response);
+  }
+  return new Uint8Array(await response.arrayBuffer());
+}
+
+const contentLoader = createContentLoader({
+  fetchJson,
+  fetchBytes,
+  expectedCanonicalManifestSha256,
+});
 
 function runtimeSeries(seriesSlug) {
   return model.runtimeIndex?.series?.find((item) => item.seriesSlug === seriesSlug) ?? null;
@@ -97,7 +155,12 @@ function bookCard(book, compact = false) {
   return `
     <article class="book-card${compact ? ' book-card-compact' : ''}">
       <div class="cover-frame">
-        <img src="${sitePath(book.cover)}" alt="${html(book.title)}封面" loading="lazy">
+        ${mediaResolver.picture(book.cover, {
+          role: 'carmela-series-cover',
+          alt: `${book.title}封面`,
+          loading: 'lazy',
+          decoding: 'async',
+        })}
         <span class="cover-fallback">封面图片暂时无法显示</span>
       </div>
       <div class="card-body">
@@ -116,11 +179,20 @@ function bookCard(book, compact = false) {
 }
 
 function seriesEntryCard({ title, description, href, typeLabel, coverImage, actionLabel, domain }) {
+  const mediaRole = domain === 'science'
+    ? 'work-cells-series-thumbnail'
+    : 'carmela-series-cover';
   return `
     <article class="series-entry-card series-entry-card--${html(domain)}">
       <a class="series-entry-link" href="${href}" aria-label="进入${html(title)}">
         <div class="series-entry-cover${coverImage ? '' : ' cover-missing'}">
-          ${coverImage ? `<img src="${sitePath(coverImage)}" alt="${html(title)}入口图" loading="lazy">` : ''}
+          ${coverImage ? mediaResolver.picture(coverImage, {
+            role: mediaRole,
+            alt: `${title}入口图`,
+            sizes: mediaSizes(mediaRole, 'home-series-entry'),
+            loading: 'lazy',
+            decoding: 'async',
+          }) : ''}
           <span class="cover-fallback">入口图片暂时无法显示</span>
         </div>
         <div class="series-entry-body">
@@ -277,7 +349,12 @@ function scienceTopicCard(scienceSeries, topic, returnSection = '') {
   return `
     <article class="topic-card">
       <div class="topic-thumbnail${thumbnail ? '' : ' thumbnail-missing'}">
-        ${thumbnail ? `<img src="${sitePath(thumbnail)}" alt="${html(topic.displayTitle)}页面缩略图" loading="lazy">` : ''}
+        ${thumbnail ? mediaResolver.picture(thumbnail, {
+          role: 'work-cells-series-thumbnail',
+          alt: `${topic.displayTitle}页面缩略图`,
+          loading: 'lazy',
+          decoding: 'async',
+        }) : ''}
         <span class="cover-fallback">主题图片暂时无法显示</span>
       </div>
       <div class="topic-card-body">
@@ -309,23 +386,27 @@ function CarmelaMediaThumbnail(book, mediaId, group, index) {
   const contextAlt = media.kind === 'explanation'
     ? `${book.identity?.title ?? book.title}：${contextLabel}`
     : media.alt;
-  const src = sitePath(media.absolutePath);
+  const previewRole = media.kind === 'explanation'
+    ? 'carmela-explanation-preview'
+    : 'carmela-page-preview';
+  const lightboxAttributes = lightboxDataAttributes(media.absolutePath, 'carmela-lightbox');
+  const preview = mediaResolver.picture(media.absolutePath, {
+    role: previewRole,
+    alt: contextAlt,
+    loading: 'lazy',
+    decoding: 'async',
+  });
   return `
     <button
       class="page-thumbnail media-kind-${html(media.kind)}"
       type="button"
-      data-lightbox-src="${html(src)}"
+      ${lightboxAttributes}
       data-lightbox-alt="${html(contextAlt)}"
       data-lightbox-group="${html(group.id)}"
       data-media-id="${html(media.id)}"
       aria-label="放大查看${html(contextLabel)}，${html(position)}"
     >
-      <img
-        src="${html(src)}"
-        alt="${html(contextAlt)}"
-        loading="lazy"
-        decoding="async"
-      >
+      ${preview}
       <span>${html(contextLabel)}</span>
     </button>
   `;
@@ -373,15 +454,21 @@ function ExplanationImages(book, item) {
 
 function ImageLightbox() {
   return `
-    <div class="image-lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-labelledby="lightbox-title" tabindex="-1">
+    <div class="image-lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-describedby="lightbox-caption" aria-busy="false" tabindex="-1">
       <div class="lightbox-backdrop" aria-hidden="true"></div>
       <div class="lightbox-panel" role="document">
         <h2 id="lightbox-title" class="lightbox-title">页面图片放大查看</h2>
         <button class="lightbox-close" type="button" data-lightbox-close data-lightbox-close-button aria-label="关闭放大图">关闭</button>
         <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="上一张">上一张</button>
-        <img data-lightbox-image alt="" hidden>
+        <picture class="lightbox-picture" data-lightbox-picture hidden>
+          <source type="image/avif" data-lightbox-source="avif">
+          <source type="image/webp" data-lightbox-source="webp">
+          <source type="image/jpeg" data-lightbox-source="jpeg">
+          <source type="image/png" data-lightbox-source="png">
+          <img data-lightbox-image alt="" hidden>
+        </picture>
         <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="下一张">下一张</button>
-        <p class="lightbox-caption" data-lightbox-caption></p>
+        <p id="lightbox-caption" class="lightbox-caption" data-lightbox-caption role="status" aria-live="polite" aria-atomic="true"></p>
       </div>
     </div>
   `;
@@ -722,7 +809,13 @@ function bookHero(book) {
   return `
     <section class="carmela-hero" aria-labelledby="book-hero-title">
       <div class="carmela-hero-cover cover-frame${identity.cover ? '' : ' cover-missing'}">
-        ${identity.cover ? `<img src="${html(sitePath(identity.cover))}" alt="${html(identity.title)}封面">` : ''}
+        ${identity.cover ? mediaResolver.picture(identity.cover, {
+          role: 'carmela-book-cover',
+          alt: `${identity.title}封面`,
+          loading: 'eager',
+          decoding: 'async',
+          fetchPriority: 'high',
+        }) : ''}
         <span class="cover-fallback">封面图片暂时无法显示</span>
       </div>
       <div class="carmela-hero-copy">
@@ -781,6 +874,7 @@ function scienceTopicPage(_scienceSeries, topic) {
   const viewModel = createScienceTopicViewModel(topic);
   return renderScienceTopicAtlas(viewModel, {
     thumbnailPath: topic.thumbnailPath,
+    mediaResolver,
   });
 }
 
@@ -876,10 +970,17 @@ function workCellsRuntimeModel(context) {
   };
 }
 
+function routeData(model, context = null) {
+  return {
+    model,
+    mediaShard: context?.mediaShard ?? null,
+  };
+}
+
 function routeLoadPlan(route) {
   const noContent = {
     key: `invalid:${location.hash}`,
-    load: async () => emptyRuntimeModel(),
+    load: async () => routeData(emptyRuntimeModel()),
   };
 
   if (route.view === 'home') {
@@ -887,7 +988,10 @@ function routeLoadPlan(route) {
       key: 'home',
       load: async (options) => {
         const context = await contentLoader.loadHome(options);
-        return { ...emptyRuntimeModel(), runtimeIndex: context.index };
+        return routeData(
+          { ...emptyRuntimeModel(), runtimeIndex: context.index },
+          context,
+        );
       },
     };
   }
@@ -897,17 +1001,19 @@ function routeLoadPlan(route) {
     if (route.seriesSlug === CARMELA_SERIES_SLUG) {
       return {
         key: `series:${CARMELA_SERIES_SLUG}`,
-        load: async (options) => carmelaRuntimeModel(
-          await contentLoader.loadCarmelaSeries(options),
-        ),
+        load: async (options) => {
+          const context = await contentLoader.loadCarmelaSeries(options);
+          return routeData(carmelaRuntimeModel(context), context);
+        },
       };
     }
     if (route.seriesSlug === WORK_CELLS_SERIES_SLUG) {
       return {
         key: `series:${WORK_CELLS_SERIES_SLUG}`,
-        load: async (options) => workCellsRuntimeModel(
-          await contentLoader.loadWorkCellsSeries(options),
-        ),
+        load: async (options) => {
+          const context = await contentLoader.loadWorkCellsSeries(options);
+          return routeData(workCellsRuntimeModel(context), context);
+        },
       };
     }
     return noContent;
@@ -919,16 +1025,18 @@ function routeLoadPlan(route) {
     if (sectionIsInvalid) {
       return {
         key: `series:${CARMELA_SERIES_SLUG}`,
-        load: async (options) => carmelaRuntimeModel(
-          await contentLoader.loadCarmelaSeries(options),
-        ),
+        load: async (options) => {
+          const context = await contentLoader.loadCarmelaSeries(options);
+          return routeData(carmelaRuntimeModel(context), context);
+        },
       };
     }
     return {
       key: `book:${route.slug}`,
-      load: async (options) => carmelaRuntimeModel(
-        await contentLoader.loadCarmelaBook(route.slug, options),
-      ),
+      load: async (options) => {
+        const context = await contentLoader.loadCarmelaBook(route.slug, options);
+        return routeData(carmelaRuntimeModel(context), context);
+      },
     };
   }
 
@@ -943,16 +1051,18 @@ function routeLoadPlan(route) {
     if (sectionIsInvalid) {
       return {
         key: `series:${WORK_CELLS_SERIES_SLUG}`,
-        load: async (options) => workCellsRuntimeModel(
-          await contentLoader.loadWorkCellsSeries(options),
-        ),
+        load: async (options) => {
+          const context = await contentLoader.loadWorkCellsSeries(options);
+          return routeData(workCellsRuntimeModel(context), context);
+        },
       };
     }
     return {
       key: `science:${WORK_CELLS_SERIES_SLUG}:${route.slug}`,
-      load: async (options) => workCellsRuntimeModel(
-        await contentLoader.loadWorkCellsTopic(route.slug, options),
-      ),
+      load: async (options) => {
+        const context = await contentLoader.loadWorkCellsTopic(route.slug, options);
+        return routeData(workCellsRuntimeModel(context), context);
+      },
     };
   }
 
@@ -1012,10 +1122,9 @@ function wireEvidenceDisclosures(signal) {
 
   return () => {
     disclosures.forEach((disclosure) => {
-      disclosure.querySelectorAll('[data-media-mount] img').forEach((image) => {
-        image.removeAttribute('src');
-      });
-      disclosure.querySelector('[data-media-mount]')?.replaceChildren();
+      const mount = disclosure.querySelector('[data-media-mount]');
+      clearResponsiveImageCandidates(mount);
+      mount?.replaceChildren();
       delete disclosure.dataset.mediaMounted;
     });
   };
@@ -1595,7 +1704,9 @@ async function navigate() {
   }
 
   if (routeModelCache.has(plan.key)) {
-    model = routeModelCache.get(plan.key);
+    const cached = routeModelCache.get(plan.key);
+    model = cached.model;
+    mediaResolver = createMediaResolver(cached.mediaShard, { sitePath });
     currentDataKey = plan.key;
     renderRoute(route);
     return;
@@ -1605,10 +1716,11 @@ async function navigate() {
   navigationController = controller;
   showRouteLoading(route);
   try {
-    const nextModel = await plan.load({ signal: controller.signal });
+    const next = await plan.load({ signal: controller.signal });
     if (controller.signal.aborted || generation !== navigationGeneration) return;
-    routeModelCache.set(plan.key, nextModel);
-    model = nextModel;
+    if (next.mediaShard !== null) routeModelCache.set(plan.key, next);
+    model = next.model;
+    mediaResolver = createMediaResolver(next.mediaShard, { sitePath });
     currentDataKey = plan.key;
     navigationController = null;
     renderRoute(route);

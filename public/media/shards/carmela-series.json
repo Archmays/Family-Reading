@@ -1,0 +1,1128 @@
+{
+  "schemaVersion": 1,
+  "generatorVersion": "fr-p5-media-shards/1",
+  "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+  "canonicalManifestPath": "public/media/media-manifest.json",
+  "canonicalManifest": {
+    "path": "public/media/media-manifest.json",
+    "bytes": 3767069,
+    "sha256": "b292f10e698f30e51ae0f4e27935a8d0c551f286b3b3d5f0a4b1d74ec5c763d8",
+    "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+    "sources": 778,
+    "variants": 2735
+  },
+  "route": {
+    "id": "carmela-series",
+    "kind": "carmela-series"
+  },
+  "media": [
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我不是胆小鬼/pages/001.png",
+      "referenceHash": "facf1d660ab18bb63e9450f6fc0285097e50e6ebbc8ae50aea6557c1333508a2",
+      "referenceStoredWidth": 1125,
+      "referenceStoredHeight": 1500,
+      "referenceWidth": 1125,
+      "referenceHeight": 1500,
+      "referenceBytes": 404799,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我不是胆小鬼/pages/001.png",
+      "sourceHash": "facf1d660ab18bb63e9450f6fc0285097e50e6ebbc8ae50aea6557c1333508a2",
+      "sourceStoredWidth": 1125,
+      "sourceStoredHeight": 1500,
+      "sourceWidth": 1125,
+      "sourceHeight": 1500,
+      "sourceBytes": 404799,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/fa/cf1d660ab18b/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/fa/cf1d660ab18b/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/fa/cf1d660ab18b/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/fa/cf1d660ab18b/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 320,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 8034,
+          "sha256": "ed9e4f73e337369c555961694aa403f2db60bcd687c3617d6c899d90ff76b1c5",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "facf1d660ab18bb63e9450f6fc0285097e50e6ebbc8ae50aea6557c1333508a2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/fa/cf1d660ab18b/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 640,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 22290,
+          "sha256": "51bb8bc8e1a343702a00d907d0c292b15976ccf9b4181e487c1a1fa8914f8647",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "facf1d660ab18bb63e9450f6fc0285097e50e6ebbc8ae50aea6557c1333508a2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我不要被吃掉/pages/001.png",
+      "referenceHash": "910873712397ff3d636bd84e2830c25ea2c9ec118b78dce3fad6b8664bf94bdc",
+      "referenceStoredWidth": 944,
+      "referenceStoredHeight": 1125,
+      "referenceWidth": 944,
+      "referenceHeight": 1125,
+      "referenceBytes": 1273340,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我不要被吃掉/pages/001.png",
+      "sourceHash": "910873712397ff3d636bd84e2830c25ea2c9ec118b78dce3fad6b8664bf94bdc",
+      "sourceStoredWidth": 944,
+      "sourceStoredHeight": 1125,
+      "sourceWidth": 944,
+      "sourceHeight": 1125,
+      "sourceBytes": 1273340,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/91/0873712397ff/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/91/0873712397ff/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/91/0873712397ff/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/91/0873712397ff/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 286,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 20172,
+          "sha256": "04020a0b9faa4bcee9f3d59a70648e2e01c1d79bca31f1ba81815edd6c8cf36f",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "910873712397ff3d636bd84e2830c25ea2c9ec118b78dce3fad6b8664bf94bdc",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/91/0873712397ff/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 572,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 62148,
+          "sha256": "96fbbf965360e03ef8596f8fcfe9ba4d2ee74fd7516e6599b1b81c46a714c39e",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "910873712397ff3d636bd84e2830c25ea2c9ec118b78dce3fad6b8664bf94bdc",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我去找回太阳/pages/001.png",
+      "referenceHash": "e41c7b81ec39f2fd26110703fef49bd541c45d5429d10a87cf82afc082011a16",
+      "referenceStoredWidth": 953,
+      "referenceStoredHeight": 1125,
+      "referenceWidth": 953,
+      "referenceHeight": 1125,
+      "referenceBytes": 1143372,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我去找回太阳/pages/001.png",
+      "sourceHash": "e41c7b81ec39f2fd26110703fef49bd541c45d5429d10a87cf82afc082011a16",
+      "sourceStoredWidth": 953,
+      "sourceStoredHeight": 1125,
+      "sourceWidth": 953,
+      "sourceHeight": 1125,
+      "sourceBytes": 1143372,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/e4/1c7b81ec39f2/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/e4/1c7b81ec39f2/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/e4/1c7b81ec39f2/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e4/1c7b81ec39f2/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 283,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 20452,
+          "sha256": "63ac4a809e0fb765afda7c1e011f50b65cc7764d809da56cec7f2e88188187b2",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "e41c7b81ec39f2fd26110703fef49bd541c45d5429d10a87cf82afc082011a16",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e4/1c7b81ec39f2/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 567,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 63932,
+          "sha256": "d5dcd0ec0e913cc634ba330c0299e77aaf5d3f55a3dd9d16e49bc6229e597636",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "e41c7b81ec39f2fd26110703fef49bd541c45d5429d10a87cf82afc082011a16",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我好喜欢她/pages/001.png",
+      "referenceHash": "f9c0857d8ff983b345a77b864bf61ae37f8d9c110a4d5f87174a2cf2c1959eb2",
+      "referenceStoredWidth": 940,
+      "referenceStoredHeight": 1125,
+      "referenceWidth": 940,
+      "referenceHeight": 1125,
+      "referenceBytes": 1456855,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我好喜欢她/pages/001.png",
+      "sourceHash": "f9c0857d8ff983b345a77b864bf61ae37f8d9c110a4d5f87174a2cf2c1959eb2",
+      "sourceStoredWidth": 940,
+      "sourceStoredHeight": 1125,
+      "sourceWidth": 940,
+      "sourceHeight": 1125,
+      "sourceBytes": 1456855,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/f9/c0857d8ff983/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/f9/c0857d8ff983/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/f9/c0857d8ff983/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/f9/c0857d8ff983/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 287,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 25172,
+          "sha256": "8731487623baeeefd87e08ffc620149a9dba4441dedf0d047240043e5b13f3fb",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "f9c0857d8ff983b345a77b864bf61ae37f8d9c110a4d5f87174a2cf2c1959eb2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/f9/c0857d8ff983/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 574,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 86094,
+          "sha256": "cc2fb112a4414cf41e90d10af02c0eb73cc5b7558d0de6dd67798c4d342007f2",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "f9c0857d8ff983b345a77b864bf61ae37f8d9c110a4d5f87174a2cf2c1959eb2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我想去看海/pages/001.png",
+      "referenceHash": "3a080efe76fce2c2bcd4743f15b6abd01d40f75465162141ce293422ddaa7a59",
+      "referenceStoredWidth": 815,
+      "referenceStoredHeight": 1017,
+      "referenceWidth": 815,
+      "referenceHeight": 1017,
+      "referenceBytes": 646851,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我想去看海/pages/001.png",
+      "sourceHash": "3a080efe76fce2c2bcd4743f15b6abd01d40f75465162141ce293422ddaa7a59",
+      "sourceStoredWidth": 815,
+      "sourceStoredHeight": 1017,
+      "sourceWidth": 815,
+      "sourceHeight": 1017,
+      "sourceBytes": 646851,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 299,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 17652,
+          "sha256": "d2165dfa16fc8465fe21df8de551b6f94bbf389e58ccf370d848a063add68656",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "3a080efe76fce2c2bcd4743f15b6abd01d40f75465162141ce293422ddaa7a59",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 599,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 48628,
+          "sha256": "8afa296d1db425fe405b97a6391b20f9d9513eb7a3aab7ab17790dad021e7e1f",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "3a080efe76fce2c2bcd4743f15b6abd01d40f75465162141ce293422ddaa7a59",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我想有个弟弟/pages/001.png",
+      "referenceHash": "7291d2467d3ae8a1513a7536e82782cad01577831ae2eb718e99f8073f34a472",
+      "referenceStoredWidth": 948,
+      "referenceStoredHeight": 1125,
+      "referenceWidth": 948,
+      "referenceHeight": 1125,
+      "referenceBytes": 892132,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我想有个弟弟/pages/001.png",
+      "sourceHash": "7291d2467d3ae8a1513a7536e82782cad01577831ae2eb718e99f8073f34a472",
+      "sourceStoredWidth": 948,
+      "sourceStoredHeight": 1125,
+      "sourceWidth": 948,
+      "sourceHeight": 1125,
+      "sourceBytes": 892132,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/72/91d2467d3ae8/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/72/91d2467d3ae8/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/72/91d2467d3ae8/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/72/91d2467d3ae8/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 285,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 20394,
+          "sha256": "fe020c58e675ecbfa3e70bd52a11ba9af05e6ef2689dbaee264f0014f46fd0ff",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "7291d2467d3ae8a1513a7536e82782cad01577831ae2eb718e99f8073f34a472",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/72/91d2467d3ae8/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 570,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 55750,
+          "sha256": "5b91cbc83629fb537960d9bd6b875897532b84e042337642f2a468c6ccf82b7b",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "7291d2467d3ae8a1513a7536e82782cad01577831ae2eb718e99f8073f34a472",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我想有颗星星/pages/001.png",
+      "referenceHash": "0fae2543be6a8d2adceed7a9371648d081cbc052f7cf2457f975b56277fd9f11",
+      "referenceStoredWidth": 850,
+      "referenceStoredHeight": 1067,
+      "referenceWidth": 850,
+      "referenceHeight": 1067,
+      "referenceBytes": 701093,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我想有颗星星/pages/001.png",
+      "sourceHash": "0fae2543be6a8d2adceed7a9371648d081cbc052f7cf2457f975b56277fd9f11",
+      "sourceStoredWidth": 850,
+      "sourceStoredHeight": 1067,
+      "sourceWidth": 850,
+      "sourceHeight": 1067,
+      "sourceBytes": 701093,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/ae2543be6a8d/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/ae2543be6a8d/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/ae2543be6a8d/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/ae2543be6a8d/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 301,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 20156,
+          "sha256": "d6ae52be0aae153bf703cacbf6ca7bebec9b23bb31dd6a7852f56cbe4ed570fe",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "0fae2543be6a8d2adceed7a9371648d081cbc052f7cf2457f975b56277fd9f11",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/0f/ae2543be6a8d/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 603,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 53764,
+          "sha256": "a4a94d58986b3a61ca17fc430e80773870e33ac57adf31c2d030d48ba678284c",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "0fae2543be6a8d2adceed7a9371648d081cbc052f7cf2457f975b56277fd9f11",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我爱小黑猫/pages/001.png",
+      "referenceHash": "f122f1a6af0a3b9e6ed7c85c9304052e8919cf331e5353521d59ae5eef69bfa4",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1056,
+      "referenceWidth": 1500,
+      "referenceHeight": 1056,
+      "referenceBytes": 1708373,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我爱小黑猫/pages/001.png",
+      "sourceHash": "f122f1a6af0a3b9e6ed7c85c9304052e8919cf331e5353521d59ae5eef69bfa4",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1056,
+      "sourceWidth": 1500,
+      "sourceHeight": 1056,
+      "sourceBytes": 1708373,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/f1/22f1a6af0a3b/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/f1/22f1a6af0a3b/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/f1/22f1a6af0a3b/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/f1/22f1a6af0a3b/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 169,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 17124,
+          "sha256": "567c050aed317acef6dd86d083dc67988eaca8a1c4ab30f11df8c01b25207de0",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "f122f1a6af0a3b9e6ed7c85c9304052e8919cf331e5353521d59ae5eef69bfa4",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/f1/22f1a6af0a3b/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 338,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 50634,
+          "sha256": "c84f5f36d581c7466551fc8d7d7a674ced681870ef255a7d773d8d7633aed1d5",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "f122f1a6af0a3b9e6ed7c85c9304052e8919cf331e5353521d59ae5eef69bfa4",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我爱平底锅/pages/001.png",
+      "referenceHash": "50ec1bf4ae6c8e10b6d0bc1c4255187fb301538a6af6d55adbefe597f0df92b3",
+      "referenceStoredWidth": 2100,
+      "referenceStoredHeight": 1575,
+      "referenceWidth": 2100,
+      "referenceHeight": 1575,
+      "referenceBytes": 2644940,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我爱平底锅/pages/001.png",
+      "sourceHash": "50ec1bf4ae6c8e10b6d0bc1c4255187fb301538a6af6d55adbefe597f0df92b3",
+      "sourceStoredWidth": 2100,
+      "sourceStoredHeight": 1575,
+      "sourceWidth": 2100,
+      "sourceHeight": 1575,
+      "sourceBytes": 2644940,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/ec1bf4ae6c8e/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/ec1bf4ae6c8e/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/ec1bf4ae6c8e/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/ec1bf4ae6c8e/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 180,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 11742,
+          "sha256": "47dc331279ec63adde03d49cc50075460793388dded7f33e0e9dc4893c1ed8da",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "50ec1bf4ae6c8e10b6d0bc1c4255187fb301538a6af6d55adbefe597f0df92b3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/50/ec1bf4ae6c8e/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 360,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 39552,
+          "sha256": "32d5759fef872bd39769e0e60e021e26d1a3d073a3e3ce84374f5672ce81abdd",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "50ec1bf4ae6c8e10b6d0bc1c4255187fb301538a6af6d55adbefe597f0df92b3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我能打败怪兽/pages/001.png",
+      "referenceHash": "bc37d77438cb737c8a6b21780a55067037dcea5d00c3d71414e07fcc8e528352",
+      "referenceStoredWidth": 939,
+      "referenceStoredHeight": 1125,
+      "referenceWidth": 939,
+      "referenceHeight": 1125,
+      "referenceBytes": 1150232,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我能打败怪兽/pages/001.png",
+      "sourceHash": "bc37d77438cb737c8a6b21780a55067037dcea5d00c3d71414e07fcc8e528352",
+      "sourceStoredWidth": 939,
+      "sourceStoredHeight": 1125,
+      "sourceWidth": 939,
+      "sourceHeight": 1125,
+      "sourceBytes": 1150232,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/37d77438cb73/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/37d77438cb73/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/37d77438cb73/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/37d77438cb73/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 288,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 25184,
+          "sha256": "8868e1bbdd3c4dcc498d5ac5d78b611510c3a8d58f77f99dd224dc7c398a65bc",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "bc37d77438cb737c8a6b21780a55067037dcea5d00c3d71414e07fcc8e528352",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/37d77438cb73/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 575,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 74592,
+          "sha256": "51a0c36023ec90c89c69dc7fde6cb75b3531bda3a7f208d564b491e0691a8826",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "bc37d77438cb737c8a6b21780a55067037dcea5d00c3d71414e07fcc8e528352",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/001.png",
+      "referenceHash": "53b1d4807a77e81164835ee9d889558a5e138ce58da5d68eeef8945b98564869",
+      "referenceStoredWidth": 947,
+      "referenceStoredHeight": 1125,
+      "referenceWidth": 947,
+      "referenceHeight": 1125,
+      "referenceBytes": 1345333,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/001.png",
+      "sourceHash": "53b1d4807a77e81164835ee9d889558a5e138ce58da5d68eeef8945b98564869",
+      "sourceStoredWidth": 947,
+      "sourceStoredHeight": 1125,
+      "sourceWidth": 947,
+      "sourceHeight": 1125,
+      "sourceBytes": 1345333,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 285,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 23760,
+          "sha256": "232dab4ec2eb13963709bd728e1f02036cea6105430518199d1cab74c96c4be3",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "53b1d4807a77e81164835ee9d889558a5e138ce58da5d68eeef8945b98564869",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 570,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 73444,
+          "sha256": "4e3f8242e2967d7d06b2da3d74d6329007811207ca4d754dd45e0b102053cc44",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "53b1d4807a77e81164835ee9d889558a5e138ce58da5d68eeef8945b98564869",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要救出贝里奥/pages/001.png",
+      "referenceHash": "8ca47fc167000cbc0fa40abdd04bd05d296c5f3f11399a6db432056de1443309",
+      "referenceStoredWidth": 951,
+      "referenceStoredHeight": 1125,
+      "referenceWidth": 951,
+      "referenceHeight": 1125,
+      "referenceBytes": 1307760,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要救出贝里奥/pages/001.png",
+      "sourceHash": "8ca47fc167000cbc0fa40abdd04bd05d296c5f3f11399a6db432056de1443309",
+      "sourceStoredWidth": 951,
+      "sourceStoredHeight": 1125,
+      "sourceWidth": 951,
+      "sourceHeight": 1125,
+      "sourceBytes": 1307760,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/8c/a47fc167000c/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/8c/a47fc167000c/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/8c/a47fc167000c/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/8c/a47fc167000c/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 284,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 28892,
+          "sha256": "6bc10228dbff4f8709cd9a4ebb3af06127dd9c7186bedc07687d52a2587b0f1a",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "8ca47fc167000cbc0fa40abdd04bd05d296c5f3f11399a6db432056de1443309",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/8c/a47fc167000c/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 568,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 87348,
+          "sha256": "a841c70f2c0eb1ec7294e3154c9eddcd6263c4e1e61291f5e67bd9096be39cad",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "8ca47fc167000cbc0fa40abdd04bd05d296c5f3f11399a6db432056de1443309",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "sources": 12,
+    "variants": 24
+  }
+}

@@ -770,7 +770,7 @@ test('Work Cells front end renders the runtime science atlas and canonical paren
   const appJs = readFileSync(path.join(rootDir, 'assets', 'app.js'), 'utf8');
   const scienceJs = readFileSync(path.join(rootDir, 'assets', 'science-companion.js'), 'utf8');
 
-  assert.match(appJs, /from '\.\/science-companion\.js'/);
+  assert.match(appJs, /from '\.\/science-companion\.js(?:\?[^']+)?'/);
   assert.match(appJs, /createScienceTopicViewModel\(topic\)/);
   assert.match(appJs, /renderScienceTopicAtlas\(viewModel/);
   assert.match(appJs, /\['science-parent-guidance', '家长共读'\]/);
@@ -1062,6 +1062,8 @@ test('app files do not introduce blocked product fields', () => {
 test('GitHub Pages deployment files and publishing rules are configured', () => {
   const packageJson = readJson(path.join(rootDir, 'package.json'));
   const buildScript = readFileSync(path.join(rootDir, 'scripts', 'build.mjs'), 'utf8');
+  const releasePlanScript = readFileSync(path.join(rootDir, 'scripts', 'media-release-plan.mjs'), 'utf8');
+  const releaseCopyScript = readFileSync(path.join(rootDir, 'scripts', 'copy-media-release-plan.mjs'), 'utf8');
   const workflowPath = path.join(rootDir, '.github', 'workflows', 'pages.yml');
   const readmePath = path.join(rootDir, 'README.md');
   const deploymentDocPath = path.join(rootDir, 'docs', 'github-pages-deployment.md');
@@ -1095,33 +1097,33 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
     'release verification should use the cross-platform orchestrator',
   );
   assert.match(buildScript, /\bdist\b/, 'build script should declare dist as the output directory');
-  assert.match(buildScript, /\bpublic\b/, 'build script should publish public app assets');
-  assert.match(buildScript, /\bassets\b/, 'build script should publish app assets');
-  assert.match(buildScript, /\bocr\b/, 'build script should explicitly exclude OCR intermediate files');
-  assert.match(buildScript, /\bsource\b/, 'build script should explicitly keep source material out of dist');
-  assert.match(buildScript, /publishedBookCount\s*=\s*12/, 'build script should publish the current twelve books');
-  assert.match(buildScript, /series\.books\.slice\(0,\s*publishedBookCount\)/, 'build script should avoid publishing unused book folders');
+  assert.match(buildScript, /loadMediaReleasePlan/, 'build should load the validated exact release plan');
+  assert.match(buildScript, /copyMediaReleasePlan/, 'build should copy only the exact release plan');
+  assert.doesNotMatch(buildScript, /copyTree|readdir/, 'build should not recursively copy application or media directories');
   assert.match(
-    buildScript,
-    /resolveCarmelaBookPaths\(\{[\s\S]*folder:\s*book\.folder/,
-    'build should contain every manifest-selected Carmela folder before reading or writing',
+    releasePlanScript,
+    /discoverRuntimeJsonClosure/,
+    'release planning should discover the runtime and Carmela JSON reference closure',
   );
-  assert.match(buildScript, /runtimeContentDir/, 'build script should publish generated runtime content');
-  assert.doesNotMatch(buildScript, /workCellsDraftDir|workCellsPageMapPath|copyPublishableData/, 'build should not publish Work Cells authoring JSON');
+  assert.match(releasePlanScript, /discoverApplicationFiles/, 'release planning should discover referenced app assets');
+  assert.match(releaseCopyScript, /source-private|data-private|task-scratch/, 'release plan validation should reject source, private and scratch roots');
   assert.equal(
-    buildScript.indexOf("runNodeGate('scripts/validate-public-repository.mjs')") < buildScript.indexOf('await rm(outputDir'),
+    buildScript.indexOf("runNodeGate('scripts/validate-public-repository.mjs')")
+      < buildScript.lastIndexOf('copyMediaReleasePlan({'),
     true,
     'public repository validation should fail before build copying starts',
   );
   assert.equal(
-    buildScript.indexOf("runNodeGate('scripts/generate-runtime-content.mjs', ['--check'])") < buildScript.indexOf('await rm(outputDir'),
+    buildScript.indexOf("runNodeGate('scripts/generate-runtime-content.mjs', ['--check'])")
+      < buildScript.lastIndexOf('copyMediaReleasePlan({'),
     true,
     'runtime staleness validation should fail before build copying starts',
   );
   assert.equal(
-    buildScript.indexOf("runNodeGate('scripts/audit-dist-assets.mjs')") > buildScript.indexOf("writeFile(path.join(outputDir, '.nojekyll')"),
+    buildScript.indexOf("runNodeGate('scripts/audit-dist-assets.mjs', ['--validated-inputs'])")
+      > buildScript.lastIndexOf('copyMediaReleasePlan({'),
     true,
-    'dist audit should run after the static output is complete',
+    'dist audit should run after the static output and reuse the already completed media validation',
   );
   assert.doesNotMatch(buildScript, /--test/, 'build should not repeat the full test suite');
 
@@ -1132,6 +1134,30 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
     releaseVerification,
     /scripts\/run-tests\.mjs/,
     'release verification should invoke the shared full-test entrypoint once',
+  );
+  assert.match(
+    releaseVerification,
+    /scripts\/validate-public-repository\.mjs/,
+    'release verification must run every precheck skipped by the validated build',
+  );
+  assert.equal(
+    releaseVerification.indexOf('scripts/validate-public-repository.mjs')
+      < releaseVerification.indexOf("scripts/build.mjs', '--validated-inputs"),
+    true,
+    'validated build reuse must occur only after the public repository gate',
+  );
+  assert.equal(
+    (releaseVerification.match(/scripts\/validate-responsive-media\.mjs/g) ?? []).length,
+    1,
+    'release verification should perform the expensive responsive media validation once',
+  );
+  assert.equal(
+    releaseVerification.indexOf('scripts/media-release-plan.mjs')
+      < releaseVerification.indexOf('scripts/validate-fr-p5-final-evidence.mjs')
+      && releaseVerification.indexOf('scripts/validate-fr-p5-final-evidence.mjs')
+        < releaseVerification.indexOf('scripts/run-tests.mjs'),
+    true,
+    'final route, visual and Pages evidence must run after media closure and before the one full test gate',
   );
   assert.equal(
     (releaseVerification.match(/scripts\/run-tests\.mjs/g) ?? []).length,
@@ -1163,12 +1189,15 @@ test('GitHub Pages deployment files and publishing rules are configured', () => 
   for (const action of [
     'actions/checkout@v5',
     'actions/setup-node@v5',
+    'actions/setup-python@v6',
     'actions/configure-pages@v6',
     'actions/upload-pages-artifact@v5',
     'actions/deploy-pages@v5',
   ]) {
     assert.match(workflow, new RegExp(action.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')), `workflow should use ${action}`);
   }
+  assert.match(workflow, /python-version:\s*['"]3\.12\.7['"]/);
+  assert.match(workflow, /Pillow==10\.4\.0/);
   assert.equal(
     workflow.indexOf('npm run verify:release') < workflow.indexOf('actions/upload-pages-artifact'),
     true,
@@ -1221,13 +1250,15 @@ test('Work Cells publishable media uses thumbnails and webp science station imag
   }
 });
 
-test('build script excludes full Work Cells page images from dist', () => {
+test('exact release planning excludes unreferenced Work Cells page images from dist', () => {
   const buildScript = readFileSync(path.join(rootDir, 'scripts', 'build.mjs'), 'utf8');
+  const auditScript = readFileSync(path.join(rootDir, 'scripts', 'audit-dist-assets.mjs'), 'utf8');
 
-  assert.match(buildScript, /excludedRelativeDirectories/);
-  assert.match(buildScript, /pages-by-volume/);
-  assert.match(buildScript, /page-thumbnails/);
-  assert.match(buildScript, /science-station/);
+  assert.match(buildScript, /copyMediaReleasePlan/);
+  assert.doesNotMatch(buildScript, /copyTree|pages-by-volume|page-thumbnails|science-station/);
+  assert.match(auditScript, /PAGES_BY_VOLUME/);
+  assert.match(auditScript, /MEDIA_CLOSURE_ORPHAN/);
+  assert.match(auditScript, /EXACT_RELEASE_PLAN_MISMATCH/);
 });
 
 test('dist asset audit script is available', () => {
@@ -1239,6 +1270,10 @@ test('dist asset audit script is available', () => {
 
   const auditScript = readFileSync(auditScriptPath, 'utf8');
   assert.match(auditScript, /warningLimitBytes/);
+  assert.match(auditScript, /FROZEN_DIST_BUDGET_BYTES/);
+  assert.match(auditScript, /FROZEN_PAGES_ARTIFACT_BUDGET_BYTES/);
+  assert.match(auditScript, /PAGES_ARTIFACT_PREUPLOAD_STATUS/);
+  assert.match(auditScript, /validateResponsiveMedia/);
   assert.match(auditScript, /largest directories/i);
   assert.match(auditScript, /largest files/i);
 });
@@ -1292,10 +1327,12 @@ test('private authoring metadata and OCR processing outputs stay ignored', () =>
 
 test('build and dist audit block animation source and private review assets', () => {
   const buildScript = readFileSync(path.join(rootDir, 'scripts', 'build.mjs'), 'utf8');
+  const releaseCopyScript = readFileSync(path.join(rootDir, 'scripts', 'copy-media-release-plan.mjs'), 'utf8');
   const auditScript = readFileSync(path.join(rootDir, 'scripts', 'audit-dist-assets.mjs'), 'utf8');
 
+  assert.match(buildScript, /copyMediaReleasePlan/, 'build should publish only the validated exact plan');
+  assert.doesNotMatch(buildScript, /copyTree|readdir/, 'build should not recursively copy a denylisted tree');
   for (const extension of ['.mp4', '.srt', '.vtt', '.ass', '.ssa', '.mov', '.m4v', '.webm']) {
-    assert.match(buildScript, new RegExp(`['"]\\${extension}['"]`), `build should exclude ${extension}`);
     assert.match(auditScript, new RegExp(extension.replace('.', '\\.')), `audit should detect ${extension}`);
   }
 
@@ -1309,10 +1346,12 @@ test('build and dist audit block animation source and private review assets', ()
     'transcript',
     'transcripts',
   ]) {
-    assert.match(buildScript, new RegExp(privateFolder), `build should exclude ${privateFolder}`);
     assert.match(auditScript, new RegExp(privateFolder), `audit should reject ${privateFolder}`);
   }
 
+  for (const forbiddenRoot of ['source/', 'source-private/', 'private/', 'data-private/', 'task-scratch/', 'reports/']) {
+    assert.match(releaseCopyScript, new RegExp(forbiddenRoot.replace('/', '\\/')), `release plan should reject ${forbiddenRoot}`);
+  }
   assert.match(auditScript, /forbiddenWorkCellsAudioPattern/, 'audit should detect Work Cells audio files without blocking all public audio');
   assert.match(auditScript, /topic-readable-transcripts/, 'audit should reject transcript review artifacts');
   assert.match(
@@ -1322,7 +1361,7 @@ test('build and dist audit block animation source and private review assets', ()
   );
   assert.match(
     auditScript,
-    /process\.exitCode\s*=\s*await runDistAudit\(\)/,
+    /process\.exitCode\s*=\s*await runDistAudit\(\{\s*inputsAlreadyValidated\s*\}\)/,
     'audit CLI should propagate the fail-closed result',
   );
 });

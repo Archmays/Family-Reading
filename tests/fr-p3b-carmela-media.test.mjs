@@ -315,7 +315,11 @@ test('P3B disclosures keep media inert until an opened non-print group is mounte
 
   assert.match(lightboxMarkup, /<img data-lightbox-image alt="" hidden>/);
   assert.doesNotMatch(lightboxMarkup, /<img[^>]*\ssrc=/);
-  assert.match(a11yJs, /function resetRenderedMedia\(\)[\s\S]*image\.removeAttribute\('src'\)[\s\S]*image\.hidden = true/);
+  assert.match(
+    a11yJs,
+    /function resetRenderedMedia\(\)[\s\S]*clearResponsiveImageCandidates\(picture \?\? image\)[\s\S]*image\.hidden = true/,
+  );
+  assert.match(a11yJs, /imageLoadController\?\.abort\(\)/);
 });
 
 test('P3B audio is idle by default, attaches only on intent, and covers recoverable states', () => {

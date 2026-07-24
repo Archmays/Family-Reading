@@ -1,0 +1,1448 @@
+{
+  "schemaVersion": 1,
+  "generatorVersion": "fr-p5-media-shards/1",
+  "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+  "canonicalManifestPath": "public/media/media-manifest.json",
+  "canonicalManifest": {
+    "path": "public/media/media-manifest.json",
+    "bytes": 3767069,
+    "sha256": "b292f10e698f30e51ae0f4e27935a8d0c551f286b3b3d5f0a4b1d74ec5c763d8",
+    "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+    "sources": 778,
+    "variants": 2735
+  },
+  "route": {
+    "id": "work-cells-topic/common-cold-syndrome",
+    "kind": "work-cells-topic",
+    "ownerId": "common-cold-syndrome"
+  },
+  "media": [
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-031.webp",
+      "referenceHash": "dab3d343b8759edfcd82aa4918e14e4af622a65f9791b5f2aa7e8da9e6a1c619",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 41106,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v03/common-cold-syndrome__v03_page-031.webp",
+      "sourceHash": "c7a0bfcc9454f4f0866c5a275f5bfd3784552dd44afff2711bbcf60a504a78e3",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 485832,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview",
+        "work-cells-series-thumbnail",
+        "work-cells-topic-hero"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/c7/a0bfcc9454f4/common-cold-syndrome__v03_page-031-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/c7/a0bfcc9454f4/common-cold-syndrome__v03_page-031-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/c7/a0bfcc9454f4/common-cold-syndrome__v03_page-031-work-cells-page-640-webp.webp",
+        "work-cells-series-thumbnail": "public/media/derived/9289331de034dddc25a6dc13428712ab/c7/a0bfcc9454f4/common-cold-syndrome__v03_page-031-work-cells-page-360-webp.webp",
+        "work-cells-topic-hero": "public/media/derived/9289331de034dddc25a6dc13428712ab/c7/a0bfcc9454f4/common-cold-syndrome__v03_page-031-work-cells-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c7/a0bfcc9454f4/common-cold-syndrome__v03_page-031-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 546680,
+          "sha256": "0ab36e5842d109a336942f60b660faee909760ac7e13f4d0832a2cff6332d877",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "c7a0bfcc9454f4f0866c5a275f5bfd3784552dd44afff2711bbcf60a504a78e3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c7/a0bfcc9454f4/common-cold-syndrome__v03_page-031-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 75266,
+          "sha256": "0037874c7b61d93338b9771a7b8e09c178bde688f3f8af3931ff34c11b7f5c9d",
+          "roles": [
+            "work-cells-manga-preview",
+            "work-cells-series-thumbnail",
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "c7a0bfcc9454f4f0866c5a275f5bfd3784552dd44afff2711bbcf60a504a78e3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c7/a0bfcc9454f4/common-cold-syndrome__v03_page-031-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 198288,
+          "sha256": "aeed794835131f233e33c2189e5d179c19a11dce189225a7d5dc69afdbd6a02c",
+          "roles": [
+            "work-cells-manga-preview",
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "c7a0bfcc9454f4f0866c5a275f5bfd3784552dd44afff2711bbcf60a504a78e3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c7/a0bfcc9454f4/common-cold-syndrome__v03_page-031-work-cells-page-240-webp.webp",
+          "width": 240,
+          "height": 341,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 35646,
+          "sha256": "c5f705a193ce37ac954771969f3ad3c7ac719b8c64b87a8fa6b87ccaa6acc4ee",
+          "roles": [
+            "work-cells-series-thumbnail"
+          ],
+          "sourceHash": "c7a0bfcc9454f4f0866c5a275f5bfd3784552dd44afff2711bbcf60a504a78e3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "work-cells-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c7/a0bfcc9454f4/common-cold-syndrome__v03_page-031-work-cells-page-960-webp.webp",
+          "width": 960,
+          "height": 1364,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 392178,
+          "sha256": "9a46e111f9839e77ab3fa40b24e58b6b187fbc9d30ed60d8968f04fc6b35e1f0",
+          "roles": [
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "c7a0bfcc9454f4f0866c5a275f5bfd3784552dd44afff2711bbcf60a504a78e3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-032.webp",
+      "referenceHash": "0a946e652bfe08ebc725bc7f8d4f35145222a69a06cfd1920f94f4c25cdad68e",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 34496,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v03/common-cold-syndrome__v03_page-032.webp",
+      "sourceHash": "1e0bfb98c0d3879f9ff6f4cc999228135ec007d39fd75db6642e9bb6357eedb7",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 483892,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/0bfb98c0d387/common-cold-syndrome__v03_page-032-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/0bfb98c0d387/common-cold-syndrome__v03_page-032-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/0bfb98c0d387/common-cold-syndrome__v03_page-032-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/0bfb98c0d387/common-cold-syndrome__v03_page-032-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 545124,
+          "sha256": "7d41e1e5992b0c32281bddb2777e46cca4cff4c3aa0b74fcbdd75b31b3b9a932",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "1e0bfb98c0d3879f9ff6f4cc999228135ec007d39fd75db6642e9bb6357eedb7",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/0bfb98c0d387/common-cold-syndrome__v03_page-032-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 66900,
+          "sha256": "8489ae76b481e563c3751acd681f66bcf5d606932c7e39318572322790174863",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "1e0bfb98c0d3879f9ff6f4cc999228135ec007d39fd75db6642e9bb6357eedb7",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/0bfb98c0d387/common-cold-syndrome__v03_page-032-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 178234,
+          "sha256": "d05efaa6517a1ecca1fa3cb5c1c99038c2ff9d6d1000fae2ee55497ff5868030",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "1e0bfb98c0d3879f9ff6f4cc999228135ec007d39fd75db6642e9bb6357eedb7",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-034.webp",
+      "referenceHash": "605fb54d14a2dc84da2acbfbc75dd3e74f2fed4c18b8c490fcf5736417fb348c",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 41206,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v03/common-cold-syndrome__v03_page-034.webp",
+      "sourceHash": "03a97757a01de1422fe4fcd2cc58466963f29cce4008c6420c710a17003624a3",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 589364,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/03/a97757a01de1/common-cold-syndrome__v03_page-034-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/03/a97757a01de1/common-cold-syndrome__v03_page-034-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/03/a97757a01de1/common-cold-syndrome__v03_page-034-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/03/a97757a01de1/common-cold-syndrome__v03_page-034-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 663324,
+          "sha256": "ff18332a606abf2392d8255abef62598dfe4503ee9abff9b914051f7f340d173",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "03a97757a01de1422fe4fcd2cc58466963f29cce4008c6420c710a17003624a3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/03/a97757a01de1/common-cold-syndrome__v03_page-034-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 77112,
+          "sha256": "9bbd6936d2d88adf28bd9fe0bb6fba3e8988fd296e3e4c3f28ed0f3e16b28189",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "03a97757a01de1422fe4fcd2cc58466963f29cce4008c6420c710a17003624a3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/03/a97757a01de1/common-cold-syndrome__v03_page-034-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 215640,
+          "sha256": "92d87b2bc2ee39b4f529197fad9cad4d01d46227439d76ad7aa3602c16138ce0",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "03a97757a01de1422fe4fcd2cc58466963f29cce4008c6420c710a17003624a3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-036.webp",
+      "referenceHash": "efd67e142d81da01c7264d4a42195736bed5306ef0ac4986af8a3f151e14871b",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 34878,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v03/common-cold-syndrome__v03_page-036.webp",
+      "sourceHash": "ad8879c44281b0c7f090c61c7c2f96386867b18fa97f1b4ed55903547e3b6711",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 545398,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/ad/8879c44281b0/common-cold-syndrome__v03_page-036-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/ad/8879c44281b0/common-cold-syndrome__v03_page-036-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/ad/8879c44281b0/common-cold-syndrome__v03_page-036-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/ad/8879c44281b0/common-cold-syndrome__v03_page-036-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 619470,
+          "sha256": "c0a78c9b00396cd51c0809f3ebbb59a3dfb83c54ea1410520d4a13258584a6c2",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "ad8879c44281b0c7f090c61c7c2f96386867b18fa97f1b4ed55903547e3b6711",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/ad/8879c44281b0/common-cold-syndrome__v03_page-036-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 70272,
+          "sha256": "de2c09d7680b6125047a567229a6b7f4958c35ed92657af74bc7d07d7ad1c72f",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "ad8879c44281b0c7f090c61c7c2f96386867b18fa97f1b4ed55903547e3b6711",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/ad/8879c44281b0/common-cold-syndrome__v03_page-036-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 194246,
+          "sha256": "39d414649924fc6d64d3f817aa912d27d3d6c8a8378b52ff21467d3f1983d36e",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "ad8879c44281b0c7f090c61c7c2f96386867b18fa97f1b4ed55903547e3b6711",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-041.webp",
+      "referenceHash": "3aa098264f46bfdf420abfba626b7ed85198ddbeb64ef981b0bcb0ff4ec4e0a3",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 45288,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v03/common-cold-syndrome__v03_page-041.webp",
+      "sourceHash": "bccad9384295d3440b121c5299b8834577f3ed717fb279f178c25f3617d23919",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 572458,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/cad9384295d3/common-cold-syndrome__v03_page-041-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/cad9384295d3/common-cold-syndrome__v03_page-041-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/cad9384295d3/common-cold-syndrome__v03_page-041-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/cad9384295d3/common-cold-syndrome__v03_page-041-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 650462,
+          "sha256": "38ac2ec50f1f5736b0f2a6509c13da076b00686f58fd72cee06572f8d29a5e63",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "bccad9384295d3440b121c5299b8834577f3ed717fb279f178c25f3617d23919",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/cad9384295d3/common-cold-syndrome__v03_page-041-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 82214,
+          "sha256": "5011eef248137332377340bcb9d900ab505e065403873b8d2b017b6bbc32717c",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "bccad9384295d3440b121c5299b8834577f3ed717fb279f178c25f3617d23919",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bc/cad9384295d3/common-cold-syndrome__v03_page-041-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 224324,
+          "sha256": "774a29559325a97f215d4523fc5244943af95faf2673567d337a6f275d60dd5a",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "bccad9384295d3440b121c5299b8834577f3ed717fb279f178c25f3617d23919",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-052.webp",
+      "referenceHash": "6f8785a955b50158cefd4e7209ee98ab5a9fee412ad264a6e382fc3aeef5d7f1",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 46108,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v03/common-cold-syndrome__v03_page-052.webp",
+      "sourceHash": "73e0e76a2d3fcec40e8d2c8b10ae94a0a15b6d0027ab5d2d42150c22c2c8583e",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 614494,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/73/e0e76a2d3fce/common-cold-syndrome__v03_page-052-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/73/e0e76a2d3fce/common-cold-syndrome__v03_page-052-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/73/e0e76a2d3fce/common-cold-syndrome__v03_page-052-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/73/e0e76a2d3fce/common-cold-syndrome__v03_page-052-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 691450,
+          "sha256": "1ef5f4bb5d1caaf7a44849ba74fda81a28cfb66244e5cfe1bb9dec738d13468d",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "73e0e76a2d3fcec40e8d2c8b10ae94a0a15b6d0027ab5d2d42150c22c2c8583e",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/73/e0e76a2d3fce/common-cold-syndrome__v03_page-052-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 84028,
+          "sha256": "4cf9668e46249037f9024b0dfd174112e8aecf77354ba9f161d81f8021216986",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "73e0e76a2d3fcec40e8d2c8b10ae94a0a15b6d0027ab5d2d42150c22c2c8583e",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/73/e0e76a2d3fce/common-cold-syndrome__v03_page-052-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 230038,
+          "sha256": "8897f51e36aee97f464be604c7448f9d3034be1aa2811ae97638db50fabf390a",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "73e0e76a2d3fcec40e8d2c8b10ae94a0a15b6d0027ab5d2d42150c22c2c8583e",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-053.webp",
+      "referenceHash": "ba13c921b38727bab6bf5516997cb9213cb4642aebb8bc8165c0c20694a1e6bc",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 44500,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v03/common-cold-syndrome__v03_page-053.webp",
+      "sourceHash": "90b527d9e9245f1d0ac7d5ca47954f3c4be712601e2ee9cabbae36a9fa8259c8",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 724204,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/b527d9e9245f/common-cold-syndrome__v03_page-053-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/b527d9e9245f/common-cold-syndrome__v03_page-053-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/b527d9e9245f/common-cold-syndrome__v03_page-053-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/b527d9e9245f/common-cold-syndrome__v03_page-053-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 814898,
+          "sha256": "d052cd7ca379fa107b6f05f802baaa0ce4c4206bd88ecd1e90c3821c479b1138",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "90b527d9e9245f1d0ac7d5ca47954f3c4be712601e2ee9cabbae36a9fa8259c8",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/b527d9e9245f/common-cold-syndrome__v03_page-053-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 85442,
+          "sha256": "ba5af811066a59b083cde33425d581f6cbb9c7d035b999fd2b142001a96dc1d2",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "90b527d9e9245f1d0ac7d5ca47954f3c4be712601e2ee9cabbae36a9fa8259c8",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/b527d9e9245f/common-cold-syndrome__v03_page-053-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 248948,
+          "sha256": "4869829f69b4d88071b1c744856378fc2a5c70f4c1ad9cb4d8367db8ada41f80",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "90b527d9e9245f1d0ac7d5ca47954f3c4be712601e2ee9cabbae36a9fa8259c8",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v03/common-cold-syndrome__v03_page-056.webp",
+      "referenceHash": "cf3a81ddb33a59b79ab94a3f7635e3e4211eb16a3b3e6e605f89b343f3e02687",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 35568,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v03/common-cold-syndrome__v03_page-056.webp",
+      "sourceHash": "37a5d5cc5a3c59c41ae09a2364733dcc52f26ab795a84cd9376c6b3b4ada2675",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 446568,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-manga-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/37/a5d5cc5a3c59/common-cold-syndrome__v03_page-056-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/37/a5d5cc5a3c59/common-cold-syndrome__v03_page-056-work-cells-lightbox-1440-webp.webp",
+        "work-cells-manga-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/37/a5d5cc5a3c59/common-cold-syndrome__v03_page-056-work-cells-page-640-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/37/a5d5cc5a3c59/common-cold-syndrome__v03_page-056-work-cells-lightbox-1440-webp.webp",
+          "width": 1126,
+          "height": 1600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 501324,
+          "sha256": "69b771c271bbdefb62211dcb1e36bc4580df8f766963ce2dc81bc70a1f97a3d4",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "37a5d5cc5a3c59c41ae09a2364733dcc52f26ab795a84cd9376c6b3b4ada2675",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/37/a5d5cc5a3c59/common-cold-syndrome__v03_page-056-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 66996,
+          "sha256": "453d7c0980906e04377bde7db5392a87d275b2e5d3310775a051cf9eb39a98a8",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "37a5d5cc5a3c59c41ae09a2364733dcc52f26ab795a84cd9376c6b3b4ada2675",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/37/a5d5cc5a3c59/common-cold-syndrome__v03_page-056-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 174062,
+          "sha256": "36e553a8d92d47181e7d323b463b7e636b21a779e35e94282b91ed2a076a54cf",
+          "roles": [
+            "work-cells-manga-preview"
+          ],
+          "sourceHash": "37a5d5cc5a3c59c41ae09a2364733dcc52f26ab795a84cd9376c6b3b4ada2675",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-01.webp",
+      "referenceHash": "98e0df833c3eef736436b6d9fe15cab35ac4fcfc17c7d1512f99fcf61095dbb3",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 182298,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-01.webp",
+      "sourceHash": "98e0df833c3eef736436b6d9fe15cab35ac4fcfc17c7d1512f99fcf61095dbb3",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 182298,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/98/e0df833c3eef/common-cold-syndrome-v2-station-01-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/98/e0df833c3eef/common-cold-syndrome-v2-station-01-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/98/e0df833c3eef/common-cold-syndrome-v2-station-01-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/98/e0df833c3eef/common-cold-syndrome-v2-station-01-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 242058,
+          "sha256": "042e120f4f7d13bd034eee8a6cc3a3b8c932bc4385caf30f68521de685e5cd2c",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "98e0df833c3eef736436b6d9fe15cab35ac4fcfc17c7d1512f99fcf61095dbb3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/98/e0df833c3eef/common-cold-syndrome-v2-station-01-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 62658,
+          "sha256": "40df42205bee5aeb5c3d2b212d357708522f1b6a6f5661e09fd1c6a111488fce",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "98e0df833c3eef736436b6d9fe15cab35ac4fcfc17c7d1512f99fcf61095dbb3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/98/e0df833c3eef/common-cold-syndrome-v2-station-01-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 111446,
+          "sha256": "a65db3fa181a8c40cf2aa85af68da274497930bbc035a1806bfa649d115e82b9",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "98e0df833c3eef736436b6d9fe15cab35ac4fcfc17c7d1512f99fcf61095dbb3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-02.webp",
+      "referenceHash": "7922cbd2f5b21272e6175ea8c31231d15fe7a17eb5cf3066fdd138f7fb2658ec",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 271128,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-02.webp",
+      "sourceHash": "7922cbd2f5b21272e6175ea8c31231d15fe7a17eb5cf3066fdd138f7fb2658ec",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 271128,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/79/22cbd2f5b212/common-cold-syndrome-v2-station-02-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/79/22cbd2f5b212/common-cold-syndrome-v2-station-02-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/79/22cbd2f5b212/common-cold-syndrome-v2-station-02-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/79/22cbd2f5b212/common-cold-syndrome-v2-station-02-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 349436,
+          "sha256": "4b635f7e1313d3ba2b56c90101657b65f2e08e0852ecb4437285a73dd096df62",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "7922cbd2f5b21272e6175ea8c31231d15fe7a17eb5cf3066fdd138f7fb2658ec",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/79/22cbd2f5b212/common-cold-syndrome-v2-station-02-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 89204,
+          "sha256": "10632f8a083f324adb62518e3eb5d094afeda66c59f7a75db3676aca88cd8fcb",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "7922cbd2f5b21272e6175ea8c31231d15fe7a17eb5cf3066fdd138f7fb2658ec",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/79/22cbd2f5b212/common-cold-syndrome-v2-station-02-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 167250,
+          "sha256": "ecd9171b7b1ed2aa64a262fd2c89c081672198e821df72294f9f46dc1693b502",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "7922cbd2f5b21272e6175ea8c31231d15fe7a17eb5cf3066fdd138f7fb2658ec",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-03.webp",
+      "referenceHash": "bbdb297fd9edf21097f5bf8390414e9669ffa1b13178067c1c5bfd18c2b402b0",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 222194,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-03.webp",
+      "sourceHash": "bbdb297fd9edf21097f5bf8390414e9669ffa1b13178067c1c5bfd18c2b402b0",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 222194,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/bb/db297fd9edf2/common-cold-syndrome-v2-station-03-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/bb/db297fd9edf2/common-cold-syndrome-v2-station-03-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/bb/db297fd9edf2/common-cold-syndrome-v2-station-03-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bb/db297fd9edf2/common-cold-syndrome-v2-station-03-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 316780,
+          "sha256": "b8ffccfb564337605f1914b966b4fcab8f659c52a2c5df7618ff780bad45daa0",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "bbdb297fd9edf21097f5bf8390414e9669ffa1b13178067c1c5bfd18c2b402b0",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bb/db297fd9edf2/common-cold-syndrome-v2-station-03-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 83860,
+          "sha256": "96592419c92631fdf56a1d837ea7189ae21fca979207f1ef7ab74ef4e1453eaa",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "bbdb297fd9edf21097f5bf8390414e9669ffa1b13178067c1c5bfd18c2b402b0",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bb/db297fd9edf2/common-cold-syndrome-v2-station-03-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 151510,
+          "sha256": "271f5bebfd82ab36b25b2e661147209e696a1b72842dc21f5b84acde095c0046",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "bbdb297fd9edf21097f5bf8390414e9669ffa1b13178067c1c5bfd18c2b402b0",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-04.webp",
+      "referenceHash": "c4ea65cca78b2810cf045295c1feeeb2a6b87204e55b8521bcb095c2272e3ee3",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 276620,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/assets/cells-at-work/science-station/common-cold-syndrome/common-cold-syndrome-v2-station-04.webp",
+      "sourceHash": "c4ea65cca78b2810cf045295c1feeeb2a6b87204e55b8521bcb095c2272e3ee3",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 276620,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-lightbox",
+        "work-cells-station-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/c4/ea65cca78b28/common-cold-syndrome-v2-station-04-work-cells-lightbox-1440-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/c4/ea65cca78b28/common-cold-syndrome-v2-station-04-work-cells-lightbox-1440-webp.webp",
+        "work-cells-station-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/c4/ea65cca78b28/common-cold-syndrome-v2-station-04-work-cells-station-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-lightbox-1440-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c4/ea65cca78b28/common-cold-syndrome-v2-station-04-work-cells-lightbox-1440-webp.webp",
+          "width": 1440,
+          "height": 1080,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 349054,
+          "sha256": "2a9c7994123e858fbe1122ee01bf56a40a5260d4aa8acf52cc98581abbd8805f",
+          "roles": [
+            "work-cells-lightbox"
+          ],
+          "sourceHash": "c4ea65cca78b2810cf045295c1feeeb2a6b87204e55b8521bcb095c2272e3ee3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "work-cells-station-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c4/ea65cca78b28/common-cold-syndrome-v2-station-04-work-cells-station-640-webp.webp",
+          "width": 640,
+          "height": 480,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 87774,
+          "sha256": "397ad2d8b0a28cbb5f261d2872fd8bb84d3c10ee21dfedcf464d62dbf612404f",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "c4ea65cca78b2810cf045295c1feeeb2a6b87204e55b8521bcb095c2272e3ee3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-station-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c4/ea65cca78b28/common-cold-syndrome-v2-station-04-work-cells-station-960-webp.webp",
+          "width": 960,
+          "height": 720,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 162454,
+          "sha256": "58c8df72b202cf596e4d20fa0841d78093082a442dface10e64db3b25fd9ae27",
+          "roles": [
+            "work-cells-station-preview"
+          ],
+          "sourceHash": "c4ea65cca78b2810cf045295c1feeeb2a6b87204e55b8521bcb095c2272e3ee3",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "sources": 12,
+    "variants": 38
+  }
+}

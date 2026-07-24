@@ -85,6 +85,10 @@ It must record:
 - representative visual-acceptance sample ids;
 - frozen dist and route budgets derived from real experiments.
 
+The accepted environment is Python 3.12.7, Pillow 10.4.0 and libwebp 1.3.2.
+The canonical accepted policy hash is
+`9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08`.
+
 No quality profile may be accepted only because it is smaller. Manga text, thin linework, color fidelity, alpha and lightbox readability are hard quality gates.
 
 ## Derivative generation
@@ -160,9 +164,9 @@ Validation fails on:
 - select variants by semantic role;
 - emit `<picture>`, `srcset`, `sizes`, width and height;
 - choose a role-appropriate largest path for lightbox;
-- safely fall back to the current original when no manifest entry is active.
+- fail closed without emitting a source-original URL when no validated derivative entry or semantic role is active.
 
-The module is not yet wired into the canonical renderer at the web checkpoint. Local Codex must first generate and validate the real manifest, measure its size, and decide the least-cost loading strategy. The accepted integration must not add a large global manifest request to routes that do not need it without evidence.
+The module is directly wired into the Carmela and Work Cells renderers. Canonical rendering uses derivative-only `<picture>` markup with centralized role `sizes`, intrinsic dimensions, stable aspect ratio and role-specific loading priority. Missing or invalid route media does not expose an original image URL.
 
 Allowed integration options include:
 
@@ -170,7 +174,31 @@ Allowed integration options include:
 2. deterministic owner shards generated from the canonical manifest;
 3. build-time projection into existing route payloads.
 
-The final choice must preserve route isolation and be documented with request/byte evidence.
+The accepted choice is deterministic owner shards:
+
+- one Home shard;
+- one Carmela series shard and 12 book shards;
+- one Work Cells series shard and 27 topic shards;
+- one compact index used by the runtime to bind each route shard to the canonical manifest and exact shard body hash.
+
+The 42 route shards contain exact canonical manifest entries. On a cold full navigation, the runtime fetches one no-store index and exactly one owner shard; validated index and shard data are coalesced in memory for warm SPA navigation. The 3,767,069-byte global manifest remains the canonical generation/build artifact with SHA-256 `b292f10e698f30e51ae0f4e27935a8d0c551f286b3b3d5f0a4b1d74ec5c763d8`, but is never requested by the browser.
+
+The runtime pins that canonical manifest SHA in HTML, validates index identity before route selection, and verifies the owner shard's exact bytes and SHA-256 with Web Crypto before parsing. Stable runtime JSON requests carry a release identity, index requests carry the manifest identity, and shard requests carry the shard identity. Failed index and route-shard loads are independently evicted and retryable. This preserves P4A route isolation without transferring the global manifest or another route's media.
+
+The materialized shard closure is exact:
+
+```text
+SHARD_INDEX_FILES: 1
+SHARD_INDEX_BYTES: 12527
+SHARD_INDEX_SHA256: 893d7817bf87379133b43a79e97050e5e729104149195f001655aeb37a8e4828
+OWNER_SHARD_FILES: 42
+OWNER_SHARD_BYTES: 4027421
+INDEX_AND_SHARD_BYTES: 4039948
+SOURCES_ACROSS_ROUTE_SHARDS: 820
+VARIANTS_ACROSS_ROUTE_SHARDS: 2898
+```
+
+Source and variant counts across shards intentionally exceed the canonical 778/2,735 totals because media shared by more than one route is copied into each owning route shard. The index binds every copy to the same canonical manifest SHA and exact owner-shard body hash.
 
 ## Release plan
 
@@ -182,11 +210,12 @@ The final choice must preserve route isolation and be documented with request/by
 - 12 declared Carmela audio files;
 - the media manifest;
 - manifest derivatives;
+- the deterministic shard index and 42 owner shards;
 - explicitly required fallbacks.
 
 `scripts/copy-media-release-plan.mjs` copies exactly that plan and audits missing/extra output.
 
-The web checkpoint does not replace `scripts/build.mjs`. Production build switches only after:
+Production `scripts/build.mjs` now consumes only the validated tracked release plan. The cutover occurred after:
 
 - real derivatives exist;
 - manifest validation passes;
@@ -195,7 +224,23 @@ The web checkpoint does not replace `scripts/build.mjs`. Production build switch
 - release plan is tracked/current;
 - fallback-original strategy is accepted.
 
-After cutover, recursive media-directory copying is forbidden.
+Recursive media-directory copying is no longer present and remains forbidden.
+
+The accepted release plan contains 2,857 unique files and 706,989,577 bytes:
+
+```text
+APPLICATION_FILES: 10 / 219110 B
+RUNTIME_JSON_FILES: 98 / 4686799 B
+MEDIA_SHARD_FILES: 43 / 4039948 B
+AUDIO_FILES: 12 / 85545615 B
+MEDIA_FILES: 2736 / 616538053 B
+DERIVATIVE_FILES: 2735 / 612770984 B
+FALLBACK_ORIGINALS: 0
+RELEASE_PLAN_UNIQUE_FILES: 2857
+RELEASE_PLAN_TOTAL_BYTES: 706989577
+```
+
+`mediaShardFiles` are a named subset of `runtimeJsonFiles`; the unique total does not double-count them. The final total is below the frozen 715,000,000-byte dist ceiling.
 
 ## Request and interaction invariants
 

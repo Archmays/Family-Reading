@@ -1,4 +1,5 @@
 import { createHash } from 'node:crypto';
+import { spawn } from 'node:child_process';
 import {
   mkdir,
   readFile,
@@ -31,6 +32,9 @@ const mediaScanRoots = Object.freeze([
   'public/assets/cells-at-work/page-thumbnails',
   'public/assets/cells-at-work/science-station',
 ]);
+const pillowInspectorPath = path.join(rootDir, 'scripts', 'inspect-media-images.py');
+const workCellsThumbnailRoot = 'public/assets/cells-at-work/page-thumbnails/';
+const workCellsHighResolutionRoot = 'public/assets/cells-at-work/pages-by-volume/';
 
 function parseArguments(argv) {
   const options = { mode: 'print', outputDir: null };
@@ -67,6 +71,58 @@ async function hashFile(repositoryPath) {
     bytes: bytes.length,
     sha256: createHash('sha256').update(bytes).digest('hex'),
   };
+}
+
+export async function inspectImagesWithPillow(repositoryPaths, {
+  pythonCommand = process.env.FR_P5_PYTHON || 'python',
+} = {}) {
+  const paths = sortedUnique(repositoryPaths.map((repositoryPath) => (
+    normalizeImagePath(repositoryPath, { label: 'Pillow inspection path' })
+  )));
+  return new Promise((resolve, reject) => {
+    const child = spawn(pythonCommand, [pillowInspectorPath], {
+      cwd: rootDir,
+      shell: false,
+      stdio: ['pipe', 'pipe', 'pipe'],
+      windowsHide: true,
+    });
+    const stdout = [];
+    const stderr = [];
+    child.stdout.on('data', (chunk) => stdout.push(chunk));
+    child.stderr.on('data', (chunk) => stderr.push(chunk));
+    child.once('error', (error) => {
+      reject(new Error(`Unable to start the FR-P5 Pillow inspector (${pythonCommand}): ${error.message}`));
+    });
+    child.once('close', (code) => {
+      const errorText = Buffer.concat(stderr).toString('utf8').trim();
+      if (code !== 0) {
+        reject(new Error(`FR-P5 Pillow inspection failed${errorText ? `: ${errorText}` : ` with exit code ${code}`}`));
+        return;
+      }
+      let result;
+      try {
+        result = JSON.parse(Buffer.concat(stdout).toString('utf8'));
+      } catch (error) {
+        reject(new Error(`FR-P5 Pillow inspector returned invalid JSON: ${error.message}`));
+        return;
+      }
+      if (
+        result?.schemaVersion !== 1
+        || typeof result.pillowVersion !== 'string'
+        || !Array.isArray(result.media)
+      ) {
+        reject(new Error('FR-P5 Pillow inspector returned an unsupported result shape.'));
+        return;
+      }
+      const returnedPaths = result.media.map((item) => item.path);
+      if (JSON.stringify(returnedPaths) !== JSON.stringify(paths)) {
+        reject(new Error('FR-P5 Pillow inspector did not return the exact requested path set in stable order.'));
+        return;
+      }
+      resolve(result);
+    });
+    child.stdin.end(JSON.stringify({ paths }));
+  });
 }
 
 function repositoryPathFromAbsolute(targetPath) {
@@ -377,15 +433,68 @@ async function materializeRegistry(registry, availablePaths) {
   const availableSet = new Set(availablePaths);
   const records = [];
   const missing = [];
-  for (const media of [...registry.values()].sort((left, right) => stableCompare(left.path, right.path))) {
-    let fileState = null;
+  const mediaItems = [...registry.values()].sort((left, right) => stableCompare(left.path, right.path));
+  const lineage = new Map(mediaItems.map((media) => {
+    const usesHighResolutionCounterpart = media.path.startsWith(workCellsThumbnailRoot);
+    const derivationPath = usesHighResolutionCounterpart
+      ? normalizeImagePath(`${workCellsHighResolutionRoot}${media.path.slice(workCellsThumbnailRoot.length)}`, {
+        label: 'Work Cells high-resolution derivation source',
+      })
+      : media.path;
+    return [media.path, {
+      kind: usesHighResolutionCounterpart ? 'work-cells-high-resolution-counterpart' : 'self',
+      path: derivationPath,
+    }];
+  }));
+  const allPaths = sortedUnique(mediaItems.flatMap((media) => [
+    media.path,
+    lineage.get(media.path).path,
+  ]));
+  const presentPaths = [];
+  const fileStates = new Map();
+  for (const mediaPath of allPaths) {
     try {
-      fileState = await hashFile(media.path);
+      const fileState = await hashFile(mediaPath);
+      presentPaths.push(mediaPath);
+      fileStates.set(mediaPath, fileState);
     } catch (error) {
       if (error.code !== 'ENOENT') throw error;
-      missing.push(media.path);
+    }
+  }
+  const inspection = await inspectImagesWithPillow(presentPaths);
+  const metadataByPath = new Map(inspection.media.map((metadata) => [metadata.path, metadata]));
+  for (const media of mediaItems) {
+    const fileState = fileStates.get(media.path) ?? null;
+    const metadata = metadataByPath.get(media.path) ?? null;
+    const derivation = lineage.get(media.path);
+    const derivationState = fileStates.get(derivation.path) ?? null;
+    const derivationMetadata = metadataByPath.get(derivation.path) ?? null;
+    if (!fileState) missing.push(media.path);
+    if (fileState && (!metadata || metadata.decodeStatus !== 'ok')) {
+      throw new Error(`Pillow metadata is missing or invalid for referenced image: ${media.path}`);
+    }
+    if (fileState && !derivationState) {
+      throw new Error(`Required derivation source is missing for ${media.path}: ${derivation.path}`);
+    }
+    if (fileState && (!derivationMetadata || derivationMetadata.decodeStatus !== 'ok')) {
+      throw new Error(`Pillow metadata is missing or invalid for derivation source: ${derivation.path}`);
+    }
+    if (
+      fileState
+      && derivation.kind === 'work-cells-high-resolution-counterpart'
+      && (
+        derivationMetadata.width <= metadata.width
+        || derivationMetadata.height <= metadata.height
+      )
+    ) {
+      throw new Error(
+        `Work Cells derivation source must be strictly larger in both dimensions: `
+        + `${media.path}=${metadata.width}x${metadata.height}, `
+        + `${derivation.path}=${derivationMetadata.width}x${derivationMetadata.height}`,
+      );
     }
     records.push({
+      mediaId: media.path,
       path: media.path,
       domains: [...media.domains].sort(stableCompare),
       roles: [...media.roles].sort(stableCompare),
@@ -396,19 +505,39 @@ async function materializeRegistry(registry, availablePaths) {
       present: Boolean(fileState),
       bytes: fileState?.bytes ?? null,
       sha256: fileState?.sha256 ?? null,
-      metadata: {
-        width: null,
-        height: null,
-        format: path.posix.extname(media.path).slice(1).toLowerCase(),
-        mode: null,
-        hasAlpha: null,
-        orientation: null,
-        decoderStatus: 'pending-local-pillow-inventory',
-      },
+      metadata,
+      derivationSource: fileState ? {
+        kind: derivation.kind,
+        path: derivation.path,
+        bytes: derivationState.bytes,
+        sha256: derivationState.sha256,
+        metadata: derivationMetadata,
+      } : null,
       availableInScannedRoots: availableSet.has(media.path),
     });
   }
-  return { records, missing: missing.sort(stableCompare) };
+  return {
+    records,
+    missing: missing.sort(stableCompare),
+    pillowVersion: inspection.pillowVersion,
+  };
+}
+
+function duplicateGroups(records, field) {
+  const groups = new Map();
+  for (const record of records) {
+    const value = field === 'sha256' ? record.sha256 : record.metadata?.[field];
+    if (!value) continue;
+    if (!groups.has(value)) groups.set(value, []);
+    groups.get(value).push(record.path);
+  }
+  return [...groups.entries()]
+    .filter(([, paths]) => paths.length > 1)
+    .map(([value, paths]) => ({
+      [field]: value,
+      paths: paths.sort(stableCompare),
+    }))
+    .sort((left, right) => stableCompare(left[field], right[field]));
 }
 
 export async function generateMediaInventory() {
@@ -416,8 +545,13 @@ export async function generateMediaInventory() {
   const carmela = await collectCarmela(registry);
   const correctedWorkCells = await collectWorkCells(registry);
   const availablePaths = sortedUnique((await Promise.all(mediaScanRoots.map(walkImages))).flat());
-  const { records, missing } = await materializeRegistry(registry, availablePaths);
+  const { records, missing, pillowVersion } = await materializeRegistry(registry, availablePaths);
   const referencedPaths = new Set(records.map((record) => record.path));
+  const derivationSources = [...new Map(records
+    .filter((record) => record.derivationSource)
+    .map((record) => [record.derivationSource.path, record.derivationSource]))
+    .values()]
+    .sort((left, right) => stableCompare(left.path, right.path));
   const unreferencedAvailable = availablePaths.filter((mediaPath) => !referencedPaths.has(mediaPath));
   const roleCounts = {};
   for (const record of records) {
@@ -436,7 +570,10 @@ export async function generateMediaInventory() {
 
   return {
     inventory: {
-      schemaVersion: 1,
+      schemaVersion: 2,
+      toolVersions: {
+        pillow: pillowVersion,
+      },
       sourceOfTruth: branchInputPaths,
       scanRoots: mediaScanRoots,
       counts: {
@@ -445,6 +582,18 @@ export async function generateMediaInventory() {
         availableImagesInScannedRoots: availablePaths.length,
         unreferencedAvailableImages: unreferencedAvailable.length,
         missingReferencedImages: missing.length,
+        corruptImages: records.filter((record) => record.present && record.metadata?.decodeStatus !== 'ok').length,
+        animatedImages: records.filter((record) => record.metadata?.animated).length,
+        orientationNormalizedImages: records.filter((record) => record.metadata?.orientationNormalized).length,
+        unexpectedOrientationImages: records.filter((record) => (
+          record.metadata && !Number.isInteger(record.metadata.exifOrientation)
+        )).length,
+        highResolutionDerivationSources: records.filter((record) => (
+          record.derivationSource?.kind === 'work-cells-high-resolution-counterpart'
+        )).length,
+        selfDerivationSources: records.filter((record) => (
+          record.derivationSource?.kind === 'self'
+        )).length,
         audioFiles: audio.length,
         carmelaBooks: carmela.books.length,
         workCellsTopics: correctedWorkCells.topicCount,
@@ -454,15 +603,15 @@ export async function generateMediaInventory() {
       audio,
       unreferencedAvailable,
       missing,
-      pendingLocalEnrichment: [
-        'width',
-        'height',
-        'decodedFormat',
-        'mode',
-        'hasAlpha',
-        'orientation',
-        'duplicatePixelHash',
-      ],
+      duplicateGroups: {
+        rawSha256: duplicateGroups(records, 'sha256'),
+        normalizedPixels: duplicateGroups(records, 'pixelHash'),
+        logicalRawSha256: duplicateGroups(records, 'sha256'),
+        logicalNormalizedPixels: duplicateGroups(records, 'pixelHash'),
+        derivationRawSha256: duplicateGroups(derivationSources, 'sha256'),
+        derivationNormalizedPixels: duplicateGroups(derivationSources, 'pixelHash'),
+      },
+      pendingLocalEnrichment: [],
     },
     correctedWorkCells,
   };

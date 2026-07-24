@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "status": "PASS",
+  "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+  "dist": {
+    "status": "PASS",
+    "filesBefore": 1565,
+    "bytesBefore": 835935148,
+    "filesAfter": 2857,
+    "bytesAfter": 706989895,
+    "imageBytesBefore": 749565575,
+    "imageBytesAfter": 612771379,
+    "audioBytes": 85545615,
+    "topDirectories": [
+      {
+        "path": "public",
+        "files": 2846,
+        "bytes": 706770467
+      },
+      {
+        "path": "assets",
+        "files": 9,
+        "bytes": 217263
+      },
+      {
+        "path": "(root-files)",
+        "files": 2,
+        "bytes": 2165
+      }
+    ],
+    "topFiles": [
+      {
+        "path": "public/audio/carmela-s1/carmela-s1-12.mp3",
+        "bytes": 9124608
+      },
+      {
+        "path": "public/audio/carmela-s1/carmela-s1-11.mp3",
+        "bytes": 8957843
+      },
+      {
+        "path": "public/audio/carmela-s1/carmela-s1-09.mp3",
+        "bytes": 8626401
+      },
+      {
+        "path": "public/audio/carmela-s1/carmela-s1-07.mp3",
+        "bytes": 8599234
+      },
+      {
+        "path": "public/audio/carmela-s1/carmela-s1-08.mp3",
+        "bytes": 8056096
+      },
+      {
+        "path": "public/audio/carmela-s1/carmela-s1-10.mp3",
+        "bytes": 7926948
+      },
+      {
+        "path": "public/audio/carmela-s1/carmela-s1-05.mp3",
+        "bytes": 6685608
+      },
+      {
+        "path": "public/audio/carmela-s1/carmela-s1-02.mp3",
+        "bytes": 6375482
+      },
+      {
+        "path": "public/audio/carmela-s1/carmela-s1-06.mp3",
+        "bytes": 6299204
+      },
+      {
+        "path": "public/audio/carmela-s1/carmela-s1-01.mp3",
+        "bytes": 5208122
+      }
+    ]
+  },
+  "pagesArtifact": {
+    "status": "PASS",
+    "conservativeBytes": 706989895,
+    "compressedBytes": 694029530,
+    "compressedSha256": "12f584e6ebc7d136e0706b7214e1179e4fd6e971c222963c39af0e5ca681d60a"
+  },
+  "localExactChecks": {
+    "status": "PASS",
+    "projectSubpath": {
+      "status": "PASS",
+      "value": "/Family-Reading-Codex/"
+    },
+    "manifestMimeHash": {
+      "status": "PASS",
+      "path": "public/media/media-manifest.json",
+      "mime": "application/json",
+      "sha256": "b292f10e698f30e51ae0f4e27935a8d0c551f286b3b3d5f0a4b1d74ec5c763d8",
+      "bytes": 3767069
+    },
+    "derivativeMimeHash": {
+      "status": "PASS",
+      "samples": [
+        {
+          "status": "PASS",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/fa/cf1d660ab18b/001-carmela-cover-480-webp.webp",
+          "mime": "image/webp",
+          "sha256": "51bb8bc8e1a343702a00d907d0c292b15976ccf9b4181e487c1a1fa8914f8647",
+          "bytes": 22290
+        },
+        {
+          "status": "PASS",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/88/dc462f21b856/bandit-baba-story-carmela-explanation-1280-webp.webp",
+          "mime": "image/webp",
+          "sha256": "d5e927212d72d51da9c97de98594c4e636e9100f247f24e85bdf5353fec3ff25",
+          "bytes": 198344
+        },
+        {
+          "status": "PASS",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/71/61011a200e4b/abrasion__v01_page-142-work-cells-lightbox-1440-webp.webp",
+          "mime": "image/webp",
+          "sha256": "de3ae7fe3f13045521baddc24952e21db5fefc86f4d80624743bdde536e4495c",
+          "bytes": 815166
+        }
+      ]
+    },
+    "etag": {
+      "status": "PASS",
+      "value": "\"51bb8bc8e1a343702a00d907d0c292b15976ccf9b4181e487c1a1fa8914f8647\""
+    },
+    "conditional304": {
+      "status": "PASS",
+      "statusCode": 304
+    },
+    "notFound404": {
+      "status": "PASS",
+      "statusCode": 404
+    },
+    "audioRange206": {
+      "status": "PASS",
+      "statusCode": 206,
+      "acceptRanges": "bytes",
+      "contentRange": "bytes 0-31/5208122",
+      "path": "public/audio/carmela-s1/carmela-s1-01.mp3",
+      "responseBytes": 32
+    },
+    "immutableCache": {
+      "status": "PASS",
+      "checkedDerivedResponses": 3,
+      "violations": 0,
+      "stableUrlBytesHash": true,
+      "observedCacheControl": "public, max-age=31536000, immutable"
+    },
+    "sourcePolicyPathChange": {
+      "status": "PASS",
+      "cases": 2,
+      "sourceChangeProducesNewPath": true,
+      "policyChangeProducesNewPath": true,
+      "unchangedPathViolations": 0
+    },
+    "orphanClosure": {
+      "status": "PASS",
+      "missing": 0,
+      "stale": 0,
+      "orphan": 0,
+      "unexpectedOriginals": 0
+    },
+    "noServiceWorkers": {
+      "status": "PASS",
+      "registrations": 0
+    },
+    "noPrivateState": {
+      "status": "PASS",
+      "exposedEntries": 0
+    }
+  },
+  "deploymentBoundary": {
+    "status": "PENDING_POSTDEPLOY_FINAL_HANDOFF",
+    "liveVerified": false,
+    "durations": {
+      "status": "PENDING_POSTDEPLOY_FINAL_HANDOFF"
+    },
+    "cdnPropagation": {
+      "status": "PENDING_POSTDEPLOY_FINAL_HANDOFF",
+      "liveVerified": false
+    },
+    "liveExactChecks": {
+      "status": "PENDING_POSTDEPLOY_FINAL_HANDOFF"
+    }
+  }
+}

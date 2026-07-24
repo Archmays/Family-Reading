@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "status": "accepted",
+  "encoder": {
+    "name": "Pillow",
+    "version": "10.4.0",
+    "pythonVersion": "3.12.7",
+    "libwebpVersion": "1.3.2"
+  },
+  "profiles": [
+    {
+      "id": "carmela-cover-240-webp",
+      "format": "webp",
+      "width": 240,
+      "quality": 92,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ]
+    },
+    {
+      "id": "carmela-cover-480-webp",
+      "format": "webp",
+      "width": 480,
+      "quality": 92,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ]
+    },
+    {
+      "id": "carmela-explanation-1280-webp",
+      "format": "webp",
+      "width": 1280,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-explanation-preview"
+      ]
+    },
+    {
+      "id": "carmela-explanation-480-webp",
+      "format": "webp",
+      "width": 480,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-explanation-preview"
+      ]
+    },
+    {
+      "id": "carmela-explanation-800-webp",
+      "format": "webp",
+      "width": 800,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-explanation-preview"
+      ]
+    },
+    {
+      "id": "carmela-lightbox-1600-webp",
+      "format": "webp",
+      "width": 1600,
+      "quality": 96,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-lightbox"
+      ]
+    },
+    {
+      "id": "carmela-page-480-webp",
+      "format": "webp",
+      "width": 480,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-page-preview"
+      ]
+    },
+    {
+      "id": "carmela-page-800-webp",
+      "format": "webp",
+      "width": 800,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-page-preview"
+      ]
+    },
+    {
+      "id": "carmela-page-960-webp",
+      "format": "webp",
+      "width": 960,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "carmela-page-preview"
+      ]
+    },
+    {
+      "id": "work-cells-lightbox-1440-webp",
+      "format": "webp",
+      "width": 1440,
+      "quality": 96,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-lightbox"
+      ]
+    },
+    {
+      "id": "work-cells-page-240-webp",
+      "format": "webp",
+      "width": 240,
+      "quality": 92,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-series-thumbnail"
+      ]
+    },
+    {
+      "id": "work-cells-page-360-webp",
+      "format": "webp",
+      "width": 360,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-manga-preview",
+        "work-cells-series-thumbnail",
+        "work-cells-topic-hero"
+      ]
+    },
+    {
+      "id": "work-cells-page-640-webp",
+      "format": "webp",
+      "width": 640,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-manga-preview",
+        "work-cells-topic-hero"
+      ]
+    },
+    {
+      "id": "work-cells-page-960-webp",
+      "format": "webp",
+      "width": 960,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-topic-hero"
+      ]
+    },
+    {
+      "id": "work-cells-station-640-webp",
+      "format": "webp",
+      "width": 640,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-station-preview"
+      ]
+    },
+    {
+      "id": "work-cells-station-960-webp",
+      "format": "webp",
+      "width": 960,
+      "quality": 94,
+      "lossless": false,
+      "method": 6,
+      "exact": true,
+      "preserveAlpha": true,
+      "roles": [
+        "work-cells-station-preview"
+      ]
+    }
+  ],
+  "alphaStrategy": {
+    "preserveWhenSupported": true,
+    "flattenColor": "#ffffff",
+    "observedAlphaSources": 0
+  },
+  "fallbackStrategy": {
+    "preferDerivative": true,
+    "allowSourcePath": false,
+    "formatOrder": [
+      "webp"
+    ]
+  },
+  "visualAcceptance": {
+    "status": "pass",
+    "sampleMediaIds": [
+      "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-004.webp",
+      "public/assets/cells-at-work/page-thumbnails/v02/food-poisoning__v02_page-005.webp",
+      "public/assets/cells-at-work/science-station/food-poisoning/food-poisoning-v2-station-01.webp",
+      "public/books/不一样的卡梅拉/我想去看海/pages/001.png",
+      "public/books/不一样的卡梅拉/我想有个弟弟/generated/hedgehog-spines.png",
+      "public/books/不一样的卡梅拉/我想有个弟弟/pages/019.png",
+      "public/books/不一样的卡梅拉/我爱平底锅/pages/002.png",
+      "public/books/不一样的卡梅拉/我能打败怪兽/pages/024.png",
+      "public/books/不一样的卡梅拉/我要救出贝里奥/pages/009.png"
+    ],
+    "fullContactSheetSha256": "3d624861b63bf0d1eaaf3344c68d0c691bfb77467c1181af825e8b1b5e58c004",
+    "textCropContactSheetSha256": "b142a4da94f33f744a9f17341269b918ed5c87b941c402aa168adca45cf6cd4e",
+    "textReadability": "pass",
+    "lineAndGradientQuality": "pass",
+    "lightboxClarity": "pass",
+    "qualityCompromises": 0
+  },
+  "experimentDecision": {
+    "acceptedPreviewQuality": 94,
+    "acceptedCoverQuality": 92,
+    "acceptedLightboxQuality": 96,
+    "webpLosslessRejected": "No visible review benefit at target sizes; aggregate bytes were 3.32x lossy q94 and worst encode time was 19.678 seconds.",
+    "jpegRejected": "No alpha support and larger than WebP q94 across the representative set.",
+    "pngRejected": "No referenced alpha sources and materially larger than WebP q94.",
+    "avifRejected": "The exact Pillow 10.4.0 environment has no AVIF encoder.",
+    "observedSourceFormats": [
+      "png",
+      "webp"
+    ]
+  },
+  "budgets": {
+    "status": "frozen",
+    "distBytes": 715000000,
+    "pagesArtifactBytes": 720000000,
+    "routeTransferBytes": {
+      "#/": 400000,
+      "#/book/carmela-s1-01": 500000,
+      "#/book/carmela-s1-11": 600000,
+      "#/science/work-cells/cancer-cell-ii": 850000,
+      "#/science/work-cells/food-poisoning": 900000,
+      "#/science/work-cells/induced-pluripotent-stem-cells": 850000,
+      "#/science/work-cells/novel-coronavirus": 700000,
+      "#/series/carmela-season-1": 1100000,
+      "#/series/work-cells": 2600000
+    },
+    "basis": "Frozen before browser acceptance from the DPR-complete 16-profile model: 778 sources, 2,735 variants and 612,770,984 derivative bytes, including the measured 23,652,234-byte Carmela explanation 1280 family required for DPR 2. The 32-hex policy-addressed URL projection, exact owner-shard model and application/runtime/audio closure total 706,736,419 bytes. Route ceilings include the raw application closure, revalidated shard index, exact route JSON/shard bytes and the largest accepted initial role variant; browser measurements may confirm but do not raise them.",
+    "buildUploadWarning": "Fail before upload when the exact release plan exceeds either frozen byte budget."
+  }
+}

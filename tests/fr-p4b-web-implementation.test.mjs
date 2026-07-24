@@ -271,13 +271,13 @@ test('P4B direct renderer has no duplicate ids or nested interactive controls', 
   }
 });
 
-test('P4B closed media keeps only the hero active and stores each exact group in a template', async () => {
+test('P4B closed media remains inert without a validated route resolver and stores each exact group in a template', async () => {
   const topics = await loadTopics();
   for (const { topic } of topics) {
     const model = createScienceTopicViewModel(topic);
     const markup = renderScienceTopicAtlas(model, { thumbnailPath: topic.thumbnailPath });
     const activeMarkup = markupWithoutTemplates(markup);
-    assert.equal(occurrences(activeMarkup, /<img\b[^>]*\ssrc=/g), 1, topic.slug);
+    assert.equal(occurrences(activeMarkup, /<img\b[^>]*\ssrc=/g), 0, topic.slug);
     assert.match(activeMarkup, /data-lightbox-image[^>]*hidden/);
     assert.equal(occurrences(activeMarkup, /data-lightbox-src=/g), 0, topic.slug);
     assert.equal(occurrences(markup, /<template data-media-template>/g), Object.keys(model.mediaGroups).length);
@@ -332,7 +332,7 @@ test('P4B output does not expose publication, authoring, prompt or rights fields
 test('P4B app directly imports and renders the science module with the five-section route allowlist', async () => {
   const appSource = await readFile(path.join(root, 'assets', 'app.js'), 'utf8');
   const moduleSource = await readFile(path.join(root, 'assets', 'science-companion.js'), 'utf8');
-  assert.match(appSource, /from '\.\/science-companion\.js';/);
+  assert.match(appSource, /from '\.\/science-companion\.js\?v=fr-p5-20260724';/);
   assert.match(appSource, /const viewModel = createScienceTopicViewModel\(topic\);/);
   assert.match(appSource, /return renderScienceTopicAtlas\(viewModel,\s*\{\s*thumbnailPath: topic\.thumbnailPath,/);
   for (const [sectionId, label] of canonicalSections) {
@@ -345,7 +345,7 @@ test('P4B app directly imports and renders the science module with the five-sect
 test('P4B browser entry loads only app.js while retaining the science stylesheet', async () => {
   const index = await readFile(path.join(root, 'index.html'), 'utf8');
   assert.equal(occurrences(index, /<script type="module"/g), 1);
-  assert.match(index, /<script type="module" src="assets\/app\.js\?v=fr-p4b-/);
+  assert.match(index, /<script type="module" src="assets\/app\.js\?v=fr-p5-20260724/);
   assert.doesNotMatch(index, /<script[^>]+src="assets\/science-companion\.js/);
   assert.match(index, /assets\/science-companion\.css/);
 });

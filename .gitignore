@@ -28,6 +28,8 @@ local-epubs/
 *.log
 *.tmp
 .cache/
+__pycache__/
+*.py[cod]
 .DS_Store
 Thumbs.db
 docs/work-cells-epub-raw-directory.json

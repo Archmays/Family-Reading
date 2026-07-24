@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "generatorVersion": "fr-p5-media-shards/1",
+  "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+  "canonicalManifestPath": "public/media/media-manifest.json",
+  "canonicalManifest": {
+    "path": "public/media/media-manifest.json",
+    "bytes": 3767069,
+    "sha256": "b292f10e698f30e51ae0f4e27935a8d0c551f286b3b3d5f0a4b1d74ec5c763d8",
+    "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+    "sources": 778,
+    "variants": 2735
+  },
+  "route": {
+    "id": "home",
+    "kind": "home"
+  },
+  "media": [
+    {
+      "sourcePath": "public/assets/cells-at-work/page-thumbnails/v01/pneumococcus__v01_page-006.webp",
+      "referenceHash": "556a887fe2141e748a7fd0d74640b5893169203e70d1aff788789694f94d7aa0",
+      "referenceStoredWidth": 360,
+      "referenceStoredHeight": 512,
+      "referenceWidth": 360,
+      "referenceHeight": 512,
+      "referenceBytes": 37396,
+      "referenceFormat": "webp",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "work-cells-high-resolution-counterpart",
+      "derivationSourcePath": "public/assets/cells-at-work/pages-by-volume/v01/pneumococcus__v01_page-006.webp",
+      "sourceHash": "df881a1dca817fb7def1b18c055aff935244fd91bb1c3ab134bc6b10db5c86e2",
+      "sourceStoredWidth": 1126,
+      "sourceStoredHeight": 1600,
+      "sourceWidth": 1126,
+      "sourceHeight": 1600,
+      "sourceBytes": 554626,
+      "sourceFormat": "webp",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "work-cells-series-thumbnail",
+        "work-cells-topic-hero"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-360-webp.webp",
+      "fallbacksByRole": {
+        "work-cells-series-thumbnail": "public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-360-webp.webp",
+        "work-cells-topic-hero": "public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "work-cells-page-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-240-webp.webp",
+          "width": 240,
+          "height": 341,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 36674,
+          "sha256": "15fd902005b91bb4b2ca5460fef56d2203bc095ea3d0132bba37019d0c040cb9",
+          "roles": [
+            "work-cells-series-thumbnail"
+          ],
+          "sourceHash": "df881a1dca817fb7def1b18c055aff935244fd91bb1c3ab134bc6b10db5c86e2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "work-cells-page-360-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-360-webp.webp",
+          "width": 360,
+          "height": 512,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 80960,
+          "sha256": "aa0e086862c681409a43148cb904d4a50665f6529484640061151d42d173892e",
+          "roles": [
+            "work-cells-series-thumbnail",
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "df881a1dca817fb7def1b18c055aff935244fd91bb1c3ab134bc6b10db5c86e2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-640-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-640-webp.webp",
+          "width": 640,
+          "height": 909,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 215454,
+          "sha256": "2f05b698b7915d166a17beebcf972cfca6d629b96af084818c76aa3c2b601efc",
+          "roles": [
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "df881a1dca817fb7def1b18c055aff935244fd91bb1c3ab134bc6b10db5c86e2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "work-cells-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/df/881a1dca817f/pneumococcus__v01_page-006-work-cells-page-960-webp.webp",
+          "width": 960,
+          "height": 1364,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 438014,
+          "sha256": "2a92111c7f554f2cc52f2b3da1d0ec75756c006f7ea1133ffd0d625ecadc70b3",
+          "roles": [
+            "work-cells-topic-hero"
+          ],
+          "sourceHash": "df881a1dca817fb7def1b18c055aff935244fd91bb1c3ab134bc6b10db5c86e2",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我想去看海/pages/001.png",
+      "referenceHash": "3a080efe76fce2c2bcd4743f15b6abd01d40f75465162141ce293422ddaa7a59",
+      "referenceStoredWidth": 815,
+      "referenceStoredHeight": 1017,
+      "referenceWidth": 815,
+      "referenceHeight": 1017,
+      "referenceBytes": 646851,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我想去看海/pages/001.png",
+      "sourceHash": "3a080efe76fce2c2bcd4743f15b6abd01d40f75465162141ce293422ddaa7a59",
+      "sourceStoredWidth": 815,
+      "sourceStoredHeight": 1017,
+      "sourceWidth": 815,
+      "sourceHeight": 1017,
+      "sourceBytes": 646851,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 299,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 17652,
+          "sha256": "d2165dfa16fc8465fe21df8de551b6f94bbf389e58ccf370d848a063add68656",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "3a080efe76fce2c2bcd4743f15b6abd01d40f75465162141ce293422ddaa7a59",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/3a/080efe76fce2/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 599,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 48628,
+          "sha256": "8afa296d1db425fe405b97a6391b20f9d9513eb7a3aab7ab17790dad021e7e1f",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "3a080efe76fce2c2bcd4743f15b6abd01d40f75465162141ce293422ddaa7a59",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "sources": 2,
+    "variants": 6
+  }
+}

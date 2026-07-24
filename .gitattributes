@@ -1,2 +1,12 @@
 # Generated runtime JSON must stay byte-identical on Windows and Linux.
 public/runtime/** text eol=lf
+
+# Exact release-plan integrity is computed from these application files.
+index.html text eol=lf
+assets/**/*.js text eol=lf
+assets/**/*.css text eol=lf
+assets/**/*.svg text eol=lf
+
+# FR-P5 generated manifests and shards are hash-addressed release evidence.
+public/media/**/*.json text eol=lf
+public/media/derived/** binary

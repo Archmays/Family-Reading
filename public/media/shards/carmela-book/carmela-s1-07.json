@@ -1,0 +1,4119 @@
+{
+  "schemaVersion": 1,
+  "generatorVersion": "fr-p5-media-shards/1",
+  "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+  "canonicalManifestPath": "public/media/media-manifest.json",
+  "canonicalManifest": {
+    "path": "public/media/media-manifest.json",
+    "bytes": 3767069,
+    "sha256": "b292f10e698f30e51ae0f4e27935a8d0c551f286b3b3d5f0a4b1d74ec5c763d8",
+    "policyHash": "9289331de034dddc25a6dc13428712ab826b201c962a10fb6493843606570f08",
+    "sources": 778,
+    "variants": 2735
+  },
+  "route": {
+    "id": "carmela-book/carmela-s1-07",
+    "kind": "carmela-book",
+    "ownerId": "carmela-s1-07"
+  },
+  "media": [
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/aesop-fables.png",
+      "referenceHash": "26e22bea980a7f0a39a62eb8e1be9f5b87519dfa74655c9c08c17e70aa634a4d",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 2359530,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/aesop-fables.png",
+      "sourceHash": "26e22bea980a7f0a39a62eb8e1be9f5b87519dfa74655c9c08c17e70aa634a4d",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 2359530,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-explanation-preview",
+        "carmela-lightbox"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/26/e22bea980a7f/aesop-fables-carmela-explanation-1280-webp.webp",
+      "fallbacksByRole": {
+        "carmela-explanation-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/26/e22bea980a7f/aesop-fables-carmela-explanation-1280-webp.webp",
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/26/e22bea980a7f/aesop-fables-carmela-lightbox-1600-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-explanation-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/26/e22bea980a7f/aesop-fables-carmela-explanation-480-webp.webp",
+          "width": 480,
+          "height": 360,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 69718,
+          "sha256": "06862379d5ed26e3480bf013be1a8bad6eda62fb9e3981c6dc157e8697a97a88",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "26e22bea980a7f0a39a62eb8e1be9f5b87519dfa74655c9c08c17e70aa634a4d",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/26/e22bea980a7f/aesop-fables-carmela-explanation-800-webp.webp",
+          "width": 800,
+          "height": 600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 165636,
+          "sha256": "00a56a8cdb7a2b0e4ddea9c8a38ae873e0a2259e525a1d0eedf146ca4430747d",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "26e22bea980a7f0a39a62eb8e1be9f5b87519dfa74655c9c08c17e70aa634a4d",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-1280-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/26/e22bea980a7f/aesop-fables-carmela-explanation-1280-webp.webp",
+          "width": 1280,
+          "height": 960,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 316538,
+          "sha256": "26e5e74bdd9f6912e1e362f8c607a8f9a00fe727bd98e7535fd51523b1b9db90",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "26e22bea980a7f0a39a62eb8e1be9f5b87519dfa74655c9c08c17e70aa634a4d",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/26/e22bea980a7f/aesop-fables-carmela-lightbox-1600-webp.webp",
+          "width": 1448,
+          "height": 1086,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 474404,
+          "sha256": "0a701dd5409be6d53b0537d749f1c53e8d822478f7432cc93f36222f3c3a5acc",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "26e22bea980a7f0a39a62eb8e1be9f5b87519dfa74655c9c08c17e70aa634a4d",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/crow-and-fox-fable.png",
+      "referenceHash": "cb651560d58ffd57ad7627123438515a16345378bf71da7ce7dae535b6542a5e",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 2600074,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/crow-and-fox-fable.png",
+      "sourceHash": "cb651560d58ffd57ad7627123438515a16345378bf71da7ce7dae535b6542a5e",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 2600074,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-explanation-preview",
+        "carmela-lightbox"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/651560d58ffd/crow-and-fox-fable-carmela-explanation-1280-webp.webp",
+      "fallbacksByRole": {
+        "carmela-explanation-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/651560d58ffd/crow-and-fox-fable-carmela-explanation-1280-webp.webp",
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/651560d58ffd/crow-and-fox-fable-carmela-lightbox-1600-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-explanation-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/651560d58ffd/crow-and-fox-fable-carmela-explanation-480-webp.webp",
+          "width": 480,
+          "height": 360,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 76938,
+          "sha256": "29add84a46a72c3255837e1fbee49a2941f999120d272dcc77ba13632ab4e199",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "cb651560d58ffd57ad7627123438515a16345378bf71da7ce7dae535b6542a5e",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/651560d58ffd/crow-and-fox-fable-carmela-explanation-800-webp.webp",
+          "width": 800,
+          "height": 600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 184156,
+          "sha256": "3fed209380800753f92cb166045c344f7bae5c8a60d0219f5bf68486d267de01",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "cb651560d58ffd57ad7627123438515a16345378bf71da7ce7dae535b6542a5e",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-1280-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/651560d58ffd/crow-and-fox-fable-carmela-explanation-1280-webp.webp",
+          "width": 1280,
+          "height": 960,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 386766,
+          "sha256": "ddec86f99a26f5ea5ff55933ea3f6525cf643691593c91d35eb9026eb535681c",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "cb651560d58ffd57ad7627123438515a16345378bf71da7ce7dae535b6542a5e",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cb/651560d58ffd/crow-and-fox-fable-carmela-lightbox-1600-webp.webp",
+          "width": 1448,
+          "height": 1086,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 545068,
+          "sha256": "2122823d4644b43b8c9319821e26ef88ec64f4090c9957ad1325396db34e5380",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "cb651560d58ffd57ad7627123438515a16345378bf71da7ce7dae535b6542a5e",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/fable-animals.png",
+      "referenceHash": "af44a75ed4ad4b55c211d9d23603da54fa70c5ad2eb8b71becbd8dc2dc0498fc",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 2748085,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/fable-animals.png",
+      "sourceHash": "af44a75ed4ad4b55c211d9d23603da54fa70c5ad2eb8b71becbd8dc2dc0498fc",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 2748085,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-explanation-preview",
+        "carmela-lightbox"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/af/44a75ed4ad4b/fable-animals-carmela-explanation-1280-webp.webp",
+      "fallbacksByRole": {
+        "carmela-explanation-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/af/44a75ed4ad4b/fable-animals-carmela-explanation-1280-webp.webp",
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/af/44a75ed4ad4b/fable-animals-carmela-lightbox-1600-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-explanation-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/af/44a75ed4ad4b/fable-animals-carmela-explanation-480-webp.webp",
+          "width": 480,
+          "height": 360,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 90710,
+          "sha256": "dc58e80f197a36c5e895e3d92a4df85c70945868371af5a9f768298bea64f526",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "af44a75ed4ad4b55c211d9d23603da54fa70c5ad2eb8b71becbd8dc2dc0498fc",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/af/44a75ed4ad4b/fable-animals-carmela-explanation-800-webp.webp",
+          "width": 800,
+          "height": 600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 222976,
+          "sha256": "cd5b484a55e586a5d4c44983b937b8405bd479e92f0bbd613dd1e79946c1314c",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "af44a75ed4ad4b55c211d9d23603da54fa70c5ad2eb8b71becbd8dc2dc0498fc",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-1280-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/af/44a75ed4ad4b/fable-animals-carmela-explanation-1280-webp.webp",
+          "width": 1280,
+          "height": 960,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 448878,
+          "sha256": "53cc9caee60bcda9695a33431bbae67efa7e60c8d7149513fa8286ffff0dfb46",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "af44a75ed4ad4b55c211d9d23603da54fa70c5ad2eb8b71becbd8dc2dc0498fc",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/af/44a75ed4ad4b/fable-animals-carmela-lightbox-1600-webp.webp",
+          "width": 1448,
+          "height": 1086,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 617812,
+          "sha256": "d16da1623f3aabb1e7a2e4e83bebc530c7140c1cc188906026940c2e6e9daca1",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "af44a75ed4ad4b55c211d9d23603da54fa70c5ad2eb8b71becbd8dc2dc0498fc",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/paper-leaf-clue.png",
+      "referenceHash": "1c95550f42de3c482dfdec3a9a08efc6f8506c43c07535e072f0bc55b8f481df",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 2224634,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/paper-leaf-clue.png",
+      "sourceHash": "1c95550f42de3c482dfdec3a9a08efc6f8506c43c07535e072f0bc55b8f481df",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 2224634,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-explanation-preview",
+        "carmela-lightbox"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/1c/95550f42de3c/paper-leaf-clue-carmela-explanation-1280-webp.webp",
+      "fallbacksByRole": {
+        "carmela-explanation-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/1c/95550f42de3c/paper-leaf-clue-carmela-explanation-1280-webp.webp",
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/1c/95550f42de3c/paper-leaf-clue-carmela-lightbox-1600-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-explanation-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1c/95550f42de3c/paper-leaf-clue-carmela-explanation-480-webp.webp",
+          "width": 480,
+          "height": 360,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 42452,
+          "sha256": "3aed5ccb4579258c267c2f802b7edf3dbd4a0a77b2cba07677aebd706bd0932c",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "1c95550f42de3c482dfdec3a9a08efc6f8506c43c07535e072f0bc55b8f481df",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1c/95550f42de3c/paper-leaf-clue-carmela-explanation-800-webp.webp",
+          "width": 800,
+          "height": 600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 112700,
+          "sha256": "a6be7bce660c9b128b2e9818324b19f23daddf404a899f7b3bc65571d74042c9",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "1c95550f42de3c482dfdec3a9a08efc6f8506c43c07535e072f0bc55b8f481df",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-1280-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1c/95550f42de3c/paper-leaf-clue-carmela-explanation-1280-webp.webp",
+          "width": 1280,
+          "height": 960,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 268520,
+          "sha256": "0aacf457c5aecb8a845a319f287fcb7a8e650af6ba441511272773709c14291b",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "1c95550f42de3c482dfdec3a9a08efc6f8506c43c07535e072f0bc55b8f481df",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1c/95550f42de3c/paper-leaf-clue-carmela-lightbox-1600-webp.webp",
+          "width": 1448,
+          "height": 1086,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 389194,
+          "sha256": "b72179031a1fc43d82504b9298fec6b47a2ce2c46e2f7099f36696f98391b474",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "1c95550f42de3c482dfdec3a9a08efc6f8506c43c07535e072f0bc55b8f481df",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/quill-writing-stories.png",
+      "referenceHash": "e7080f14d528026145c185c6a452d3098fbdc0dffbd7ef8db69b40a8aff9f84a",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 2540916,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/quill-writing-stories.png",
+      "sourceHash": "e7080f14d528026145c185c6a452d3098fbdc0dffbd7ef8db69b40a8aff9f84a",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 2540916,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-explanation-preview",
+        "carmela-lightbox"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/e7/080f14d52802/quill-writing-stories-carmela-explanation-1280-webp.webp",
+      "fallbacksByRole": {
+        "carmela-explanation-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/e7/080f14d52802/quill-writing-stories-carmela-explanation-1280-webp.webp",
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/e7/080f14d52802/quill-writing-stories-carmela-lightbox-1600-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-explanation-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e7/080f14d52802/quill-writing-stories-carmela-explanation-480-webp.webp",
+          "width": 480,
+          "height": 360,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 61896,
+          "sha256": "ba3fe5833c715efca419e0e15746c78c0590d5aff8c5762f43745bf082e3b557",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "e7080f14d528026145c185c6a452d3098fbdc0dffbd7ef8db69b40a8aff9f84a",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e7/080f14d52802/quill-writing-stories-carmela-explanation-800-webp.webp",
+          "width": 800,
+          "height": 600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 164842,
+          "sha256": "3f2298a402a3060961a7742271231bae6f5be14f26ba4c99b89407a69970a93b",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "e7080f14d528026145c185c6a452d3098fbdc0dffbd7ef8db69b40a8aff9f84a",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-1280-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e7/080f14d52802/quill-writing-stories-carmela-explanation-1280-webp.webp",
+          "width": 1280,
+          "height": 960,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 378784,
+          "sha256": "b901ad3a8569f4f55532267f14570dc5f5c887977d5fd53da6a3a78360178259",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "e7080f14d528026145c185c6a452d3098fbdc0dffbd7ef8db69b40a8aff9f84a",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/e7/080f14d52802/quill-writing-stories-carmela-lightbox-1600-webp.webp",
+          "width": 1448,
+          "height": 1086,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 583766,
+          "sha256": "1269d0426356013a28b8ff9e59dc44a44298dea3db5f0421336c9d598e2e0ece",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "e7080f14d528026145c185c6a452d3098fbdc0dffbd7ef8db69b40a8aff9f84a",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/story-tradition.png",
+      "referenceHash": "1ef2fb08532d1aad3bf3075f504d5f08578b843ccbee6d10a9dbe821837d0ad6",
+      "referenceStoredWidth": 1448,
+      "referenceStoredHeight": 1086,
+      "referenceWidth": 1448,
+      "referenceHeight": 1086,
+      "referenceBytes": 2247977,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/generated/story-tradition.png",
+      "sourceHash": "1ef2fb08532d1aad3bf3075f504d5f08578b843ccbee6d10a9dbe821837d0ad6",
+      "sourceStoredWidth": 1448,
+      "sourceStoredHeight": 1086,
+      "sourceWidth": 1448,
+      "sourceHeight": 1086,
+      "sourceBytes": 2247977,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-explanation-preview",
+        "carmela-lightbox"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/f2fb08532d1a/story-tradition-carmela-explanation-1280-webp.webp",
+      "fallbacksByRole": {
+        "carmela-explanation-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/f2fb08532d1a/story-tradition-carmela-explanation-1280-webp.webp",
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/f2fb08532d1a/story-tradition-carmela-lightbox-1600-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-explanation-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/f2fb08532d1a/story-tradition-carmela-explanation-480-webp.webp",
+          "width": 480,
+          "height": 360,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 56850,
+          "sha256": "a2f3a0903f5d70fd6bbffce2895d6f729023fd5b71ebf5f456f3199b5fd9efdc",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "1ef2fb08532d1aad3bf3075f504d5f08578b843ccbee6d10a9dbe821837d0ad6",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/f2fb08532d1a/story-tradition-carmela-explanation-800-webp.webp",
+          "width": 800,
+          "height": 600,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 135856,
+          "sha256": "d93edfb40a5586a2a6460d4511993b4d40864c8a654f43869df3eb35a60e8064",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "1ef2fb08532d1aad3bf3075f504d5f08578b843ccbee6d10a9dbe821837d0ad6",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-explanation-1280-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/f2fb08532d1a/story-tradition-carmela-explanation-1280-webp.webp",
+          "width": 1280,
+          "height": 960,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 278020,
+          "sha256": "54203e1fc08411e248ac5d629e1064db7b51ae790bcf50173ae456cf7aaca1c9",
+          "roles": [
+            "carmela-explanation-preview"
+          ],
+          "sourceHash": "1ef2fb08532d1aad3bf3075f504d5f08578b843ccbee6d10a9dbe821837d0ad6",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/1e/f2fb08532d1a/story-tradition-carmela-lightbox-1600-webp.webp",
+          "width": 1448,
+          "height": 1086,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 418996,
+          "sha256": "dbcdd167cb221e7ac17aa10fe98ddccf131a1cf69ed0cdb8d2c6eb0e6b19257a",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "1ef2fb08532d1aad3bf3075f504d5f08578b843ccbee6d10a9dbe821837d0ad6",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/001.png",
+      "referenceHash": "53b1d4807a77e81164835ee9d889558a5e138ce58da5d68eeef8945b98564869",
+      "referenceStoredWidth": 947,
+      "referenceStoredHeight": 1125,
+      "referenceWidth": 947,
+      "referenceHeight": 1125,
+      "referenceBytes": 1345333,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/001.png",
+      "sourceHash": "53b1d4807a77e81164835ee9d889558a5e138ce58da5d68eeef8945b98564869",
+      "sourceStoredWidth": 947,
+      "sourceStoredHeight": 1125,
+      "sourceWidth": 947,
+      "sourceHeight": 1125,
+      "sourceBytes": 1345333,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-book-cover",
+        "carmela-series-cover"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-480-webp.webp",
+      "fallbacksByRole": {
+        "carmela-book-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-480-webp.webp",
+        "carmela-series-cover": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-480-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-cover-240-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-240-webp.webp",
+          "width": 240,
+          "height": 285,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 23760,
+          "sha256": "232dab4ec2eb13963709bd728e1f02036cea6105430518199d1cab74c96c4be3",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "53b1d4807a77e81164835ee9d889558a5e138ce58da5d68eeef8945b98564869",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        },
+        {
+          "profileId": "carmela-cover-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/53/b1d4807a77e8/001-carmela-cover-480-webp.webp",
+          "width": 480,
+          "height": 570,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 73444,
+          "sha256": "4e3f8242e2967d7d06b2da3d74d6329007811207ca4d754dd45e0b102053cc44",
+          "roles": [
+            "carmela-book-cover",
+            "carmela-series-cover"
+          ],
+          "sourceHash": "53b1d4807a77e81164835ee9d889558a5e138ce58da5d68eeef8945b98564869",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 92
+          },
+          "lossless": false,
+          "quality": 92
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/002.png",
+      "referenceHash": "5b367784c6c30a0b46b30251a88e0555e2abe03b7bbcde7ca462e9be8fa254bb",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1028,
+      "referenceWidth": 1500,
+      "referenceHeight": 1028,
+      "referenceBytes": 2220269,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/002.png",
+      "sourceHash": "5b367784c6c30a0b46b30251a88e0555e2abe03b7bbcde7ca462e9be8fa254bb",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1028,
+      "sourceWidth": 1500,
+      "sourceHeight": 1028,
+      "sourceBytes": 2220269,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/367784c6c30a/002-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/367784c6c30a/002-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/367784c6c30a/002-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/367784c6c30a/002-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1028,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 482726,
+          "sha256": "5092769a923b1952ab8aac36f35c3e7123e1c2ae16db00c13aa8299e6787f05d",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "5b367784c6c30a0b46b30251a88e0555e2abe03b7bbcde7ca462e9be8fa254bb",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/367784c6c30a/002-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 329,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 70248,
+          "sha256": "d73d2200f9b49ad6eeb2cef906244cf1f8442d949fca9c3aecfe0cf6a3f96f85",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "5b367784c6c30a0b46b30251a88e0555e2abe03b7bbcde7ca462e9be8fa254bb",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/367784c6c30a/002-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 548,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 170258,
+          "sha256": "7a1afda3f5922184e8edcf079ef0635a955a97a5180d94cff050e85b17c950f6",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "5b367784c6c30a0b46b30251a88e0555e2abe03b7bbcde7ca462e9be8fa254bb",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5b/367784c6c30a/002-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 658,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 231734,
+          "sha256": "2f7df6a4387db201e231204fe8e0c9a636bd9d897884e71472b87964797ee45f",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "5b367784c6c30a0b46b30251a88e0555e2abe03b7bbcde7ca462e9be8fa254bb",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/003.png",
+      "referenceHash": "c83ae427517fc6f41f8deede92678360663aaa5f6f4e88252e445720e8b6b4e9",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1028,
+      "referenceWidth": 1500,
+      "referenceHeight": 1028,
+      "referenceBytes": 1798136,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/003.png",
+      "sourceHash": "c83ae427517fc6f41f8deede92678360663aaa5f6f4e88252e445720e8b6b4e9",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1028,
+      "sourceWidth": 1500,
+      "sourceHeight": 1028,
+      "sourceBytes": 1798136,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/c8/3ae427517fc6/003-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/c8/3ae427517fc6/003-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/c8/3ae427517fc6/003-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c8/3ae427517fc6/003-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1028,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 371360,
+          "sha256": "8aab62da3351701011a0dc1214543d120c4b7bfe2998e85eb986986afd72fcfd",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "c83ae427517fc6f41f8deede92678360663aaa5f6f4e88252e445720e8b6b4e9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c8/3ae427517fc6/003-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 329,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 54440,
+          "sha256": "7e2b82b81adb8034c3b2346a1475f23c769c1a23bcae0f146f06f5da3095fa59",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "c83ae427517fc6f41f8deede92678360663aaa5f6f4e88252e445720e8b6b4e9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c8/3ae427517fc6/003-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 548,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 126380,
+          "sha256": "f313328f7577c24dc277d49f3f14ed9d590a00b6d31323ea5368527f7c9b4b12",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "c83ae427517fc6f41f8deede92678360663aaa5f6f4e88252e445720e8b6b4e9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c8/3ae427517fc6/003-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 658,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 171798,
+          "sha256": "fdab06b381d796b5548be8eee3e3d9f7140bc059e14b739d0360fe05d87c501e",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "c83ae427517fc6f41f8deede92678360663aaa5f6f4e88252e445720e8b6b4e9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/004.png",
+      "referenceHash": "5f6c173095aa7707048c7d239adbcda853ebc833ae2536cbf9ab819c2951e7ea",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1019,
+      "referenceWidth": 1500,
+      "referenceHeight": 1019,
+      "referenceBytes": 2071776,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/004.png",
+      "sourceHash": "5f6c173095aa7707048c7d239adbcda853ebc833ae2536cbf9ab819c2951e7ea",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1019,
+      "sourceWidth": 1500,
+      "sourceHeight": 1019,
+      "sourceBytes": 2071776,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/6c173095aa77/004-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/6c173095aa77/004-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/6c173095aa77/004-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/6c173095aa77/004-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1019,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 439842,
+          "sha256": "42d170f0378778ba985faec60262d031b708626452aa4bb911ffca263f8879a4",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "5f6c173095aa7707048c7d239adbcda853ebc833ae2536cbf9ab819c2951e7ea",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/6c173095aa77/004-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 326,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 67230,
+          "sha256": "67ae28025e8e0cdc7f1bad883f015589563c3a37107d6d2cd198306d92a1e9fb",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "5f6c173095aa7707048c7d239adbcda853ebc833ae2536cbf9ab819c2951e7ea",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/6c173095aa77/004-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 543,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 157602,
+          "sha256": "7f53c222e1318b2943d97043882cd8ee688be662ccf98c1201edb9e59830510f",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "5f6c173095aa7707048c7d239adbcda853ebc833ae2536cbf9ab819c2951e7ea",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/5f/6c173095aa77/004-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 652,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 210902,
+          "sha256": "98f8696ca74aee173546fdb75737c62f3f121518f51728b32110b8a93f019d39",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "5f6c173095aa7707048c7d239adbcda853ebc833ae2536cbf9ab819c2951e7ea",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/005.png",
+      "referenceHash": "6c9be139cbcd88759439274bca6eb83bee177d0732ea439db8a1d552b2ee1edd",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1015,
+      "referenceWidth": 1500,
+      "referenceHeight": 1015,
+      "referenceBytes": 1574811,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/005.png",
+      "sourceHash": "6c9be139cbcd88759439274bca6eb83bee177d0732ea439db8a1d552b2ee1edd",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1015,
+      "sourceWidth": 1500,
+      "sourceHeight": 1015,
+      "sourceBytes": 1574811,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/6c/9be139cbcd88/005-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/6c/9be139cbcd88/005-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/6c/9be139cbcd88/005-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6c/9be139cbcd88/005-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1015,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 322584,
+          "sha256": "927f1b62535354fa87e738195778744ffcf1eac978f26fd16656400634e27627",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "6c9be139cbcd88759439274bca6eb83bee177d0732ea439db8a1d552b2ee1edd",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6c/9be139cbcd88/005-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 325,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 45034,
+          "sha256": "02d4f28970c3b59577c5066f034565bf11b3f73652c45b7abc7c3277fac444b0",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "6c9be139cbcd88759439274bca6eb83bee177d0732ea439db8a1d552b2ee1edd",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6c/9be139cbcd88/005-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 541,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 106224,
+          "sha256": "9341293cc27765d35cd1e6c3456c6b2d0ef4c1e0c577c1bfc2daada023a70981",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "6c9be139cbcd88759439274bca6eb83bee177d0732ea439db8a1d552b2ee1edd",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6c/9be139cbcd88/005-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 650,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 139560,
+          "sha256": "01e3fe901227b66d261722d1ca41a3b4a561bbe8a59cdc7f4339c670d66d9edc",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "6c9be139cbcd88759439274bca6eb83bee177d0732ea439db8a1d552b2ee1edd",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/006.png",
+      "referenceHash": "ba2cd154f9ad1fcc64e65208b5e788f8aea84a72e6b246f0049201a5a1ccbb00",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1021,
+      "referenceWidth": 1500,
+      "referenceHeight": 1021,
+      "referenceBytes": 1562444,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/006.png",
+      "sourceHash": "ba2cd154f9ad1fcc64e65208b5e788f8aea84a72e6b246f0049201a5a1ccbb00",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1021,
+      "sourceWidth": 1500,
+      "sourceHeight": 1021,
+      "sourceBytes": 1562444,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/ba/2cd154f9ad1f/006-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/ba/2cd154f9ad1f/006-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/ba/2cd154f9ad1f/006-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/ba/2cd154f9ad1f/006-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1021,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 312420,
+          "sha256": "9db4c4a09bf025536433d1fc8756a78d7e555a50d043498d8d5a0d8cf373f7e3",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "ba2cd154f9ad1fcc64e65208b5e788f8aea84a72e6b246f0049201a5a1ccbb00",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/ba/2cd154f9ad1f/006-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 327,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 44106,
+          "sha256": "ab47c540f18b7417cfd6b7fc64e21e684cc4fbc954b17061ed8fc1e9d833230f",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "ba2cd154f9ad1fcc64e65208b5e788f8aea84a72e6b246f0049201a5a1ccbb00",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/ba/2cd154f9ad1f/006-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 545,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 105010,
+          "sha256": "ccca6a764eb8dbe7ca97c87289edb057149a3c5eefd4269a30723af2e89b2600",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "ba2cd154f9ad1fcc64e65208b5e788f8aea84a72e6b246f0049201a5a1ccbb00",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/ba/2cd154f9ad1f/006-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 653,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 140588,
+          "sha256": "99da4e2ea404d293215324b7ecbb8591253f591f31788536e3343f51eb4a1438",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "ba2cd154f9ad1fcc64e65208b5e788f8aea84a72e6b246f0049201a5a1ccbb00",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/007.png",
+      "referenceHash": "750bd446496373719fb8c0fb4a788f1366552927ea2175ab13e87545cbe20622",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1025,
+      "referenceWidth": 1500,
+      "referenceHeight": 1025,
+      "referenceBytes": 1434038,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/007.png",
+      "sourceHash": "750bd446496373719fb8c0fb4a788f1366552927ea2175ab13e87545cbe20622",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1025,
+      "sourceWidth": 1500,
+      "sourceHeight": 1025,
+      "sourceBytes": 1434038,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/75/0bd446496373/007-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/75/0bd446496373/007-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/75/0bd446496373/007-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/75/0bd446496373/007-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1025,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 278120,
+          "sha256": "c4cf98dacfc3e61da6da3f8b30697d75f0333db9505098c6912d050bba36ba67",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "750bd446496373719fb8c0fb4a788f1366552927ea2175ab13e87545cbe20622",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/75/0bd446496373/007-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 328,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 40870,
+          "sha256": "20ab4b59f8ec34469d9b793e145d5472107d72886681aa300837c79941a9f86a",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "750bd446496373719fb8c0fb4a788f1366552927ea2175ab13e87545cbe20622",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/75/0bd446496373/007-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 547,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 94846,
+          "sha256": "8319976f307f6f306cbb32c3a9451f168b2aa51a0c547069632d6da3743f943e",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "750bd446496373719fb8c0fb4a788f1366552927ea2175ab13e87545cbe20622",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/75/0bd446496373/007-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 656,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 124982,
+          "sha256": "6c5b7e9f353063b285a92296037c4fbea9c62c0f83430d1f942ae11aed5dc89c",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "750bd446496373719fb8c0fb4a788f1366552927ea2175ab13e87545cbe20622",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/008.png",
+      "referenceHash": "2c9748eabebdd42afc98c90704c61c3c049d0c16f2da47bc2af3e914ea9f1650",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1025,
+      "referenceWidth": 1500,
+      "referenceHeight": 1025,
+      "referenceBytes": 1679180,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/008.png",
+      "sourceHash": "2c9748eabebdd42afc98c90704c61c3c049d0c16f2da47bc2af3e914ea9f1650",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1025,
+      "sourceWidth": 1500,
+      "sourceHeight": 1025,
+      "sourceBytes": 1679180,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/2c/9748eabebdd4/008-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/2c/9748eabebdd4/008-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/2c/9748eabebdd4/008-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/2c/9748eabebdd4/008-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1025,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 348802,
+          "sha256": "557190e94bb7106ad022d7cacc0237f9e40ff9f0a301860e6d7d245820a05bc7",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "2c9748eabebdd42afc98c90704c61c3c049d0c16f2da47bc2af3e914ea9f1650",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/2c/9748eabebdd4/008-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 328,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 51990,
+          "sha256": "b9e582042fa85683f27630290ce5e2e3ebfb0fbc252305f5e9347e8dd6db75d0",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "2c9748eabebdd42afc98c90704c61c3c049d0c16f2da47bc2af3e914ea9f1650",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/2c/9748eabebdd4/008-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 547,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 118958,
+          "sha256": "ef7833111ca417edcf63ffb661629c150ecb345d8ff89357b3916de41512b3ab",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "2c9748eabebdd42afc98c90704c61c3c049d0c16f2da47bc2af3e914ea9f1650",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/2c/9748eabebdd4/008-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 656,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 160464,
+          "sha256": "e0987f8a1f078dec5b9627ebfd64f8abb0bc48d261f0f2139a44cfc1b3c031c9",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "2c9748eabebdd42afc98c90704c61c3c049d0c16f2da47bc2af3e914ea9f1650",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/009.png",
+      "referenceHash": "401da63ebcd071228d8ecdda0603ca1e35cc8d375778190080d44102c19a8f23",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1010,
+      "referenceWidth": 1500,
+      "referenceHeight": 1010,
+      "referenceBytes": 1523424,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/009.png",
+      "sourceHash": "401da63ebcd071228d8ecdda0603ca1e35cc8d375778190080d44102c19a8f23",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1010,
+      "sourceWidth": 1500,
+      "sourceHeight": 1010,
+      "sourceBytes": 1523424,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/40/1da63ebcd071/009-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/40/1da63ebcd071/009-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/40/1da63ebcd071/009-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/40/1da63ebcd071/009-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1010,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 323158,
+          "sha256": "64483b27c8fc468c9a056d3df45e7c1cb69211efa46f907d26368d25a0cca94f",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "401da63ebcd071228d8ecdda0603ca1e35cc8d375778190080d44102c19a8f23",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/40/1da63ebcd071/009-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 323,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 47102,
+          "sha256": "b53596edec860ca6d9154f721db7205ec7894d9a7623c1c049b45e25f2f07a15",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "401da63ebcd071228d8ecdda0603ca1e35cc8d375778190080d44102c19a8f23",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/40/1da63ebcd071/009-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 539,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 109970,
+          "sha256": "1323e61b766ba680ee4ccc12ea22b0a49948506d017462ca2f9284f4dc88723e",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "401da63ebcd071228d8ecdda0603ca1e35cc8d375778190080d44102c19a8f23",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/40/1da63ebcd071/009-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 646,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 142950,
+          "sha256": "5654c91f5d82089934b0b2e1e872fbb6595f7ce7db0d447b71eecb39318b32a4",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "401da63ebcd071228d8ecdda0603ca1e35cc8d375778190080d44102c19a8f23",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/010.png",
+      "referenceHash": "07e618fbd4087d5c98e307d9873e88e87a61dd503ddaa0ae18eaf749e4a69b59",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1018,
+      "referenceWidth": 1500,
+      "referenceHeight": 1018,
+      "referenceBytes": 1742934,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/010.png",
+      "sourceHash": "07e618fbd4087d5c98e307d9873e88e87a61dd503ddaa0ae18eaf749e4a69b59",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1018,
+      "sourceWidth": 1500,
+      "sourceHeight": 1018,
+      "sourceBytes": 1742934,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/07/e618fbd4087d/010-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/07/e618fbd4087d/010-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/07/e618fbd4087d/010-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/07/e618fbd4087d/010-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1018,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 365698,
+          "sha256": "58aef4bf5f3fa200b596c0322da721682824f8f67d5b72bf8b703f47334843e6",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "07e618fbd4087d5c98e307d9873e88e87a61dd503ddaa0ae18eaf749e4a69b59",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/07/e618fbd4087d/010-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 326,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 52708,
+          "sha256": "2b7ac69a5f5e9404c3047598e7605741db98c4884b39c95e4f8efa79df409988",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "07e618fbd4087d5c98e307d9873e88e87a61dd503ddaa0ae18eaf749e4a69b59",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/07/e618fbd4087d/010-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 543,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 126414,
+          "sha256": "236a6341beebc067e716e3bea59512d35d337e5149cbbfb35529369b7e4083b2",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "07e618fbd4087d5c98e307d9873e88e87a61dd503ddaa0ae18eaf749e4a69b59",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/07/e618fbd4087d/010-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 652,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 167532,
+          "sha256": "6b12aed7798206daf519acc44c5339055b2f9cfc316a1ada038fb7127612f9c5",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "07e618fbd4087d5c98e307d9873e88e87a61dd503ddaa0ae18eaf749e4a69b59",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/011.png",
+      "referenceHash": "f5e0212badfbc69f3c4688519016adc0cb32299fe95967e201feb2f6844739bb",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1024,
+      "referenceWidth": 1500,
+      "referenceHeight": 1024,
+      "referenceBytes": 1743039,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/011.png",
+      "sourceHash": "f5e0212badfbc69f3c4688519016adc0cb32299fe95967e201feb2f6844739bb",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1024,
+      "sourceWidth": 1500,
+      "sourceHeight": 1024,
+      "sourceBytes": 1743039,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/f5/e0212badfbc6/011-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/f5/e0212badfbc6/011-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/f5/e0212badfbc6/011-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/f5/e0212badfbc6/011-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1024,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 385054,
+          "sha256": "03240feaeaeba1535defc2d650c5aed4dcab30b497e3d559ae254a40c5d3625b",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "f5e0212badfbc69f3c4688519016adc0cb32299fe95967e201feb2f6844739bb",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/f5/e0212badfbc6/011-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 328,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 51206,
+          "sha256": "8bea422a70180e00dfdd46dedc67e16bc0a33f418233f3dd16a5f0486fe89b2a",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "f5e0212badfbc69f3c4688519016adc0cb32299fe95967e201feb2f6844739bb",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/f5/e0212badfbc6/011-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 546,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 128190,
+          "sha256": "6b8f5613f7e8f285023e89eb51ef9cda7f74dece60c91a370fc124f808663b6b",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "f5e0212badfbc69f3c4688519016adc0cb32299fe95967e201feb2f6844739bb",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/f5/e0212badfbc6/011-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 655,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 171854,
+          "sha256": "b3f2b4e96d4e5aba028e955d57361dcb1ef075bd9111e75d5559e1b3ad512fc3",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "f5e0212badfbc69f3c4688519016adc0cb32299fe95967e201feb2f6844739bb",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/012.png",
+      "referenceHash": "a6bf13ff79bc9b3054a4d793014de8214f69eb17c9243065104cf0664a418e9d",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1024,
+      "referenceWidth": 1500,
+      "referenceHeight": 1024,
+      "referenceBytes": 1807403,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/012.png",
+      "sourceHash": "a6bf13ff79bc9b3054a4d793014de8214f69eb17c9243065104cf0664a418e9d",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1024,
+      "sourceWidth": 1500,
+      "sourceHeight": 1024,
+      "sourceBytes": 1807403,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/bf13ff79bc9b/012-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/bf13ff79bc9b/012-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/bf13ff79bc9b/012-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/bf13ff79bc9b/012-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1024,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 373254,
+          "sha256": "bc785f6af56b18f5b59fa4ebd3f1f7895982ea30c0f4ea7a6c24d305b273cfa3",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "a6bf13ff79bc9b3054a4d793014de8214f69eb17c9243065104cf0664a418e9d",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/bf13ff79bc9b/012-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 328,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 55598,
+          "sha256": "fc79063e02f5b39e1b63ff6a39484f905da63fe91d942f979ff14e40a7337ec1",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "a6bf13ff79bc9b3054a4d793014de8214f69eb17c9243065104cf0664a418e9d",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/bf13ff79bc9b/012-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 546,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 131006,
+          "sha256": "98e19f1970110b7a0b751c281035dc32d7f496d71874c53331a157b63aa8d18d",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "a6bf13ff79bc9b3054a4d793014de8214f69eb17c9243065104cf0664a418e9d",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/a6/bf13ff79bc9b/012-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 655,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 174620,
+          "sha256": "399db1ee4d8d8f2017efa464b6c303ca35cc563f512d65f22172e4a365b725fb",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "a6bf13ff79bc9b3054a4d793014de8214f69eb17c9243065104cf0664a418e9d",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/013.png",
+      "referenceHash": "594c13ad5007bcf34eed8e6cf2e4a85e871804412927db3565fab9f3720cfaa9",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1033,
+      "referenceWidth": 1500,
+      "referenceHeight": 1033,
+      "referenceBytes": 2091824,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/013.png",
+      "sourceHash": "594c13ad5007bcf34eed8e6cf2e4a85e871804412927db3565fab9f3720cfaa9",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1033,
+      "sourceWidth": 1500,
+      "sourceHeight": 1033,
+      "sourceBytes": 2091824,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/59/4c13ad5007bc/013-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/59/4c13ad5007bc/013-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/59/4c13ad5007bc/013-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/59/4c13ad5007bc/013-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1033,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 450750,
+          "sha256": "2cc1ab8a4076963c01bc95714c9910f23275630067456988bfe73dcb88143755",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "594c13ad5007bcf34eed8e6cf2e4a85e871804412927db3565fab9f3720cfaa9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/59/4c13ad5007bc/013-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 331,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 63872,
+          "sha256": "a7b0deb18ae254d0ac409daeff616609e66bf8d2e15aeca11cc164c4260de035",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "594c13ad5007bcf34eed8e6cf2e4a85e871804412927db3565fab9f3720cfaa9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/59/4c13ad5007bc/013-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 551,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 158140,
+          "sha256": "3f93620335638f1511c70dae8355eacf9bd1495357a6f08525c32ef6600e6671",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "594c13ad5007bcf34eed8e6cf2e4a85e871804412927db3565fab9f3720cfaa9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/59/4c13ad5007bc/013-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 661,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 207790,
+          "sha256": "be57d7d87f27710f64e74d7440d6371c02097a86ff511b09f871712b61f221e1",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "594c13ad5007bcf34eed8e6cf2e4a85e871804412927db3565fab9f3720cfaa9",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/014.png",
+      "referenceHash": "6de6f5f057ff11fdc37e8699038da3b3e23d37de60ef494eeb53a5431e091407",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1019,
+      "referenceWidth": 1500,
+      "referenceHeight": 1019,
+      "referenceBytes": 1667890,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/014.png",
+      "sourceHash": "6de6f5f057ff11fdc37e8699038da3b3e23d37de60ef494eeb53a5431e091407",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1019,
+      "sourceWidth": 1500,
+      "sourceHeight": 1019,
+      "sourceBytes": 1667890,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/6d/e6f5f057ff11/014-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/6d/e6f5f057ff11/014-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/6d/e6f5f057ff11/014-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6d/e6f5f057ff11/014-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1019,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 341514,
+          "sha256": "238d99394e4181c39ecc1c1007fef5c69712844c263522d7eddbb5290739958a",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "6de6f5f057ff11fdc37e8699038da3b3e23d37de60ef494eeb53a5431e091407",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6d/e6f5f057ff11/014-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 326,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 47386,
+          "sha256": "d9418f37a171107ef910aa0a0167eacb78e68b7734b2e548c39304a48687eedf",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "6de6f5f057ff11fdc37e8699038da3b3e23d37de60ef494eeb53a5431e091407",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6d/e6f5f057ff11/014-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 543,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 114700,
+          "sha256": "1aab5e25109f595499277acd0e5b65a0f814df0a2e7d8ca646974f051ddfc2c1",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "6de6f5f057ff11fdc37e8699038da3b3e23d37de60ef494eeb53a5431e091407",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6d/e6f5f057ff11/014-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 652,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 152206,
+          "sha256": "07efb086371ab5256e89e99c45b89008208bf4754c73a0db093e91d988689f59",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "6de6f5f057ff11fdc37e8699038da3b3e23d37de60ef494eeb53a5431e091407",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/015.png",
+      "referenceHash": "c2365a34601f5da2b875e7ac1088cb268def875b01b30b0dd5545fca90bfa86a",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1023,
+      "referenceWidth": 1500,
+      "referenceHeight": 1023,
+      "referenceBytes": 1535529,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/015.png",
+      "sourceHash": "c2365a34601f5da2b875e7ac1088cb268def875b01b30b0dd5545fca90bfa86a",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1023,
+      "sourceWidth": 1500,
+      "sourceHeight": 1023,
+      "sourceBytes": 1535529,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/c2/365a34601f5d/015-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/c2/365a34601f5d/015-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/c2/365a34601f5d/015-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c2/365a34601f5d/015-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1023,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 327728,
+          "sha256": "a20b52295ffe3d87ad8c058b3d1652e88a1454540aa74cc6154e649eb7924c48",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "c2365a34601f5da2b875e7ac1088cb268def875b01b30b0dd5545fca90bfa86a",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c2/365a34601f5d/015-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 327,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 44662,
+          "sha256": "78286b3d16bf1a6c8b711448d697ad328dec003c9ecc910e38daa0b084caac5a",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "c2365a34601f5da2b875e7ac1088cb268def875b01b30b0dd5545fca90bfa86a",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c2/365a34601f5d/015-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 546,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 109102,
+          "sha256": "4c45b9b266b538b935f440978ba3b788dc21fe6a14ea17e3ba1925eba5ab8f38",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "c2365a34601f5da2b875e7ac1088cb268def875b01b30b0dd5545fca90bfa86a",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/c2/365a34601f5d/015-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 655,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 143768,
+          "sha256": "d2e42f1c7e51487f33b42d41a67fdce36028f58706246778d6d802d1579b8fa7",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "c2365a34601f5da2b875e7ac1088cb268def875b01b30b0dd5545fca90bfa86a",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/016.png",
+      "referenceHash": "97f98d50cff2bac9aa5711d89de3e342daae990e834d4275781275886afd37ed",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1040,
+      "referenceWidth": 1500,
+      "referenceHeight": 1040,
+      "referenceBytes": 1625234,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/016.png",
+      "sourceHash": "97f98d50cff2bac9aa5711d89de3e342daae990e834d4275781275886afd37ed",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1040,
+      "sourceWidth": 1500,
+      "sourceHeight": 1040,
+      "sourceBytes": 1625234,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/97/f98d50cff2ba/016-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/97/f98d50cff2ba/016-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/97/f98d50cff2ba/016-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/97/f98d50cff2ba/016-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1040,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 318286,
+          "sha256": "2dbcf6f20a7b24a04486797c12548bc0d1627cb157d38e5f911e7a448ec808a1",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "97f98d50cff2bac9aa5711d89de3e342daae990e834d4275781275886afd37ed",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/97/f98d50cff2ba/016-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 333,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 43932,
+          "sha256": "1ae66c4bc99e70b2a5755939f234d16aa6fdf54453c9b6fc3d2926a55ab16aa7",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "97f98d50cff2bac9aa5711d89de3e342daae990e834d4275781275886afd37ed",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/97/f98d50cff2ba/016-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 555,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 109952,
+          "sha256": "4946ed4df102cee9faa6f50e414bf65588dd37994c2e025af8f63d10852b94ce",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "97f98d50cff2bac9aa5711d89de3e342daae990e834d4275781275886afd37ed",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/97/f98d50cff2ba/016-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 666,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 145396,
+          "sha256": "a70072909407136910ddd25da84a6e919fe9171f4fbb4b42efa7cb58cc386757",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "97f98d50cff2bac9aa5711d89de3e342daae990e834d4275781275886afd37ed",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/017.png",
+      "referenceHash": "9023f574e61aaf126341b2fae2a0efab89272c13ce2fe120735d3ee3761051c1",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1020,
+      "referenceWidth": 1500,
+      "referenceHeight": 1020,
+      "referenceBytes": 1630437,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/017.png",
+      "sourceHash": "9023f574e61aaf126341b2fae2a0efab89272c13ce2fe120735d3ee3761051c1",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1020,
+      "sourceWidth": 1500,
+      "sourceHeight": 1020,
+      "sourceBytes": 1630437,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/23f574e61aaf/017-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/23f574e61aaf/017-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/23f574e61aaf/017-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/23f574e61aaf/017-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1020,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 343384,
+          "sha256": "c9aac0da8150c7ccd79ece81a22f639c1415d3e14cfa94ac4b2afe1b12b1821a",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "9023f574e61aaf126341b2fae2a0efab89272c13ce2fe120735d3ee3761051c1",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/23f574e61aaf/017-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 326,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 48636,
+          "sha256": "4122c2e16b6dab4ab58afec0a7d5fbc15147c4e602543dc2738400ed4b15fb15",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "9023f574e61aaf126341b2fae2a0efab89272c13ce2fe120735d3ee3761051c1",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/23f574e61aaf/017-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 544,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 116258,
+          "sha256": "7591869e1f8d775eef31cbeadbb83afcd7203cbc2f85fe2d8788b9fc3eabf8ee",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "9023f574e61aaf126341b2fae2a0efab89272c13ce2fe120735d3ee3761051c1",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/90/23f574e61aaf/017-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 653,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 154336,
+          "sha256": "4eacaae844cfb422a99dcff7b2b38f51dde027d1f02e8fe7d80c8df89f706062",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "9023f574e61aaf126341b2fae2a0efab89272c13ce2fe120735d3ee3761051c1",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/018.png",
+      "referenceHash": "65937162562463422022402459227c94a876b6d77aabec8bd47e673001a82724",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1028,
+      "referenceWidth": 1500,
+      "referenceHeight": 1028,
+      "referenceBytes": 2017542,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/018.png",
+      "sourceHash": "65937162562463422022402459227c94a876b6d77aabec8bd47e673001a82724",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1028,
+      "sourceWidth": 1500,
+      "sourceHeight": 1028,
+      "sourceBytes": 2017542,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/937162562463/018-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/937162562463/018-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/937162562463/018-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/937162562463/018-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1028,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 442058,
+          "sha256": "83d903d075fb7cf4db16b3d7ad9510423d5219f8788f98a291adc5d1b100e2a2",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "65937162562463422022402459227c94a876b6d77aabec8bd47e673001a82724",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/937162562463/018-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 329,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 68116,
+          "sha256": "e69a90ef9b39e2e23bbcd8109c3de4909b83b7199fb33cc5b65a0d10ea98938e",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "65937162562463422022402459227c94a876b6d77aabec8bd47e673001a82724",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/937162562463/018-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 548,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 155580,
+          "sha256": "a3ef7d18ee143711de6cd1db5b0e8651fc2d902a06d8e1509153a4827b5bd531",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "65937162562463422022402459227c94a876b6d77aabec8bd47e673001a82724",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/65/937162562463/018-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 658,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 206500,
+          "sha256": "425a06b1966180e8031851d503ac0e923d21252d0ddc36682820e718a2be8c24",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "65937162562463422022402459227c94a876b6d77aabec8bd47e673001a82724",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/019.png",
+      "referenceHash": "6f113e2a007064f6de24094e1aeefba2cf70064ab9fbfac90a8abeb3e405f083",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1035,
+      "referenceWidth": 1500,
+      "referenceHeight": 1035,
+      "referenceBytes": 1780351,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/019.png",
+      "sourceHash": "6f113e2a007064f6de24094e1aeefba2cf70064ab9fbfac90a8abeb3e405f083",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1035,
+      "sourceWidth": 1500,
+      "sourceHeight": 1035,
+      "sourceBytes": 1780351,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/113e2a007064/019-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/113e2a007064/019-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/113e2a007064/019-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/113e2a007064/019-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1035,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 368070,
+          "sha256": "31f686a1803d019054ca5680107a871fe283498c900a85faddf22fcd9b1fcf6f",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "6f113e2a007064f6de24094e1aeefba2cf70064ab9fbfac90a8abeb3e405f083",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/113e2a007064/019-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 331,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 53828,
+          "sha256": "83af3af0f0d30b6cb9ee916afa28f970241863139fde065d84131f9606292707",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "6f113e2a007064f6de24094e1aeefba2cf70064ab9fbfac90a8abeb3e405f083",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/113e2a007064/019-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 552,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 127584,
+          "sha256": "16b09f1fa511d0979403e80de5f48c8d067cf8ea1109a7c9b0009e18dea2c157",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "6f113e2a007064f6de24094e1aeefba2cf70064ab9fbfac90a8abeb3e405f083",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/6f/113e2a007064/019-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 662,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 165428,
+          "sha256": "62ee0f391c9ff1a2676debd442f51c87ec63cf947034a00eca0457728689470d",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "6f113e2a007064f6de24094e1aeefba2cf70064ab9fbfac90a8abeb3e405f083",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/020.png",
+      "referenceHash": "bf00fa44d0f953e43ca0cec38c3df21059294f5615b9bd36c9ba1573591d6071",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1022,
+      "referenceWidth": 1500,
+      "referenceHeight": 1022,
+      "referenceBytes": 1677866,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/020.png",
+      "sourceHash": "bf00fa44d0f953e43ca0cec38c3df21059294f5615b9bd36c9ba1573591d6071",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1022,
+      "sourceWidth": 1500,
+      "sourceHeight": 1022,
+      "sourceBytes": 1677866,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/bf/00fa44d0f953/020-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/bf/00fa44d0f953/020-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/bf/00fa44d0f953/020-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bf/00fa44d0f953/020-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1022,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 354224,
+          "sha256": "0a205dac488e0f612417ecb8d3c1cf8404195ef67cac3aba40bfbcd8fdd809c2",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "bf00fa44d0f953e43ca0cec38c3df21059294f5615b9bd36c9ba1573591d6071",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bf/00fa44d0f953/020-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 327,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 51040,
+          "sha256": "39a17a5d2cebb4cd355e43300c9f0292e092b69e6c6b7d1070477f63fee7ac6d",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "bf00fa44d0f953e43ca0cec38c3df21059294f5615b9bd36c9ba1573591d6071",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bf/00fa44d0f953/020-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 545,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 116922,
+          "sha256": "16083596222d124fe1befa610d4b03ec546ff7f4a5888cfe57ab9be515c63e0b",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "bf00fa44d0f953e43ca0cec38c3df21059294f5615b9bd36c9ba1573591d6071",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/bf/00fa44d0f953/020-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 654,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 157748,
+          "sha256": "bc58e81ec74dba33b951b51ff706257fcb291ba3b5392324f000d4fe7af79f78",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "bf00fa44d0f953e43ca0cec38c3df21059294f5615b9bd36c9ba1573591d6071",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/021.png",
+      "referenceHash": "44592b0122e161a0c038be70b1efa8c7831dba53450cf5f0dbfd2156d6fca8f7",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1021,
+      "referenceWidth": 1500,
+      "referenceHeight": 1021,
+      "referenceBytes": 1465296,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/021.png",
+      "sourceHash": "44592b0122e161a0c038be70b1efa8c7831dba53450cf5f0dbfd2156d6fca8f7",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1021,
+      "sourceWidth": 1500,
+      "sourceHeight": 1021,
+      "sourceBytes": 1465296,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/44/592b0122e161/021-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/44/592b0122e161/021-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/44/592b0122e161/021-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/44/592b0122e161/021-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1021,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 290022,
+          "sha256": "a185a41ce762fa7a60487ae64c8b43b1d820d3d730cf58f48c95d63cf352cbcc",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "44592b0122e161a0c038be70b1efa8c7831dba53450cf5f0dbfd2156d6fca8f7",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/44/592b0122e161/021-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 327,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 41976,
+          "sha256": "5d90eea050ac3668bbe97df9a879d621c40f0e4127a047b920dfd2e94866b85c",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "44592b0122e161a0c038be70b1efa8c7831dba53450cf5f0dbfd2156d6fca8f7",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/44/592b0122e161/021-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 545,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 97528,
+          "sha256": "97c739b9a1d1a32c6fddb2415359930d56255cbe6c058dee582fae381d918cc0",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "44592b0122e161a0c038be70b1efa8c7831dba53450cf5f0dbfd2156d6fca8f7",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/44/592b0122e161/021-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 653,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 129174,
+          "sha256": "bcda77a87537b55cd7e605eb56c9359f9b0543262f02d038350b1609aaee6711",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "44592b0122e161a0c038be70b1efa8c7831dba53450cf5f0dbfd2156d6fca8f7",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/022.png",
+      "referenceHash": "12acf27011bb54278840ae480ec72f8c8bbc34479f829e8a52ff232cf5f90119",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1005,
+      "referenceWidth": 1500,
+      "referenceHeight": 1005,
+      "referenceBytes": 1550676,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/022.png",
+      "sourceHash": "12acf27011bb54278840ae480ec72f8c8bbc34479f829e8a52ff232cf5f90119",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1005,
+      "sourceWidth": 1500,
+      "sourceHeight": 1005,
+      "sourceBytes": 1550676,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/12/acf27011bb54/022-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/12/acf27011bb54/022-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/12/acf27011bb54/022-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/12/acf27011bb54/022-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1005,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 315318,
+          "sha256": "158e76688f230c1c459ad0d448fb2857ba3f22cc30e0931ca4bdd4cc47002d7d",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "12acf27011bb54278840ae480ec72f8c8bbc34479f829e8a52ff232cf5f90119",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/12/acf27011bb54/022-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 322,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 47646,
+          "sha256": "99ac80ae1eeceacc145ae828bd6398336d02a456c662f6adae1ba3804fa01258",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "12acf27011bb54278840ae480ec72f8c8bbc34479f829e8a52ff232cf5f90119",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/12/acf27011bb54/022-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 536,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 108666,
+          "sha256": "ff0fe3b8ed310e815fb42bb786084117f85a06581b6bb16c8dc0a008608f1d53",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "12acf27011bb54278840ae480ec72f8c8bbc34479f829e8a52ff232cf5f90119",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/12/acf27011bb54/022-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 643,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 142876,
+          "sha256": "5cd46a0efc8624a5f96e48604523e4cc21d97f7c13f9a521ee16590050e49919",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "12acf27011bb54278840ae480ec72f8c8bbc34479f829e8a52ff232cf5f90119",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/023.png",
+      "referenceHash": "cd95994647609d3a9aba90370974e6490ea37f3876fbebb9679c840eaaa51064",
+      "referenceStoredWidth": 1500,
+      "referenceStoredHeight": 1030,
+      "referenceWidth": 1500,
+      "referenceHeight": 1030,
+      "referenceBytes": 2202340,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/023.png",
+      "sourceHash": "cd95994647609d3a9aba90370974e6490ea37f3876fbebb9679c840eaaa51064",
+      "sourceStoredWidth": 1500,
+      "sourceStoredHeight": 1030,
+      "sourceWidth": 1500,
+      "sourceHeight": 1030,
+      "sourceBytes": 2202340,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/cd/95994647609d/023-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/cd/95994647609d/023-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/cd/95994647609d/023-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cd/95994647609d/023-carmela-lightbox-1600-webp.webp",
+          "width": 1500,
+          "height": 1030,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 467486,
+          "sha256": "05474ed30f5f1d670fab62a940d6afb89318829850000703537d525550b06f91",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "cd95994647609d3a9aba90370974e6490ea37f3876fbebb9679c840eaaa51064",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cd/95994647609d/023-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 330,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 70576,
+          "sha256": "8297cd46a415d193be6a0197ff8548146569526387eb5bbc705cbed1b65bc0be",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "cd95994647609d3a9aba90370974e6490ea37f3876fbebb9679c840eaaa51064",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cd/95994647609d/023-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 549,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 165918,
+          "sha256": "a161b868efe9a966b0eb5f4a2ea7d2a00962cd72483967d23a49998f4ea82086",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "cd95994647609d3a9aba90370974e6490ea37f3876fbebb9679c840eaaa51064",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/cd/95994647609d/023-carmela-page-960-webp.webp",
+          "width": 960,
+          "height": 659,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 220416,
+          "sha256": "0f4fbee58d6cd9fd1eee0137ded50374e26cefe7b853d7d2e2cd3133058276f1",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "cd95994647609d3a9aba90370974e6490ea37f3876fbebb9679c840eaaa51064",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    },
+    {
+      "sourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/024.png",
+      "referenceHash": "9f2e2453571723a6963c62d6ecfc9a5aeddb3ba059aeef1a4e8b2f2da70ce5dc",
+      "referenceStoredWidth": 879,
+      "referenceStoredHeight": 1125,
+      "referenceWidth": 879,
+      "referenceHeight": 1125,
+      "referenceBytes": 1139479,
+      "referenceFormat": "png",
+      "referenceMode": "RGB",
+      "referenceHasAlpha": false,
+      "referenceExifOrientation": 1,
+      "referenceOrientationNormalized": false,
+      "referenceFrames": 1,
+      "referenceAnimated": false,
+      "lineageKind": "self",
+      "derivationSourcePath": "public/books/不一样的卡梅拉/我要找到朗朗/pages/024.png",
+      "sourceHash": "9f2e2453571723a6963c62d6ecfc9a5aeddb3ba059aeef1a4e8b2f2da70ce5dc",
+      "sourceStoredWidth": 879,
+      "sourceStoredHeight": 1125,
+      "sourceWidth": 879,
+      "sourceHeight": 1125,
+      "sourceBytes": 1139479,
+      "sourceFormat": "png",
+      "sourceMode": "RGB",
+      "hasAlpha": false,
+      "exifOrientation": 1,
+      "orientationNormalized": false,
+      "sourceFrames": 1,
+      "animated": false,
+      "roles": [
+        "carmela-lightbox",
+        "carmela-page-preview"
+      ],
+      "fallbackPath": "public/media/derived/9289331de034dddc25a6dc13428712ab/9f/2e2453571723/024-carmela-lightbox-1600-webp.webp",
+      "fallbacksByRole": {
+        "carmela-lightbox": "public/media/derived/9289331de034dddc25a6dc13428712ab/9f/2e2453571723/024-carmela-lightbox-1600-webp.webp",
+        "carmela-page-preview": "public/media/derived/9289331de034dddc25a6dc13428712ab/9f/2e2453571723/024-carmela-page-960-webp.webp"
+      },
+      "variants": [
+        {
+          "profileId": "carmela-lightbox-1600-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/9f/2e2453571723/024-carmela-lightbox-1600-webp.webp",
+          "width": 879,
+          "height": 1125,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 243154,
+          "sha256": "18d97828319f201d5d2baf3039349929a896b153da56f644127979726c658261",
+          "roles": [
+            "carmela-lightbox"
+          ],
+          "sourceHash": "9f2e2453571723a6963c62d6ecfc9a5aeddb3ba059aeef1a4e8b2f2da70ce5dc",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 96
+          },
+          "lossless": false,
+          "quality": 96
+        },
+        {
+          "profileId": "carmela-page-480-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/9f/2e2453571723/024-carmela-page-480-webp.webp",
+          "width": 480,
+          "height": 614,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 75694,
+          "sha256": "b5c2f753bbd7004ef6d64a44f1c2ddbeb64a8c330103bbb06ceddbce0446d743",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "9f2e2453571723a6963c62d6ecfc9a5aeddb3ba059aeef1a4e8b2f2da70ce5dc",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-800-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/9f/2e2453571723/024-carmela-page-800-webp.webp",
+          "width": 800,
+          "height": 1024,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 172668,
+          "sha256": "b076231830dfac11baf322ec374dde4926b22ed82586ae3c409e7cf9c0b91555",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "9f2e2453571723a6963c62d6ecfc9a5aeddb3ba059aeef1a4e8b2f2da70ce5dc",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        },
+        {
+          "profileId": "carmela-page-960-webp",
+          "path": "public/media/derived/9289331de034dddc25a6dc13428712ab/9f/2e2453571723/024-carmela-page-960-webp.webp",
+          "width": 879,
+          "height": 1125,
+          "format": "webp",
+          "mode": "RGB",
+          "hasAlpha": false,
+          "alphaPreserved": false,
+          "bytes": 191340,
+          "sha256": "e2e2ce17deaf1e7bc95bbe8104a3e664222d0d1e7275b2e2cd2fa974746a7f6c",
+          "roles": [
+            "carmela-page-preview"
+          ],
+          "sourceHash": "9f2e2453571723a6963c62d6ecfc9a5aeddb3ba059aeef1a4e8b2f2da70ce5dc",
+          "encoderOptions": {
+            "exact": true,
+            "lossless": false,
+            "method": 6,
+            "quality": 94
+          },
+          "lossless": false,
+          "quality": 94
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "sources": 30,
+    "variants": 118
+  }
+}

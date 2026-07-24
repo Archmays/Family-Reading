@@ -1,15 +1,23 @@
-const DEFAULT_ROLE_SIZES = Object.freeze({
-  'carmela-series-cover': '(max-width: 680px) 44vw, 176px',
-  'carmela-book-cover': '(max-width: 900px) 44vw, 320px',
-  'carmela-page-preview': '(max-width: 680px) 42vw, 240px',
-  'carmela-explanation-preview': '(max-width: 680px) 88vw, 640px',
-  'carmela-lightbox': 'min(92vw, 1600px)',
-  'work-cells-series-thumbnail': '(max-width: 680px) 42vw, 200px',
+export const MEDIA_ROLE_SIZES = Object.freeze({
+  'carmela-series-cover': '(max-width: 680px) min(calc(34vw - 2.15rem), 168px), (max-width: 920px) 168px, (max-width: 1072px) 96px, min(calc(11.65vw - 1.82rem), 107px)',
+  'carmela-book-cover': '(max-width: 680px) 102px, 184px',
+  'carmela-page-preview': '(max-width: 680px) calc(50vw - 2.5rem), 160px',
+  'carmela-explanation-preview': '(max-width: 680px) calc(50vw - 2.5rem), min(64vw, 640px)',
+  'carmela-lightbox': '(max-width: 680px) calc(100vw - 2.25rem), min(calc(100vw - 7rem), 720px)',
+  'work-cells-series-thumbnail': '(max-width: 680px) min(calc(34vw - 1.5rem), 160px), min(calc(17vw - 1.5rem), 160px)',
   'work-cells-topic-hero': '(max-width: 1088px) min(88vw, 448px), 320px',
-  'work-cells-station-preview': '(max-width: 680px) 88vw, 640px',
-  'work-cells-manga-preview': '(max-width: 680px) 42vw, 240px',
-  'work-cells-lightbox': 'min(92vw, 1600px)',
+  'work-cells-station-preview': '(max-width: 680px) calc(33vw - 2rem), 160px',
+  'work-cells-manga-preview': '(max-width: 680px) calc(33vw - 2rem), 160px',
+  'work-cells-lightbox': '(max-width: 680px) calc(100vw - 2.25rem), min(calc(100vw - 7rem), 720px)',
 });
+
+export const MEDIA_USE_SITE_SIZES = Object.freeze({
+  'home-series-entry': '176px',
+});
+
+export function mediaSizes(role, useSite = '') {
+  return MEDIA_USE_SITE_SIZES[useSite] ?? MEDIA_ROLE_SIZES[role] ?? '100vw';
+}
 
 const FORMAT_MIME = Object.freeze({
   avif: 'image/avif',
@@ -60,20 +68,18 @@ function groupedByFormat(variants) {
     });
 }
 
-function chooseFallback(entry, variants) {
+function chooseFallback(entry, variants, role) {
   if (!entry) return null;
-  const declared = variants.find((variant) => variant.path === entry.fallbackPath);
+  const roleFallbackPath = entry.fallbacksByRole?.[role];
+  const declared = variants.find((variant) => (
+    variant.path === roleFallbackPath
+    || (!roleFallbackPath && variant.path === entry.fallbackPath)
+  ));
   if (declared) return declared;
   const preferred = [...variants]
     .filter((variant) => ['webp', 'jpeg', 'jpg', 'png'].includes(variant.format))
-    .sort((left, right) => right.width - left.width || ordinal(left.path, right.path))[0];
-  if (preferred) return preferred;
-  return {
-    path: entry.fallbackPath || entry.sourcePath,
-    width: entry.sourceWidth,
-    height: entry.sourceHeight,
-    format: entry.sourceFormat,
-  };
+    .sort((left, right) => left.width - right.width || ordinal(left.path, right.path))[0];
+  return preferred ?? null;
 }
 
 function renderAttributes(attributes) {
@@ -84,7 +90,10 @@ function renderAttributes(attributes) {
 }
 
 export function createMediaResolver(manifest, { sitePath = (value) => value } = {}) {
-  const entries = new Map((manifest?.media ?? []).map((entry) => [normalizePath(entry.sourcePath), entry]));
+  const manifestEntries = Array.isArray(manifest?.media) ? manifest.media : [];
+  const entries = new Map(manifestEntries
+    .filter((entry) => entry && typeof entry === 'object' && normalizePath(entry.sourcePath))
+    .map((entry) => [normalizePath(entry.sourcePath), entry]));
 
   function entryFor(sourcePath) {
     return entries.get(normalizePath(sourcePath)) ?? null;
@@ -99,12 +108,7 @@ export function createMediaResolver(manifest, { sitePath = (value) => value } = 
         role,
         manifestEntry: null,
         variants: [],
-        fallback: {
-          path: normalizedSource,
-          width: null,
-          height: null,
-          format: normalizedSource.split('.').pop()?.toLowerCase() || '',
-        },
+        fallback: null,
       };
     }
     const variants = roleVariants(entry, role);
@@ -113,20 +117,49 @@ export function createMediaResolver(manifest, { sitePath = (value) => value } = 
       role,
       manifestEntry: entry,
       variants,
-      fallback: chooseFallback(entry, variants),
+      fallback: chooseFallback(entry, variants, role),
+    };
+  }
+
+  function presentation(sourcePath, {
+    role,
+    sizes = mediaSizes(role),
+  } = {}) {
+    const resolved = resolve(sourcePath, role);
+    const sources = groupedByFormat(resolved.variants)
+      .map(({ format, items }) => ({
+        format,
+        mime: FORMAT_MIME[format] ?? '',
+        sizes,
+        srcset: items.map((variant) => `${sitePath(variant.path)} ${variant.width}w`).join(', '),
+      }))
+      .filter((source) => source.mime && source.srcset);
+    const fallback = resolved.fallback && sources.length > 0
+      ? {
+          ...resolved.fallback,
+          src: sitePath(resolved.fallback.path),
+        }
+      : null;
+    return {
+      sourcePath: resolved.sourcePath,
+      role,
+      sizes,
+      sources,
+      fallback,
+      available: Boolean(fallback),
     };
   }
 
   function largestPath(sourcePath, role) {
     const resolved = resolve(sourcePath, role);
     const largest = [...resolved.variants].sort((left, right) => right.width - left.width || ordinal(left.path, right.path))[0];
-    return sitePath(largest?.path ?? resolved.fallback.path);
+    return largest?.path ? sitePath(largest.path) : '';
   }
 
   function picture(sourcePath, {
     role,
     alt = '',
-    sizes = DEFAULT_ROLE_SIZES[role] ?? '100vw',
+    sizes = mediaSizes(role),
     className = '',
     pictureClassName = '',
     loading = 'lazy',
@@ -135,18 +168,18 @@ export function createMediaResolver(manifest, { sitePath = (value) => value } = 
     hidden = false,
     data = {},
   } = {}) {
-    const resolved = resolve(sourcePath, role);
-    const groups = groupedByFormat(resolved.variants);
-    const sourceMarkup = groups.map(({ format, items }) => {
-      const mime = FORMAT_MIME[format];
-      if (!mime) return '';
-      const srcset = items.map((variant) => `${sitePath(variant.path)} ${variant.width}w`).join(', ');
-      return `<source type="${mime}" srcset="${html(srcset)}" sizes="${html(sizes)}">`;
+    const media = presentation(sourcePath, { role, sizes });
+    if (!media.available) return '';
+    const sourceMarkup = media.sources.map((source) => {
+      return `<source type="${source.mime}" srcset="${html(source.srcset)}" sizes="${html(source.sizes)}">`;
     }).join('');
-    const fallback = resolved.fallback;
+    const fallback = media.fallback;
+    const fallbackSource = media.sources.find((source) => source.format === fallback.format);
     const dataAttributes = Object.fromEntries(Object.entries(data).map(([key, value]) => [`data-${key}`, value]));
     const imageAttributes = renderAttributes({
-      src: sitePath(fallback.path),
+      src: fallback.src,
+      srcset: fallbackSource?.srcset,
+      sizes: fallbackSource?.sizes,
       alt,
       class: className,
       width: fallback.width,
@@ -164,10 +197,14 @@ export function createMediaResolver(manifest, { sitePath = (value) => value } = 
   return {
     entryFor,
     resolve,
+    presentation,
     largestPath,
     picture,
     has(sourcePath) {
       return entries.has(normalizePath(sourcePath));
+    },
+    hasRole(sourcePath, role) {
+      return Boolean(resolve(sourcePath, role).fallback);
     },
     count: entries.size,
   };

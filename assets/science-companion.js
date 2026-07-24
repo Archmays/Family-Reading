@@ -1,3 +1,5 @@
+import { responsiveMediaFallback } from './media-resolver.js?v=fr-p5-20260724';
+
 const WORK_CELLS_SERIES_SLUG = 'work-cells';
 
 const QUESTION_GROUPS = [
@@ -18,6 +20,25 @@ function html(value) {
     .replaceAll('>', '&gt;')
     .replaceAll('"', '&quot;')
     .replaceAll("'", '&#039;');
+}
+
+function lightboxDataAttributes(mediaResolver, sourcePath, role) {
+  const media = mediaResolver.presentation(sourcePath, { role });
+  if (!media.available) return '';
+  const attributes = [
+    ['data-lightbox-src', media.fallback.src],
+    ['data-lightbox-sizes', media.sizes],
+    ['data-lightbox-width', media.fallback.width],
+    ['data-lightbox-height', media.fallback.height],
+    ['data-lightbox-fallback-format', media.fallback.format],
+    ...media.sources
+      .filter((source) => /^[a-z0-9]+$/.test(source.format))
+      .map((source) => [`data-lightbox-srcset-${source.format}`, source.srcset]),
+  ];
+  return attributes
+    .filter(([, value]) => value !== null && value !== undefined && value !== '')
+    .map(([name, value]) => `${name}="${html(value)}"`)
+    .join(' ');
 }
 
 function safeId(value) {
@@ -197,21 +218,34 @@ function tags(items, label = '核心概念') {
   return `<ul class="science-atlas-tags" aria-label="${html(label)}">${items.map((item) => `<li>${html(item)}</li>`).join('')}</ul>`;
 }
 
-function mediaThumbnail(model, mediaId, group, index) {
+function mediaThumbnail(model, mediaId, group, index, mediaResolver) {
   const media = model.mediaRegistry[mediaId];
   if (!media) return '';
   const position = `第 ${index + 1} 张，共 ${group.mediaIds.length} 张`;
+  const previewRole = media.kind === 'station-illustration'
+    ? 'work-cells-station-preview'
+    : 'work-cells-manga-preview';
+  const lightboxAttributes = lightboxDataAttributes(
+    mediaResolver,
+    media.path,
+    'work-cells-lightbox',
+  );
   return `
     <button class="page-thumbnail science-media-thumbnail media-kind-${html(media.kind)}" type="button"
-      data-lightbox-src="${html(media.path)}" data-lightbox-alt="${html(media.alt)}"
+      ${lightboxAttributes} data-lightbox-alt="${html(media.alt)}"
       data-lightbox-group="${html(group.id)}" data-media-id="${html(media.id)}"
       aria-label="放大查看${html(media.label)}，${html(position)}">
-      <img src="${html(media.path)}" alt="${html(media.alt)}" loading="lazy" decoding="async">
+      ${mediaResolver.picture(media.path, {
+        role: previewRole,
+        alt: media.alt,
+        loading: 'lazy',
+        decoding: 'async',
+      })}
       <span>${html(media.label)}</span>
     </button>`;
 }
 
-function mediaDisclosure(model, groupId, summary) {
+function mediaDisclosure(model, groupId, summary, mediaResolver) {
   const group = model.mediaGroups[groupId];
   if (!group?.mediaIds?.length) return '';
   return `
@@ -219,17 +253,23 @@ function mediaDisclosure(model, groupId, summary) {
       <summary>${html(summary)} <span aria-hidden="true">(${group.mediaIds.length})</span></summary>
       <div class="media-group-mount" data-media-mount aria-label="${html(group.label)}"></div>
       <template data-media-template><div class="page-thumbnail-list science-media-grid">
-        ${group.mediaIds.map((mediaId, index) => mediaThumbnail(model, mediaId, group, index)).join('')}
+        ${group.mediaIds.map((mediaId, index) => mediaThumbnail(model, mediaId, group, index, mediaResolver)).join('')}
       </div></template>
     </details>`;
 }
 
-function hero(model, thumbnailPath) {
+function hero(model, thumbnailPath, mediaResolver) {
   const { identity, overview } = model;
   return `
     <section class="science-atlas-hero" aria-labelledby="science-atlas-title">
       <div class="science-atlas-hero-media topic-thumbnail${thumbnailPath ? '' : ' thumbnail-missing'}">
-        ${thumbnailPath ? `<img src="${html(thumbnailPath)}" alt="${html(identity.title)}主题缩略图">` : ''}
+        ${thumbnailPath ? mediaResolver.picture(thumbnailPath, {
+          role: 'work-cells-topic-hero',
+          alt: `${identity.title}主题缩略图`,
+          loading: 'eager',
+          decoding: 'async',
+          fetchPriority: 'high',
+        }) : ''}
         <span class="cover-fallback">主题图片暂时无法显示</span>
       </div>
       <div class="science-atlas-hero-copy">
@@ -281,7 +321,7 @@ function overview(model) {
     </section>`;
 }
 
-function station(model, item) {
+function station(model, item, mediaResolver) {
   const concepts = [...item.biologyConcepts, ...item.encyclopediaTags]
     .filter((value, index, items) => items.indexOf(value) === index);
   return `
@@ -294,22 +334,22 @@ function station(model, item) {
         ${tags(concepts)}
         ${item.parentNote ? `<aside class="science-parent-note"><h4>给家长的讲法</h4><p>${html(item.parentNote)}</p></aside>` : ''}
         <div class="science-station-media-actions">
-          ${mediaDisclosure(model, item.illustrationMediaGroupId, '查看科学解释图')}
-          ${mediaDisclosure(model, item.mangaMediaGroupId, '查看关联漫画页面')}
+          ${mediaDisclosure(model, item.illustrationMediaGroupId, '查看科学解释图', mediaResolver)}
+          ${mediaDisclosure(model, item.mangaMediaGroupId, '查看关联漫画页面', mediaResolver)}
         </div>
       </article>
     </li>`;
 }
 
-function stations(model) {
+function stations(model, mediaResolver) {
   return `
     <section id="science-station" class="science-atlas-section science-atlas-stations" aria-labelledby="science-station-title">
       ${heading('从四个角度理解身体怎样工作', '身体科学小站', 'science-station-title')}
-      <ol class="science-station-route">${model.stations.map((item) => station(model, item)).join('')}</ol>
+      <ol class="science-station-route">${model.stations.map((item) => station(model, item, mediaResolver)).join('')}</ol>
     </section>`;
 }
 
-function question(model, item) {
+function question(model, item, mediaResolver) {
   const collapsed = '显示参考答案与家长提示';
   const expanded = '隐藏参考答案与家长提示';
   return `
@@ -324,16 +364,16 @@ function question(model, item) {
       <div id="${html(item.answerId)}" class="answer science-answer" role="region" aria-labelledby="${html(item.toggleId)}" hidden>
         <h5>参考答案</h5><p>${html(item.answer)}</p>
         ${item.parentHint ? `<div class="science-question-parent-hint"><h5>家长提示</h5><p>${html(item.parentHint)}</p></div>` : ''}
-        ${mediaDisclosure(model, item.mangaMediaGroupId, '查看相应漫画页面')}
+        ${mediaDisclosure(model, item.mangaMediaGroupId, '查看相应漫画页面', mediaResolver)}
       </div>
     </article>`;
 }
 
-function questions(model) {
+function questions(model, mediaResolver) {
   const groups = model.questionGroups.map((group) => `
     <section class="science-question-group" aria-labelledby="science-question-group-${html(group.key)}">
       <header><h3 id="science-question-group-${html(group.key)}">${html(group.label)}</h3><p>${html(group.purpose)}</p></header>
-      <div class="science-question-list">${group.questions.map((item) => question(model, item)).join('')}</div>
+      <div class="science-question-list">${group.questions.map((item) => question(model, item, mediaResolver)).join('')}</div>
     </section>`).join('');
   return `
     <section id="science-questions" class="science-atlas-section science-atlas-questions" aria-labelledby="science-questions-title">
@@ -366,25 +406,34 @@ function source(model) {
 
 function lightbox() {
   return `
-    <div class="image-lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-labelledby="lightbox-title" tabindex="-1">
+    <div class="image-lightbox" data-lightbox hidden role="dialog" aria-modal="true" aria-labelledby="lightbox-title" aria-describedby="lightbox-caption" aria-busy="false" tabindex="-1">
       <div class="lightbox-backdrop" aria-hidden="true"></div><div class="lightbox-panel" role="document">
         <h2 id="lightbox-title" class="lightbox-title">科学图片放大查看</h2>
         <button class="lightbox-close" type="button" data-lightbox-close data-lightbox-close-button aria-label="关闭放大图">关闭</button>
         <button class="lightbox-nav lightbox-prev" type="button" data-lightbox-prev aria-label="上一张">上一张</button>
-        <img data-lightbox-image alt="" hidden>
+        <picture class="lightbox-picture" data-lightbox-picture hidden>
+          <source type="image/avif" data-lightbox-source="avif">
+          <source type="image/webp" data-lightbox-source="webp">
+          <source type="image/jpeg" data-lightbox-source="jpeg">
+          <source type="image/png" data-lightbox-source="png">
+          <img data-lightbox-image alt="" hidden>
+        </picture>
         <button class="lightbox-nav lightbox-next" type="button" data-lightbox-next aria-label="下一张">下一张</button>
-        <p class="lightbox-caption" data-lightbox-caption></p>
+        <p id="lightbox-caption" class="lightbox-caption" data-lightbox-caption role="status" aria-live="polite" aria-atomic="true"></p>
       </div>
     </div>`;
 }
 
-export function renderScienceTopicAtlas(model, { thumbnailPath = '' } = {}) {
+export function renderScienceTopicAtlas(model, {
+  thumbnailPath = '',
+  mediaResolver = responsiveMediaFallback(),
+} = {}) {
   return `
     <div class="companion-view companion-view--science science-atlas" data-science-atlas>
-      ${hero(model, thumbnailPath)}
+      ${hero(model, thumbnailPath, mediaResolver)}
       <div class="companion-body science-atlas-body">${navigation(model)}
         <div class="book-main companion-reading science-atlas-reading">
-          ${overview(model)}${stations(model)}${questions(model)}${parentGuidance(model)}${source(model)}
+          ${overview(model)}${stations(model, mediaResolver)}${questions(model, mediaResolver)}${parentGuidance(model)}${source(model)}
         </div>
       </div>
     </div>${lightbox()}`;
